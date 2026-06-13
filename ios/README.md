@@ -58,20 +58,34 @@ Resources/
   Manager: `https://github.com/groue/GRDB.swift`, "Up to Next Major" from `6.0.0`.
 - **CryptoKit** — system framework (Ed25519 verification), no dependency to add.
 
-## Creating the Xcode project
+## Creating the Xcode project (one command)
 
-These are loose sources (so they're reviewable in git). To build:
+The project is defined declaratively in [`project.yml`](project.yml) for
+**[XcodeGen](https://github.com/yonsm/XcodeGen)**, so the `.xcodeproj` is generated, not
+committed (loose sources stay reviewable in git).
 
-1. New Xcode project → **App** → SwiftUI, name `SeniorDirectory`, iOS 17+.
-2. Delete the template `ContentView.swift`/`App.swift`; drag in `Models/`, `Services/`,
-   `Views/`, `Theme/`, and add `Resources/brands.json` to the app target ("Copy items").
-3. Add the GRDB package (above) to the app target.
-4. Add a unit-test target `SeniorDirectoryTests` and include
-   `../SeniorDirectoryTests/SignatureVerifierTests.swift`.
-5. Set `API_BASE_URL` in Info.plist (or an xcconfig) to your backend URL.
+```bash
+brew install xcodegen        # one-time
+cd ios
+./bootstrap.sh               # generate project, resolve GRDB, build + test
+```
 
-> A `project.yml` for [XcodeGen](https://github.com/yonsm/XcodeGen) or a Tuist manifest
-> can be added later to make this one command; kept manual for v1 reviewability.
+Or do it by hand:
+
+```bash
+cd ios
+xcodegen generate            # creates SeniorDirectory.xcodeproj
+open SeniorDirectory.xcodeproj
+```
+
+`project.yml` wires up everything automatically:
+- **App target** `SeniorDirectory` (iOS 17+, iPhone + iPad) from `SeniorDirectory/`.
+- **GRDB** via SPM (`from: 6.0.0`) — no manual package step.
+- **`Resources/brands.json`** added to the bundle (offline seed).
+- **Generated `Info.plist`** with `API_BASE_URL` (override per-scheme/CI) and
+  `LSApplicationQueriesSchemes: [tel]` so the dialer's `canOpenURL` works.
+- **Test target** `SeniorDirectoryTests` wired to the app for the signature
+  conformance test, with a shared scheme so `xcodebuild test` just works.
 
 ## The signature conformance test (important)
 

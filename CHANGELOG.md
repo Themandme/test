@@ -52,6 +52,10 @@ All notable changes to Senior Directory v1.0, in build order. Branch:
   backend-generated value (cross-language conformance).
 - Note: builds in Xcode/macOS (SwiftUI/CryptoKit/UIKit); not compilable in the Linux
   sandbox. GRDB added via SPM.
+- **XcodeGen manifest** (`ios/project.yml`) + `ios/bootstrap.sh` generate the project,
+  resolve GRDB, and build/test in one command. Wires the bundled `brands.json` resource,
+  an `Info.plist` with `API_BASE_URL` and the `tel` query scheme, and the test target +
+  shared scheme. Generated `.xcodeproj`/`Info.plist` are gitignored.
 
 ### Docs
 - Top-level `README.md`, `docs/ARCHITECTURE.md`, `docs/PRODUCT.md` (validation, risk

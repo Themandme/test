@@ -16,3 +16,7 @@ xcuserdata/
 *.xcuserstate
 build/
 DerivedData/
+
+# XcodeGen-generated (regenerated from ios/project.yml — do not commit)
+ios/SeniorDirectory.xcodeproj/
+ios/SeniorDirectory/Info.plist
