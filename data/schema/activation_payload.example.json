@@ -1,0 +1,48 @@
+{
+  "account_id": "acct_8f3c1a92",
+  "tier": "free",
+  "senior_profile": {
+    "display_name": "Mom"
+  },
+  "emergency_contact": {
+    "name": "David",
+    "phone": "+15125550148",
+    "phone_display": "(512) 555-0148",
+    "relationship": "son",
+    "photo_url": null
+  },
+  "custom_contacts": [
+    {
+      "id": "cc_01",
+      "name": "Dr. Patel's Office",
+      "phone": "+15125550172",
+      "phone_display": "(512) 555-0172",
+      "category": "Doctor",
+      "photo_url": null,
+      "note": "Front desk — ask for Maria"
+    },
+    {
+      "id": "cc_02",
+      "name": "Rite Aid Pharmacy",
+      "phone": "+15125550199",
+      "phone_display": "(512) 555-0199",
+      "category": "Pharmacy",
+      "photo_url": null,
+      "note": "On Lamar Blvd"
+    },
+    {
+      "id": "cc_03",
+      "name": "First Bank — Oak St Branch",
+      "phone": "+15125550133",
+      "phone_display": "(512) 555-0133",
+      "category": "Bank Branch",
+      "photo_url": null,
+      "note": null
+    }
+  ],
+  "limits": {
+    "max_custom_contacts": 3
+  },
+  "issued_at": "2026-06-13T21:45:00Z",
+  "signature": "ed25519:PLACEHOLDER_DETACHED_SIGNATURE_BASE64"
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://senior-directory.app/schema/brand.schema.json",
+  "title": "NationalBrand",
+  "description": "A single hardcoded national brand entry in the safe directory. Consumed identically by the FastAPI backend and the SwiftUI app.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "category",
+    "support_type",
+    "phone",
+    "phone_display",
+    "brand_color_hex",
+    "text_color_hex",
+    "safety_warning",
+    "official_url",
+    "official_support_url",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Stable slug used as a primary key everywhere. Never change once shipped."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name. Rendered as bold TEXT only — never a logo graphic — to avoid trademark issues."
+    },
+    "category": {
+      "type": "string",
+      "description": "Must be one of the categories listed in the dataset's top-level categories array."
+    },
+    "support_type": {
+      "type": "string",
+      "enum": ["phone", "online_only"],
+      "description": "'phone' = dialable; 'online_only' = brand offers NO phone support. When 'online_only', phone MUST be null and the app MUST show the no-phone-support warning instead of dialing."
+    },
+    "phone": {
+      "type": ["string", "null"],
+      "pattern": "^\\+[1-9][0-9]{7,14}$",
+      "description": "E.164 number passed to the native dialer. MUST be null when support_type is 'online_only'."
+    },
+    "phone_display": {
+      "type": ["string", "null"],
+      "description": "Human-readable number shown in the UI (e.g. '1-800-275-2753'). Null when support_type is 'online_only'."
+    },
+    "brand_color_hex": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Official signature corporate color used as the button background."
+    },
+    "text_color_hex": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Foreground color chosen for high contrast against brand_color_hex (WCAG AA target for large text)."
+    },
+    "safety_warning": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Category-specific just-in-time warning shown on the 3-second full-screen safety prompt before dialing."
+    },
+    "official_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "official_support_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Authoritative page used to human-verify the phone number during the verification process."
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "source", "verified_on", "verified_by"],
+      "description": "Provenance / data-integrity record. The directory may not be marketed as 'verified' until status is 'verified'.",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["unverified_seed", "verified", "flagged_stale"],
+          "description": "'unverified_seed' = dev placeholder; 'verified' = a human confirmed it against source on verified_on; 'flagged_stale' = freshness check failed, do not display until re-verified."
+        },
+        "source": {
+          "type": ["string", "null"],
+          "description": "URL the human used to confirm the number."
+        },
+        "verified_on": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "ISO date of last human verification."
+        },
+        "verified_by": {
+          "type": ["string", "null"],
+          "description": "Identifier of the reviewer who verified the entry."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "support_type": { "const": "online_only" } } },
+      "then": {
+        "properties": {
+          "phone": { "const": null },
+          "phone_display": { "const": null }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "support_type": { "const": "phone" } } },
+      "then": {
+        "properties": {
+          "phone": { "type": "string" },
+          "phone_display": { "type": "string" }
+        }
+      }
+    }
+  ]
+}
