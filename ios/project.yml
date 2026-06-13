@@ -41,15 +41,25 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: app.seniordirectory.app
         TARGETED_DEVICE_FAMILY: "1,2"   # iPhone + iPad
         CODE_SIGN_STYLE: Automatic
+      configs:
+        # Debug talks to a backend on your Mac; Release talks to production.
+        Debug:
+          API_BASE_URL: http://localhost:8000
+        Release:
+          API_BASE_URL: https://api.senior-directory.app
     info:
       path: SeniorDirectory/Info.plist
       properties:
         CFBundleDisplayName: Safe Numbers
-        # Read by AppConfig.apiBaseURL — override per-scheme/CI as needed.
-        API_BASE_URL: https://api.senior-directory.app
+        # Resolved from the per-config API_BASE_URL build setting above.
+        API_BASE_URL: $(API_BASE_URL)
         # Required so Dialer's canOpenURL(tel:) returns true.
         LSApplicationQueriesSchemes:
           - tel
+        # Allow the Debug build to reach the http://localhost backend under ATS.
+        # (Release uses https, so this exception is harmless in production.)
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
         UILaunchScreen:
           UIColorName: ""
         UISupportedInterfaceOrientations:
