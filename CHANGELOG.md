@@ -57,6 +57,12 @@ All notable changes to Senior Directory v1.0, in build order. Branch:
   an `Info.plist` with `API_BASE_URL` and the `tel` query scheme, and the test target +
   shared scheme. Generated `.xcodeproj`/`Info.plist` are gitignored.
 
+### CI
+- `.github/workflows/ci.yml`: three jobs on every push/PR — **data-contract**
+  (`validate.py`), **backend** (pytest on Ubuntu/Py3.11), and **iOS** (XcodeGen +
+  `xcodebuild test` on a macOS runner, the first place the Swift actually compiles).
+  Replaces the placeholder `blank.yml`. Concurrency-cancels superseded runs.
+
 ### Docs
 - Top-level `README.md`, `docs/ARCHITECTURE.md`, `docs/PRODUCT.md` (validation, risk
   register, suite roadmap incl. a future email-scam-protection exploration), per-layer

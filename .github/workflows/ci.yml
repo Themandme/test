@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# Cancel superseded runs on the same ref.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  data-contract:
+    name: Data contract
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install jsonschema
+        run: pip install jsonschema
+      - name: Validate brands.json + schemas
+        run: python data/validate.py
+
+  backend:
+    name: Backend (FastAPI)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: python -m pytest -q
+
+  ios:
+    name: iOS app (build + test)
+    # macOS runner required for SwiftUI/CryptoKit/UIKit + Xcode toolchain.
+    runs-on: macos-14
+    defaults:
+      run:
+        working-directory: ios
+    steps:
+      - uses: actions/checkout@v4
+      # Uses the runner's default Xcode (15.x on macos-14), which supports iOS 17.
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate project
+        run: xcodegen generate
+      - name: Resolve Swift packages (GRDB)
+        run: xcodebuild -resolvePackageDependencies -project SeniorDirectory.xcodeproj -scheme SeniorDirectory
+      - name: Build & test
+        run: |
+          xcodebuild test \
+            -project SeniorDirectory.xcodeproj \
+            -scheme SeniorDirectory \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            -resultBundlePath TestResults.xcresult \
+            CODE_SIGNING_ALLOWED=NO
