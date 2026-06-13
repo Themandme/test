@@ -52,10 +52,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       # Uses the runner's default Xcode (15.x on macos-14), which supports iOS 17.
-      - name: Install XcodeGen
-        run: brew install xcodegen
+      # NOTE: do NOT `brew install xcodegen` — Homebrew's latest (2.45.x) writes the
+      # Xcode-16.3 project format (objectVersion 77), which the runner's Xcode 15.4
+      # cannot open. Pin 2.42.0, which writes objectVersion 56 (Xcode 14/15/16-compatible).
+      - name: Install XcodeGen (pinned 2.42.0)
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/xcodegen.zip" \
+            https://github.com/yonaskolb/XcodeGen/releases/download/2.42.0/xcodegen.zip
+          unzip -q "$RUNNER_TEMP/xcodegen.zip" -d "$RUNNER_TEMP/xcodegen"
+          BIN="$(find "$RUNNER_TEMP/xcodegen" -type f -name xcodegen -perm +111 | head -1)"
+          test -n "$BIN" || { echo "xcodegen binary not found in zip"; exit 1; }
+          echo "XCODEGEN=$BIN" >> "$GITHUB_ENV"
       - name: Generate project
-        run: xcodegen generate
+        run: |
+          "$XCODEGEN" generate
       - name: Resolve Swift packages (GRDB)
         run: xcodebuild -resolvePackageDependencies -project SeniorDirectory.xcodeproj -scheme SeniorDirectory
       - name: Build & test

@@ -65,16 +65,23 @@ The project is defined declaratively in [`project.yml`](project.yml) for
 committed (loose sources stay reviewable in git).
 
 ```bash
-brew install xcodegen        # one-time
 cd ios
-./bootstrap.sh               # generate project, resolve GRDB, build + test
+./bootstrap.sh               # downloads pinned XcodeGen, generates, builds + tests
 ```
 
-Or do it by hand:
+`bootstrap.sh` downloads **XcodeGen 2.42.0** itself — do **not** `brew install xcodegen`.
+Homebrew's latest XcodeGen (2.45.x) writes the Xcode-16.3 project format
+(`objectVersion 77`), which fails to open in older Xcode with *"future Xcode project file
+format (77)."* 2.42.0 writes `objectVersion 56`, which opens in Xcode 14/15/16.
+
+To do it by hand, use that same pinned version:
 
 ```bash
 cd ios
-xcodegen generate            # creates SeniorDirectory.xcodeproj
+curl -fsSL -o /tmp/xg.zip https://github.com/yonaskolb/XcodeGen/releases/download/2.42.0/xcodegen.zip
+unzip -q /tmp/xg.zip -d /tmp/xg
+rm -rf SeniorDirectory.xcodeproj          # drop any stale newer-format project
+"$(find /tmp/xg -type f -name xcodegen -perm +111 | head -1)" generate
 open SeniorDirectory.xcodeproj
 ```
 

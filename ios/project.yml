@@ -9,10 +9,11 @@ options:
     iOS: "17.0"
   createIntermediateGroups: true
   groupSortPosition: top
-  # Pin the .pbxproj format so the generated project opens in older Xcode.
-  # 56 = Xcode 14/15-compatible; newer XcodeGen otherwise defaults to 77
-  # (Xcode 16.3 format), which fails with "future project file format (77)".
-  objectVersion: 56
+  # NOTE on project format: the .pbxproj objectVersion is controlled by the XcodeGen
+  # VERSION, not by an option here. Use XcodeGen 2.42.0 (see bootstrap.sh / ci.yml),
+  # which writes objectVersion 56 and opens in Xcode 14/15/16. XcodeGen >= 2.43 writes
+  # objectVersion 77 (Xcode 16.3 format), which fails with "future project file
+  # format (77)" in older Xcode.
 
 packages:
   GRDB:
