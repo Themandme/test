@@ -1,5 +1,12 @@
 import Foundation
 
+/// Response of `GET /v1/signing-key`. Field name must survive `.convertFromSnakeCase`:
+/// the JSON key `public_key_b64` decodes to `publicKeyB64` (the "b64" is one token).
+struct SigningKeyResponse: Codable, Equatable {
+    let algorithm: String
+    let publicKeyB64: String
+}
+
 /// Thin network client. Used only at activation time and for occasional refreshes —
 /// never on the hot path. The directory and contacts run entirely from the local cache.
 struct APIClient {
@@ -31,9 +38,8 @@ struct APIClient {
     }
 
     func fetchSigningKey() async throws -> String {
-        struct Key: Codable { let algorithm: String; let publicKeyBase64: String }
-        let key: Key = try await get("/v1/signing-key")
-        return key.publicKeyBase64
+        let key: SigningKeyResponse = try await get("/v1/signing-key")
+        return key.publicKeyB64
     }
 
     /// Fetches and cryptographically verifies the activation payload.
