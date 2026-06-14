@@ -26,32 +26,56 @@ struct SearchBar: View {
     }
 }
 
-/// A national-brand button: bold brand-colored text on the brand's signature palette.
+/// A national-brand button: bold brand-colored text on the brand's signature palette,
+/// with a gradient, a brand-tinted shadow, and a clear "Tap to call" affordance.
 /// No logo graphics (trademark-safe). Tapping invokes the safety prompt, never dials
 /// directly.
 struct BrandButton: View {
     let brand: Brand
     let onTap: () -> Void
 
+    private var foreground: Color { Color(hex: brand.textColorHex) }
+
     var body: some View {
         Button(action: onTap) {
-            VStack(spacing: 6) {
+            VStack(spacing: 10) {
                 Text(brand.name)
                     .font(Theme.Font.brand)
                     .minimumScaleFactor(0.7)
                     .lineLimit(2)
                     .multilineTextAlignment(.center)
-                if !brand.isDialable {
-                    Label("No phone line", systemImage: "exclamationmark.triangle.fill")
-                        .font(.system(size: 14, weight: .bold))
-                }
+                statusPill
             }
-            .foregroundStyle(Color(hex: brand.textColorHex))
-            .frame(maxWidth: .infinity, minHeight: 92)
-            .padding(8)
-            .background(RoundedRectangle(cornerRadius: Theme.cornerRadius).fill(Color(hex: brand.brandColorHex)))
+            .foregroundStyle(foreground)
+            .frame(maxWidth: .infinity, minHeight: Theme.tileMinHeight)
+            .padding(10)
+            .background(
+                RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous)
+                    .fill(LinearGradient.brand(brand.brandColorHex))
+            )
+            .overlay(
+                // Subtle top highlight gives the flat fill a bit of dimension.
+                RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous)
+                    .strokeBorder(Color.white.opacity(0.18), lineWidth: 1)
+            )
+            .shadow(color: Color(hex: brand.brandColorHex).opacity(0.35), radius: 7, x: 0, y: 4)
         }
+        .buttonStyle(PressableButtonStyle())
         .accessibilityLabel("\(brand.name)\(brand.isDialable ? "" : ", no phone support")")
+    }
+
+    /// A small chip that signals the action ("Tap to call") or the safety state
+    /// ("No phone line") for the online-only brands.
+    private var statusPill: some View {
+        HStack(spacing: 6) {
+            Image(systemName: brand.isDialable ? "phone.fill" : "exclamationmark.triangle.fill")
+            Text(brand.isDialable ? "Tap to call" : "No phone line")
+        }
+        .font(Theme.Font.pill)
+        .foregroundStyle(foreground)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 5)
+        .background(Capsule().fill(foreground.opacity(0.18)))
     }
 }
 
@@ -63,7 +87,11 @@ struct ContactButton: View {
     var body: some View {
         Button { Dialer.call(contact.phone) } label: {
             HStack(spacing: 14) {
-                Image(systemName: "phone.fill").font(.system(size: 24))
+                Image(systemName: "phone.fill")
+                    .font(.system(size: 22, weight: .bold))
+                    .foregroundStyle(.green)
+                    .frame(width: 48, height: 48)
+                    .background(Circle().fill(Color.green.opacity(0.15)))
                 VStack(alignment: .leading, spacing: 2) {
                     Text(contact.name).font(Theme.Font.brand)
                     Text(contact.category).font(Theme.Font.body).foregroundStyle(.secondary)
@@ -73,8 +101,13 @@ struct ContactButton: View {
             }
             .padding()
             .frame(minHeight: Theme.minTapTarget)
-            .background(RoundedRectangle(cornerRadius: Theme.cornerRadius).fill(.quaternary))
+            .background(RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous).fill(.quaternary))
+            .overlay(
+                RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous)
+                    .strokeBorder(Color.primary.opacity(0.06), lineWidth: 1)
+            )
         }
+        .buttonStyle(PressableButtonStyle())
         .foregroundStyle(.primary)
     }
 }
@@ -87,18 +120,29 @@ struct PanicButton: View {
     var body: some View {
         Button { Dialer.call(contact.phone) } label: {
             HStack(spacing: 16) {
-                Image(systemName: "phone.fill.arrow.up.right").font(.system(size: 30, weight: .bold))
+                Image(systemName: "phone.fill.arrow.up.right")
+                    .font(.system(size: 26, weight: .bold))
+                    .frame(width: 54, height: 54)
+                    .background(Circle().fill(Color.white.opacity(0.22)))
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Call \(contact.name)").font(Theme.Font.brand)
-                    Text(contact.relationship.capitalized).font(Theme.Font.body).opacity(0.9)
+                    Text(contact.relationship.capitalized).font(Theme.Font.body).opacity(0.95)
                 }
                 Spacer()
             }
             .foregroundStyle(.white)
             .padding()
             .frame(maxWidth: .infinity, minHeight: 80)
-            .background(RoundedRectangle(cornerRadius: Theme.cornerRadius).fill(.green))
+            .background(
+                RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous)
+                    .fill(LinearGradient(
+                        colors: [Color(red: 0.20, green: 0.78, blue: 0.35),
+                                 Color(red: 0.13, green: 0.62, blue: 0.27)],
+                        startPoint: .top, endPoint: .bottom))
+            )
+            .shadow(color: Color.green.opacity(0.40), radius: 8, x: 0, y: 4)
         }
+        .buttonStyle(PressableButtonStyle())
         .accessibilityLabel("Call \(contact.name), your \(contact.relationship)")
     }
 }
