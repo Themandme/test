@@ -34,6 +34,10 @@ is the core safety/liability control for this product:
 - A scheduled freshness job should re-check verified numbers and set `flagged_stale`
   on drift; the app must hide `flagged_stale` entries.
 
+See **[VERIFICATION.md](VERIFICATION.md)** for the full process and the release gate, and
+**[verify_numbers.py](verify_numbers.py)** for the automated checker + sign-off worksheet
+generator. (All 50 are currently `unverified_seed`.)
+
 ## Design notes baked into the schema
 
 ### `support_type` — brands with NO phone support
