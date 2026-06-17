@@ -71,9 +71,19 @@ influencer link → web landing → Stripe Checkout (Apple Pay)
 `../web`). With `STRIPE_API_KEY` set they use real Stripe Checkout; unset, a **simulated**
 checkout provisions an account immediately so the funnel works end-to-end without keys.
 
-> Dev DB note: SQLite `create_all` does not run migrations. After a model change (e.g.
-> the checkout columns), delete `backend/senior_directory.db` so it's recreated — an old
-> file will 500 with "no such column". Production should use Postgres + Alembic.
+### Database migrations (Alembic)
+Production schema is managed by Alembic (`create_all` is disabled when
+`ENVIRONMENT=production`):
+
+```bash
+alembic upgrade head                              # apply
+alembic revision --autogenerate -m "my change"    # after editing a model, then review + commit
+```
+
+CI runs `alembic upgrade head` + `alembic check` to catch a model change without a
+migration. In dev/test, `create_all` still builds the schema, so after a model change on
+an existing dev SQLite file either run `alembic upgrade head` or just delete
+`backend/senior_directory.db` to recreate it.
 
 ## Tests
 

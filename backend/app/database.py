@@ -32,5 +32,10 @@ def get_db() -> Iterator[Session]:
 def init_db() -> None:
     # Import models so they register on Base before create_all.
     from . import models  # noqa: F401
+    from .config import get_settings
 
+    if get_settings().is_production:
+        # Production schema is owned by Alembic migrations (`alembic upgrade head`),
+        # run as a deploy step — never auto-created here.
+        return
     Base.metadata.create_all(bind=engine)

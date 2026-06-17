@@ -31,18 +31,27 @@ secret manager, not in the image):
 5. `WEB_BASE_URL` (https) and any `EXTRA_CORS_ORIGINS`.
 6. `ENABLE_DEV_ENDPOINTS=false`.
 
-## Database migrations (required before launch)
-The app currently uses SQLAlchemy `create_all`, which **does not migrate** existing
-schemas (this is why a stale dev DB 500s after a model change). Before production:
+## Database migrations (Alembic)
+Alembic is wired up (`backend/alembic.ini`, `backend/migrations/`). In **production**,
+`create_all` is disabled — the schema is owned by migrations, run as a deploy step:
 
 ```bash
-pip install alembic
-alembic init migrations          # then point env.py at app.database.Base + DATABASE_URL
-alembic revision --autogenerate -m "initial"
-alembic upgrade head             # run on deploy, before starting the app
+cd backend
+alembic upgrade head     # apply migrations before starting the app
 ```
 
-Until Alembic is wired up, schema changes require a fresh DB — never acceptable in prod.
+When you change a model, generate and review a migration:
+
+```bash
+alembic revision --autogenerate -m "describe change"
+# review the generated file in migrations/versions/, then commit it
+alembic upgrade head
+```
+
+CI runs `alembic upgrade head` + `alembic check`, so a model change without a matching
+migration fails the build. (In dev/test, `create_all` still builds the schema for speed.)
+For multi-instance deploys, run migrations as a **single release job**, not per-instance,
+to avoid concurrent-migration races.
 
 ## Rate limiting at scale
 - Set **`REDIS_URL`** (e.g. `redis://host:6379/0`) so the in-app limiter uses the shared
