@@ -1,6 +1,7 @@
 """Account creation + id/code generation."""
 from __future__ import annotations
 
+import hashlib
 import secrets
 
 from sqlalchemy.orm import Session
@@ -10,6 +11,12 @@ from . import models
 
 def _new_id(prefix: str, nbytes: int = 6) -> str:
     return f"{prefix}_{secrets.token_hex(nbytes)}"
+
+
+def hash_api_key(key: str) -> str:
+    """API keys are high-entropy random tokens, so a fast hash (SHA-256) is sufficient
+    and avoids storing the plaintext at rest."""
+    return hashlib.sha256(key.encode()).hexdigest()
 
 
 def generate_activation_code(db: Session) -> str:
@@ -32,11 +39,12 @@ def create_account(
     stripe_checkout_session_id: str | None = None,
     referral_ref: str | None = None,
 ) -> models.Account:
+    plaintext_key = _new_id("cgk", 24)
     account = models.Account(
         id=_new_id("acct"),
         tier=tier,
         senior_display_name=senior_display_name,
-        caregiver_api_key=_new_id("cgk", 16),
+        caregiver_api_key_hash=hash_api_key(plaintext_key),
         stripe_customer_id=stripe_customer_id,
         stripe_subscription_id=stripe_subscription_id,
         stripe_checkout_session_id=stripe_checkout_session_id,
@@ -49,12 +57,16 @@ def create_account(
     db.add(code)
     db.commit()
     db.refresh(account)
+    # The plaintext is shown exactly once (at creation); only the hash is stored.
+    account.plaintext_api_key = plaintext_key
     return account
 
 
 def account_for_api_key(db: Session, api_key: str) -> models.Account | None:
+    if not api_key:
+        return None
     return (
         db.query(models.Account)
-        .filter(models.Account.caregiver_api_key == api_key)
+        .filter(models.Account.caregiver_api_key_hash == hash_api_key(api_key))
         .one_or_none()
     )

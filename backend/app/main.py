@@ -14,15 +14,19 @@ Caregiver dashboard (web; X-API-Key auth):
 """
 from __future__ import annotations
 
+import logging
 import secrets
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Request, Response, status
+from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 
-from . import accounts, activation, checkout, models, signing, stripe_service
+from . import accounts, activation, checkout, models, ratelimit, signing, stripe_service
 from .brands import load_brands
 from .config import get_settings
 from .database import get_db, init_db
+
+log = logging.getLogger("senior_directory")
 from .schemas import (
     AccountCreatedOut,
     ActivationPayload,
@@ -38,22 +42,62 @@ from .schemas import (
 )
 
 app = FastAPI(title="Senior Directory API", version="1.0.0")
+_settings = get_settings()
 
 # The web funnel is served from a different origin than the API, so allow it via CORS.
-# The mobile app is not a browser and is unaffected.
+# The mobile app is not a browser and is unaffected. Origins are restricted (no "*").
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 
-_web = get_settings().web_base_url
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=list({_web, "http://localhost:5173", "http://127.0.0.1:5173"}),
-    allow_methods=["GET", "POST"],
-    allow_headers=["*"],
+    allow_origins=_settings.cors_origins(),
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["Content-Type", "X-API-Key"],
 )
+
+
+@app.middleware("http")
+async def rate_limit_and_headers(request: Request, call_next):
+    s = get_settings()
+    ip = ratelimit.client_ip(request, trust_proxy=s.is_production)
+    path = request.url.path
+
+    if path.startswith("/v1/activate/"):
+        # Hard limit + global circuit breaker: activation returns PII keyed on a
+        # 6-digit code, so enumeration must be throttled aggressively.
+        ok, retry = ratelimit.limiter.allow(f"act:{ip}", s.activation_rate_limit, s.activation_rate_window_s)
+        gok, gretry = ratelimit.limiter.allow("act:global", s.activation_global_limit, s.activation_rate_window_s)
+        if not ok or not gok:
+            return JSONResponse(
+                {"detail": "Too many attempts. Please wait and try again."},
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                headers={"Retry-After": str(retry or gretry)},
+            )
+    elif path != "/health":
+        ok, retry = ratelimit.limiter.allow(f"api:{ip}", s.api_rate_limit, s.api_rate_window_s)
+        if not ok:
+            return JSONResponse(
+                {"detail": "Too many requests."},
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                headers={"Retry-After": str(retry)},
+            )
+
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "no-referrer"
+    response.headers["Cache-Control"] = "no-store"
+    if s.is_production:
+        response.headers["Strict-Transport-Security"] = "max-age=63072000; includeSubDomains"
+    return response
 
 
 @app.on_event("startup")
 def _startup() -> None:
+    problems = _settings.validate_for_runtime()
+    if problems:
+        msg = "Refusing to start — production safety checks failed:\n  - " + "\n  - ".join(problems)
+        raise RuntimeError(msg)
     init_db()
     load_brands()  # warm the cache / fail fast on a bad dataset
 
@@ -243,8 +287,8 @@ def dev_create_account(
     senior_display_name: str = "Mom",
     db: Session = Depends(get_db),
 ) -> AccountCreatedOut:
-    if get_settings().stripe_webhook_secret:
-        raise HTTPException(status.HTTP_403_FORBIDDEN, "Dev endpoint disabled in configured env")
+    if not get_settings().dev_endpoints_enabled:
+        raise HTTPException(status.HTTP_403_FORBIDDEN, "Dev endpoint disabled in this environment")
     if tier not in {"free", "premium"}:
         raise HTTPException(status.HTTP_400_BAD_REQUEST, "tier must be free or premium")
     account = accounts.create_account(db, tier=tier, senior_display_name=senior_display_name)
@@ -252,5 +296,5 @@ def dev_create_account(
         account_id=account.id,
         tier=account.tier,
         activation_code=account.activation_code.code,
-        caregiver_api_key=account.caregiver_api_key,
+        caregiver_api_key=account.plaintext_api_key,  # shown once; only the hash is stored
     )

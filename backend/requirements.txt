@@ -7,6 +7,10 @@ cryptography>=41.0.7
 stripe==11.4.1
 python-dotenv==1.0.1
 
+# production serving + Postgres driver
+gunicorn==23.0.0
+psycopg[binary]==3.2.3
+
 # dev/test
 pytest==8.3.4
 httpx==0.28.1

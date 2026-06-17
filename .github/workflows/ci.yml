@@ -42,6 +42,19 @@ jobs:
       - name: Run tests
         run: python -m pytest -q
 
+  security-audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: pip-audit (advisory)
+        run: |
+          pip install pip-audit
+          pip-audit -r backend/requirements.txt || echo "::warning::pip-audit reported findings"
+
   ios:
     name: iOS app (build + test)
     # macOS runner required for SwiftUI/CryptoKit/UIKit + Xcode toolchain.

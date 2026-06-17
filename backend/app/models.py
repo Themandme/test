@@ -26,8 +26,9 @@ class Account(Base):
     tier: Mapped[str] = mapped_column(String, default="free")  # free | premium
     senior_display_name: Mapped[str] = mapped_column(String, default="Mom")
 
-    # Caregiver API auth (returned once at creation; used by the web dashboard).
-    caregiver_api_key: Mapped[str] = mapped_column(String, index=True)
+    # Caregiver API auth: only the SHA-256 hash is stored; the plaintext key is shown
+    # once at creation. Looked up by hash.
+    caregiver_api_key_hash: Mapped[str] = mapped_column(String, index=True)
 
     # Billing linkage (never serialized to device).
     stripe_customer_id: Mapped[str | None] = mapped_column(String, nullable=True)

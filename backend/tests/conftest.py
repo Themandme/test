@@ -26,6 +26,15 @@ def _db():
     yield
 
 
+@pytest.fixture(autouse=True)
+def _reset_rate_limiter():
+    # Rate-limit state is process-global; clear it so tests don't bleed into each other.
+    from app.ratelimit import limiter
+
+    limiter.reset()
+    yield
+
+
 @pytest.fixture
 def client():
     return TestClient(app)
