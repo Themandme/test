@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your activation code — Safe Numbers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">📞 Safe Numbers</div>
+  </header>
+
+  <main class="success">
+    <section id="loading" class="success-card">
+      <div class="spinner" aria-hidden="true"></div>
+      <h1>Setting up your account…</h1>
+      <p>This takes just a moment.</p>
+    </section>
+
+    <section id="ready" class="success-card" hidden>
+      <h1>You’re all set! 🎉</h1>
+      <p>Enter this <strong>6-digit code</strong> in the Safe Numbers app on your loved
+         one’s phone:</p>
+      <div class="code" id="code">------</div>
+      <ol class="next-steps">
+        <li>Open the Safe Numbers app and tap to activate.</li>
+        <li>Type the code above.</li>
+        <li>Add their doctor, pharmacy, and a “Call me” contact from your account.</li>
+      </ol>
+      <p class="fine">Keep this code handy — you’ll also receive it by email.</p>
+    </section>
+
+    <section id="error" class="success-card" hidden>
+      <h1>Hmm, that didn’t work</h1>
+      <p>We couldn’t find your activation code yet. If you just paid, give it a few
+         seconds and refresh. Otherwise, contact support.</p>
+      <button class="btn btn-primary" onclick="location.reload()">Try again</button>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="success.js"></script>
+</body>
+</html>

@@ -5,6 +5,19 @@ All notable changes to Senior Directory v1.0, in build order. Branch:
 
 ## [Unreleased]
 
+### Web checkout funnel — `web/` + backend
+- Static funnel: `index.html` (landing + pricing, captures influencer `?ref=`),
+  `success.html` (polls for and shows the 6-digit code), `config.js`/`styles.css`.
+- Backend: `POST /v1/checkout/session` and `GET /v1/checkout/result` (`app/checkout.py`).
+  Real Stripe Checkout when `STRIPE_API_KEY` is set; otherwise a **simulated** checkout
+  provisions an account immediately so the funnel runs end-to-end with no keys.
+- Account now stores `stripe_checkout_session_id` + `referral_ref` (affiliate
+  attribution); webhook + result lookup both populate them. CORS added for the web origin.
+- 4 funnel tests (simulated path); suite now 15 green. Verified end-to-end locally
+  (checkout → activation code → `/v1/activate`).
+- Dev note: SQLite `create_all` doesn't migrate; delete `backend/senior_directory.db`
+  after a model change (the new columns) or checkout 500s on the old schema.
+
 ### 1. Shared data contract — `data/`
 - `brands.json`: the 50 most-impersonated national brands, each with an official number
   (E.164), signature corporate color + a contrast-checked text color, and a

@@ -19,7 +19,7 @@ import secrets
 from fastapi import Depends, FastAPI, Header, HTTPException, Request, Response, status
 from sqlalchemy.orm import Session
 
-from . import accounts, activation, models, signing, stripe_service
+from . import accounts, activation, checkout, models, signing, stripe_service
 from .brands import load_brands
 from .config import get_settings
 from .database import get_db, init_db
@@ -27,6 +27,9 @@ from .schemas import (
     AccountCreatedOut,
     ActivationPayload,
     BrandsResponse,
+    CheckoutResultOut,
+    CheckoutSessionIn,
+    CheckoutSessionOut,
     CustomContactIn,
     CustomContactOut,
     EmergencyContactIn,
@@ -35,6 +38,18 @@ from .schemas import (
 )
 
 app = FastAPI(title="Senior Directory API", version="1.0.0")
+
+# The web funnel is served from a different origin than the API, so allow it via CORS.
+# The mobile app is not a browser and is unaffected.
+from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
+
+_web = get_settings().web_base_url
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=list({_web, "http://localhost:5173", "http://127.0.0.1:5173"}),
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
+)
 
 
 @app.on_event("startup")
@@ -75,6 +90,27 @@ def activate(code: str, db: Session = Depends(get_db)) -> ActivationPayload:
     db.commit()
 
     return activation.build_payload(record.account)
+
+
+# ---- Web checkout funnel ---------------------------------------------------------
+@app.post("/v1/checkout/session", response_model=CheckoutSessionOut)
+def create_checkout_session(
+    body: CheckoutSessionIn, db: Session = Depends(get_db)
+) -> CheckoutSessionOut:
+    try:
+        result = checkout.create_session(db, plan=body.plan, ref=body.ref)
+    except checkout.CheckoutError as exc:
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, str(exc)) from exc
+    return CheckoutSessionOut(**result)
+
+
+@app.get("/v1/checkout/result", response_model=CheckoutResultOut)
+def checkout_result(session_id: str, db: Session = Depends(get_db)) -> CheckoutResultOut:
+    result = checkout.result_for_session(db, session_id)
+    if result is None:
+        # Account not provisioned yet (webhook in flight) — the page should poll.
+        return CheckoutResultOut(status="pending")
+    return CheckoutResultOut(status="ready", **result)
 
 
 # ---- Stripe webhook (funnel) -----------------------------------------------------

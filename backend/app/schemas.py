@@ -104,3 +104,20 @@ class AccountCreatedOut(BaseModel):
 class SigningKeyOut(BaseModel):
     algorithm: str = "ed25519"
     public_key_b64: str
+
+
+# ---- Web checkout funnel ---------------------------------------------------------
+class CheckoutSessionIn(BaseModel):
+    plan: Literal["monthly", "yearly"]
+    ref: str | None = None  # influencer/affiliate tracking ref
+
+
+class CheckoutSessionOut(BaseModel):
+    checkout_url: str
+    simulated: bool = False
+
+
+class CheckoutResultOut(BaseModel):
+    status: Literal["ready", "pending"]
+    activation_code: str | None = None
+    tier: str | None = None

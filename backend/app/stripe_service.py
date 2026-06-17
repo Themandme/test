@@ -52,11 +52,14 @@ def handle_event(db: Session, event: dict) -> models.Account | None:
 
         price_ids = _extract_price_ids(obj)
         tier = _tier_for_price_ids(price_ids)
+        ref = (obj.get("metadata") or {}).get("ref") or obj.get("client_reference_id")
         return accounts.create_account(
             db,
             tier=tier,
             stripe_customer_id=customer_id,
             stripe_subscription_id=subscription_id,
+            stripe_checkout_session_id=obj.get("id"),
+            referral_ref=ref,
         )
 
     if etype in {"customer.subscription.updated", "customer.subscription.deleted"}:

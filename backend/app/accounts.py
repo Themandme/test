@@ -29,6 +29,8 @@ def create_account(
     senior_display_name: str = "Mom",
     stripe_customer_id: str | None = None,
     stripe_subscription_id: str | None = None,
+    stripe_checkout_session_id: str | None = None,
+    referral_ref: str | None = None,
 ) -> models.Account:
     account = models.Account(
         id=_new_id("acct"),
@@ -37,6 +39,8 @@ def create_account(
         caregiver_api_key=_new_id("cgk", 16),
         stripe_customer_id=stripe_customer_id,
         stripe_subscription_id=stripe_subscription_id,
+        stripe_checkout_session_id=stripe_checkout_session_id,
+        referral_ref=referral_ref,
     )
     db.add(account)
     db.flush()  # assign before creating the code row

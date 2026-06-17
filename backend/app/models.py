@@ -32,6 +32,10 @@ class Account(Base):
     # Billing linkage (never serialized to device).
     stripe_customer_id: Mapped[str | None] = mapped_column(String, nullable=True)
     stripe_subscription_id: Mapped[str | None] = mapped_column(String, nullable=True)
+    # Checkout session that provisioned this account; lets the web success page
+    # look up the activation code by session id. Also stores the influencer ref.
+    stripe_checkout_session_id: Mapped[str | None] = mapped_column(String, index=True, nullable=True)
+    referral_ref: Mapped[str | None] = mapped_column(String, nullable=True)
 
     created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 

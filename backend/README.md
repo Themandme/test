@@ -65,6 +65,16 @@ influencer link → web landing → Stripe Checkout (Apple Pay)
   payload's `limits` so the offline app can show a neutral "list full" state — never a
   paywall.
 
+## Web checkout funnel
+
+`POST /v1/checkout/session` + `GET /v1/checkout/result` power the web funnel (see
+`../web`). With `STRIPE_API_KEY` set they use real Stripe Checkout; unset, a **simulated**
+checkout provisions an account immediately so the funnel works end-to-end without keys.
+
+> Dev DB note: SQLite `create_all` does not run migrations. After a model change (e.g.
+> the checkout columns), delete `backend/senior_directory.db` so it's recreated — an old
+> file will 500 with "no such column". Production should use Postgres + Alembic.
+
 ## Tests
 
 ```bash

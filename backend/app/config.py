@@ -29,6 +29,12 @@ class Settings(BaseSettings):
     stripe_webhook_secret: str = ""
     # Stripe price IDs mapped to entitlement tiers.
     stripe_premium_price_ids: str = ""  # comma-separated price_… ids that grant premium
+    # Price IDs for the two web-checkout plans (both grant premium).
+    stripe_price_monthly: str = ""
+    stripe_price_yearly: str = ""
+
+    # Public base URL of the web funnel (used for Stripe success/cancel redirects).
+    web_base_url: str = "http://localhost:5173"
 
     # Activation payload signing (Ed25519). Base64-encoded 32-byte seed.
     # If empty, a development key is generated at startup (NOT for production).
@@ -38,7 +44,16 @@ class Settings(BaseSettings):
     free_tier_max_custom_contacts: int = 3
 
     def premium_price_id_set(self) -> set[str]:
-        return {p.strip() for p in self.stripe_premium_price_ids.split(",") if p.strip()}
+        ids = {p.strip() for p in self.stripe_premium_price_ids.split(",") if p.strip()}
+        ids |= {p for p in (self.stripe_price_monthly, self.stripe_price_yearly) if p}
+        return ids
+
+    def price_id_for_plan(self, plan: str) -> str | None:
+        return {"monthly": self.stripe_price_monthly, "yearly": self.stripe_price_yearly}.get(plan)
+
+    @property
+    def stripe_enabled(self) -> bool:
+        return bool(self.stripe_api_key)
 
     def load_signing_key(self) -> Ed25519PrivateKey:
         if self.signing_key_seed_b64:
