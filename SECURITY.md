@@ -25,8 +25,10 @@ This documents the threat model, the protections in place, and what remains.
 | **Over-permissive CORS** | Origins restricted to the web funnel (no `*`); methods/headers scoped. | `main.py`, `config.cors_origins` |
 
 ## Known limitations / hardening backlog
-- **Rate limiting is per-process.** For multi-instance deploys, add edge rate limiting
-  (Cloudflare/API gateway) and/or a shared store (Redis) behind the `ratelimit` interface.
+- **Rate limiting backend.** Default is per-process (in-memory). Set `REDIS_URL` to use
+  the shared Redis backend so limits are **exact across all workers and instances**
+  (`RedisSlidingWindowLimiter`, atomic Lua sliding window, fails open if Redis is down).
+  Edge rate limiting (Cloudflare/WAF) is still recommended as a pre-app backstop.
 - **Activation codes are 6 digits** (product requirement for caregiver entry). Rate
   limiting is the primary defense; consider also: single-use-after-activation, device
   binding, short code TTL, and anomaly alerting on `act:global` trips.

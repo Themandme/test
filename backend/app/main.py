@@ -59,14 +59,15 @@ app.add_middleware(
 @app.middleware("http")
 async def rate_limit_and_headers(request: Request, call_next):
     s = get_settings()
+    limiter = ratelimit.get_limiter()
     ip = ratelimit.client_ip(request, trust_proxy=s.is_production)
     path = request.url.path
 
     if path.startswith("/v1/activate/"):
         # Hard limit + global circuit breaker: activation returns PII keyed on a
         # 6-digit code, so enumeration must be throttled aggressively.
-        ok, retry = ratelimit.limiter.allow(f"act:{ip}", s.activation_rate_limit, s.activation_rate_window_s)
-        gok, gretry = ratelimit.limiter.allow("act:global", s.activation_global_limit, s.activation_rate_window_s)
+        ok, retry = limiter.allow(f"act:{ip}", s.activation_rate_limit, s.activation_rate_window_s)
+        gok, gretry = limiter.allow("act:global", s.activation_global_limit, s.activation_rate_window_s)
         if not ok or not gok:
             return JSONResponse(
                 {"detail": "Too many attempts. Please wait and try again."},
@@ -74,7 +75,7 @@ async def rate_limit_and_headers(request: Request, call_next):
                 headers={"Retry-After": str(retry or gretry)},
             )
     elif path != "/health":
-        ok, retry = ratelimit.limiter.allow(f"api:{ip}", s.api_rate_limit, s.api_rate_window_s)
+        ok, retry = limiter.allow(f"api:{ip}", s.api_rate_limit, s.api_rate_window_s)
         if not ok:
             return JSONResponse(
                 {"detail": "Too many requests."},

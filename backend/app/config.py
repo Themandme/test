@@ -27,6 +27,10 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///./senior_directory.db"
     brands_path: Path = DEFAULT_BRANDS_PATH
 
+    # Shared rate-limit store. Set to e.g. redis://host:6379/0 to make limits exact across
+    # workers/instances; empty = per-process in-memory limiter.
+    redis_url: str = ""
+
     # Abuse protection. Activation returns PII (a senior's contacts), and codes are only
     # 6 digits, so the activation endpoint is rate-limited hard to prevent enumeration.
     activation_rate_limit: int = 8        # requests …

@@ -44,10 +44,16 @@ alembic upgrade head             # run on deploy, before starting the app
 
 Until Alembic is wired up, schema changes require a fresh DB — never acceptable in prod.
 
+## Rate limiting at scale
+- Set **`REDIS_URL`** (e.g. `redis://host:6379/0`) so the in-app limiter uses the shared
+  Redis backend — limits are then exact across every worker and instance (without it,
+  each process counts independently, so the effective limit is ~N×). Redis outages fail
+  open (degrade protection, don't break the API).
+- Also add **rate limiting at the edge** for `/v1/activate/*` (CDN/WAF, e.g. Cloudflare)
+  as a pre-app backstop against enumeration.
+
 ## Edge hardening (do at the load balancer / CDN)
 - **TLS termination + HSTS** in front of the app.
-- **Rate limiting at the edge** for `/v1/activate/*` — the in-app limiter is per-process;
-  a CDN/WAF rule (e.g. Cloudflare) gives shared, pre-app protection against enumeration.
 - Set `FORWARDED_ALLOW_IPS` to your proxy/LB CIDR so client IPs are trusted correctly.
 - Restrict the Stripe webhook path to Stripe's IPs if your platform supports it.
 
