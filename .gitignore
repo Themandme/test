@@ -23,3 +23,11 @@ ios/SeniorDirectory/Info.plist
 
 # Generated verification worksheet
 verification_worksheet.csv
+
+# Android / Gradle
+.gradle/
+android/local.properties
+android/.idea/
+*.apk
+*.aab
+*.keystore

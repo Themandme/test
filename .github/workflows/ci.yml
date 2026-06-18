@@ -61,6 +61,25 @@ jobs:
           pip install pip-audit
           pip-audit -r backend/requirements.txt || echo "::warning::pip-audit reported findings"
 
+  android:
+    name: Android app (build + test)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Sync brands.json asset from canonical data/
+        run: cp data/brands.json android/app/src/main/assets/brands.json
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.10.2"
+      - name: Build + unit test
+        working-directory: android
+        run: gradle --no-daemon :app:assembleDebug :app:testDebugUnitTest
+
   ios:
     name: iOS app (build + test)
     # macOS runner required for SwiftUI/CryptoKit/UIKit + Xcode toolchain.

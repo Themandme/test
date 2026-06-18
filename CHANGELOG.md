@@ -5,6 +5,20 @@ All notable changes to Senior Directory v1.0, in build order. Branch:
 
 ## [Unreleased]
 
+### Android app — `android/` (Kotlin + Jetpack Compose)
+- Full feature parity with iOS: activation → signed offline cache (SharedPreferences) →
+  directory grid + local search → 3-second JIT safety prompt → native dialer
+  (`ACTION_DIAL`) → panic button + caregiver pre-loaded contacts.
+- Same data contract: bundles `data/brands.json` as an asset; models via
+  kotlinx.serialization; thin OkHttp client for activation/refresh only.
+- Ed25519 payload verification (BouncyCastle) with a canonical string that matches the
+  backend and iOS **byte-for-byte** — pinned by a JUnit test against a backend-generated
+  golden value.
+- Debug → `http://10.0.2.2:8000` (emulator host alias), Release → prod HTTPS; cleartext
+  scoped to dev hosts via network-security-config; backup disabled (PII).
+- Gradle (Kotlin DSL) + version catalog; CI `android` job runs `assembleDebug` +
+  `testDebugUnitTest`.
+
 ### Web checkout funnel — `web/` + backend
 - Static funnel: `index.html` (landing + pricing, captures influencer `?ref=`),
   `success.html` (polls for and shows the 6-digit code), `config.js`/`styles.css`.
