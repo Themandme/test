@@ -80,8 +80,8 @@
       "properties": {
         "status": {
           "type": "string",
-          "enum": ["unverified_seed", "verified", "flagged_stale"],
-          "description": "'unverified_seed' = dev placeholder; 'verified' = a human confirmed it against source on verified_on; 'flagged_stale' = freshness check failed, do not display until re-verified."
+          "enum": ["unverified_seed", "web_corroborated", "verified", "flagged_stale"],
+          "description": "'unverified_seed' = dev placeholder; 'web_corroborated' = cross-checked via web research (official-domain-weighted), pending official-page/human confirmation; 'verified' = a human confirmed it against source on verified_on; 'flagged_stale' = freshness check failed, do not display until re-verified."
         },
         "source": {
           "type": ["string", "null"],

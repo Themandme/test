@@ -99,7 +99,7 @@ def main() -> int:
             err(f"{bid}: support_type must be 'phone' or 'online_only', got '{st}'")
 
         v = b.get("verification", {})
-        if v.get("status") not in {"unverified_seed", "verified", "flagged_stale"}:
+        if v.get("status") not in {"unverified_seed", "web_corroborated", "verified", "flagged_stale"}:
             err(f"{bid}: bad verification.status '{v.get('status')}'")
 
         try_schema_validation(b, brand_schema, f"brand[{bid}]")

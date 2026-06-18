@@ -4,17 +4,32 @@ A wrong customer-service number in this app could route a senior straight to a s
 So number verification is a **release gate**, not a nicety. This file defines the process
 and tracks status.
 
-## Current status: ❌ NONE VERIFIED
+## Current status (as of 2026-06-18)
 
-All 50 brands are `verification.status = "unverified_seed"`. The numbers are plausible,
-widely-published values entered as development seed data — they have **not** been
-confirmed against each brand's official page. The directory must **not** be marketed as
-"verified" (use "spoof-resistant") until this gate is cleared.
+| Status | Count | Meaning |
+|---|---|---|
+| `web_corroborated` | 37 | Cross-checked via web research (official-domain-weighted). **Not** final. |
+| `unverified_seed` | 13 | Lower-confidence — needs an official-page/human check (see below). |
+| `verified` | 0 | A human confirmed it against the official page. **None yet.** |
 
-> Note: this pass could not be run in the build sandbox — the official brand domains
-> bot-block all automated fetches (HTTP 403 to both WebFetch and `curl` from datacenter
-> IPs). Run the tooling below from a normal network (a developer machine, or CI with
-> browser-grade egress).
+The directory must **not** be marketed as "verified" (use "spoof-resistant") until the
+`verified` count reaches 50.
+
+> The official brand domains bot-block automated fetches from datacenter IPs (HTTP 403 to
+> both WebFetch and `curl`), so the corroboration pass used **web search**, weighting the
+> brands' own domains. That is good triage but is **not** an authoritative official-page
+> read. Finish the gate with the worksheet below from a normal browser.
+
+### Correction made during corroboration
+- **Apple**: seed `1-800-275-2753` was wrong → corrected to **`1-800-275-2273`**
+  (1-800-APL-CARE), confirmed on support.apple.com.
+
+### The 13 that still need an official/human check (priority)
+Lower-confidence (corroboration leaned on aggregators or the number wasn't on the brand's
+own page in results): `disney_plus`, `hulu`, `max`, `paramount_plus`, `mcafee`, `dell`,
+`cox`, `citibank`, `capital_one`, `american_express`, `synchrony`, `paypal`, `norton`.
+Norton is the weakest (aggregator-only). Hulu/Max/Paramount+ are `online_only` (confirm
+there is genuinely no official phone line).
 
 ## Two ways to verify
 

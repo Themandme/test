@@ -16,7 +16,7 @@ HEX = r"^#[0-9A-Fa-f]{6}$"
 
 # ---- Directory (national brands) -------------------------------------------------
 class Verification(BaseModel):
-    status: Literal["unverified_seed", "verified", "flagged_stale"]
+    status: Literal["unverified_seed", "web_corroborated", "verified", "flagged_stale"]
     source: str | None = None
     verified_on: str | None = None
     verified_by: str | None = None
