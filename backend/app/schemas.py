@@ -106,6 +106,20 @@ class SigningKeyOut(BaseModel):
     public_key_b64: str
 
 
+# ---- Caregiver dashboard ---------------------------------------------------------
+class AccountSummaryOut(BaseModel):
+    account_id: str
+    tier: str
+    senior_display_name: str
+    activation_code: str
+    limits: Limits
+    custom_contacts_count: int
+
+
+class AccountUpdateIn(BaseModel):
+    senior_display_name: str = Field(min_length=1, max_length=60)
+
+
 # ---- Web checkout funnel ---------------------------------------------------------
 class CheckoutSessionIn(BaseModel):
     plan: Literal["monthly", "yearly"]

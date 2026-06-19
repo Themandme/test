@@ -5,6 +5,12 @@ All notable changes to Senior Directory v1.0, in build order. Branch:
 
 ## [Unreleased]
 
+### Caregiver dashboard — `web/dashboard.*` + backend
+- Static web dashboard: caregiver signs in with their `cgk_…` key to manage the senior's
+  account — activation code, plan + usage, the "Call My Person" emergency contact, and
+  saved contacts (add/remove, Free-tier 3-cap enforced). Phones normalized to E.164.
+- Backend: `GET/PUT /v1/account` (summary + rename senior). 4 new tests; suite 29 green.
+
 ### Android app — `android/` (Kotlin + Jetpack Compose)
 - Full feature parity with iOS: activation → signed offline cache (SharedPreferences) →
   directory grid + local search → 3-second JIT safety prompt → native dialer

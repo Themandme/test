@@ -29,6 +29,8 @@ from .database import get_db, init_db
 log = logging.getLogger("senior_directory")
 from .schemas import (
     AccountCreatedOut,
+    AccountSummaryOut,
+    AccountUpdateIn,
     ActivationPayload,
     BrandsResponse,
     CheckoutResultOut,
@@ -38,6 +40,7 @@ from .schemas import (
     CustomContactOut,
     EmergencyContactIn,
     EmergencyContactOut,
+    Limits,
     SigningKeyOut,
 )
 
@@ -192,6 +195,34 @@ def caregiver_account(
     if account is None:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "Invalid or missing API key")
     return account
+
+
+def _account_summary(account: models.Account) -> AccountSummaryOut:
+    return AccountSummaryOut(
+        account_id=account.id,
+        tier=account.tier,
+        senior_display_name=account.senior_display_name,
+        activation_code=account.activation_code.code,
+        limits=Limits(max_custom_contacts=account.max_custom_contacts),
+        custom_contacts_count=len(account.custom_contacts),
+    )
+
+
+@app.get("/v1/account", response_model=AccountSummaryOut)
+def get_account(account: models.Account = Depends(caregiver_account)) -> AccountSummaryOut:
+    return _account_summary(account)
+
+
+@app.put("/v1/account", response_model=AccountSummaryOut)
+def update_account(
+    body: AccountUpdateIn,
+    account: models.Account = Depends(caregiver_account),
+    db: Session = Depends(get_db),
+) -> AccountSummaryOut:
+    account.senior_display_name = body.senior_display_name
+    db.commit()
+    db.refresh(account)
+    return _account_summary(account)
 
 
 @app.get("/v1/account/emergency-contact", response_model=EmergencyContactOut | None)

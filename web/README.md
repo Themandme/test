@@ -16,8 +16,23 @@ only here on the web.
 |------|---------|
 | `index.html` / `app.js` | Landing + pricing; captures `?ref=` and starts checkout. |
 | `success.html` / `success.js` | Polls the backend and shows the activation code. |
+| `dashboard.html` / `dashboard.js` | Caregiver dashboard (see below). |
 | `styles.css` | Styling. |
 | `config.js` | `API_BASE` + display prices — edit per environment. |
+
+## Caregiver dashboard
+`dashboard.html` lets a caregiver sign in with their **caregiver key** (`cgk_…`, shown
+once at sign-up) and manage the senior's account from a browser:
+
+- See the **activation code**, plan, and contacts used / limit.
+- Set the **"Call My Person"** emergency contact (Feature #2).
+- Add / remove the senior's **saved contacts** (Feature #15); the Free plan caps at 3.
+- Rename who the app is for.
+
+It talks to the `X-API-Key`-authenticated endpoints: `GET/PUT /v1/account`,
+`GET/PUT /v1/account/emergency-contact`, `GET/POST/DELETE /v1/account/contacts`. Phone
+numbers are normalized to E.164 client-side. Open <http://localhost:5173/dashboard.html>
+(after `python -m http.server 5173` in `web/`).
 
 ## Run locally (no Stripe needed)
 The backend uses a **simulated checkout** when `STRIPE_API_KEY` is unset, so the whole
