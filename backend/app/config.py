@@ -31,6 +31,10 @@ class Settings(BaseSettings):
     # workers/instances; empty = per-process in-memory limiter.
     redis_url: str = ""
 
+    # Error monitoring (optional). Set a Sentry DSN to enable; requires `pip install
+    # sentry-sdk` (kept out of base requirements so it stays opt-in).
+    sentry_dsn: str = ""
+
     # Abuse protection. Activation returns PII (a senior's contacts), and codes are only
     # 6 digits, so the activation endpoint is rate-limited hard to prevent enumeration.
     activation_rate_limit: int = 8        # requests …

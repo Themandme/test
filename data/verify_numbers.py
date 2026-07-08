@@ -110,10 +110,19 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true", help="flip CONFIRMED entries to verified")
     ap.add_argument("--worksheet", action="store_true", help="emit a manual-verification CSV and exit")
+    ap.add_argument(
+        "--freshness",
+        action="store_true",
+        help="re-check only verified/web_corroborated entries; with --write, flip drifted "
+        "ones to flagged_stale (backend + apps hide those). FETCH_BLOCKED is inconclusive "
+        "and never flags.",
+    )
     args = ap.parse_args()
 
     doc = json.loads(BRANDS.read_text())
     brands = doc["brands"]
+    if args.freshness:
+        brands = [b for b in brands if b["verification"]["status"] in {"verified", "web_corroborated"}]
 
     if args.worksheet:
         w = csv.writer(sys.stdout)
@@ -133,12 +142,22 @@ def main() -> int:
         counts[status] = counts.get(status, 0) + 1
         seed = b.get("phone") or "online_only"
         print(f"{b['id']:18} {status:16} {seed:14} {', '.join(sorted(cands)) or '-'}")
-        if args.write and status == "CONFIRMED":
+        if args.write and not args.freshness and status == "CONFIRMED":
             b["verification"] = {
                 "status": "verified",
                 "source": url,
                 "verified_on": today,
                 "verified_by": "verify_numbers.py",
+            }
+        # Freshness mode: a previously-good entry whose official page now disagrees (or
+        # no longer shows a number) is quarantined until a human re-verifies. Blocked
+        # fetches are inconclusive and must NOT quarantine a good number.
+        if args.write and args.freshness and status in {"DISCREPANCY", "NOT_FOUND", "REVIEW_HAS_PHONE"}:
+            b["verification"] = {
+                "status": "flagged_stale",
+                "source": url,
+                "verified_on": today,
+                "verified_by": "freshness_check",
             }
 
     print("-" * 78)
@@ -146,8 +165,21 @@ def main() -> int:
 
     if args.write:
         BRANDS.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
-        print(f"\nWrote verified status for {counts.get('CONFIRMED', 0)} CONFIRMED brand(s).")
-        print("NOTE: tool-confirmed still warrants a human spot-check before launch.")
+        if args.freshness:
+            stale = sum(counts.get(k, 0) for k in ("DISCREPANCY", "NOT_FOUND", "REVIEW_HAS_PHONE"))
+            print(f"\nFlagged {stale} drifted entr(y/ies) as flagged_stale (hidden from the app).")
+        else:
+            print(f"\nWrote verified status for {counts.get('CONFIRMED', 0)} CONFIRMED brand(s).")
+            print("NOTE: tool-confirmed still warrants a human spot-check before launch.")
+
+    if args.freshness:
+        # Exit 2 = drift detected (page CI/cron on this); 1 = everything blocked
+        # (inconclusive run); 0 = all checked entries still match.
+        stale = sum(counts.get(k, 0) for k in ("DISCREPANCY", "NOT_FOUND", "REVIEW_HAS_PHONE"))
+        if stale:
+            return 2
+        checked = sum(counts.values())
+        return 1 if checked and counts.get("FETCH_BLOCKED") == checked else 0
 
     # FETCH_BLOCKED means inconclusive, not a pass; surface it as a soft failure signal.
     return 1 if counts.get("FETCH_BLOCKED") else 0

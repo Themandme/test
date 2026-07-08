@@ -5,6 +5,22 @@ All notable changes to Senior Directory v1.0, in build order. Branch:
 
 ## [Unreleased]
 
+### Launch readiness — compliance guard, freshness cron, monitoring, launch docs
+- `scripts/check_store_compliance.py` + CI `store-compliance` job: scans user-facing
+  string literals in both app targets for purchase/pricing language (the 3.1.3 rule the
+  monetization model depends on). Comments/identifiers exempt; verified it catches an
+  injected violation.
+- `verify_numbers.py --freshness` + weekly `number-freshness` workflow: re-checks
+  corroborated/verified numbers against official pages; drift opens a GitHub issue
+  (exit 2), blocked fetches are inconclusive and never quarantine. `--write` flips
+  drifted entries to `flagged_stale` (already hidden by backend + apps). Logic
+  unit-tested with a mocked fetch.
+- Monitoring: optional Sentry (`SENTRY_DSN`, PII off) and a fraud tripwire — the global
+  activation breaker now logs `ACTIVATION GLOBAL RATE LIMIT TRIPPED` for paging.
+- Docs: `docs/PRIVACY_POLICY.md` (draft for counsel), `docs/STORE_SUBMISSION.md`
+  (privacy nutrition label / Data Safety answers, 3.1.3 review notes, asset checklist),
+  and backup/key-rotation/monitoring runbooks in `DEPLOYMENT.md`.
+
 ### Caregiver dashboard — `web/dashboard.*` + backend
 - Static web dashboard: caregiver signs in with their `cgk_…` key to manage the senior's
   account — activation code, plan + usage, the "Call My Person" emergency contact, and

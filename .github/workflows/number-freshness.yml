@@ -1,0 +1,51 @@
+name: Number freshness
+
+# Weekly re-check of every verified/web_corroborated number against the brands'
+# official pages. Numbers drift — and a drifted number in a senior anti-fraud
+# directory is the worst failure mode — so drift opens a GitHub issue for a human
+# to re-verify (and quarantine with `verify_numbers.py --freshness --write`).
+#
+# NOTE: GitHub's datacenter IPs may be bot-blocked by some brands (like the dev
+# sandbox was). A fully-blocked run is INCONCLUSIVE, not a pass — it logs a warning
+# but does not fail, and the check should also be run periodically from a
+# residential/office network.
+
+on:
+  schedule:
+    - cron: "0 9 * * 1" # Mondays 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Re-check corroborated/verified numbers
+        id: check
+        run: |
+          set +e
+          python data/verify_numbers.py --freshness | tee freshness.log
+          code=$?
+          set -e
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" = "1" ]; then
+            echo "::warning::All fetches blocked from this runner — inconclusive. Run from a non-datacenter network."
+          fi
+          # Only drift (exit 2) fails the run; inconclusive (1) and clean (0) pass.
+          [ "$code" != "2" ]
+      - name: Open drift issue
+        if: failure() && steps.check.outputs.exit_code == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "⚠️ Number drift detected in brands.json ($(date -u +%F))" \
+            --body "$(printf 'The weekly freshness check found brand numbers whose official pages no longer match.\n\n**Do not ignore — a drifted number can route a senior to a scammer.**\n\n1. Re-verify the flagged brands against their official pages.\n2. Quarantine or correct: `python data/verify_numbers.py --freshness --write`, review, commit.\n\n```\n%s\n```' "$(cat freshness.log)")"

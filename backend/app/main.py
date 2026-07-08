@@ -71,6 +71,14 @@ async def rate_limit_and_headers(request: Request, call_next):
         # 6-digit code, so enumeration must be throttled aggressively.
         ok, retry = limiter.allow(f"act:{ip}", s.activation_rate_limit, s.activation_rate_window_s)
         gok, gretry = limiter.allow("act:global", s.activation_global_limit, s.activation_rate_window_s)
+        if not gok:
+            # Fraud tripwire: the GLOBAL breaker only trips under distributed
+            # code-enumeration pressure. This log line is the alerting hook — page on it.
+            log.warning(
+                "ACTIVATION GLOBAL RATE LIMIT TRIPPED — possible distributed "
+                "activation-code enumeration attack (last client ip=%s)",
+                ip,
+            )
         if not ok or not gok:
             return JSONResponse(
                 {"detail": "Too many attempts. Please wait and try again."},
@@ -102,6 +110,22 @@ def _startup() -> None:
     if problems:
         msg = "Refusing to start — production safety checks failed:\n  - " + "\n  - ".join(problems)
         raise RuntimeError(msg)
+    if _settings.sentry_dsn:
+        # Optional error monitoring; enabled only when SENTRY_DSN is set and
+        # sentry-sdk is installed. send_default_pii stays off — this API serves
+        # seniors' contact data and none of it belongs in error reports.
+        try:
+            import sentry_sdk
+
+            sentry_sdk.init(
+                dsn=_settings.sentry_dsn,
+                environment=_settings.environment,
+                send_default_pii=False,
+                traces_sample_rate=0.05,
+            )
+            log.info("Sentry error monitoring enabled")
+        except ImportError:
+            log.error("SENTRY_DSN is set but sentry-sdk is not installed (pip install sentry-sdk)")
     init_db()
     load_brands()  # warm the cache / fail fast on a bad dataset
 

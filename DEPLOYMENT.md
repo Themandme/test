@@ -75,6 +75,34 @@ to avoid concurrent-migration races.
 Static files in `web/` — host on any static/CDN origin (S3+CloudFront, Netlify, etc.).
 Set `web/config.js` `API_BASE` to the API URL.
 
+## Backups & key rotation (runbooks)
+
+**Database backups.** Postgres: enable your platform's automated daily snapshots +
+point-in-time recovery, 30-day retention. The only irreplaceable data is accounts +
+caregiver contacts (`accounts`, `activation_codes`, `emergency_contacts`,
+`custom_contacts`); the directory itself lives in git. Test a restore once before
+launch: restore the snapshot to a scratch instance and run
+`GET /v1/activate/{known-code}` against it.
+
+**Signing-key rotation** (`SIGNING_KEY_SEED_B64`). Rotating invalidates the signature on
+every payload cached by every device, so treat the key as long-lived and rotate only on
+suspected compromise:
+1. Generate a new seed; deploy it to all instances at once.
+2. Devices keep working offline (cache is already trusted); each app re-fetches the
+   public key at its next activation/refresh, so signatures reconverge automatically.
+3. Force-refresh isn't needed unless the OLD key was used to forge payloads — in that
+   case also invalidate activation codes for affected accounts and re-issue.
+
+**Caregiver key compromise.** Keys are stored hashed; there is no reset endpoint yet
+(backlog). Interim runbook: issue a new account via Stripe-linked support flow, migrate
+contacts server-side, disable the old account.
+
+**Monitoring.** Set `SENTRY_DSN` for error reporting (PII send is disabled in code).
+Page on the log line `ACTIVATION GLOBAL RATE LIMIT TRIPPED` — it fires only under
+distributed activation-code enumeration, i.e. someone is attacking the code space.
+The weekly `number-freshness` workflow opens a GitHub issue when a brand's official
+page stops matching our number — treat those issues as safety incidents, not chores.
+
 ## Pre-launch gate
 - [ ] All production env vars set; `validate_for_runtime` passes (app boots).
 - [ ] Postgres + Alembic migrations applied.
