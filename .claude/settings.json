@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "career-ops": {
+      "source": {
+        "source": "github",
+        "repo": "santifer/career-ops"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "career-ops@career-ops": true
+  }
+}
