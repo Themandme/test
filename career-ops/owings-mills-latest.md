@@ -1,19 +1,17 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-04 12:50 UTC · 64 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-04 22:32 UTC · 61 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
-## Owings Mills (32)
+## Owings Mills (30)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
 | Scope Services | [5 Field Technicians Needed - $20 HR - We Train](https://hiringcafe.com/job/5-field-technicians-needed-20-hr-we-train-scope-services-owings-mills-gzr4gyjyqf3pex19) | — | 2026-08-03 |
-| AlphaHire | [Residential Construction Project Manager](https://hiringcafe.com/job/residential-construction-project-manager-alphahire-owings-mills-zjzm27ki0l7koc91) | — | 2026-08-03 |
 | Smart Building Technologies | [Design Engineer](https://hiringcafe.com/job/design-engineer-smart-building-technologies-owings-mills-maryland-u9vyzyqdofe5cs09) | — | 2026-08-01 |
 | Environmental Systems Co. | [Design Engineer](https://hiringcafe.com/job/design-engineer-environmental-systems-co-owings-mills-maryland-dz36ovzsuh59vznw) | — | 2026-08-01 |
 | GameStop | [Seasonal Sales Associate (Store 4678)](https://hiringcafe.com/job/seasonal-sales-associate-store-4678-gamestop-owings-mills-maryland-810057jbfgalsbjs) | — | 2026-07-31 |
-| AlphaHire | [Project Manager - Residential Construction](https://hiringcafe.com/job/project-manager-residential-construction-alphahire-owings-mills-v00v1sg3hhnr8i3v) | — | 2026-07-29 |
 | FedEx | [Retail Customer Service Associate](https://hiringcafe.com/job/retail-customer-service-associate-fedex-owings-mills-maryland-a13ocnj9kqb5s1d6) | $18.35–$24.75/hr | 2026-07-29 |
 | Gaudenzia | [Recovery Support Professional](https://hiringcafe.com/job/recovery-support-professional-gaudenzia-owings-mills-maryland-2n28kjpnfehmlih3) | — | 2026-07-23 |
 | Morgan Properties | [Maintenance - Service Technician](https://hiringcafe.com/job/maintenance-service-technician-morgan-properties-owings-mills-maryland-of7krkp75q25jxiu) | $21–$24/hr | 2026-07-22 |
@@ -41,7 +39,7 @@ Any job that is realistically gettable as stopgap work. Senior-level and clinica
 | Garrison Forest School | [Accountant](https://hiringcafe.com/job/accountant-garrison-forest-school-owings-mills-maryland-uumfmpcksqufnk2d) | $50k–$60k | 2026-06-17 |
 | Centric Business Systems | [Customer Service / Dispatcher](https://hiringcafe.com/job/customer-service-dispatcher-centric-business-systems-owings-mills-xanx3c7q8lm6lufi) | — | 2026-06-09 |
 
-## Pikesville (14)
+## Pikesville (13)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -57,7 +55,6 @@ Any job that is realistically gettable as stopgap work. Senior-level and clinica
 | OTH Hotels Resorts | [Sous Chef](https://hiringcafe.com/job/sous-chef-oth-hotels-resorts-pikesville-maryland-pvdupmoxy7t7ch8x) | $53k–$58k | 2026-07-16 |
 | Curio Wellness | [Inventory Retail Lead](https://hiringcafe.com/job/inventory-retail-lead-curio-wellness-pikesville-maryland-kogj2b8vylpzip4k) | $24–$25/hr | 2026-07-10 |
 | Al Coronado Plumbing | [HVAC Service Technician](https://hiringcafe.com/job/hvac-service-technician-al-coronado-plumbing-pikesville-maryland-fjjcnk5bzif3z2e2) | $30–$45/hr | 2026-06-26 |
-| Sonida Senior Living | [Culinary Services Cook](https://hiringcafe.com/job/culinary-services-cook-sonida-senior-living-pikesville-maryland-bp4is965cwpvwf7o) | — | 2026-06-23 |
 | FutureCare | [Maintenance Assistant](https://hiringcafe.com/job/maintenance-assistant-futurecare-pikesville-maryland-28o4om916sdthwnv) | $17.47–$21.84/hr | 2026-06-18 |
 
 ## Randallstown (6)
