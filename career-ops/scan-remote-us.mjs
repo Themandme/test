@@ -15,43 +15,66 @@ import { writeFileSync, mkdirSync } from 'fs';
 
 const UA = 'career-ops personal job search (+https://github.com/santifer/career-ops)';
 const SITEMAP_INDEX = 'https://hiringcafe.com/job-posting-sitemap.xml';
-const MAX_CHUNKS = 60;
-const MAX_DETAILS = 1400;
+const MAX_CHUNKS = 90;
+const MAX_DETAILS = 2200;
 const CONCURRENCY = 4;
 const DELAY_MS = 110;
-const MAX_AGE_DAYS = 60;
-const MIN_SCORE = 6;
+const MAX_AGE_DAYS = 14;   // forward-looking: only genuinely current openings
+const MIN_SCORE = 5;
 // A title score floor matters more than the combined one. Without it, any role
 // whose description happens to mention Salesforce/Excel/documentation scores
 // well — a Product Counsel posting cleared the bar on description alone. The
 // role must BE the kind of job, not merely mention the tools.
-const MIN_TITLE_SCORE = 3;
+const MIN_TITLE_SCORE = 3;   // must match a named target title, not just a generic noun
 
 // Slug prefilter: cheap gate before any page fetch. A slug must look remote AND
 // carry a plausible title token, or we never fetch it.
 const REMOTE_SLUG = ['remote', 'work-from-home', 'wfh', 'united-states', 'anywhere'];
 const TITLE_SLUG = [
-  'salesforce', 'crm', 'customer-support', 'customer-service', 'customer-success',
-  'technical-support', 'help-desk', 'helpdesk', 'service-desk', 'support-specialist',
-  'support-associate', 'data-entry', 'data-analyst', 'data-quality', 'data-coordinator',
-  'business-analyst', 'reporting-analyst', 'operations-analyst', 'operations-associate',
-  'sales-operations', 'revenue-operations', 'administrative-assistant', 'office-assistant',
-  'onboarding-specialist', 'client-services', 'account-coordinator', 'billing',
-  'scheduling-coordinator', 'quality-analyst', 'intake-coordinator', 'claims',
+  // Tier 1
+  'crm-analyst', 'crm-data', 'crm-support', 'salesforce', 'data-quality',
+  'sales-operations', 'revenue-operations', 'business-development-specialist',
+  // Tier 2
+  'reporting-analyst', 'business-analyst', 'business-systems', 'operations-analyst',
+  'data-analyst', 'bi-analyst', 'business-intelligence', 'power-bi', 'sales-enablement',
+  // Tier 3
+  'customer-success', 'client-services', 'member-services', 'data-coordinator',
+  'data-management-specialist', 'office-administrator', 'crm',
+  // Tier 4
+  'marketing-operations',
+  // Entry-level IT
+  'help-desk', 'helpdesk', 'service-desk', 'it-support', 'technical-support',
+  'desktop-support', 'application-support', 'systems-administrator', 'it-analyst',
 ];
 
 // Title weights — what the role IS. Strongest signals first.
 const TITLE_WEIGHTS = [
-  [/\bsalesforce\b/i, 5], [/\bcrm\b/i, 5],
-  [/\bhelp\s?desk\b|\bservice\s?desk\b/i, 4],
-  [/\btechnical support\b|\bcustomer support\b|\bsupport specialist\b|\bsupport associate\b/i, 4],
-  [/\bdata (entry|quality|coordinator|steward)\b/i, 4],
-  [/\bcustomer (service|success|experience)\b/i, 3],
-  [/\b(business|data|reporting|operations|quality|billing|claims) analyst\b/i, 3],
-  [/\b(sales|revenue) operations\b/i, 3],
-  [/\b(client services|account coordinator|onboarding specialist|intake coordinator)\b/i, 3],
-  [/\b(administrative|office) (assistant|coordinator|specialist)\b/i, 2],
-  [/\b(coordinator|associate|specialist|representative)\b/i, 1],
+  // Tier 1 — apply first
+  [/\bcrm (analyst|data analyst|support analyst)\b/i, 6],
+  [/\bsalesforce (administrator|admin)\b/i, 6],
+  [/\bdata quality analyst\b/i, 6],
+  [/\b(sales|revenue) operations analyst\b/i, 6],
+  [/\bbusiness development specialist\b/i, 6],
+  // Tier 2 — strong fit, wider net
+  [/\breporting analyst\b/i, 5],
+  [/\bbusiness (systems )?analyst\b/i, 5],
+  [/\boperations analyst\b/i, 5],
+  [/\bdata analyst\b/i, 5],
+  [/\b(bi analyst|business intelligence analyst|power ?bi developer)\b/i, 5],
+  [/\bsales enablement analyst\b/i, 5],
+  // Tier 3 — opened up by the retail experience
+  [/\bcustomer success (associate|coordinator)\b/i, 4],
+  [/\b(client|member) services coordinator\b/i, 4],
+  [/\bdata (coordinator|management specialist)\b/i, 4],
+  [/\boffice administrator\b/i, 4],
+  // Entry-level IT
+  [/\b(help ?desk|service ?desk)\b/i, 4],
+  [/\b(it|desktop|application|technical) support\b/i, 4],
+  [/\b(it analyst|it specialist|systems administrator)\b/i, 4],
+  // Tier 4 — one genuine stretch
+  [/\bmarketing operations analyst\b/i, 3],
+  // Bare CRM/Salesforce mentions still count for something
+  [/\bsalesforce\b/i, 3], [/\bcrm\b/i, 3],
 ];
 
 // Description weights — what the role USES. Confirms the title.
@@ -174,7 +197,7 @@ mkdirSync('data', { recursive: true });
 writeFileSync('data/remote-us.json', JSON.stringify({
   generatedAt: new Date().toISOString(),
   scope: 'Fully remote, US-eligible',
-  scoring: 'Title + description weighted against CV-evidenced strengths; minimum score ' + MIN_SCORE,
+  scoring: 'Tiered target titles (user-supplied) weighted by tier, plus description confirmation; minimum score ' + MIN_SCORE,
   excluded: ['senior/lead/management', 'clinical', 'roles demanding 3+ years experience'],
   maxAgeDays: MAX_AGE_DAYS,
   stats, jobs: kept,
