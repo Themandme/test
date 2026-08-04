@@ -32,7 +32,7 @@ function descriptorToRow(item) {
   if (!d || typeof d.PositionTitle !== 'string' || !d.PositionTitle.trim()) return null;
   const url = typeof d.PositionURI === 'string' ? d.PositionURI.trim() : '';
   if (!/^https?:\/\//i.test(url)) return null;
-  return {
+  const row = {
     title: d.PositionTitle.trim(),
     url,
     company: (typeof d.OrganizationName === 'string' && d.OrganizationName.trim())
@@ -41,6 +41,11 @@ function descriptorToRow(item) {
     location: typeof d.PositionLocationDisplay === 'string' ? d.PositionLocationDisplay.trim() : '',
     _id: typeof d.PositionID === 'string' ? d.PositionID : url,
   };
+  // Feed the posting-age filter. Omit the key when unparseable — a 0 would read
+  // as 1970 and fail every age check.
+  const ms = Date.parse(d.PublicationStartDate || '');
+  if (Number.isFinite(ms)) row.postedAt = ms;
+  return row;
 }
 
 /** @type {Provider} */

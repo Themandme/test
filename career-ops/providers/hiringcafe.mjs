@@ -50,6 +50,19 @@ function jobPostingFromHtml(html) {
   return null;
 }
 
+/**
+ * JSON-LD `datePosted` (ISO) → epoch ms, or undefined when absent/unparseable.
+ * Returning undefined rather than null/0 matters: scan.mjs's posting-age filter
+ * treats a non-finite postedAt as "unknown, keep", whereas a bogus 0 would read
+ * as 1970 and fail every age check.
+ */
+function postedAtOf(posting) {
+  const raw = posting && posting.datePosted;
+  if (typeof raw !== 'string' || !raw.trim()) return undefined;
+  const ms = Date.parse(raw);
+  return Number.isFinite(ms) ? ms : undefined;
+}
+
 function locationOf(posting) {
   let loc = posting.jobLocation;
   if (Array.isArray(loc)) loc = loc[0];
@@ -139,7 +152,11 @@ export default {
       const company = (posting.hiringOrganization && typeof posting.hiringOrganization.name === 'string')
         ? posting.hiringOrganization.name.trim() : '';
       if (!company) return null;
-      return { title: posting.title.trim(), url, company, location: locationOf(posting) };
+      /** @type {{title:string,url:string,company:string,location:string,postedAt?:number}} */
+      const job = { title: posting.title.trim(), url, company, location: locationOf(posting) };
+      const postedAt = postedAtOf(posting);
+      if (postedAt !== undefined) job.postedAt = postedAt;
+      return job;
     });
 
     return rows.filter(Boolean);
