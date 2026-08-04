@@ -1,0 +1,60 @@
+name: Owings Mills jobs
+
+# Twice daily, 7:23am and 5:23pm US Eastern (EDT = UTC-4).
+# Off-the-hour on purpose: :00 and :30 are the busiest slots on GitHub's
+# shared schedulers and get queued the longest.
+on:
+  schedule:
+    - cron: '23 11 * * *'
+    - cron: '23 21 * * *'
+  workflow_dispatch:        # lets you run it on demand from the Actions tab
+
+permissions:
+  contents: write           # needed to commit the refreshed digest
+
+concurrency:
+  group: owings-mills-jobs
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30     # the sweep reads 60 sitemap chunks of ~20k postings
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Scan for local jobs
+        working-directory: career-ops
+        # No NODE_USE_ENV_PROXY here: that is only needed inside the Claude Code
+        # sandbox, whose proxy Node's fetch ignores. GitHub runners reach the
+        # network directly.
+        run: node scan-owings-mills.mjs
+
+      - name: Commit the digest if it changed
+        working-directory: career-ops
+        run: |
+          if git diff --quiet -- owings-mills-latest.md; then
+            echo "No change in local job listings — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add owings-mills-latest.md
+          git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
+          git push
+
+      - name: Summary
+        working-directory: career-ops
+        run: |
+          {
+            echo "### Owings Mills job scan"
+            echo
+            head -6 owings-mills-latest.md | tail -4
+            echo
+            echo "See \`career-ops/owings-mills-latest.md\` for the full list."
+          } >> "$GITHUB_STEP_SUMMARY"

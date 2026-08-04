@@ -150,6 +150,37 @@ writeFileSync('data/owings-mills.json', JSON.stringify({
   jobs: kept,
 }, null, 2));
 
+// Human-readable digest at a NON-gitignored path, so scheduled CI runs can
+// commit it and the results are viewable without running anything locally.
+const byTown = new Map();
+for (const j of kept) {
+  if (!byTown.has(j.city)) byTown.set(j.city, []);
+  byTown.get(j.city).push(j);
+}
+const pay = s => {
+  if (!s || (s.min == null && s.max == null)) return '—';
+  const u = (s.unit || '').toLowerCase();
+  const f = v => v == null ? '?' : (u === 'year' ? '$' + Math.round(v / 1000) + 'k' : '$' + v);
+  return (s.min === s.max ? f(s.min) : `${f(s.min)}–${f(s.max)}`) + (u === 'hour' ? '/hr' : '');
+};
+const md = [
+  '# Jobs near Owings Mills, MD',
+  '',
+  `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within ~5 miles · posted in the last ${MAX_AGE_DAYS} days_`,
+  '',
+  'Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.',
+  '',
+];
+for (const [town, jobs] of [...byTown].sort((a, b) => b[1].length - a[1].length)) {
+  md.push(`## ${town} (${jobs.length})`, '', '| Employer | Role | Pay | Posted |', '|---|---|---|---|');
+  for (const j of jobs) {
+    const title = j.title.replace(/\|/g, '\\|');
+    md.push(`| ${j.company.replace(/\|/g, '\\|')} | [${title}](${j.url}) | ${pay(j.salary)} | ${j.datePosted || '—'} |`);
+  }
+  md.push('');
+}
+writeFileSync('owings-mills-latest.md', md.join('\n'));
+
 console.log(JSON.stringify(stats, null, 2));
 console.log(`\nkept ${kept.length} local jobs`);
 for (const r of kept.slice(0, 60)) {
