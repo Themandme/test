@@ -89,6 +89,9 @@ const MEDICAL_PATTERNS = [
   /\bpatient\b/i, /\bpatholog/i, /\bspeech\s+language/i, /\banesthes/i,
   /\boncolog/i, /\bphysical\s+therap/i, /\boccupational\s+therap/i,
   /\bbehavior(al)?\s+techn/i, /\bregistered\s+behavior/i, /\brbt\b/i,
+  // ABA clinical practice. The technician-level patterns above missed the
+  // credentialled tier entirely, so BCBA roles were being kept.
+  /\bbcba\b/i, /\bboard\s+certified\s+behavior/i, /\bbehavior\s+analyst\b/i,
   /\bmedic\b/i, /\bdialysis\b/i, /\bphlebot/i, /\bimaging\b/i,
   /\bmri\b/i, /\bx-?ray\b/i, /\bradiograph/i, /\bmedication\b/i,
   /\b(medical|lab|surgical|nuclear|ct)\s+technologist\b/i, /\bultrasound\b/i,
@@ -141,7 +144,10 @@ function loadStore() {
   if (!existsSync(STORE_PATH)) return { cursor: 0, run: 0, jobs: {} };
   try {
     const s = JSON.parse(readFileSync(STORE_PATH, 'utf8'));
-    return { cursor: s.cursor || 0, run: s.run || 0, jobs: s.jobs || {} };
+    // chunkCount must survive the round trip: --render-only has no sitemap to
+    // count, and a zero here collapses cycleRuns to 1, which shrinks the
+    // unseen-expiry horizon to two runs and deletes most of the store.
+    return { cursor: s.cursor || 0, run: s.run || 0, chunkCount: s.chunkCount || 0, jobs: s.jobs || {} };
   } catch {
     // A corrupt store costs one cycle to rebuild, which is strictly better than
     // failing the run and leaving the digest frozen.
@@ -150,22 +156,27 @@ function loadStore() {
 }
 
 const store = loadStore();
-const run = store.run + 1;
+// --render-only re-applies the filters and rewrites the digest from the stored
+// listings without touching the network. The title filters are applied on read
+// as well as on capture (see below), so tightening one takes effect on entries
+// already in the store instead of waiting for them to be re-swept.
+const RENDER_ONLY = process.argv.includes('--render-only');
+const run = RENDER_ONLY ? store.run : store.run + 1;
 
 /* ------------------------------------------------------- rotating sweep */
 
-const chunkEntries = entries(await get(SITEMAP_INDEX));
-const chunkCount = chunkEntries.length;
-const cursor = chunkCount ? store.cursor % chunkCount : 0;
-const cycleRuns = Math.max(1, Math.ceil(chunkCount / WINDOW_CHUNKS));
+const chunkEntries = RENDER_ONLY ? [] : entries(await get(SITEMAP_INDEX));
+const chunkCount = chunkEntries.length || store.chunkCount || 0;
+const cursor = chunkEntries.length ? store.cursor % chunkEntries.length : (store.cursor || 0);
+const cycleRuns = Math.max(1, Math.ceil((chunkCount || WINDOW_CHUNKS) / WINDOW_CHUNKS));
 
 // Wrap around the end of the index rather than clamping, so the window keeps a
 // constant size and every chunk is visited once per cycle.
 const window = [];
-for (let k = 0; k < Math.min(WINDOW_CHUNKS, chunkCount); k++) {
-  window.push(chunkEntries[(cursor + k) % chunkCount].loc);
+for (let k = 0; k < Math.min(WINDOW_CHUNKS, chunkEntries.length); k++) {
+  window.push(chunkEntries[(cursor + k) % chunkEntries.length].loc);
 }
-const nextCursor = chunkCount ? (cursor + window.length) % chunkCount : 0;
+const nextCursor = chunkEntries.length ? (cursor + window.length) % chunkEntries.length : cursor;
 
 const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
 const lastmodCutoff = cutoff - LASTMOD_SLACK_DAYS * 86400000;
@@ -174,7 +185,8 @@ const stats = {
   chunkCount, windowStart: cursor, windowSize: window.length, cycleRuns, run,
   urlsScanned: 0, areaMatches: 0, skippedByLastmod: 0,
   fetched: 0, senior: 0, medical: 0, stale: 0, offArea: 0,
-  newThisRun: 0, refreshed: 0, expiredAge: 0, expiredUnseen: 0, kept: 0,
+  newThisRun: 0, refreshed: 0, expiredAge: 0, expiredUnseen: 0, refiltered: 0,
+  duplicatesCollapsed: 0, kept: 0,
 };
 
 const chunkLists = await pooled(window, 4, async (c) => {
@@ -251,10 +263,29 @@ const unseenLimit = 2 * cycleRuns;
 for (const [url, j] of Object.entries(jobs)) {
   const posted = Date.parse(j.datePosted || '');
   if (Number.isFinite(posted) && posted < cutoff) { delete jobs[url]; stats.expiredAge++; continue; }
-  if (run - (j.lastSeenRun ?? run) > unseenLimit) { delete jobs[url]; stats.expiredUnseen++; }
+  // Only a real sweep can refresh lastSeenRun, so --render-only must never
+  // expire on absence — it saw nothing by construction.
+  if (!RENDER_ONLY && run - (j.lastSeenRun ?? run) > unseenLimit) { delete jobs[url]; stats.expiredUnseen++; continue; }
+  // Re-apply the title filters on read. Capture-time filtering alone would let
+  // anything admitted under an older, looser pattern sit in the store forever —
+  // which is how nine BCBA roles survived a medical exclusion.
+  if (SENIOR_RE.test(j.title) || MEDICAL_RE.test(j.title)) { delete jobs[url]; stats.refiltered++; }
 }
 
-const kept = Object.values(jobs).sort((a, b) => (b.datePosted || '').localeCompare(a.datePosted || ''));
+// hiring.cafe carries the same opening at several URLs (measured: 88 redundant
+// rows across 73 groups in a full sweep). Collapse on employer+title+town and
+// keep the newest, so the digest reads as a list of openings rather than a list
+// of postings. The store keeps every URL — dedup is a presentation concern, and
+// discarding URLs would make them look new again next time they are swept.
+const byOpening = new Map();
+for (const j of Object.values(jobs)) {
+  const k = [j.company, j.title, j.city].join(' ').toLowerCase();
+  const prev = byOpening.get(k);
+  if (!prev || (j.datePosted || '') > (prev.datePosted || '')) byOpening.set(k, j);
+}
+stats.duplicatesCollapsed = Object.keys(jobs).length - byOpening.size;
+
+const kept = [...byOpening.values()].sort((a, b) => (b.datePosted || '').localeCompare(a.datePosted || ''));
 stats.kept = kept.length;
 
 writeFileSync(STORE_PATH, JSON.stringify({
@@ -316,5 +347,7 @@ for (const [town, jobs] of [...byTown].sort((a, b) => b[1].length - a[1].length)
 writeFileSync('owings-mills-latest.md', md.join('\n'));
 
 console.log(JSON.stringify(stats, null, 2));
-console.log(`\nwindow ${cursor}..${(cursor + window.length - 1) % chunkCount} of ${chunkCount} chunks · run ${run} · full pass every ${cycleRuns} runs`);
+console.log(window.length
+  ? `\nwindow ${cursor}..${(cursor + window.length - 1) % chunkCount} of ${chunkCount} chunks · run ${run} · full pass every ${cycleRuns} runs`
+  : `\nrender-only from stored state · run ${run} · ${chunkCount} chunks · full pass every ${cycleRuns} runs`);
 console.log(`store now holds ${kept.length} local jobs (+${stats.newThisRun} new, -${stats.expiredAge + stats.expiredUnseen} expired)`);
