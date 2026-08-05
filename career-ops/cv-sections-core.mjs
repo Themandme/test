@@ -1,10 +1,11 @@
 // Shared optional-section stripping for the CV builders (build-cv-html.mjs,
 // build-cv-latex.mjs).
 //
-// Projects, education, and certifications are the genuinely optional CV
-// sections: a candidate's projects are often already covered under Work
-// Experience, not every candidate has a degree, and not every application
-// carries a certification worth listing. The templates wrap all three
+// Competencies, projects, education, and certifications are the genuinely
+// optional CV sections: the competencies strip is a summary device a tailored
+// CV may drop to save a page, a candidate's projects are often already covered
+// under Work Experience, not every candidate has a degree, and not every
+// application carries a certification worth listing. The templates wrap them
 // unconditionally, so a payload with no entries renders a bare section header
 // with nothing under it. The builders' buildProjects()/buildEducation()/
 // buildCertifications() correctly return '' — nothing removes the surrounding
@@ -38,6 +39,8 @@ const TEX_BOUNDARY = String.raw`(?=%{4,}\s|$)`;
 
 const PATTERNS = {
   html: {
+    // Marker is `<!-- CORE COMPETENCIES -->`, not `COMPETENCIES`.
+    competencies: new RegExp(String.raw`<!--\s+CORE COMPETENCIES\s+-->[\s\S]*?` + HTML_BOUNDARY),
     projects: new RegExp(String.raw`<!--\s+PROJECTS\s+-->[\s\S]*?` + HTML_BOUNDARY),
     education: new RegExp(String.raw`<!--\s+EDUCATION\s+-->[\s\S]*?` + HTML_BOUNDARY),
     certifications: new RegExp(String.raw`<!--\s+CERTIFICATIONS\s+-->[\s\S]*?` + HTML_BOUNDARY),
@@ -48,7 +51,7 @@ const PATTERNS = {
   },
 };
 
-export const OPTIONAL_SECTIONS = ['projects', 'education', 'certifications'];
+export const OPTIONAL_SECTIONS = ['competencies', 'projects', 'education', 'certifications'];
 
 export function isEmptySection(payload, section) {
   const entries = payload?.[section];
