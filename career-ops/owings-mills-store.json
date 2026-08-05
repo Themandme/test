@@ -1,6 +1,6 @@
 {
-  "note": "Rotating-window sweep state for scan-owings-mills.mjs. Committed so scheduled runs accumulate coverage; safe to delete, costs one cycle to rebuild.",
-  "updatedAt": "2026-08-05T14:48:01.415Z",
+  "note": "Rotating sitemap sweep state. Safe to delete; costs one cycle to rebuild.",
+  "updatedAt": "2026-08-05T15:31:01.121Z",
   "cursor": 15,
   "run": 8,
   "chunkCount": 465,

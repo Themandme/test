@@ -174,6 +174,11 @@ const SYSTEM_PATHS = [
   'classify-tier.mjs',
   'scan-ats-full.mjs',
   'scan-interamt.mjs',
+  'scan-owings-mills.mjs',
+  'scan-remote-us.mjs',
+  'sitemap-sweep.mjs',
+  'build-dash-data.mjs',
+  '.mcp.json',
   'company-funded.mjs',
   'match-star.mjs',
   'jd-skill-gap.mjs',
@@ -382,6 +387,11 @@ const USER_PATHS = [
   'data/',
   'reports/',
   'output/',
+  // Scanner results committed at the repo root so scheduled CI runs can publish
+  // them without data/ (gitignored). Generated user data, never shipped by an
+  // update.
+  'owings-mills-latest.md',
+  'owings-mills-store.json',
   'jds/',
   'writing-samples/',
   'config/plugins.yml',

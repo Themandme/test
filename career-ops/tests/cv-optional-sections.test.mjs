@@ -13,12 +13,16 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { pass, fail, ROOT } from './helpers.mjs';
-import { stripEmptySections } from '../cv-sections-core.mjs';
+import { stripEmptySections, OPTIONAL_SECTIONS } from '../cv-sections-core.mjs';
 
 console.log('\ncv-sections-core.mjs — optional sections leave no bare header');
 
-const EMPTY = { projects: [], education: [], certifications: [] };
-const FULL = { projects: [{ name: 'P' }], education: [{ degree: 'D' }], certifications: [{ title: 'C' }] };
+// Derived from OPTIONAL_SECTIONS so a newly-optional section cannot be added to
+// the module without these fixtures covering it. Competencies was added later
+// and the hand-written FULL fixture omitted it, so the "populated payload is a
+// no-op" assertion failed for a reason that had nothing to do with the strip.
+const EMPTY = Object.fromEntries(OPTIONAL_SECTIONS.map(s => [s, []]));
+const FULL = Object.fromEntries(OPTIONAL_SECTIONS.map(s => [s, [{ name: 'x', degree: 'D', title: 'C' }]]));
 
 function check(label, actual, expected) {
   if (actual === expected) pass(label);

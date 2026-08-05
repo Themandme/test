@@ -43,7 +43,8 @@
 //   - The store must survive between runs, so it lives at the repo root next to
 //     the digest rather than under data/ (gitignored), and CI commits it.
 // ---------------------------------------------------------------------------
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
+import { writeFileSync, mkdirSync } from 'fs';
+import { entries, rotatingWindow, loadSweepState, saveSweepState, staleByLastmod } from './sitemap-sweep.mjs';
 
 const UA = 'career-ops personal job search (+https://github.com/santifer/career-ops)';
 const SITEMAP_INDEX = 'https://hiringcafe.com/job-posting-sitemap.xml';
@@ -99,21 +100,6 @@ const MEDICAL_PATTERNS = [
 const MEDICAL_RE = { test: (t) => MEDICAL_PATTERNS.some(re => re.test(t)) };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const locs = xml => [...String(xml).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].trim());
-
-// <url>/<sitemap> entries carrying both fields. Matched as blocks rather than
-// two independent <loc>/<lastmod> scans so a missing lastmod cannot shift the
-// pairing and attach one entry's date to the next entry's URL.
-function entries(xml) {
-  const out = [];
-  for (const [, block] of String(xml).matchAll(/<(?:url|sitemap)>([\s\S]*?)<\/(?:url|sitemap)>/g)) {
-    const loc = (block.match(/<loc>([^<]+)<\/loc>/) || [])[1];
-    if (!loc) continue;
-    const lastmod = (block.match(/<lastmod>([^<]+)<\/lastmod>/) || [])[1];
-    out.push({ loc: loc.trim(), lastmod: lastmod ? lastmod.trim() : null });
-  }
-  return out;
-}
 
 async function get(url) {
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
@@ -140,22 +126,7 @@ async function pooled(items, limit, worker) {
 
 /* ------------------------------------------------------------------ store */
 
-function loadStore() {
-  if (!existsSync(STORE_PATH)) return { cursor: 0, run: 0, jobs: {} };
-  try {
-    const s = JSON.parse(readFileSync(STORE_PATH, 'utf8'));
-    // chunkCount must survive the round trip: --render-only has no sitemap to
-    // count, and a zero here collapses cycleRuns to 1, which shrinks the
-    // unseen-expiry horizon to two runs and deletes most of the store.
-    return { cursor: s.cursor || 0, run: s.run || 0, chunkCount: s.chunkCount || 0, jobs: s.jobs || {} };
-  } catch {
-    // A corrupt store costs one cycle to rebuild, which is strictly better than
-    // failing the run and leaving the digest frozen.
-    return { cursor: 0, run: 0, jobs: {} };
-  }
-}
-
-const store = loadStore();
+const store = loadSweepState(STORE_PATH);
 // --render-only re-applies the filters and rewrites the digest from the stored
 // listings without touching the network. The title filters are applied on read
 // as well as on capture (see below), so tightening one takes effect on entries
@@ -167,19 +138,10 @@ const run = RENDER_ONLY ? store.run : store.run + 1;
 
 const chunkEntries = RENDER_ONLY ? [] : entries(await get(SITEMAP_INDEX));
 const chunkCount = chunkEntries.length || store.chunkCount || 0;
-const cursor = chunkEntries.length ? store.cursor % chunkEntries.length : (store.cursor || 0);
+const { window, cursor, nextCursor } = rotatingWindow(chunkEntries, store.cursor, WINDOW_CHUNKS);
 const cycleRuns = Math.max(1, Math.ceil((chunkCount || WINDOW_CHUNKS) / WINDOW_CHUNKS));
 
-// Wrap around the end of the index rather than clamping, so the window keeps a
-// constant size and every chunk is visited once per cycle.
-const window = [];
-for (let k = 0; k < Math.min(WINDOW_CHUNKS, chunkEntries.length); k++) {
-  window.push(chunkEntries[(cursor + k) % chunkEntries.length].loc);
-}
-const nextCursor = chunkEntries.length ? (cursor + window.length) % chunkEntries.length : cursor;
-
 const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
-const lastmodCutoff = cutoff - LASTMOD_SLACK_DAYS * 86400000;
 
 const stats = {
   chunkCount, windowStart: cursor, windowSize: window.length, cycleRuns, run,
@@ -204,8 +166,7 @@ for (const list of chunkLists) {
     // been touched since before the freshness window. On the previous design
     // 200 of 353 detail fetches were spent on postings the age filter then
     // discarded; this removes most of that.
-    const lm = lastmod ? Date.parse(lastmod) : NaN;
-    if (Number.isFinite(lm) && lm < lastmodCutoff) { stats.skippedByLastmod++; continue; }
+    if (staleByLastmod(lastmod, cutoff, LASTMOD_SLACK_DAYS)) { stats.skippedByLastmod++; continue; }
     candidates.push(loc);
   }
 }
@@ -288,11 +249,7 @@ stats.duplicatesCollapsed = Object.keys(jobs).length - byOpening.size;
 const kept = [...byOpening.values()].sort((a, b) => (b.datePosted || '').localeCompare(a.datePosted || ''));
 stats.kept = kept.length;
 
-writeFileSync(STORE_PATH, JSON.stringify({
-  note: 'Rotating-window sweep state for scan-owings-mills.mjs. Committed so scheduled runs accumulate coverage; safe to delete, costs one cycle to rebuild.',
-  updatedAt: new Date().toISOString(),
-  cursor: nextCursor, run, chunkCount, cycleRuns, jobs,
-}, null, 2));
+saveSweepState(STORE_PATH, { cursor: nextCursor, run, chunkCount, cycleRuns, jobs });
 
 mkdirSync('data', { recursive: true });
 writeFileSync('data/owings-mills.json', JSON.stringify({
