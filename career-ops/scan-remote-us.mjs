@@ -105,7 +105,24 @@ const BLOCKER_RE = /\b(clearance|ts\/sci|polygraph|secret\b|co-?op\b|currently e
 // Predatory-posting signals. These are NOT excluded — the user asked for
 // anything gettable — but they are flagged, because commission-only and
 // recruit-your-own-team structures target exactly people who need income now.
-const CAUTION_RE = /\b(commission[- ]only|100% commission|straight commission|no base salary|unlimited earning|uncapped income|be your own boss|host agency|recruit(ing)? (others|agents)|build (your|a) team|1099 (only|contractor)|purchase (your|a) (starter|kit)|licensing (fee|required)|pay for (your )?training)\b/i;
+// Matched phrases are attached to the row and surfaced, never silently dropped:
+// the brief is "anything gettable", and the user decides. Listed individually so
+// the output can name what tripped rather than just asserting "suspicious".
+const CAUTION_PATTERNS = [
+  /commission[- ]only/i, /100% commission/i, /straight commission/i, /no base salary/i,
+  /unlimited earning/i, /uncapped income/i, /be your own boss/i, /host agency/i,
+  /recruit(ing)? (others|agents)/i, /build (your|a) team/i, /1099 (only|contractor)/i,
+  /purchase (your|a) (starter|kit)/i, /licensing (fee|required)/i, /pay for (your )?training/i,
+  // MLM/"opportunity" tells found in the wild: a $160-200k "Business Development
+  // Specialist" whose description was daily training calls and building a
+  // downline. The original pattern list missed every one of these.
+  /performance[- ]based opportunity/i, /independent (professional|contractor)s? who/i,
+  /daily live training/i, /work locally or expand globally/i,
+  /flexible schedule \(full or part[- ]time\)/i, /personal growth and professional development/i,
+];
+const cautionsIn = (text) => CAUTION_PATTERNS
+  .filter(re => re.test(text))
+  .map(re => String(re).replace(/^\/|\/i$/g, ''));
 const EXP_FLOOR_RE = /\b([3-9]|1[0-9])\+?\s*(\+)?\s*years?\b/i;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -213,6 +230,7 @@ const rows = await pooled(sampled, CONCURRENCY, async (url) => {
     employmentType: Array.isArray(p.employmentType) ? p.employmentType.join(', ') : (p.employmentType || null),
     salary: sal ? { min: sal.minValue ?? null, max: sal.maxValue ?? null, unit: sal.unitText || null } : null,
     matched: TITLE_WEIGHTS.filter(([re]) => re.test(title)).map(([re]) => String(re)).length,
+    caution: cautionsIn(desc),
   };
 });
 
@@ -256,6 +274,11 @@ writeFileSync('data/remote-us.json', JSON.stringify({
 stats.sampled = sampled.length;
 console.log(JSON.stringify(stats, null, 2));
 console.log(`\nstore holds ${kept.length} remote roles (+${stats.newThisRun} new this run)\n`);
+const flagged = kept.filter(r => r.caution && r.caution.length);
 for (const r of kept.slice(0, 40)) {
-  console.log(`  [${String(r.score).padStart(2)}]  ${r.company} | ${r.title} | ${r.datePosted || '?'}`);
+  const warn = r.caution && r.caution.length ? `  ⚠️  ${r.caution.join(', ')}` : '';
+  console.log(`  [${String(r.score).padStart(2)}]  ${r.company} | ${r.title} | ${r.datePosted || '?'}${warn}`);
+}
+if (flagged.length) {
+  console.log(`\n⚠️  ${flagged.length} listing(s) carry predatory-posting signals — shown, not removed, but read the description before applying.`);
 }
