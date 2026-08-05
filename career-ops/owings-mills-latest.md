@@ -1,10 +1,10 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-05 13:04 UTC · 63 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-05 22:31 UTC · 61 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
-## Owings Mills (31)
+## Owings Mills (29)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -17,9 +17,7 @@ Any job that is realistically gettable as stopgap work. Senior-level and clinica
 | FedEx | [Retail Customer Service Associate](https://hiringcafe.com/job/retail-customer-service-associate-fedex-owings-mills-maryland-a13ocnj9kqb5s1d6) | $18.35–$24.75/hr | 2026-07-29 |
 | Gaudenzia | [Recovery Support Professional](https://hiringcafe.com/job/recovery-support-professional-gaudenzia-owings-mills-maryland-2n28kjpnfehmlih3) | — | 2026-07-23 |
 | Morgan Properties | [Maintenance - Service Technician](https://hiringcafe.com/job/maintenance-service-technician-morgan-properties-owings-mills-maryland-of7krkp75q25jxiu) | $21–$24/hr | 2026-07-22 |
-| Best Buy | [Geek Squad Agent (Retail Store)](https://hiringcafe.com/job/geek-squad-agent-retail-store-best-buy-owings-mills-maryland-jbdhrfy1bff9fz7z) | $15–$19.22/hr | 2026-07-20 |
 | Best Buy | [Car Electronics Installer](https://hiringcafe.com/job/car-electronics-installer-best-buy-owings-mills-maryland-j7dqn1uk2147mxyx) | $15–$21.21/hr | 2026-07-20 |
-| Best Buy | [Retail Sales Associate](https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-57hr9letdji1dz42) | $15–$19.22/hr | 2026-07-20 |
 | Burlington Stores | [Cashier Associate - Part Time](https://hiringcafe.com/job/cashier-associate-part-time-burlington-stores-owings-mills-maryland-kwe1s2pqb63r6i38) | — | 2026-07-13 |
 | Burlington Stores | [Retail Sales Associate - Part Time](https://hiringcafe.com/job/retail-sales-associate-part-time-burlington-stores-owings-mills-i1hetihs68aadq05) | — | 2026-07-13 |
 | PetSmart | [Retail Customer Service Lead](https://hiringcafe.com/job/retail-customer-service-lead-petsmart-owings-mills-maryland-mrgdnbi28yaut5k5) | — | 2026-07-13 |
