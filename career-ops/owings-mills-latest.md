@@ -1,10 +1,10 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-05 15:31 UTC · 529 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-06 22:57 UTC · 528 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
-Coverage: each run reads 0 of 465 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
+Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
 ## Owings Mills (278)
 
@@ -454,7 +454,7 @@ Coverage: each run reads 0 of 465 sitemap chunks, rotating, so a full pass takes
 | MECU Credit Union | [Lead (Head) Teller](https://hiringcafe.com/job/lead-head-teller-mecu-credit-union-randallstown-maryland-ju23xeaa7gyf98kv) | $20.29–$24.85/hr | 2026-06-08 |
 | LifeBridge Health | [CARE MANAGEMENT ASST-PSYCH](https://hiringcafe.com/job/care-management-asst-psych-lifebridge-health-randallstown-maryland-u8oobvi76w86zgv2) | $17–$24.75/hr | 2026-06-08 |
 
-## Reisterstown (56)
+## Reisterstown (55)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -513,7 +513,6 @@ Coverage: each run reads 0 of 465 sitemap chunks, rotating, so a full pass takes
 | Blufox Mobile | [Store Manager BluFox Mobile- Reisterstown](https://hiringcafe.com/job/store-manager-blufox-mobile-reisterstown-blufox-mobile-reisterstown-rexe9n38qzb6kull) | — | 2026-06-17 |
 | Starbucks | [barista - Store# 58603, REISTERSTOWN SHOPPING CENTER](https://hiringcafe.com/job/barista-store-58603-reisterstown-shopping-center-starbucks-koy2lzl8vaqw1x9u) | $15.75–$17.88/hr | 2026-06-11 |
 | Arch Telecom | [Wireless Retail Sales Associate REISTERSTOWN \| Chartley Dr Avg. All in $30](https://hiringcafe.com/job/wireless-retail-sales-associate-reisterstown-chartley-dr-avg-all-in-e44zoigq18mys12w) | $15–$30/hr | 2026-06-08 |
-| Starbucks | [shift supervisor - Store# 58603, REISTERSTOWN SHOPPING CENTER](https://hiringcafe.com/job/shift-supervisor-store-58603-reisterstown-shopping-center-starbucks-tr0t2iafd1x54bfh) | $20–$22.7/hr | 2026-06-07 |
 
 ## Windsor Mill (24)
 
