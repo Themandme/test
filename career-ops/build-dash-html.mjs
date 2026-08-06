@@ -81,9 +81,32 @@ const REACHABLE = /\b(Analyst|Coordinator|Administrator|Assistant|Associate|Spec
 const hireable = (j) => j.title && !CLEARANCE.test(j.title) && !SENIOR.test(j.title)
   && !CLINICAL.test(j.title) && !DEEP_TECH.test(j.title) && REACHABLE.test(j.title);
 
+// ── Proximity to home ────────────────────────────────────────────────
+// Home is Owings Mills. Sorting the shortlist by age alone buried the roles
+// closest to the door under fresher ones an hour away in Virginia, so
+// proximity is ranked FIRST and age breaks the tie inside each ring.
+const TIER = [
+  // Ring 1 — Owings Mills and the towns immediately around it, ~15 minutes.
+  /Owings Mills|Reisterstown|Pikesville|Randallstown|Windsor Mill|Woodlawn|Garrison|Milford Mill|Lochearn|Stevenson, ?MD/i,
+  // Ring 2 — greater Baltimore, a commutable drive.
+  /Baltimore|Towson|Catonsville|Ellicott City|Columbia, ?MD|Hunt Valley|Lutherville|Timonium|Cockeysville|Sparks|Linthicum|Halethorpe|Arbutus|Glen Burnie|Elkridge|Hanover, ?MD|Annapolis|Dundalk|Parkville|Nottingham|White Marsh|Rosedale|Essex/i,
+  // Ring 3 — rest of Maryland.
+  /Maryland|, ?MD\b/i,
+];
+const tierOf = (loc) => {
+  const s = String(loc || '');
+  for (let i = 0; i < TIER.length; i++) if (TIER[i].test(s)) return i;
+  return TIER.length;              // Ring 4 — DC, Virginia, remote
+};
+const TIER_LABEL = ['Owings Mills area', 'Greater Baltimore', 'Rest of Maryland', 'DC / Virginia / remote'];
+
 const shortlist = listings
   .filter((j) => hireable(j) && j.days !== null && j.days <= 21)
-  .sort((a, b) => a.days - b.days);
+  .map((j) => ({ ...j, tier: tierOf(j.location) }))
+  .sort((a, b) => a.tier - b.tier || a.days - b.days);
+
+const nearHome = shortlist.filter((j) => j.tier === 0);
+const baltimore = shortlist.filter((j) => j.tier === 1);
 
 // ── Aggregates ───────────────────────────────────────────────────────
 // Last bucket is open-ended on purpose: it absorbs both the exact ages past 30
@@ -152,13 +175,19 @@ const reportRows = reports.map((r) => `
     <td>${esc(r.risk_level ?? '')}</td>
   </tr>`).join('');
 
-const shortlistRows = shortlist.slice(0, 60).map((j) => `
+const rowsFor = (list, limit) => list.slice(0, limit).map((j) => `
   <tr>
     <td class="num">${j.days}d</td>
     <td>${esc(j.company)}</td>
     <td>${j.url ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : esc(j.title)}</td>
     <td>${esc(j.location)}</td>
   </tr>`).join('');
+
+const shortlistRows = rowsFor(shortlist, 60);
+const nearHomeRows = rowsFor(nearHome, 40);
+const baltimoreRows = rowsFor(baltimore, 40);
+
+const tierTally = TIER_LABEL.map((label, i) => ({ label, n: shortlist.filter((j) => j.tier === i).length }));
 
 const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}</title>
 <style>
@@ -266,6 +295,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
     <div class="kpis">
       <div class="kpi"><div class="n">${listings.length.toLocaleString()}</div><div class="k">Local openings tracked</div><div class="s">Workday + hiring.cafe</div></div>
       <div class="kpi"><div class="n">${fresh7.toLocaleString()}</div><div class="k">Posted in last 7 days</div><div class="s">of ${dated.length.toLocaleString()} with a date</div></div>
+      <div class="kpi"><div class="n">${nearHome.length.toLocaleString()}</div><div class="k">Owings Mills area</div><div class="s">≤15 min, reachable, ≤21d</div></div>
       <div class="kpi"><div class="n">${shortlist.length.toLocaleString()}</div><div class="k">Reachable &amp; fresh</div><div class="s">≤21d, no clearance, not senior</div></div>
       <div class="kpi"><div class="n">${reports.length}</div><div class="k">Roles evaluated</div><div class="s">full reports written</div></div>
       <div class="kpi"><div class="n">${(d.pipeline || []).length}</div><div class="k">Pipeline pending</div><div class="s">awaiting triage</div></div>
@@ -290,8 +320,26 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
     </table>
   </div>
 
-  <h2>Freshest reachable roles</h2>
-  <p class="note">Top ${Math.min(60, shortlist.length)} of ${shortlist.length}, newest first. Found title-blind — filtered on location, age and reachability, never on a list of target titles.</p>
+  <h2>Owings Mills area — closest to home</h2>
+  <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. ${nearHome.length} reachable roles posted within 21 days, newest first. This ring is ranked above everything else regardless of how fresh the rest is.</p>
+  <div class="panel scroll">
+    <table>
+      <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
+      <tbody>${nearHomeRows || '<tr><td colspan="4">Nothing in this ring right now — the rings below are the next closest.</td></tr>'}</tbody>
+    </table>
+  </div>
+
+  <h2>Greater Baltimore</h2>
+  <p class="note">Baltimore city, Towson, Catonsville, Columbia, Hunt Valley, Glen Burnie and the rest of the metro — a commutable drive. ${baltimore.length} reachable roles, showing ${Math.min(40, baltimore.length)}.</p>
+  <div class="panel scroll">
+    <table>
+      <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
+      <tbody>${baltimoreRows}</tbody>
+    </table>
+  </div>
+
+  <h2>Everything reachable, by distance then age</h2>
+  <p class="note">All ${shortlist.length} across every ring — ${tierTally.map((t) => `${t.n} ${t.label.toLowerCase()}`).join(', ')}. Sorted by proximity first, age second. Found title-blind: filtered on location, age and reachability, never on a list of target titles.</p>
   <div class="panel scroll">
     <table>
       <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
