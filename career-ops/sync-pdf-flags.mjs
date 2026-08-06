@@ -14,14 +14,23 @@
  */
 
 import { readFileSync, existsSync } from 'fs';
-import { join, dirname } from 'path';
+import { join, dirname, basename } from 'path';
 import { fileURLToPath } from 'url';
 import { extractTrackerReportNumbers, resolveColumns, parseTrackerRow } from './tracker-parse.mjs';
 import { rebuildRow, resolveTrackerPath, openTrackerTransaction } from './tracker-utils.mjs';
 
 const CAREER_OPS = dirname(fileURLToPath(import.meta.url));
 const APPS_FILE = resolveTrackerPath(CAREER_OPS);
-const PDF_MANIFEST = process.env.CAREER_OPS_PDF_INDEX || join(CAREER_OPS, 'data', 'pdf-index.tsv');
+
+// The manifest must come from the SAME root as the tracker. Anchoring it to the
+// script's own directory instead meant a CAREER_OPS_TRACKER override (tests, and
+// any non-standard layout) read a temp tracker while reconciling it against the
+// real repo's pdf-index — flipping PDF cells in a tracker that manifest knows
+// nothing about. Harmless only while no numbered report had a generated PDF,
+// which is why it went unnoticed. Mirrors merge-tracker.mjs's REPORTS_ROOT.
+const TRACKER_DIR = dirname(APPS_FILE);
+const MANIFEST_ROOT = basename(TRACKER_DIR) === 'data' ? dirname(TRACKER_DIR) : TRACKER_DIR;
+const PDF_MANIFEST = process.env.CAREER_OPS_PDF_INDEX || join(MANIFEST_ROOT, 'data', 'pdf-index.tsv');
 
 const flags = { dryRun: false, json: false };
 for (const arg of process.argv.slice(2)) {

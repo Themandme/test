@@ -88,7 +88,16 @@ export function parseIcimsSearchPage(html, origin, companyName) {
     // location_filter and the posting is dropped with nothing to explain it.
     // The lookarounds keep `field-label` a whole token, so a longer hyphenated
     // class like `field-label-inline` still doesn't count as a match.
-    const location = card.match(/<span\b[^>]*class=["'][^"']*(?<![\w-])field-label(?![\w-])[^"']*["'][^>]*>\s*Location\s*<\/span>\s*<span\b[^>]*>\s*([\s\S]*?)<\/span>/);
+    //
+    // The label text itself varies by tenant: the observed default is "Job
+    // Locations" (plural, prefixed), not the bare "Location" this anchored on.
+    // Requiring the exact word matched nothing on those tenants, so every
+    // posting came back with an empty location — and because both the location
+    // filter and the age filter pass rows with missing data, a full-directory
+    // sweep then admitted Germany, Portugal and Ohio into a Baltimore search.
+    // Matching any label containing "location" restores the real value; these
+    // cards carry it as e.g. "US-MD-Silver Spring".
+    const location = card.match(/<span\b[^>]*class=["'][^"']*(?<![\w-])field-label(?![\w-])[^"']*["'][^>]*>\s*[^<]*?locations?\s*<\/span>\s*<span\b[^>]*>\s*([\s\S]*?)<\/span>/i);
     jobs.push({
       title: decodeEntities(title[1].replace(/\s+/g, ' ').trim()),
       url: `${parsed.origin}${parsed.pathname}`,

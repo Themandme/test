@@ -321,12 +321,16 @@ function buildExperience(entries, partial) {
       const location = e.location
         ? `\n    <div class="job-location">${escapeHtml(e.location)}</div>`
         : '';
+      // Role before company: DOM order becomes PDF text-stream order, and ATS
+      // parsers (iCIMS, Workday, Taleo) read the stream positionally. With the
+      // company first they take it for a heading and file it into the
+      // description body, leaving the employer field empty.
       return `<div class="job">
+    <div class="job-role">${escapeHtml(e.role)}</div>
     <div class="job-header">
       <span class="job-company">${escapeHtml(e.company)}</span>
       <span class="job-period">${escapeHtml(e.dates || e.period || '')}</span>
-    </div>
-    <div class="job-role">${escapeHtml(e.role)}</div>${location}
+    </div>${location}
     <ul>
 ${bullets}
     </ul>

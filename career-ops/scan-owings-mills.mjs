@@ -12,15 +12,54 @@
 // Geography note: this matches town names in the posting slug/location. That is
 // a proxy for a 5-mile radius, not a geodesic calculation — the towns below were
 // chosen as those whose centres sit within roughly 5 miles of Owings Mills 21117.
+//
+// ---------------------------------------------------------------------------
+// COVERAGE (the reason this script has a state file)
+//
+// hiring.cafe's job sitemap is ~465 chunks of ~20k postings each, and each
+// chunk is ~3 MB. Reading all of them is ~1.4 GB per run, which is not a
+// reasonable thing to do to a free service twice a day.
+//
+// The previous version read `chunks.slice(0, 60)` — a fixed 12.9% of the index
+// — which looked like a sample but behaved like a blind spot. Area matches are
+// spread evenly across the whole index (measured: ~52-59 per 10 chunks at
+// positions 0, 55, 200 and 455), so the first 60 chunks are not the newest or
+// the nearest; they are simply the first. Postings drift in and out of that
+// window when hiring.cafe re-shards, which it does daily — the chunk URLs carry
+// a build id and every chunk's <lastmod> is stamped with the current date. Four
+// Best Buy openings appeared to be "new" on 2026-08-05 purely because a
+// re-shard moved them from chunk ~61 to chunk ~60.
+//
+// So instead: read a 60-chunk WINDOW that ROTATES each run, and accumulate
+// results in a store. Eight runs (four days at twice daily) cover the whole
+// index, and the published list is the union of recent sweeps rather than
+// whatever the last one happened to see. Bandwidth per run is unchanged.
+//
+// Two consequences worth knowing:
+//   - Entries are dropped when they age past MAX_AGE_DAYS, and also when they
+//     have not been re-seen for two full cycles — a filled posting leaves the
+//     sitemap, so absence across a whole cycle is the only available signal
+//     that it is gone.
+//   - The store must survive between runs, so it lives at the repo root next to
+//     the digest rather than under data/ (gitignored), and CI commits it.
+// ---------------------------------------------------------------------------
 import { writeFileSync, mkdirSync } from 'fs';
+import { entries, rotatingWindow, loadSweepState, saveSweepState, staleByLastmod } from './sitemap-sweep.mjs';
 
 const UA = 'career-ops personal job search (+https://github.com/santifer/career-ops)';
 const SITEMAP_INDEX = 'https://hiringcafe.com/job-posting-sitemap.xml';
-const MAX_CHUNKS = 60;         // 20k <loc> per chunk; 467 exist (~9.3M postings)
+const WINDOW_CHUNKS = 60;      // chunks read per run; ~3 MB each
 const MAX_DETAILS = 600;
 const CONCURRENCY = 4;
 const DELAY_MS = 110;
 const MAX_AGE_DAYS = 60;
+const STORE_PATH = 'owings-mills-store.json';
+
+// Slack on the sitemap's <lastmod> when using it to skip detail fetches.
+// lastmod should never precede datePosted, but it is a crawl-side field and a
+// cheap week of margin costs a few extra fetches while removing any chance of
+// discarding a fresh posting unseen.
+const LASTMOD_SLACK_DAYS = 7;
 
 // Towns within ~5 miles of Owings Mills, MD (21117), as slug fragments.
 const NEAR = [
@@ -51,6 +90,9 @@ const MEDICAL_PATTERNS = [
   /\bpatient\b/i, /\bpatholog/i, /\bspeech\s+language/i, /\banesthes/i,
   /\boncolog/i, /\bphysical\s+therap/i, /\boccupational\s+therap/i,
   /\bbehavior(al)?\s+techn/i, /\bregistered\s+behavior/i, /\brbt\b/i,
+  // ABA clinical practice. The technician-level patterns above missed the
+  // credentialled tier entirely, so BCBA roles were being kept.
+  /\bbcba\b/i, /\bboard\s+certified\s+behavior/i, /\bbehavior\s+analyst\b/i,
   /\bmedic\b/i, /\bdialysis\b/i, /\bphlebot/i, /\bimaging\b/i,
   /\bmri\b/i, /\bx-?ray\b/i, /\bradiograph/i, /\bmedication\b/i,
   /\b(medical|lab|surgical|nuclear|ct)\s+technologist\b/i, /\bultrasound\b/i,
@@ -58,7 +100,6 @@ const MEDICAL_PATTERNS = [
 const MEDICAL_RE = { test: (t) => MEDICAL_PATTERNS.some(re => re.test(t)) };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const locs = xml => [...String(xml).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].trim());
 
 async function get(url) {
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
@@ -83,24 +124,57 @@ async function pooled(items, limit, worker) {
   return out;
 }
 
-const index = await get(SITEMAP_INDEX);
-const chunks = locs(index).slice(0, MAX_CHUNKS);
+/* ------------------------------------------------------------------ store */
+
+const store = loadSweepState(STORE_PATH);
+// --render-only re-applies the filters and rewrites the digest from the stored
+// listings without touching the network. The title filters are applied on read
+// as well as on capture (see below), so tightening one takes effect on entries
+// already in the store instead of waiting for them to be re-swept.
+const RENDER_ONLY = process.argv.includes('--render-only');
+const run = RENDER_ONLY ? store.run : store.run + 1;
+
+/* ------------------------------------------------------- rotating sweep */
+
+const chunkEntries = RENDER_ONLY ? [] : entries(await get(SITEMAP_INDEX));
+const chunkCount = chunkEntries.length || store.chunkCount || 0;
+const { window, cursor, nextCursor } = rotatingWindow(chunkEntries, store.cursor, WINDOW_CHUNKS);
+const cycleRuns = Math.max(1, Math.ceil((chunkCount || WINDOW_CHUNKS) / WINDOW_CHUNKS));
+
+const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
+
+const stats = {
+  chunkCount, windowStart: cursor, windowSize: window.length, cycleRuns, run,
+  urlsScanned: 0, areaMatches: 0, skippedByLastmod: 0,
+  fetched: 0, senior: 0, medical: 0, stale: 0, offArea: 0,
+  newThisRun: 0, refreshed: 0, expiredAge: 0, expiredUnseen: 0, refiltered: 0,
+  duplicatesCollapsed: 0, kept: 0,
+};
+
+const chunkLists = await pooled(window, 4, async (c) => {
+  try { return entries(await get(c)); } catch { return []; }
+});
 
 const candidates = [];
-const chunkLists = await pooled(chunks, 4, async (c) => {
-  try { return locs(await get(c)); } catch { return []; }
-});
 for (const list of chunkLists) {
-  for (const url of list) {
-    const slug = url.slice(url.lastIndexOf('/') + 1);
-    if (NEAR.some(t => slug.includes(t))) candidates.push(url);
+  stats.urlsScanned += list.length;
+  for (const { loc, lastmod } of list) {
+    const slug = loc.slice(loc.lastIndexOf('/') + 1);
+    if (!NEAR.some(t => slug.includes(t))) continue;
+    stats.areaMatches++;
+    // Skip the detail fetch when the sitemap already says the posting has not
+    // been touched since before the freshness window. On the previous design
+    // 200 of 353 detail fetches were spent on postings the age filter then
+    // discarded; this removes most of that.
+    if (staleByLastmod(lastmod, cutoff, LASTMOD_SLACK_DAYS)) { stats.skippedByLastmod++; continue; }
+    candidates.push(loc);
   }
 }
 
-const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
-const stats = { candidates: candidates.length, fetched: 0, senior: 0, medical: 0, stale: 0, offArea: 0, kept: 0 };
+const seen = new Set();
+const fresh = candidates.filter(u => !seen.has(u) && seen.add(u)).slice(0, MAX_DETAILS);
 
-const rows = await pooled(candidates.slice(0, MAX_DETAILS), CONCURRENCY, async (url) => {
+const rows = await pooled(fresh, CONCURRENCY, async (url) => {
   let p; try { p = jobPosting(await get(url)); } catch { return null; }
   if (!p || typeof p.title !== 'string') return null;
   stats.fetched++;
@@ -123,7 +197,6 @@ const rows = await pooled(candidates.slice(0, MAX_DETAILS), CONCURRENCY, async (
   if (!(cityOk && mdOk)) { stats.offArea++; return null; }
 
   const sal = p.baseSalary && p.baseSalary.value;
-  stats.kept++;
   return {
     title, url,
     company: (p.hiringOrganization && p.hiringOrganization.name || '').trim(),
@@ -134,9 +207,49 @@ const rows = await pooled(candidates.slice(0, MAX_DETAILS), CONCURRENCY, async (
   };
 });
 
-const kept = rows.filter(Boolean)
-  .filter((r, i, arr) => arr.findIndex(x => x.url === r.url) === i)
-  .sort((a, b) => (b.datePosted || '').localeCompare(a.datePosted || ''));
+/* ------------------------------------------------------- merge and expire */
+
+const jobs = { ...store.jobs };
+for (const r of rows) {
+  if (!r) continue;
+  if (jobs[r.url]) stats.refreshed++; else stats.newThisRun++;
+  jobs[r.url] = { ...r, lastSeenRun: run };
+}
+
+// A posting that is filled disappears from the sitemap, so it simply stops
+// being re-seen. One full cycle visits every chunk, so surviving two cycles
+// without a sighting is the point at which absence is meaningful rather than
+// an artefact of which window we happened to read.
+const unseenLimit = 2 * cycleRuns;
+for (const [url, j] of Object.entries(jobs)) {
+  const posted = Date.parse(j.datePosted || '');
+  if (Number.isFinite(posted) && posted < cutoff) { delete jobs[url]; stats.expiredAge++; continue; }
+  // Only a real sweep can refresh lastSeenRun, so --render-only must never
+  // expire on absence — it saw nothing by construction.
+  if (!RENDER_ONLY && run - (j.lastSeenRun ?? run) > unseenLimit) { delete jobs[url]; stats.expiredUnseen++; continue; }
+  // Re-apply the title filters on read. Capture-time filtering alone would let
+  // anything admitted under an older, looser pattern sit in the store forever —
+  // which is how nine BCBA roles survived a medical exclusion.
+  if (SENIOR_RE.test(j.title) || MEDICAL_RE.test(j.title)) { delete jobs[url]; stats.refiltered++; }
+}
+
+// hiring.cafe carries the same opening at several URLs (measured: 88 redundant
+// rows across 73 groups in a full sweep). Collapse on employer+title+town and
+// keep the newest, so the digest reads as a list of openings rather than a list
+// of postings. The store keeps every URL — dedup is a presentation concern, and
+// discarding URLs would make them look new again next time they are swept.
+const byOpening = new Map();
+for (const j of Object.values(jobs)) {
+  const k = [j.company, j.title, j.city].join(' ').toLowerCase();
+  const prev = byOpening.get(k);
+  if (!prev || (j.datePosted || '') > (prev.datePosted || '')) byOpening.set(k, j);
+}
+stats.duplicatesCollapsed = Object.keys(jobs).length - byOpening.size;
+
+const kept = [...byOpening.values()].sort((a, b) => (b.datePosted || '').localeCompare(a.datePosted || ''));
+stats.kept = kept.length;
+
+saveSweepState(STORE_PATH, { cursor: nextCursor, run, chunkCount, cycleRuns, jobs });
 
 mkdirSync('data', { recursive: true });
 writeFileSync('data/owings-mills.json', JSON.stringify({
@@ -146,6 +259,13 @@ writeFileSync('data/owings-mills.json', JSON.stringify({
   towns: NEAR,
   excluded: ['senior/lead/management titles', 'medical & clinical titles'],
   maxAgeDays: MAX_AGE_DAYS,
+  coverage: {
+    mode: 'rotating window with accumulation',
+    chunksPerRun: window.length,
+    chunksTotal: chunkCount,
+    runsPerFullCycle: cycleRuns,
+    windowStart: cursor,
+  },
   stats,
   jobs: kept,
 }, null, 2));
@@ -170,6 +290,8 @@ const md = [
   '',
   'Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.',
   '',
+  `Coverage: each run reads ${window.length} of ${chunkCount} sitemap chunks, rotating, so a full pass takes ${cycleRuns} runs (~${(cycleRuns / 2).toFixed(1)} days at twice daily). Listings accumulate across runs and drop out once they age past ${MAX_AGE_DAYS} days or go unseen for two full passes.`,
+  '',
 ];
 for (const [town, jobs] of [...byTown].sort((a, b) => b[1].length - a[1].length)) {
   md.push(`## ${town} (${jobs.length})`, '', '| Employer | Role | Pay | Posted |', '|---|---|---|---|');
@@ -182,8 +304,7 @@ for (const [town, jobs] of [...byTown].sort((a, b) => b[1].length - a[1].length)
 writeFileSync('owings-mills-latest.md', md.join('\n'));
 
 console.log(JSON.stringify(stats, null, 2));
-console.log(`\nkept ${kept.length} local jobs`);
-for (const r of kept.slice(0, 60)) {
-  const pay = r.salary ? `${r.salary.min ?? '?'}-${r.salary.max ?? '?'}/${(r.salary.unit || '').toLowerCase()}` : 'n/a';
-  console.log(`  ${r.datePosted || '?'}  ${r.company} | ${r.title} | ${r.city} | ${pay}`);
-}
+console.log(window.length
+  ? `\nwindow ${cursor}..${(cursor + window.length - 1) % chunkCount} of ${chunkCount} chunks · run ${run} · full pass every ${cycleRuns} runs`
+  : `\nrender-only from stored state · run ${run} · ${chunkCount} chunks · full pass every ${cycleRuns} runs`);
+console.log(`store now holds ${kept.length} local jobs (+${stats.newThisRun} new, -${stats.expiredAge + stats.expiredUnseen} expired)`);

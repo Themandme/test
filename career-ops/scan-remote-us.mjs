@@ -11,12 +11,20 @@
 // Salesforce/CRM ownership, first-line support, SQL/Power BI/Excel/Python
 // reporting, cross-functional coordination, documented process work, and
 // high-volume customer service.
+//
+// Coverage: the chunk window ROTATES between runs and results ACCUMULATE in a
+// store — see sitemap-sweep.mjs for why a fixed `slice(0, N)` is a blind spot
+// rather than a sample. This previously read the first 90 of ~465 chunks, every
+// time, and the resulting yield of 4 roles was reported as "an accurate count
+// of new matching postings" when it was a count across a fifth of the corpus.
 import { writeFileSync, mkdirSync } from 'fs';
+import { entries, rotatingWindow, loadSweepState, saveSweepState, staleByLastmod } from './sitemap-sweep.mjs';
 
 const UA = 'career-ops personal job search (+https://github.com/santifer/career-ops)';
 const SITEMAP_INDEX = 'https://hiringcafe.com/job-posting-sitemap.xml';
-const MAX_CHUNKS = 90;
-const MAX_DETAILS = 2200;
+const MAX_CHUNKS = 60;
+const MAX_DETAILS = 1200;
+const SWEEP_STATE = 'data/remote-us-sweep.json';
 const CONCURRENCY = 4;
 const DELAY_MS = 110;
 const MAX_AGE_DAYS = 14;   // forward-looking: only genuinely current openings
@@ -97,11 +105,27 @@ const BLOCKER_RE = /\b(clearance|ts\/sci|polygraph|secret\b|co-?op\b|currently e
 // Predatory-posting signals. These are NOT excluded — the user asked for
 // anything gettable — but they are flagged, because commission-only and
 // recruit-your-own-team structures target exactly people who need income now.
-const CAUTION_RE = /\b(commission[- ]only|100% commission|straight commission|no base salary|unlimited earning|uncapped income|be your own boss|host agency|recruit(ing)? (others|agents)|build (your|a) team|1099 (only|contractor)|purchase (your|a) (starter|kit)|licensing (fee|required)|pay for (your )?training)\b/i;
+// Matched phrases are attached to the row and surfaced, never silently dropped:
+// the brief is "anything gettable", and the user decides. Listed individually so
+// the output can name what tripped rather than just asserting "suspicious".
+const CAUTION_PATTERNS = [
+  /commission[- ]only/i, /100% commission/i, /straight commission/i, /no base salary/i,
+  /unlimited earning/i, /uncapped income/i, /be your own boss/i, /host agency/i,
+  /recruit(ing)? (others|agents)/i, /build (your|a) team/i, /1099 (only|contractor)/i,
+  /purchase (your|a) (starter|kit)/i, /licensing (fee|required)/i, /pay for (your )?training/i,
+  // MLM/"opportunity" tells found in the wild: a $160-200k "Business Development
+  // Specialist" whose description was daily training calls and building a
+  // downline. The original pattern list missed every one of these.
+  /performance[- ]based opportunity/i, /independent (professional|contractor)s? who/i,
+  /daily live training/i, /work locally or expand globally/i,
+  /flexible schedule \(full or part[- ]time\)/i, /personal growth and professional development/i,
+];
+const cautionsIn = (text) => CAUTION_PATTERNS
+  .filter(re => re.test(text))
+  .map(re => String(re).replace(/^\/|\/i$/g, ''));
 const EXP_FLOOR_RE = /\b([3-9]|1[0-9])\+?\s*(\+)?\s*years?\b/i;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const locs = xml => [...String(xml).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].trim());
 const strip = s => String(s || '').replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/gi, ' ').replace(/\s+/g, ' ').trim();
 
 async function get(url) {
@@ -125,20 +149,40 @@ async function pooled(items, limit, worker) {
 }
 const scoreOf = (text, weights) => weights.reduce((s, [re, w]) => s + (re.test(text) ? w : 0), 0);
 
-const index = await get(SITEMAP_INDEX);
-const chunkLists = await pooled(locs(index).slice(0, MAX_CHUNKS), 4,
-  async c => { try { return locs(await get(c)); } catch { return []; } });
+const RENDER_ONLY = process.argv.includes('--render-only');
+const store = loadSweepState(SWEEP_STATE);
+const run = RENDER_ONLY ? store.run : store.run + 1;
+
+const allChunks = RENDER_ONLY ? [] : entries(await get(SITEMAP_INDEX));
+const chunkCount = allChunks.length || store.chunkCount || 0;
+const { window: windowChunks, cursor, nextCursor, cycleRuns } =
+  rotatingWindow(allChunks, store.cursor, MAX_CHUNKS);
+
+const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
+const stats = {
+  chunkCount, windowStart: cursor, windowSize: windowChunks.length,
+  cycleRuns: allChunks.length ? cycleRuns : Math.max(1, Math.ceil((chunkCount || MAX_CHUNKS) / MAX_CHUNKS)),
+  run, candidates: 0, skippedByLastmod: 0,
+  fetched: 0, notRemote: 0, notUS: 0, senior: 0, clinical: 0, expFloor: 0,
+  lowScore: 0, stale: 0, weakTitle: 0, blocked: 0,
+  newThisRun: 0, refreshed: 0, expiredAge: 0, expiredUnseen: 0, kept: 0,
+};
+
+const chunkLists = await pooled(windowChunks, 4,
+  async c => { try { return entries(await get(c)); } catch { return []; } });
 
 const candidates = [];
 for (const list of chunkLists) {
-  for (const url of list) {
+  for (const { loc: url, lastmod } of list) {
     const slug = url.slice(url.lastIndexOf('/') + 1);
-    if (REMOTE_SLUG.some(t => slug.includes(t)) && TITLE_SLUG.some(t => slug.includes(t))) candidates.push(url);
+    if (!(REMOTE_SLUG.some(t => slug.includes(t)) && TITLE_SLUG.some(t => slug.includes(t)))) continue;
+    // At a 14-day window most of the corpus is stale, so skipping on the
+    // sitemap's own <lastmod> is where most of the fetch budget is saved.
+    if (staleByLastmod(lastmod, cutoff)) { stats.skippedByLastmod++; continue; }
+    candidates.push(url);
   }
 }
-
-const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
-const stats = { candidates: candidates.length, fetched: 0, notRemote: 0, notUS: 0, senior: 0, clinical: 0, expFloor: 0, lowScore: 0, stale: 0, weakTitle: 0, blocked: 0, kept: 0 };
+stats.candidates = candidates.length;
 
 // Deterministic spread across the candidate list: taking the head sampled one
 // end of the corpus and returned 92% stale postings.
@@ -177,7 +221,7 @@ const rows = await pooled(sampled, CONCURRENCY, async (url) => {
   if (score < MIN_SCORE) { stats.lowScore++; return null; }
 
   const sal = p.baseSalary && p.baseSalary.value;
-  stats.kept++;
+  // kept is counted from the store after the merge, not per-row.
   return {
     title, url, score,
     company: (p.hiringOrganization && p.hiringOrganization.name || '').trim(),
@@ -186,26 +230,55 @@ const rows = await pooled(sampled, CONCURRENCY, async (url) => {
     employmentType: Array.isArray(p.employmentType) ? p.employmentType.join(', ') : (p.employmentType || null),
     salary: sal ? { min: sal.minValue ?? null, max: sal.maxValue ?? null, unit: sal.unitText || null } : null,
     matched: TITLE_WEIGHTS.filter(([re]) => re.test(title)).map(([re]) => String(re)).length,
+    caution: cautionsIn(desc),
   };
 });
 
-const kept = rows.filter(Boolean)
-  .filter((r, i, arr) => arr.findIndex(x => x.url === r.url) === i)
+// Accumulate across runs: one 60-chunk window is a thirteenth of the index, so
+// the published list is the union of recent sweeps rather than whatever this
+// run happened to see.
+const jobs = { ...store.jobs };
+for (const r of rows) {
+  if (!r) continue;
+  if (jobs[r.url]) stats.refreshed++; else stats.newThisRun++;
+  jobs[r.url] = { ...r, lastSeenRun: run };
+}
+
+const unseenLimit = 2 * stats.cycleRuns;
+for (const [url, j] of Object.entries(jobs)) {
+  const posted = Date.parse(j.datePosted || '');
+  if (Number.isFinite(posted) && posted < cutoff) { delete jobs[url]; stats.expiredAge++; continue; }
+  if (!RENDER_ONLY && run - (j.lastSeenRun ?? run) > unseenLimit) { delete jobs[url]; stats.expiredUnseen++; }
+}
+
+const kept = Object.values(jobs)
   .sort((a, b) => b.score - a.score || (b.datePosted || '').localeCompare(a.datePosted || ''));
+stats.kept = kept.length;
 
 mkdirSync('data', { recursive: true });
+saveSweepState(SWEEP_STATE, { cursor: nextCursor, run, chunkCount, jobs });
 writeFileSync('data/remote-us.json', JSON.stringify({
   generatedAt: new Date().toISOString(),
   scope: 'Fully remote, US-eligible',
   scoring: 'Tiered target titles (user-supplied) weighted by tier, plus description confirmation; minimum score ' + MIN_SCORE,
   excluded: ['senior/lead/management', 'clinical', 'roles demanding 3+ years experience'],
   maxAgeDays: MAX_AGE_DAYS,
+  coverage: {
+    mode: 'rotating window with accumulation',
+    chunksPerRun: windowChunks.length, chunksTotal: chunkCount,
+    runsPerFullCycle: stats.cycleRuns, windowStart: cursor,
+  },
   stats, jobs: kept,
 }, null, 2));
 
 stats.sampled = sampled.length;
 console.log(JSON.stringify(stats, null, 2));
-console.log(`\nkept ${kept.length} remote roles\n`);
+console.log(`\nstore holds ${kept.length} remote roles (+${stats.newThisRun} new this run)\n`);
+const flagged = kept.filter(r => r.caution && r.caution.length);
 for (const r of kept.slice(0, 40)) {
-  console.log(`  [${String(r.score).padStart(2)}]  ${r.company} | ${r.title} | ${r.datePosted || '?'}`);
+  const warn = r.caution && r.caution.length ? `  ⚠️  ${r.caution.join(', ')}` : '';
+  console.log(`  [${String(r.score).padStart(2)}]  ${r.company} | ${r.title} | ${r.datePosted || '?'}${warn}`);
+}
+if (flagged.length) {
+  console.log(`\n⚠️  ${flagged.length} listing(s) carry predatory-posting signals — shown, not removed, but read the description before applying.`);
 }

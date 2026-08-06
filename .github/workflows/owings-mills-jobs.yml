@@ -19,7 +19,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 30     # the sweep reads 60 sitemap chunks of ~20k postings
+    timeout-minutes: 30     # each run reads a rotating 60 of ~465 sitemap chunks
 
     steps:
       - uses: actions/checkout@v4
@@ -35,17 +35,25 @@ jobs:
         # network directly.
         run: node scan-owings-mills.mjs
 
-      - name: Commit the digest if it changed
+      - name: Commit the digest and sweep state
         working-directory: career-ops
+        # The store carries the rotating window's cursor and the accumulated
+        # listings, so it MUST be committed — without it every run restarts at
+        # chunk 0 and the rotation never advances. It changes on every run (the
+        # cursor always moves), so it is checked separately from the digest,
+        # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md; then
-            echo "No change in local job listings — nothing to commit."
+          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json; then
+            echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add owings-mills-latest.md
+          git add owings-mills-latest.md owings-mills-store.json
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
+          # Concurrent-safe: another run (or a push from a session) may have
+          # landed first, and this job's only local commit is the one above.
+          git pull --rebase --autostash origin main
           git push
 
       - name: Summary
