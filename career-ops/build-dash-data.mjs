@@ -97,15 +97,25 @@ function parsePipeline() {
     });
 }
 
+// Optional sources degrade to an empty set rather than throwing: a fresh
+// install has none of them, and a scan that has not run yet should not break
+// the dashboard build.
+const readJsonOr = (p, fallback) => {
+  try { return readJson(p); } catch { return fallback; }
+};
+
 const out = {
   generatedAt: new Date().toISOString(),
   profile: { ...readProfile(), degree: educationLine() },
   tracker: parseTracker(),
   reports: parseReports(),
   pipeline: parsePipeline(),
-  owingsMills: readJson('data/owings-mills.json'),
-  remoteUs: readJson('data/remote-us.json'),
-  indeed: readJson('data/indeed.json'),
+  owingsMills: readJsonOr('data/owings-mills.json', { jobs: [] }),
+  remoteUs: readJsonOr('data/remote-us.json', { jobs: [] }),
+  indeed: readJsonOr('data/indeed.json', { jobs: [] }),
+  // Title-blind local Workday pull (scan-local-workday.mjs). Flat array, and
+  // its records carry `days` (age at fetch) rather than a posted date.
+  localWorkday: readJsonOr('data/local-workday.json', []),
 };
 
 const dest = process.argv[2] || join(ROOT, 'output/dash-data.json');
@@ -113,3 +123,4 @@ writeFileSync(dest, JSON.stringify(out, null, 2));
 console.log(`wrote ${dest}`);
 console.log(`  tracker=${out.tracker.length} reports=${out.reports.length} pipeline=${out.pipeline.length}`);
 console.log(`  owingsMills=${out.owingsMills.jobs.length} remoteUs=${out.remoteUs.jobs.length} indeed=${out.indeed.jobs.length}`);
+console.log(`  localWorkday=${out.localWorkday.length}`);
