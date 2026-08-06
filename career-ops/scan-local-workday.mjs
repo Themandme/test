@@ -20,9 +20,17 @@ const TENANTS = [
   ['GBMC HealthCare', 'gbmc', 'wd1', 'gbmc'],
   ['Gilchrist / GBMC', 'gbmc', 'wd1', 'gilchristinova'],
   ['Brown Advisory', 'brownadvisory', 'wd1', 'brown'],
+  // Probed 2026-08-06 across 8 instances x 14 site paths: no working CXS
+  // endpoint. The tenant names are real but the sites 422, so these two are
+  // either off Workday now or behind a path the public API does not expose.
+  // Left in place, and deliberately noisy, because both are significant
+  // Baltimore employers — a silently-absent employer looks identical to one
+  // that simply is not hiring.
   ['Whiting-Turner', 'whiting', 'wd1', 'external'],
   ['Erickson Senior Living', 'erickson', 'wd5', 'external'],
-  ['Catalyte', 'catalyte', 'wd1', 'catalyte'],
+  // wd1 returns 422; wd503 is the live instance (both are in the public
+  // dataset, and only the second one works).
+  ['Catalyte', 'catalyte', 'wd503', 'catalyte'],
   ['Goucher College', 'goucher', 'wd1', 'goucher_careers'],
   ['Loyola University MD', 'loyola', 'wd5', 'external'],
   ['University of Maryland', 'umd', 'wd1', 'umcp'],
