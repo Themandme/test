@@ -48,7 +48,6 @@ const TENANTS_FALLBACK = [
   ['Loyola University MD', 'loyola', 'wd5', 'external'],
   ['University of Maryland', 'umd', 'wd1', 'umcp'],
   ['Mercy', 'mercy', 'wd1', 'mercycareers'],
-  ['Adventist HealthCare', 'adventisthealthcare', 'wd1', 'adventisthealthcarecareers'],
   ['Novavax', 'novavax', 'wd1', 'careers'],
   ['GEICO', 'geico', 'wd1', 'external'],
   ['CACI', 'caci', 'wd1', 'external'],
