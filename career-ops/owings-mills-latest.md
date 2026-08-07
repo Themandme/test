@@ -1,15 +1,19 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-06 22:57 UTC · 528 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-07 01:03 UTC · 528 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
 Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
-## Owings Mills (278)
+## Owings Mills (282)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Sodexo | [Cook](https://hiringcafe.com/job/cook-sodexo-owings-mills-maryland-kh8ndd78i1l5ndkz) | — | 2026-08-05 |
+| Compass Group | [PORTER (FULL TIME)](https://hiringcafe.com/job/porter-full-time-compass-group-owings-mills-maryland-vzvx7tfvicxewvzr) | $19–$20/hr | 2026-08-05 |
+| Compass Group | [PORTER (FULL TIME) (1559276)](https://hiringcafe.com/job/porter-full-time-1559276-compass-group-owings-mills-maryland-ijyuim06nvsqigrq) | $19–$20/hr | 2026-08-05 |
+| Lib's Grill | [Warehouse Assistant Owings Mills](https://hiringcafe.com/job/warehouse-assistant-owings-mills-libs-grill-owings-mills-maryland-sg3y0y6arb9ga46o) | $16–$18/hr | 2026-08-05 |
 | The TJX Companies | [AM Apparel Processor](https://hiringcafe.com/job/am-apparel-processor-the-tjx-companies-owings-mills-maryland-vdntdbioetqytkqe) | $15.25–$15.75/hr | 2026-08-04 |
 | Marvin | [Brand Ambassador - Appointment Setter](https://hiringcafe.com/job/brand-ambassador-appointment-setter-marvin-owings-mills-maryland-gk167xrwnhfy9fje) | $25–$35/hr | 2026-08-04 |
 | Wegmans | [Cart Attendant](https://hiringcafe.com/job/cart-attendant-wegmans-owings-mills-maryland-6kneo4cxphqefyfo) | $16.5–$17/hr | 2026-08-04 |
@@ -293,6 +297,10 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Chimes | [Direct Support Professional - Maxine (Sun-Weds 8a-8p)](https://hiringcafe.com/job/direct-support-professional-maxine-sun-weds-8a-8p-chimes-pikesville-gr7jv1kae6q2gg8z) | — | 2026-08-05 |
+| Chimes | [Direct Support Professional - (Pine Ridge-Pikesville) Mon-Tues 3p-9p, Sun 9a-9p](https://hiringcafe.com/job/direct-support-professional-pine-ridge-pikesville-mon-tues-3p-9p-sun-zaben7ta256zl58t) | — | 2026-08-05 |
+| Chimes | [Direct Support Professional - Maxine (Weds-Sat 8a-8p)](https://hiringcafe.com/job/direct-support-professional-maxine-weds-sat-8a-8p-chimes-pikesville-wrk0mfn1g2oesm6q) | — | 2026-08-05 |
+| Chimes | [Direct Support Professional - Maxine (Thurs-Sat 8a-8p)](https://hiringcafe.com/job/direct-support-professional-maxine-thurs-sat-8a-8p-chimes-pikesville-hrgi610t7m67rpis) | — | 2026-08-05 |
 | M&T Bank | [Relationship Banker - Pikesville](https://hiringcafe.com/job/relationship-banker-pikesville-m-and-t-bank-pikesville-maryland-ys4c9p3rmtocr02m) | $24.87–$41.45/hr | 2026-08-04 |
 | Prologue | [Adult Outreach Worker](https://hiringcafe.com/job/adult-outreach-worker-prologue-pikesville-maryland-k0oer3cd0t9mpmw0) | — | 2026-08-03 |
 | Chimes | [Direct Support Professional - (Stevenson) Thurs-Sat 8a-8p](https://hiringcafe.com/job/direct-support-professional-stevenson-thurs-sat-8a-8p-chimes-3j7tv1u1586och9b) | — | 2026-08-03 |
@@ -304,19 +312,15 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Service Coordination, Inc. | [Case Manager (Supports Planner)](https://hiringcafe.com/job/case-manager-supports-planner-service-coordination-inc-pikesville-meabguf9nuhesypf) | $64k–$80k | 2026-07-30 |
 | FutureCare | [Laundry Aide](https://hiringcafe.com/job/laundry-aide-futurecare-pikesville-maryland-mtqx31ecbdj56bez) | $15.7–$17.5/hr | 2026-07-30 |
 | Cellular Sales | [Verizon Sales Consultant](https://hiringcafe.com/job/verizon-sales-consultant-cellular-sales-pikesville-maryland-1mhn19f4iiz20spd) | $54k–$109k | 2026-07-30 |
-| Chimes | [Direct Support Professional - Maxine (Sun-Weds 8a-8p)](https://hiringcafe.com/job/direct-support-professional-maxine-sun-weds-8a-8p-chimes-pikesville-c6nb326yrhczjbbm) | — | 2026-07-29 |
-| Chimes | [Direct Support Professional - (Pine Ridge-Pikesville) Mon-Tues 3p-9p, Sun 9a-9p](https://hiringcafe.com/job/direct-support-professional-pine-ridge-pikesville-mon-tues-3p-9p-sun-zlkcc1rve4k12r2i) | — | 2026-07-29 |
 | FedEx | [Retail Customer Service Associate](https://hiringcafe.com/job/retail-customer-service-associate-fedex-pikesville-maryland-ou8vy2vck4jgysqy) | $18.35–$21.57/hr | 2026-07-29 |
 | Quest Management Group | [Maintenance Technician](https://hiringcafe.com/job/maintenance-technician-quest-management-group-pikesville-maryland-jmp5g5j5d90meolu) | $24–$27/hr | 2026-07-29 |
 | Quest Management Group | [Maintenance Supervisor](https://hiringcafe.com/job/maintenance-supervisor-quest-management-group-pikesville-maryland-pk5rxuiqmm7bl4ap) | $28–$30/hr | 2026-07-29 |
-| Chimes | [Direct Support Professional - Maxine (Weds-Sat 8a-8p)](https://hiringcafe.com/job/direct-support-professional-maxine-weds-sat-8a-8p-chimes-pikesville-0eo6x2crh8id1z7h) | — | 2026-07-29 |
 | Charter Senior Living | [Cook](https://hiringcafe.com/job/cook-charter-senior-living-pikesville-maryland-eghftn1tzw2d3pjx) | — | 2026-07-29 |
 | Goodwill Industries of the Chesapeake | [Production Lead](https://hiringcafe.com/job/production-lead-goodwill-industries-of-the-chesapeake-pikesville-o0ca2n31tphezp6w) | — | 2026-07-29 |
 | Pleasant Behavioral Health Systems | [Recruitment Specialist](https://hiringcafe.com/job/recruitment-specialist-pleasant-behavioral-health-systems-pikesville-efcebn15nb1el43j) | $30–$31/hr | 2026-07-28 |
 | WesBanco | [Banking Center Manager - Pikesville](https://hiringcafe.com/job/banking-center-manager-pikesville-wesbanco-pikesville-maryland-6s80t8gnaf6mb9ma) | $72k–$74k | 2026-07-28 |
 | Mainspring Recovery | [Full-Service Bookkeeper](https://hiringcafe.com/job/full-service-bookkeeper-mainspring-recovery-pikesville-maryland-uaj69i5rvce9gh99) | $75k–$90k | 2026-07-28 |
 | North Oaks | [Utility Worker part time](https://hiringcafe.com/job/utility-worker-part-time-north-oaks-pikesville-maryland-crxtf3lqefbjsdd5) | — | 2026-07-27 |
-| Chimes | [Direct Support Professional - Maxine (Thurs-Sat 8a-8p)](https://hiringcafe.com/job/direct-support-professional-maxine-thurs-sat-8a-8p-chimes-pikesville-0khtwtz8u1830yqw) | — | 2026-07-27 |
 | Sage Ventures | [Accounts Receivable Associate](https://hiringcafe.com/job/accounts-receivable-associate-sage-ventures-pikesville-maryland-bj12l2a1t0k323ga) | — | 2026-07-27 |
 | Starbucks | [barista - Store# 00740, WOODHOLME](https://hiringcafe.com/job/barista-store-00740-woodholme-starbucks-pikesville-maryland-zdegl0664xqcxpgy) | $15.75–$17.88/hr | 2026-07-26 |
 | Coastal Recovery | [General Counsel \| Pikesville, MD](https://hiringcafe.com/job/general-counsel-pikesville-md-coastal-recovery-pikesville-maryland-7mowp2mj9buag79a) | $220k–$260k | 2026-07-26 |
@@ -381,7 +385,7 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | OneOncology | [Advanced Practice Provider - Chesapeake Urology](https://hiringcafe.com/job/advanced-practice-provider-chesapeake-urology-oneoncology-pikesville-e7661iy94ro0vqpf) | $115k–$150k | 2026-06-11 |
 | Starbucks | [shift supervisor - Store# 62733, 103 REISTERSTOWN RD](https://hiringcafe.com/job/shift-supervisor-store-62733-103-reisterstown-rd-starbucks-pikesville-aq1eagnqegb5zxbs) | $20–$22.7/hr | 2026-06-09 |
 
-## Randallstown (68)
+## Randallstown (66)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -451,10 +455,8 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Tractor Supply Company | [Team Member (Randallstown, MD, US, 21133)](https://hiringcafe.com/job/team-member-randallstown-md-us-21133-tractor-supply-company-754k7ve01uyt5251) | — | 2026-06-17 |
 | Preston Automotive Group | [Automotive General Manager](https://hiringcafe.com/job/automotive-general-manager-preston-automotive-group-randallstown-tj8dabxz5ol9fwre) | — | 2026-06-16 |
 | Archdiocese of Baltimore | [Parish Secretary (NE)](https://hiringcafe.com/job/parish-secretary-ne-archdiocese-of-baltimore-randallstown-maryland-z5iee0lo2mf62yom) | $16.13–$18.74/hr | 2026-06-15 |
-| MECU Credit Union | [Lead (Head) Teller](https://hiringcafe.com/job/lead-head-teller-mecu-credit-union-randallstown-maryland-ju23xeaa7gyf98kv) | $20.29–$24.85/hr | 2026-06-08 |
-| LifeBridge Health | [CARE MANAGEMENT ASST-PSYCH](https://hiringcafe.com/job/care-management-asst-psych-lifebridge-health-randallstown-maryland-u8oobvi76w86zgv2) | $17–$24.75/hr | 2026-06-08 |
 
-## Reisterstown (55)
+## Reisterstown (54)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -512,9 +514,8 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Chimes | [Direct Support Professional - (Bond) Sun-Weds 7a-7p](https://hiringcafe.com/job/direct-support-professional-bond-sun-weds-7a-7p-chimes-reisterstown-jzqzxqmp5xagy9yy) | — | 2026-06-17 |
 | Blufox Mobile | [Store Manager BluFox Mobile- Reisterstown](https://hiringcafe.com/job/store-manager-blufox-mobile-reisterstown-blufox-mobile-reisterstown-rexe9n38qzb6kull) | — | 2026-06-17 |
 | Starbucks | [barista - Store# 58603, REISTERSTOWN SHOPPING CENTER](https://hiringcafe.com/job/barista-store-58603-reisterstown-shopping-center-starbucks-koy2lzl8vaqw1x9u) | $15.75–$17.88/hr | 2026-06-11 |
-| Arch Telecom | [Wireless Retail Sales Associate REISTERSTOWN \| Chartley Dr Avg. All in $30](https://hiringcafe.com/job/wireless-retail-sales-associate-reisterstown-chartley-dr-avg-all-in-e44zoigq18mys12w) | $15–$30/hr | 2026-06-08 |
 
-## Windsor Mill (24)
+## Windsor Mill (23)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -541,7 +542,6 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Peraton | [Supervisor, External Communications](https://hiringcafe.com/job/supervisor-external-communications-peraton-windsor-mill-maryland-szj3ylyrszzsh99m) | $86k–$138k | 2026-06-18 |
 | RELI Group | [Compliance Intern](https://hiringcafe.com/job/compliance-intern-reli-group-windsor-mill-maryland-z2hr3u9snvo8y2ye) | — | 2026-06-11 |
 | DaVita | [Dietitian](https://hiringcafe.com/job/dietitian-davita-windsor-mill-maryland-30e64qci9vl3f7xm) | $65k–$96k | 2026-06-10 |
-| Samaritan's Purse | [Temporary Class-A CDL Truck Driver \| Windsor Mill, MD](https://hiringcafe.com/job/temporary-class-a-cdl-truck-driver-windsor-mill-md-samaritans-purse-4aaak39y78tvk1v1) | — | 2026-06-08 |
 
 ## Milford Mill (8)
 
