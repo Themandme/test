@@ -395,6 +395,9 @@ const USER_PATHS = [
   // update.
   'owings-mills-latest.md',
   'owings-mills-store.json',
+  // Same class as the store above: scan results, tracked so the scheduled
+  // workflow can commit them, and user-owned rather than shipped by an update.
+  'local-workday-store.json',
   'jds/',
   'writing-samples/',
   'config/plugins.yml',
