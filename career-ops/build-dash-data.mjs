@@ -115,7 +115,9 @@ const out = {
   indeed: readJsonOr('data/indeed.json', { jobs: [] }),
   // Title-blind local Workday pull (scan-local-workday.mjs). Flat array, and
   // its records carry `days` (age at fetch) rather than a posted date.
-  localWorkday: readJsonOr('data/local-workday.json', []),
+  // Committed store first (written by scan-local-workday.mjs and refreshed by
+  // the scheduled workflow); the old gitignored path is the fallback.
+  localWorkday: readJsonOr('local-workday-store.json', readJsonOr('data/local-workday.json', [])),
 };
 
 const dest = process.argv[2] || join(ROOT, 'output/dash-data.json');
