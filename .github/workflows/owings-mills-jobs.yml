@@ -47,6 +47,22 @@ jobs:
         continue-on-error: true
         run: node scan-local-workday.mjs
 
+      - name: Sweep Maryland state government (JobAps)
+        working-directory: career-ops
+        # The only source that publishes a real filing deadline, so closed
+        # postings are dropped rather than inferred.
+        continue-on-error: true
+        run: node scan-maryland-gov.mjs
+
+      - name: Sweep county and city government (NEOGOV)
+        working-directory: career-ops
+        # Baltimore County, CCBC, Howard, Anne Arundel, Montgomery, M-NCPPC,
+        # Frederick and DC. Agency slugs come from portals.yml `neogov`, which
+        # is gitignored — so on the runner this falls back to the built-in list.
+        # Keep the two in step when the roster changes.
+        continue-on-error: true
+        run: node scan-neogov.mjs
+
       - name: Commit the digest and sweep state
         working-directory: career-ops
         # The store carries the rotating window's cursor and the accumulated
@@ -55,13 +71,13 @@ jobs:
         # cursor always moves), so it is checked separately from the digest,
         # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json; then
+          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json; then
             echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json
+          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
           # Concurrent-safe: another run (or a push from a session) may have
           # landed first, and this job's only local commit is the one above.
