@@ -112,7 +112,10 @@ const out = {
   pipeline: parsePipeline(),
   owingsMills: readJsonOr('data/owings-mills.json', { jobs: [] }),
   remoteUs: readJsonOr('data/remote-us.json', { jobs: [] }),
+  // Legacy Apify pull (12 rows, free tier). Superseded by indeedStore below,
+  // which comes from the Indeed MCP connector via import-indeed.mjs.
   indeed: readJsonOr('data/indeed.json', { jobs: [] }),
+  indeedStore: readJsonOr('indeed-store.json', []),
   // Title-blind local Workday pull (scan-local-workday.mjs). Flat array, and
   // its records carry `days` (age at fetch) rather than a posted date.
   // Committed store first (written by scan-local-workday.mjs and refreshed by
@@ -125,4 +128,4 @@ writeFileSync(dest, JSON.stringify(out, null, 2));
 console.log(`wrote ${dest}`);
 console.log(`  tracker=${out.tracker.length} reports=${out.reports.length} pipeline=${out.pipeline.length}`);
 console.log(`  owingsMills=${out.owingsMills.jobs.length} remoteUs=${out.remoteUs.jobs.length} indeed=${out.indeed.jobs.length}`);
-console.log(`  localWorkday=${out.localWorkday.length}`);
+console.log(`  localWorkday=${out.localWorkday.length} indeedStore=${out.indeedStore.length}`);

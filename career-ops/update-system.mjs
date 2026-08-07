@@ -179,6 +179,7 @@ const SYSTEM_PATHS = [
   'scan-local-workday.mjs',
   'sitemap-sweep.mjs',
   'prune-pipeline.mjs',
+  'import-indeed.mjs',
   'build-dash-data.mjs',
   'build-dash-html.mjs',
   '.mcp.json',
@@ -398,6 +399,7 @@ const USER_PATHS = [
   // Same class as the store above: scan results, tracked so the scheduled
   // workflow can commit them, and user-owned rather than shipped by an update.
   'local-workday-store.json',
+  'indeed-store.json',
   'jds/',
   'writing-samples/',
   'config/plugins.yml',
