@@ -60,7 +60,8 @@ const localWorkday = (d.localWorkday || []).map((j) => ({
 const owingsMills = ((d.owingsMills && d.owingsMills.jobs) || []).map((j) => ({
   company: j.company, title: j.title,
   location: [j.city, j.region].filter(Boolean).join(', '),
-  url: j.url, days: ageDays(j.datePosted), source: 'hiring.cafe (local)',
+  url: j.url, days: ageDays(j.datePosted), salary: j.salary || null,
+  source: 'hiring.cafe (local)',
 }));
 const listings = [...localWorkday, ...owingsMills];
 
@@ -117,21 +118,21 @@ const shortlist = listings
 const HIRE_BANDS = [
   {
     key: 'blocked',
-    label: 'Blocked — a requirement he cannot meet',
-    note: 'Licensure, enlistment, enrolment or a credential no amount of tailoring fixes.',
-    test: (j) => /Athletic Trainer|Assistant Coach|Student Assistant|National Guard|Chemical Operations|Recovery Support|Direct Support Professional/i.test(j.title),
-  },
-  {
-    key: 'rehire',
-    label: 'Former employer — highest probability on the board',
-    note: 'He worked here. A rehire needs no one to take a chance on him.',
-    test: (j) => /^Walmart$/i.test(j.company || ''),
+    label: 'Blocked — a credential he cannot obtain in time',
+    note: 'A state licence, active enrolment, or military enlistment. Nothing here is a judgement about the work being beneath him — only about a wall no application clears.',
+    test: (j) => /Athletic Trainer|Student Assistant|National Guard|Chemical Operations Specialist/i.test(j.title),
   },
   {
     key: 'direct',
     label: 'Direct match — his exact prior job, high-volume hiring',
     note: 'Register and floor customer service at employers that hire continuously. The bar is months of service experience; he has roughly fifteen.',
     test: (j) => /Cashier|Customer Service|Retail Sales|Sales Associate|Merchandise|Merchandising|Front End|Service Deli|Food Service|Receiving Clerk|Membership Clerk|Stocking|Shoe Associate|Photo Specialist|Team Associate|Home Coordinator|Domestic Coordinator|Men's and Kids/i.test(j.title),
+  },
+  {
+    key: 'training',
+    label: 'Hires without prior experience — paid training',
+    note: 'Direct support, recovery support and care roles. Typically a diploma and a driver\u2019s licence, trained on the job, and they hire year-round. Confirm the requirements on the posting — these have not been read individually.',
+    test: (j) => /Direct Support|Recovery Support|Support Professional|Caregiver|Care Assistant/i.test(j.title),
   },
   {
     key: 'adjacent',
@@ -148,13 +149,32 @@ const HIRE_BANDS = [
 ];
 const bandOf = (j) => HIRE_BANDS.findIndex((b) => b.test(j));
 
-const nearHome = shortlist.filter((j) => j.tier === 0).map((j) => ({ ...j, band: bandOf(j) }));
+// Walmart is excluded at his request — a former employer, but not somewhere
+// he wants to return to, so it is not a lead worth ranking.
+const hourly = (j) => {
+  const s = j.salary;
+  if (!s || (!s.min && !s.max)) return null;
+  const v = Number(s.max || s.min);
+  if (!Number.isFinite(v)) return null;
+  return /YEAR/i.test(s.unit || '') ? v / 2080 : v;   // normalise to $/hr
+};
+const nearHome = shortlist
+  .filter((j) => j.tier === 0 && !/^Walmart$/i.test(j.company || ''))
+  .map((j) => ({ ...j, band: bandOf(j), rate: hourly(j) }));
 // Blocked rows sink to the bottom; everything else ranks by band, then recency.
 const BLOCKED = 0;
 const nearHomeRanked = [...nearHome].sort((a, b) => {
   const ab = a.band === BLOCKED ? 99 : a.band;
   const bb = b.band === BLOCKED ? 99 : b.band;
-  return ab - bb || a.days - b.days;
+  if (ab !== bb) return ab - bb;
+  // Money is the stated priority, so the best-paying known rate leads each
+  // band; postings with no published rate fall in behind, newest first.
+  if (a.rate !== b.rate) {
+    if (a.rate === null) return 1;
+    if (b.rate === null) return -1;
+    return b.rate - a.rate;
+  }
+  return a.days - b.days;
 });
 const baltimore = shortlist.filter((j) => j.tier === 1);
 
@@ -225,9 +245,17 @@ const reportRows = reports.map((r) => `
     <td>${esc(r.risk_level ?? '')}</td>
   </tr>`).join('');
 
+const payCell = (j) => {
+  const s = j.salary;
+  if (!s || (!s.min && !s.max)) return '<span class="dim">—</span>';
+  const unit = /YEAR/i.test(s.unit || '') ? '/yr' : '/hr';
+  const fmt = (v) => (/YEAR/i.test(s.unit || '') ? `$${Math.round(v / 1000)}k` : `$${Number(v).toFixed(2).replace(/\.00$/, '')}`);
+  return s.min && s.max && s.min !== s.max ? `${fmt(s.min)}–${fmt(s.max)}${unit}` : `${fmt(s.max || s.min)}${unit}`;
+};
 const rowsFor = (list, limit) => list.slice(0, limit).map((j) => `
   <tr>
     <td class="num">${j.days}d</td>
+    <td class="num">${payCell(j)}</td>
     <td>${esc(j.company)}</td>
     <td>${j.url ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : esc(j.title)}</td>
     <td>${esc(j.location)}</td>
@@ -243,7 +271,7 @@ const AGE_BRACKETS = [
 const bracketedRows = (list, limitPerBracket) => AGE_BRACKETS.map(([label, test]) => {
   const rows = list.filter((j) => test(j.days));
   if (rows.length === 0) return '';
-  return `<tr class="bracket"><td colspan="4">${esc(label)} · ${rows.length}</td></tr>`
+  return `<tr class="bracket"><td colspan="5">${esc(label)} · ${rows.length}</td></tr>`
     + rowsFor(rows, limitPerBracket);
 }).join('');
 
@@ -257,7 +285,7 @@ const nearHomeRows = BAND_ORDER.map((i) => {
   const band = HIRE_BANDS[i];
   const rows = nearHomeRanked.filter((j) => j.band === i);
   if (rows.length === 0) return '';
-  return `<tr class="bracket"><td colspan="4">${esc(band.label)} · ${rows.length}<div class="bracket-note">${esc(band.note)}</div></td></tr>`
+  return `<tr class="bracket"><td colspan="5">${esc(band.label)} · ${rows.length}<div class="bracket-note">${esc(band.note)}</div></td></tr>`
     + rowsFor(rows, 30);
 }).filter(Boolean).join('');
 const baltimoreRows = bracketedRows(baltimore, 15);
@@ -341,6 +369,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   tr:last-child td { border-bottom: 0; }
   td.num { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
   .sub { color: var(--ink-3); font-size: 12.5px; margin-top: 1px; }
+  .dim { color: var(--ink-3); }
   .bracket-note { font-weight: 400; text-transform: none; letter-spacing: 0; font-size: 12px; color: var(--ink-3); margin-top: 3px; }
   tr.bracket td {
     background: var(--track); color: var(--ink-2); font-size: 11.5px; font-weight: 600;
@@ -406,8 +435,8 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. All ${nearHome.length} reachable roles, ranked by what he would most likely actually be hired for — not by date and not by pay. Bands are title-and-employer inference, not a read of each posting; only the M&T rows have had their job description checked (reports 015-017).</p>
   <div class="panel scroll">
     <table>
-      <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
-      <tbody>${nearHomeRows || '<tr><td colspan="4">Nothing in this ring right now — the rings below are the next closest.</td></tr>'}</tbody>
+      <thead><tr><th>Age</th><th>Pay</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
+      <tbody>${nearHomeRows || '<tr><td colspan="5">Nothing in this ring right now — the rings below are the next closest.</td></tr>'}</tbody>
     </table>
   </div>
 
@@ -415,7 +444,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   <p class="note">Baltimore city, Towson, Catonsville, Columbia, Hunt Valley, Glen Burnie and the rest of the metro — a commutable drive. ${baltimore.length} reachable roles. Past the home ring the commute stops distinguishing anything, so these are worked by recency.</p>
   <div class="panel scroll">
     <table>
-      <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
+      <thead><tr><th>Age</th><th>Pay</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
       <tbody>${baltimoreRows}</tbody>
     </table>
   </div>
@@ -424,7 +453,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   <p class="note">${elsewhere.length} reachable roles beyond the Baltimore metro. Furthest from home and the largest group, so recency does the filtering: the older brackets here are the least likely to be worth the drive or still open.</p>
   <div class="panel scroll">
     <table>
-      <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
+      <thead><tr><th>Age</th><th>Pay</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
       <tbody>${elsewhereRows}</tbody>
     </table>
   </div>
