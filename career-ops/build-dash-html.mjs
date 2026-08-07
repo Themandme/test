@@ -197,9 +197,14 @@ const bracketedRows = (list, limitPerBracket) => AGE_BRACKETS.map(([label, test]
     + rowsFor(rows, limitPerBracket);
 }).join('');
 
-const shortlistRows = rowsFor(shortlist, 60);
-const nearHomeRows = bracketedRows(nearHome, 25);
+// Owings Mills is bracketed by LOCATION — it stands on its own because of
+// where it is, and stays a plain newest-first list. Age brackets belong to
+// the other rings, where distance no longer separates anything and recency is
+// the only thing left worth sorting on.
+const nearHomeRows = rowsFor(nearHome, 60);
 const baltimoreRows = bracketedRows(baltimore, 15);
+const elsewhere = shortlist.filter((j) => j.tier >= 2);
+const elsewhereRows = bracketedRows(elsewhere, 15);
 
 const tierTally = TIER_LABEL.map((label, i) => ({ label, n: shortlist.filter((j) => j.tier === i).length }));
 
@@ -339,7 +344,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   </div>
 
   <h2>Owings Mills area — closest to home</h2>
-  <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. ${nearHome.length} reachable roles, split into age brackets: distance decides the ring, age decides what to chase inside it. Anything below the first bracket is worth confirming is still open before you spend effort on it.</p>
+  <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. All ${nearHome.length} reachable roles, newest first. This section is separated by location rather than age: everything here is close enough to be worth a look regardless of how long it has been up.</p>
   <div class="panel scroll">
     <table>
       <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
@@ -347,8 +352,8 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
     </table>
   </div>
 
-  <h2>Greater Baltimore</h2>
-  <p class="note">Baltimore city, Towson, Catonsville, Columbia, Hunt Valley, Glen Burnie and the rest of the metro — a commutable drive. ${baltimore.length} reachable roles, showing ${Math.min(40, baltimore.length)}.</p>
+  <h2>Greater Baltimore — by age</h2>
+  <p class="note">Baltimore city, Towson, Catonsville, Columbia, Hunt Valley, Glen Burnie and the rest of the metro — a commutable drive. ${baltimore.length} reachable roles. Past the home ring the commute stops distinguishing anything, so these are worked by recency.</p>
   <div class="panel scroll">
     <table>
       <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
@@ -356,14 +361,16 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
     </table>
   </div>
 
-  <h2>Everything reachable, by distance then age</h2>
-  <p class="note">All ${shortlist.length} across every ring — ${tierTally.map((t) => `${t.n} ${t.label.toLowerCase()}`).join(', ')}. Sorted by proximity first, age second. Found title-blind: filtered on location, age and reachability, never on a list of target titles.</p>
+  <h2>Rest of Maryland, DC, Virginia and remote — by age</h2>
+  <p class="note">${elsewhere.length} reachable roles beyond the Baltimore metro. Furthest from home and the largest group, so recency does the filtering: the older brackets here are the least likely to be worth the drive or still open.</p>
   <div class="panel scroll">
     <table>
       <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
-      <tbody>${shortlistRows}</tbody>
+      <tbody>${elsewhereRows}</tbody>
     </table>
   </div>
+
+  <p class="note">${shortlist.length} reachable roles in total — ${tierTally.map((t) => `${t.n} ${t.label.toLowerCase()}`).join(', ')}. Found title-blind: filtered on location, age and reachability, never on a list of target titles.</p>
 
   <footer>
     Built from the local scan results, the tracker and the evaluation reports at ${esc(new Date(d.generatedAt).toISOString().slice(0, 10))}.
