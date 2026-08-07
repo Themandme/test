@@ -321,14 +321,75 @@ const payCell = (j) => {
   const fmt = (v) => (/YEAR/i.test(s.unit || '') ? `$${Math.round(v / 1000)}k` : `$${Number(v).toFixed(2).replace(/\.00$/, '')}`);
   return s.min && s.max && s.min !== s.max ? `${fmt(s.min)}–${fmt(s.max)}${unit}` : `${fmt(s.max || s.min)}${unit}`;
 };
-const rowsFor = (list, limit) => list.slice(0, limit).map((j) => `
-  <tr>
+// A pay span across several openings at one employer, so the group header can
+// say "$15.80–$30.71/hr" without repeating each row's own figure.
+const paySpan = (rows) => {
+  const withPay = rows.filter((r) => r.salary && (r.salary.min || r.salary.max));
+  if (!withPay.length) return '<span class="dim">—</span>';
+  // Mixing hourly and annual in one span would be meaningless, so only
+  // summarise when every rate shares a unit; otherwise show the count.
+  const units = new Set(withPay.map((r) => (/YEAR/i.test(r.salary.unit || '') ? 'YEAR' : 'HOUR')));
+  if (units.size > 1) return `<span class="dim">${withPay.length} rates</span>`;
+  const lo = Math.min(...withPay.map((r) => Number(r.salary.min || r.salary.max)));
+  const hi = Math.max(...withPay.map((r) => Number(r.salary.max || r.salary.min)));
+  return payCell({ salary: { min: lo, max: hi, unit: [...units][0] } });
+};
+
+const roleCell = (j) => (j.url
+  ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>`
+  : esc(j.title));
+
+// One entry per employer. A single store posting eleven seats was eleven rows
+// that pushed everything else off the screen; it is now one line that opens
+// into its own openings.
+const rowsFor = (list, limit) => {
+  const groups = new Map();
+  for (const j of list) {
+    const k = normCompany(j.company) || esc(j.company);
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(j);
+  }
+  // Groups keep the order of their best row, so ranking is unchanged — this
+  // only changes how the same ordering is drawn.
+  const ordered = [...groups.values()].sort((a, b) => list.indexOf(a[0]) - list.indexOf(b[0]));
+
+  let shown = 0;
+  const out = [];
+  for (const rows of ordered) {
+    if (shown >= limit) break;
+    shown += 1;
+    if (rows.length === 1) {
+      const j = rows[0];
+      out.push(`<tr>
     <td class="num">${j.days}d</td>
     <td class="num">${payCell(j)}</td>
     <td>${esc(j.company)}</td>
-    <td>${j.url ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : esc(j.title)}</td>
+    <td>${roleCell(j)}</td>
     <td>${esc(j.location)}</td>
-  </tr>`).join('');
+  </tr>`);
+      continue;
+    }
+    const freshest = Math.min(...rows.map((r) => r.days));
+    const where = [...new Set(rows.map((r) => r.location))];
+    out.push(`<tr class="group">
+    <td class="num">${freshest}d</td>
+    <td class="num">${paySpan(rows)}</td>
+    <td><strong>${esc(rows[0].company)}</strong></td>
+    <td class="dim">${rows.length} openings</td>
+    <td>${esc(where.length === 1 ? where[0] : `${where.length} locations`)}</td>
+  </tr>`);
+    for (const j of rows.sort((a, b) => a.days - b.days)) {
+      out.push(`<tr class="child">
+    <td class="num dim">${j.days}d</td>
+    <td class="num">${payCell(j)}</td>
+    <td></td>
+    <td class="indent">${roleCell(j)}</td>
+    <td class="dim">${esc(j.location)}</td>
+  </tr>`);
+    }
+  }
+  return out.join('\n');
+};
 
 // Inside a ring, age is still the thing that decides what is worth chasing —
 // so it is shown as its own brackets rather than left implicit in the sort.
@@ -442,6 +503,11 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   td.num { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
   .sub { color: var(--ink-3); font-size: 12.5px; margin-top: 1px; }
   .dim { color: var(--ink-3); }
+  tr.group td { border-bottom: 0; padding-bottom: 4px; }
+  tr.child td { border-bottom: 0; padding-top: 2px; padding-bottom: 2px; font-size: 13px; }
+  tr.child:last-child td, tr.child + tr:not(.child) td { border-top: 0; }
+  td.indent { padding-left: 22px; position: relative; }
+  td.indent::before { content: "↳"; position: absolute; left: 8px; color: var(--ink-3); }
   .bracket-note { font-weight: 400; text-transform: none; letter-spacing: 0; font-size: 12px; color: var(--ink-3); margin-top: 3px; }
   tr.bracket td {
     background: var(--track); color: var(--ink-2); font-size: 11.5px; font-weight: 600;
