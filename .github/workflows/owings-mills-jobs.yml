@@ -35,6 +35,18 @@ jobs:
         # network directly.
         run: node scan-owings-mills.mjs
 
+      - name: Sweep the local Workday tenants
+        working-directory: career-ops
+        # Location-first and title-blind, same as the scan above. Tenants and
+        # the location rules come from portals.yml `local_workday`, which is
+        # gitignored — so on the runner this falls back to the built-in list.
+        # Keep the two in step when the roster changes.
+        # continue-on-error: individual tenants fail routinely (422 on a moved
+        # site path, 500 from the tenant) and a partial sweep is still worth
+        # committing; it must not take the whole scheduled run down.
+        continue-on-error: true
+        run: node scan-local-workday.mjs
+
       - name: Commit the digest and sweep state
         working-directory: career-ops
         # The store carries the rotating window's cursor and the accumulated
@@ -43,13 +55,13 @@ jobs:
         # cursor always moves), so it is checked separately from the digest,
         # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json; then
+          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json; then
             echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add owings-mills-latest.md owings-mills-store.json
+          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
           # Concurrent-safe: another run (or a push from a session) may have
           # landed first, and this job's only local commit is the one above.

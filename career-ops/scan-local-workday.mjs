@@ -7,13 +7,26 @@
 // question: what is open near Baltimore, whatever it happens to be called?
 //
 // No title filter. Location and freshness only.
-import { writeFileSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import yaml from 'js-yaml';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 
-const TENANTS = [
+// Targeting lives in portals.yml (User Layer). This file is System Layer and
+// gets overwritten by `update-system.mjs apply`, so the tenant list and the
+// location rules must not live here. The constants below are only a fallback
+// for an install that has not configured `local_workday` yet.
+const PORTALS = process.env.CAREER_OPS_PORTALS || path.join(ROOT, 'portals.yml');
+const cfg = (() => {
+  try {
+    if (!existsSync(PORTALS)) return {};
+    return yaml.load(readFileSync(PORTALS, 'utf8'))?.local_workday || {};
+  } catch { return {}; }
+})();
+
+const TENANTS_FALLBACK = [
   ['T. Rowe Price', 'troweprice', 'wd5', 'troweprice'],
   ['M&T Bank', 'mtb', 'wd5', 'mtb'],
   ['M&T Bank (campus)', 'mtb', 'wd5', 'campus'],
@@ -53,11 +66,18 @@ const TENANTS = [
   ['Washington Gas (AltaGas)', 'wgl', 'wd5', 'altagas'],
 ];
 
+const TENANTS = Array.isArray(cfg.tenants) && cfg.tenants.length
+  ? cfg.tenants.map((t) => [t.name, t.tenant, t.instance, t.site])
+  : TENANTS_FALLBACK;
+
 // Maryland / DC / near-in Virginia. Anchored to state tokens, never bare city
 // names — the same collision that let "Columbia" match South Carolina.
-const LOCAL = /(,\s*MD\b)|Maryland|Baltimore|Owings Mills|Towson|Columbia,\s*MD|Annapolis|Hunt Valley|Linthicum|Sparks|Hanover,\s*MD|Bethesda|Rockville|Silver Spring|Gaithersburg|Fort Meade|Laurel,\s*MD|Washington,?\s*D\.?C\.?|District of Columbia|,\s*VA\b|Virginia/i;
+// Both rules come from portals.yml `local_workday`; these are the fallback.
+const DEFAULT_INCLUDE = String.raw`(,\s*MD\b)|Maryland|Baltimore|Owings Mills|Towson|Columbia,\s*MD|Annapolis|Hunt Valley|Linthicum|Sparks|Hanover,\s*MD|Bethesda|Rockville|Silver Spring|Gaithersburg|Fort Meade|Laurel,\s*MD|Washington,?\s*D\.?C\.?|District of Columbia|,\s*VA\b|Virginia`;
+const DEFAULT_EXCLUDE = String.raw`Richmond|Norfolk|Virginia Beach|Roanoke|Blacksburg|Charlottesville|Lynchburg|Newport News|Chesapeake|Hampton`;
+const LOCAL = new RegExp(cfg.include || DEFAULT_INCLUDE, 'i');
 // Virginia is broad; drop the far-southwest metros that are not commutable.
-const FAR_VA = /Richmond|Norfolk|Virginia Beach|Roanoke|Blacksburg|Charlottesville|Lynchburg|Newport News|Chesapeake|Hampton/i;
+const FAR_VA = new RegExp(cfg.exclude || DEFAULT_EXCLUDE, 'i');
 
 function daysAgo(postedOn) {
   if (!postedOn) return null;
@@ -85,7 +105,7 @@ async function page(tenant, inst, site, offset) {
   } finally { clearTimeout(t); }
 }
 
-const MAX_PAGES = 60;   // 1200 postings/tenant
+const MAX_PAGES = Number(cfg.max_pages_per_tenant) > 0 ? Number(cfg.max_pages_per_tenant) : 60;
 const results = [];
 const summary = [];
 
@@ -118,7 +138,11 @@ for (const [name, tenant, inst, site] of TENANTS) {
 }
 
 results.sort((a, b) => (a.days ?? 999) - (b.days ?? 999));
-writeFileSync(path.join(ROOT, 'data', 'local-workday.json'), JSON.stringify(results, null, 2));
+// Root, not data/: data/* is gitignored, and the scheduled workflow has to be
+// able to commit this so results survive between runs the way the Owings Mills
+// store does. Same class of content as owings-mills-store.json — public job
+// postings, no personal data.
+writeFileSync(path.join(ROOT, 'local-workday-store.json'), JSON.stringify(results, null, 2));
 
 console.log('\n' + summary.join('\n'));
 console.log(`\n${results.length} local postings across ${TENANTS.length} tenants\n`);
