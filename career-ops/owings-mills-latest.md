@@ -1,12 +1,12 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-07 01:03 UTC · 528 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-07 12:00 UTC · 529 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
 Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
-## Owings Mills (282)
+## Owings Mills (283)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -73,6 +73,7 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | The TJX Companies | [Full Time Men's and Kids Coordinator](https://hiringcafe.com/job/full-time-mens-and-kids-coordinator-the-tjx-companies-owings-mills-ubpea0ys1qw6w1jq) | $16.25–$16.75/hr | 2026-07-30 |
 | Dollar Tree | [Customer Service Associate](https://hiringcafe.com/job/customer-service-associate-dollar-tree-owings-mills-maryland-mhub0llxl02ynctf) | $15–$15.5/hr | 2026-07-30 |
 | Strategic Factory | [Mailing Operator](https://hiringcafe.com/job/mailing-operator-strategic-factory-owings-mills-maryland-wm8imi2pwj0unni1) | $22–$27/hr | 2026-07-30 |
+| Baywood Hotels | [Maintenance Technician](https://hiringcafe.com/job/maintenance-technician-baywood-hotels-owings-mills-maryland-l8skdz6wkox0yneu) | — | 2026-07-30 |
 | AlphaHire | [Project Manager - Residential Construction](https://hiringcafe.com/job/project-manager-residential-construction-alphahire-owings-mills-v00v1sg3hhnr8i3v) | — | 2026-07-29 |
 | FedEx | [Retail Customer Service Associate](https://hiringcafe.com/job/retail-customer-service-associate-fedex-owings-mills-maryland-a13ocnj9kqb5s1d6) | $18.35–$24.75/hr | 2026-07-29 |
 | The Supply Room | [Warranty Coordinator](https://hiringcafe.com/job/warranty-coordinator-the-supply-room-owings-mills-maryland-cs1fv9km0rngc5a2) | $21–$24/hr | 2026-07-29 |
