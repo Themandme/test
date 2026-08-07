@@ -119,7 +119,17 @@ const indeed = (d.indeedStore || []).map((j) => ({
   source: 'Indeed',
 }));
 
-const listingsRaw = [...localWorkday, ...owingsMills, ...indeed]
+// Maryland state. JobAps reports a county rather than a city, and Baltimore
+// County is the home county — Owings Mills, Reisterstown, Pikesville,
+// Randallstown and Windsor Mill all sit inside it.
+const marylandGov = (d.marylandGov || []).map((j) => ({
+  company: j.company, title: j.title, location: j.location, url: j.url,
+  days: typeof j.days === 'number' ? j.days : null,
+  salary: j.salary || null,
+  source: 'Maryland state (JobAps)',
+}));
+
+const listingsRaw = [...localWorkday, ...owingsMills, ...indeed, ...marylandGov]
   .filter((j) => !EXCLUDED_EMPLOYERS.test(String(j.company || '').trim()));
 const listings = dedupe(listingsRaw);
 const dupesRemoved = listingsRaw.length - listings.length;
