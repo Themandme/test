@@ -105,7 +105,57 @@ const shortlist = listings
   .map((j) => ({ ...j, tier: tierOf(j.location) }))
   .sort((a, b) => a.tier - b.tier || a.days - b.days);
 
-const nearHome = shortlist.filter((j) => j.tier === 0);
+// ── Hireability ──────────────────────────────────────────────────────
+// Ranks the home ring by probability of an OFFER, not by desirability and not
+// by date. Grounded in what cv.md actually evidences: ~15 months of register
+// customer service across Walmart, Target and Chick-fil-A, ~1 year of CRM and
+// account administration at Constellation, and a BS in Information Systems.
+//
+// This is title-and-employer inference, not a read of each posting — the only
+// rows here verified against their JD are the M&T ones (reports 015-017).
+// Treat a band as "worth the effort in this order", never as a promise.
+const HIRE_BANDS = [
+  {
+    key: 'blocked',
+    label: 'Blocked — a requirement he cannot meet',
+    note: 'Licensure, enlistment, enrolment or a credential no amount of tailoring fixes.',
+    test: (j) => /Athletic Trainer|Assistant Coach|Student Assistant|National Guard|Chemical Operations|Recovery Support|Direct Support Professional/i.test(j.title),
+  },
+  {
+    key: 'rehire',
+    label: 'Former employer — highest probability on the board',
+    note: 'He worked here. A rehire needs no one to take a chance on him.',
+    test: (j) => /^Walmart$/i.test(j.company || ''),
+  },
+  {
+    key: 'direct',
+    label: 'Direct match — his exact prior job, high-volume hiring',
+    note: 'Register and floor customer service at employers that hire continuously. The bar is months of service experience; he has roughly fifteen.',
+    test: (j) => /Cashier|Customer Service|Retail Sales|Sales Associate|Merchandise|Merchandising|Front End|Service Deli|Food Service|Receiving Clerk|Membership Clerk|Stocking|Shoe Associate|Photo Specialist|Team Associate|Home Coordinator|Domestic Coordinator|Men's and Kids/i.test(j.title),
+  },
+  {
+    key: 'adjacent',
+    label: 'Adjacent — entry professional, service or admin core',
+    note: 'Coordinator, office and processing seats. His Constellation year is the argument; the work is administrative rather than analytical.',
+    test: (j) => /Office (Assistant|Coordinator)|Receptionist|Front Desk|Coordinator|Accounts Receivable|Order Processor|Warranty|Fulfillment|Warehouse Support|Shipping|Management Trainee|Banker|Teller|Membership|Service Desk|Loss Prevention|Security Specialist/i.test(j.title),
+  },
+  {
+    key: 'gated',
+    label: 'Degree-relevant but gated on years',
+    note: 'Uses the Information Systems degree. Most ask for experience he does not have yet — see the evaluated reports for the ones already checked.',
+    test: () => true,
+  },
+];
+const bandOf = (j) => HIRE_BANDS.findIndex((b) => b.test(j));
+
+const nearHome = shortlist.filter((j) => j.tier === 0).map((j) => ({ ...j, band: bandOf(j) }));
+// Blocked rows sink to the bottom; everything else ranks by band, then recency.
+const BLOCKED = 0;
+const nearHomeRanked = [...nearHome].sort((a, b) => {
+  const ab = a.band === BLOCKED ? 99 : a.band;
+  const bb = b.band === BLOCKED ? 99 : b.band;
+  return ab - bb || a.days - b.days;
+});
 const baltimore = shortlist.filter((j) => j.tier === 1);
 
 // ── Aggregates ───────────────────────────────────────────────────────
@@ -201,7 +251,15 @@ const bracketedRows = (list, limitPerBracket) => AGE_BRACKETS.map(([label, test]
 // where it is, and stays a plain newest-first list. Age brackets belong to
 // the other rings, where distance no longer separates anything and recency is
 // the only thing left worth sorting on.
-const nearHomeRows = rowsFor(nearHome, 60);
+// Home ring is grouped by hireability band, each band newest-first inside.
+const BAND_ORDER = [...HIRE_BANDS.keys()].filter((i) => i !== BLOCKED).concat(BLOCKED);
+const nearHomeRows = BAND_ORDER.map((i) => {
+  const band = HIRE_BANDS[i];
+  const rows = nearHomeRanked.filter((j) => j.band === i);
+  if (rows.length === 0) return '';
+  return `<tr class="bracket"><td colspan="4">${esc(band.label)} · ${rows.length}<div class="bracket-note">${esc(band.note)}</div></td></tr>`
+    + rowsFor(rows, 30);
+}).filter(Boolean).join('');
 const baltimoreRows = bracketedRows(baltimore, 15);
 const elsewhere = shortlist.filter((j) => j.tier >= 2);
 const elsewhereRows = bracketedRows(elsewhere, 15);
@@ -283,6 +341,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   tr:last-child td { border-bottom: 0; }
   td.num { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
   .sub { color: var(--ink-3); font-size: 12.5px; margin-top: 1px; }
+  .bracket-note { font-weight: 400; text-transform: none; letter-spacing: 0; font-size: 12px; color: var(--ink-3); margin-top: 3px; }
   tr.bracket td {
     background: var(--track); color: var(--ink-2); font-size: 11.5px; font-weight: 600;
     text-transform: uppercase; letter-spacing: .05em; padding: 6px 10px; border-bottom: 1px solid var(--line);
@@ -344,7 +403,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   </div>
 
   <h2>Owings Mills area — closest to home</h2>
-  <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. All ${nearHome.length} reachable roles, newest first. This section is separated by location rather than age: everything here is close enough to be worth a look regardless of how long it has been up.</p>
+  <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. All ${nearHome.length} reachable roles, ranked by what he would most likely actually be hired for — not by date and not by pay. Bands are title-and-employer inference, not a read of each posting; only the M&T rows have had their job description checked (reports 015-017).</p>
   <div class="panel scroll">
     <table>
       <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
