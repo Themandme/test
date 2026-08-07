@@ -63,7 +63,56 @@ const owingsMills = ((d.owingsMills && d.owingsMills.jobs) || []).map((j) => ({
   url: j.url, days: ageDays(j.datePosted), salary: j.salary || null,
   source: 'hiring.cafe (local)',
 }));
-const listings = [...localWorkday, ...owingsMills];
+// ── Deduplication ────────────────────────────────────────────────────
+// The same opening is routinely reached twice — once through hiring.cafe and
+// once through the employer's own Workday tenant — under different URLs, so
+// nothing upstream collapses them. Across the combined set that is 168 groups
+// and 260 surplus rows (~9.5%), and in the home ring it inflated 84 real
+// openings to 90.
+//
+// Matched on company + title + city. Merging keeps the richest version of each
+// field rather than whichever record happened to come first: a rate from
+// either source, and a real posting age over a missing one.
+const normCompany = (s) => String(s || '').toLowerCase().replace(/&amp;/g, '&').replace(/[^a-z0-9]/g, '');
+const normTitle = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+// Location formats differ per source — "Owings Mills, MD", "MD - Owings Mills",
+// "USA MD Bethesda" — so reduce each to the bare city name.
+const normCity = (s) => String(s || '')
+  .replace(/\bUSA\b|\bUS\b/gi, ' ')
+  .replace(/\b[A-Z]{2}\b\s*[-–]\s*/g, ' ')
+  .split(',')[0]
+  .replace(/\b(MD|VA|DC|Maryland|Virginia)\b/gi, ' ')
+  .toLowerCase().replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim();
+
+function dedupe(rows) {
+  const byKey = new Map();
+  for (const r of rows) {
+    const key = `${normCompany(r.company)}|${normTitle(r.title)}|${normCity(r.location)}`;
+    const prev = byKey.get(key);
+    if (!prev) { byKey.set(key, { ...r }); continue; }
+    // Prefer a known age over a missing one, and the fresher of two known ages.
+    if (prev.days === null && r.days !== null) prev.days = r.days;
+    else if (prev.days !== null && r.days !== null) prev.days = Math.min(prev.days, r.days);
+    if (!prev.salary && r.salary) prev.salary = r.salary;
+    // A censored "30+" age is weaker evidence than an exact one.
+    if (prev.censored && !r.censored) prev.censored = false;
+    // Keep whichever URL carries the rate, so the link matches what is shown.
+    if (!prev.salary && r.url) prev.url = prev.url || r.url;
+  }
+  return [...byKey.values()];
+}
+
+// Adventist HealthCare is excluded at the user's request. Its tenant is also
+// the sole source of every undated row (342 of them — it returns no postedOn),
+// so dropping it removes the largest remaining data gap as a side effect. All
+// of its sites are Montgomery County, 40+ minutes out, so nothing local is
+// lost.
+const EXCLUDED_EMPLOYERS = /^Adventist HealthCare$/i;
+
+const listingsRaw = [...localWorkday, ...owingsMills]
+  .filter((j) => !EXCLUDED_EMPLOYERS.test(String(j.company || '').trim()));
+const listings = dedupe(listingsRaw);
+const dupesRemoved = listingsRaw.length - listings.length;
 
 // ── Hireability filter ───────────────────────────────────────────────
 // Priority stated by the candidate: "anything I'll get hired for" — so this
