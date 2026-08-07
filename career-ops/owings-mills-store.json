@@ -1,8 +1,8 @@
 {
   "note": "Rotating sitemap sweep state. Safe to delete; costs one cycle to rebuild.",
-  "updatedAt": "2026-08-07T12:00:20.756Z",
-  "cursor": 195,
-  "run": 11,
+  "updatedAt": "2026-08-07T22:00:20.242Z",
+  "cursor": 255,
+  "run": 12,
   "chunkCount": 466,
   "cycleRuns": 8,
   "jobs": {
@@ -161,7 +161,7 @@
         "max": 21.57,
         "unit": "HOUR"
       },
-      "lastSeenRun": 9
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/retail-customer-service-associate-fedex-owings-mills-maryland-a13ocnj9kqb5s1d6": {
       "title": "Retail Customer Service Associate",
@@ -176,7 +176,7 @@
         "max": 24.75,
         "unit": "HOUR"
       },
-      "lastSeenRun": 9
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/utility-worker-part-time-north-oaks-pikesville-maryland-crxtf3lqefbjsdd5": {
       "title": "Utility Worker part time",
@@ -326,7 +326,7 @@
         "max": 25,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/pt-cake-decorator-460676-ahold-delhaize-randallstown-maryland-628uphjlx8jg3hxa": {
       "title": "PT Cake Decorator (460676)",
@@ -363,7 +363,7 @@
         "max": 18.25,
         "unit": "HOUR"
       },
-      "lastSeenRun": 9
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/sous-chef-oth-hotels-resorts-pikesville-maryland-pvdupmoxy7t7ch8x": {
       "title": "Sous Chef",
@@ -378,7 +378,7 @@
         "max": 58000,
         "unit": "YEAR"
       },
-      "lastSeenRun": 9
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/civil-engineer-dewberry-owings-mills-maryland-177h1s8a5r58dcu9": {
       "title": "Civil Engineer",
@@ -595,7 +595,7 @@
         "max": 60000,
         "unit": "YEAR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/zumba-after-school-instructor-nexplore-owings-mills-maryland-4qlvwm712i3jlstt": {
       "title": "Zumba After School Instructor",
@@ -610,7 +610,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 9
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/wireless-retail-store-manager-reisterstown-chartley-dr-arch-telecom-wfqhi04swxz2q0lx": {
       "title": "Wireless Retail Store Manager REISTERSTOWN | Chartley Dr",
@@ -711,7 +711,7 @@
         "max": 45,
         "unit": "HOUR"
       },
-      "lastSeenRun": 9
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/service-valet-mercedes-benz-owings-mills-mileone-autogroup-owings-7mj6qbgpvxonychl": {
       "title": "Service Valet- Mercedes Benz Owings Mills",
@@ -2393,7 +2393,7 @@
         "max": 135000,
         "unit": "YEAR"
       },
-      "lastSeenRun": 3
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/retail-sales-associate-verizon-owings-mills-maryland-nt5cmczbncmeu1yd": {
       "title": "Retail Sales Associate",
@@ -2408,7 +2408,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 3
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/consumer-bankruptcy-attorney-sirody-bankruptcy-center-pikesville-0shhj1grpltv3zbh": {
       "title": "Consumer Bankruptcy Attorney",
@@ -2584,7 +2584,7 @@
       "datePosted": "2026-07-13",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 3
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/housekeeper-charter-senior-living-pikesville-maryland-2l303lz9hmf9rlgn": {
       "title": "Housekeeper",
@@ -2704,7 +2704,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 3
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/lead-store-associate-curaleaf-reisterstown-maryland-p3qzmbkz4rclk21j": {
       "title": "Lead Store Associate",
@@ -2719,7 +2719,7 @@
         "max": 21.5,
         "unit": "HOUR"
       },
-      "lastSeenRun": 3
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/licensed-barber-hair-cuttery-family-of-brands-owings-mills-maryland-yvvr0d9iy55xtd4s": {
       "title": "Licensed Barber",
@@ -2786,7 +2786,7 @@
       "datePosted": "2026-07-20",
       "employmentType": "FULL_TIME",
       "salary": null,
-      "lastSeenRun": 3
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/center-administrator-childrens-specialized-hospital-owings-mills-d4gj6kouosw8de18": {
       "title": "Center Administrator",
@@ -2823,7 +2823,7 @@
       "datePosted": "2026-06-18",
       "employmentType": "FULL_TIME",
       "salary": null,
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/utility-private-school-brock-and-company-owings-mills-maryland-ewclvrv8luhn3f99": {
       "title": "Utility--Private School",
@@ -2834,7 +2834,7 @@
       "datePosted": "2026-06-18",
       "employmentType": "FULL_TIME",
       "salary": null,
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/relationship-banker-garrison-forest-financial-center-bank-of-america-3vjg8cc1fb6o6v1d": {
       "title": "Relationship Banker - Garrison Forest Financial Center",
@@ -3059,7 +3059,7 @@
         "max": 149885,
         "unit": "YEAR"
       },
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/collision-estimator-crash-champions-pikesville-maryland-ok9sj81d1qa4rrjj": {
       "title": "Collision Estimator",
@@ -3074,7 +3074,7 @@
         "max": 149885,
         "unit": "YEAR"
       },
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/automotive-technician-heritage-imports-owings-mills-mileone-autogroup-q8g7r3vpmie4ep96": {
       "title": "Automotive Technician | Heritage Imports Owings Mills",
@@ -3104,7 +3104,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/delivery-expert-04616-11616-reisterstown-rd-dominos-reisterstown-5tdo268agx7twpjj": {
       "title": "Delivery Expert (04616) - 11616 Reisterstown Rd",
@@ -3407,7 +3407,7 @@
         "max": 175000,
         "unit": "YEAR"
       },
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/ft-employed-optometrist-owings-mills-md-lenscrafters-at-the-saint-6v80cndaboqv0j37": {
       "title": "FT Employed Optometrist- Owings Mills, MD- LensCrafters at the Saint Thomas Shopping Center (Owings Mills, MD, US, 21117)",
@@ -3770,7 +3770,7 @@
       "datePosted": "2026-07-01",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/experienced-floor-tech-engage-healthcare-randallstown-maryland-qwuphc5ms6zybg51": {
       "title": "Experienced Floor Tech",
@@ -3781,7 +3781,7 @@
       "datePosted": "2026-07-01",
       "employmentType": "FULL_TIME, PART_TIME",
       "salary": null,
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/shift-supervisor-store-00733-mill-station-owings-mills-starbucks-arsaqb0j9k8r59y7": {
       "title": "shift supervisor - Store# 00733, MILL STATION - OWINGS MILLS",
@@ -3826,7 +3826,7 @@
         "max": 18.32,
         "unit": "HOUR"
       },
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/caregivers-home-care-carroll-co-griswold-home-care-reisterstown-n2hrubovg78dxo58": {
       "title": "Caregivers - Home Care Carroll Co.",
@@ -3837,7 +3837,7 @@
       "datePosted": "2026-08-04",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 4
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/parts-advisor-mercedes-benz-owings-mills-mileone-autogroup-owings-xe1lph8fl59pvy0f": {
       "title": "Parts Advisor - Mercedes Benz Owings Mills",
@@ -3878,7 +3878,7 @@
       "datePosted": "2026-06-29",
       "employmentType": "FULL_TIME",
       "salary": null,
-      "lastSeenRun": 5
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/retail-loss-prevention-associate-ii-the-tjx-companies-owings-mills-x1y2xj4p83wje5yc": {
       "title": "Retail Loss Prevention Associate II",
@@ -3893,7 +3893,7 @@
         "max": 18.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 5
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/pt-cake-decorator-food-lion-randallstown-maryland-bu6rufd877ai5viu": {
       "title": "PT Cake Decorator",
@@ -3908,7 +3908,7 @@
         "max": 24.9,
         "unit": "HOUR"
       },
-      "lastSeenRun": 5
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/assistant-department-manager-tile-floor-and-decor-owings-mills-qricxl9qerazbt16": {
       "title": "Assistant Department Manager (Tile)",
@@ -4024,7 +4024,7 @@
         "max": 28.84,
         "unit": "HOUR"
       },
-      "lastSeenRun": 5
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/product-demonstrator-pt-acosta-group-owings-mills-maryland-02mrk9h42b98ss7t": {
       "title": "Product Demonstrator PT",
@@ -4039,7 +4039,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 5
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/salesperson-advance-auto-parts-randallstown-maryland-1k7yvrqf3y4dvd85": {
       "title": "Salesperson",
@@ -4054,7 +4054,7 @@
         "max": 16.13,
         "unit": "HOUR"
       },
-      "lastSeenRun": 5
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/retail-merchandise-associate-the-tjx-companies-owings-mills-maryland-sri9fwuqqcfyt2aa": {
       "title": "Retail Merchandise Associate",
@@ -4689,7 +4689,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/91l-construction-vehicle-repairer-army-national-guard-reisterstown-f5fe5guxt5c5d8io": {
       "title": "91L Construction Vehicle Repairer",
@@ -4894,7 +4894,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/ultrasonographer-united-urology-group-pikesville-maryland-7d41d1cd7dkejjm3": {
       "title": "Ultrasonographer",
@@ -4954,7 +4954,7 @@
         "max": 21,
         "unit": "HOUR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/full-time-cashier-day-lowes-owings-mills-maryland-i15ozbn7z078j72l": {
       "title": "Full Time - Cashier - Day",
@@ -4969,7 +4969,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/pro-experience-manager-the-home-depot-reisterstown-maryland-cqtc63i04gno7gy4": {
       "title": "Pro Experience Manager",
@@ -4984,7 +4984,7 @@
         "max": 60000,
         "unit": "YEAR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/automotive-general-manager-preston-automotive-group-randallstown-tj8dabxz5ol9fwre": {
       "title": "Automotive General Manager",
@@ -5388,7 +5388,7 @@
         "max": 100000,
         "unit": "YEAR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/pt-food-lion-to-go-associate-food-lion-randallstown-maryland-cfvu6vgmpti9zu17": {
       "title": "PT Food Lion To Go Associate",
@@ -5601,7 +5601,7 @@
         "max": 20.89,
         "unit": "HOUR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/assistant-store-manager-extra-space-storage-windsor-mill-maryland-0l6kvviztma6huvd": {
       "title": "Assistant Store Manager",
@@ -5717,7 +5717,7 @@
         "max": 30750,
         "unit": "YEAR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/wise-program-bus-driver-garrison-forest-school-owings-mills-maryland-4y5s3nksxxm5geqi": {
       "title": "WISE Program Bus Driver",
@@ -5732,7 +5732,7 @@
         "max": 18,
         "unit": "HOUR"
       },
-      "lastSeenRun": 6
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/preschool-aftercare-garrison-forest-school-owings-mills-maryland-kg5i3fty8r6rmtqs": {
       "title": "Preschool Aftercare",
@@ -5807,7 +5807,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/respiratory-care-prac-rrt-lifebridge-health-randallstown-maryland-swt42zlmcl766qiy": {
       "title": "Respiratory Care Prac-RRT",
@@ -6106,7 +6106,7 @@
       "datePosted": "2026-07-16",
       "employmentType": "FULL_TIME",
       "salary": null,
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/hvac-install-technician-assistant-horizon-services-milford-mill-x0vi6s6a4tvnbrmi": {
       "title": "HVAC Install Technician Assistant",
@@ -6121,7 +6121,7 @@
         "max": 29,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/assistant-coach-womens-lacrosse-stevenson-university-owings-mills-lrjw3x3lx53baou2": {
       "title": "Assistant Coach, Women’s Lacrosse",
@@ -6173,7 +6173,7 @@
       "datePosted": "2026-08-03",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/substance-abuse-counselor-people-encouraging-people-milford-mill-8rcyzgd577ksgvu8": {
       "title": "Substance Abuse Counselor",
@@ -7021,7 +7021,7 @@
         "max": 30,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/seasonal-team-associate-walmart-randallstown-maryland-ompue42c38aim8tk": {
       "title": "Seasonal Team Associate",
@@ -7036,7 +7036,7 @@
         "max": 30,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/stocking-team-associate-walmart-randallstown-maryland-qawfomxykhixa781": {
       "title": "Stocking Team Associate",
@@ -7051,7 +7051,7 @@
         "max": 30,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/laundry-aide-futurecare-pikesville-maryland-mtqx31ecbdj56bez": {
       "title": "Laundry Aide",
@@ -7066,7 +7066,7 @@
         "max": 17.5,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/meat-produce-team-associate-walmart-randallstown-maryland-x6dng51387hph8wo": {
       "title": "Meat/Produce Team Associate",
@@ -7081,7 +7081,7 @@
         "max": 30,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/restorative-aide-futurecare-reisterstown-maryland-j4kz1w1yaxrxrynf": {
       "title": "Restorative Aide",
@@ -7096,7 +7096,7 @@
         "max": 25,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/civil-engineer-dewberry-owings-mills-maryland-ji666s44b0i7y3wz": {
       "title": "Civil Engineer",
@@ -7111,7 +7111,7 @@
         "max": 125200,
         "unit": "YEAR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/deputy-project-manager-dewberry-owings-mills-maryland-d8n06px96qu3n8ni": {
       "title": "Deputy Project Manager",
@@ -7126,7 +7126,7 @@
         "max": 121950,
         "unit": "YEAR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/full-time-cashier-day-lowes-owings-mills-maryland-wgrg1y2fmwdnnwwj": {
       "title": "Full Time - Cashier - Day",
@@ -7141,7 +7141,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 7
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/service-team-member-hiring-fair-michaels-garrison-maryland-uzygx7n8vnirouh9": {
       "title": "Service Team Member (Hiring fair)",
@@ -7901,7 +7901,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/cashier-part-time-lowes-owings-mills-maryland-xbvbt52zhkfj44oj": {
       "title": "Cashier Part Time",
@@ -7916,7 +7916,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/retail-sales-part-time-lowes-owings-mills-maryland-2w0f260xz2q00qoq": {
       "title": "Retail Sales – Part Time",
@@ -7931,7 +7931,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/health-and-beauty-ta-walmart-randallstown-maryland-lobry9tm0ppolujj": {
       "title": "Health & Beauty TA",
@@ -7946,7 +7946,7 @@
         "max": 30,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/full-time-sales-associate-plumbing-day-lowes-owings-mills-maryland-xj2qfj00fd755v5t": {
       "title": "Full Time - Sales Associate - Plumbing - Day",
@@ -7961,7 +7961,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/full-time-merchandising-service-associate-day-lowes-owings-mills-k6qqh78p5ev1f89s": {
       "title": "Full Time - Merchandising Service Associate - Day",
@@ -7976,7 +7976,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/merchandising-part-time-days-lowes-owings-mills-maryland-zzx9znj445u4m1ba": {
       "title": "Merchandising Part Time Days",
@@ -7991,7 +7991,7 @@
         "max": 15.6,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/cake-decorator-walmart-randallstown-maryland-iff8lud9xo4a6ivq": {
       "title": "Cake Decorator",
@@ -8006,7 +8006,7 @@
         "max": 33,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/floor-tech-futurecare-pikesville-maryland-8ti8n0cm0u1regvp": {
       "title": "Floor Tech",
@@ -8021,7 +8021,7 @@
         "max": 18.25,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/laundry-aide-futurecare-randallstown-maryland-hwmhcbrcpd849g5j": {
       "title": "Laundry Aide",
@@ -8036,7 +8036,7 @@
         "max": 17.5,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/maintenance-assistant-futurecare-pikesville-maryland-txjax27vl4h0ekdl": {
       "title": "Maintenance Assistant",
@@ -8051,7 +8051,7 @@
         "max": 21.84,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/floor-tech-futurecare-reisterstown-maryland-7b15f1r81lvoorbs": {
       "title": "Floor Tech",
@@ -8066,7 +8066,7 @@
         "max": 18.25,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/lead-ai-engineer-mobile-technology-t-rowe-price-owings-mills-maryland-scmq9c2vj07ys3j6": {
       "title": "Lead AI Engineer (Mobile Technology)",
@@ -8321,7 +8321,7 @@
         "max": 149885,
         "unit": "YEAR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/verizon-sales-consultant-cellular-sales-pikesville-maryland-1mhn19f4iiz20spd": {
       "title": "Verizon Sales Consultant",
@@ -8467,7 +8467,7 @@
       "datePosted": "2026-08-04",
       "employmentType": "FULL_TIME",
       "salary": null,
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/lead-cashier-part-time-lifebridge-health-randallstown-maryland-gzt5wui9z3qmbgi6": {
       "title": "Lead Cashier- Part Time",
@@ -8512,7 +8512,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 8
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/electro-mechanical-tech-i-medifast-owings-mills-maryland-zyjpvcqbxmu7bamc": {
       "title": "Electro-Mechanical Tech I",
@@ -8860,7 +8860,7 @@
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 10
+      "lastSeenRun": 12
     },
     "https://hiringcafe.com/job/warehouse-assistant-owings-mills-libs-grill-owings-mills-maryland-r4vpy7c318d9jyia": {
       "title": "Warehouse Assistant Owings Mills",
@@ -8921,6 +8921,107 @@
         "unit": "HOUR"
       },
       "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/cleaner-elite-building-services-windsor-mill-maryland-o2eas4wkrila7zcx": {
+      "title": "Cleaner",
+      "url": "https://hiringcafe.com/job/cleaner-elite-building-services-windsor-mill-maryland-o2eas4wkrila7zcx",
+      "company": "Elite Building Services",
+      "city": "Windsor Mill",
+      "region": "Maryland",
+      "datePosted": "2026-08-05",
+      "employmentType": "PART_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/direct-support-professional-maxine-thurs-sat-8a-8p-chimes-pikesville-a7vcr9cld6u6k4iq": {
+      "title": "Direct Support Professional - Maxine (Thurs-Sat 8a-8p)",
+      "url": "https://hiringcafe.com/job/direct-support-professional-maxine-thurs-sat-8a-8p-chimes-pikesville-a7vcr9cld6u6k4iq",
+      "company": "Chimes",
+      "city": "Pikesville",
+      "region": "Maryland",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/direct-support-professional-pine-ridge-pikesville-mon-tues-3p-9p-sun-6cwsqw24yi6qkj30": {
+      "title": "Direct Support Professional - (Pine Ridge-Pikesville) Mon-Tues 3p-9p, Sun 9a-9p",
+      "url": "https://hiringcafe.com/job/direct-support-professional-pine-ridge-pikesville-mon-tues-3p-9p-sun-6cwsqw24yi6qkj30",
+      "company": "Chimes",
+      "city": "Pikesville",
+      "region": "Maryland",
+      "datePosted": "2026-08-05",
+      "employmentType": "PART_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/ft-assistant-deli-bakery-manager-284749-ahold-delhaize-randallstown-is120ax72qb8bnsv": {
+      "title": "FT Assistant Deli Bakery Manager (284749)",
+      "url": "https://hiringcafe.com/job/ft-assistant-deli-bakery-manager-284749-ahold-delhaize-randallstown-is120ax72qb8bnsv",
+      "company": "Ahold Delhaize",
+      "city": "Randallstown",
+      "region": "Maryland",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-bgy0t4ydn1ixwgrh": {
+      "title": "Retail Sales Associate",
+      "url": "https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-bgy0t4ydn1ixwgrh",
+      "company": "Best Buy",
+      "city": "Owings Mills",
+      "region": "Maryland",
+      "datePosted": "2026-08-06",
+      "employmentType": "PART_TIME",
+      "salary": {
+        "min": 15,
+        "max": 19.22,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/retail-cashier-associate-the-tjx-companies-owings-mills-maryland-4t0b7cule06yeazz": {
+      "title": "Retail Cashier Associate",
+      "url": "https://hiringcafe.com/job/retail-cashier-associate-the-tjx-companies-owings-mills-maryland-4t0b7cule06yeazz",
+      "company": "The TJX Companies",
+      "city": "Owings Mills",
+      "region": "Maryland",
+      "datePosted": "2026-08-05",
+      "employmentType": "PART_TIME",
+      "salary": {
+        "min": 15.25,
+        "max": 15.75,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/zone-team-leader-ollies-bargain-outlet-owings-mills-maryland-z19bip7vocqnf6vr": {
+      "title": "Zone Team Leader",
+      "url": "https://hiringcafe.com/job/zone-team-leader-ollies-bargain-outlet-owings-mills-maryland-z19bip7vocqnf6vr",
+      "company": "Ollie's Bargain Outlet",
+      "city": "Owings Mills",
+      "region": "Maryland",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 17.25,
+        "max": 18.25,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 12
     }
   }
 }

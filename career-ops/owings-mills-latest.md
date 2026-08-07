@@ -1,19 +1,22 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-07 12:00 UTC · 529 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-07 22:00 UTC · 533 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
 Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
-## Owings Mills (283)
+## Owings Mills (285)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Best Buy | [Retail Sales Associate](https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-bgy0t4ydn1ixwgrh) | $15–$19.22/hr | 2026-08-06 |
 | Sodexo | [Cook](https://hiringcafe.com/job/cook-sodexo-owings-mills-maryland-kh8ndd78i1l5ndkz) | — | 2026-08-05 |
 | Compass Group | [PORTER (FULL TIME)](https://hiringcafe.com/job/porter-full-time-compass-group-owings-mills-maryland-vzvx7tfvicxewvzr) | $19–$20/hr | 2026-08-05 |
 | Compass Group | [PORTER (FULL TIME) (1559276)](https://hiringcafe.com/job/porter-full-time-1559276-compass-group-owings-mills-maryland-ijyuim06nvsqigrq) | $19–$20/hr | 2026-08-05 |
 | Lib's Grill | [Warehouse Assistant Owings Mills](https://hiringcafe.com/job/warehouse-assistant-owings-mills-libs-grill-owings-mills-maryland-sg3y0y6arb9ga46o) | $16–$18/hr | 2026-08-05 |
+| The TJX Companies | [Retail Cashier Associate](https://hiringcafe.com/job/retail-cashier-associate-the-tjx-companies-owings-mills-maryland-4t0b7cule06yeazz) | $15.25–$15.75/hr | 2026-08-05 |
+| Ollie's Bargain Outlet | [Zone Team Leader](https://hiringcafe.com/job/zone-team-leader-ollies-bargain-outlet-owings-mills-maryland-z19bip7vocqnf6vr) | $17.25–$18.25/hr | 2026-08-05 |
 | The TJX Companies | [AM Apparel Processor](https://hiringcafe.com/job/am-apparel-processor-the-tjx-companies-owings-mills-maryland-vdntdbioetqytkqe) | $15.25–$15.75/hr | 2026-08-04 |
 | Marvin | [Brand Ambassador - Appointment Setter](https://hiringcafe.com/job/brand-ambassador-appointment-setter-marvin-owings-mills-maryland-gk167xrwnhfy9fje) | $25–$35/hr | 2026-08-04 |
 | Wegmans | [Cart Attendant](https://hiringcafe.com/job/cart-attendant-wegmans-owings-mills-maryland-6kneo4cxphqefyfo) | $16.5–$17/hr | 2026-08-04 |
@@ -161,7 +164,6 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Celebree School | [Caliday Teacher's Aide - Afternoon Shift](https://hiringcafe.com/job/caliday-teachers-aide-afternoon-shift-celebree-school-owings-mills-6tt0lwgt9hhaaac7) | — | 2026-07-21 |
 | Best Buy | [Geek Squad Agent (Retail Store)](https://hiringcafe.com/job/geek-squad-agent-retail-store-best-buy-owings-mills-maryland-jbdhrfy1bff9fz7z) | $15–$19.22/hr | 2026-07-20 |
 | Best Buy | [Car Electronics Installer](https://hiringcafe.com/job/car-electronics-installer-best-buy-owings-mills-maryland-j7dqn1uk2147mxyx) | $15–$21.21/hr | 2026-07-20 |
-| Best Buy | [Retail Sales Associate](https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-57hr9letdji1dz42) | $15–$19.22/hr | 2026-07-20 |
 | Burlington Stores | [Retail Stocking Associate - Part Time](https://hiringcafe.com/job/retail-stocking-associate-part-time-burlington-stores-owings-mills-23gw63xlkzrsopez) | — | 2026-07-20 |
 | Stevenson University | [Full-Time Faculty, Mathematics (Open Rank)](https://hiringcafe.com/job/full-time-faculty-mathematics-open-rank-stevenson-university-owings-8axyk7nwy8o0sqza) | $60k–$65k | 2026-07-20 |
 | Allegiant-Carter Management | [Property Manager](https://hiringcafe.com/job/property-manager-allegiant-carter-management-owings-mills-maryland-oeit6fkxf888xtga) | $92k–$95k | 2026-07-20 |
@@ -386,10 +388,11 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | OneOncology | [Advanced Practice Provider - Chesapeake Urology](https://hiringcafe.com/job/advanced-practice-provider-chesapeake-urology-oneoncology-pikesville-e7661iy94ro0vqpf) | $115k–$150k | 2026-06-11 |
 | Starbucks | [shift supervisor - Store# 62733, 103 REISTERSTOWN RD](https://hiringcafe.com/job/shift-supervisor-store-62733-103-reisterstown-rd-starbucks-pikesville-aq1eagnqegb5zxbs) | $20–$22.7/hr | 2026-06-09 |
 
-## Randallstown (66)
+## Randallstown (67)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Ahold Delhaize | [FT Assistant Deli Bakery Manager (284749)](https://hiringcafe.com/job/ft-assistant-deli-bakery-manager-284749-ahold-delhaize-randallstown-is120ax72qb8bnsv) | — | 2026-08-06 |
 | LifeBridge Health | [Lead Cashier- Part Time](https://hiringcafe.com/job/lead-cashier-part-time-lifebridge-health-randallstown-maryland-gzt5wui9z3qmbgi6) | $17–$23.58/hr | 2026-08-04 |
 | Walgreens | [Photo Specialist](https://hiringcafe.com/job/photo-specialist-walgreens-randallstown-maryland-ai1zewp6fh2qw7n4) | $15–$17.5/hr | 2026-08-03 |
 | Ramley Construction | [In-Home Sales Representative](https://hiringcafe.com/job/in-home-sales-representative-ramley-construction-randallstown-maryland-vwzhm4h8yrjvwl7i) | $150k–$250k | 2026-08-03 |
@@ -516,10 +519,11 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Blufox Mobile | [Store Manager BluFox Mobile- Reisterstown](https://hiringcafe.com/job/store-manager-blufox-mobile-reisterstown-blufox-mobile-reisterstown-rexe9n38qzb6kull) | — | 2026-06-17 |
 | Starbucks | [barista - Store# 58603, REISTERSTOWN SHOPPING CENTER](https://hiringcafe.com/job/barista-store-58603-reisterstown-shopping-center-starbucks-koy2lzl8vaqw1x9u) | $15.75–$17.88/hr | 2026-06-11 |
 
-## Windsor Mill (23)
+## Windsor Mill (24)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Elite Building Services | [Cleaner](https://hiringcafe.com/job/cleaner-elite-building-services-windsor-mill-maryland-o2eas4wkrila7zcx) | — | 2026-08-05 |
 | Acosta Group | [Retail Merchandiser/Resets](https://hiringcafe.com/job/retail-merchandiser-resets-acosta-group-windsor-mill-maryland-ub3mdsnzia3w404s) | — | 2026-08-04 |
 | AutoZone | [Commercial Driver – Part Time](https://hiringcafe.com/job/commercial-driver-part-time-autozone-windsor-mill-maryland-qhrwcy1l7p82vbbj) | $15.2–$15.48/hr | 2026-07-31 |
 | AutoZone | [Retail Sales Associate – Part Time](https://hiringcafe.com/job/retail-sales-associate-part-time-autozone-windsor-mill-maryland-69lbxigv0kx68q42) | $15.2–$15.48/hr | 2026-07-31 |
