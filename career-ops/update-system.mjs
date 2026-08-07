@@ -180,6 +180,7 @@ const SYSTEM_PATHS = [
   'sitemap-sweep.mjs',
   'prune-pipeline.mjs',
   'import-indeed.mjs',
+  'scan-maryland-gov.mjs',
   'build-dash-data.mjs',
   'build-dash-html.mjs',
   '.mcp.json',
@@ -400,6 +401,7 @@ const USER_PATHS = [
   // workflow can commit them, and user-owned rather than shipped by an update.
   'local-workday-store.json',
   'indeed-store.json',
+  'maryland-gov-store.json',
   'jds/',
   'writing-samples/',
   'config/plugins.yml',

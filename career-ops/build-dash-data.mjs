@@ -116,6 +116,9 @@ const out = {
   // which comes from the Indeed MCP connector via import-indeed.mjs.
   indeed: readJsonOr('data/indeed.json', { jobs: [] }),
   indeedStore: readJsonOr('indeed-store.json', []),
+  // Maryland state government via JobAps — the only source that publishes a
+  // real filing deadline, so "still open" is stated rather than inferred.
+  marylandGov: readJsonOr('maryland-gov-store.json', []),
   // Title-blind local Workday pull (scan-local-workday.mjs). Flat array, and
   // its records carry `days` (age at fetch) rather than a posted date.
   // Committed store first (written by scan-local-workday.mjs and refreshed by
@@ -128,4 +131,4 @@ writeFileSync(dest, JSON.stringify(out, null, 2));
 console.log(`wrote ${dest}`);
 console.log(`  tracker=${out.tracker.length} reports=${out.reports.length} pipeline=${out.pipeline.length}`);
 console.log(`  owingsMills=${out.owingsMills.jobs.length} remoteUs=${out.remoteUs.jobs.length} indeed=${out.indeed.jobs.length}`);
-console.log(`  localWorkday=${out.localWorkday.length} indeedStore=${out.indeedStore.length}`);
+console.log(`  localWorkday=${out.localWorkday.length} indeedStore=${out.indeedStore.length} marylandGov=${out.marylandGov.length}`);
