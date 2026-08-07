@@ -109,7 +109,17 @@ function dedupe(rows) {
 // lost.
 const EXCLUDED_EMPLOYERS = /^Adventist HealthCare$/i;
 
-const listingsRaw = [...localWorkday, ...owingsMills]
+// Indeed reaches what no ATS board does — small local employers, county and
+// state government — and carries a rate on nearly every row, which is exactly
+// what the Workday side lacks.
+const indeed = (d.indeedStore || []).map((j) => ({
+  company: j.company, title: j.title, location: j.location, url: j.url,
+  days: typeof j.days === 'number' ? j.days : null,
+  salary: j.salary || null,
+  source: 'Indeed',
+}));
+
+const listingsRaw = [...localWorkday, ...owingsMills, ...indeed]
   .filter((j) => !EXCLUDED_EMPLOYERS.test(String(j.company || '').trim()));
 const listings = dedupe(listingsRaw);
 const dupesRemoved = listingsRaw.length - listings.length;
