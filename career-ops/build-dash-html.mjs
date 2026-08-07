@@ -286,7 +286,10 @@ const nearHomeRows = BAND_ORDER.map((i) => {
   const rows = nearHomeRanked.filter((j) => j.band === i);
   if (rows.length === 0) return '';
   return `<tr class="bracket"><td colspan="5">${esc(band.label)} · ${rows.length}<div class="bracket-note">${esc(band.note)}</div></td></tr>`
-    + rowsFor(rows, 30);
+    // No cap on the home ring. Rows with no published rate sort last, so any
+    // cap here would only ever hide those — which is precisely the set worth
+    // seeing, since "no rate published" is not the same as "pays badly".
+    + rowsFor(rows, rows.length);
 }).filter(Boolean).join('');
 const baltimoreRows = bracketedRows(baltimore, 15);
 const elsewhere = shortlist.filter((j) => j.tier >= 2);
