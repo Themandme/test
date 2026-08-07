@@ -183,9 +183,23 @@ const rowsFor = (list, limit) => list.slice(0, limit).map((j) => `
     <td>${esc(j.location)}</td>
   </tr>`).join('');
 
+// Inside a ring, age is still the thing that decides what is worth chasing —
+// so it is shown as its own brackets rather than left implicit in the sort.
+const AGE_BRACKETS = [
+  ['Posted this week — 0–7 days', (n) => n <= 7],
+  ['8–14 days', (n) => n > 7 && n <= 14],
+  ['15–21 days', (n) => n > 14 && n <= 21],
+];
+const bracketedRows = (list, limitPerBracket) => AGE_BRACKETS.map(([label, test]) => {
+  const rows = list.filter((j) => test(j.days));
+  if (rows.length === 0) return '';
+  return `<tr class="bracket"><td colspan="4">${esc(label)} · ${rows.length}</td></tr>`
+    + rowsFor(rows, limitPerBracket);
+}).join('');
+
 const shortlistRows = rowsFor(shortlist, 60);
-const nearHomeRows = rowsFor(nearHome, 40);
-const baltimoreRows = rowsFor(baltimore, 40);
+const nearHomeRows = bracketedRows(nearHome, 25);
+const baltimoreRows = bracketedRows(baltimore, 15);
 
 const tierTally = TIER_LABEL.map((label, i) => ({ label, n: shortlist.filter((j) => j.tier === i).length }));
 
@@ -264,6 +278,10 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   tr:last-child td { border-bottom: 0; }
   td.num { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
   .sub { color: var(--ink-3); font-size: 12.5px; margin-top: 1px; }
+  tr.bracket td {
+    background: var(--track); color: var(--ink-2); font-size: 11.5px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .05em; padding: 6px 10px; border-bottom: 1px solid var(--line);
+  }
   a { color: var(--series); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
@@ -321,7 +339,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
   </div>
 
   <h2>Owings Mills area — closest to home</h2>
-  <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. ${nearHome.length} reachable roles posted within 21 days, newest first. This ring is ranked above everything else regardless of how fresh the rest is.</p>
+  <p class="note">Owings Mills, Reisterstown, Pikesville, Randallstown, Windsor Mill, Woodlawn and Garrison — roughly fifteen minutes. ${nearHome.length} reachable roles, split into age brackets: distance decides the ring, age decides what to chase inside it. Anything below the first bracket is worth confirming is still open before you spend effort on it.</p>
   <div class="panel scroll">
     <table>
       <thead><tr><th>Age</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
