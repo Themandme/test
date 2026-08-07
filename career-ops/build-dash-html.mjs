@@ -94,6 +94,9 @@ function dedupe(rows) {
     if (prev.days === null && r.days !== null) prev.days = r.days;
     else if (prev.days !== null && r.days !== null) prev.days = Math.min(prev.days, r.days);
     if (!prev.salary && r.salary) prev.salary = r.salary;
+    // Only NEOGOV publishes coordinates, so a measured distance survives a
+    // merge with a record that only ever had a city name.
+    if (prev.miles == null && r.miles != null) prev.miles = r.miles;
     // A censored "30+" age is weaker evidence than an exact one.
     if (prev.censored && !r.censored) prev.censored = false;
     // Keep whichever URL carries the rate, so the link matches what is shown.
@@ -129,7 +132,23 @@ const marylandGov = (d.marylandGov || []).map((j) => ({
   source: 'Maryland state (JobAps)',
 }));
 
-const listingsRaw = [...localWorkday, ...owingsMills, ...indeed, ...marylandGov]
+// County and city government via NEOGOV. Highest-quality feed in the search:
+// a real posting date and a published pay range on ~87% of rows, plus
+// coordinates, so the distance below is measured rather than string-matched.
+const titleCase = (s) => String(s || '').replace(/\b[a-z]/g, (c) => c.toUpperCase());
+const neogov = (d.neogov || []).map((j) => ({
+  company: j.company, title: j.title, url: j.url,
+  // The agency-typed `location` is free text ("13800 Manor Road Baldwin, MD",
+  // "Various locations throughout Baltimore County, MD"). City + state is the
+  // form the proximity rings and the dedupe key are built for.
+  location: j.city ? `${titleCase(j.city)}, ${j.state || 'MD'}` : j.location,
+  days: typeof j.days === 'number' ? j.days : null,
+  salary: j.salary || null,
+  miles: typeof j.miles === 'number' ? j.miles : null,
+  source: 'County/city gov (NEOGOV)',
+}));
+
+const listingsRaw = [...localWorkday, ...owingsMills, ...indeed, ...marylandGov, ...neogov]
   .filter((j) => !EXCLUDED_EMPLOYERS.test(String(j.company || '').trim()));
 const listings = dedupe(listingsRaw);
 const dupesRemoved = listingsRaw.length - listings.length;
