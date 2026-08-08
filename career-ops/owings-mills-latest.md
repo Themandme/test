@@ -1,16 +1,18 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-07 22:00 UTC · 533 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-08 00:59 UTC · 527 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
 Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
-## Owings Mills (285)
+## Owings Mills (280)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
 | Best Buy | [Retail Sales Associate](https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-bgy0t4ydn1ixwgrh) | $15–$19.22/hr | 2026-08-06 |
+| BJ's Wholesale Club | [Cashier Part Time](https://hiringcafe.com/job/cashier-part-time-bjs-wholesale-club-owings-mills-maryland-1d538ichqks4r6if) | $17–$20.4/hr | 2026-08-06 |
+| Centric Business Systems | [Sales Administrator](https://hiringcafe.com/job/sales-administrator-centric-business-systems-owings-mills-maryland-xayeg4otnil8ab2m) | — | 2026-08-06 |
 | Sodexo | [Cook](https://hiringcafe.com/job/cook-sodexo-owings-mills-maryland-kh8ndd78i1l5ndkz) | — | 2026-08-05 |
 | Compass Group | [PORTER (FULL TIME)](https://hiringcafe.com/job/porter-full-time-compass-group-owings-mills-maryland-vzvx7tfvicxewvzr) | $19–$20/hr | 2026-08-05 |
 | Compass Group | [PORTER (FULL TIME) (1559276)](https://hiringcafe.com/job/porter-full-time-1559276-compass-group-owings-mills-maryland-ijyuim06nvsqigrq) | $19–$20/hr | 2026-08-05 |
@@ -288,15 +290,8 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Floor & Decor | [Assistant Department Manager (Tile)](https://hiringcafe.com/job/assistant-department-manager-tile-floor-and-decor-owings-mills-qricxl9qerazbt16) | $18.25–$27.15/hr | 2026-06-11 |
 | Valmet | [Software Engineer](https://hiringcafe.com/job/software-engineer-valmet-owings-mills-maryland-p8qkd3wznxgwp67x) | — | 2026-06-11 |
 | Stevenson University | [Mailroom Courier](https://hiringcafe.com/job/mailroom-courier-stevenson-university-owings-mills-maryland-ib5kp0z4zstd89v2) | $15.75–$16.25/hr | 2026-06-10 |
-| Centric Business Systems | [Customer Service / Dispatcher](https://hiringcafe.com/job/customer-service-dispatcher-centric-business-systems-owings-mills-xanx3c7q8lm6lufi) | — | 2026-06-09 |
-| Ollie's Bargain Outlet | [Front End Specialist 2 Part Time](https://hiringcafe.com/job/front-end-specialist-2-part-time-ollies-bargain-outlet-owings-mills-09l3jmin5h8adbi6) | $15.25–$16.25/hr | 2026-06-09 |
-| State of Maryland | [MPT Fall Internship](https://hiringcafe.com/job/mpt-fall-internship-state-of-maryland-owings-mills-maryland-dgczjec1owme6p1u) | — | 2026-06-09 |
-| Stevenson University | [Student Assistant – Library](https://hiringcafe.com/job/student-assistant-library-stevenson-university-owings-mills-maryland-kubbpass7jyd1g7t) | — | 2026-06-09 |
-| Ollie's Bargain Outlet | [Front End Specialist Full Time](https://hiringcafe.com/job/front-end-specialist-full-time-ollies-bargain-outlet-owings-mills-c7e59q7d8klimkxd) | $15.75–$16.75/hr | 2026-06-09 |
-| Element Fleet Management | [Sales Tax Analyst](https://hiringcafe.com/job/sales-tax-analyst-element-fleet-management-owings-mills-maryland-a3txvt4p7zyvel67) | $60k–$83k | 2026-06-09 |
-| RadNet | [Strategic Initiatives Prjt Mgr](https://hiringcafe.com/job/strategic-initiatives-prjt-mgr-radnet-owings-mills-maryland-iewehhw52me8032z) | $70k–$120k | 2026-06-09 |
 
-## Pikesville (87)
+## Pikesville (86)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -386,7 +381,6 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Starbucks | [shift supervisor - Store# 00740, WOODHOLME](https://hiringcafe.com/job/shift-supervisor-store-00740-woodholme-starbucks-pikesville-maryland-3hhpylngz5fbjftt) | $20–$22.7/hr | 2026-06-13 |
 | OneOncology | [Urologist - Chesapeake Urology](https://hiringcafe.com/job/urologist-chesapeake-urology-oneoncology-pikesville-maryland-rrb8rc1giw5ss6hd) | $350k–$380k | 2026-06-11 |
 | OneOncology | [Advanced Practice Provider - Chesapeake Urology](https://hiringcafe.com/job/advanced-practice-provider-chesapeake-urology-oneoncology-pikesville-e7661iy94ro0vqpf) | $115k–$150k | 2026-06-11 |
-| Starbucks | [shift supervisor - Store# 62733, 103 REISTERSTOWN RD](https://hiringcafe.com/job/shift-supervisor-store-62733-103-reisterstown-rd-starbucks-pikesville-aq1eagnqegb5zxbs) | $20–$22.7/hr | 2026-06-09 |
 
 ## Randallstown (67)
 
