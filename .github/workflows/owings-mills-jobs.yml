@@ -27,17 +27,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: npm
-          cache-dependency-path: career-ops/package-lock.json
-
-      # Without this the three sweeps below die instantly on
-      # ERR_MODULE_NOT_FOUND for js-yaml — which `continue-on-error` then
-      # swallowed, so the run went green while refreshing nothing.
-      # --ignore-scripts skips Playwright's browser download: none of the
-      # scheduled scanners drive a browser, and it costs ~30s and ~400MB.
-      - name: Install dependencies
-        working-directory: career-ops
-        run: npm ci --ignore-scripts
 
       # Without this the three sweeps below die instantly on
       # ERR_MODULE_NOT_FOUND for js-yaml — which `continue-on-error` then
