@@ -27,6 +27,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+          cache-dependency-path: career-ops/package-lock.json
+
+      # Without this the three sweeps below die instantly on
+      # ERR_MODULE_NOT_FOUND for js-yaml — which `continue-on-error` then
+      # swallowed, so the run went green while refreshing nothing.
+      # --ignore-scripts skips Playwright's browser download: none of the
+      # scheduled scanners drive a browser, and it costs ~30s and ~400MB.
+      - name: Install dependencies
+        working-directory: career-ops
+        run: npm ci --ignore-scripts
 
       - name: Scan for local jobs
         working-directory: career-ops
@@ -36,6 +47,7 @@ jobs:
         run: node scan-owings-mills.mjs
 
       - name: Sweep the local Workday tenants
+        id: workday
         working-directory: career-ops
         # Location-first and title-blind, same as the scan above. Tenants and
         # the location rules come from portals.yml `local_workday`, which is
@@ -48,6 +60,7 @@ jobs:
         run: node scan-local-workday.mjs
 
       - name: Sweep Maryland state government (JobAps)
+        id: mdgov
         working-directory: career-ops
         # The only source that publishes a real filing deadline, so closed
         # postings are dropped rather than inferred.
@@ -55,6 +68,7 @@ jobs:
         run: node scan-maryland-gov.mjs
 
       - name: Sweep county and city government (NEOGOV)
+        id: neogov
         working-directory: career-ops
         # Baltimore County, CCBC, Howard, Anne Arundel, Montgomery, M-NCPPC,
         # Frederick and DC. Agency slugs come from portals.yml `neogov`, which
@@ -94,3 +108,33 @@ jobs:
             echo
             echo "See \`career-ops/owings-mills-latest.md\` for the full list."
           } >> "$GITHUB_STEP_SUMMARY"
+
+      # `continue-on-error` above keeps one broken source from stopping the
+      # others or blocking the commit — but on its own it also turned a run in
+      # which every sweep died into a green tick. This reports each outcome and
+      # then fails the run, so the commit still lands and the breakage is still
+      # visible.
+      - name: Report sweep outcomes
+        if: always()
+        env:
+          WORKDAY: ${{ steps.workday.outcome }}
+          MDGOV: ${{ steps.mdgov.outcome }}
+          NEOGOV: ${{ steps.neogov.outcome }}
+        run: |
+          {
+            echo
+            echo "| Sweep | Outcome |"
+            echo "|---|---|"
+            echo "| Local Workday tenants | $WORKDAY |"
+            echo "| Maryland state (JobAps) | $MDGOV |"
+            echo "| County/city gov (NEOGOV) | $NEOGOV |"
+          } >> "$GITHUB_STEP_SUMMARY"
+          failed=""
+          for pair in "Workday:$WORKDAY" "JobAps:$MDGOV" "NEOGOV:$NEOGOV"; do
+            [ "${pair#*:}" = "failure" ] && failed="$failed ${pair%%:*}"
+          done
+          if [ -n "$failed" ]; then
+            echo "::error::sweeps failed:$failed — their stores were not refreshed this run"
+            exit 1
+          fi
+          echo "All sweeps completed."
