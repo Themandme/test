@@ -182,6 +182,7 @@ const SYSTEM_PATHS = [
   'import-indeed.mjs',
   'scan-maryland-gov.mjs',
   'scan-neogov.mjs',
+  'snapshot-data.mjs',
   'build-dash-data.mjs',
   'build-dash-html.mjs',
   '.mcp.json',

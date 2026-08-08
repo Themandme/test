@@ -120,3 +120,7 @@ plan/
 # (see DATA_CONTRACT.md). Re-include them past the unanchored user-layer
 # patterns above (cv.md, portals.yml).
 !test-fixtures/**
+
+# Snapshots of the user-layer data/ taken by snapshot-data.mjs before any
+# test-all.mjs run. Same user data as data/*, so never committed.
+data-snapshots/
