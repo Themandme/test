@@ -39,6 +39,21 @@ jobs:
         working-directory: career-ops
         run: npm ci --ignore-scripts
 
+      # Without this the three sweeps below die instantly on
+      # ERR_MODULE_NOT_FOUND for js-yaml — which `continue-on-error` then
+      # swallowed, so the run went green while refreshing nothing.
+      #
+      # `npm install`, not `npm ci`, and no setup-node `cache:` — both need a
+      # lockfile, and career-ops gitignores package-lock.json (.gitignore:107),
+      # so it does not exist on the runner. Pointing cache-dependency-path at
+      # it failed setup-node outright.
+      #
+      # --ignore-scripts skips Playwright's browser download: none of the
+      # scheduled scanners drive a browser, and it costs ~30s and ~400MB.
+      - name: Install dependencies
+        working-directory: career-ops
+        run: npm install --ignore-scripts --no-audit --no-fund
+
       - name: Scan for local jobs
         working-directory: career-ops
         # No NODE_USE_ENV_PROXY here: that is only needed inside the Claude Code
