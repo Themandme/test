@@ -1,12 +1,12 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-08 11:46 UTC · 537 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-08 21:51 UTC · 542 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
 Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
-## Owings Mills (287)
+## Owings Mills (292)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -16,6 +16,8 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Centric Business Systems | [Sales Administrator](https://hiringcafe.com/job/sales-administrator-centric-business-systems-owings-mills-maryland-xayeg4otnil8ab2m) | — | 2026-08-06 |
 | GFT (Gannett Fleming) | [Environmental Project Engineer](https://hiringcafe.com/job/environmental-project-engineer-gft-gannett-fleming-owings-mills-l555enfbmw35jwul) | $85k–$115k | 2026-08-06 |
 | Michaels | [environmental team member](https://hiringcafe.com/job/environmental-team-member-michaels-owings-mills-maryland-za8qhkd4k7u16v8n) | $14.25–$16.5/hr | 2026-08-06 |
+| RadNet | [PET/CT Coordinator](https://hiringcafe.com/job/pet-ct-coordinator-radnet-owings-mills-maryland-t9ozcfes6n16b2xc) | $21–$23/hr | 2026-08-06 |
+| Asbury Automotive | [Sales Manager](https://hiringcafe.com/job/sales-manager-asbury-automotive-owings-mills-maryland-uwf33ccsfrgv0lob) | $50k–$150k | 2026-08-06 |
 | Sodexo | [Cook](https://hiringcafe.com/job/cook-sodexo-owings-mills-maryland-kh8ndd78i1l5ndkz) | — | 2026-08-05 |
 | Compass Group | [PORTER (FULL TIME)](https://hiringcafe.com/job/porter-full-time-compass-group-owings-mills-maryland-vzvx7tfvicxewvzr) | $19–$20/hr | 2026-08-05 |
 | Compass Group | [PORTER (FULL TIME) (1559276)](https://hiringcafe.com/job/porter-full-time-1559276-compass-group-owings-mills-maryland-ijyuim06nvsqigrq) | $19–$20/hr | 2026-08-05 |
@@ -24,6 +26,9 @@ Coverage: each run reads 60 of 466 sitemap chunks, rotating, so a full pass take
 | Ollie's Bargain Outlet | [Zone Team Leader](https://hiringcafe.com/job/zone-team-leader-ollies-bargain-outlet-owings-mills-maryland-z19bip7vocqnf6vr) | $17.25–$18.25/hr | 2026-08-05 |
 | Campbell's | [Distribution Coordinator](https://hiringcafe.com/job/distribution-coordinator-campbells-owings-mills-maryland-053frt05vsv0m4v6) | — | 2026-08-05 |
 | Floor & Decor | [Inventory Control Specialist](https://hiringcafe.com/job/inventory-control-specialist-floor-and-decor-owings-mills-maryland-14f2b89ljfg0tz4j) | $18.1–$25/hr | 2026-08-05 |
+| Hallmark Cards | [Hallmark Merchandiser (part-time) Owings Mills, MD 21117](https://hiringcafe.com/job/hallmark-merchandiser-part-time-owings-mills-md-21117-hallmark-cards-go191ri1900om6oq) | $15.5–$17.5/hr | 2026-08-05 |
+| Trinity Property Consultants | [Maintenance Technician I - ReNew Owings Mills](https://hiringcafe.com/job/maintenance-technician-i-renew-owings-mills-trinity-property-dffwr8mprylhy0lz) | $22–$25/hr | 2026-08-05 |
+| Hallmark | [Hallmark Merchandiser (part-time) Owings Mills, MD 21117](https://hiringcafe.com/job/hallmark-merchandiser-part-time-owings-mills-md-21117-hallmark-owings-mq1bgzz35r8ndqgl) | $15.5–$17.5/hr | 2026-08-05 |
 | The TJX Companies | [AM Apparel Processor](https://hiringcafe.com/job/am-apparel-processor-the-tjx-companies-owings-mills-maryland-vdntdbioetqytkqe) | $15.25–$15.75/hr | 2026-08-04 |
 | Marvin | [Brand Ambassador - Appointment Setter](https://hiringcafe.com/job/brand-ambassador-appointment-setter-marvin-owings-mills-maryland-gk167xrwnhfy9fje) | $25–$35/hr | 2026-08-04 |
 | Wegmans | [Cart Attendant](https://hiringcafe.com/job/cart-attendant-wegmans-owings-mills-maryland-6kneo4cxphqefyfo) | $16.5–$17/hr | 2026-08-04 |
