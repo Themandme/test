@@ -661,32 +661,6 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Heavy Equipment Mechanic Technician, Lead, Grade 20",
-    "reqId": "2026-00438",
-    "location": "16700 Crabbs Branch Way Derwood MD 20855 USA",
-    "city": "derwood",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5437712/heavy-equipment-mechanic-technician-lead-grade-20",
-    "postedAtMs": 1785888000000,
-    "days": 4,
-    "continuous": false,
-    "deadlineMs": 1787097600000,
-    "deadline": "08/19/26",
-    "employmentType": "Permanent",
-    "department": " Department of General Services",
-    "categories": [
-      "Automotive"
-    ],
-    "salary": {
-      "min": 69601,
-      "max": 110382,
-      "unit": "YEAR"
-    },
-    "miles": 28.9
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
     "title": "TERM Therapist I/II (Jail Addiction Services), Grade 23/24 ",
     "reqId": "2026-00426",
     "location": "22880 Whelan Ln Boyds MD 20841 USA",
@@ -710,6 +684,32 @@
       "unit": "YEAR"
     },
     "miles": 30.1
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Heavy Equipment Mechanic Technician, Lead, Grade 20",
+    "reqId": "2026-00438",
+    "location": "16700 Crabbs Branch Way Derwood MD 20855 USA",
+    "city": "derwood",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5437712/heavy-equipment-mechanic-technician-lead-grade-20",
+    "postedAtMs": 1785888000000,
+    "days": 4,
+    "continuous": false,
+    "deadlineMs": 1787097600000,
+    "deadline": "08/19/26",
+    "employmentType": "Permanent",
+    "department": " Department of General Services",
+    "categories": [
+      "Automotive"
+    ],
+    "salary": {
+      "min": 69601,
+      "max": 110382,
+      "unit": "YEAR"
+    },
+    "miles": 28.9
   },
   {
     "company": "Montgomery County Government",
@@ -741,33 +741,6 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Part -Time Temporary PRN (As Needed/On-Call) Crisis Center Therapist II, Grade 24",
-    "reqId": "2026-00431",
-    "location": "1301 Piccard Dr Rockville MD 20850 USA",
-    "city": "rockville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5437766/part-time-temporary-prn-as-needed-on-call-crisis-center-therapist-ii-grade-24",
-    "postedAtMs": 1785888000000,
-    "days": 4,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Temporary Intermittent",
-    "department": " Department of Health and Human Services",
-    "categories": [
-      "Mental Health",
-      "Public Health"
-    ],
-    "salary": {
-      "min": 82352,
-      "max": 131852,
-      "unit": "YEAR"
-    },
-    "miles": 30.5
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
     "title": "Administrative Services Manager (Manager III), Grade M3",
     "reqId": "2026-00454",
     "location": "100 Maryland Ave Rockville MD 20850 USA",
@@ -793,6 +766,33 @@
       "unit": "YEAR"
     },
     "miles": 30.6
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Part -Time Temporary PRN (As Needed/On-Call) Crisis Center Therapist II, Grade 24",
+    "reqId": "2026-00431",
+    "location": "1301 Piccard Dr Rockville MD 20850 USA",
+    "city": "rockville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5437766/part-time-temporary-prn-as-needed-on-call-crisis-center-therapist-ii-grade-24",
+    "postedAtMs": 1785888000000,
+    "days": 4,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Temporary Intermittent",
+    "department": " Department of Health and Human Services",
+    "categories": [
+      "Mental Health",
+      "Public Health"
+    ],
+    "salary": {
+      "min": 82352,
+      "max": 131852,
+      "unit": "YEAR"
+    },
+    "miles": 30.5
   },
   {
     "company": "Montgomery County Government",
@@ -858,29 +858,31 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Manager on Duty",
-    "reqId": "MOD.26",
-    "location": "Prince George's County, MD",
-    "city": null,
+    "title": "Chief Administrative Officer (Executive Director) - Appointed",
+    "reqId": "ED124",
+    "location": "Riverdale, MD",
+    "city": "riverdale park",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5141700/manager-on-duty",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5435963/chief-administrative-officer-executive-director-appointed",
     "postedAtMs": 1785888000000,
     "days": 4,
-    "continuous": false,
-    "deadlineMs": 1787616000000,
-    "deadline": "08/25/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Career",
+    "department": "OFFICE OF THE EXECUTIVE DIRECTOR",
     "categories": [
-      "Parks and Recreation ",
-      "Sports"
+      "Administration",
+      "Accounting and Finance",
+      "Human Resources",
+      "Management",
+      "Executive Management ",
+      "Project Management",
+      "Organizational Development",
+      "Program Management"
     ],
-    "salary": {
-      "min": 17.43,
-      "max": 26.66,
-      "unit": "HOUR"
-    },
-    "miles": 44.1
+    "salary": null,
+    "miles": 32.5
   },
   {
     "company": "M-NCPPC",
@@ -948,31 +950,29 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Chief Administrative Officer (Executive Director) - Appointed",
-    "reqId": "ED124",
-    "location": "Riverdale, MD",
-    "city": "riverdale park",
+    "title": "Manager on Duty",
+    "reqId": "MOD.26",
+    "location": "Prince George's County, MD",
+    "city": null,
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5435963/chief-administrative-officer-executive-director-appointed",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5141700/manager-on-duty",
     "postedAtMs": 1785888000000,
     "days": 4,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Career",
-    "department": "OFFICE OF THE EXECUTIVE DIRECTOR",
+    "continuous": false,
+    "deadlineMs": 1787616000000,
+    "deadline": "08/25/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
     "categories": [
-      "Administration",
-      "Accounting and Finance",
-      "Human Resources",
-      "Management",
-      "Executive Management ",
-      "Project Management",
-      "Organizational Development",
-      "Program Management"
+      "Parks and Recreation ",
+      "Sports"
     ],
-    "salary": null,
-    "miles": 32.5
+    "salary": {
+      "min": 17.43,
+      "max": 26.66,
+      "unit": "HOUR"
+    },
+    "miles": 44.1
   },
   {
     "company": "Frederick County Government",
@@ -1172,90 +1172,6 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Wheaton Sports Pavilion Positions - Seasonal 2026",
-    "reqId": "WSPP.26",
-    "location": "Wheaton, MD",
-    "city": "wheaton-glenmont",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5436033/wheaton-sports-pavilion-positions-seasonal-2026",
-    "postedAtMs": 1785801600000,
-    "days": 5,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "MC Parks",
-    "categories": [
-      "Parks and Recreation ",
-      "Parks",
-      "Customer Service"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 15.45,
-      "unit": "HOUR"
-    },
-    "miles": 29.6
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Field/Gym Monitor - Seasonal",
-    "reqId": "F/GM.25",
-    "location": "Prince George's County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5141819/field-gym-monitor-seasonal",
-    "postedAtMs": 1785801600000,
-    "days": 5,
-    "continuous": false,
-    "deadlineMs": 1787529600000,
-    "deadline": "08/24/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Customer Service",
-      "Custodial"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 20,
-      "unit": "HOUR"
-    },
-    "miles": 44.1
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Seasonal Waste Management Worker - Southern Region Parks Division",
-    "reqId": "SWMW.26",
-    "location": "Upper Marlboro, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5291070/seasonal-waste-management-worker-southern-region-parks-division",
-    "postedAtMs": 1785801600000,
-    "days": 5,
-    "continuous": false,
-    "deadlineMs": 1787529600000,
-    "deadline": "08/24/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Waste Management",
-      "Parks and Recreation ",
-      "Building & Grounds Cleaning and Maintenance"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 19.73,
-      "unit": "HOUR"
-    },
-    "miles": 41.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
     "title": "Turf Maintenance Technician - Southern Region Parks Division - Seasonal",
     "reqId": "TMT.26",
     "location": "Upper Marlboro, MD",
@@ -1362,6 +1278,90 @@
       "unit": "HOUR"
     },
     "miles": 41.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Seasonal Waste Management Worker - Southern Region Parks Division",
+    "reqId": "SWMW.26",
+    "location": "Upper Marlboro, MD",
+    "city": "upper marlboro",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5291070/seasonal-waste-management-worker-southern-region-parks-division",
+    "postedAtMs": 1785801600000,
+    "days": 5,
+    "continuous": false,
+    "deadlineMs": 1787529600000,
+    "deadline": "08/24/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Waste Management",
+      "Parks and Recreation ",
+      "Building & Grounds Cleaning and Maintenance"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 19.73,
+      "unit": "HOUR"
+    },
+    "miles": 41.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Field/Gym Monitor - Seasonal",
+    "reqId": "F/GM.25",
+    "location": "Prince George's County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5141819/field-gym-monitor-seasonal",
+    "postedAtMs": 1785801600000,
+    "days": 5,
+    "continuous": false,
+    "deadlineMs": 1787529600000,
+    "deadline": "08/24/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Customer Service",
+      "Custodial"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 20,
+      "unit": "HOUR"
+    },
+    "miles": 44.1
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Wheaton Sports Pavilion Positions - Seasonal 2026",
+    "reqId": "WSPP.26",
+    "location": "Wheaton, MD",
+    "city": "wheaton-glenmont",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5436033/wheaton-sports-pavilion-positions-seasonal-2026",
+    "postedAtMs": 1785801600000,
+    "days": 5,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "MC Parks",
+    "categories": [
+      "Parks and Recreation ",
+      "Parks",
+      "Customer Service"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 15.45,
+      "unit": "HOUR"
+    },
+    "miles": 29.6
   },
   {
     "company": "Baltimore County Government",
@@ -1529,12 +1529,12 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Site Director (Recreation Assistant VIII, Grade S8) ",
-    "reqId": "2026-00445",
+    "title": "Recreation Leader II or Facility Leader II (Recreation Assistant V, Grade S5) ",
+    "reqId": "2026-00442",
     "location": "2425 Reedie Dr Wheaton MD 20902 USA",
     "city": "silver spring",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431246/site-director-recreation-assistant-viii-grade-s8",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431438/recreation-leader-ii-or-facility-leader-ii-recreation-assistant-v-grade-s5",
     "postedAtMs": 1785715200000,
     "days": 6,
     "continuous": false,
@@ -1543,18 +1543,18 @@
     "employmentType": "Temporary Employee Less Than 1040 Hrs",
     "department": " Department of Recreation",
     "categories": [
+      "Administration",
+      "Facility Management",
       "Recreation",
       "Management",
       "Education",
       "Parks and Recreation ",
-      "Organizational Development",
-      "Training",
-      "Program Management",
-      "Instructor"
+      "Customer Service",
+      "Program Management"
     ],
     "salary": {
-      "min": 25.07,
-      "max": 25.07,
+      "min": 20,
+      "max": 20,
       "unit": "HOUR"
     },
     "miles": 30.1
@@ -1604,6 +1604,39 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
+    "title": "Site Director (Recreation Assistant VIII, Grade S8) ",
+    "reqId": "2026-00445",
+    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
+    "city": "silver spring",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431246/site-director-recreation-assistant-viii-grade-s8",
+    "postedAtMs": 1785715200000,
+    "days": 6,
+    "continuous": false,
+    "deadlineMs": 1801353600000,
+    "deadline": "01/31/27",
+    "employmentType": "Temporary Employee Less Than 1040 Hrs",
+    "department": " Department of Recreation",
+    "categories": [
+      "Recreation",
+      "Management",
+      "Education",
+      "Parks and Recreation ",
+      "Organizational Development",
+      "Training",
+      "Program Management",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 25.07,
+      "max": 25.07,
+      "unit": "HOUR"
+    },
+    "miles": 30.1
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
     "title": "Program Director or Assistant Site Director (Recreation Assistant VII, Grade S7)  ",
     "reqId": "2026-00444",
     "location": "2425 Reedie Dr Wheaton MD 20902 USA",
@@ -1627,39 +1660,6 @@
     "salary": {
       "min": 22.31,
       "max": 22.31,
-      "unit": "HOUR"
-    },
-    "miles": 30.1
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Recreation Leader II or Facility Leader II (Recreation Assistant V, Grade S5) ",
-    "reqId": "2026-00442",
-    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
-    "city": "silver spring",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431438/recreation-leader-ii-or-facility-leader-ii-recreation-assistant-v-grade-s5",
-    "postedAtMs": 1785715200000,
-    "days": 6,
-    "continuous": false,
-    "deadlineMs": 1801353600000,
-    "deadline": "01/31/27",
-    "employmentType": "Temporary Employee Less Than 1040 Hrs",
-    "department": " Department of Recreation",
-    "categories": [
-      "Administration",
-      "Facility Management",
-      "Recreation",
-      "Management",
-      "Education",
-      "Parks and Recreation ",
-      "Customer Service",
-      "Program Management"
-    ],
-    "salary": {
-      "min": 20,
-      "max": 20,
       "unit": "HOUR"
     },
     "miles": 30.1
@@ -2417,34 +2417,6 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Tennis Professionals - Seasonal",
-    "reqId": "ENT-TEN26",
-    "location": "Montgomery County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/4403594/tennis-professionals-seasonal",
-    "postedAtMs": 1785369600000,
-    "days": 10,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "MC Parks",
-    "categories": [
-      "Parks and Recreation ",
-      "Parks",
-      "Instructor"
-    ],
-    "salary": {
-      "min": 22,
-      "max": 34,
-      "unit": "HOUR"
-    },
-    "miles": 30.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
     "title": "Disability Services: Therapeutic Recreation Kids' Care Afterschool Positions",
     "reqId": "DS.TRKCAP.26",
     "location": "Prince George's County, MD",
@@ -2469,6 +2441,34 @@
       "unit": "HOUR"
     },
     "miles": 44.1
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Tennis Professionals - Seasonal",
+    "reqId": "ENT-TEN26",
+    "location": "Montgomery County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/4403594/tennis-professionals-seasonal",
+    "postedAtMs": 1785369600000,
+    "days": 10,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "MC Parks",
+    "categories": [
+      "Parks and Recreation ",
+      "Parks",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 22,
+      "max": 34,
+      "unit": "HOUR"
+    },
+    "miles": 30.7
   },
   {
     "company": "Frederick County Government",
@@ -2850,6 +2850,33 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
+    "title": "Softball Program Support",
+    "reqId": "Softball Program Support",
+    "location": "Largo, MD",
+    "city": "upper marlboro",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5429010/softball-program-support",
+    "postedAtMs": 1785283200000,
+    "days": 11,
+    "continuous": false,
+    "deadlineMs": 1787961600000,
+    "deadline": "08/29/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Athletics & Fitness"
+    ],
+    "salary": {
+      "min": 16,
+      "max": 21,
+      "unit": "HOUR"
+    },
+    "miles": 37.5
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
     "title": "Principal Parks/Facilities Maintenance Worker (11072, Grade HL5)",
     "reqId": "11072",
     "location": "Hyattsville, MD",
@@ -2934,33 +2961,6 @@
       "unit": "HOUR"
     },
     "miles": 44.1
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Softball Program Support",
-    "reqId": "Softball Program Support",
-    "location": "Largo, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5429010/softball-program-support",
-    "postedAtMs": 1785283200000,
-    "days": 11,
-    "continuous": false,
-    "deadlineMs": 1787961600000,
-    "deadline": "08/29/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Athletics & Fitness"
-    ],
-    "salary": {
-      "min": 16,
-      "max": 21,
-      "unit": "HOUR"
-    },
-    "miles": 37.5
   },
   {
     "company": "M-NCPPC",
@@ -3219,34 +3219,6 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Front Desk Manager on Duty",
-    "reqId": "FDMD.26",
-    "location": "Laurel, MD",
-    "city": "laurel",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5427008/front-desk-manager-on-duty",
-    "postedAtMs": 1785196800000,
-    "days": 12,
-    "continuous": false,
-    "deadlineMs": 1790812800000,
-    "deadline": "10/01/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Customer Service",
-      "Arts"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 18,
-      "unit": "HOUR"
-    },
-    "miles": 24.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
     "title": "Principal Parks/Facilities Maintenance Worker - CDL (12784, Grade HL5)",
     "reqId": "12784",
     "location": "Gaithersburg, MD",
@@ -3280,6 +3252,34 @@
       "unit": "YEAR"
     },
     "miles": 29.5
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Front Desk Manager on Duty",
+    "reqId": "FDMD.26",
+    "location": "Laurel, MD",
+    "city": "laurel",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5427008/front-desk-manager-on-duty",
+    "postedAtMs": 1785196800000,
+    "days": 12,
+    "continuous": false,
+    "deadlineMs": 1790812800000,
+    "deadline": "10/01/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Customer Service",
+      "Arts"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 18,
+      "unit": "HOUR"
+    },
+    "miles": 24.7
   },
   {
     "company": "Frederick County Government",
@@ -3337,33 +3337,6 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": "Career Coach - Part Time",
-    "reqId": "2026-884",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5425682/career-coach-part-time",
-    "postedAtMs": 1785110400000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1786320000000,
-    "deadline": "08/10/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Enrollment and Student Services",
-    "categories": [
-      "Higher Education",
-      "Career Exploration"
-    ],
-    "salary": {
-      "min": 31.07,
-      "max": 31.07,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
     "title": "Marketing Promotions Copywriter- Part Time",
     "reqId": "2026-882",
     "location": "Catonsville, MD",
@@ -3387,6 +3360,33 @@
       "unit": "HOUR"
     },
     "miles": 10.5
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Career Coach - Part Time",
+    "reqId": "2026-884",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5425682/career-coach-part-time",
+    "postedAtMs": 1785110400000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1786320000000,
+    "deadline": "08/10/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Enrollment and Student Services",
+    "categories": [
+      "Higher Education",
+      "Career Exploration"
+    ],
+    "salary": {
+      "min": 31.07,
+      "max": 31.07,
+      "unit": "HOUR"
+    },
+    "miles": 18
   },
   {
     "company": "Howard County Government",
@@ -4205,32 +4205,6 @@
   {
     "company": "Anne Arundel County Government",
     "agency": "annearundel",
-    "title": "Senior Procurement Professional (Buyer IV)",
-    "reqId": "08683",
-    "location": "Annapolis, MD",
-    "city": "annapolis",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5411302/senior-procurement-professional-buyer-iv",
-    "postedAtMs": 1784678400000,
-    "days": 18,
-    "continuous": false,
-    "deadlineMs": 1786320000000,
-    "deadline": "08/10/26",
-    "employmentType": "Full-Time Regular",
-    "department": "Central Services",
-    "categories": [
-      "Purchasing"
-    ],
-    "salary": {
-      "min": 76120,
-      "max": 147861,
-      "unit": "YEAR"
-    },
-    "miles": 34.3
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
     "title": "Ombudsman (Human Services Specialist)",
     "reqId": "08692",
     "location": "Anne Arundel County, MD",
@@ -4302,6 +4276,32 @@
     ],
     "salary": null,
     "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Senior Procurement Professional (Buyer IV)",
+    "reqId": "08683",
+    "location": "Annapolis, MD",
+    "city": "annapolis",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5411302/senior-procurement-professional-buyer-iv",
+    "postedAtMs": 1784678400000,
+    "days": 18,
+    "continuous": false,
+    "deadlineMs": 1786320000000,
+    "deadline": "08/10/26",
+    "employmentType": "Full-Time Regular",
+    "department": "Central Services",
+    "categories": [
+      "Purchasing"
+    ],
+    "salary": {
+      "min": 76120,
+      "max": 147861,
+      "unit": "YEAR"
+    },
+    "miles": 34.3
   },
   {
     "company": "Anne Arundel County Government",
@@ -4378,6 +4378,32 @@
     "salary": {
       "min": 70680,
       "max": 137301,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Zoning Inspector",
+    "reqId": "08693",
+    "location": "Anne Arundel County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5417656/zoning-inspector",
+    "postedAtMs": 1784678400000,
+    "days": 18,
+    "continuous": false,
+    "deadlineMs": 1786320000000,
+    "deadline": "08/10/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Planning and Zoning",
+    "categories": [
+      "Planning and Development"
+    ],
+    "salary": {
+      "min": 57366,
+      "max": 94640,
       "unit": "YEAR"
     },
     "miles": 34.5
@@ -4487,32 +4513,6 @@
     "salary": {
       "min": 54870,
       "max": 89253,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Zoning Inspector",
-    "reqId": "08693",
-    "location": "Anne Arundel County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5417656/zoning-inspector",
-    "postedAtMs": 1784678400000,
-    "days": 18,
-    "continuous": false,
-    "deadlineMs": 1786320000000,
-    "deadline": "08/10/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Planning and Zoning",
-    "categories": [
-      "Planning and Development"
-    ],
-    "salary": {
-      "min": 57366,
-      "max": 94640,
       "unit": "YEAR"
     },
     "miles": 34.5
@@ -4814,6 +4814,33 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
+    "title": "Little Bennett Campground Positions - Seasonal",
+    "reqId": "LBCP.26",
+    "location": "Clarksburg, MD",
+    "city": "clarksburg",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5417304/little-bennett-campground-positions-seasonal",
+    "postedAtMs": 1784592000000,
+    "days": 19,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "MC Parks",
+    "categories": [
+      "Parks and Recreation ",
+      "Parks"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 15.45,
+      "unit": "HOUR"
+    },
+    "miles": 28.5
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
     "title": "Arts Instructor - Seasonal",
     "reqId": "AI.26",
     "location": "Largo, MD",
@@ -4838,33 +4865,6 @@
       "unit": "HOUR"
     },
     "miles": 37.5
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Little Bennett Campground Positions - Seasonal",
-    "reqId": "LBCP.26",
-    "location": "Clarksburg, MD",
-    "city": "clarksburg",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5417304/little-bennett-campground-positions-seasonal",
-    "postedAtMs": 1784592000000,
-    "days": 19,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "MC Parks",
-    "categories": [
-      "Parks and Recreation ",
-      "Parks"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 15.45,
-      "unit": "HOUR"
-    },
-    "miles": 28.5
   },
   {
     "company": "M-NCPPC",
@@ -5369,33 +5369,6 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Show Place Arena/Prince George's Equestrian Center Seasonal Event Help",
-    "reqId": "EH.26",
-    "location": "Upper Marlboro, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5414322/show-place-arena-prince-georges-equestrian-center-seasonal-event-help",
-    "postedAtMs": 1784246400000,
-    "days": 23,
-    "continuous": false,
-    "deadlineMs": 1792195200000,
-    "deadline": "10/17/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Customer Service"
-    ],
-    "salary": {
-      "min": 16,
-      "max": 23.64,
-      "unit": "HOUR"
-    },
-    "miles": 42.1
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
     "title": "Administrative Assistant - Seasonal",
     "reqId": "AA.SHOW.26",
     "location": "Upper Marlboro, MD",
@@ -5417,6 +5390,33 @@
     "salary": {
       "min": 16,
       "max": 20,
+      "unit": "HOUR"
+    },
+    "miles": 42.1
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Show Place Arena/Prince George's Equestrian Center Seasonal Event Help",
+    "reqId": "EH.26",
+    "location": "Upper Marlboro, MD",
+    "city": "upper marlboro",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5414322/show-place-arena-prince-georges-equestrian-center-seasonal-event-help",
+    "postedAtMs": 1784246400000,
+    "days": 23,
+    "continuous": false,
+    "deadlineMs": 1792195200000,
+    "deadline": "10/17/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Customer Service"
+    ],
+    "salary": {
+      "min": 16,
+      "max": 23.64,
       "unit": "HOUR"
     },
     "miles": 42.1
@@ -6222,33 +6222,6 @@
       "unit": "HOUR"
     },
     "miles": 17.1
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Park Maintenance - Northern Regional Parks - Seasonal/Year-Round",
-    "reqId": "PM.NRP.26",
-    "location": "Hyattsville, MD",
-    "city": "hyattsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5403845/park-maintenance-northern-regional-parks-seasonal-year-round",
-    "postedAtMs": 1783555200000,
-    "days": 31,
-    "continuous": false,
-    "deadlineMs": 1786233600000,
-    "deadline": "08/09/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Building & Grounds Cleaning and Maintenance"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 19.73,
-      "unit": "HOUR"
-    },
-    "miles": 33.2
   },
   {
     "company": "Frederick County Government",
@@ -7948,32 +7921,6 @@
   {
     "company": "District of Columbia Government",
     "agency": "dc",
-    "title": "Accountant",
-    "reqId": "26-AC-GSC-0001",
-    "location": "Washington, DC",
-    "city": "washington",
-    "state": "DC",
-    "url": "https://www.governmentjobs.com/careers/dc/jobs/5361547/accountant",
-    "postedAtMs": 1780358400000,
-    "days": 68,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-Time",
-    "department": "Government Services Cluster",
-    "categories": [
-      "Accounting and Finance"
-    ],
-    "salary": {
-      "min": 62159,
-      "max": 118558,
-      "unit": "YEAR"
-    },
-    "miles": 38
-  },
-  {
-    "company": "District of Columbia Government",
-    "agency": "dc",
     "title": "IT Specialist (ProdSp-Cloud) ERP - A2R",
     "reqId": "26-IT-OCIO-0009",
     "location": "Washington, DC",
@@ -8013,6 +7960,32 @@
     "deadline": "Continuous",
     "employmentType": "Full-Time",
     "department": "Government Operations Cluster",
+    "categories": [
+      "Accounting and Finance"
+    ],
+    "salary": {
+      "min": 62159,
+      "max": 118558,
+      "unit": "YEAR"
+    },
+    "miles": 38
+  },
+  {
+    "company": "District of Columbia Government",
+    "agency": "dc",
+    "title": "Accountant",
+    "reqId": "26-AC-GSC-0001",
+    "location": "Washington, DC",
+    "city": "washington",
+    "state": "DC",
+    "url": "https://www.governmentjobs.com/careers/dc/jobs/5361547/accountant",
+    "postedAtMs": 1780358400000,
+    "days": 68,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-Time",
+    "department": "Government Services Cluster",
     "categories": [
       "Accounting and Finance"
     ],
@@ -8735,52 +8708,26 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": "IT Support Technician I, II, and III (AV Support)",
-    "reqId": "2026-038",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
+    "title": " Specialist, Student Central - Part Time (Essex, Dundalk, and Catonsville campuses)",
+    "reqId": "2026-867",
+    "location": "Essex, MD",
+    "city": "essex",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5344553/it-support-technician-i-ii-and-iii-av-support",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5343911/specialist-student-central-part-time-essex-dundalk-and-catonsville-campuse",
     "postedAtMs": 1778716800000,
     "days": 87,
     "continuous": true,
     "deadlineMs": null,
     "deadline": "Continuous",
-    "employmentType": "Full-Time Staff",
-    "department": "Administrative Services",
-    "categories": [
-      "IT and Computers"
-    ],
-    "salary": {
-      "min": 46596,
-      "max": 91343,
-      "unit": "YEAR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Administrative Support Assistant I, Admissions - Part Time ",
-    "reqId": "2026-866",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5343876/administrative-support-assistant-i-admissions-part-time",
-    "postedAtMs": 1778716800000,
-    "days": 87,
-    "continuous": false,
-    "deadlineMs": 1790726400000,
-    "deadline": "09/30/26",
     "employmentType": "Part-Time Staff",
     "department": "Enrollment and Student Services",
     "categories": [
-      "Administrative Assistant",
+      "Customer Service",
       "Higher Education"
     ],
     "salary": {
-      "min": 16.29,
-      "max": 16.29,
+      "min": 19.07,
+      "max": 19.07,
       "unit": "HOUR"
     },
     "miles": 18
@@ -8840,26 +8787,52 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": " Specialist, Student Central - Part Time (Essex, Dundalk, and Catonsville campuses)",
-    "reqId": "2026-867",
-    "location": "Essex, MD",
-    "city": "essex",
+    "title": "IT Support Technician I, II, and III (AV Support)",
+    "reqId": "2026-038",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5343911/specialist-student-central-part-time-essex-dundalk-and-catonsville-campuse",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5344553/it-support-technician-i-ii-and-iii-av-support",
     "postedAtMs": 1778716800000,
     "days": 87,
     "continuous": true,
     "deadlineMs": null,
     "deadline": "Continuous",
+    "employmentType": "Full-Time Staff",
+    "department": "Administrative Services",
+    "categories": [
+      "IT and Computers"
+    ],
+    "salary": {
+      "min": 46596,
+      "max": 91343,
+      "unit": "YEAR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Administrative Support Assistant I, Admissions - Part Time ",
+    "reqId": "2026-866",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5343876/administrative-support-assistant-i-admissions-part-time",
+    "postedAtMs": 1778716800000,
+    "days": 87,
+    "continuous": false,
+    "deadlineMs": 1790726400000,
+    "deadline": "09/30/26",
     "employmentType": "Part-Time Staff",
     "department": "Enrollment and Student Services",
     "categories": [
-      "Customer Service",
+      "Administrative Assistant",
       "Higher Education"
     ],
     "salary": {
-      "min": 19.07,
-      "max": 19.07,
+      "min": 16.29,
+      "max": 16.29,
       "unit": "HOUR"
     },
     "miles": 18
@@ -10314,32 +10287,6 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": "Lead Custodian I",
-    "reqId": "2026-025",
-    "location": "Catonsville, MD",
-    "city": "rosedale",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5304469/lead-custodian-i",
-    "postedAtMs": 1775779200000,
-    "days": 121,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-Time Staff",
-    "department": "Administrative Services",
-    "categories": [
-      "Custodial"
-    ],
-    "salary": {
-      "min": 19.72,
-      "max": 19.72,
-      "unit": "HOUR"
-    },
-    "miles": 16.5
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
     "title": "Building & Maintenance Technician I",
     "reqId": "2026-026",
     "location": "Essex, MD",
@@ -10359,6 +10306,32 @@
     "salary": {
       "min": 25.19,
       "max": 37.02,
+      "unit": "HOUR"
+    },
+    "miles": 16.5
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Lead Custodian I",
+    "reqId": "2026-025",
+    "location": "Catonsville, MD",
+    "city": "rosedale",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5304469/lead-custodian-i",
+    "postedAtMs": 1775779200000,
+    "days": 121,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-Time Staff",
+    "department": "Administrative Services",
+    "categories": [
+      "Custodial"
+    ],
+    "salary": {
+      "min": 19.72,
+      "max": 19.72,
       "unit": "HOUR"
     },
     "miles": 16.5
@@ -11720,32 +11693,6 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": "Programmer I -(Database) and Programmer II (Database)",
-    "reqId": "2026-003",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5210267/programmer-i-database-and-programmer-ii-database",
-    "postedAtMs": 1769126400000,
-    "days": 198,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-Time Staff",
-    "department": "Administrative Services",
-    "categories": [
-      "IT and Computers"
-    ],
-    "salary": {
-      "min": 63988,
-      "max": 117400,
-      "unit": "YEAR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
     "title": "Certified Public Safety Officer",
     "reqId": "2026-005",
     "location": "Dundalk, MD",
@@ -11768,6 +11715,32 @@
       "unit": "YEAR"
     },
     "miles": 17.7
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Programmer I -(Database) and Programmer II (Database)",
+    "reqId": "2026-003",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5210267/programmer-i-database-and-programmer-ii-database",
+    "postedAtMs": 1769126400000,
+    "days": 198,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-Time Staff",
+    "department": "Administrative Services",
+    "categories": [
+      "IT and Computers"
+    ],
+    "salary": {
+      "min": 63988,
+      "max": 117400,
+      "unit": "YEAR"
+    },
+    "miles": 11.9
   },
   {
     "company": "District of Columbia Government",
@@ -12588,32 +12561,6 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": "Utility Engineer I (Commercial HVAC Tech)",
-    "reqId": "2025-141",
-    "location": "Essex, MD",
-    "city": "rosedale",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5159652/utility-engineer-i-commercial-hvac-tech",
-    "postedAtMs": 1764720000000,
-    "days": 249,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-Time Staff",
-    "department": "Administrative Services",
-    "categories": [
-      "Utilities"
-    ],
-    "salary": {
-      "min": 36.78,
-      "max": 54,
-      "unit": "HOUR"
-    },
-    "miles": 16.4
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
     "title": "Senior Capital Project Manager",
     "reqId": "2025-139",
     "location": "Essex, MD",
@@ -12640,51 +12587,28 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": "Athletics Specialist - Part Time",
-    "reqId": "2026-830",
-    "location": "Multiple (Indicate locations in Job Description)",
-    "city": "catonsville",
+    "title": "Utility Engineer I (Commercial HVAC Tech)",
+    "reqId": "2025-141",
+    "location": "Essex, MD",
+    "city": "rosedale",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5156955/athletics-specialist-part-time",
-    "postedAtMs": 1764633600000,
-    "days": 250,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Enrollment and Student Services",
-    "categories": [
-      "Athletics & Fitness"
-    ],
-    "salary": {
-      "min": 16.62,
-      "max": 16.62,
-      "unit": "HOUR"
-    },
-    "miles": 10.5
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Aviation Faculty 10-Month ",
-    "reqId": "2025-133",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5157795/aviation-faculty-10-month",
-    "postedAtMs": 1764633600000,
-    "days": 250,
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5159652/utility-engineer-i-commercial-hvac-tech",
+    "postedAtMs": 1764720000000,
+    "days": 249,
     "continuous": true,
     "deadlineMs": null,
     "deadline": "Continuous",
-    "employmentType": "Full-Time Faculty",
-    "department": "Instruction",
+    "employmentType": "Full-Time Staff",
+    "department": "Administrative Services",
     "categories": [
-      "Education",
-      "Higher Education"
+      "Utilities"
     ],
-    "salary": null,
-    "miles": 11.9
+    "salary": {
+      "min": 36.78,
+      "max": 54,
+      "unit": "HOUR"
+    },
+    "miles": 16.4
   },
   {
     "company": "Community College of Baltimore County",
@@ -12734,6 +12658,55 @@
       "max": 130309,
       "unit": "YEAR"
     },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Athletics Specialist - Part Time",
+    "reqId": "2026-830",
+    "location": "Multiple (Indicate locations in Job Description)",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5156955/athletics-specialist-part-time",
+    "postedAtMs": 1764633600000,
+    "days": 250,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Enrollment and Student Services",
+    "categories": [
+      "Athletics & Fitness"
+    ],
+    "salary": {
+      "min": 16.62,
+      "max": 16.62,
+      "unit": "HOUR"
+    },
+    "miles": 10.5
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Aviation Faculty 10-Month ",
+    "reqId": "2025-133",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5157795/aviation-faculty-10-month",
+    "postedAtMs": 1764633600000,
+    "days": 250,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-Time Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education"
+    ],
+    "salary": null,
     "miles": 11.9
   },
   {
@@ -12923,29 +12896,6 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": "Digital Media Production, Faculty 10 month",
-    "reqId": "2025-121",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5149612/digital-media-production-faculty-10-month",
-    "postedAtMs": 1763596800000,
-    "days": 262,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-Time Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
     "title": "Business Studies - Adjunct Faculty ",
     "reqId": "2026a-90",
     "location": "Location indicated in Job Description",
@@ -12962,6 +12912,29 @@
     "categories": [
       "Business",
       "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Digital Media Production, Faculty 10 month",
+    "reqId": "2025-121",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5149612/digital-media-production-faculty-10-month",
+    "postedAtMs": 1763596800000,
+    "days": 262,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-Time Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education"
     ],
     "salary": null,
     "miles": 11.9
@@ -12991,56 +12964,6 @@
       "unit": "YEAR"
     },
     "miles": 16.4
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Transition Specialist - Part Time",
-    "reqId": "2026-822",
-    "location": "Multiple (Indicate locations in Job Description)",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5145822/transition-specialist-part-time",
-    "postedAtMs": 1763424000000,
-    "days": 264,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 23.68,
-      "max": 23.68,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Psychology - Adjunct Faculty",
-    "reqId": "2026a-89",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5146965/psychology-adjunct-faculty",
-    "postedAtMs": 1763424000000,
-    "days": 264,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty - Behavior Science"
-    ],
-    "salary": null,
-    "miles": 11.9
   },
   {
     "company": "Community College of Baltimore County",
@@ -13093,6 +13016,56 @@
       "unit": "HOUR"
     },
     "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Transition Specialist - Part Time",
+    "reqId": "2026-822",
+    "location": "Multiple (Indicate locations in Job Description)",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5145822/transition-specialist-part-time",
+    "postedAtMs": 1763424000000,
+    "days": 264,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 23.68,
+      "max": 23.68,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Psychology - Adjunct Faculty",
+    "reqId": "2026a-89",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5146965/psychology-adjunct-faculty",
+    "postedAtMs": 1763424000000,
+    "days": 264,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty - Behavior Science"
+    ],
+    "salary": null,
+    "miles": 11.9
   },
   {
     "company": "Baltimore County Government",
@@ -13204,32 +13177,6 @@
   {
     "company": "Community College of Baltimore County",
     "agency": "ccbcmd",
-    "title": " Aviation Flight Trainer II - Part Time",
-    "reqId": "2026-817",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5134719/aviation-flight-trainer-ii-part-time",
-    "postedAtMs": 1762300800000,
-    "days": 277,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 36,
-      "max": 36,
-      "unit": "HOUR"
-    },
-    "miles": 10.5
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
     "title": "Tutors - Part Time",
     "reqId": "2026-815",
     "location": "Multiple (Indicate locations in Job Description)",
@@ -13276,6 +13223,32 @@
     "miles": 10.5
   },
   {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": " Aviation Flight Trainer II - Part Time",
+    "reqId": "2026-817",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5134719/aviation-flight-trainer-ii-part-time",
+    "postedAtMs": 1762300800000,
+    "days": 277,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 36,
+      "max": 36,
+      "unit": "HOUR"
+    },
+    "miles": 10.5
+  },
+  {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
     "title": "Psychologist (Police Stress Management), Grade N29",
@@ -13304,1820 +13277,6 @@
       "unit": "YEAR"
     },
     "miles": 30.7
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Public Safety Officer - Part Time",
-    "reqId": "2026-802",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117825/public-safety-officer-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Administrative Services",
-    "categories": [
-      "Public Safety",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 19.07,
-      "max": 19.07,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": " Lifeguard/Pool Operator - Part Time",
-    "reqId": "2026-805",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117862/lifeguard-pool-operator-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Athletics & Fitness",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 17.85,
-      "max": 17.85,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Coordinator, Fitness Lab - Part Time",
-    "reqId": "2026-808",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117943/coordinator-fitness-lab-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Athletics & Fitness",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 23.68,
-      "max": 23.68,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": " Coordinator, Aquatics - Part Time",
-    "reqId": "2026-807",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117927/coordinator-aquatics-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Athletics & Fitness",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 21.54,
-      "max": 21.54,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Lifeguard - Part Time",
-    "reqId": "2026-806",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117876/lifeguard-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Athletics & Fitness",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 16.62,
-      "max": 16.62,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Monitor, Wellness Department - Part Time",
-    "reqId": "2026-809",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117951/monitor-wellness-department-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Athletics & Fitness",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 16.62,
-      "max": 16.62,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Designated Interpreter, Catonsville & Essex campus - Part Time",
-    "reqId": "2026-811",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5120992/designated-interpreter-catonsville-essex-campus-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Student Services"
-    ],
-    "salary": {
-      "min": 55.45,
-      "max": 55.45,
-      "unit": "HOUR"
-    },
-    "miles": 10.5
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Philosophy - Adjunct Faculty",
-    "reqId": "2026a-01",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125722/philosophy-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Communication and Media Studies - Adjunct Faculty",
-    "reqId": "2026a-05",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125766/communication-and-media-studies-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Communications",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "American Sign Language - Adjunct Faculty",
-    "reqId": "2026a-07",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125775/american-sign-language-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education",
-      "Faculty",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Art History and Art Appreciation- Adjunct Faculty",
-    "reqId": "2026a-10",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125788/art-history-and-art-appreciation-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Sustainable Horticulture Program Instructor - Adjunct Faculty",
-    "reqId": "2026a-15",
-    "location": "Dundalk, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126806/sustainable-horticulture-program-instructor-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty - Science",
-      "Horticulture"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Philosophy - Adjunct Faculty ECAP Program",
-    "reqId": "2026a-12",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125797/philosophy-adjunct-faculty-ecap-program",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Astronomy, Adjunct Faculty",
-    "reqId": "2026a-16",
-    "location": "Multiple (Indicate locations in Job Description)",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126810/astronomy-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty - Science"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Biology (Introductory and General) - Adjunct Faculty",
-    "reqId": "2026a-20",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126835/biology-introductory-and-general-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty - Science"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Mathematics - Adjunct Faculty",
-    "reqId": "2026a-22",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126844/mathematics-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Mathematics",
-      "Faculty - Math & Technology"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Computer Aided Design (CAD) - Adjunct Faculty",
-    "reqId": "2026a-26",
-    "location": "Not Assigned",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127159/computer-aided-design-cad-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "IT and Computers",
-      "Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Cybersecurity - Adjunct Faculty",
-    "reqId": "2026a-33",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127243/cybersecurity-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "IT and Computers",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Aviation - Adjunct Faculty",
-    "reqId": "2026a-34",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127246/aviation-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Instructor",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Accounting - Adjunct Faculty",
-    "reqId": "2026a-32",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127237/accounting-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Accounting and Finance",
-      "Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "HVAC - Adjunct Faculty",
-    "reqId": "2026a-31",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127231/hvac-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Trades",
-      "Education",
-      "Training"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Automotive Technology - Adjunct Faculty",
-    "reqId": "2026a-36",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127251/automotive-technology-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Automotive"
-    ],
-    "salary": null,
-    "miles": 11.8
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Human Services Counseling - Adjunct Faculty",
-    "reqId": "2026a-46",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127355/human-services-counseling-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Social Services",
-      "Counseling",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "English, Adjunct Faculty",
-    "reqId": "2026a-37",
-    "location": "Multiple (Indicate locations in Job Description)",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127264/english-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education",
-      "Faculty - English"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Health, Physical Education, Aquatics and Kinesiology - Adjunct Faculty",
-    "reqId": "2026a-48",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127368/health-physical-education-aquatics-and-kinesiology-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Health Education"
-    ],
-    "salary": null,
-    "miles": 11.8
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Nursing Clinical, Adjunct Faculty",
-    "reqId": "2026a-57",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127451/nursing-clinical-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Nursing",
-      "Education",
-      "Higher Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Social Work - Adjunct Faculty",
-    "reqId": "2026a-52",
-    "location": "Dundalk, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127409/social-work-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Social Sciences",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Veterinary Technology Program - Adjunct Faculty",
-    "reqId": "2026a-58",
-    "location": "Essex, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127457/veterinary-technology-program-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Occupational Therapy Lab Assistant - Adjunct Faculty",
-    "reqId": "2026a-61",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127481/occupational-therapy-lab-assistant-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Health Sciences",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Communication Studies-ECAP Adjunct Faculty",
-    "reqId": "2026a-14",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128676/communication-studies-ecap-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Communications",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Off-Site English, Adjunct Faculty",
-    "reqId": "2026a-38",
-    "location": "Multiple (Indicate locations in Job Description)",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128702/off-site-english-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Instructor",
-      "Faculty - English"
-    ],
-    "salary": null,
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "ESOL - Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-65",
-    "location": "Not Assigned",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128248/esol-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "EMT - Adjunct Faculty",
-    "reqId": "2026a-62",
-    "location": "Essex, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127494/emt-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Instructor",
-      "Medical"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Boating & Marine-Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-68",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128345/boating-marine-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education",
-      "Faculty"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Seniors Program Instructors - Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-69",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128354/seniors-program-instructors-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty - Other"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Seniors Program Wellness & Fitness - Adjunct Faculty Continuing Education",
-    "reqId": "2026a-70",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128374/seniors-program-wellness-fitness-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Health Education",
-      "Instructor"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.8
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Health and Allied Health - Adjunct Faculty Continuing Education",
-    "reqId": "2026a-79",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128437/health-and-allied-health-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Health Education",
-      "Health Sciences",
-      "Instructor"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "CDL Training – Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-77",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128421/cdl-training-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Transportation",
-      "Training",
-      "Higher Education",
-      "Faculty"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Visual & Performing Arts - Adjunct Faculty Continuing Education",
-    "reqId": "2026a-85",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128488/visual-performing-arts-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Performing Arts",
-      "Arts",
-      "Instructor"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Automotive, Diesel, Electric Vehicle, Small Engine Repair, Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-76",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128413/automotive-diesel-electric-vehicle-small-engine-repair-adjunct-faculty-cont",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education",
-      "Automotive",
-      "Faculty",
-      "Instructor"
-    ],
-    "salary": null,
-    "miles": 11.8
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Manufacturing, Industrial Maintenance, Design Fabrication- Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-75",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128408/manufacturing-industrial-maintenance-design-fabrication-adjunct-faculty-cont",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Maintenance",
-      "Mathematics",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Medical Assistant Program - Adjunct Faculty Continuing Education",
-    "reqId": "2026a-78",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128433/medical-assistant-program-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Health Sciences",
-      "Instructor",
-      "Medical"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": " Center for Alternative and Supported Education (CASE) - Adjunct Faculty Continuing Education",
-    "reqId": "2026a-88",
-    "location": "Dundalk, MD",
-    "city": "dundalk",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128508/center-for-alternative-and-supported-education-case-adjunct-faculty-continui",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Human Services"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 18.1
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Job Network, Adjunct Faculty-Continuing Education",
-    "reqId": "2026a-87",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128498/job-network-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.8
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Interpreter Preparation - Adjunct Faculty",
-    "reqId": "2026a-08",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125778/interpreter-preparation-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Physics, Adjunct Faculty",
-    "reqId": "2026a-23",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126853/physics-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Interior Design- Adjunct Faculty",
-    "reqId": "2026a-11",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125793/interior-design-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Arts, Design, Entertainment & Media",
-      "Instructor",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Environmental Sciences-Earth Science - Adjunct Faculty",
-    "reqId": "2026a-18",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126823/environmental-sciences-earth-science-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Environmental Services",
-      "Education",
-      "Higher Education",
-      "Faculty - Science"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "ABE/GED - Adjunct Faculty Continuing Education",
-    "reqId": "2026a-66",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128256/abe-ged-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Hospitality/Lodging - Adjunct Faculty, Continuing Education",
-    "reqId": "2026a-71",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128382/hospitality-lodging-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education",
-      "Hospitality and Tourism",
-      "Faculty",
-      "Instructor"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "World Languages, Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-67",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128338/world-languages-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education",
-      "Faculty"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Occupational Safety, Environmental, Facility Management - Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-73",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128390/occupational-safety-environmental-facility-management-adjunct-faculty-conti",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Environmental Services",
-      "Facility Management",
-      "Education",
-      "Safety",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Building Maintenance, HVAC & Related Trades Instructors - Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-72",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128388/building-maintenance-hvac-related-trades-instructors-adjunct-faculty-conti",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Building Maintenance",
-      "Education",
-      "Construction Trades",
-      "Faculty - Other"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Logistics, Warehouse, Supply Chain- Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-74",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128400/logistics-warehouse-supply-chain-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Warehouse",
-      "Education",
-      "Faculty",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Nursing Assistant Programs - Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-80",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128442/nursing-assistant-programs-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Nursing",
-      "Education",
-      "Higher Education"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Computers, Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-83",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128471/computers-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "IT and Computers",
-      "Education",
-      "Faculty"
-    ],
-    "salary": {
-      "min": 31.98,
-      "max": 31.98,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Youth Courses - Adjunct Faculty - Continuing Education",
-    "reqId": "2026a-81",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128445/youth-courses-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Massage Therapy Program - Adjunct Faculty Continuing Education",
-    "reqId": "2026a-86",
-    "location": "Essex, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128492/massage-therapy-program-adjunct-faculty-continuing-education",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Health Education"
-    ],
-    "salary": {
-      "min": 32.9,
-      "max": 32.9,
-      "unit": "HOUR"
-    },
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Dispatcher, Public Safety - Part Time",
-    "reqId": "2026-803",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117838/dispatcher-public-safety-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Administrative Services",
-    "categories": [
-      "Public Safety",
-      "Dispatch",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 16.62,
-      "max": 16.62,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Junior Lifeguard - Part Time",
-    "reqId": "2026-804",
-    "location": "Essex, MD",
-    "city": "essex",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117853/junior-lifeguard-part-time",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Part-Time Staff",
-    "department": "Instruction",
-    "categories": [
-      "Athletics & Fitness",
-      "Higher Education"
-    ],
-    "salary": {
-      "min": 15,
-      "max": 15,
-      "unit": "HOUR"
-    },
-    "miles": 18
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Theatre - Adjunct Faculty",
-    "reqId": "2026a-02",
-    "location": "Not Assigned",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125742/theatre-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Music and Music Production, Adjunct Faculty",
-    "reqId": "2026a-04",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125760/music-and-music-production-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Higher Education",
-      "Arts, Design, Entertainment & Media",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Digital Media Production, Adjunct Faculty",
-    "reqId": "2026a-06",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125771/digital-media-production-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793318400000,
-    "deadline": "10/30/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Dance, Adjunct Faculty",
-    "reqId": "2026a-03",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125752/dance-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Arts",
-      "Faculty",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Biology (Anatomy and Physiology)- Adjunct Faculty",
-    "reqId": "2026a-19",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126826/biology-anatomy-and-physiology-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty - Science"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Chemistry - Adjunct Faculty",
-    "reqId": "2026a-17",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126820/chemistry-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty - Science"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Geospatial Applications - Adjunct Faculty",
-    "reqId": "2026a-29",
-    "location": "Catonsville, MD",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128576/geospatial-applications-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Assistant Athletics Coach - Adjunct Faculty",
-    "reqId": "2026a-42",
-    "location": "Not Assigned",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128731/assistant-athletics-coach-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Athletics & Fitness",
-      "Sports & Physical Education",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Head Athletics Coach - Adjunct Faculty",
-    "reqId": "2026a-41",
-    "location": "Not Assigned",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128754/head-athletics-coach-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Athletics & Fitness",
-      "Higher Education",
-      "Sports & Physical Education",
-      "Faculty - Other"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Art, Design & Digital Fabrication, Adjunct Faculty",
-    "reqId": "2026a-09",
-    "location": "Not Assigned",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125784/art-design-digital-fabrication-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Higher Education",
-      "Faculty"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Theatre Director - Adjunct Faculty",
-    "reqId": "2026a-13",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125806/theatre-director-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Arts",
-      "Instructor"
-    ],
-    "salary": null,
-    "miles": 11.9
-  },
-  {
-    "company": "Community College of Baltimore County",
-    "agency": "ccbcmd",
-    "title": "Biology (Microbiology) - Adjunct Faculty",
-    "reqId": "2026a-21",
-    "location": "Location indicated in Job Description",
-    "city": "catonsville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126839/biology-microbiology-adjunct-faculty",
-    "postedAtMs": 1761955200000,
-    "days": 281,
-    "continuous": false,
-    "deadlineMs": 1793404800000,
-    "deadline": "10/31/26",
-    "employmentType": "Adjunct Faculty",
-    "department": "Instruction",
-    "categories": [
-      "Education",
-      "Faculty",
-      "Faculty - Math & Technology"
-    ],
-    "salary": null,
-    "miles": 11.9
   },
   {
     "company": "Community College of Baltimore County",
@@ -15592,6 +13751,1820 @@
       "unit": "HOUR"
     },
     "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Dispatcher, Public Safety - Part Time",
+    "reqId": "2026-803",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117838/dispatcher-public-safety-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Administrative Services",
+    "categories": [
+      "Public Safety",
+      "Dispatch",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 16.62,
+      "max": 16.62,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Junior Lifeguard - Part Time",
+    "reqId": "2026-804",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117853/junior-lifeguard-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Athletics & Fitness",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 15,
+      "max": 15,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Theatre - Adjunct Faculty",
+    "reqId": "2026a-02",
+    "location": "Not Assigned",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125742/theatre-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Music and Music Production, Adjunct Faculty",
+    "reqId": "2026a-04",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125760/music-and-music-production-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education",
+      "Arts, Design, Entertainment & Media",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Digital Media Production, Adjunct Faculty",
+    "reqId": "2026a-06",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125771/digital-media-production-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793318400000,
+    "deadline": "10/30/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Dance, Adjunct Faculty",
+    "reqId": "2026a-03",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125752/dance-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Arts",
+      "Faculty",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Biology (Anatomy and Physiology)- Adjunct Faculty",
+    "reqId": "2026a-19",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126826/biology-anatomy-and-physiology-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty - Science"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Chemistry - Adjunct Faculty",
+    "reqId": "2026a-17",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126820/chemistry-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty - Science"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Hospitality/Lodging - Adjunct Faculty, Continuing Education",
+    "reqId": "2026a-71",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128382/hospitality-lodging-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education",
+      "Hospitality and Tourism",
+      "Faculty",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "World Languages, Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-67",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128338/world-languages-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education",
+      "Faculty"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Occupational Safety, Environmental, Facility Management - Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-73",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128390/occupational-safety-environmental-facility-management-adjunct-faculty-conti",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Environmental Services",
+      "Facility Management",
+      "Education",
+      "Safety",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Building Maintenance, HVAC & Related Trades Instructors - Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-72",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128388/building-maintenance-hvac-related-trades-instructors-adjunct-faculty-conti",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Building Maintenance",
+      "Education",
+      "Construction Trades",
+      "Faculty - Other"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Logistics, Warehouse, Supply Chain- Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-74",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128400/logistics-warehouse-supply-chain-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Warehouse",
+      "Education",
+      "Faculty",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Nursing Assistant Programs - Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-80",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128442/nursing-assistant-programs-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Nursing",
+      "Education",
+      "Higher Education"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Computers, Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-83",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128471/computers-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "IT and Computers",
+      "Education",
+      "Faculty"
+    ],
+    "salary": {
+      "min": 31.98,
+      "max": 31.98,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Youth Courses - Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-81",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128445/youth-courses-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Massage Therapy Program - Adjunct Faculty Continuing Education",
+    "reqId": "2026a-86",
+    "location": "Essex, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128492/massage-therapy-program-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Health Education"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Geospatial Applications - Adjunct Faculty",
+    "reqId": "2026a-29",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128576/geospatial-applications-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Assistant Athletics Coach - Adjunct Faculty",
+    "reqId": "2026a-42",
+    "location": "Not Assigned",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128731/assistant-athletics-coach-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Athletics & Fitness",
+      "Sports & Physical Education",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Head Athletics Coach - Adjunct Faculty",
+    "reqId": "2026a-41",
+    "location": "Not Assigned",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128754/head-athletics-coach-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Athletics & Fitness",
+      "Higher Education",
+      "Sports & Physical Education",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Art, Design & Digital Fabrication, Adjunct Faculty",
+    "reqId": "2026a-09",
+    "location": "Not Assigned",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125784/art-design-digital-fabrication-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Theatre Director - Adjunct Faculty",
+    "reqId": "2026a-13",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125806/theatre-director-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Arts",
+      "Instructor"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Biology (Microbiology) - Adjunct Faculty",
+    "reqId": "2026a-21",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126839/biology-microbiology-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty",
+      "Faculty - Math & Technology"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Public Safety Officer - Part Time",
+    "reqId": "2026-802",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117825/public-safety-officer-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Administrative Services",
+    "categories": [
+      "Public Safety",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 19.07,
+      "max": 19.07,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": " Lifeguard/Pool Operator - Part Time",
+    "reqId": "2026-805",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117862/lifeguard-pool-operator-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Athletics & Fitness",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 17.85,
+      "max": 17.85,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Coordinator, Fitness Lab - Part Time",
+    "reqId": "2026-808",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117943/coordinator-fitness-lab-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Athletics & Fitness",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 23.68,
+      "max": 23.68,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": " Coordinator, Aquatics - Part Time",
+    "reqId": "2026-807",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117927/coordinator-aquatics-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Athletics & Fitness",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 21.54,
+      "max": 21.54,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Lifeguard - Part Time",
+    "reqId": "2026-806",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117876/lifeguard-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Athletics & Fitness",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 16.62,
+      "max": 16.62,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Monitor, Wellness Department - Part Time",
+    "reqId": "2026-809",
+    "location": "Essex, MD",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5117951/monitor-wellness-department-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Athletics & Fitness",
+      "Higher Education"
+    ],
+    "salary": {
+      "min": 16.62,
+      "max": 16.62,
+      "unit": "HOUR"
+    },
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Designated Interpreter, Catonsville & Essex campus - Part Time",
+    "reqId": "2026-811",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5120992/designated-interpreter-catonsville-essex-campus-part-time",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Part-Time Staff",
+    "department": "Instruction",
+    "categories": [
+      "Student Services"
+    ],
+    "salary": {
+      "min": 55.45,
+      "max": 55.45,
+      "unit": "HOUR"
+    },
+    "miles": 10.5
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Philosophy - Adjunct Faculty",
+    "reqId": "2026a-01",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125722/philosophy-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Communication and Media Studies - Adjunct Faculty",
+    "reqId": "2026a-05",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125766/communication-and-media-studies-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Communications",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "American Sign Language - Adjunct Faculty",
+    "reqId": "2026a-07",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125775/american-sign-language-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education",
+      "Faculty",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Art History and Art Appreciation- Adjunct Faculty",
+    "reqId": "2026a-10",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125788/art-history-and-art-appreciation-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Sustainable Horticulture Program Instructor - Adjunct Faculty",
+    "reqId": "2026a-15",
+    "location": "Dundalk, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126806/sustainable-horticulture-program-instructor-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty - Science",
+      "Horticulture"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Philosophy - Adjunct Faculty ECAP Program",
+    "reqId": "2026a-12",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125797/philosophy-adjunct-faculty-ecap-program",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Astronomy, Adjunct Faculty",
+    "reqId": "2026a-16",
+    "location": "Multiple (Indicate locations in Job Description)",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126810/astronomy-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty - Science"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Biology (Introductory and General) - Adjunct Faculty",
+    "reqId": "2026a-20",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126835/biology-introductory-and-general-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Faculty - Science"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Communication Studies-ECAP Adjunct Faculty",
+    "reqId": "2026a-14",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128676/communication-studies-ecap-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Communications",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Off-Site English, Adjunct Faculty",
+    "reqId": "2026a-38",
+    "location": "Multiple (Indicate locations in Job Description)",
+    "city": "essex",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128702/off-site-english-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Instructor",
+      "Faculty - English"
+    ],
+    "salary": null,
+    "miles": 18
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Computer Aided Design (CAD) - Adjunct Faculty",
+    "reqId": "2026a-26",
+    "location": "Not Assigned",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127159/computer-aided-design-cad-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "IT and Computers",
+      "Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Cybersecurity - Adjunct Faculty",
+    "reqId": "2026a-33",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127243/cybersecurity-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "IT and Computers",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Aviation - Adjunct Faculty",
+    "reqId": "2026a-34",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127246/aviation-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Instructor",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Accounting - Adjunct Faculty",
+    "reqId": "2026a-32",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127237/accounting-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Accounting and Finance",
+      "Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "HVAC - Adjunct Faculty",
+    "reqId": "2026a-31",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127231/hvac-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Trades",
+      "Education",
+      "Training"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Automotive Technology - Adjunct Faculty",
+    "reqId": "2026a-36",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127251/automotive-technology-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Automotive"
+    ],
+    "salary": null,
+    "miles": 11.8
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Human Services Counseling - Adjunct Faculty",
+    "reqId": "2026a-46",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127355/human-services-counseling-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Social Services",
+      "Counseling",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "English, Adjunct Faculty",
+    "reqId": "2026a-37",
+    "location": "Multiple (Indicate locations in Job Description)",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127264/english-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education",
+      "Faculty - English"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Health, Physical Education, Aquatics and Kinesiology - Adjunct Faculty",
+    "reqId": "2026a-48",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127368/health-physical-education-aquatics-and-kinesiology-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Health Education"
+    ],
+    "salary": null,
+    "miles": 11.8
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Nursing Clinical, Adjunct Faculty",
+    "reqId": "2026a-57",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127451/nursing-clinical-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Nursing",
+      "Education",
+      "Higher Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Social Work - Adjunct Faculty",
+    "reqId": "2026a-52",
+    "location": "Dundalk, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127409/social-work-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Social Sciences",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Veterinary Technology Program - Adjunct Faculty",
+    "reqId": "2026a-58",
+    "location": "Essex, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127457/veterinary-technology-program-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Occupational Therapy Lab Assistant - Adjunct Faculty",
+    "reqId": "2026a-61",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127481/occupational-therapy-lab-assistant-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Health Sciences",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "ESOL - Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-65",
+    "location": "Not Assigned",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128248/esol-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "EMT - Adjunct Faculty",
+    "reqId": "2026a-62",
+    "location": "Essex, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5127494/emt-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Instructor",
+      "Medical"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Boating & Marine-Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-68",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128345/boating-marine-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education",
+      "Faculty"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Seniors Program Instructors - Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-69",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128354/seniors-program-instructors-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty - Other"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Seniors Program Wellness & Fitness - Adjunct Faculty Continuing Education",
+    "reqId": "2026a-70",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128374/seniors-program-wellness-fitness-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Health Education",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.8
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Health and Allied Health - Adjunct Faculty Continuing Education",
+    "reqId": "2026a-79",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128437/health-and-allied-health-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Health Education",
+      "Health Sciences",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "CDL Training – Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-77",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128421/cdl-training-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Transportation",
+      "Training",
+      "Higher Education",
+      "Faculty"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Visual & Performing Arts - Adjunct Faculty Continuing Education",
+    "reqId": "2026a-85",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128488/visual-performing-arts-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Performing Arts",
+      "Arts",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Automotive, Diesel, Electric Vehicle, Small Engine Repair, Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-76",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128413/automotive-diesel-electric-vehicle-small-engine-repair-adjunct-faculty-cont",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Higher Education",
+      "Automotive",
+      "Faculty",
+      "Instructor"
+    ],
+    "salary": null,
+    "miles": 11.8
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Manufacturing, Industrial Maintenance, Design Fabrication- Adjunct Faculty - Continuing Education",
+    "reqId": "2026a-75",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128408/manufacturing-industrial-maintenance-design-fabrication-adjunct-faculty-cont",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Maintenance",
+      "Mathematics",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Medical Assistant Program - Adjunct Faculty Continuing Education",
+    "reqId": "2026a-78",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128433/medical-assistant-program-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Health Sciences",
+      "Instructor",
+      "Medical"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": " Center for Alternative and Supported Education (CASE) - Adjunct Faculty Continuing Education",
+    "reqId": "2026a-88",
+    "location": "Dundalk, MD",
+    "city": "dundalk",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128508/center-for-alternative-and-supported-education-case-adjunct-faculty-continui",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Human Services"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 18.1
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Job Network, Adjunct Faculty-Continuing Education",
+    "reqId": "2026a-87",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128498/job-network-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.8
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Interpreter Preparation - Adjunct Faculty",
+    "reqId": "2026a-08",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125778/interpreter-preparation-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Physics, Adjunct Faculty",
+    "reqId": "2026a-23",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126853/physics-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Interior Design- Adjunct Faculty",
+    "reqId": "2026a-11",
+    "location": "Catonsville, MD",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125793/interior-design-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Arts, Design, Entertainment & Media",
+      "Instructor",
+      "Faculty - Other"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Environmental Sciences-Earth Science - Adjunct Faculty",
+    "reqId": "2026a-18",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126823/environmental-sciences-earth-science-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Environmental Services",
+      "Education",
+      "Higher Education",
+      "Faculty - Science"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "Mathematics - Adjunct Faculty",
+    "reqId": "2026a-22",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126844/mathematics-adjunct-faculty",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Higher Education",
+      "Mathematics",
+      "Faculty - Math & Technology"
+    ],
+    "salary": null,
+    "miles": 11.9
+  },
+  {
+    "company": "Community College of Baltimore County",
+    "agency": "ccbcmd",
+    "title": "ABE/GED - Adjunct Faculty Continuing Education",
+    "reqId": "2026a-66",
+    "location": "Location indicated in Job Description",
+    "city": "catonsville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128256/abe-ged-adjunct-faculty-continuing-education",
+    "postedAtMs": 1761955200000,
+    "days": 281,
+    "continuous": false,
+    "deadlineMs": 1793404800000,
+    "deadline": "10/31/26",
+    "employmentType": "Adjunct Faculty",
+    "department": "Instruction",
+    "categories": [
+      "Education",
+      "Faculty"
+    ],
+    "salary": {
+      "min": 32.9,
+      "max": 32.9,
+      "unit": "HOUR"
+    },
+    "miles": 11.9
   },
   {
     "company": "Howard County Government",
@@ -16876,35 +16849,6 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Playground Maintenance Technician - Seasonal",
-    "reqId": "SOPK-PMT",
-    "location": "Montgomery County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/3959152/playground-maintenance-technician-seasonal",
-    "postedAtMs": 1707868800000,
-    "days": 907,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "MC Parks",
-    "categories": [
-      "Parks and Recreation ",
-      "Parks",
-      "Maintenance",
-      "Building & Grounds Cleaning and Maintenance"
-    ],
-    "salary": {
-      "min": 15.75,
-      "max": 15.75,
-      "unit": "HOUR"
-    },
-    "miles": 30.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
     "title": "Montgomery County Seasonal Maintenance",
     "reqId": "MC222M",
     "location": "Montgomery County, MD",
@@ -16983,6 +16927,35 @@
     "salary": {
       "min": 21,
       "max": 46,
+      "unit": "HOUR"
+    },
+    "miles": 30.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Playground Maintenance Technician - Seasonal",
+    "reqId": "SOPK-PMT",
+    "location": "Montgomery County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/3959152/playground-maintenance-technician-seasonal",
+    "postedAtMs": 1707868800000,
+    "days": 907,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "MC Parks",
+    "categories": [
+      "Parks and Recreation ",
+      "Parks",
+      "Maintenance",
+      "Building & Grounds Cleaning and Maintenance"
+    ],
+    "salary": {
+      "min": 15.75,
+      "max": 15.75,
       "unit": "HOUR"
     },
     "miles": 30.7
