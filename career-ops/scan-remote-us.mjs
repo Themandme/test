@@ -129,7 +129,90 @@ const CAUTION_PATTERNS = [
 const cautionsIn = (text) => CAUTION_PATTERNS
   .filter(re => re.test(text))
   .map(re => String(re).replace(/^\/|\/i$/g, ''));
-const EXP_FLOOR_RE = /\b([3-9]|1[0-9])\+?\s*(\+)?\s*years?\b/i;
+// ── Eligibility, not just resemblance ────────────────────────────────────────
+// The score above measures how much a posting LOOKS like the CV. It says
+// nothing about whether the candidate clears the posting's stated bar, and
+// those came apart badly: Nordic (4 years) scored 24, Eversheds (5+ years)
+// scored 22 and UnitedHealth (5+ years, twice) scored 17, while the one role
+// whose entire qualification was "Bachelor's degree" scored 5 and ranked
+// second-to-last. Across 31 evaluations the stated years bar — and whether an
+// equivalency clause lets education count against it — has been the single
+// best predictor of reachability. So it is scored here rather than left to a
+// human reading each JD.
+//
+// There WAS a floor filter, `EXP_FLOOR_RE` against `desc.slice(0, 2500)`. It
+// never fired. Company boilerplate occupies the top of most postings, so the
+// qualifications section sits past the window: 3446 chars into the Eversheds
+// posting, 3978 into UnitedHealth, 5214 into Boise State, 5439 into Nordic.
+// All four were missed. That is precisely the blind-spot-not-a-sample defect
+// this file's own header describes for the sitemap window, reproduced 200
+// lines later against a different corpus.
+const WORD_NUM = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+// "One to four years" is as common as "1-4 years", and a digits-only pattern
+// reads it as no requirement at all.
+const spellOut = (t) => String(t || '').replace(
+  /\b(one|two|three|four|five|six|seven|eight|nine|ten)\b/gi,
+  (m) => String(WORD_NUM[m.toLowerCase()]));
+
+// A range gates at its LOW end — "2-4 years" needs two, not four.
+const YEARS_RE = /(\d{1,2})\s*(?:\+|\s*(?:-|–|to)\s*\d{1,2})?\s*(?:\+\s*)?\s*years?\b/i;
+// Education or a mixed background standing in for the years. This is the clause
+// that separated Wells Fargo (reachable) from M&T (not), and the one Maryland
+// writes as "30 credit hours for each year of the required experience".
+const EQUIVALENCY_RE = /\bor\s+equivalent\b|\bequivalent\s+(?:experience|combination|education)\b|\bmay\s+substitute\b|\bcredit\s+hours?\b|\bcombination\s+of\s+education\s+and\s+experience\b/i;
+// Years inside a preference are not a gate.
+const PREFERRED_RE = /\b(?:preferred|a\s+plus|nice\s+to\s+have|desired|ideally|bonus|would\s+be\s+great)\b/i;
+// Section headings that flip everything beneath them into preferences, and back.
+const PREF_HEADING_RE = /^\s*(?:preferred|desired|nice[\s-]to[\s-]have|bonus)\b[^.]{0,40}$/i;
+const REQ_HEADING_RE = /^\s*(?:required|requirements|minimum|basic|must[\s-]have|qualifications)\b[^.]{0,40}$/i;
+
+/**
+ * Lowest number of years the posting genuinely gates on, across the WHOLE
+ * description. Returns null when nothing gates on years.
+ *
+ * Two rules that a naive scan gets backwards:
+ *
+ *   - **A range gates at its floor.** "2-4 years" is cleared at two.
+ *   - **Separate requirements gate at the MAXIMUM.** A posting listing "5+
+ *     years analytics", "5+ years governance" and "1+ years AI" requires all
+ *     three, so the binding constraint is five. Taking the minimum reads that
+ *     posting as reachable at one year, which is how UnitedHealth's Data
+ *     Analyst 2 scored 17 and looked open.
+ *
+ * Preference lines and lines carrying an equivalency clause are not gates, and
+ * a "Preferred Qualifications" heading applies to everything beneath it.
+ */
+export function statedYearsFloor(desc) {
+  // Bullets survive the HTML strip as a glyph, and postings use several — •,
+  // ●, ▪, ‣, ◦, ·. Splitting on only "•" glued Boise State's whole requirements
+  // list into one line, which hid two separate year gates inside it. Sentences
+  // are the fallback unit when a posting uses no bullets at all.
+  const lines = spellOut(desc)
+    .split(/\n|[•●▪‣◦·]|(?<=\.)\s+(?=[A-Z])/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+  let preferredSection = false;
+  let gate = null;
+  for (const line of lines) {
+    if (PREF_HEADING_RE.test(line)) { preferredSection = true; continue; }
+    if (REQ_HEADING_RE.test(line)) { preferredSection = false; continue; }
+    const m = line.match(YEARS_RE);
+    if (!m) continue;
+    const n = Number(m[1]);
+    if (!Number.isFinite(n) || n === 0 || n > 25) continue;
+    if (preferredSection || PREFERRED_RE.test(line) || EQUIVALENCY_RE.test(line)) continue;
+    gate = gate === null ? n : Math.max(gate, n);
+  }
+  return gate;
+}
+
+const YEARS_HELD = 1;
+const YEARS_HARD_STOP = 3;
+// Weight chosen to matter without dominating: a posting with no stated years
+// bar gains roughly what two strong title matches are worth, which is about
+// what the evaluation history says it deserves.
+const NO_FLOOR_BONUS = 6;
+const STRETCH_PENALTY = -4;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const strip = s => String(s || '').replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/gi, ' ').replace(/\s+/g, ' ').trim();
@@ -218,18 +301,29 @@ const rows = await pooled(sampled, CONCURRENCY, async (url) => {
   if (!usOk) { stats.notUS++; return null; }
 
   const desc = strip(p.description);
-  if (EXP_FLOOR_RE.test(desc.slice(0, 2500))) { stats.expFloor++; return null; }
+
+  // Whole description, not a leading window — see the note on statedYearsFloor.
+  const yearsFloor = statedYearsFloor(desc);
+  if (yearsFloor !== null && yearsFloor >= YEARS_HARD_STOP) { stats.expFloor++; return null; }
 
   const titleScore = scoreOf(title, TITLE_WEIGHTS);
   if (titleScore < MIN_TITLE_SCORE) { stats.weakTitle++; return null; }
   if (BLOCKER_RE.test(title) || BLOCKER_RE.test(desc.slice(0, 2500))) { stats.blocked++; return null; }
-  const score = titleScore + scoreOf(desc, DESC_WEIGHTS);
+
+  // Eligibility adjustment: reward a posting that gates on nothing but a
+  // degree, and discount one that asks for more years than are held.
+  const eligibility = yearsFloor === null ? NO_FLOOR_BONUS
+    : yearsFloor > YEARS_HELD ? STRETCH_PENALTY
+      : 0;
+  const score = titleScore + scoreOf(desc, DESC_WEIGHTS) + eligibility;
   if (score < MIN_SCORE) { stats.lowScore++; return null; }
 
   const sal = p.baseSalary && p.baseSalary.value;
   // kept is counted from the store after the merge, not per-row.
   return {
     title, url, score,
+    yearsFloor,          // null = no stated years bar; the strongest reachability signal found
+    eligibility,         // the adjustment applied, so a score can be explained rather than guessed at
     company: (p.hiringOrganization && p.hiringOrganization.name || '').trim(),
     location: locText || 'Remote (US)',
     datePosted: Number.isFinite(posted) ? new Date(posted).toISOString().slice(0, 10) : null,
@@ -266,7 +360,17 @@ writeFileSync(STORE, JSON.stringify({
   generatedAt: new Date().toISOString(),
   scope: 'Fully remote, US-eligible',
   scoring: 'Tiered target titles (user-supplied) weighted by tier, plus description confirmation; minimum score ' + MIN_SCORE,
-  excluded: ['senior/lead/management', 'clinical', 'roles demanding 3+ years experience'],
+  excluded: ['senior/lead/management', 'clinical', 'roles gating on 3+ years with no equivalency clause'],
+  // The store accumulates across runs, so after the eligibility signal landed
+  // it holds two score scales at once: rows fetched since carry `yearsFloor`
+  // and an eligibility adjustment, older rows do not. Ranking across the two is
+  // not meaningful, so the split is counted rather than hidden. MAX_AGE_DAYS
+  // prunes at 14 days, so this self-heals within a fortnight.
+  scoreScale: {
+    withEligibility: kept.filter((r) => 'yearsFloor' in r).length,
+    legacyResemblanceOnly: kept.filter((r) => !('yearsFloor' in r)).length,
+  },
+  eligibility: 'Scored, not just filtered: +' + NO_FLOOR_BONUS + ' when no years bar is stated, ' + STRETCH_PENALTY + ' when the stated floor exceeds ' + YEARS_HELD + ' year(s). Equivalency clauses and years inside a preference are not treated as gates.',
   maxAgeDays: MAX_AGE_DAYS,
   coverage: {
     mode: 'rotating window with accumulation',
