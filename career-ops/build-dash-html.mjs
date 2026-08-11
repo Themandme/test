@@ -148,7 +148,18 @@ const neogov = (d.neogov || []).map((j) => ({
   source: 'County/city gov (NEOGOV)',
 }));
 
-const listingsRaw = [...localWorkday, ...owingsMills, ...indeed, ...marylandGov, ...neogov]
+// Remote roles, from the dedicated remote-US sweep. These were collected into
+// dash-data from the start but never rendered — the geographic rings had
+// nowhere to put them, so 162 openings sat unused. They get their own section
+// below rather than a fifth ring, because remote is not a distance.
+const remoteUs = ((d.remoteUs && d.remoteUs.jobs) || []).map((j) => ({
+  company: j.company, title: j.title,
+  location: [j.city, j.region].filter(Boolean).join(', ') || 'Remote (US)',
+  url: j.url, days: ageDays(j.datePosted), salary: j.salary || null,
+  source: 'Remote US', remote: true,
+}));
+
+const listingsRaw = [...localWorkday, ...owingsMills, ...indeed, ...marylandGov, ...neogov, ...remoteUs]
   .filter((j) => !EXCLUDED_EMPLOYERS.test(String(j.company || '').trim()));
 const listings = dedupe(listingsRaw);
 const dupesRemoved = listingsRaw.length - listings.length;
@@ -187,12 +198,28 @@ const tierOf = (loc) => {
   for (let i = 0; i < TIER.length; i++) if (TIER[i].test(s)) return i;
   return TIER.length;              // Ring 4 — DC, Virginia, remote
 };
-const TIER_LABEL = ['Owings Mills area', 'Greater Baltimore', 'Rest of Maryland', 'DC / Virginia / remote'];
+const TIER_LABEL = ['Owings Mills area', 'Greater Baltimore', 'Rest of Maryland', 'DC / Virginia'];
 
-const shortlist = listings
+// Remote is a working arrangement, not a place, so it is held apart from the
+// proximity rings instead of being folded into the furthest one. A row counts
+// as remote if the sweep that found it says so, or if the location field says
+// so — Workday and hiring.cafe both write "Remote" into the location string,
+// while a city name alongside it usually means hybrid, which is not remote.
+const REMOTE_LOC = /\bremote\b|\bwork from home\b|\bwfh\b|\btelework\b|\banywhere\b/i;
+const HYBRID_LOC = /\bhybrid\b/i;
+const isRemote = (j) => Boolean(j.remote)
+  || (REMOTE_LOC.test(String(j.location || '')) && !HYBRID_LOC.test(String(j.location || '')));
+
+const reachable = listings
   .filter((j) => hireable(j) && j.days !== null && j.days <= 21)
-  .map((j) => ({ ...j, tier: tierOf(j.location) }))
+  .map((j) => ({ ...j, remote: isRemote(j), tier: tierOf(j.location) }))
   .sort((a, b) => a.tier - b.tier || a.days - b.days);
+
+// The geographic sections and the remote section partition the same set — a
+// row appears in exactly one, so the ring counts and the remote count sum to
+// the total instead of double-counting a remote role as a DC one.
+const shortlist = reachable.filter((j) => !j.remote);
+const remote = reachable.filter((j) => j.remote).sort((a, b) => a.days - b.days);
 
 // ── Hireability ──────────────────────────────────────────────────────
 // Ranks the home ring by probability of an OFFER, not by desirability and not
@@ -444,6 +471,8 @@ const baltimoreRows = bracketedRows(baltimore, 15);
 const elsewhere = shortlist.filter((j) => j.tier >= 2);
 const elsewhereRows = bracketedRows(elsewhere, 15);
 
+const remoteRows = bracketedRows(remote, 15);
+
 const tierTally = TIER_LABEL.map((label, i) => ({ label, n: shortlist.filter((j) => j.tier === i).length }));
 
 const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}</title>
@@ -564,7 +593,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
       <div class="kpi"><div class="n">${listings.length.toLocaleString()}</div><div class="k">Local openings tracked</div><div class="s">Workday + hiring.cafe</div></div>
       <div class="kpi"><div class="n">${fresh7.toLocaleString()}</div><div class="k">Posted in last 7 days</div><div class="s">of ${dated.length.toLocaleString()} with a date</div></div>
       <div class="kpi"><div class="n">${nearHome.length.toLocaleString()}</div><div class="k">Owings Mills area</div><div class="s">≤15 min, reachable, ≤21d</div></div>
-      <div class="kpi"><div class="n">${shortlist.length.toLocaleString()}</div><div class="k">Reachable &amp; fresh</div><div class="s">≤21d, no clearance, not senior</div></div>
+      <div class="kpi"><div class="n">${reachable.length.toLocaleString()}</div><div class="k">Reachable &amp; fresh</div><div class="s">≤21d, no clearance, not senior</div></div>
       <div class="kpi"><div class="n">${reports.length}</div><div class="k">Roles evaluated</div><div class="s">full reports written</div></div>
       <div class="kpi"><div class="n">${(d.pipeline || []).length}</div><div class="k">Pipeline pending</div><div class="s">awaiting triage</div></div>
     </div>
@@ -606,7 +635,7 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
     </table>
   </div>
 
-  <h2>Rest of Maryland, DC, Virginia and remote — by age</h2>
+  <h2>Rest of Maryland, DC and Virginia — by age</h2>
   <p class="note">${elsewhere.length} reachable roles beyond the Baltimore metro. Furthest from home and the largest group, so recency does the filtering: the older brackets here are the least likely to be worth the drive or still open.</p>
   <div class="panel scroll">
     <table>
@@ -615,7 +644,16 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
     </table>
   </div>
 
-  <p class="note">${shortlist.length} reachable roles in total — ${tierTally.map((t) => `${t.n} ${t.label.toLowerCase()}`).join(', ')}. Found title-blind: filtered on location, age and reachability, never on a list of target titles.</p>
+  <h2>Remote — no commute at all</h2>
+  <p class="note">${remote.length} reachable remote roles. Held separate from the rings above because remote is a working arrangement, not a distance — and because these were being collected but never shown, hidden inside the &ldquo;DC / Virginia / remote&rdquo; bucket. Rows tagged <em>hybrid</em> are excluded: a hybrid role still has a commute. ${remote.length ? `Freshest is ${remote[0].days}d old.` : ''}</p>
+  <div class="panel scroll">
+    <table>
+      <thead><tr><th>Age</th><th>Pay</th><th>Employer</th><th>Role</th><th>Location</th></tr></thead>
+      <tbody>${remoteRows}</tbody>
+    </table>
+  </div>
+
+  <p class="note">${reachable.length} reachable roles in total — ${tierTally.map((t) => `${t.n} ${t.label.toLowerCase()}`).join(', ')}, ${remote.length} remote. Each role sits in exactly one section, so these sum to the total. Found title-blind: filtered on location, age and reachability, never on a list of target titles.</p>
 
   <footer>
     Built from the local scan results, the tracker and the evaluation reports at ${esc(new Date(d.generatedAt).toISOString().slice(0, 10))}.
@@ -628,4 +666,4 @@ const html = `<title>Job Search Command Center — ${esc(d.profile?.name || '')}
 
 writeFileSync(DEST, html);
 console.log(`wrote ${DEST}`);
-console.log(`  listings=${listings.length} dated=${dated.length} fresh7=${fresh7} shortlist=${shortlist.length} reports=${reports.length}`);
+console.log(`  listings=${listings.length} dated=${dated.length} fresh7=${fresh7} reachable=${reachable.length} (local=${shortlist.length} remote=${remote.length}) reports=${reports.length}`);
