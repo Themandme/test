@@ -1,10 +1,130 @@
 [
   {
+    "company": "PNC Financial Services Group",
+    "title": "Regional Banker-Teller",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aawzcjyy9t6s",
+    "days": 1,
+    "postedAtMs": 1786147200000,
+    "postedOn": "August 08, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 37125,
+      "max": 61875,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "PNC Financial Services Group",
+    "title": "Teller",
+    "location": "Bel Air, MD",
+    "url": "https://to.indeed.com/aakn8k72bhs2",
+    "days": 1,
+    "postedAtMs": 1786147200000,
+    "postedOn": "August 08, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 33000,
+      "max": 55000,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Bank of America",
+    "title": "Relationship Banker - Baltimore Market",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aarxxxz9h6vg",
+    "days": 2,
+    "postedAtMs": 1786060800000,
+    "postedOn": "August 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 25,
+      "max": 26.77,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Farmers and Merchants Bank",
+    "title": "Customer Service Manager (I-III)",
+    "location": "Baltimore County, MD",
+    "url": "https://to.indeed.com/aavrkckyhmmh",
+    "days": 2,
+    "postedAtMs": 1786060800000,
+    "postedOn": "August 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 17,
+      "max": 17,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "PNC Financial Services Group",
+    "title": "Personal Banker",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aammyztqmjh4",
+    "days": 2,
+    "postedAtMs": 1786060800000,
+    "postedOn": "August 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 45375,
+      "max": 75625,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland - DHS - Baltimore City DSS",
+    "title": "Innovation Data Analyst (HUMAN SERVICE SPECIALIST V)",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aa4r899blbkn",
+    "days": 2,
+    "postedAtMs": 1786060800000,
+    "postedOn": "August 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 67309,
+      "max": 87079,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "C-HIT",
+    "title": "Data Analyst - 4",
+    "location": "Columbia, MD",
+    "url": "https://to.indeed.com/aacrbqkvndvj",
+    "days": 2,
+    "postedAtMs": 1786060800000,
+    "postedOn": "August 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 70718.82,
+      "max": 109866.79,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Johns Hopkins Credit Union",
+    "title": "Member Service Center Representative I",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aamtyh78b8q8",
+    "days": 2,
+    "postedAtMs": 1786060800000,
+    "postedOn": "August 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 19.6,
+      "max": 24.5,
+      "unit": "HOUR"
+    }
+  },
+  {
     "company": "Planet Aid, Inc.",
     "title": "IT Help Desk Technician",
     "location": "Elkridge, MD",
     "url": "https://to.indeed.com/aa4wvlw87gmt",
-    "days": 2,
+    "days": 3,
     "postedAtMs": 1785974400000,
     "postedOn": "August 06, 2026",
     "employmentType": "Full-time",
@@ -15,11 +135,26 @@
     }
   },
   {
+    "company": "Whitehouse Caterers at Overhills Mansion",
+    "title": "Office Assistant",
+    "location": "Catonsville, MD",
+    "url": "https://to.indeed.com/aa6n86ynk6d7",
+    "days": 3,
+    "postedAtMs": 1785974400000,
+    "postedOn": "August 06, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 20,
+      "max": 25,
+      "unit": "HOUR"
+    }
+  },
+  {
     "company": "Simple Cell Inc.",
     "title": "Customer Experience Associate",
     "location": "Eldersburg, MD",
     "url": "https://to.indeed.com/aadz2mdhhcnd",
-    "days": 3,
+    "days": 4,
     "postedAtMs": 1785888000000,
     "postedOn": "August 05, 2026",
     "employmentType": "Full-time",
@@ -34,7 +169,7 @@
     "title": "Customer Service",
     "location": "Baltimore, MD",
     "url": "https://to.indeed.com/aa9mtbbc6y4g",
-    "days": 3,
+    "days": 4,
     "postedAtMs": 1785888000000,
     "postedOn": "August 05, 2026",
     "employmentType": "Temp-to-hire",
@@ -49,7 +184,7 @@
     "title": "IT Field Technician",
     "location": "Baltimore, MD",
     "url": "https://to.indeed.com/aaxpjclfqkq7",
-    "days": 3,
+    "days": 4,
     "postedAtMs": 1785888000000,
     "postedOn": "August 05, 2026",
     "employmentType": "Full-time",
@@ -64,7 +199,7 @@
     "title": "Customer Service Inside Sales Representative",
     "location": "Jessup, MD",
     "url": "https://to.indeed.com/aafhht7dm8qd",
-    "days": 4,
+    "days": 5,
     "postedAtMs": 1785801600000,
     "postedOn": "August 04, 2026",
     "employmentType": "Full-time",
@@ -75,11 +210,26 @@
     }
   },
   {
+    "company": "State of Maryland - MD State Department of Education",
+    "title": "Educator Licensure Support Assistant (Administrative Aide)",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aanfj72nwjtw",
+    "days": 5,
+    "postedAtMs": 1785801600000,
+    "postedOn": "August 04, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 49214,
+      "max": 77620,
+      "unit": "YEAR"
+    }
+  },
+  {
     "company": "FlexTek, LLC",
     "title": "Account Manager",
     "location": "Baltimore, MD",
     "url": "https://to.indeed.com/aayhhb67khwx",
-    "days": 5,
+    "days": 6,
     "postedAtMs": 1785715200000,
     "postedOn": "August 03, 2026",
     "employmentType": "Full-time",
@@ -94,7 +244,7 @@
     "title": "Project Coordinator - Stormwater Maintenance",
     "location": "Linthicum Heights, MD",
     "url": "https://to.indeed.com/aamnnxrxfrlt",
-    "days": 5,
+    "days": 6,
     "postedAtMs": 1785715200000,
     "postedOn": "August 03, 2026",
     "employmentType": "N/A",
@@ -105,11 +255,191 @@
     }
   },
   {
+    "company": "ACNB",
+    "title": "Floating Community Banking Specialist",
+    "location": "Mount Airy, MD",
+    "url": "https://to.indeed.com/aak2lfvk8kqd",
+    "days": 6,
+    "postedAtMs": 1785715200000,
+    "postedOn": "August 03, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 19.71,
+      "max": 24,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Marathon Medical",
+    "title": "Administrative Support Specialist",
+    "location": "Towson, MD",
+    "url": "https://to.indeed.com/aa6ys7kbqtm4",
+    "days": 6,
+    "postedAtMs": 1785715200000,
+    "postedOn": "August 03, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 20,
+      "max": 23,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Markets at Highlandtown",
+    "title": "Bookkeeper/Administrative Assistant",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aafbywztrrlm",
+    "days": 6,
+    "postedAtMs": 1785715200000,
+    "postedOn": "August 03, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 25,
+      "max": 27,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Auto Collision Specialists, LLC",
+    "title": "Customer Service Representative",
+    "location": "Reisterstown, MD",
+    "url": "https://to.indeed.com/aanlnz6vsf6k",
+    "days": 6,
+    "postedAtMs": 1785715200000,
+    "postedOn": "August 03, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 15,
+      "max": 20,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Medicare Savings Advisors",
+    "title": "Administrative Assistant",
+    "location": "Owings Mills, MD",
+    "url": "https://to.indeed.com/aadpkr2wfkkn",
+    "days": 8,
+    "postedAtMs": 1785542400000,
+    "postedOn": "August 01, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 20,
+      "max": 23,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Johns Hopkins University Applied Physics Laboratory",
+    "title": "GNSS Data Science and Navigation Analyst",
+    "location": "Laurel, MD",
+    "url": "https://to.indeed.com/aazwkdcrt2fm",
+    "days": 8,
+    "postedAtMs": 1785542400000,
+    "postedOn": "August 01, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 100000,
+      "max": 245000,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Navy Federal Credit Union",
+    "title": "Member Service Representative (Full-Time) - Rosedale",
+    "location": "Rosedale, MD",
+    "url": "https://to.indeed.com/aasgw2tchv69",
+    "days": 10,
+    "postedAtMs": 1785369600000,
+    "postedOn": "July 30, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 22.26,
+      "max": 25.87,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Gracious Health Inc.",
+    "title": "Administrative Assistant",
+    "location": "Catonsville, MD",
+    "url": "https://to.indeed.com/aa9gltgx9m2d",
+    "days": 10,
+    "postedAtMs": 1785369600000,
+    "postedOn": "July 30, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 18,
+      "max": 20,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "T. Rowe Price",
+    "title": "Business Analyst, Data Management & Reporting",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aah8ptbnzldl",
+    "days": 10,
+    "postedAtMs": 1785369600000,
+    "postedOn": "July 30, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 77000,
+      "max": 164000,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Ease Painting and Construction",
+    "title": "Administrative Assistant",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aa7sw2qhpk9j",
+    "days": 11,
+    "postedAtMs": 1785283200000,
+    "postedOn": "July 29, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 22,
+      "max": 30,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Leidos",
+    "title": "Operations Research Analyst",
+    "location": "Odenton, MD",
+    "url": "https://to.indeed.com/aatzxj6x9fww",
+    "days": 11,
+    "postedAtMs": 1785283200000,
+    "postedOn": "July 29, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 131300,
+      "max": 237350,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "NaturaLawn of America",
+    "title": "Office Administrator",
+    "location": "Westminster, MD",
+    "url": "https://to.indeed.com/aamq2k6ztqcw",
+    "days": 11,
+    "postedAtMs": 1785283200000,
+    "postedOn": "July 29, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 17,
+      "max": 19,
+      "unit": "HOUR"
+    }
+  },
+  {
     "company": "Baltimore County, MD",
     "title": "NOC Tier 1 (Overnight Shift) - Non-Merit",
     "location": "Towson, MD",
     "url": "https://to.indeed.com/aab9mzpcggb7",
-    "days": 12,
+    "days": 13,
     "postedAtMs": 1785110400000,
     "postedOn": "July 27, 2026",
     "employmentType": "Part-time",
@@ -120,11 +450,56 @@
     }
   },
   {
+    "company": "Jai Medical Center",
+    "title": "Customer Service Representative",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aat6zvwz9ht7",
+    "days": 13,
+    "postedAtMs": 1785110400000,
+    "postedOn": "July 27, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 20,
+      "max": 26,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "THE UPS STORE #1162",
+    "title": "Customer Service Associate",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aa76pptxnbnd",
+    "days": 14,
+    "postedAtMs": 1785024000000,
+    "postedOn": "July 26, 2026",
+    "employmentType": "Part-time",
+    "salary": {
+      "min": 15,
+      "max": 20,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Chesapeake Employers' Insurance Company",
+    "title": "Actuarial & Business Analytics Analyst",
+    "location": "Towson, MD",
+    "url": "https://to.indeed.com/aanjfxjsmvqq",
+    "days": 16,
+    "postedAtMs": 1784851200000,
+    "postedOn": "July 24, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 75359,
+      "max": 113043,
+      "unit": "YEAR"
+    }
+  },
+  {
     "company": "Lednor Home Solutions",
     "title": "Assistant Installation & Production Manager (In office for Home Improvement)",
     "location": "Millersville, MD",
     "url": "https://to.indeed.com/aaqjrhcth6dw",
-    "days": 18,
+    "days": 19,
     "postedAtMs": 1784592000000,
     "postedOn": "July 21, 2026",
     "employmentType": "Full-time",
@@ -139,7 +514,7 @@
     "title": "PC Repair & Technical Support Specialist",
     "location": "Linthicum Heights, MD",
     "url": "https://to.indeed.com/aafzrtntkl8v",
-    "days": 18,
+    "days": 19,
     "postedAtMs": 1784592000000,
     "postedOn": "July 21, 2026",
     "employmentType": "Full-time",
@@ -154,7 +529,7 @@
     "title": "Technical Support Assistant I - Non-Merit",
     "location": "Towson, MD",
     "url": "https://to.indeed.com/aa2kk6lwwn2z",
-    "days": 19,
+    "days": 20,
     "postedAtMs": 1784505600000,
     "postedOn": "July 20, 2026",
     "employmentType": "Part-time",
@@ -169,7 +544,7 @@
     "title": "IT Support Specialist",
     "location": "Baltimore, MD",
     "url": "https://to.indeed.com/aarvql69trz4",
-    "days": 23,
+    "days": 24,
     "postedAtMs": 1784160000000,
     "postedOn": "July 16, 2026",
     "employmentType": "Part-time",
@@ -180,11 +555,22 @@
     }
   },
   {
+    "company": "Post Office Credit Union of Maryland",
+    "title": "Member Services/Operations Assistant",
+    "location": "Baltimore, MD",
+    "url": "https://to.indeed.com/aa8jmgw6mlmb",
+    "days": 25,
+    "postedAtMs": 1784073600000,
+    "postedOn": "July 15, 2026",
+    "employmentType": "Full-time",
+    "salary": null
+  },
+  {
     "company": "Gamse Lithographing Co., Inc.",
     "title": "Customer Service Representative",
     "location": "Rosedale, MD",
     "url": "https://to.indeed.com/aa2lkxbr8dch",
-    "days": 26,
+    "days": 27,
     "postedAtMs": 1783900800000,
     "postedOn": "July 13, 2026",
     "employmentType": "Full-time",
@@ -199,7 +585,7 @@
     "title": "Customer Engagement Representative",
     "location": "Linthicum, MD",
     "url": "https://to.indeed.com/aa27v2ldks8h",
-    "days": 39,
+    "days": 40,
     "postedAtMs": 1782777600000,
     "postedOn": "June 30, 2026",
     "employmentType": "N/A",
@@ -214,7 +600,7 @@
     "title": "IT Support Associate II, Ops Tech Solutions (OTS)",
     "location": "Sparrows Point, MD",
     "url": "https://to.indeed.com/aac86psjmcpr",
-    "days": 47,
+    "days": 48,
     "postedAtMs": 1782086400000,
     "postedOn": "June 22, 2026",
     "employmentType": "Full-time",
@@ -225,11 +611,26 @@
     }
   },
   {
+    "company": "SAGE VENTURES",
+    "title": "Data Visualization Analyst",
+    "location": "Pikesville, MD",
+    "url": "https://to.indeed.com/aajvs4m4rj7b",
+    "days": 52,
+    "postedAtMs": 1781740800000,
+    "postedOn": "June 18, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 60000,
+      "max": 80000,
+      "unit": "YEAR"
+    }
+  },
+  {
     "company": "Peake Federal Credit Union",
     "title": "Contact Center Specialist",
     "location": "Perry Hall, MD",
     "url": "https://to.indeed.com/aakxqzrznp4c",
-    "days": 53,
+    "days": 54,
     "postedAtMs": 1781568000000,
     "postedOn": "June 16, 2026",
     "employmentType": "Full-time",
@@ -244,7 +645,7 @@
     "title": "Service Desk Technician I",
     "location": "Nottingham, MD",
     "url": "https://to.indeed.com/aa9kzhgtlmwr",
-    "days": 58,
+    "days": 59,
     "postedAtMs": 1781136000000,
     "postedOn": "June 11, 2026",
     "employmentType": "Full-time",
@@ -259,7 +660,7 @@
     "title": "Manager - Card Services",
     "location": "Baltimore, MD",
     "url": "https://to.indeed.com/aa4zkk4hd6yz",
-    "days": 64,
+    "days": 65,
     "postedAtMs": 1780617600000,
     "postedOn": "June 05, 2026",
     "employmentType": "Full-time",
@@ -270,11 +671,71 @@
     }
   },
   {
+    "company": "Northrop Grumman Federal Credit Union",
+    "title": "Teller I or II- On Site",
+    "location": "Linthicum Heights, MD",
+    "url": "https://to.indeed.com/aaj47x9nlt92",
+    "days": 67,
+    "postedAtMs": 1780444800000,
+    "postedOn": "June 03, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 20,
+      "max": 23,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "CRISP Shared Services, Inc.",
+    "title": "Business Analyst - Data Insights",
+    "location": "Columbia, MD",
+    "url": "https://to.indeed.com/aas2qxwbgffg",
+    "days": 67,
+    "postedAtMs": 1780444800000,
+    "postedOn": "June 03, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 90000,
+      "max": 105000,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Strategic Factory",
+    "title": "Executive Administrative Assistant",
+    "location": "Owings Mills, MD",
+    "url": "https://to.indeed.com/aa7qpz8hh7nj",
+    "days": 69,
+    "postedAtMs": 1780272000000,
+    "postedOn": "June 01, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 40000,
+      "max": 65000,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Johns Hopkins University Applied Physics Laboratory",
+    "title": "Submarine Combat System Test and Evaluation Analyst",
+    "location": "Laurel, MD",
+    "url": "https://to.indeed.com/aadpdjbfnv2z",
+    "days": 69,
+    "postedAtMs": 1780272000000,
+    "postedOn": "June 01, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 100000,
+      "max": 245000,
+      "unit": "YEAR"
+    }
+  },
+  {
     "company": "Empowering Minds Resource Center",
     "title": "IT Helpdesk Technician",
     "location": "Baltimore, MD",
     "url": "https://to.indeed.com/aancp8x9kbt4",
-    "days": 86,
+    "days": 87,
     "postedAtMs": 1778716800000,
     "postedOn": "May 14, 2026",
     "employmentType": "Part-time",
@@ -289,7 +750,7 @@
     "title": "IT Support Technician I, II, and III (AV Support)",
     "location": "Catonsville, MD",
     "url": "https://to.indeed.com/aa489p7d8hgy",
-    "days": 86,
+    "days": 87,
     "postedAtMs": 1778716800000,
     "postedOn": "May 14, 2026",
     "employmentType": "Full-time",
@@ -297,6 +758,66 @@
       "min": 46596,
       "max": 91343,
       "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Seaton Senior Living",
+    "title": "Business Office Assistant",
+    "location": "Towson, MD",
+    "url": "https://to.indeed.com/aawj6f7ph78g",
+    "days": 94,
+    "postedAtMs": 1778112000000,
+    "postedOn": "May 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 20,
+      "max": 22,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "Johns Hopkins University Applied Physics Laboratory",
+    "title": "Information Technology & Data Analyst",
+    "location": "Laurel, MD",
+    "url": "https://to.indeed.com/aa8yzrdb9g9j",
+    "days": 94,
+    "postedAtMs": 1778112000000,
+    "postedOn": "May 07, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 100000,
+      "max": 245000,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "Fulton Bank",
+    "title": "Relationship Banker",
+    "location": "Timonium, MD",
+    "url": "https://to.indeed.com/aagcgwls2qtg",
+    "days": 161,
+    "postedAtMs": 1772323200000,
+    "postedOn": "March 01, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 20.43,
+      "max": 32.31,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "LAUREL DENTAL OFFICE",
+    "title": "Call Center Operator",
+    "location": "Ellicott City, MD",
+    "url": "https://to.indeed.com/aabfb9l8cd4j",
+    "days": 163,
+    "postedAtMs": 1772150400000,
+    "postedOn": "February 27, 2026",
+    "employmentType": "Full-time",
+    "salary": {
+      "min": 17,
+      "max": 18,
+      "unit": "HOUR"
     }
   }
 ]
