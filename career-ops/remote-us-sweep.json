@@ -1,0 +1,3301 @@
+{
+  "note": "Rotating sitemap sweep state. Safe to delete; costs one cycle to rebuild.",
+  "updatedAt": "2026-08-11T22:21:24.486Z",
+  "cursor": 87,
+  "run": 17,
+  "chunkCount": 468,
+  "jobs": {
+    "https://hiringcafe.com/job/business-analyst-go-outdoors-brandt-information-services-united-states-viru3y9v99ikpk71": {
+      "title": "Business Analyst Go Outdoors",
+      "url": "https://hiringcafe.com/job/business-analyst-go-outdoors-brandt-information-services-united-states-viru3y9v99ikpk71",
+      "score": 10,
+      "company": "Brandt Information Services",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 80000,
+        "max": 90000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-us-pacific-etleap-united-states-ctdsby37b3armdxw": {
+      "title": "Technical Support Engineer - US Pacific",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-us-pacific-etleap-united-states-ctdsby37b3armdxw",
+      "score": 7,
+      "company": "Etleap",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/servicenow-business-analyst-ahead-united-states-xhben23qi840qdcx": {
+      "title": "ServiceNow Business Analyst",
+      "url": "https://hiringcafe.com/job/servicenow-business-analyst-ahead-united-states-xhben23qi840qdcx",
+      "score": 8,
+      "company": "AHEAD",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 95000,
+        "max": 105000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/associate-data-analyst-brown-and-caldwell-united-states-4kdpauy5or8r3f47": {
+      "title": "Associate Data Analyst",
+      "url": "https://hiringcafe.com/job/associate-data-analyst-brown-and-caldwell-united-states-4kdpauy5or8r3f47",
+      "score": 26,
+      "company": "Brown and Caldwell",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 71000,
+        "max": 115000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 1
+    },
+    "https://hiringcafe.com/job/tax-business-analyst-contract-remote-broadridge-newark-new-jersey-uedy6pdkaoc3i2lt": {
+      "title": "Tax Business Analyst (CONTRACT) REMOTE",
+      "url": "https://hiringcafe.com/job/tax-business-analyst-contract-remote-broadridge-newark-new-jersey-uedy6pdkaoc3i2lt",
+      "score": 19,
+      "company": "Broadridge",
+      "location": "Newark, New Jersey, US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 50,
+        "max": 70,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/accounting-operations-analyst-contractor-stride-united-states-4h5hf64vrh2j5k06": {
+      "title": "Accounting Operations Analyst Contractor",
+      "url": "https://hiringcafe.com/job/accounting-operations-analyst-contractor-stride-united-states-4h5hf64vrh2j5k06",
+      "score": 8,
+      "company": "Stride",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "CONTRACTOR, FULL_TIME",
+      "salary": {
+        "min": 24.55,
+        "max": 25.01,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/ed-tech-technical-support-specialist-clickview-united-states-6b03fm3jytwqimob": {
+      "title": "Ed-Tech Technical Support Specialist",
+      "url": "https://hiringcafe.com/job/ed-tech-technical-support-specialist-clickview-united-states-6b03fm3jytwqimob",
+      "score": 12,
+      "company": "ClickView",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/customer-success-associate-travel-technology-jobgether-united-states-ujtjp1zkz5h1hfwo": {
+      "title": "Customer Success Associate - Travel Technology",
+      "url": "https://hiringcafe.com/job/customer-success-associate-travel-technology-jobgether-united-states-ujtjp1zkz5h1hfwo",
+      "score": 15,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 1
+    },
+    "https://hiringcafe.com/job/hris-integration-and-reporting-analyst-hueman-florida-united-states-bio1nejdp8zf9t3i": {
+      "title": "HRIS Integration and Reporting Analyst",
+      "url": "https://hiringcafe.com/job/hris-integration-and-reporting-analyst-hueman-florida-united-states-bio1nejdp8zf9t3i",
+      "score": 13,
+      "company": "Hueman",
+      "location": "Florida, US",
+      "datePosted": "2026-08-03",
+      "employmentType": "CONTRACTOR",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/commercial-operations-analyst-healthedge-united-states-qtgn0r6equbcsy1m": {
+      "title": "Commercial Operations Analyst",
+      "url": "https://hiringcafe.com/job/commercial-operations-analyst-healthedge-united-states-qtgn0r6equbcsy1m",
+      "score": 21,
+      "company": "HealthEdge",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 76000,
+        "max": 80000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-l5-productivity-netflix-united-states-6qn8dtsmrxpc5ndd": {
+      "title": "Technical Support Engineer (L5) - Productivity",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-l5-productivity-netflix-united-states-6qn8dtsmrxpc5ndd",
+      "score": 6,
+      "company": "Netflix",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 200000,
+        "max": 300000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/data-analyst-level-i-remote-university-of-arizona-global-campus-3fz4r00iy80ol0r2": {
+      "title": "Data Analyst, Level I (Remote)",
+      "url": "https://hiringcafe.com/job/data-analyst-level-i-remote-university-of-arizona-global-campus-3fz4r00iy80ol0r2",
+      "score": 12,
+      "company": "University of Arizona Global Campus",
+      "location": "Arizona, US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 53039,
+        "max": 66299,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-1-convergint-united-states-wzchpbepfgx04u7q": {
+      "title": "Technical Support Specialist 1",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-1-convergint-united-states-wzchpbepfgx04u7q",
+      "score": 7,
+      "company": "Convergint",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 20,
+        "max": 28,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/data-coordinator-realtruck-united-states-slxyys61am6nzcly": {
+      "title": "Data Coordinator",
+      "url": "https://hiringcafe.com/job/data-coordinator-realtruck-united-states-slxyys61am6nzcly",
+      "score": 16,
+      "company": "RealTruck",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/client-services-coordinator-tag-lending-group-united-states-7ob9m91x2p872t9c": {
+      "title": "Client Services Coordinator",
+      "url": "https://hiringcafe.com/job/client-services-coordinator-tag-lending-group-united-states-7ob9m91x2p872t9c",
+      "score": 9,
+      "company": "TAG Lending Group",
+      "location": "Florida, US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 55000,
+        "max": 75000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/office-administrator-tag-lending-group-united-states-5tqr1c2rpmyfg8ik": {
+      "title": "Office Administrator",
+      "url": "https://hiringcafe.com/job/office-administrator-tag-lending-group-united-states-5tqr1c2rpmyfg8ik",
+      "score": 9,
+      "company": "TAG Lending Group",
+      "location": "Florida, US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 28.65,
+        "max": 33.65,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/sales-operations-analyst-abnormal-ai-united-states-hy938zhiynpuy2xu": {
+      "title": "Sales Operations Analyst",
+      "url": "https://hiringcafe.com/job/sales-operations-analyst-abnormal-ai-united-states-hy938zhiynpuy2xu",
+      "score": 23,
+      "company": "Abnormal AI",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 88000,
+        "max": 126500,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-intelligence-analyst-trillium-health-resources-united-states-yla9ttwbjzj53m3n": {
+      "title": "Business Intelligence Analyst",
+      "url": "https://hiringcafe.com/job/business-intelligence-analyst-trillium-health-resources-united-states-yla9ttwbjzj53m3n",
+      "score": 11,
+      "company": "Trillium Health Resources",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 64927,
+        "max": 82402,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/hris-workflow-and-reporting-analyst-radnet-california-united-states-7jqmnh5dactjzsaa": {
+      "title": "HRIS  Workflow & Reporting Analyst",
+      "url": "https://hiringcafe.com/job/hris-workflow-and-reporting-analyst-radnet-california-united-states-7jqmnh5dactjzsaa",
+      "score": 18,
+      "company": "RadNet",
+      "location": "California, US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 90000,
+        "max": 110000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/it-support-engineer-remote-mexico-my-it-crew-mexico-city-mexico-city-0d6yxpd968en8093": {
+      "title": "IT Support Engineer (Remote) - Mexico",
+      "url": "https://hiringcafe.com/job/it-support-engineer-remote-mexico-my-it-crew-mexico-city-mexico-city-0d6yxpd968en8093",
+      "score": 7,
+      "company": "My IT Crew",
+      "location": "Mexico City, Mexico City, MX",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 10,
+        "max": 12,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/marketing-operations-analyst-a-lign-united-states-709ndvrerypb1ipp": {
+      "title": "Marketing Operations Analyst",
+      "url": "https://hiringcafe.com/job/marketing-operations-analyst-a-lign-united-states-709ndvrerypb1ipp",
+      "score": 25,
+      "company": "A-LIGN",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/contracts-operations-analyst-ever-ag-united-states-29id6i5w8q7ik406": {
+      "title": "Contracts Operations Analyst",
+      "url": "https://hiringcafe.com/job/contracts-operations-analyst-ever-ag-united-states-29id6i5w8q7ik406",
+      "score": 18,
+      "company": "Ever.Ag",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/systems-administrator-salesforce-6771-metrostar-united-states-k1h2l7374za1vfjp": {
+      "title": "Systems Administrator (Salesforce) (6771)",
+      "url": "https://hiringcafe.com/job/systems-administrator-salesforce-6771-metrostar-united-states-k1h2l7374za1vfjp",
+      "score": 21,
+      "company": "MetroStar",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 140000,
+        "max": 160000,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/workday-hcm-business-systems-analyst-virtual-jobgether-united-states-1t8ezx2n7t6uwuc8": {
+      "title": "Workday HCM Business Systems Analyst (Virtual)",
+      "url": "https://hiringcafe.com/job/workday-hcm-business-systems-analyst-virtual-jobgether-united-states-1t8ezx2n7t6uwuc8",
+      "score": 14,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 69906.75,
+        "max": 99000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/partnerships-business-analyst-jobgether-united-states-zlayh1ffpccg0ckq": {
+      "title": "Partnerships Business Analyst",
+      "url": "https://hiringcafe.com/job/partnerships-business-analyst-jobgether-united-states-zlayh1ffpccg0ckq",
+      "score": 17,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-jobgether-united-states-o24lud8r8xi8afc4": {
+      "title": "Technical Support Engineer",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-jobgether-united-states-o24lud8r8xi8afc4",
+      "score": 12,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 53560,
+        "max": 80340,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/zoho-crm-experts-jobgether-united-states-fi7u7tewe7a2iztq": {
+      "title": "Zoho CRM Experts",
+      "url": "https://hiringcafe.com/job/zoho-crm-experts-jobgether-united-states-fi7u7tewe7a2iztq",
+      "score": 14,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "CONTRACTOR",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/government-provider-operations-analyst-teladoc-health-united-states-djcqaw71to59ipd5": {
+      "title": "Government Provider Operations Analyst",
+      "url": "https://hiringcafe.com/job/government-provider-operations-analyst-teladoc-health-united-states-djcqaw71to59ipd5",
+      "score": 10,
+      "company": "Teladoc Health",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 65000,
+        "max": 75000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/customer-service-representative-help-desk-temp-maximus-united-states-eez46vjdwe1bprob": {
+      "title": "Customer Service Representative – Help Desk (Temp)",
+      "url": "https://hiringcafe.com/job/customer-service-representative-help-desk-temp-maximus-united-states-eez46vjdwe1bprob",
+      "score": 9,
+      "company": "Maximus",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 3
+    },
+    "https://hiringcafe.com/job/retirement-solutions-operations-analyst-remote-onedigital-united-wfn3tnp623hdh7l1": {
+      "title": "Retirement Solutions Operations Analyst - Remote",
+      "url": "https://hiringcafe.com/job/retirement-solutions-operations-analyst-remote-onedigital-united-wfn3tnp623hdh7l1",
+      "score": 18,
+      "company": "OneDigital",
+      "location": "US",
+      "datePosted": "2026-08-01",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60000,
+        "max": 70000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/mychart-service-desk-agent-team-1-ctg-united-states-cmhkuabzviffk1l0": {
+      "title": "MyChart Service Desk Agent TEAM 1",
+      "url": "https://hiringcafe.com/job/mychart-service-desk-agent-team-1-ctg-united-states-cmhkuabzviffk1l0",
+      "score": 6,
+      "company": "CTG",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "PART_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/systems-and-business-analyst-client-operations-wrapbook-united-states-rzbrrzth4gml8r7w": {
+      "title": "Systems & Business Analyst, Client Operations",
+      "url": "https://hiringcafe.com/job/systems-and-business-analyst-client-operations-wrapbook-united-states-rzbrrzth4gml8r7w",
+      "score": 15,
+      "company": "Wrapbook",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 137000,
+        "max": 198000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/systems-administrator-6773-metrostar-united-states-hi7787nj7dnq9a2j": {
+      "title": "Systems Administrator (6773)",
+      "url": "https://hiringcafe.com/job/systems-administrator-6773-metrostar-united-states-hi7787nj7dnq9a2j",
+      "score": 6,
+      "company": "MetroStar",
+      "location": "US",
+      "datePosted": "2026-08-01",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 90000,
+        "max": 100000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/salesforce-developer-cardiff-united-states-c80frli1nnb4j6rt": {
+      "title": "Salesforce Developer",
+      "url": "https://hiringcafe.com/job/salesforce-developer-cardiff-united-states-c80frli1nnb4j6rt",
+      "score": 15,
+      "company": "Cardiff",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-remote-fl-rentvine-miami-florida-gx8dv0kf5izajpgo": {
+      "title": "Technical Support Specialist (Remote - FL)",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-remote-fl-rentvine-miami-florida-gx8dv0kf5izajpgo",
+      "score": 19,
+      "company": "Rentvine",
+      "location": "Miami, Florida, US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 50000,
+        "max": 55000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 4
+    },
+    "https://hiringcafe.com/job/application-support-engineer-jobgether-united-states-8p2nkjkjmevymviu": {
+      "title": "Application Support Engineer",
+      "url": "https://hiringcafe.com/job/application-support-engineer-jobgether-united-states-8p2nkjkjmevymviu",
+      "score": 10,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 4
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-l2-runpod-united-states-38jiwjt5s6v78gfw": {
+      "title": "Technical Support Engineer (L2)",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-l2-runpod-united-states-38jiwjt5s6v78gfw",
+      "score": 15,
+      "company": "Runpod",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 70000,
+        "max": 93000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-intermedia-united-states-85rtyt96e4gvt6uq": {
+      "title": "Technical Support Engineer",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-intermedia-united-states-85rtyt96e4gvt6uq",
+      "score": 7,
+      "company": "Intermedia",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60000,
+        "max": 70000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/customer-experience-data-analyst-jobgether-united-states-7puweur1rt8wxh5q": {
+      "title": "Customer Experience Data Analyst",
+      "url": "https://hiringcafe.com/job/customer-experience-data-analyst-jobgether-united-states-7puweur1rt8wxh5q",
+      "score": 21,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 5
+    },
+    "https://hiringcafe.com/job/ach-operations-analyst-jobgether-united-states-ul9uj5mg4h2hhaip": {
+      "title": "ACH Operations Analyst",
+      "url": "https://hiringcafe.com/job/ach-operations-analyst-jobgether-united-states-ul9uj5mg4h2hhaip",
+      "score": 10,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 5
+    },
+    "https://hiringcafe.com/job/client-engagement-and-business-development-specialist-flexible-remote-7rtodn272lkbvqcf": {
+      "title": "Client Engagement & Business Development Specialist | Flexible | Remote",
+      "url": "https://hiringcafe.com/job/client-engagement-and-business-development-specialist-flexible-remote-7rtodn272lkbvqcf",
+      "score": 6,
+      "company": "NU-Directions Global",
+      "location": "Scottsdale, Arizona, US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME, PART_TIME",
+      "salary": {
+        "min": 160000,
+        "max": 200000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [
+        "independent (professional|contractor)s? who",
+        "daily live training",
+        "work locally or expand globally",
+        "flexible schedule \\(full or part[- ]time\\)",
+        "personal growth and professional development"
+      ],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/service-desk-analyst-i-republic-services-united-states-ef0cosumkyyhgm7p": {
+      "title": "Service Desk Analyst I",
+      "url": "https://hiringcafe.com/job/service-desk-analyst-i-republic-services-united-states-ef0cosumkyyhgm7p",
+      "score": 7,
+      "company": "Republic Services",
+      "location": "Texas, US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 18.9,
+        "max": 26.02,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "lastSeenRun": 5
+    },
+    "https://hiringcafe.com/job/technical-business-analyst-compass-ptc-united-states-hbj96uocthcrve2a": {
+      "title": "Technical Business Analyst",
+      "url": "https://hiringcafe.com/job/technical-business-analyst-compass-ptc-united-states-hbj96uocthcrve2a",
+      "score": 8,
+      "company": "Compass PTC",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "CONTRACTOR",
+      "salary": {
+        "min": 55,
+        "max": 60,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/remote-business-analyst-burjline-builders-new-orleans-louisiana-1rd4d2f46vy5vofo": {
+      "title": "Remote Business Analyst",
+      "url": "https://hiringcafe.com/job/remote-business-analyst-burjline-builders-new-orleans-louisiana-1rd4d2f46vy5vofo",
+      "score": 17,
+      "company": "Burjline Builders",
+      "location": "New Orleans, Louisiana, US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/tax-operations-analyst-onesource-virtual-united-states-gmb4ab1u2nn4u4fo": {
+      "title": "Tax Operations Analyst",
+      "url": "https://hiringcafe.com/job/tax-operations-analyst-onesource-virtual-united-states-gmb4ab1u2nn4u4fo",
+      "score": 14,
+      "company": "OneSource Virtual",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/salesforce-bsa-ascendion-united-states-qapst4ir0j5cjnfq": {
+      "title": "Salesforce BSA",
+      "url": "https://hiringcafe.com/job/salesforce-bsa-ascendion-united-states-qapst4ir0j5cjnfq",
+      "score": 7,
+      "company": "Ascendion",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/salesforce-marketing-automation-consultant-cloudmasonry-united-states-8n8h1y30ekht6f1e": {
+      "title": "Salesforce Marketing Automation Consultant",
+      "url": "https://hiringcafe.com/job/salesforce-marketing-automation-consultant-cloudmasonry-united-states-8n8h1y30ekht6f1e",
+      "score": 19,
+      "company": "CloudMasonry",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/business-analyst-cms-hios-pluribus-digital-united-states-kbjwco0l5vr3ty94": {
+      "title": "Business Analyst (CMS-HIOS)",
+      "url": "https://hiringcafe.com/job/business-analyst-cms-hios-pluribus-digital-united-states-kbjwco0l5vr3ty94",
+      "score": 12,
+      "company": "Pluribus Digital",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 110000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/salesforce-administrator-cardiff-united-states-quf0skh868rjz3bd": {
+      "title": "Salesforce Administrator",
+      "url": "https://hiringcafe.com/job/salesforce-administrator-cardiff-united-states-quf0skh868rjz3bd",
+      "score": 22,
+      "company": "Cardiff",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 80000,
+        "max": 100000,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-quoting-system-commandlink-united-states-fozgruww6gznaqbu": {
+      "title": "Business Systems Analyst, Quoting System",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-quoting-system-commandlink-united-states-fozgruww6gznaqbu",
+      "score": 22,
+      "company": "CommandLink",
+      "location": "Alabama, US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 80000,
+        "max": 120000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/data-analyst-cardio-partners-remote-digitech-computer-dublin-ohio-wgt75ic0o83bodax": {
+      "title": "Data Analyst - Cardio Partners - Remote",
+      "url": "https://hiringcafe.com/job/data-analyst-cardio-partners-remote-digitech-computer-dublin-ohio-wgt75ic0o83bodax",
+      "score": 18,
+      "company": "Digitech Computer",
+      "location": "Dublin, Ohio, US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/ach-operations-analyst-dutchie-united-states-y2z6dc78901gw9ur": {
+      "title": "ACH Operations Analyst",
+      "url": "https://hiringcafe.com/job/ach-operations-analyst-dutchie-united-states-y2z6dc78901gw9ur",
+      "score": 6,
+      "company": "Dutchie",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/strategy-and-business-operations-analyst-a-lign-united-states-26ude6pqdsnfug9g": {
+      "title": "Strategy and Business Operations Analyst",
+      "url": "https://hiringcafe.com/job/strategy-and-business-operations-analyst-a-lign-united-states-26ude6pqdsnfug9g",
+      "score": 12,
+      "company": "A-LIGN",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/technical-support-rep-elm-street-technology-united-states-5g7hnul86ym6zbrt": {
+      "title": "Technical Support Rep",
+      "url": "https://hiringcafe.com/job/technical-support-rep-elm-street-technology-united-states-5g7hnul86ym6zbrt",
+      "score": 15,
+      "company": "Elm Street Technology",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/mychart-service-desk-agent-team-1-ctg-united-states-zsn1alcbefohdsc1": {
+      "title": "MyChart Service Desk Agent TEAM 1",
+      "url": "https://hiringcafe.com/job/mychart-service-desk-agent-team-1-ctg-united-states-zsn1alcbefohdsc1",
+      "score": 6,
+      "company": "CTG",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/marketing-operations-analyst-a-lign-united-states-ttngqqcmczffvisj": {
+      "title": "Marketing Operations Analyst",
+      "url": "https://hiringcafe.com/job/marketing-operations-analyst-a-lign-united-states-ttngqqcmczffvisj",
+      "score": 25,
+      "company": "A-LIGN",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/ai-financial-operations-analyst-remote-quora-united-states-47lblbjftgjozkdj": {
+      "title": "AI Financial Operations Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/ai-financial-operations-analyst-remote-quora-united-states-47lblbjftgjozkdj",
+      "score": 14,
+      "company": "Quora",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 80190,
+        "max": 186375,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/associate-analyst-service-desk-k2services-united-states-ylvsc5nlahyl6zwu": {
+      "title": "Associate Analyst, Service Desk",
+      "url": "https://hiringcafe.com/job/associate-analyst-service-desk-k2services-united-states-ylvsc5nlahyl6zwu",
+      "score": 8,
+      "company": "K2services",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "lastSeenRun": 6
+    },
+    "https://hiringcafe.com/job/business-intelligence-analyst-jobgether-united-states-ld91biag7d5x0th9": {
+      "title": "Business Intelligence Analyst",
+      "url": "https://hiringcafe.com/job/business-intelligence-analyst-jobgether-united-states-ld91biag7d5x0th9",
+      "score": 15,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 64927,
+        "max": 82402,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 7
+    },
+    "https://hiringcafe.com/job/business-intelligence-analyst-jobgether-united-states-w7d3ldknapjrb602": {
+      "title": "Business Intelligence Analyst",
+      "url": "https://hiringcafe.com/job/business-intelligence-analyst-jobgether-united-states-w7d3ldknapjrb602",
+      "score": 15,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 64927,
+        "max": 82402,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 7
+    },
+    "https://hiringcafe.com/job/trade-operations-analyst-kla-united-states-qw1bsh65c46abr5c": {
+      "title": "Trade Operations Analyst",
+      "url": "https://hiringcafe.com/job/trade-operations-analyst-kla-united-states-qw1bsh65c46abr5c",
+      "score": 17,
+      "company": "KLA",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 72400,
+        "max": 123100,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/salesforce-administrator-remote-mycomputercareer-apex-north-carolina-gm3yrfq43e1vrjlu": {
+      "title": "Salesforce Administrator- Remote",
+      "url": "https://hiringcafe.com/job/salesforce-administrator-remote-mycomputercareer-apex-north-carolina-gm3yrfq43e1vrjlu",
+      "score": 19,
+      "company": "MyComputerCareer",
+      "location": "Apex, North Carolina, US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 70000,
+        "max": 90000,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/risk-operations-analyst-jobgether-united-states-j1lygo4hcsodzfqm": {
+      "title": "Risk Operations Analyst",
+      "url": "https://hiringcafe.com/job/risk-operations-analyst-jobgether-united-states-j1lygo4hcsodzfqm",
+      "score": 7,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 89000,
+        "max": 133400,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 7
+    },
+    "https://hiringcafe.com/job/salesforce-administrator-federal-jobgether-united-states-qamh648ypra4qfjp": {
+      "title": "Salesforce Administrator, Federal",
+      "url": "https://hiringcafe.com/job/salesforce-administrator-federal-jobgether-united-states-qamh648ypra4qfjp",
+      "score": 21,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 128445,
+        "max": 183450,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "lastSeenRun": 7
+    },
+    "https://hiringcafe.com/job/partnerships-business-analyst-reputation-united-states-0fewk61ddtbq0ox5": {
+      "title": "Partnerships Business Analyst",
+      "url": "https://hiringcafe.com/job/partnerships-business-analyst-reputation-united-states-0fewk61ddtbq0ox5",
+      "score": 14,
+      "company": "Reputation",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 7
+    },
+    "https://hiringcafe.com/job/it-support-analyst-foodchain-id-united-states-svg0k64mdhu144va": {
+      "title": "IT Support Analyst",
+      "url": "https://hiringcafe.com/job/it-support-analyst-foodchain-id-united-states-svg0k64mdhu144va",
+      "score": 7,
+      "company": "FoodChain ID",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "PART_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 7
+    },
+    "https://hiringcafe.com/job/service-desk-technician-remote-trace3-louisville-kentucky-241ko6n06pwekysp": {
+      "title": "Service Desk Technician (Remote)",
+      "url": "https://hiringcafe.com/job/service-desk-technician-remote-trace3-louisville-kentucky-241ko6n06pwekysp",
+      "score": 7,
+      "company": "Trace3",
+      "location": "Louisville, Kentucky, US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 23,
+        "max": 27,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/tier-1-service-desk-representative-asm-research-united-states-a68p8q4bd7i3qy8w": {
+      "title": "Tier 1 Service Desk Representative",
+      "url": "https://hiringcafe.com/job/tier-1-service-desk-representative-asm-research-united-states-a68p8q4bd7i3qy8w",
+      "score": 7,
+      "company": "ASM Research",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/data-analyst-intern-aura-finance-united-states-tvxyxu2ru6ep12t4": {
+      "title": "Data Analyst Intern",
+      "url": "https://hiringcafe.com/job/data-analyst-intern-aura-finance-united-states-tvxyxu2ru6ep12t4",
+      "score": 15,
+      "company": "Aura Finance",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "INTERN",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/ai-financial-operations-analyst-jobgether-united-states-p2s1yp4dm5b2sg7a": {
+      "title": "AI Financial Operations Analyst",
+      "url": "https://hiringcafe.com/job/ai-financial-operations-analyst-jobgether-united-states-p2s1yp4dm5b2sg7a",
+      "score": 16,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 80190,
+        "max": 186375,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 7
+    },
+    "https://hiringcafe.com/job/cpt-11328-business-support-and-crm-coordinator-20four7va-united-states-bkz0iquhcxpb24he": {
+      "title": "CPT-11328 Business Support & CRM Coordinator",
+      "url": "https://hiringcafe.com/job/cpt-11328-business-support-and-crm-coordinator-20four7va-united-states-bkz0iquhcxpb24he",
+      "score": 8,
+      "company": "20four7VA",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/help-desk-support-engineer-sosi-florida-united-states-zwv5lhaivfz3pfr5": {
+      "title": "Help Desk Support Engineer",
+      "url": "https://hiringcafe.com/job/help-desk-support-engineer-sosi-florida-united-states-zwv5lhaivfz3pfr5",
+      "score": 9,
+      "company": "SOSi",
+      "location": "Florida, US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/crm-associate-invicta-software-united-states-ubq3x21dqk2a4dl3": {
+      "title": "CRM Associate",
+      "url": "https://hiringcafe.com/job/crm-associate-invicta-software-united-states-ubq3x21dqk2a4dl3",
+      "score": 16,
+      "company": "Invicta Software",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 45000,
+        "max": 65000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/business-analyst-remote-rothe-development-united-states-30x3ixwl61enreqw": {
+      "title": "Business Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/business-analyst-remote-rothe-development-united-states-30x3ixwl61enreqw",
+      "score": 9,
+      "company": "Rothe Development",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-1-convergint-united-states-29fa5yi2h50x96a3": {
+      "title": "Technical Support Specialist 1",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-1-convergint-united-states-29fa5yi2h50x96a3",
+      "score": 7,
+      "company": "Convergint",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 20,
+        "max": 28,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/remote-investor-reporting-analyst-carrington-mortgage-services-orange-r4w9e5ooy4zbacok": {
+      "title": "Remote Investor Reporting Analyst",
+      "url": "https://hiringcafe.com/job/remote-investor-reporting-analyst-carrington-mortgage-services-orange-r4w9e5ooy4zbacok",
+      "score": 7,
+      "company": "Carrington Mortgage Services",
+      "location": "Orange, California, US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 31,
+        "max": 36,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-saas-representative-cellebrite-united-states-7xxinpc8rnirayf2": {
+      "title": "Technical Support SaaS Representative",
+      "url": "https://hiringcafe.com/job/technical-support-saas-representative-cellebrite-united-states-7xxinpc8rnirayf2",
+      "score": 11,
+      "company": "Cellebrite",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-startree-united-states-1x0ctjrqoxz3xer7": {
+      "title": "Technical Support Engineer",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-startree-united-states-1x0ctjrqoxz3xer7",
+      "score": 8,
+      "company": "StarTree",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-remote-steer-united-states-g0zvxwjvd3r9j92p": {
+      "title": "Technical Support Specialist - Remote",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-remote-steer-united-states-g0zvxwjvd3r9j92p",
+      "score": 17,
+      "company": "Steer",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-marketing-servicetitan-united-states-kyhylgowiz6dpjmw": {
+      "title": "Technical Support Specialist - Marketing",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-marketing-servicetitan-united-states-kyhylgowiz6dpjmw",
+      "score": 8,
+      "company": "ServiceTitan",
+      "location": "California, US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 19.61,
+        "max": 31.49,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/revenue-operations-analyst-tailscale-united-states-r8uc0vmecs8q1udp": {
+      "title": "Revenue Operations Analyst",
+      "url": "https://hiringcafe.com/job/revenue-operations-analyst-tailscale-united-states-r8uc0vmecs8q1udp",
+      "score": 33,
+      "company": "Tailscale",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 120000,
+        "max": 150000,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/it-support-and-systems-administration-remote-usa-omegahires-united-b4ygg8begvsxoctq": {
+      "title": "IT Support & Systems Administration (Remote, USA)",
+      "url": "https://hiringcafe.com/job/it-support-and-systems-administration-remote-usa-omegahires-united-b4ygg8begvsxoctq",
+      "score": 8,
+      "company": "OmegaHires",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "CONTRACTOR",
+      "salary": {
+        "min": 71,
+        "max": 81,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/salesforce-data360-developer-concentrix-texas-united-states-87fpu1iezt44v706": {
+      "title": "Salesforce Data360 Developer",
+      "url": "https://hiringcafe.com/job/salesforce-data360-developer-concentrix-texas-united-states-87fpu1iezt44v706",
+      "score": 20,
+      "company": "Concentrix",
+      "location": "Texas, US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 92250,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 8
+    },
+    "https://hiringcafe.com/job/sales-operations-analyst-jobgether-united-states-751ih9gmwb46i2iq": {
+      "title": "Sales Operations Analyst",
+      "url": "https://hiringcafe.com/job/sales-operations-analyst-jobgether-united-states-751ih9gmwb46i2iq",
+      "score": 29,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 88000,
+        "max": 126500,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/product-designer-salesforce-6769-metrostar-united-states-cicrwfxg46q6iikl": {
+      "title": "Product Designer (Salesforce) (6769)",
+      "url": "https://hiringcafe.com/job/product-designer-salesforce-6769-metrostar-united-states-cicrwfxg46q6iikl",
+      "score": 9,
+      "company": "MetroStar",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 140000,
+        "max": 160000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/msp-tier-1-it-support-technician-not-remote-teamlogic-it-durham-north-2r2h5tk061w9o92v": {
+      "title": "MSP Tier 1 IT Support Technician-Not Remote",
+      "url": "https://hiringcafe.com/job/msp-tier-1-it-support-technician-not-remote-teamlogic-it-durham-north-2r2h5tk061w9o92v",
+      "score": 9,
+      "company": "TeamLogic IT",
+      "location": "Durham, North Carolina, US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 22,
+        "max": 28,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/claims-business-analyst-remote-unitedhealth-group-plymouth-minnesota-8esetjzc1kb3m1x5": {
+      "title": "Claims Business Analyst - Remote",
+      "url": "https://hiringcafe.com/job/claims-business-analyst-remote-unitedhealth-group-plymouth-minnesota-8esetjzc1kb3m1x5",
+      "score": 7,
+      "company": "UnitedHealth Group",
+      "location": "Plymouth, Minnesota, US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60200,
+        "max": 107400,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 8
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-zenith-american-solutions-united-states-2h5bw1hsdpy8t7l3": {
+      "title": "Business Systems Analyst",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-zenith-american-solutions-united-states-2h5bw1hsdpy8t7l3",
+      "score": 8,
+      "company": "Zenith American Solutions",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/business-analyst-claritas-rx-united-states-z3m6ta584ol65us1": {
+      "title": "Business Analyst",
+      "url": "https://hiringcafe.com/job/business-analyst-claritas-rx-united-states-z3m6ta584ol65us1",
+      "score": 20,
+      "company": "Claritas Rx",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 115000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/customer-experience-data-analyst-empower-pharmacy-united-states-pdjlvevk2ynad5ov": {
+      "title": "Customer Experience Data Analyst",
+      "url": "https://hiringcafe.com/job/customer-experience-data-analyst-empower-pharmacy-united-states-pdjlvevk2ynad5ov",
+      "score": 18,
+      "company": "Empower Pharmacy",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/business-analyst-prestige-accounting-and-consulting-united-states-xmg7zks39p93wtk1": {
+      "title": "Business Analyst",
+      "url": "https://hiringcafe.com/job/business-analyst-prestige-accounting-and-consulting-united-states-xmg7zks39p93wtk1",
+      "score": 9,
+      "company": "Prestige Accounting & Consulting",
+      "location": "US",
+      "datePosted": "2026-08-02",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60000,
+        "max": 80000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/business-analyst-fp-and-a-inmarket-united-states-23hq9qh2p765zrrp": {
+      "title": "Business Analyst, FP&A",
+      "url": "https://hiringcafe.com/job/business-analyst-fp-and-a-inmarket-united-states-23hq9qh2p765zrrp",
+      "score": 17,
+      "company": "InMarket",
+      "location": "US",
+      "datePosted": "2026-07-29",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 150000,
+        "max": 225000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 8
+    },
+    "https://hiringcafe.com/job/data-analyst-onemagnify-michigan-united-states-hzgk0ayvbk080esq": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-onemagnify-michigan-united-states-hzgk0ayvbk080esq",
+      "score": 21,
+      "company": "OneMagnify",
+      "location": "Michigan, US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "lastSeenRun": 8
+    },
+    "https://hiringcafe.com/job/business-intelligence-analyst-enlyte-united-states-j01kx4sd597638a9": {
+      "title": "Business Intelligence Analyst",
+      "url": "https://hiringcafe.com/job/business-intelligence-analyst-enlyte-united-states-j01kx4sd597638a9",
+      "score": 17,
+      "company": "Enlyte",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60000,
+        "max": 90000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/salesforce-quality-assurance-tester-cherokee-federal-united-states-pi5gm18xhxvnp2fv": {
+      "title": "Salesforce Quality Assurance Tester",
+      "url": "https://hiringcafe.com/job/salesforce-quality-assurance-tester-cherokee-federal-united-states-pi5gm18xhxvnp2fv",
+      "score": 18,
+      "company": "Cherokee Federal",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 100000,
+        "max": 120000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/tier-1-crm-support-specialist-threshold-brands-united-states-5y04drt0e2xfxhs7": {
+      "title": "Tier 1 CRM Support Specialist",
+      "url": "https://hiringcafe.com/job/tier-1-crm-support-specialist-threshold-brands-united-states-5y04drt0e2xfxhs7",
+      "score": 13,
+      "company": "Threshold Brands",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 55000,
+        "max": 60000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 8
+    },
+    "https://hiringcafe.com/job/provider-data-management-specialist-enlyte-united-states-0n76dq5qginc9ioy": {
+      "title": "Provider Data Management Specialist",
+      "url": "https://hiringcafe.com/job/provider-data-management-specialist-enlyte-united-states-0n76dq5qginc9ioy",
+      "score": 9,
+      "company": "Enlyte",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 20,
+        "max": 25.5,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/business-analyst-ii-stewart-texas-united-states-iwf9tuv47n7e0edv": {
+      "title": "Business Analyst II",
+      "url": "https://hiringcafe.com/job/business-analyst-ii-stewart-texas-united-states-iwf9tuv47n7e0edv",
+      "score": 8,
+      "company": "Stewart",
+      "location": "Texas, US",
+      "datePosted": "2026-08-01",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-silverfort-united-states-tybrj3qkw15yoxss": {
+      "title": "Technical Support Engineer",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-silverfort-united-states-tybrj3qkw15yoxss",
+      "score": 17,
+      "company": "Silverfort",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/technical-business-analyst-national-university-united-states-ct52c9aggk2v028r": {
+      "title": "Technical Business Analyst",
+      "url": "https://hiringcafe.com/job/technical-business-analyst-national-university-united-states-ct52c9aggk2v028r",
+      "score": 20,
+      "company": "National University",
+      "location": "California, US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 62579,
+        "max": 84480,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 8
+    },
+    "https://hiringcafe.com/job/data-analyst-intern-aura-finance-united-states-wqsc05vvl77wytq4": {
+      "title": "Data Analyst Intern",
+      "url": "https://hiringcafe.com/job/data-analyst-intern-aura-finance-united-states-wqsc05vvl77wytq4",
+      "score": 15,
+      "company": "Aura Finance",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "INTERN",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/data-analyst-revenuecat-united-states-jf1gktwmjihbis9t": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-revenuecat-united-states-jf1gktwmjihbis9t",
+      "score": 13,
+      "company": "RevenueCat",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/data-analyst-careerswift-united-states-9x72l1aaam0bfpiz": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-careerswift-united-states-9x72l1aaam0bfpiz",
+      "score": 19,
+      "company": "CareerSwift",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/data-analyst-one-more-child-united-states-qk5q19lx9p5bkrxr": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-one-more-child-united-states-qk5q19lx9p5bkrxr",
+      "score": 19,
+      "company": "One More Child",
+      "location": "US",
+      "datePosted": "2026-08-03",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 75000,
+        "max": 85000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-i-ii-mutual-of-omaha-united-states-fvgu96zatllr644p": {
+      "title": "Business Systems Analyst I/II",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-i-ii-mutual-of-omaha-united-states-fvgu96zatllr644p",
+      "score": 7,
+      "company": "Mutual of Omaha",
+      "location": "US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 70000,
+        "max": 75000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "lastSeenRun": 8
+    },
+    "https://hiringcafe.com/job/data-analyst-jobgether-united-states-4ct2rmap1x8jck0n": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-jobgether-united-states-4ct2rmap1x8jck0n",
+      "score": 12,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 65000,
+        "max": 71000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-intelligence-analyst-enlyte-united-states-w3l72pa2k75luwye": {
+      "title": "Business Intelligence Analyst",
+      "url": "https://hiringcafe.com/job/business-intelligence-analyst-enlyte-united-states-w3l72pa2k75luwye",
+      "score": 17,
+      "company": "Enlyte",
+      "location": "US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60000,
+        "max": 90000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/msp-tier-1-it-support-technician-not-remote-teamlogic-it-memphis-1twba8is6n3z6wos": {
+      "title": "MSP Tier 1 IT Support Technician-Not Remote",
+      "url": "https://hiringcafe.com/job/msp-tier-1-it-support-technician-not-remote-teamlogic-it-memphis-1twba8is6n3z6wos",
+      "score": 9,
+      "company": "TeamLogic IT Memphis",
+      "location": "Durham, North Carolina, US",
+      "datePosted": "2026-08-04",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 22,
+        "max": 28,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-scrum-master-jobgether-united-states-kvyseb99hqs0lcn9": {
+      "title": "Business Systems Analyst / Scrum Master",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-scrum-master-jobgether-united-states-kvyseb99hqs0lcn9",
+      "score": 16,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 72877,
+        "max": 98599,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-penn-foster-group-united-states-7sa3khdw4j9rx35g": {
+      "title": "Business Systems Analyst",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-penn-foster-group-united-states-7sa3khdw4j9rx35g",
+      "score": 24,
+      "company": "Penn Foster Group",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-3rd-shift-remote-pregis-tulsa-oklahoma-9sk4h9miy1zce0od": {
+      "title": "Technical Support Specialist - 3rd Shift - REMOTE",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-3rd-shift-remote-pregis-tulsa-oklahoma-9sk4h9miy1zce0od",
+      "score": 19,
+      "company": "Pregis",
+      "location": "Tulsa, Oklahoma, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/data-analyst-jobgether-united-states-qcpk6nm47f9e45nu": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-jobgether-united-states-qcpk6nm47f9e45nu",
+      "score": 14,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 10
+    },
+    "https://hiringcafe.com/job/middle-school-technical-support-liaison-stride-michigan-united-states-bfs2q51milo5eyg9": {
+      "title": "Middle School Technical Support Liaison",
+      "url": "https://hiringcafe.com/job/middle-school-technical-support-liaison-stride-michigan-united-states-bfs2q51milo5eyg9",
+      "score": 7,
+      "company": "Stride",
+      "location": "Michigan, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/business-support-and-crm-coordinator-jobgether-united-states-nz2t3jtg6vwiavcq": {
+      "title": "Business Support & CRM Coordinator",
+      "url": "https://hiringcafe.com/job/business-support-and-crm-coordinator-jobgether-united-states-nz2t3jtg6vwiavcq",
+      "score": 12,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME, CONTRACTOR",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 11
+    },
+    "https://hiringcafe.com/job/systems-administrator-mci-group-washington-united-states-18hwtly4y1hr778c": {
+      "title": "Systems Administrator",
+      "url": "https://hiringcafe.com/job/systems-administrator-mci-group-washington-united-states-18hwtly4y1hr778c",
+      "score": 7,
+      "company": "MCI Group",
+      "location": "Washington, US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 28.84,
+        "max": 33.65,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/business-analyst-adapthealth-united-states-jwn7929ofjyo7afp": {
+      "title": "Business Analyst",
+      "url": "https://hiringcafe.com/job/business-analyst-adapthealth-united-states-jwn7929ofjyo7afp",
+      "score": 7,
+      "company": "AdaptHealth",
+      "location": "US",
+      "datePosted": "2026-07-30",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/business-analyst-cai-united-states-i8wxws2i9wkrbfuc": {
+      "title": "Business Analyst",
+      "url": "https://hiringcafe.com/job/business-analyst-cai-united-states-i8wxws2i9wkrbfuc",
+      "score": 13,
+      "company": "CAI",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME, CONTRACTOR",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/client-services-coordinator-jobgether-united-states-24gds5zpn2mz9xwr": {
+      "title": "Client Services Coordinator",
+      "url": "https://hiringcafe.com/job/client-services-coordinator-jobgether-united-states-24gds5zpn2mz9xwr",
+      "score": 5,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60000,
+        "max": 65000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/accounting-operations-analyst-contractor-jobgether-united-states-n1kehrjkg6toj13n": {
+      "title": "Accounting Operations Analyst Contractor",
+      "url": "https://hiringcafe.com/job/accounting-operations-analyst-contractor-jobgether-united-states-n1kehrjkg6toj13n",
+      "score": 11,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "CONTRACTOR",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 12
+    },
+    "https://hiringcafe.com/job/remote-customer-success-associate-entry-level-american-income-life-yo1i3f1kk83iwuyw": {
+      "title": "Remote Customer Success Associate – Entry Level",
+      "url": "https://hiringcafe.com/job/remote-customer-success-associate-entry-level-american-income-life-yo1i3f1kk83iwuyw",
+      "score": 5,
+      "company": "American Income Life",
+      "location": "Virginia Beach, Virginia, US",
+      "datePosted": "2026-08-09",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-sat-wed-attio-united-states-c9f6xb7lo5ymaxbf": {
+      "title": "Technical Support Specialist  [Sat - Wed]",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-sat-wed-attio-united-states-c9f6xb7lo5ymaxbf",
+      "score": 9,
+      "company": "Attio",
+      "location": "California, US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 85000,
+        "max": 95000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/data-analyst-i-remote-r3-continuum-bloomington-minnesota-52bk7lby4fqw095g": {
+      "title": "Data Analyst I - Remote",
+      "url": "https://hiringcafe.com/job/data-analyst-i-remote-r3-continuum-bloomington-minnesota-52bk7lby4fqw095g",
+      "score": 17,
+      "company": "R3 Continuum",
+      "location": "Bloomington, Minnesota, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 24.83,
+        "max": 28.65,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/helpdesk-technician-ii-cybersheath-united-states-x05yk7vrje3wap5g": {
+      "title": "Helpdesk Technician II",
+      "url": "https://hiringcafe.com/job/helpdesk-technician-ii-cybersheath-united-states-x05yk7vrje3wap5g",
+      "score": 7,
+      "company": "CyberSheath",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 70000,
+        "max": 83000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/strategic-operations-analyst-systems-and-execution-rmi-united-states-t4usqrv40vdf76rn": {
+      "title": "Strategic Operations Analyst, Systems & Execution",
+      "url": "https://hiringcafe.com/job/strategic-operations-analyst-systems-and-execution-rmi-united-states-t4usqrv40vdf76rn",
+      "score": 20,
+      "company": "RMI",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 79760,
+        "max": 98300,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/part-time-school-data-analyst-stride-florida-united-states-ulvqbczve9ebjdur": {
+      "title": "Part Time School Data Analyst",
+      "url": "https://hiringcafe.com/job/part-time-school-data-analyst-stride-florida-united-states-ulvqbczve9ebjdur",
+      "score": 15,
+      "company": "Stride",
+      "location": "Florida, US",
+      "datePosted": "2026-08-07",
+      "employmentType": "PART_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/sales-data-analyst-workiva-united-states-xy1irwo7mvserr9g": {
+      "title": "Sales Data Analyst",
+      "url": "https://hiringcafe.com/job/sales-data-analyst-workiva-united-states-xy1irwo7mvserr9g",
+      "score": 22,
+      "company": "Workiva",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 83000,
+        "max": 134000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-block-california-united-states-y3oj8boiurrssdcd": {
+      "title": "Business Systems Analyst",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-block-california-united-states-y3oj8boiurrssdcd",
+      "score": 13,
+      "company": "Block",
+      "location": "California, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 135800,
+        "max": 245400,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-platform-support-talkdesk-united-states-ykh98odoi3hzvvwt": {
+      "title": "Technical Support Engineer - Platform Support",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-platform-support-talkdesk-united-states-ykh98odoi3hzvvwt",
+      "score": 8,
+      "company": "Talkdesk",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 45073,
+        "max": 79497,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-2nd-shift-remote-pregis-tulsa-oklahoma-iitwqhoovoy4kipl": {
+      "title": "Technical Support Specialist - 2nd Shift - REMOTE",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-2nd-shift-remote-pregis-tulsa-oklahoma-iitwqhoovoy4kipl",
+      "score": 19,
+      "company": "Pregis",
+      "location": "Tulsa, Oklahoma, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/remote-data-entry-rep-remote-customer-service-rep-remote-data-analyst-i0pa6i03fblhkzff": {
+      "title": "Remote Data Entry Rep/ Remote Customer Service Rep/ Remote Data Analyst",
+      "url": "https://hiringcafe.com/job/remote-data-entry-rep-remote-customer-service-rep-remote-data-analyst-i0pa6i03fblhkzff",
+      "score": 16,
+      "company": "The CPS Store",
+      "location": "Kansas City, Missouri, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 58000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/commercial-data-analyst-jobgether-united-states-i97dyfdb6kq5epss": {
+      "title": "Commercial Data Analyst",
+      "url": "https://hiringcafe.com/job/commercial-data-analyst-jobgether-united-states-i97dyfdb6kq5epss",
+      "score": 12,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 95000,
+        "max": 120000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/market-and-data-analyst-workana-united-states-zawmyeg2enrvlxw9": {
+      "title": "Market & Data Analyst",
+      "url": "https://hiringcafe.com/job/market-and-data-analyst-workana-united-states-zawmyeg2enrvlxw9",
+      "score": 18,
+      "company": "Workana",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 13
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-commercial-chiller-equipment-remote-trane-t60ftke1qzgmtxsp": {
+      "title": "Technical Support Engineer (Commercial Chiller Equipment)- Remote",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-commercial-chiller-equipment-remote-trane-t60ftke1qzgmtxsp",
+      "score": 5,
+      "company": "Trane Technologies",
+      "location": "La Crosse, Wisconsin, US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 97406.66,
+        "max": 135834.99,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-g9xromtstl6vmbgi": {
+      "title": "Workday Payroll and People Operations Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-g9xromtstl6vmbgi",
+      "score": 10,
+      "company": "Progressive Leasing",
+      "location": "Texas, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/security-operations-analyst-east-coast-huntress-united-states-3mutjkwx4tkf22td": {
+      "title": "Security Operations Analyst- East Coast",
+      "url": "https://hiringcafe.com/job/security-operations-analyst-east-coast-huntress-united-states-3mutjkwx4tkf22td",
+      "score": 8,
+      "company": "Huntress",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 100000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/help-desk-analyst-servicenow-phoenix-local-mostly-remote-w2-contract-j56irrs7wuv5n1jq": {
+      "title": "Help Desk Analyst – ServiceNow – Phoenix Local (Mostly Remote) - W2 Contract",
+      "url": "https://hiringcafe.com/job/help-desk-analyst-servicenow-phoenix-local-mostly-remote-w2-contract-j56irrs7wuv5n1jq",
+      "score": 12,
+      "company": "SunSoft Online",
+      "location": "Phoenix, Arizona, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME, CONTRACTOR",
+      "salary": {
+        "min": 22,
+        "max": 25,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/pega-platform-systems-administrator-technatomy-united-states-fnqmei4qu4wdek34": {
+      "title": "Pega Platform Systems Administrator",
+      "url": "https://hiringcafe.com/job/pega-platform-systems-administrator-technatomy-united-states-fnqmei4qu4wdek34",
+      "score": 10,
+      "company": "Technatomy",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/business-analyst-i-or-ii-the-toro-company-minnesota-united-states-xmjb7h9gsuc17k9b": {
+      "title": "Business Analyst I or II",
+      "url": "https://hiringcafe.com/job/business-analyst-i-or-ii-the-toro-company-minnesota-united-states-xmjb7h9gsuc17k9b",
+      "score": 5,
+      "company": "The Toro Company",
+      "location": "Minnesota, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 69000,
+        "max": 85000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/sales-and-marketing-data-analyst-servicemaster-brands-united-states-r1kzob2p3fcmv5l9": {
+      "title": "Sales & Marketing Data Analyst",
+      "url": "https://hiringcafe.com/job/sales-and-marketing-data-analyst-servicemaster-brands-united-states-r1kzob2p3fcmv5l9",
+      "score": 17,
+      "company": "ServiceMaster Brands",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 14
+    },
+    "https://hiringcafe.com/job/salesforce-developer-remote-usa-icf-united-states-xnzspipam8fow17k": {
+      "title": "Salesforce Developer - Remote (USA)",
+      "url": "https://hiringcafe.com/job/salesforce-developer-remote-usa-icf-united-states-xnzspipam8fow17k",
+      "score": 11,
+      "company": "ICF",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 81499,
+        "max": 138549,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/customer-success-associate-spring-health-united-states-4fu07ge72lmspfru": {
+      "title": "Customer Success Associate",
+      "url": "https://hiringcafe.com/job/customer-success-associate-spring-health-united-states-4fu07ge72lmspfru",
+      "score": 12,
+      "company": "Spring Health",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 31.969999999999995,
+        "max": 36.3,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/information-technology-help-desk-technician-pacemate-united-states-ik3rnzs8zwwbysxv": {
+      "title": "Information Technology Help Desk Technician",
+      "url": "https://hiringcafe.com/job/information-technology-help-desk-technician-pacemate-united-states-ik3rnzs8zwwbysxv",
+      "score": 7,
+      "company": "PaceMate",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60000,
+        "max": 65000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/salesforce-administrator-technatomy-united-states-sa10qkdptprkobmb": {
+      "title": "Salesforce Administrator",
+      "url": "https://hiringcafe.com/job/salesforce-administrator-technatomy-united-states-sa10qkdptprkobmb",
+      "score": 23,
+      "company": "Technatomy",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/2027-data-analyst-summer-internship-minneapolis-hybrid-remote-iz143d3rwt4r8x4g": {
+      "title": "2027 Data Analyst Summer Internship – Minneapolis (Hybrid/Remote)",
+      "url": "https://hiringcafe.com/job/2027-data-analyst-summer-internship-minneapolis-hybrid-remote-iz143d3rwt4r8x4g",
+      "score": 7,
+      "company": "Milliman",
+      "location": "Minneapolis, Minnesota, US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME, INTERN",
+      "salary": {
+        "min": 19,
+        "max": 42,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/empower-help-desk-cornerstone-capital-bank-united-states-qwb2s32rr1kznozc": {
+      "title": "Empower Help Desk",
+      "url": "https://hiringcafe.com/job/empower-help-desk-cornerstone-capital-bank-united-states-qwb2s32rr1kznozc",
+      "score": 6,
+      "company": "Cornerstone Capital Bank",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 55000,
+        "max": 60000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/entry-level-it-helpdesk-technician-remote-united-states-yelp-chicago-y5xriqxtk9g3lujh": {
+      "title": "Entry-Level IT Helpdesk Technician (Remote - United States)",
+      "url": "https://hiringcafe.com/job/entry-level-it-helpdesk-technician-remote-united-states-yelp-chicago-y5xriqxtk9g3lujh",
+      "score": 9,
+      "company": "Yelp",
+      "location": "Chicago, Illinois, US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 44000,
+        "max": 60000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/business-intelligence-analyst-ii-goguardian-united-states-37g1ymnoa8l9ju3x": {
+      "title": "Business Intelligence Analyst II",
+      "url": "https://hiringcafe.com/job/business-intelligence-analyst-ii-goguardian-united-states-37g1ymnoa8l9ju3x",
+      "score": 18,
+      "company": "GoGuardian",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 115000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/data-analyst-velocity-united-states-pq3u70etfx5ykdwv": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-velocity-united-states-pq3u70etfx5ykdwv",
+      "score": 19,
+      "company": "Velocity",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/content-operations-analyst-jobgether-united-states-tiek4ipmzm4c81iu": {
+      "title": "Content Operations Analyst",
+      "url": "https://hiringcafe.com/job/content-operations-analyst-jobgether-united-states-tiek4ipmzm4c81iu",
+      "score": 11,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "CONTRACTOR",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/pos-technical-support-specialist-jobgether-united-states-1fi7b0dlx7dyj5y9": {
+      "title": "POS Technical Support Specialist",
+      "url": "https://hiringcafe.com/job/pos-technical-support-specialist-jobgether-united-states-1fi7b0dlx7dyj5y9",
+      "score": 7,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 20,
+        "max": 28,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-2nd-shift-remote-pregis-tulsa-oklahoma-w7lim9bjs7icu37s": {
+      "title": "Technical Support Specialist - 2nd Shift - REMOTE",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-2nd-shift-remote-pregis-tulsa-oklahoma-w7lim9bjs7icu37s",
+      "score": 19,
+      "company": "Pregis",
+      "location": "Tulsa, Oklahoma, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/revenue-operations-analyst-boulevard-united-states-t2hclmupi7awkzhz": {
+      "title": "Revenue Operations Analyst",
+      "url": "https://hiringcafe.com/job/revenue-operations-analyst-boulevard-united-states-t2hclmupi7awkzhz",
+      "score": 29,
+      "company": "Boulevard",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 102000,
+        "max": 120500,
+        "unit": "YEAR"
+      },
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/reporting-analyst-rops-davita-pennsylvania-united-states-40qln6shwtohlh8k": {
+      "title": "Reporting Analyst (ROPS)",
+      "url": "https://hiringcafe.com/job/reporting-analyst-rops-davita-pennsylvania-united-states-40qln6shwtohlh8k",
+      "score": 17,
+      "company": "DaVita",
+      "location": "Pennsylvania, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 57784,
+        "max": 85000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/business-analyst-scrum-master-technatomy-united-states-hwrv6ahwbgdngft2": {
+      "title": "Business Analyst/Scrum Master",
+      "url": "https://hiringcafe.com/job/business-analyst-scrum-master-technatomy-united-states-hwrv6ahwbgdngft2",
+      "score": 12,
+      "company": "Technatomy",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/cx-systems-administrator-tithely-united-states-0v1apjy218f7t1yh": {
+      "title": "CX Systems Administrator",
+      "url": "https://hiringcafe.com/job/cx-systems-administrator-tithely-united-states-0v1apjy218f7t1yh",
+      "score": 10,
+      "company": "Tithely",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 65000,
+        "max": 80000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/ai-data-analyst-journeyman-ksa-integration-united-states-c7q9cuap80fsfk6t": {
+      "title": "AI Data Analyst, Journeyman",
+      "url": "https://hiringcafe.com/job/ai-data-analyst-journeyman-ksa-integration-united-states-c7q9cuap80fsfk6t",
+      "score": 13,
+      "company": "KSA Integration",
+      "location": "US",
+      "datePosted": "2026-08-08",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 100000,
+        "max": 120000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/salesforce-developer-technatomy-united-states-minwrcunde4pwaq6": {
+      "title": "Salesforce Developer",
+      "url": "https://hiringcafe.com/job/salesforce-developer-technatomy-united-states-minwrcunde4pwaq6",
+      "score": 14,
+      "company": "Technatomy",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/data-analyst-ii-goldbelt-professional-services-united-states-dr0hx7onxrv0uzrl": {
+      "title": "Data Analyst II",
+      "url": "https://hiringcafe.com/job/data-analyst-ii-goldbelt-professional-services-united-states-dr0hx7onxrv0uzrl",
+      "score": 20,
+      "company": "Goldbelt Professional Services",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 85000,
+        "max": 105000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/entry-level-it-helpdesk-technician-remote-united-states-yelp-united-lz0156da81c6k4cu": {
+      "title": "Entry-Level IT Helpdesk Technician (Remote - United States)",
+      "url": "https://hiringcafe.com/job/entry-level-it-helpdesk-technician-remote-united-states-yelp-united-lz0156da81c6k4cu",
+      "score": 9,
+      "company": "Yelp",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 44000,
+        "max": 60000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-penn-foster-group-united-states-tkody4risee3e0tb": {
+      "title": "Business Systems Analyst",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-penn-foster-group-united-states-tkody4risee3e0tb",
+      "score": 24,
+      "company": "Penn Foster Group",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 15
+    },
+    "https://hiringcafe.com/job/salesforce-business-systems-administrator-salesloft-united-states-0778cf5gvkdyji17": {
+      "title": "Salesforce Business Systems Administrator",
+      "url": "https://hiringcafe.com/job/salesforce-business-systems-administrator-salesloft-united-states-0778cf5gvkdyji17",
+      "score": 16,
+      "company": "Salesloft",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 2,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-greenhouse-united-states-fa5ex5suw9xiojj0": {
+      "title": "Technical Support Specialist",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-greenhouse-united-states-fa5ex5suw9xiojj0",
+      "score": 9,
+      "company": "Greenhouse",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 55800,
+        "max": 63500,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-mutual-group-united-states-xmdbttk8mu7l2vdb": {
+      "title": "Business Systems Analyst",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-mutual-group-united-states-xmdbttk8mu7l2vdb",
+      "score": 13,
+      "company": "Mutual Group",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 95000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-business-analyst-people-tech-amplify-united-states-ukzoma80fgircmbz": {
+      "title": "Technical Business Analyst, People Tech",
+      "url": "https://hiringcafe.com/job/technical-business-analyst-people-tech-amplify-united-states-ukzoma80fgircmbz",
+      "score": 13,
+      "company": "Amplify",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 95000,
+        "max": 105000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/data-analyst-2-remote-unitedhealth-group-plymouth-minnesota-336lv1ze19caiuop": {
+      "title": "Data Analyst 2 - Remote",
+      "url": "https://hiringcafe.com/job/data-analyst-2-remote-unitedhealth-group-plymouth-minnesota-336lv1ze19caiuop",
+      "score": 17,
+      "company": "UnitedHealth Group",
+      "location": "Plymouth, Minnesota, US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 72800,
+        "max": 130000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-ii-makpar-united-states-o611gtngikzycgxr": {
+      "title": "Business Systems Analyst II",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-ii-makpar-united-states-o611gtngikzycgxr",
+      "score": 9,
+      "company": "Makpar",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/it-service-desk-agent-i-nordic-united-states-nc5xork1ryflqnz4": {
+      "title": "IT Service Desk Agent I",
+      "url": "https://hiringcafe.com/job/it-service-desk-agent-i-nordic-united-states-nc5xork1ryflqnz4",
+      "score": 9,
+      "company": "Nordic",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-i-gofundme-united-states-8f732rs1ai0x0wwc": {
+      "title": "Technical Support Engineer I",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-i-gofundme-united-states-8f732rs1ai0x0wwc",
+      "score": 9,
+      "company": "GoFundMe",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 59500,
+        "max": 82000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/remote-business-analyst-spanish-turing-buenos-aires-buenos-aires-ygpdsfpei6ga1656": {
+      "title": "Remote Business Analyst - Spanish",
+      "url": "https://hiringcafe.com/job/remote-business-analyst-spanish-turing-buenos-aires-buenos-aires-ygpdsfpei6ga1656",
+      "score": 7,
+      "company": "Turing",
+      "location": "Buenos Aires, Buenos Aires, AR",
+      "datePosted": "2026-08-10",
+      "employmentType": "CONTRACTOR",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/apprentice-business-analyst-public-consulting-group-united-states-tlqao5pklysyp5ix": {
+      "title": "Apprentice Business Analyst",
+      "url": "https://hiringcafe.com/job/apprentice-business-analyst-public-consulting-group-united-states-tlqao5pklysyp5ix",
+      "score": 5,
+      "company": "Public Consulting Group",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 52300,
+        "max": 62300,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/salesforce-consultant-1099-contractor-revecore-united-states-0y6rpcw0oxs6d6q1": {
+      "title": "Salesforce Consultant (1099 Contractor)",
+      "url": "https://hiringcafe.com/job/salesforce-consultant-1099-contractor-revecore-united-states-0y6rpcw0oxs6d6q1",
+      "score": 14,
+      "company": "Revecore",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "CONTRACTOR",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/remote-data-entry-rep-remote-customer-service-rep-remote-data-analyst-evbr3867uviemd2b": {
+      "title": "Remote Data Entry Rep/ Remote Customer Service Rep/ Remote Data Analyst",
+      "url": "https://hiringcafe.com/job/remote-data-entry-rep-remote-customer-service-rep-remote-data-analyst-evbr3867uviemd2b",
+      "score": 16,
+      "company": "Qureos",
+      "location": "Kansas City, Missouri, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 58000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/ai-data-analyst-junior-ksa-integration-united-states-5wdqagyh14bczxot": {
+      "title": "AI Data Analyst Junior",
+      "url": "https://hiringcafe.com/job/ai-data-analyst-junior-ksa-integration-united-states-5wdqagyh14bczxot",
+      "score": 16,
+      "company": "KSA Integration",
+      "location": "US",
+      "datePosted": "2026-08-08",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 75000,
+        "max": 100000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/data-analyst-obie-united-states-cwfnzv45dvvgl0p0": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-obie-united-states-cwfnzv45dvvgl0p0",
+      "score": 16,
+      "company": "Obie",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 70000,
+        "max": 90000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-product-owner-business-analyst-jobgether-united-states-wwdz82agribgn67o": {
+      "title": "Technical Product Owner/Business Analyst",
+      "url": "https://hiringcafe.com/job/technical-product-owner-business-analyst-jobgether-united-states-wwdz82agribgn67o",
+      "score": 20,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-11",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-analyst-i-cable-one-united-states-al7fjcg6wsnnv055": {
+      "title": "Business Analyst I",
+      "url": "https://hiringcafe.com/job/business-analyst-i-cable-one-united-states-al7fjcg6wsnnv055",
+      "score": 13,
+      "company": "Cable One",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/salesforce-technical-evangelist-flosum-united-states-u6871q52edttamie": {
+      "title": "Salesforce Technical Evangelist",
+      "url": "https://hiringcafe.com/job/salesforce-technical-evangelist-flosum-united-states-u6871q52edttamie",
+      "score": 7,
+      "company": "Flosum",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/supply-chain-operations-analyst-id-logistics-united-states-3a98fy3joxr7c4kv": {
+      "title": "Supply Chain Operations Analyst",
+      "url": "https://hiringcafe.com/job/supply-chain-operations-analyst-id-logistics-united-states-3a98fy3joxr7c4kv",
+      "score": 22,
+      "company": "ID Logistics",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 71000,
+        "max": 96000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/developer-ii-salesforce-remote-from-anywhere-in-colorado-state-of-9t7b36rujp5u42l2": {
+      "title": "Developer II (Salesforce) (Remote From Anywhere In Colorado)",
+      "url": "https://hiringcafe.com/job/developer-ii-salesforce-remote-from-anywhere-in-colorado-state-of-9t7b36rujp5u42l2",
+      "score": 10,
+      "company": "State of Colorado",
+      "location": "Colorado, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 85000,
+        "max": 100000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-engineer-remote-overnight-databank-dallas-texas-4omegjg13yvf74nn": {
+      "title": "Technical Support Engineer  (Remote/Overnight)",
+      "url": "https://hiringcafe.com/job/technical-support-engineer-remote-overnight-databank-dallas-texas-4omegjg13yvf74nn",
+      "score": 11,
+      "company": "DataBank",
+      "location": "Dallas, Texas, US",
+      "datePosted": "2026-07-31",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/data-analyst-jobgether-united-states-uva77gwzupkm710n": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-jobgether-united-states-uva77gwzupkm710n",
+      "score": 13,
+      "company": "Jobgether",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/retirement-and-wealth-business-analyst-remote-inspira-financial-oak-247jydtx4vxmsifs": {
+      "title": "Retirement and Wealth - Business Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/retirement-and-wealth-business-analyst-remote-inspira-financial-oak-247jydtx4vxmsifs",
+      "score": 13,
+      "company": "Inspira Financial",
+      "location": "Oak Brook, Illinois, US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 82000,
+        "max": 107000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-b9ssso8utbztikj2": {
+      "title": "Workday Payroll and People Operations Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-b9ssso8utbztikj2",
+      "score": 10,
+      "company": "Progressive Leasing",
+      "location": "Georgia, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-bjapfmi75kqbsyao": {
+      "title": "Workday Payroll and People Operations Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-bjapfmi75kqbsyao",
+      "score": 10,
+      "company": "Progressive Leasing",
+      "location": "Utah, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-eac58sraqz1kft87": {
+      "title": "Workday Payroll and People Operations Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-eac58sraqz1kft87",
+      "score": 10,
+      "company": "Progressive Leasing",
+      "location": "Michigan, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-hph4k5g2t8vlpplv": {
+      "title": "Workday Payroll and People Operations Analyst (Remote)",
+      "url": "https://hiringcafe.com/job/workday-payroll-and-people-operations-analyst-remote-progressive-hph4k5g2t8vlpplv",
+      "score": 10,
+      "company": "Progressive Leasing",
+      "location": "Florida, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/service-desk-analyst-remote-nm-tx-az-only-unitybpo-new-mexico-x8hx08hzdp8eptqd": {
+      "title": "Service Desk Analyst, Remote - NM, TX, AZ only",
+      "url": "https://hiringcafe.com/job/service-desk-analyst-remote-nm-tx-az-only-unitybpo-new-mexico-x8hx08hzdp8eptqd",
+      "score": 6,
+      "company": "UnityBPO",
+      "location": "New Mexico, US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/legal-operations-analyst-docusign-united-states-ptlecengkduyqt95": {
+      "title": "Legal Operations Analyst",
+      "url": "https://hiringcafe.com/job/legal-operations-analyst-docusign-united-states-ptlecengkduyqt95",
+      "score": 9,
+      "company": "DocuSign",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 90200,
+        "max": 163450,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/data-analyst-goldbelt-district-of-columbia-united-states-m59h1m0dnpklluz3": {
+      "title": "Data Analyst",
+      "url": "https://hiringcafe.com/job/data-analyst-goldbelt-district-of-columbia-united-states-m59h1m0dnpklluz3",
+      "score": 16,
+      "company": "Goldbelt",
+      "location": "District of Columbia, US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 110000,
+        "max": 130000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/data-analyst-ii-goldbelt-united-states-i0u2tfn221yr2kxn": {
+      "title": "Data Analyst II",
+      "url": "https://hiringcafe.com/job/data-analyst-ii-goldbelt-united-states-i0u2tfn221yr2kxn",
+      "score": 20,
+      "company": "Goldbelt",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 85000,
+        "max": 105000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/tier-3-technical-support-drfirst-united-states-zmweskrnh97h6o4n": {
+      "title": "Tier 3 Technical Support",
+      "url": "https://hiringcafe.com/job/tier-3-technical-support-drfirst-united-states-zmweskrnh97h6o4n",
+      "score": 18,
+      "company": "DrFirst",
+      "location": "US",
+      "datePosted": "2026-08-09",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 115000,
+        "max": 125000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-intelligence-analyst-eversheds-sutherland-united-states-dizxgyyjhfmd0i40": {
+      "title": "Business Intelligence Analyst",
+      "url": "https://hiringcafe.com/job/business-intelligence-analyst-eversheds-sutherland-united-states-dizxgyyjhfmd0i40",
+      "score": 22,
+      "company": "Eversheds Sutherland",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 110000,
+        "max": 140000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-tier-1-careerswift-united-states-xrd43cdg038j977k": {
+      "title": "Technical Support Specialist, Tier 1",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-tier-1-careerswift-united-states-xrd43cdg038j977k",
+      "score": 7,
+      "company": "CareerSwift",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 20,
+        "max": 27,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/systems-administrator-climate-first-bank-united-states-rj1ydc97ah9ync5q": {
+      "title": "Systems Administrator",
+      "url": "https://hiringcafe.com/job/systems-administrator-climate-first-bank-united-states-rj1ydc97ah9ync5q",
+      "score": 7,
+      "company": "Climate First Bank",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-reliable-security-staffing-united-states-zvm5zbxc10pdb7ad": {
+      "title": "Technical Support Specialist",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-reliable-security-staffing-united-states-zvm5zbxc10pdb7ad",
+      "score": 9,
+      "company": "Reliable Security Staffing",
+      "location": "US",
+      "datePosted": "2026-08-08",
+      "employmentType": "FULL_TIME, PART_TIME",
+      "salary": {
+        "min": 58000,
+        "max": 76000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-analyst-remote-wfh-cognitive-medical-systems-united-states-lenhw73u8nzcsffu": {
+      "title": "Business Analyst - Remote (WFH)",
+      "url": "https://hiringcafe.com/job/business-analyst-remote-wfh-cognitive-medical-systems-united-states-lenhw73u8nzcsffu",
+      "score": 11,
+      "company": "Cognitive Medical Systems",
+      "location": "US",
+      "datePosted": "2026-08-11",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 80000,
+        "max": 110000,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-operations-analyst-varonis-united-states-kbwd5su3ukknovxi": {
+      "title": "Business Operations Analyst",
+      "url": "https://hiringcafe.com/job/business-operations-analyst-varonis-united-states-kbwd5su3ukknovxi",
+      "score": 17,
+      "company": "Varonis",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/remote-technical-support-engineer-ii-fusiontek-united-states-tk720ujkh9i202qu": {
+      "title": "Remote Technical Support Engineer II",
+      "url": "https://hiringcafe.com/job/remote-technical-support-engineer-ii-fusiontek-united-states-tk720ujkh9i202qu",
+      "score": 7,
+      "company": "FusionTek",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 30,
+        "max": 35,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/data-analyst-mid-progressive-united-states-4dslum35l3qa2imo": {
+      "title": "Data Analyst Mid",
+      "url": "https://hiringcafe.com/job/data-analyst-mid-progressive-united-states-4dslum35l3qa2imo",
+      "score": 12,
+      "company": "Progressive",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 67300,
+        "max": 89700,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-systems-analyst-remote-eligible-boise-state-university-boise-rvdudd6ays5nj174": {
+      "title": "Business Systems Analyst (Remote Eligible)",
+      "url": "https://hiringcafe.com/job/business-systems-analyst-remote-eligible-boise-state-university-boise-rvdudd6ays5nj174",
+      "score": 10,
+      "company": "Boise State University",
+      "location": "Boise, Idaho, US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 64001.6,
+        "max": 66589.2,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/operations-analyst-nordic-united-states-df4ozd6b9arw68qb": {
+      "title": "Operations Analyst",
+      "url": "https://hiringcafe.com/job/operations-analyst-nordic-united-states-df4ozd6b9arw68qb",
+      "score": 24,
+      "company": "Nordic",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/business-analyst-vsp-vision-united-states-mkdt154y02admbkr": {
+      "title": "Business Analyst",
+      "url": "https://hiringcafe.com/job/business-analyst-vsp-vision-united-states-mkdt154y02admbkr",
+      "score": 8,
+      "company": "VSP Vision",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 58656,
+        "max": 92328,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/online-data-analyst-spanish-speaker-us-remote-telus-international-las-9nz3zxu0tjf4xgsj": {
+      "title": "Online Data Analyst Spanish Speaker | US (Remote)",
+      "url": "https://hiringcafe.com/job/online-data-analyst-spanish-speaker-us-remote-telus-international-las-9nz3zxu0tjf4xgsj",
+      "score": 5,
+      "company": "TELUS International",
+      "location": "Las Vegas, Nevada, US",
+      "datePosted": "2026-08-10",
+      "employmentType": "PART_TIME, CONTRACTOR",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/instructional-assistant-it-support-per-scholas-united-states-vhwd4iwqpsmmqrai": {
+      "title": "Instructional Assistant (IT Support)",
+      "url": "https://hiringcafe.com/job/instructional-assistant-it-support-per-scholas-united-states-vhwd4iwqpsmmqrai",
+      "score": 8,
+      "company": "Per Scholas",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-associate-contractor-ignite-reading-united-states-fz8ql2umxjs2auwg": {
+      "title": "Technical Support Associate (Contractor)",
+      "url": "https://hiringcafe.com/job/technical-support-associate-contractor-ignite-reading-united-states-fz8ql2umxjs2auwg",
+      "score": 11,
+      "company": "Ignite Reading",
+      "location": "US",
+      "datePosted": "2026-08-10",
+      "employmentType": "CONTRACTOR",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/it-helpdesk-associate-remote-ntt-data-fort-worth-texas-rq5cakfjermb0zy4": {
+      "title": "IT Helpdesk Associate - REMOTE",
+      "url": "https://hiringcafe.com/job/it-helpdesk-associate-remote-ntt-data-fort-worth-texas-rq5cakfjermb0zy4",
+      "score": 6,
+      "company": "NTT DATA",
+      "location": "Fort Worth, Texas, US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 34387,
+        "max": 56188,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/service-desk-analyst-cai-pennsylvania-united-states-j450mm06pjhrvrkz": {
+      "title": "Service Desk Analyst",
+      "url": "https://hiringcafe.com/job/service-desk-analyst-cai-pennsylvania-united-states-j450mm06pjhrvrkz",
+      "score": 7,
+      "company": "CAI",
+      "location": "Pennsylvania, US",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 16
+    },
+    "https://hiringcafe.com/job/technical-support-specialist-3rd-shift-remote-pregis-tulsa-oklahoma-fsguvd5x4a8u3na7": {
+      "title": "Technical Support Specialist - 3rd Shift - REMOTE",
+      "url": "https://hiringcafe.com/job/technical-support-specialist-3rd-shift-remote-pregis-tulsa-oklahoma-fsguvd5x4a8u3na7",
+      "score": 19,
+      "company": "Pregis",
+      "location": "Tulsa, Oklahoma, US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/mychart-service-desk-agent-computer-task-group-inc-united-states-c15y4hk35l509gg8": {
+      "title": "MyChart Service Desk Agent",
+      "url": "https://hiringcafe.com/job/mychart-service-desk-agent-computer-task-group-inc-united-states-c15y4hk35l509gg8",
+      "score": 6,
+      "company": "Computer Task Group, Inc",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "CONTRACTOR",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/business-analyst-technatomy-united-states-atfq9v8vzf18n6bo": {
+      "title": "Business Analyst",
+      "url": "https://hiringcafe.com/job/business-analyst-technatomy-united-states-atfq9v8vzf18n6bo",
+      "score": 18,
+      "company": "Technatomy",
+      "location": "US",
+      "datePosted": "2026-08-05",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/legal-operations-analyst-docusign-united-states-grdkzbs3on7088xu": {
+      "title": "Legal Operations Analyst",
+      "url": "https://hiringcafe.com/job/legal-operations-analyst-docusign-united-states-grdkzbs3on7088xu",
+      "score": 9,
+      "company": "DocuSign",
+      "location": "US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 90200,
+        "max": 163450,
+        "unit": "YEAR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/remote-desktop-support-analyst-reliable-security-staffing-atlanta-ep4dyynxtyfnnvvi": {
+      "title": "Remote Desktop Support Analyst",
+      "url": "https://hiringcafe.com/job/remote-desktop-support-analyst-reliable-security-staffing-atlanta-ep4dyynxtyfnnvvi",
+      "score": 6,
+      "company": "Reliable Security Staffing",
+      "location": "Atlanta, Georgia, US",
+      "datePosted": "2026-08-06",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 30,
+        "max": 44,
+        "unit": "HOUR"
+      },
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    },
+    "https://hiringcafe.com/job/application-support-engineer-unily-united-states-78x4cedmvwemz9jf": {
+      "title": "Application Support Engineer",
+      "url": "https://hiringcafe.com/job/application-support-engineer-unily-united-states-78x4cedmvwemz9jf",
+      "score": 13,
+      "company": "Unily",
+      "location": "US",
+      "datePosted": "2026-08-07",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "matched": 1,
+      "caution": [],
+      "lastSeenRun": 17
+    }
+  }
+}

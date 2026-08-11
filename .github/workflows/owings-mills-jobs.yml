@@ -81,6 +81,17 @@ jobs:
         continue-on-error: true
         run: node scan-neogov.mjs
 
+      - name: Sweep fully-remote US roles
+        id: remoteus
+        working-directory: career-ops
+        # Was never wired into the cron, so data/remote-us.json went six days
+        # stale and its freshest posting aged past the dashboard's 5-day window.
+        # Like the Owings Mills sweep this rotates through the hiring.cafe
+        # sitemap and accumulates, so it needs to run regularly to build
+        # coverage rather than being run once.
+        continue-on-error: true
+        run: node scan-remote-us.mjs
+
       - name: Commit the digest and sweep state
         working-directory: career-ops
         # The store carries the rotating window's cursor and the accumulated
@@ -89,13 +100,13 @@ jobs:
         # cursor always moves), so it is checked separately from the digest,
         # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json; then
+          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json remote-us-store.json remote-us-sweep.json; then
             echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json
+          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json remote-us-store.json remote-us-sweep.json
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
           # Concurrent-safe: another run (or a push from a session) may have
           # landed first, and this job's only local commit is the one above.
@@ -124,6 +135,7 @@ jobs:
           WORKDAY: ${{ steps.workday.outcome }}
           MDGOV: ${{ steps.mdgov.outcome }}
           NEOGOV: ${{ steps.neogov.outcome }}
+          REMOTEUS: ${{ steps.remoteus.outcome }}
         run: |
           {
             echo
@@ -132,9 +144,10 @@ jobs:
             echo "| Local Workday tenants | $WORKDAY |"
             echo "| Maryland state (JobAps) | $MDGOV |"
             echo "| County/city gov (NEOGOV) | $NEOGOV |"
+            echo "| Remote US | $REMOTEUS |"
           } >> "$GITHUB_STEP_SUMMARY"
           failed=""
-          for pair in "Workday:$WORKDAY" "JobAps:$MDGOV" "NEOGOV:$NEOGOV"; do
+          for pair in "Workday:$WORKDAY" "JobAps:$MDGOV" "NEOGOV:$NEOGOV" "RemoteUS:$REMOTEUS"; do
             [ "${pair#*:}" = "failure" ] && failed="$failed ${pair%%:*}"
           done
           if [ -n "$failed" ]; then

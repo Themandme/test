@@ -17,14 +17,20 @@
 // rather than a sample. This previously read the first 90 of ~465 chunks, every
 // time, and the resulting yield of 4 roles was reported as "an accurate count
 // of new matching postings" when it was a count across a fifth of the corpus.
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync } from 'fs';
 import { entries, rotatingWindow, loadSweepState, saveSweepState, staleByLastmod } from './sitemap-sweep.mjs';
 
 const UA = 'career-ops personal job search (+https://github.com/santifer/career-ops)';
 const SITEMAP_INDEX = 'https://hiringcafe.com/job-posting-sitemap.xml';
 const MAX_CHUNKS = 60;
 const MAX_DETAILS = 1200;
-const SWEEP_STATE = 'data/remote-us-sweep.json';
+// Both files sit at the repo root and are tracked, matching the other sweep
+// stores. Under data/ they were gitignored, so the scheduled run could
+// execute the sweep but never commit the result — and this sweep rotates
+// through the sitemap and ACCUMULATES, so a store it cannot persist means
+// coverage resets every run instead of building.
+const SWEEP_STATE = 'remote-us-sweep.json';
+const STORE = 'remote-us-store.json';
 const CONCURRENCY = 4;
 const DELAY_MS = 110;
 const MAX_AGE_DAYS = 14;   // forward-looking: only genuinely current openings
@@ -255,9 +261,8 @@ const kept = Object.values(jobs)
   .sort((a, b) => b.score - a.score || (b.datePosted || '').localeCompare(a.datePosted || ''));
 stats.kept = kept.length;
 
-mkdirSync('data', { recursive: true });
 saveSweepState(SWEEP_STATE, { cursor: nextCursor, run, chunkCount, jobs });
-writeFileSync('data/remote-us.json', JSON.stringify({
+writeFileSync(STORE, JSON.stringify({
   generatedAt: new Date().toISOString(),
   scope: 'Fully remote, US-eligible',
   scoring: 'Tiered target titles (user-supplied) weighted by tier, plus description confirmation; minimum score ' + MIN_SCORE,

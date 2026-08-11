@@ -405,6 +405,8 @@ const USER_PATHS = [
   'indeed-store.json',
   'maryland-gov-store.json',
   'neogov-store.json',
+  'remote-us-store.json',
+  'remote-us-sweep.json',
   'jds/',
   'writing-samples/',
   'config/plugins.yml',

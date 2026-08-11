@@ -111,7 +111,9 @@ const out = {
   reports: parseReports(),
   pipeline: parsePipeline(),
   owingsMills: readJsonOr('data/owings-mills.json', { jobs: [] }),
-  remoteUs: readJsonOr('data/remote-us.json', { jobs: [] }),
+  // Tracked store first (written by scan-remote-us.mjs and refreshed by the
+  // scheduled workflow); the old gitignored path is the fallback.
+  remoteUs: readJsonOr('remote-us-store.json', readJsonOr('data/remote-us.json', { jobs: [] })),
   // Legacy Apify pull (12 rows, free tier). Superseded by indeedStore below,
   // which comes from the Indeed MCP connector via import-indeed.mjs.
   indeed: readJsonOr('data/indeed.json', { jobs: [] }),
