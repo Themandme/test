@@ -1,15 +1,19 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-10 22:02 UTC · 536 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-11 12:00 UTC · 535 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
-Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
+Coverage: each run reads 60 of 468 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
-## Owings Mills (288)
+## Owings Mills (286)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Lowe's | [Full Time - Merchandising Service Associate - Day](https://hiringcafe.com/job/full-time-merchandising-service-associate-day-lowes-owings-mills-8ungyift677uw6ki) | $15–$15.6/hr | 2026-08-10 |
+| Sage Ventures | [Maintenance Technician](https://hiringcafe.com/job/maintenance-technician-sage-ventures-owings-mills-maryland-jw10uql8qniukmzn) | — | 2026-08-10 |
+| Kolb Electric | [Electrician - Baltimore Region](https://hiringcafe.com/job/electrician-baltimore-region-kolb-electric-owings-mills-maryland-bhnfo8bcy9qkcn43) | $30–$40/hr | 2026-08-10 |
+| H&R Block | [Tax Associate](https://hiringcafe.com/job/tax-associate-h-and-r-block-owings-mills-maryland-617ughx4wy1tmvmn) | $14.45–$18/hr | 2026-08-10 |
 | Environmental Systems Co. | [BAS/Controls Programmer](https://hiringcafe.com/job/bas-controls-programmer-environmental-systems-co-owings-mills-maryland-5izz53y6yfeslwpx) | $40–$55/hr | 2026-08-08 |
 | Smart Building Technologies | [BAS/Controls Programmer](https://hiringcafe.com/job/bas-controls-programmer-smart-building-technologies-owings-mills-a15h82x8meofhhfr) | $40–$55/hr | 2026-08-08 |
 | Hillis-Carnes Engineering Associates | [Construction Material Field Technician / Inspector - Owings Mills, MD 21117](https://hiringcafe.com/job/construction-material-field-technician-inspector-owings-mills-md-592dyjkmq5pu3it5) | $15–$23/hr | 2026-08-07 |
@@ -18,6 +22,7 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | BJ's Wholesale Club | [Inventory Control Clerk Part Time](https://hiringcafe.com/job/inventory-control-clerk-part-time-bjs-wholesale-club-owings-mills-t4fo3mcsue6ba8hc) | $17–$20.4/hr | 2026-08-07 |
 | Albertsons Companies | [Front End Entry Level](https://hiringcafe.com/job/front-end-entry-level-albertsons-companies-owings-mills-maryland-h1z90fw9gwnaq0wt) | $15–$21.5/hr | 2026-08-07 |
 | Five Below | [Support Lead Full Time 8011](https://hiringcafe.com/job/support-lead-full-time-8011-five-below-owings-mills-maryland-98c73jwls2cjfq7n) | — | 2026-08-07 |
+| T. Rowe Price | [Associate Software Engineer (Entry-level)](https://hiringcafe.com/job/associate-software-engineer-entry-level-t-rowe-price-owings-mills-edpha82k5sgtfya7) | $78k–$132k | 2026-08-07 |
 | Sonic Automotive | [Shop Foreman  - Audi Ownings Mills](https://hiringcafe.com/job/shop-foreman-audi-ownings-mills-sonic-automotive-owings-mills-maryland-hajlb9fgxrk9y9lb) | $50–$70/hr | 2026-08-06 |
 | Best Buy | [Retail Sales Associate](https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-bgy0t4ydn1ixwgrh) | $15–$19.22/hr | 2026-08-06 |
 | BJ's Wholesale Club | [Cashier Part Time](https://hiringcafe.com/job/cashier-part-time-bjs-wholesale-club-owings-mills-maryland-1d538ichqks4r6if) | $17–$20.4/hr | 2026-08-06 |
@@ -41,7 +46,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Demant | [Audiology Extern](https://hiringcafe.com/job/audiology-extern-demant-owings-mills-maryland-yfgn8bo2ci8112ul) | $19–$23/hr | 2026-08-05 |
 | The TJX Companies | [AM Apparel Processor](https://hiringcafe.com/job/am-apparel-processor-the-tjx-companies-owings-mills-maryland-vdntdbioetqytkqe) | $15.25–$15.75/hr | 2026-08-04 |
 | Marvin | [Brand Ambassador - Appointment Setter](https://hiringcafe.com/job/brand-ambassador-appointment-setter-marvin-owings-mills-maryland-gk167xrwnhfy9fje) | $25–$35/hr | 2026-08-04 |
-| Wegmans | [Cart Attendant](https://hiringcafe.com/job/cart-attendant-wegmans-owings-mills-maryland-6kneo4cxphqefyfo) | $16.5–$17/hr | 2026-08-04 |
 | Asbury Automotive | [Sales Advisor](https://hiringcafe.com/job/sales-advisor-asbury-automotive-owings-mills-maryland-9d7lv4hr0bty7et2) | $50k–$150k | 2026-08-04 |
 | Lowe's | [Warehouse Part Time Overnight](https://hiringcafe.com/job/warehouse-part-time-overnight-lowes-owings-mills-maryland-evo7y8xx8cheaddj) | $15–$15.6/hr | 2026-08-04 |
 | Lowe's | [Cashier Part Time](https://hiringcafe.com/job/cashier-part-time-lowes-owings-mills-maryland-1bajtnhd5ci4s4l5) | $15–$15.6/hr | 2026-08-04 |
@@ -53,6 +57,7 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Medifast | [Electro-Mechanical Tech I](https://hiringcafe.com/job/electro-mechanical-tech-i-medifast-owings-mills-maryland-zyjpvcqbxmu7bamc) | $31.07–$42.03/hr | 2026-08-04 |
 | Acosta Group | [Retail Merchandiser/Resets](https://hiringcafe.com/job/retail-merchandiser-resets-acosta-group-owings-mills-maryland-wfc59m9dix5w9abs) | — | 2026-08-04 |
 | Wegmans | [Bakery Team Member](https://hiringcafe.com/job/bakery-team-member-wegmans-owings-mills-maryland-yl3kwx7d4j13lpkh) | $16.5–$17/hr | 2026-08-04 |
+| Wegmans | [Cart Attendant](https://hiringcafe.com/job/cart-attendant-wegmans-owings-mills-maryland-fiwixngq64lmaigx) | $16.5–$17/hr | 2026-08-04 |
 | The TJX Companies | [FT Shoe Associate](https://hiringcafe.com/job/ft-shoe-associate-the-tjx-companies-owings-mills-maryland-zwugq2e98uqvbnd6) | $15.25–$15.75/hr | 2026-08-04 |
 | Lowe's | [Warehouse Part Time Days](https://hiringcafe.com/job/warehouse-part-time-days-lowes-owings-mills-maryland-9vkj590mxfwqywog) | $15–$15.6/hr | 2026-08-04 |
 | Scope Services | [5 Field Technicians Needed - $20 HR - We Train](https://hiringcafe.com/job/5-field-technicians-needed-20-hr-we-train-scope-services-owings-mills-gzr4gyjyqf3pex19) | — | 2026-08-03 |
@@ -87,7 +92,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Sodexo | [Catering Service Worker](https://hiringcafe.com/job/catering-service-worker-sodexo-owings-mills-maryland-360o73dycvwl3ln2) | — | 2026-07-31 |
 | Sodexo | [Cook I](https://hiringcafe.com/job/cook-i-sodexo-owings-mills-maryland-85nmg5nadf9xa68b) | — | 2026-07-31 |
 | Sodexo | [Student Worker](https://hiringcafe.com/job/student-worker-sodexo-owings-mills-maryland-wjkiagycht3yhsjd) | $15–$16/hr | 2026-07-31 |
-| Lowe's | [Full Time - Merchandising Service Associate - Day](https://hiringcafe.com/job/full-time-merchandising-service-associate-day-lowes-owings-mills-k6qqh78p5ev1f89s) | $15–$15.6/hr | 2026-07-31 |
 | The TJX Companies | [PT Merchandise Associate](https://hiringcafe.com/job/pt-merchandise-associate-the-tjx-companies-owings-mills-maryland-93q2mb6ycgtm2hsm) | $15.25–$15.75/hr | 2026-07-30 |
 | Celebree School | [Van Driver](https://hiringcafe.com/job/van-driver-celebree-school-owings-mills-maryland-i243rcmk0hrdbv21) | — | 2026-07-30 |
 | Brock & Company | [Lead Cook-- Private School](https://hiringcafe.com/job/lead-cook-private-school-brock-and-company-owings-mills-maryland-8yl2sobe18ekw0k6) | — | 2026-07-30 |
@@ -102,7 +106,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Royal Farms | [Customer Service Associate](https://hiringcafe.com/job/customer-service-associate-royal-farms-owings-mills-maryland-r1gdoyic0air6bjv) | $15–$19/hr | 2026-07-29 |
 | HomeCentris Healthcare | [Lead Caregiver](https://hiringcafe.com/job/lead-caregiver-homecentris-healthcare-owings-mills-maryland-8vocgmuyu9e24d3p) | — | 2026-07-29 |
 | HomeCentris Healthcare | [Caregiver *Spanish*](https://hiringcafe.com/job/caregiver-spanish-homecentris-healthcare-owings-mills-maryland-2fl5et7x98m27ygi) | $15–$17/hr | 2026-07-29 |
-| Stevenson University | [Coordinator, Athletic Communications](https://hiringcafe.com/job/coordinator-athletic-communications-stevenson-university-owings-mills-uvudu0ta2xgr8c54) | $39k–$41k | 2026-07-29 |
 | Ulta Beauty | [Specialty Artist - MAC](https://hiringcafe.com/job/specialty-artist-mac-ulta-beauty-owings-mills-maryland-rtntw6jdxdg521dr) | $17–$25.5/hr | 2026-07-29 |
 | Enterprise Mobility | [Automotive Detailer - Car Washer - Owings Mills North](https://hiringcafe.com/job/automotive-detailer-car-washer-owings-mills-north-enterprise-mobility-431gddztua627fsr) | $18.5–$33/hr | 2026-07-29 |
 | Acosta Group | [Product Demonstrator PT](https://hiringcafe.com/job/product-demonstrator-pt-acosta-group-owings-mills-maryland-02mrk9h42b98ss7t) | — | 2026-07-29 |
@@ -184,7 +187,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Celebree School | [Caliday Teacher's Aide - Afternoon Shift](https://hiringcafe.com/job/caliday-teachers-aide-afternoon-shift-celebree-school-owings-mills-6tt0lwgt9hhaaac7) | — | 2026-07-21 |
 | Best Buy | [Car Electronics Installer](https://hiringcafe.com/job/car-electronics-installer-best-buy-owings-mills-maryland-j7dqn1uk2147mxyx) | $15–$21.21/hr | 2026-07-20 |
 | Burlington Stores | [Retail Stocking Associate - Part Time](https://hiringcafe.com/job/retail-stocking-associate-part-time-burlington-stores-owings-mills-23gw63xlkzrsopez) | — | 2026-07-20 |
-| Stevenson University | [Full-Time Faculty, Mathematics (Open Rank)](https://hiringcafe.com/job/full-time-faculty-mathematics-open-rank-stevenson-university-owings-8axyk7nwy8o0sqza) | $60k–$65k | 2026-07-20 |
 | Best Buy | [Geek Squad Agent (Retail Store)](https://hiringcafe.com/job/geek-squad-agent-retail-store-best-buy-owings-mills-maryland-y517xock3lxs8mhy) | $15–$19.22/hr | 2026-07-20 |
 | Allegiant-Carter Management | [Property Manager](https://hiringcafe.com/job/property-manager-allegiant-carter-management-owings-mills-maryland-oeit6fkxf888xtga) | $92k–$95k | 2026-07-20 |
 | Stevenson University | [Assistant Coach, Women’s Lacrosse](https://hiringcafe.com/job/assistant-coach-womens-lacrosse-stevenson-university-owings-mills-lrjw3x3lx53baou2) | $40k–$42k | 2026-07-20 |
@@ -220,8 +222,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Terminix | [Innovation Technician](https://hiringcafe.com/job/innovation-technician-terminix-owings-mills-maryland-nf4jbpmugb372z5t) | $18–$23/hr | 2026-07-09 |
 | Tata Consultancy Services | [Engineer](https://hiringcafe.com/job/engineer-tata-consultancy-services-owings-mills-maryland-p6fvswea6zmuizqm) | $80k–$90k | 2026-07-09 |
 | Nexplore | [Zumba After School Instructor](https://hiringcafe.com/job/zumba-after-school-instructor-nexplore-owings-mills-maryland-4qlvwm712i3jlstt) | — | 2026-07-08 |
-| Panda Restaurant Group | [Store Manager](https://hiringcafe.com/job/store-manager-panda-restaurant-group-owings-mills-maryland-lu5k0h7qn5q5gurf) | $28–$31/hr | 2026-07-08 |
-| Panda Restaurant Group | [Assistant Manager](https://hiringcafe.com/job/assistant-manager-panda-restaurant-group-owings-mills-maryland-h60bu310x3sbygfg) | $23–$26/hr | 2026-07-08 |
 | RadNet | [Employee Relations Manager](https://hiringcafe.com/job/employee-relations-manager-radnet-owings-mills-maryland-znheli3xe1xd5dr1) | $80k–$90k | 2026-07-08 |
 | Sonic Automotive | [Automotive Technician - Audi Owings Mills](https://hiringcafe.com/job/automotive-technician-audi-owings-mills-sonic-automotive-owings-mills-qgvsiv1qqyxl6ok9) | $105k–$150k | 2026-07-07 |
 | M&T Bank | [Floating Universal Banker for Owings Mills MD and surrounding areas](https://hiringcafe.com/job/floating-universal-banker-for-owings-mills-md-and-surrounding-areas-m-ekeixsuwi55f3kdk) | $20.55–$34.25/hr | 2026-07-07 |
@@ -296,13 +296,13 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Jack in the Box | [Host](https://hiringcafe.com/job/host-jack-in-the-box-owings-mills-maryland-wmarh0u5fpqcrlp2) | — | 2026-06-15 |
 | Jack in the Box | [Server](https://hiringcafe.com/job/server-jack-in-the-box-owings-mills-maryland-z5fjrihhxbaxo4p7) | — | 2026-06-15 |
 | Starbucks | [barista - Store# 07694, ST THOMAS SHOPPING CENTER](https://hiringcafe.com/job/barista-store-07694-st-thomas-shopping-center-starbucks-owings-mills-8rv8ygtjn0b48uuy) | $15.75–$17.88/hr | 2026-06-14 |
-| MileOne Autogroup | [Automotive Technician \| Heritage Imports Owings Mills](https://hiringcafe.com/job/automotive-technician-heritage-imports-owings-mills-mileone-autogroup-q8g7r3vpmie4ep96) | $21–$50/hr | 2026-06-12 |
-| T. Rowe Price | [Retirement Plan Manager (Consultant)](https://hiringcafe.com/job/retirement-plan-manager-consultant-t-rowe-price-owings-mills-maryland-njj2wv6cubwpd0ui) | $72k–$118k | 2026-06-12 |
 
-## Pikesville (82)
+## Pikesville (83)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Walgreens | [Customer Service Associate - Temporary](https://hiringcafe.com/job/customer-service-associate-temporary-walgreens-pikesville-maryland-4wur7ydc6botdzj5) | $15–$17.5/hr | 2026-08-10 |
+| Lucky Strike Entertainment | [Food & Beverage Attendant](https://hiringcafe.com/job/food-and-beverage-attendant-lucky-strike-entertainment-pikesville-0fbqdh6r6t20e775) | $15–$18/hr | 2026-08-10 |
 | Sunrise Senior Living | [Care Manager](https://hiringcafe.com/job/care-manager-sunrise-senior-living-pikesville-maryland-h2t4xqhkgqq2ctju) | $16.3–$20.4/hr | 2026-08-07 |
 | Walgreens | [Shift Lead](https://hiringcafe.com/job/shift-lead-walgreens-pikesville-maryland-z3o70953wly8bkii) | $17–$20/hr | 2026-08-07 |
 | FutureCare | [Maintenance Assistant](https://hiringcafe.com/job/maintenance-assistant-futurecare-pikesville-maryland-gg9eto2p7g6vq1pq) | $17.47–$21.84/hr | 2026-08-07 |
@@ -363,7 +363,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Curio Wellness | [Inventory Retail Lead](https://hiringcafe.com/job/inventory-retail-lead-curio-wellness-pikesville-maryland-kogj2b8vylpzip4k) | $24–$25/hr | 2026-07-10 |
 | Crash Champions | [Collision Estimator](https://hiringcafe.com/job/collision-estimator-crash-champions-pikesville-maryland-ok9sj81d1qa4rrjj) | $65k–$150k | 2026-07-10 |
 | SecTek | [Unarmed Security Officer (Pikesville, MD) (NE)](https://hiringcafe.com/job/unarmed-security-officer-pikesville-md-ne-sectek-pikesville-maryland-q9h4odezow624lh6) | — | 2026-07-08 |
-| Mavis Tires & Brakes | [Automotive Mechanics](https://hiringcafe.com/job/automotive-mechanics-mavis-tires-and-brakes-pikesville-maryland-f4ezszbae9kttdcs) | $40k–$80k | 2026-07-08 |
 | M&T Bank | [Teller - Pikesville, MD](https://hiringcafe.com/job/teller-pikesville-md-m-and-t-bank-pikesville-maryland-kvtnvffkml8twl81) | $19–$28.84/hr | 2026-07-08 |
 | United Urology Group | [Ultrasonographer](https://hiringcafe.com/job/ultrasonographer-united-urology-group-pikesville-maryland-7d41d1cd7dkejjm3) | $38–$45/hr | 2026-07-08 |
 | LifeBridge Health | [SWIM INSTRUCTOR](https://hiringcafe.com/job/swim-instructor-lifebridge-health-pikesville-maryland-nkscxfkxme7pbsbu) | $15–$20/hr | 2026-07-08 |
@@ -390,6 +389,7 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| H&R Block | [Tax Associate](https://hiringcafe.com/job/tax-associate-h-and-r-block-randallstown-maryland-894n585sxqqki66x) | $14.45–$18/hr | 2026-08-10 |
 | Ohana Growth Partners | [Service Desk](https://hiringcafe.com/job/service-desk-ohana-growth-partners-randallstown-maryland-73xnpzg5jb14ukul) | $15.5–$16.5/hr | 2026-08-07 |
 | Ahold Delhaize | [PT Produce Sales Associate (473019)](https://hiringcafe.com/job/pt-produce-sales-associate-473019-ahold-delhaize-randallstown-maryland-p055d3twpckttfvy) | — | 2026-08-07 |
 | Public Storage | [Customer Service – Self Storage Manager](https://hiringcafe.com/job/customer-service-self-storage-manager-public-storage-randallstown-bxtvl1pj4o3fp754) | — | 2026-08-07 |
@@ -428,7 +428,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Chapel Hill Nursing Center | [GNA-PRN](https://hiringcafe.com/job/gna-prn-chapel-hill-nursing-center-randallstown-maryland-yonubtz5dishv79r) | $17–$20/hr | 2026-07-14 |
 | Walmart | [Cake Decorator](https://hiringcafe.com/job/cake-decorator-walmart-randallstown-maryland-iff8lud9xo4a6ivq) | $20–$33/hr | 2026-07-11 |
 | LifeBridge Health | [RESP PULMONARY REHAB SPEC](https://hiringcafe.com/job/resp-pulmonary-rehab-spec-lifebridge-health-randallstown-maryland-e21lhxevifb6kw3y) | $39.14–$58.71/hr | 2026-07-09 |
-| Mavis Tires & Brakes | [Automotive Alignment Technicians](https://hiringcafe.com/job/automotive-alignment-technicians-mavis-tires-and-brakes-randallstown-ngi29kzc04tmf15a) | $33k–$60k | 2026-07-08 |
 | Advance Auto Parts | [Salesperson](https://hiringcafe.com/job/salesperson-advance-auto-parts-randallstown-maryland-1k7yvrqf3y4dvd85) | $15–$16.13/hr | 2026-07-08 |
 | Walmart | [Seasonal Team Associate](https://hiringcafe.com/job/seasonal-team-associate-walmart-randallstown-maryland-ompue42c38aim8tk) | $17–$30/hr | 2026-07-08 |
 | Walmart | [Stocking Team Associate](https://hiringcafe.com/job/stocking-team-associate-walmart-randallstown-maryland-qawfomxykhixa781) | $17–$30/hr | 2026-07-08 |
@@ -459,10 +458,11 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Preston Automotive Group | [Automotive General Manager](https://hiringcafe.com/job/automotive-general-manager-preston-automotive-group-randallstown-tj8dabxz5ol9fwre) | — | 2026-06-16 |
 | Archdiocese of Baltimore | [Parish Secretary (NE)](https://hiringcafe.com/job/parish-secretary-ne-archdiocese-of-baltimore-randallstown-maryland-z5iee0lo2mf62yom) | $16.13–$18.74/hr | 2026-06-15 |
 
-## Reisterstown (55)
+## Reisterstown (56)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| H&R Block | [Tax Associate](https://hiringcafe.com/job/tax-associate-h-and-r-block-reisterstown-maryland-1dt94qmtejgh2avb) | $14.45–$18/hr | 2026-08-10 |
 | Wawa | [General Manager](https://hiringcafe.com/job/general-manager-wawa-reisterstown-maryland-693p6ow9yp1jfv3p) | $75k–$90k | 2026-08-07 |
 | Primus Aerospace | [Assembly Technician 2nd Shift](https://hiringcafe.com/job/assembly-technician-2nd-shift-primus-aerospace-reisterstown-maryland-xyaaxqggjyfhxnh9) | $21.6–$28.8/hr | 2026-08-07 |
 | Walgreens | [Customer Service Associate - Temporary](https://hiringcafe.com/job/customer-service-associate-temporary-walgreens-reisterstown-maryland-3pyimefzb56rymli) | $15–$17.5/hr | 2026-08-06 |
@@ -549,19 +549,6 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | Peraton | [Manager, Technical Training](https://hiringcafe.com/job/manager-technical-training-peraton-windsor-mill-maryland-e6l1jn54i843zh0j) | $104k–$166k | 2026-06-18 |
 | Peraton | [Supervisor, External Communications](https://hiringcafe.com/job/supervisor-external-communications-peraton-windsor-mill-maryland-szj3ylyrszzsh99m) | $86k–$138k | 2026-06-18 |
 
-## Milford Mill (8)
-
-| Employer | Role | Pay | Posted |
-|---|---|---|---|
-| People Encouraging People | [Substance Abuse Counselor](https://hiringcafe.com/job/substance-abuse-counselor-people-encouraging-people-milford-mill-8rcyzgd577ksgvu8) | — | 2026-07-28 |
-| People Encouraging People | [Program Coordinator](https://hiringcafe.com/job/program-coordinator-people-encouraging-people-milford-mill-maryland-2c3of84fokspfgi5) | $50k–$53k | 2026-07-21 |
-| Horizon Services | [HVAC Install Technician Assistant](https://hiringcafe.com/job/hvac-install-technician-assistant-horizon-services-milford-mill-x0vi6s6a4tvnbrmi) | $22–$29/hr | 2026-07-16 |
-| St. John Properties | [Partner in Training](https://hiringcafe.com/job/partner-in-training-st-john-properties-milford-mill-maryland-bgmyh3d9ojncjh2r) | $100k–$125k | 2026-07-09 |
-| St. John Properties | [Property Administrator](https://hiringcafe.com/job/property-administrator-st-john-properties-milford-mill-maryland-rqxn35qqg8rf4nsf) | $70k–$75k | 2026-07-09 |
-| Mavis Tires & Brakes | [Automotive Alignment Technicians](https://hiringcafe.com/job/automotive-alignment-technicians-mavis-tires-and-brakes-milford-mill-tf3yf2i8dvqczetq) | $33k–$60k | 2026-07-08 |
-| Patel | [Cashier/Crew member](https://hiringcafe.com/job/cashier-crew-member-patel-milford-mill-maryland-gt6eouogq1rivzuz) | $13.25–$15/hr | 2026-06-21 |
-| Patel | [Server/Crew member](https://hiringcafe.com/job/server-crew-member-patel-milford-mill-maryland-do9o8fnfdzhp9a0z) | — | 2026-06-21 |
-
 ## Garrison (7)
 
 | Employer | Role | Pay | Posted |
@@ -573,6 +560,18 @@ Coverage: each run reads 60 of 464 sitemap chunks, rotating, so a full pass take
 | George Hildebrandt | [CDL-A Regional Owner Operator](https://hiringcafe.com/job/cdl-a-regional-owner-operator-george-hildebrandt-garrison-maryland-mvhjpn497aufhaok) | $3000–$8000 | 2026-07-21 |
 | George Hildebrandt | [CDL-A Regional Company Driver](https://hiringcafe.com/job/cdl-a-regional-company-driver-george-hildebrandt-garrison-maryland-nhhi75rpi1erxrus) | $1300–$1650 | 2026-07-21 |
 | Michaels | [Service Team Member (Hiring fair)](https://hiringcafe.com/job/service-team-member-hiring-fair-michaels-garrison-maryland-uzygx7n8vnirouh9) | $15–$17.7/hr | 2026-06-16 |
+
+## Milford Mill (7)
+
+| Employer | Role | Pay | Posted |
+|---|---|---|---|
+| People Encouraging People | [Substance Abuse Counselor](https://hiringcafe.com/job/substance-abuse-counselor-people-encouraging-people-milford-mill-8rcyzgd577ksgvu8) | — | 2026-07-28 |
+| People Encouraging People | [Program Coordinator](https://hiringcafe.com/job/program-coordinator-people-encouraging-people-milford-mill-maryland-2c3of84fokspfgi5) | $50k–$53k | 2026-07-21 |
+| Horizon Services | [HVAC Install Technician Assistant](https://hiringcafe.com/job/hvac-install-technician-assistant-horizon-services-milford-mill-x0vi6s6a4tvnbrmi) | $22–$29/hr | 2026-07-16 |
+| St. John Properties | [Partner in Training](https://hiringcafe.com/job/partner-in-training-st-john-properties-milford-mill-maryland-bgmyh3d9ojncjh2r) | $100k–$125k | 2026-07-09 |
+| St. John Properties | [Property Administrator](https://hiringcafe.com/job/property-administrator-st-john-properties-milford-mill-maryland-rqxn35qqg8rf4nsf) | $70k–$75k | 2026-07-09 |
+| Patel | [Cashier/Crew member](https://hiringcafe.com/job/cashier-crew-member-patel-milford-mill-maryland-gt6eouogq1rivzuz) | $13.25–$15/hr | 2026-06-21 |
+| Patel | [Server/Crew member](https://hiringcafe.com/job/server-crew-member-patel-milford-mill-maryland-do9o8fnfdzhp9a0z) | — | 2026-06-21 |
 
 ## Stevenson (2)
 
