@@ -1,15 +1,17 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-14 12:00 UTC · 528 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-14 21:45 UTC · 537 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
 Coverage: each run reads 60 of 493 sitemap chunks, rotating, so a full pass takes 9 runs (~4.5 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
-## Owings Mills (277)
+## Owings Mills (282)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Valmet | [Production Supervisor](https://hiringcafe.com/job/production-supervisor-valmet-owings-mills-maryland-61okurg6pqkvxhci) | — | 2026-08-13 |
+| Lowe's | [Full Time - Sales Specialist - Millwork - Day](https://hiringcafe.com/job/full-time-sales-specialist-millwork-day-lowes-owings-mills-maryland-ni6sqrwkynbz1y49) | $17–$19.05/hr | 2026-08-13 |
 | Goldfish Swim School | [Front Desk and Sales Associate](https://hiringcafe.com/job/front-desk-and-sales-associate-goldfish-swim-school-owings-mills-nwudymrywlytv59g) | $15–$19/hr | 2026-08-12 |
 | Neil Hoosier & Associates | [Technical Writer](https://hiringcafe.com/job/technical-writer-neil-hoosier-and-associates-owings-mills-maryland-jmh30zdaykzgk0hq) | $65k–$68k | 2026-08-12 |
 | WPM Real Estate Management | [Community Coordinator](https://hiringcafe.com/job/community-coordinator-wpm-real-estate-management-owings-mills-maryland-o9qu9ilsligyatp0) | — | 2026-08-12 |
@@ -30,6 +32,7 @@ Coverage: each run reads 60 of 493 sitemap chunks, rotating, so a full pass take
 | Krispy Kreme | [Shift Supervisor](https://hiringcafe.com/job/shift-supervisor-krispy-kreme-owings-mills-maryland-rycffmgyy6ghdrgp) | $18–$20/hr | 2026-08-10 |
 | Environmental Systems Co. | [BAS/Controls Programmer](https://hiringcafe.com/job/bas-controls-programmer-environmental-systems-co-owings-mills-maryland-5izz53y6yfeslwpx) | $40–$55/hr | 2026-08-08 |
 | Smart Building Technologies | [BAS/Controls Programmer](https://hiringcafe.com/job/bas-controls-programmer-smart-building-technologies-owings-mills-a15h82x8meofhhfr) | $40–$55/hr | 2026-08-08 |
+| Garrison Forest School | [Math Teacher](https://hiringcafe.com/job/math-teacher-garrison-forest-school-owings-mills-maryland-86fgt4p7u6u2vz2u) | $45k–$75k | 2026-08-08 |
 | T. Rowe Price | [Financial Analyst](https://hiringcafe.com/job/financial-analyst-t-rowe-price-owings-mills-maryland-xd2ap2c83ul08ktz) | $70k–$118k | 2026-08-07 |
 | Lewis Contractors | [Construction Carpenter](https://hiringcafe.com/job/construction-carpenter-lewis-contractors-owings-mills-maryland-6dexhfnfcadokheo) | — | 2026-08-07 |
 | BJ's Wholesale Club | [Inventory Control Clerk Part Time](https://hiringcafe.com/job/inventory-control-clerk-part-time-bjs-wholesale-club-owings-mills-t4fo3mcsue6ba8hc) | $17–$20.4/hr | 2026-08-07 |
@@ -38,6 +41,7 @@ Coverage: each run reads 60 of 493 sitemap chunks, rotating, so a full pass take
 | Five Below | [Support Lead Full Time 8011](https://hiringcafe.com/job/support-lead-full-time-8011-five-below-owings-mills-maryland-98c73jwls2cjfq7n) | — | 2026-08-07 |
 | T. Rowe Price | [Associate Software Engineer (Entry-level)](https://hiringcafe.com/job/associate-software-engineer-entry-level-t-rowe-price-owings-mills-edpha82k5sgtfya7) | $78k–$132k | 2026-08-07 |
 | HomeCentris Healthcare | [Client Relationship Specialist](https://hiringcafe.com/job/client-relationship-specialist-homecentris-healthcare-owings-mills-advcof4i793kjr7n) | $19–$22/hr | 2026-08-07 |
+| Stevenson University | [Admissions Counselor (Spanish-Speaking Fluency)](https://hiringcafe.com/job/admissions-counselor-spanish-speaking-fluency-stevenson-university-w4ra7jz8c51uz13f) | $18.75–$19.23/hr | 2026-08-07 |
 | Best Buy | [Retail Sales Associate](https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-bgy0t4ydn1ixwgrh) | $15–$19.22/hr | 2026-08-06 |
 | BJ's Wholesale Club | [Cashier Part Time](https://hiringcafe.com/job/cashier-part-time-bjs-wholesale-club-owings-mills-maryland-1d538ichqks4r6if) | $17–$20.4/hr | 2026-08-06 |
 | Centric Business Systems | [Sales Administrator](https://hiringcafe.com/job/sales-administrator-centric-business-systems-owings-mills-maryland-xayeg4otnil8ab2m) | — | 2026-08-06 |
@@ -160,6 +164,7 @@ Coverage: each run reads 60 of 493 sitemap chunks, rotating, so a full pass take
 | U-Haul | [Customer Service Representative](https://hiringcafe.com/job/customer-service-representative-u-haul-owings-mills-maryland-s3p8mdu7saj87xau) | $15–$16/hr | 2026-07-27 |
 | Environmental Systems Co. | [Controls Technician](https://hiringcafe.com/job/controls-technician-environmental-systems-co-owings-mills-maryland-wpi6qs17q678am88) | — | 2026-07-27 |
 | Planned Parenthood of Maryland | [Health Center Manager](https://hiringcafe.com/job/health-center-manager-planned-parenthood-of-maryland-owings-mills-zik0w40pq69e72f4) | $75k–$90k | 2026-07-27 |
+| Halma | [Regulatory Affairs Specialist](https://hiringcafe.com/job/regulatory-affairs-specialist-halma-owings-mills-maryland-86atsfwwz04sfpyg) | — | 2026-07-27 |
 | T. Rowe Price | [Lead AI Engineer (Mobile Technology)](https://hiringcafe.com/job/lead-ai-engineer-mobile-technology-t-rowe-price-owings-mills-maryland-hy50s1pfbdwmgk05) | $145k–$247k | 2026-07-24 |
 | United Surgical Partners International | [Receptionist](https://hiringcafe.com/job/receptionist-united-surgical-partners-international-owings-mills-79cydkviojga4zjf) | $17.78–$25.78/hr | 2026-07-24 |
 | Norman's Hallmark | [Sales Leader](https://hiringcafe.com/job/sales-leader-normans-hallmark-owings-mills-maryland-hfqvjkiz29px0zc8) | — | 2026-07-24 |
@@ -381,7 +386,7 @@ Coverage: each run reads 60 of 493 sitemap chunks, rotating, so a full pass take
 | Windsor Woods | [DDA Program Manager](https://hiringcafe.com/job/dda-program-manager-windsor-woods-pikesville-maryland-deh8se73kw8wx34v) | $60k–$70k | 2026-06-18 |
 | Paramount Residential Mortgage Group | [Loan Officer](https://hiringcafe.com/job/loan-officer-paramount-residential-mortgage-group-pikesville-maryland-xh9ukc82o8yeesq9) | — | 2026-06-16 |
 
-## Randallstown (69)
+## Randallstown (73)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
@@ -391,6 +396,10 @@ Coverage: each run reads 60 of 493 sitemap chunks, rotating, so a full pass take
 | Domino's | [Customer Service Rep(04696) - 3502 Brenbrook Dr.](https://hiringcafe.com/job/customer-service-rep-04696-3502-brenbrook-dr-dominos-randallstown-z5024hg81xhjaulw) | — | 2026-08-09 |
 | Domino's | [Assistant Manager(04696) - 3502 Brenbrook Dr.](https://hiringcafe.com/job/assistant-manager-04696-3502-brenbrook-dr-dominos-randallstown-395hpueac8z5x7nd) | — | 2026-08-09 |
 | Chapel Hill Nursing Center | [GNA (7-3 Shift)](https://hiringcafe.com/job/gna-7-3-shift-chapel-hill-nursing-center-randallstown-maryland-f2qw3u2t47xwf5pi) | $17–$20/hr | 2026-08-09 |
+| Chapel Hill Nursing Center | [GNA 7-3 FT](https://hiringcafe.com/job/gna-7-3-ft-chapel-hill-nursing-center-randallstown-maryland-p8z585hrkmy9iyrx) | — | 2026-08-09 |
+| Chapel Hill Nursing Center | [GNA 11-7](https://hiringcafe.com/job/gna-11-7-chapel-hill-nursing-center-randallstown-maryland-va9vazs6j0mtxd8c) | $17–$20/hr | 2026-08-09 |
+| Chapel Hill Nursing Center | [GNA 3-11](https://hiringcafe.com/job/gna-3-11-chapel-hill-nursing-center-randallstown-maryland-76f8obyxfy3gs8ye) | — | 2026-08-09 |
+| Chapel Hill Nursing Center | [GNA (Shift 3-11)](https://hiringcafe.com/job/gna-shift-3-11-chapel-hill-nursing-center-randallstown-maryland-7yrr9bbxg7kead1c) | $17–$20/hr | 2026-08-09 |
 | Ohana Growth Partners | [Service Desk](https://hiringcafe.com/job/service-desk-ohana-growth-partners-randallstown-maryland-73xnpzg5jb14ukul) | $15.5–$16.5/hr | 2026-08-07 |
 | Walgreens | [Shift Lead](https://hiringcafe.com/job/shift-lead-walgreens-randallstown-maryland-rlvwysyzr48pjaeu) | $17–$20/hr | 2026-08-07 |
 | Ahold Delhaize | [PT Produce Sales Associate (473019)](https://hiringcafe.com/job/pt-produce-sales-associate-473019-ahold-delhaize-randallstown-maryland-p055d3twpckttfvy) | — | 2026-08-07 |

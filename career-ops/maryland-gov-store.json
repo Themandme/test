@@ -1,11 +1,198 @@
 [
   {
+    "company": "State of Maryland — Department of Disabilities",
+    "title": "Administrative Coordinator (Office for Disability Employment Advancement and Policy (ODEAP))",
+    "reqId": "26-002711-0036",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002711&R3=0036",
+    "days": 0,
+    "postedAtMs": 1786726800000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 55710,
+      "max": 59121,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — DHS - Office of the Secretary",
+    "title": "WEB DIRECTOR (ADMINISTRATOR V, INTERNAL ONLY)",
+    "reqId": "26-003184-0010",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003184&R3=0010",
+    "days": 0,
+    "postedAtMs": 1786722900000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 87253,
+      "max": 137603,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — MDH RICA Baltimore",
+    "title": "Social Worker II, Health Svcs CI (Managed Care Coordinator)",
+    "reqId": "26-004182-0005",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004182&R3=0005",
+    "days": 0,
+    "postedAtMs": 1786718700000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 76608,
+      "max": 99105,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — MSDE - Deputy for Teaching and Learning",
+    "title": "School Based State Literacy Coaches (Education Program Specialist I)",
+    "reqId": "26-005055-0011",
+    "location": "Baltimore City Cecil Montgomery Prince George's St. Mary's",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005055&R3=0011",
+    "days": 0,
+    "postedAtMs": 1786716000000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 53,
+      "max": 53,
+      "unit": "HOUR"
+    }
+  },
+  {
+    "company": "State of Maryland — Maryland State Retirement and Pension Systems",
+    "title": "Senior Analyst/Data Scientist (Sr. Investment Analyst II MSRP)",
+    "reqId": "26-005037-0001",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005037&R3=0001",
+    "days": 0,
+    "postedAtMs": 1786714200000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 108800,
+      "max": 163200,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — LABOR - Occupational and Professional Licensing 1",
+    "title": "Executive Director (ADMINISTRATOR IV)",
+    "reqId": "26-006097-0007",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=006097&R3=0007",
+    "days": 0,
+    "postedAtMs": 1786707540000,
+    "deadlineMs": 1787936400000,
+    "deadline": "8/28/2026 5:00:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 81750,
+      "max": 128924,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — MDH RICA Baltimore",
+    "title": "Social Worker I, Health Svcs CI",
+    "reqId": "26-004181-0004",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004181&R3=0004",
+    "days": 0,
+    "postedAtMs": 1786704300000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 71805,
+      "max": 92894,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — DHS - Ops Ofc - Div of Budget Finance & Personnel",
+    "title": "AGENCY GRANTS SPECIALIST I",
+    "reqId": "26-000806-0005",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000806&R3=0005",
+    "days": 0,
+    "postedAtMs": 1786703400000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 59305,
+      "max": 76725,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — MDA Administrative Services",
+    "title": "ACCOUNTANT ADVANCED",
+    "reqId": "26-004549-0007",
+    "location": "Anne Arundel",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004549&R3=0007",
+    "days": 1,
+    "postedAtMs": 1786699560000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 71805,
+      "max": 113243,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — DGS - Design, Construction, and Energy",
+    "title": "Capital Maintenance Project Engineer II",
+    "reqId": "26-004596-0003",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004596&R3=0003",
+    "days": 1,
+    "postedAtMs": 1786697100000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 81750,
+      "max": 128924,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — DPSCS OSEC Administrative Services",
+    "title": "HR OFFICER II",
+    "reqId": "26-004916-0005",
+    "location": "Allegany Anne Arundel Baltimore City Somerset Washington County",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004916&R3=0005",
+    "days": 1,
+    "postedAtMs": 1786696200000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 67309,
+      "max": 106155,
+      "unit": "YEAR"
+    }
+  },
+  {
     "company": "State of Maryland — Maryland State Retirement and Pension Systems",
     "title": "ADMINISTRATIVE OFFICER III (Retirement Finals Processing Team Lead)",
     "reqId": "26-002247-0056",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0056",
-    "days": 0,
+    "days": 1,
     "postedAtMs": 1786694700000,
     "deadlineMs": 1787961540000,
     "deadline": "8/28/2026 11:59:00 PM",
@@ -158,7 +345,7 @@
     "reqId": "26-004543-0001",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004543&R3=0001",
-    "days": 1,
+    "days": 2,
     "postedAtMs": 1786611600000,
     "deadlineMs": 1787875140000,
     "deadline": "8/27/2026 11:59:00 PM",
@@ -175,7 +362,7 @@
     "reqId": "26-004488-0014",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0014",
-    "days": 1,
+    "days": 2,
     "postedAtMs": 1786611600000,
     "deadlineMs": 1787961540000,
     "deadline": "8/28/2026 11:59:00 PM",
@@ -184,6 +371,23 @@
       "min": 55.53,
       "max": 67.69,
       "unit": "HOUR"
+    }
+  },
+  {
+    "company": "State of Maryland — Maryland Energy Administration",
+    "title": "ENERGY RATE CASE MANAGER - REPOST (PROGRAM MANAGER III)",
+    "reqId": "26-005478-0021",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005478&R3=0021",
+    "days": 2,
+    "postedAtMs": 1786579140000,
+    "deadlineMs": 1787788740000,
+    "deadline": "8/26/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 91761,
+      "max": 142914,
+      "unit": "YEAR"
     }
   },
   {
@@ -200,23 +404,6 @@
     "salary": {
       "min": 46279,
       "max": 72989,
-      "unit": "YEAR"
-    }
-  },
-  {
-    "company": "State of Maryland — Maryland Energy Administration",
-    "title": "RATE CASE MANAGER - REPOST (PROGRAM MANAGER III)",
-    "reqId": "26-005478-0021",
-    "location": "Baltimore City",
-    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005478&R3=0021",
-    "days": 2,
-    "postedAtMs": 1786579140000,
-    "deadlineMs": 1787788740000,
-    "deadline": "8/26/2026 11:59:00 PM",
-    "employmentType": "Full-Time",
-    "salary": {
-      "min": 91761,
-      "max": 142914,
       "unit": "YEAR"
     }
   },
@@ -328,7 +515,7 @@
     "reqId": "26-002501-0004",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002501&R3=0004",
-    "days": 2,
+    "days": 3,
     "postedAtMs": 1786528200000,
     "deadlineMs": 1787763600000,
     "deadline": "8/26/2026 5:00:00 PM",
@@ -345,7 +532,7 @@
     "reqId": "26-004488-0012",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0012",
-    "days": 2,
+    "days": 3,
     "postedAtMs": 1786527600000,
     "deadlineMs": 1787788740000,
     "deadline": "8/26/2026 11:59:00 PM",
@@ -362,7 +549,7 @@
     "reqId": "26-002661-0004",
     "location": "Anne Arundel",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002661&R3=0004",
-    "days": 2,
+    "days": 3,
     "postedAtMs": 1786527000000,
     "deadlineMs": 1787788740000,
     "deadline": "8/26/2026 11:59:00 PM",
@@ -403,7 +590,7 @@
     "employmentType": "Full-Time",
     "salary": {
       "min": 36.73,
-      "max": 47.52,
+      "max": 36.73,
       "unit": "HOUR"
     }
   },
@@ -549,7 +736,7 @@
     "reqId": "26-004085-0002",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004085&R3=0002",
-    "days": 3,
+    "days": 4,
     "postedAtMs": 1786438800000,
     "deadlineMs": 1787702340000,
     "deadline": "8/25/2026 11:59:00 PM",
@@ -566,7 +753,7 @@
     "reqId": "26-002711-0034",
     "location": "Anne Arundel",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002711&R3=0034",
-    "days": 3,
+    "days": 4,
     "postedAtMs": 1786437000000,
     "deadlineMs": 1787702340000,
     "deadline": "8/25/2026 11:59:00 PM",
@@ -583,7 +770,7 @@
     "reqId": "26-002188-0001",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002188&R3=0001",
-    "days": 3,
+    "days": 4,
     "postedAtMs": 1786435200000,
     "deadlineMs": 1788307140000,
     "deadline": "9/1/2026 11:59:00 PM",
@@ -787,7 +974,7 @@
     "reqId": "26-006659-0003",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=006659&R3=0003",
-    "days": 4,
+    "days": 5,
     "postedAtMs": 1786345200000,
     "deadlineMs": 1787615940000,
     "deadline": "8/24/2026 11:59:00 PM",
@@ -1059,7 +1246,7 @@
     "reqId": "26-002919-0002",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002919&R3=0002",
-    "days": 7,
+    "days": 8,
     "postedAtMs": 1786095840000,
     "deadlineMs": 1787356740000,
     "deadline": "8/21/2026 11:59:00 PM",
@@ -1076,7 +1263,7 @@
     "reqId": "26-004216-0021",
     "location": "Howard",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004216&R3=0021",
-    "days": 7,
+    "days": 8,
     "postedAtMs": 1786095600000,
     "deadlineMs": 1787356740000,
     "deadline": "8/21/2026 11:59:00 PM",
@@ -1093,7 +1280,7 @@
     "reqId": "26-005483-0025",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005483&R3=0025",
-    "days": 7,
+    "days": 8,
     "postedAtMs": 1786095000000,
     "deadlineMs": 1787356740000,
     "deadline": "8/21/2026 11:59:00 PM",
@@ -1110,7 +1297,7 @@
     "reqId": "26-001152-0005",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001152&R3=0005",
-    "days": 7,
+    "days": 8,
     "postedAtMs": 1786095000000,
     "deadlineMs": 1787331600000,
     "deadline": "8/21/2026 5:00:00 PM",
@@ -1127,7 +1314,7 @@
     "reqId": "26-002588-0048",
     "location": "Howard",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002588&R3=0048",
-    "days": 7,
+    "days": 8,
     "postedAtMs": 1786093200000,
     "deadlineMs": 1787356740000,
     "deadline": "8/21/2026 11:59:00 PM",
@@ -1144,7 +1331,7 @@
     "reqId": "26-005484-0015",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005484&R3=0015",
-    "days": 7,
+    "days": 8,
     "postedAtMs": 1786093200000,
     "deadlineMs": 1787356740000,
     "deadline": "8/21/2026 11:59:00 PM",
@@ -1365,7 +1552,7 @@
     "reqId": "26-002589-0009",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002589&R3=0009",
-    "days": 8,
+    "days": 9,
     "postedAtMs": 1786002000000,
     "deadlineMs": 1787245200000,
     "deadline": "8/20/2026 5:00:00 PM",
@@ -1807,7 +1994,7 @@
     "reqId": "26-002043-0029",
     "location": "Anne Arundel",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002043&R3=0029",
-    "days": 10,
+    "days": 11,
     "postedAtMs": 1785836340000,
     "deadlineMs": 1787097540000,
     "deadline": "8/18/2026 11:59:00 PM",
@@ -1824,7 +2011,7 @@
     "reqId": "26-002572-0012",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002572&R3=0012",
-    "days": 10,
+    "days": 11,
     "postedAtMs": 1785835800000,
     "deadlineMs": 1787097540000,
     "deadline": "8/18/2026 11:59:00 PM",
@@ -1841,7 +2028,7 @@
     "reqId": "26-004488-0008",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0008",
-    "days": 10,
+    "days": 11,
     "postedAtMs": 1785835800000,
     "deadlineMs": 1787097540000,
     "deadline": "8/18/2026 11:59:00 PM",
@@ -1858,7 +2045,7 @@
     "reqId": "26-005055-0010",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005055&R3=0010",
-    "days": 10,
+    "days": 11,
     "postedAtMs": 1785834000000,
     "deadlineMs": 1787097540000,
     "deadline": "8/18/2026 11:59:00 PM",
@@ -1977,7 +2164,7 @@
     "reqId": "26-004124-0004",
     "location": "Anne Arundel Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004124&R3=0004",
-    "days": 13,
+    "days": 14,
     "postedAtMs": 1785571200000,
     "deadlineMs": 1788220740000,
     "deadline": "8/31/2026 11:59:00 PM",
@@ -1994,7 +2181,7 @@
     "reqId": "26-004126-0006",
     "location": "Anne Arundel Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004126&R3=0006",
-    "days": 13,
+    "days": 14,
     "postedAtMs": 1785571200000,
     "deadlineMs": 1788220740000,
     "deadline": "8/31/2026 11:59:00 PM",
@@ -2091,23 +2278,6 @@
     }
   },
   {
-    "company": "State of Maryland — Department of Public Safety and Correctional Svcs",
-    "title": "Director of Mental Health (PROGRAM MANAGER SENIOR IV *Repost*)",
-    "reqId": "26-005485-0015",
-    "location": "Howard",
-    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005485&R3=0015",
-    "days": 14,
-    "postedAtMs": 1785509940000,
-    "deadlineMs": 1786719540000,
-    "deadline": "8/14/2026 2:59:00 PM",
-    "employmentType": "Full-Time",
-    "salary": {
-      "min": 128818,
-      "max": 139439,
-      "unit": "YEAR"
-    }
-  },
-  {
     "company": "State of Maryland — MD Health Benefit Exchange",
     "title": "ADMINISTRATIVE PROGRAM MANAGER I (Compliance and Privacy Manager)",
     "reqId": "26-005472-0007",
@@ -2159,29 +2329,12 @@
     }
   },
   {
-    "company": "State of Maryland — LABOR - Occupational and Professional Licensing 1",
-    "title": "Board Operation Officer (ADMINISTRATIVE OFFICER I)",
-    "reqId": "26-002711-0031",
-    "location": "Baltimore City",
-    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002711&R3=0031",
-    "days": 14,
-    "postedAtMs": 1785498000000,
-    "deadlineMs": 1786726800000,
-    "deadline": "8/14/2026 5:00:00 PM",
-    "employmentType": "Full-Time",
-    "salary": {
-      "min": 55710,
-      "max": 87867,
-      "unit": "YEAR"
-    }
-  },
-  {
     "company": "State of Maryland — MSP - Criminal Investigation Bureau",
     "title": "MSP Technical Surveillance Unit Specialist",
     "reqId": "26-000266-0002",
     "location": "Baltimore County",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000266&R3=0002",
-    "days": 14,
+    "days": 15,
     "postedAtMs": 1785489300000,
     "deadlineMs": 1787356740000,
     "deadline": "8/21/2026 11:59:00 PM",
@@ -2198,7 +2351,7 @@
     "reqId": "26-005479-0019",
     "location": "Anne Arundel",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005479&R3=0019",
-    "days": 14,
+    "days": 15,
     "postedAtMs": 1785488400000,
     "deadlineMs": 1786751940000,
     "deadline": "8/14/2026 11:59:00 PM",
@@ -2232,7 +2385,7 @@
     "reqId": "26-004539-0001",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004539&R3=0001",
-    "days": 16,
+    "days": 17,
     "postedAtMs": 1785312000000,
     "deadlineMs": null,
     "deadline": "Open/Continuous",
@@ -2249,7 +2402,7 @@
     "reqId": "26-004538-0001",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004538&R3=0001",
-    "days": 16,
+    "days": 17,
     "postedAtMs": 1785312000000,
     "deadlineMs": null,
     "deadline": "Open/Continuous",
@@ -2266,7 +2419,7 @@
     "reqId": "26-009009-0005",
     "location": "Howard",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009009&R3=0005",
-    "days": 16,
+    "days": 17,
     "postedAtMs": 1785311100000,
     "deadlineMs": null,
     "deadline": "Open/Continuous",
@@ -2470,7 +2623,7 @@
     "reqId": "26-002587-0035",
     "location": "Baltimore County",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002587&R3=0035",
-    "days": 21,
+    "days": 22,
     "postedAtMs": 1784883300000,
     "deadlineMs": 1786751940000,
     "deadline": "8/14/2026 11:59:00 PM",
@@ -2521,7 +2674,7 @@
     "reqId": "26-009609-0002",
     "location": "Baltimore City",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009609&R3=0002",
-    "days": 22,
+    "days": 23,
     "postedAtMs": 1784793600000,
     "deadlineMs": 1787356740000,
     "deadline": "8/21/2026 11:59:00 PM",
@@ -2924,6 +3077,23 @@
     }
   },
   {
+    "company": "State of Maryland — MDH RICA Baltimore",
+    "title": "Registered Nurse Charge Med, CI *REPOST*",
+    "reqId": "26-004868-0001",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004868&R3=0001",
+    "days": 64,
+    "postedAtMs": 1781222340000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 93138,
+      "max": 120491,
+      "unit": "YEAR"
+    }
+  },
+  {
     "company": "State of Maryland — MDH Spring Grove Hospital Center",
     "title": "ACTIVITY THERAPY ASSOCIATE III, CI *REPOST*",
     "reqId": "26-004647-0001",
@@ -3133,7 +3303,7 @@
     "reqId": "26-004832-0001",
     "location": "Carroll",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004832&R3=0001",
-    "days": 112,
+    "days": 113,
     "postedAtMs": 1777018320000,
     "deadlineMs": 1787183940000,
     "deadline": "8/19/2026 11:59:00 PM",
@@ -3337,7 +3507,7 @@
     "reqId": "26-004703-0002",
     "location": "Carroll",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004703&R3=0002",
-    "days": 182,
+    "days": 183,
     "postedAtMs": 1770975960000,
     "deadlineMs": 1787183940000,
     "deadline": "8/19/2026 11:59:00 PM",
@@ -3354,7 +3524,7 @@
     "reqId": "26-004714-0001",
     "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
     "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004714&R3=0001",
-    "days": 189,
+    "days": 190,
     "postedAtMs": 1770370680000,
     "deadlineMs": 1798761540000,
     "deadline": "12/31/2026 11:59:00 PM",
@@ -3362,6 +3532,23 @@
     "salary": {
       "min": 77726,
       "max": 117737,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — DNR - Information Technology Service",
+    "title": "IT PROGRAMMER ANALYST, LEAD/ADVANCED (**REPOST**)",
+    "reqId": "26-004471-0001",
+    "location": "Anne Arundel",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004471&R3=0001",
+    "days": 190,
+    "postedAtMs": 1770335940000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 85963,
+      "max": 133951,
       "unit": "YEAR"
     }
   },
@@ -3396,6 +3583,23 @@
     "salary": {
       "min": 230000,
       "max": 363562,
+      "unit": "YEAR"
+    }
+  },
+  {
+    "company": "State of Maryland — MDH Behavioral Health Admin - Program Direction",
+    "title": "SOCIAL WORKER ADVANCED, HEALTH SERVICES ***REPOST*** (REGIONAL COORDINATOR, ASSISTED OUTPATIENT TREATMENT PROGRAM)",
+    "reqId": "26-001993-0001",
+    "location": "Baltimore County",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001993&R3=0001",
+    "days": 205,
+    "postedAtMs": 1769012400000,
+    "deadlineMs": 1787961540000,
+    "deadline": "8/28/2026 11:59:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 76608,
+      "max": 99105,
       "unit": "YEAR"
     }
   },
