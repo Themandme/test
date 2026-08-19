@@ -1,10 +1,10 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-18 21:43 UTC · 501 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-19 11:43 UTC · 505 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
-Coverage: each run reads 60 of 477 sitemap chunks, rotating, so a full pass takes 8 runs (~4.0 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
+Coverage: each run reads 60 of 482 sitemap chunks, rotating, so a full pass takes 9 runs (~4.5 days at twice daily). Listings accumulate across runs and drop out once they age past 60 days or go unseen for two full passes.
 
 ## Owings Mills (263)
 
@@ -278,6 +278,7 @@ Coverage: each run reads 60 of 477 sitemap chunks, rotating, so a full pass take
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| Chimes | [Direct Support Professional - (Stevenson) Thurs-Sat 8a-8p](https://hiringcafe.com/job/direct-support-professional-stevenson-thurs-sat-8a-8p-chimes-sh29jof9tyokn0qr) | — | 2026-08-17 |
 | North Oaks | [Activities Assistant](https://hiringcafe.com/job/activities-assistant-north-oaks-pikesville-maryland-x3nolof1uk9e49i1) | — | 2026-08-17 |
 | Sonida Senior Living | [Culinary Services Cook](https://hiringcafe.com/job/culinary-services-cook-sonida-senior-living-pikesville-maryland-q98w5ql1y61to99l) | — | 2026-08-17 |
 | Tailored Brands | [Seasonal Sales Associate](https://hiringcafe.com/job/seasonal-sales-associate-tailored-brands-pikesville-maryland-zjq5rotizf9tzixg) | $15–$18.75/hr | 2026-08-17 |
@@ -312,7 +313,6 @@ Coverage: each run reads 60 of 477 sitemap chunks, rotating, so a full pass take
 | M&T Bank | [Relationship Banker - Pikesville](https://hiringcafe.com/job/relationship-banker-pikesville-m-and-t-bank-pikesville-maryland-ys4c9p3rmtocr02m) | $24.87–$41.45/hr | 2026-08-04 |
 | Prologue | [Adult Outreach Worker](https://hiringcafe.com/job/adult-outreach-worker-prologue-pikesville-maryland-k0oer3cd0t9mpmw0) | — | 2026-08-03 |
 | North Oaks | [Server Part Time](https://hiringcafe.com/job/server-part-time-north-oaks-pikesville-maryland-fqumkaa2hmicc2ht) | — | 2026-08-03 |
-| Chimes | [Direct Support Professional - (Stevenson) Thurs-Sat 8a-8p](https://hiringcafe.com/job/direct-support-professional-stevenson-thurs-sat-8a-8p-chimes-wnqf6amgo2p5n0qg) | — | 2026-08-03 |
 | Bluegrass FW, LLC | [Server](https://hiringcafe.com/job/server-bluegrass-fw-llc-pikesville-maryland-juj77nh98v1rrfre) | — | 2026-08-01 |
 | FutureCare | [Housekeeper](https://hiringcafe.com/job/housekeeper-futurecare-pikesville-maryland-i0i29im247xqfx24) | $15.7–$17.5/hr | 2026-07-31 |
 | North Oaks | [Diet Aide part time](https://hiringcafe.com/job/diet-aide-part-time-north-oaks-pikesville-maryland-1b458vwonf9iz13r) | — | 2026-07-30 |
@@ -364,10 +364,12 @@ Coverage: each run reads 60 of 477 sitemap chunks, rotating, so a full pass take
 | National Institute for Fitness and Sport | [Fitness Center Manager - Pikesville, MD](https://hiringcafe.com/job/fitness-center-manager-pikesville-md-national-institute-for-fitness-ryr32anwbx1is5z2) | $48k–$55k | 2026-06-23 |
 | Nexplore | [Coding After School Instructor](https://hiringcafe.com/job/coding-after-school-instructor-nexplore-pikesville-maryland-g9c8wpzwjrdazxhn) | — | 2026-06-22 |
 
-## Randallstown (66)
+## Randallstown (69)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| AutoZone | [Commercial Specialist](https://hiringcafe.com/job/commercial-specialist-autozone-randallstown-maryland-o9tgdoe9eh6erwjm) | $17.5–$18.32/hr | 2026-08-17 |
+| AutoZone | [Part Sales Manager – Part Time](https://hiringcafe.com/job/part-sales-manager-part-time-autozone-randallstown-maryland-vilpucj4zpwbec50) | $15.45–$16.13/hr | 2026-08-17 |
 | Baltimore County Public Schools | [Athletic Trainer (12 Month) - Randallstown High School](https://hiringcafe.com/job/athletic-trainer-12-month-randallstown-high-school-baltimore-county-e2jwn8pv7uv9yqps) | $74k–$145k | 2026-08-14 |
 | FutureCare | [Laundry Aide](https://hiringcafe.com/job/laundry-aide-futurecare-randallstown-maryland-08jwczs33gfh77lp) | $15.7–$17.5/hr | 2026-08-12 |
 | Walmart | [General Merchandise Team Associate](https://hiringcafe.com/job/general-merchandise-team-associate-walmart-randallstown-maryland-mq7ym95sjho0by1w) | $17–$30/hr | 2026-08-11 |
@@ -403,6 +405,7 @@ Coverage: each run reads 60 of 477 sitemap chunks, rotating, so a full pass take
 | Spotless Brands | [Assistant Site Manager](https://hiringcafe.com/job/assistant-site-manager-spotless-brands-randallstown-maryland-copwx4my62yic4pp) | — | 2026-07-23 |
 | Walmart | [Food/Consumables Team Associate](https://hiringcafe.com/job/food-consumables-team-associate-walmart-randallstown-maryland-wsgqswis1swfsp8i) | $17–$30/hr | 2026-07-23 |
 | Wells Fargo | [Relationship Banker Northwest, MD](https://hiringcafe.com/job/relationship-banker-northwest-md-wells-fargo-randallstown-maryland-34wrspogk1644pze) | $25–$38/hr | 2026-07-22 |
+| LifeBridge Health | [ER UNIT CLERK](https://hiringcafe.com/job/er-unit-clerk-lifebridge-health-randallstown-maryland-xcby0uvzviaq5en1) | $17.33–$26/hr | 2026-07-22 |
 | Ahold Delhaize | [PT Cake Decorator (460676)](https://hiringcafe.com/job/pt-cake-decorator-460676-ahold-delhaize-randallstown-maryland-628uphjlx8jg3hxa) | — | 2026-07-18 |
 | Food Lion | [PT Cake Decorator](https://hiringcafe.com/job/pt-cake-decorator-food-lion-randallstown-maryland-bu6rufd877ai5viu) | $16.6–$24.9/hr | 2026-07-18 |
 | Royal Farms | [Customer Service Associate](https://hiringcafe.com/job/customer-service-associate-royal-farms-randallstown-maryland-5cfe89htmmrl0621) | $15–$19/hr | 2026-07-17 |
@@ -489,10 +492,11 @@ Coverage: each run reads 60 of 477 sitemap chunks, rotating, so a full pass take
 | Domino's | [Delivery Expert (04616) - 11616 Reisterstown Rd](https://hiringcafe.com/job/delivery-expert-04616-11616-reisterstown-rd-dominos-reisterstown-5tdo268agx7twpjj) | — | 2026-06-22 |
 | Walgreens | [Store Manager](https://hiringcafe.com/job/store-manager-walgreens-reisterstown-maryland-ykcsn1kcjsnmzv71) | $50k–$120k | 2026-06-22 |
 
-## Windsor Mill (22)
+## Windsor Mill (23)
 
 | Employer | Role | Pay | Posted |
 |---|---|---|---|
+| RELI Group | [Database Administrator](https://hiringcafe.com/job/database-administrator-reli-group-windsor-mill-maryland-q3pm38fhg4i613xl) | $63k–$92k | 2026-08-17 |
 | Xanitos | [Housekeeper 2nd Shift Part-time](https://hiringcafe.com/job/housekeeper-2nd-shift-part-time-xanitos-windsor-mill-maryland-wwjal21pmijt3vvb) | — | 2026-08-14 |
 | Peraton | [Business Development Manager-CMS](https://hiringcafe.com/job/business-development-manager-cms-peraton-windsor-mill-maryland-48fsxlp8outc6fi1) | $112k–$179k | 2026-08-12 |
 | Baltimore County Revenue Authority | [Cart Attendant](https://hiringcafe.com/job/cart-attendant-baltimore-county-revenue-authority-windsor-mill-r7k2h0l9q72piss8) | — | 2026-08-11 |
