@@ -1,8 +1,8 @@
 {
   "note": "Rotating sitemap sweep state. Safe to delete; costs one cycle to rebuild.",
-  "updatedAt": "2026-08-25T11:46:50.490Z",
-  "cursor": 36,
-  "run": 48,
+  "updatedAt": "2026-08-25T21:48:33.603Z",
+  "cursor": 96,
+  "run": 49,
   "chunkCount": 483,
   "cycleRuns": 9,
   "jobs": {
@@ -4946,7 +4946,7 @@
         "max": 35,
         "unit": "HOUR"
       },
-      "lastSeenRun": 40
+      "lastSeenRun": 49
     },
     "https://hiringcafe.com/job/line-cook-wegmans-owings-mills-maryland-2xwebu7h01ho2yfp": {
       "title": "Line Cook",

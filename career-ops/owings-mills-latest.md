@@ -1,6 +1,6 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-25 11:46 UTC · 531 openings within ~5 miles · posted in the last 60 days_
+_Updated 2026-08-25 21:48 UTC · 531 openings within ~5 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.
 
