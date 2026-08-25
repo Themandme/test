@@ -1,5 +1,31 @@
 [
   {
+    "company": "Frederick County Government",
+    "agency": "frederickmd",
+    "title": "Human Resources Administrator - Employee Services",
+    "reqId": "FY27-00085",
+    "location": "Winchester Hall - Frederick, MD",
+    "city": "frederick",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5435247/human-resources-administrator-employee-services",
+    "postedAtMs": 1787616000000,
+    "days": 0,
+    "continuous": false,
+    "deadlineMs": 1788825600000,
+    "deadline": "09/08/26",
+    "employmentType": "Full-time Regular",
+    "department": "Human Resources Department",
+    "categories": [
+      "Human Resources"
+    ],
+    "salary": {
+      "min": 85340.49,
+      "max": 145078.84,
+      "unit": "YEAR"
+    },
+    "miles": 33.6
+  },
+  {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
     "title": "Senior Affairs Associate II - Senior Center Director",
@@ -122,28 +148,30 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Street Outreach Network Team Leader (Program Manager I, Grade 23)",
-    "reqId": "2026-00463",
-    "location": "1401 Rockville Pike Rockville MD 20852 USA",
-    "city": "rockville",
+    "title": "Office Services Coordinator",
+    "reqId": "2026-00496",
+    "location": "100 Edison Park Dr Gaithersburg MD 20878 USA",
+    "city": "gaithersburg",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5457912/street-outreach-network-team-leader-program-manager-i-grade-23",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5458063/office-services-coordinator",
     "postedAtMs": 1787529600000,
     "days": 1,
     "continuous": false,
     "deadlineMs": 1788134400000,
     "deadline": "08/31/26",
     "employmentType": "Permanent",
-    "department": " Department of Health and Human Services",
+    "department": " Department of Police",
     "categories": [
-      "Community and Social Services"
+      "Administration",
+      "Law Enforcement",
+      "911 Telecommunications"
     ],
     "salary": {
-      "min": 78929,
-      "max": 126097,
+      "min": 59237,
+      "max": 92718,
       "unit": "YEAR"
     },
-    "miles": 30.7
+    "miles": 32.3
   },
   {
     "company": "Montgomery County Government",
@@ -201,30 +229,28 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Office Services Coordinator",
-    "reqId": "2026-00496",
-    "location": "100 Edison Park Dr Gaithersburg MD 20878 USA",
-    "city": "gaithersburg",
+    "title": "Street Outreach Network Team Leader (Program Manager I, Grade 23)",
+    "reqId": "2026-00463",
+    "location": "1401 Rockville Pike Rockville MD 20852 USA",
+    "city": "rockville",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5458063/office-services-coordinator",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5457912/street-outreach-network-team-leader-program-manager-i-grade-23",
     "postedAtMs": 1787529600000,
     "days": 1,
     "continuous": false,
     "deadlineMs": 1788134400000,
     "deadline": "08/31/26",
     "employmentType": "Permanent",
-    "department": " Department of Police",
+    "department": " Department of Health and Human Services",
     "categories": [
-      "Administration",
-      "Law Enforcement",
-      "911 Telecommunications"
+      "Community and Social Services"
     ],
     "salary": {
-      "min": 59237,
-      "max": 92718,
+      "min": 78929,
+      "max": 126097,
       "unit": "YEAR"
     },
-    "miles": 32.3
+    "miles": 30.7
   },
   {
     "company": "M-NCPPC",
@@ -452,12 +478,12 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "TERM Government Assistance Eligibility Specialist I, Grade 17",
-    "reqId": "2026-00458",
-    "location": "8818 Georgia Ave Silver Spring MD 20910 USA",
-    "city": "silver spring",
+    "title": "TERM Program Manager I, Grade 23",
+    "reqId": "2026-00483",
+    "location": "1401 Rockville Pike Rockville MD 20852 USA",
+    "city": "rockville",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5454403/term-government-assistance-eligibility-specialist-i-grade-17",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5456698/term-program-manager-i-grade-23",
     "postedAtMs": 1787270400000,
     "days": 4,
     "continuous": false,
@@ -469,28 +495,26 @@
       "Administration",
       "Community Services",
       "Health Services",
-      "Public Health",
-      "Social Services",
+      "Management",
       "Professional",
       "Paraprofessional",
       "Human Services",
+      "Community Development",
       "Customer Service",
-      "Health Education",
-      "Health Sciences",
+      "Records Management",
       "Business",
       "Communications",
       "Community and Social Services",
-      "Health Care Support",
       "Office and Administrative Support",
       "Program Management",
       "Database Administration"
     ],
     "salary": {
-      "min": 69601,
-      "max": 110382,
+      "min": 78929,
+      "max": 126097,
       "unit": "YEAR"
     },
-    "miles": 32
+    "miles": 30.7
   },
   {
     "company": "Montgomery County Government",
@@ -538,12 +562,12 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "TERM Program Manager I, Grade 23",
-    "reqId": "2026-00483",
-    "location": "1401 Rockville Pike Rockville MD 20852 USA",
-    "city": "rockville",
+    "title": "TERM Government Assistance Eligibility Specialist I, Grade 17",
+    "reqId": "2026-00458",
+    "location": "8818 Georgia Ave Silver Spring MD 20910 USA",
+    "city": "silver spring",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5456698/term-program-manager-i-grade-23",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5454403/term-government-assistance-eligibility-specialist-i-grade-17",
     "postedAtMs": 1787270400000,
     "days": 4,
     "continuous": false,
@@ -555,52 +579,28 @@
       "Administration",
       "Community Services",
       "Health Services",
-      "Management",
+      "Public Health",
+      "Social Services",
       "Professional",
       "Paraprofessional",
       "Human Services",
-      "Community Development",
       "Customer Service",
-      "Records Management",
+      "Health Education",
+      "Health Sciences",
       "Business",
       "Communications",
       "Community and Social Services",
+      "Health Care Support",
       "Office and Administrative Support",
       "Program Management",
       "Database Administration"
     ],
     "salary": {
-      "min": 78929,
-      "max": 126097,
+      "min": 69601,
+      "max": 110382,
       "unit": "YEAR"
     },
-    "miles": 30.7
-  },
-  {
-    "company": "Frederick County Government",
-    "agency": "frederickmd",
-    "title": "Library Materials Manager",
-    "reqId": "FY27-00087",
-    "location": "C. Burr Artz Public Library, MD",
-    "city": "frederick",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5444690/library-materials-manager",
-    "postedAtMs": 1787270400000,
-    "days": 4,
-    "continuous": false,
-    "deadlineMs": 1789344000000,
-    "deadline": "09/14/26",
-    "employmentType": "Full-time Regular",
-    "department": "Public Libraries",
-    "categories": [
-      "Library"
-    ],
-    "salary": {
-      "min": 69663.26,
-      "max": 118427.55,
-      "unit": "YEAR"
-    },
-    "miles": 33.6
+    "miles": 32
   },
   {
     "company": "Frederick County Government",
@@ -629,6 +629,32 @@
       "unit": "HOUR"
     },
     "miles": 35.2
+  },
+  {
+    "company": "Frederick County Government",
+    "agency": "frederickmd",
+    "title": "Library Materials Manager",
+    "reqId": "FY27-00087",
+    "location": "C. Burr Artz Public Library, MD",
+    "city": "frederick",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5444690/library-materials-manager",
+    "postedAtMs": 1787270400000,
+    "days": 4,
+    "continuous": false,
+    "deadlineMs": 1789344000000,
+    "deadline": "09/14/26",
+    "employmentType": "Full-time Regular",
+    "department": "Public Libraries",
+    "categories": [
+      "Library"
+    ],
+    "salary": {
+      "min": 69663.26,
+      "max": 118427.55,
+      "unit": "YEAR"
+    },
+    "miles": 33.6
   },
   {
     "company": "District of Columbia Government",
@@ -891,6 +917,34 @@
   {
     "company": "Anne Arundel County Government",
     "agency": "annearundel",
+    "title": "School Age Child Care Director (Management Aide)",
+    "reqId": "8742",
+    "location": "Anne Arundel County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5450596/school-age-child-care-director-management-aide",
+    "postedAtMs": 1787184000000,
+    "days": 5,
+    "continuous": false,
+    "deadlineMs": 1788912000000,
+    "deadline": "09/09/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Recreation and Parks",
+    "categories": [
+      "Child Support",
+      "Parks and Recreation ",
+      "Parks"
+    ],
+    "salary": {
+      "min": 52562,
+      "max": 97171,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
     "title": "Capital Budget Analyst (Budget & Management Analyst III)",
     "reqId": "08602R",
     "location": "Anne Arundel County, MD",
@@ -916,32 +970,31 @@
     "miles": 34.5
   },
   {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "School Age Child Care Director (Management Aide)",
-    "reqId": "8742",
-    "location": "Anne Arundel County, MD",
-    "city": null,
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Voter Registration Specialist (Program Specialist I), Grade 18",
+    "reqId": "2026-00485",
+    "location": "18753 N Frederick Ave Gaithersburg MD 20879 USA",
+    "city": "gaithersburg",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5450596/school-age-child-care-director-management-aide",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5451847/voter-registration-specialist-program-specialist-i-grade-18",
     "postedAtMs": 1787184000000,
     "days": 5,
     "continuous": false,
-    "deadlineMs": 1788912000000,
-    "deadline": "09/09/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Recreation and Parks",
+    "deadlineMs": 1787788800000,
+    "deadline": "08/27/26",
+    "employmentType": "Permanent",
+    "department": " Board of Elections",
     "categories": [
-      "Child Support",
-      "Parks and Recreation ",
-      "Parks"
+      "Public Works",
+      "Program Management"
     ],
     "salary": {
-      "min": 52562,
-      "max": 97171,
+      "min": 64104,
+      "max": 101124,
       "unit": "YEAR"
     },
-    "miles": 34.5
+    "miles": 29.6
   },
   {
     "company": "Montgomery County Government",
@@ -977,33 +1030,6 @@
       "unit": "YEAR"
     },
     "miles": 30.8
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Voter Registration Specialist (Program Specialist I), Grade 18",
-    "reqId": "2026-00485",
-    "location": "18753 N Frederick Ave Gaithersburg MD 20879 USA",
-    "city": "gaithersburg",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5451847/voter-registration-specialist-program-specialist-i-grade-18",
-    "postedAtMs": 1787184000000,
-    "days": 5,
-    "continuous": false,
-    "deadlineMs": 1787788800000,
-    "deadline": "08/27/26",
-    "employmentType": "Permanent",
-    "department": " Board of Elections",
-    "categories": [
-      "Public Works",
-      "Program Management"
-    ],
-    "salary": {
-      "min": 64104,
-      "max": 101124,
-      "unit": "YEAR"
-    },
-    "miles": 29.6
   },
   {
     "company": "M-NCPPC",
@@ -1092,35 +1118,6 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
-    "title": "Lifeguard Attendant (Year Round), Various Locations",
-    "reqId": "NM.148 Rec & Parks 07-26",
-    "location": "Various locations throughout Baltimore County, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5431544/lifeguard-attendant-year-round-various-locations",
-    "postedAtMs": 1787097600000,
-    "days": 6,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "NON-MERIT",
-    "department": "RECREATION & PARKS",
-    "categories": [
-      "Parks and Beaches",
-      "Parks and Recreation ",
-      "Customer Service",
-      "Student Employment"
-    ],
-    "salary": {
-      "min": 18.75,
-      "max": 19.75,
-      "unit": "HOUR"
-    },
-    "miles": 9.4
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
     "title": "Senior Affairs Associate II - Dementia Friendly Program Manager",
     "reqId": "04.510  07-26",
     "location": "Various locations throughout Baltimore County, MD",
@@ -1194,6 +1191,35 @@
       "min": 33422,
       "max": 38101,
       "unit": "YEAR"
+    },
+    "miles": 9.4
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
+    "title": "Lifeguard Attendant (Year Round), Various Locations",
+    "reqId": "NM.148 Rec & Parks 07-26",
+    "location": "Various locations throughout Baltimore County, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5431544/lifeguard-attendant-year-round-various-locations",
+    "postedAtMs": 1787097600000,
+    "days": 6,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "NON-MERIT",
+    "department": "RECREATION & PARKS",
+    "categories": [
+      "Parks and Beaches",
+      "Parks and Recreation ",
+      "Customer Service",
+      "Student Employment"
+    ],
+    "salary": {
+      "min": 18.75,
+      "max": 19.75,
+      "unit": "HOUR"
     },
     "miles": 9.4
   },
@@ -1319,32 +1345,6 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Truck Driver / Warehouse Worker, Grade 15",
-    "reqId": "2026-00490",
-    "location": "201 Edison Park Dr Gaithersburg MD 20878 USA",
-    "city": "gaithersburg",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5454641/truck-driver-warehouse-worker-grade-15",
-    "postedAtMs": 1787097600000,
-    "days": 6,
-    "continuous": false,
-    "deadlineMs": 1787702400000,
-    "deadline": "08/26/26",
-    "employmentType": "Permanent",
-    "department": " Alcohol Beverage Services",
-    "categories": [
-      "Warehouse"
-    ],
-    "salary": {
-      "min": 57099,
-      "max": 88813,
-      "unit": "YEAR"
-    },
-    "miles": 32.1
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
     "title": "Administrative Specialist III, Grade 23",
     "reqId": "2026-00419",
     "location": "1401 Rockville Pike Rockville MD 20852 USA",
@@ -1378,6 +1378,172 @@
       "unit": "YEAR"
     },
     "miles": 30.7
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Truck Driver / Warehouse Worker, Grade 15",
+    "reqId": "2026-00490",
+    "location": "201 Edison Park Dr Gaithersburg MD 20878 USA",
+    "city": "gaithersburg",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5454641/truck-driver-warehouse-worker-grade-15",
+    "postedAtMs": 1787097600000,
+    "days": 6,
+    "continuous": false,
+    "deadlineMs": 1787702400000,
+    "deadline": "08/26/26",
+    "employmentType": "Permanent",
+    "department": " Alcohol Beverage Services",
+    "categories": [
+      "Warehouse"
+    ],
+    "salary": {
+      "min": 57099,
+      "max": 88813,
+      "unit": "YEAR"
+    },
+    "miles": 32.1
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Principal Park Manager (13276, Grade 28)",
+    "reqId": "13276",
+    "location": "Upper Marlboro, MD",
+    "city": "upper marlboro",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5453164/principal-park-manager-13276-grade-28",
+    "postedAtMs": 1787097600000,
+    "days": 6,
+    "continuous": false,
+    "deadlineMs": 1789776000000,
+    "deadline": "09/19/26",
+    "employmentType": "Career",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Building & Safety",
+      "Building Maintenance",
+      "Management",
+      "Parks and Recreation ",
+      "Parks",
+      "Maintenance",
+      "Grounds & Landscaping",
+      "Building & Grounds Cleaning and Maintenance"
+    ],
+    "salary": {
+      "min": 75336,
+      "max": 135882,
+      "unit": "YEAR"
+    },
+    "miles": 41.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Seasonal Snack Bar Attendant",
+    "reqId": "SBA.26",
+    "location": "Mitchellville, MD",
+    "city": "bowie",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5453723/seasonal-snack-bar-attendant",
+    "postedAtMs": 1787097600000,
+    "days": 6,
+    "continuous": false,
+    "deadlineMs": 1795046400000,
+    "deadline": "11/19/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Customer Service"
+    ],
+    "salary": {
+      "min": 15.5,
+      "max": 19.73,
+      "unit": "HOUR"
+    },
+    "miles": 33.9
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Seasonal Park Maintenance Worker-Program Support - CDL",
+    "reqId": "PMW.PS.CDL26",
+    "location": "Upper Marlboro, MD",
+    "city": "upper marlboro",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5454087/seasonal-park-maintenance-worker-program-support-cdl",
+    "postedAtMs": 1787097600000,
+    "days": 6,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Building & Grounds Cleaning and Maintenance"
+    ],
+    "salary": {
+      "min": 18,
+      "max": 21,
+      "unit": "HOUR"
+    },
+    "miles": 41.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Seasonal Park Maintenance Worker-Program Support ",
+    "reqId": "PMW.PS.26",
+    "location": "Upper Marlboro, MD",
+    "city": "upper marlboro",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5454329/seasonal-park-maintenance-worker-program-support",
+    "postedAtMs": 1787097600000,
+    "days": 6,
+    "continuous": false,
+    "deadlineMs": 1789776000000,
+    "deadline": "09/19/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Building & Grounds Cleaning and Maintenance"
+    ],
+    "salary": {
+      "min": 18,
+      "max": 21,
+      "unit": "HOUR"
+    },
+    "miles": 41.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Festival of Lights Show Seasonal Technician Southern Region Parks – Seasonal",
+    "reqId": "FoLS.ST.26",
+    "location": "Upper Marlboro, MD",
+    "city": "upper marlboro",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5454346/festival-of-lights-show-seasonal-technician-southern-region-parks-seasonal",
+    "postedAtMs": 1787097600000,
+    "days": 6,
+    "continuous": false,
+    "deadlineMs": 1789776000000,
+    "deadline": "09/19/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation "
+    ],
+    "salary": {
+      "min": 18,
+      "max": 21,
+      "unit": "HOUR"
+    },
+    "miles": 41.7
   },
   {
     "company": "M-NCPPC",
@@ -1492,146 +1658,6 @@
       "unit": "HOUR"
     },
     "miles": 33.2
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Seasonal Snack Bar Attendant",
-    "reqId": "SBA.26",
-    "location": "Mitchellville, MD",
-    "city": "bowie",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5453723/seasonal-snack-bar-attendant",
-    "postedAtMs": 1787097600000,
-    "days": 6,
-    "continuous": false,
-    "deadlineMs": 1795046400000,
-    "deadline": "11/19/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Customer Service"
-    ],
-    "salary": {
-      "min": 15.5,
-      "max": 19.73,
-      "unit": "HOUR"
-    },
-    "miles": 33.9
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Principal Park Manager (13276, Grade 28)",
-    "reqId": "13276",
-    "location": "Upper Marlboro, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5453164/principal-park-manager-13276-grade-28",
-    "postedAtMs": 1787097600000,
-    "days": 6,
-    "continuous": false,
-    "deadlineMs": 1789776000000,
-    "deadline": "09/19/26",
-    "employmentType": "Career",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Building & Safety",
-      "Building Maintenance",
-      "Management",
-      "Parks and Recreation ",
-      "Parks",
-      "Maintenance",
-      "Grounds & Landscaping",
-      "Building & Grounds Cleaning and Maintenance"
-    ],
-    "salary": {
-      "min": 75336,
-      "max": 135882,
-      "unit": "YEAR"
-    },
-    "miles": 41.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Seasonal Park Maintenance Worker-Program Support ",
-    "reqId": "PMW.PS.26",
-    "location": "Upper Marlboro, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5454329/seasonal-park-maintenance-worker-program-support",
-    "postedAtMs": 1787097600000,
-    "days": 6,
-    "continuous": false,
-    "deadlineMs": 1789776000000,
-    "deadline": "09/19/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Building & Grounds Cleaning and Maintenance"
-    ],
-    "salary": {
-      "min": 18,
-      "max": 21,
-      "unit": "HOUR"
-    },
-    "miles": 41.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Festival of Lights Show Seasonal Technician Southern Region Parks – Seasonal",
-    "reqId": "FoLS.ST.26",
-    "location": "Upper Marlboro, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5454346/festival-of-lights-show-seasonal-technician-southern-region-parks-seasonal",
-    "postedAtMs": 1787097600000,
-    "days": 6,
-    "continuous": false,
-    "deadlineMs": 1789776000000,
-    "deadline": "09/19/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation "
-    ],
-    "salary": {
-      "min": 18,
-      "max": 21,
-      "unit": "HOUR"
-    },
-    "miles": 41.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Seasonal Park Maintenance Worker-Program Support - CDL",
-    "reqId": "PMW.PS.CDL26",
-    "location": "Upper Marlboro, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5454087/seasonal-park-maintenance-worker-program-support-cdl",
-    "postedAtMs": 1787097600000,
-    "days": 6,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Building & Grounds Cleaning and Maintenance"
-    ],
-    "salary": {
-      "min": 18,
-      "max": 21,
-      "unit": "HOUR"
-    },
-    "miles": 41.7
   },
   {
     "company": "Frederick County Government",
@@ -1806,32 +1832,6 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Background Investigator (Full-Time)",
-    "reqId": "2026-00488",
-    "location": "100 Edison Park Dr Gaithersburg MD 20878 USA",
-    "city": "gaithersburg",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5451974/background-investigator-full-time",
-    "postedAtMs": 1787011200000,
-    "days": 7,
-    "continuous": false,
-    "deadlineMs": 1787616000000,
-    "deadline": "08/25/26",
-    "employmentType": "Permanent",
-    "department": " Department of Police",
-    "categories": [
-      "911 Telecommunications"
-    ],
-    "salary": {
-      "min": 72567,
-      "max": 115363,
-      "unit": "YEAR"
-    },
-    "miles": 32.3
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
     "title": "Term Medication Assisted Treatment Nurse (Community Health Nurse I/II) Grade 21/24",
     "reqId": "2026-00223",
     "location": "1500 E Gude Dr Rockville MD 20850 USA",
@@ -1976,29 +1976,29 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
-    "title": "Maintenance Mechanic II- Public Works, Bureau of Highways, Traffic Division",
-    "reqId": "26-00573",
-    "location": "Maryland 21046, MD",
+    "title": "Administrative Aide- Public Works, Bureau of Utilities/Service Division",
+    "reqId": "26-00586",
+    "location": "Maryland 21045, MD",
     "city": "columbia",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5394277/maintenance-mechanic-ii-public-works-bureau-of-highways-traffic-division",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5407750/administrative-aide-public-works-bureau-of-utilities-service-division",
     "postedAtMs": 1786924800000,
     "days": 8,
     "continuous": false,
-    "deadlineMs": 1788134400000,
-    "deadline": "08/31/26",
+    "deadlineMs": 1788220800000,
+    "deadline": "09/01/26",
     "employmentType": "Full Time",
     "department": "Public Works",
     "categories": [
-      "Trades",
-      "Maintenance"
+      "Administration",
+      "Administrative Assistant"
     ],
     "salary": {
-      "min": 54181,
-      "max": 87860,
+      "min": 51139,
+      "max": 98572,
       "unit": "YEAR"
     },
-    "miles": 17.6
+    "miles": 17.4
   },
   {
     "company": "Howard County Government",
@@ -2029,56 +2029,57 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
-    "title": "Administrative Aide- Public Works, Bureau of Utilities/Service Division",
-    "reqId": "26-00586",
-    "location": "Maryland 21045, MD",
+    "title": "Maintenance Mechanic II- Public Works, Bureau of Highways, Traffic Division",
+    "reqId": "26-00573",
+    "location": "Maryland 21046, MD",
     "city": "columbia",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5407750/administrative-aide-public-works-bureau-of-utilities-service-division",
-    "postedAtMs": 1786924800000,
-    "days": 8,
-    "continuous": false,
-    "deadlineMs": 1788220800000,
-    "deadline": "09/01/26",
-    "employmentType": "Full Time",
-    "department": "Public Works",
-    "categories": [
-      "Administration",
-      "Administrative Assistant"
-    ],
-    "salary": {
-      "min": 51139,
-      "max": 98572,
-      "unit": "YEAR"
-    },
-    "miles": 17.4
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "HIV Wellness Nutritionist (Term), Grade 21",
-    "reqId": "2026-00393",
-    "location": "2000 Dennis Ave Silver Spring MD 20902 USA",
-    "city": "silver spring",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5429348/hiv-wellness-nutritionist-term-grade-21",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5394277/maintenance-mechanic-ii-public-works-bureau-of-highways-traffic-division",
     "postedAtMs": 1786924800000,
     "days": 8,
     "continuous": false,
     "deadlineMs": 1788134400000,
     "deadline": "08/31/26",
-    "employmentType": "Term",
-    "department": " Department of Health and Human Services",
+    "employmentType": "Full Time",
+    "department": "Public Works",
     "categories": [
-      "Public Health",
-      "Nutrition"
+      "Trades",
+      "Maintenance"
     ],
     "salary": {
-      "min": 72567,
-      "max": 115363,
+      "min": 54181,
+      "max": 87860,
       "unit": "YEAR"
     },
-    "miles": 30.7
+    "miles": 17.6
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Accreditation and Policy Program Coordinator (Program Manager I, N23)",
+    "reqId": "2026-00484",
+    "location": "50 Maryland Ave Rockville MD 20850, USA",
+    "city": "rockville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5450734/accreditation-and-policy-program-coordinator-program-manager-i-n23",
+    "postedAtMs": 1786924800000,
+    "days": 8,
+    "continuous": false,
+    "deadlineMs": 1788480000000,
+    "deadline": "09/04/26",
+    "employmentType": "Permanent",
+    "department": " Sheriff's Office",
+    "categories": [
+      "Public Safety",
+      "Office and Administrative Support",
+      "Program Management"
+    ],
+    "salary": {
+      "min": 78929,
+      "max": 126097,
+      "unit": "YEAR"
+    },
+    "miles": 30.5
   },
   {
     "company": "Montgomery County Government",
@@ -2113,58 +2114,56 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
-    "title": "Accreditation and Policy Program Coordinator (Program Manager I, N23)",
-    "reqId": "2026-00484",
-    "location": "50 Maryland Ave Rockville MD 20850, USA",
-    "city": "rockville",
+    "title": "HIV Wellness Nutritionist (Term), Grade 21",
+    "reqId": "2026-00393",
+    "location": "2000 Dennis Ave Silver Spring MD 20902 USA",
+    "city": "silver spring",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5450734/accreditation-and-policy-program-coordinator-program-manager-i-n23",
-    "postedAtMs": 1786924800000,
-    "days": 8,
-    "continuous": false,
-    "deadlineMs": 1788480000000,
-    "deadline": "09/04/26",
-    "employmentType": "Permanent",
-    "department": " Sheriff's Office",
-    "categories": [
-      "Public Safety",
-      "Office and Administrative Support",
-      "Program Management"
-    ],
-    "salary": {
-      "min": 78929,
-      "max": 126097,
-      "unit": "YEAR"
-    },
-    "miles": 30.5
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Senior Recreation Specialist (13043, Grade 22)",
-    "reqId": "13043",
-    "location": "Largo, MD",
-    "city": "upper marlboro",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5450349/senior-recreation-specialist-13043-grade-22",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5429348/hiv-wellness-nutritionist-term-grade-21",
     "postedAtMs": 1786924800000,
     "days": 8,
     "continuous": false,
     "deadlineMs": 1788134400000,
     "deadline": "08/31/26",
-    "employmentType": "Career",
-    "department": "PGC Parks and Recreation",
+    "employmentType": "Term",
+    "department": " Department of Health and Human Services",
     "categories": [
-      "Recreation",
+      "Public Health",
+      "Nutrition"
+    ],
+    "salary": {
+      "min": 72567,
+      "max": 115363,
+      "unit": "YEAR"
+    },
+    "miles": 30.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Ice Rink Position - Zamboni Operator (Seasonal)",
+    "reqId": "IRP.ZO26",
+    "location": "Rockville, MD",
+    "city": "rockville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/4968868/ice-rink-position-zamboni-operator-seasonal",
+    "postedAtMs": 1786924800000,
+    "days": 8,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "MC Parks",
+    "categories": [
       "Parks and Recreation ",
       "Sports"
     ],
     "salary": {
-      "min": 62349,
-      "max": 110425,
-      "unit": "YEAR"
+      "min": 15.45,
+      "max": 15.45,
+      "unit": "HOUR"
     },
-    "miles": 37.5
+    "miles": 33.3
   },
   {
     "company": "M-NCPPC",
@@ -2198,29 +2197,30 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Ice Rink Position - Zamboni Operator (Seasonal)",
-    "reqId": "IRP.ZO26",
-    "location": "Rockville, MD",
-    "city": "rockville",
+    "title": "Senior Recreation Specialist (13043, Grade 22)",
+    "reqId": "13043",
+    "location": "Largo, MD",
+    "city": "upper marlboro",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/4968868/ice-rink-position-zamboni-operator-seasonal",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5450349/senior-recreation-specialist-13043-grade-22",
     "postedAtMs": 1786924800000,
     "days": 8,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "MC Parks",
+    "continuous": false,
+    "deadlineMs": 1788134400000,
+    "deadline": "08/31/26",
+    "employmentType": "Career",
+    "department": "PGC Parks and Recreation",
     "categories": [
+      "Recreation",
       "Parks and Recreation ",
       "Sports"
     ],
     "salary": {
-      "min": 15.45,
-      "max": 15.45,
-      "unit": "HOUR"
+      "min": 62349,
+      "max": 110425,
+      "unit": "YEAR"
     },
-    "miles": 33.3
+    "miles": 37.5
   },
   {
     "company": "Baltimore County Government",
@@ -2560,6 +2560,32 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
+    "title": "Police Services Support Technician II-Police, Employment Services Division\t",
+    "reqId": "26-00284",
+    "location": "Columbia, MD",
+    "city": "columbia",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5250289/police-services-support-technician-ii-police-employment-services-division",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1787788800000,
+    "deadline": "08/27/26",
+    "employmentType": "Full Time",
+    "department": "Police",
+    "categories": [
+      "Administration"
+    ],
+    "salary": {
+      "min": 56645,
+      "max": 109262,
+      "unit": "YEAR"
+    },
+    "miles": 17
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
     "title": "Administrative Support Technician I - Department of General Services, Mail Service",
     "reqId": "26-00592",
     "location": "Ellicott City, MD",
@@ -2586,28 +2612,29 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
-    "title": "Police Services Support Technician II-Police, Employment Services Division\t",
-    "reqId": "26-00284",
-    "location": "Columbia, MD",
+    "title": "Park Maintenance Specialist-Recreation & Parks,/Bureau of Parks/Park Operations",
+    "reqId": "26-00604",
+    "location": "Howard County, MD",
     "city": "columbia",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5250289/police-services-support-technician-ii-police-employment-services-division",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5420887/park-maintenance-specialist-recreation-parks-bureau-of-parks-park-operations",
     "postedAtMs": 1786492800000,
     "days": 13,
     "continuous": false,
-    "deadlineMs": 1787788800000,
-    "deadline": "08/27/26",
+    "deadlineMs": 1787702400000,
+    "deadline": "08/26/26",
     "employmentType": "Full Time",
-    "department": "Police",
+    "department": "Recreation & Parks",
     "categories": [
-      "Administration"
+      "Parks",
+      "Maintenance"
     ],
     "salary": {
-      "min": 56645,
-      "max": 109262,
+      "min": 50688,
+      "max": 82181,
       "unit": "YEAR"
     },
-    "miles": 17
+    "miles": 17.1
   },
   {
     "company": "Howard County Government",
@@ -2637,31 +2664,189 @@
     "miles": 17
   },
   {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
-    "title": "Park Maintenance Specialist-Recreation & Parks,/Bureau of Parks/Park Operations",
-    "reqId": "26-00604",
-    "location": "Howard County, MD",
-    "city": "columbia",
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Equipment Operator III - Highways",
+    "reqId": "08739",
+    "location": "Anne Arundel County, MD",
+    "city": null,
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5420887/park-maintenance-specialist-recreation-parks-bureau-of-parks-park-operations",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5434410/equipment-operator-iii-highways",
     "postedAtMs": 1786492800000,
     "days": 13,
     "continuous": false,
-    "deadlineMs": 1787702400000,
-    "deadline": "08/26/26",
-    "employmentType": "Full Time",
-    "department": "Recreation & Parks",
+    "deadlineMs": 1788134400000,
+    "deadline": "08/31/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Public Works",
     "categories": [
-      "Parks",
-      "Maintenance"
+      "Public Works"
     ],
     "salary": {
-      "min": 50688,
-      "max": 82181,
+      "min": 49754,
+      "max": 80787,
       "unit": "YEAR"
     },
-    "miles": 17.1
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Assistant Planning & Zoning Officer - Development",
+    "reqId": "08703",
+    "location": "Anne Arundel County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5443869/assistant-planning-zoning-officer-development",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1788134400000,
+    "deadline": "08/31/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Planning and Zoning",
+    "categories": [
+      "Planning and Development"
+    ],
+    "salary": {
+      "min": 102373,
+      "max": 198865,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Education and Outreach - Bureau of Utility Operations (Program Specialist I)",
+    "reqId": "8722",
+    "location": "Anne Arundel County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437132/education-and-outreach-bureau-of-utility-operations-program-specialist-i",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1788134400000,
+    "deadline": "08/31/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Public Works",
+    "categories": [
+      "Utilities"
+    ],
+    "salary": {
+      "min": 60954,
+      "max": 112688,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Bureau of Watershed Protection & Restoration Senior Project Manager (Senior Engineer)",
+    "reqId": "08731",
+    "location": "Anne Arundel County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5438458/bureau-of-watershed-protection-restoration-senior-project-manager-senior-engin",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1789344000000,
+    "deadline": "09/14/26",
+    "employmentType": "Full-Time",
+    "department": "Public Works",
+    "categories": [
+      "Public Works"
+    ],
+    "salary": {
+      "min": 81975,
+      "max": 159236,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Equipment Operator III - Utilities Infrastructure ",
+    "reqId": "8594",
+    "location": "Utility Operations, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437070/equipment-operator-iii-utilities-infrastructure",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1789344000000,
+    "deadline": "09/14/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Public Works",
+    "categories": [
+      "Public Works",
+      "Utilities"
+    ],
+    "salary": {
+      "min": 23.92,
+      "max": 38.84,
+      "unit": "HOUR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Wastewater System Technician I",
+    "reqId": "8696",
+    "location": "Utility Operations, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437113/wastewater-system-technician-i",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1789257600000,
+    "deadline": "09/13/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Public Works",
+    "categories": [
+      "Public Works",
+      "Wastewater",
+      "Utilities"
+    ],
+    "salary": {
+      "min": 23.52,
+      "max": 28.89,
+      "unit": "HOUR"
+    },
+    "miles": 26.9
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Utility Construction Inspector",
+    "reqId": "08717",
+    "location": "Anne Arundel County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437123/utility-construction-inspector",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1789344000000,
+    "deadline": "09/14/26",
+    "employmentType": "Full-Time Regular",
+    "department": "Public Works",
+    "categories": [
+      "Public Works"
+    ],
+    "salary": {
+      "min": 57637,
+      "max": 93725,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
   },
   {
     "company": "Anne Arundel County Government",
@@ -3011,217 +3196,6 @@
     "miles": 34.5
   },
   {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Equipment Operator III - Highways",
-    "reqId": "08739",
-    "location": "Anne Arundel County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5434410/equipment-operator-iii-highways",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1788134400000,
-    "deadline": "08/31/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Public Works",
-    "categories": [
-      "Public Works"
-    ],
-    "salary": {
-      "min": 49754,
-      "max": 80787,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Assistant Planning & Zoning Officer - Development",
-    "reqId": "08703",
-    "location": "Anne Arundel County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5443869/assistant-planning-zoning-officer-development",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1788134400000,
-    "deadline": "08/31/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Planning and Zoning",
-    "categories": [
-      "Planning and Development"
-    ],
-    "salary": {
-      "min": 102373,
-      "max": 198865,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Education and Outreach - Bureau of Utility Operations (Program Specialist I)",
-    "reqId": "8722",
-    "location": "Anne Arundel County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437132/education-and-outreach-bureau-of-utility-operations-program-specialist-i",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1788134400000,
-    "deadline": "08/31/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Public Works",
-    "categories": [
-      "Utilities"
-    ],
-    "salary": {
-      "min": 60954,
-      "max": 112688,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Equipment Operator III - Utilities Infrastructure ",
-    "reqId": "8594",
-    "location": "Utility Operations, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437070/equipment-operator-iii-utilities-infrastructure",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1789344000000,
-    "deadline": "09/14/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Public Works",
-    "categories": [
-      "Public Works",
-      "Utilities"
-    ],
-    "salary": {
-      "min": 23.92,
-      "max": 38.84,
-      "unit": "HOUR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Utility Construction Inspector",
-    "reqId": "08717",
-    "location": "Anne Arundel County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437123/utility-construction-inspector",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1789344000000,
-    "deadline": "09/14/26",
-    "employmentType": "Full-Time Regular",
-    "department": "Public Works",
-    "categories": [
-      "Public Works"
-    ],
-    "salary": {
-      "min": 57637,
-      "max": 93725,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Wastewater System Technician I",
-    "reqId": "8696",
-    "location": "Utility Operations, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5437113/wastewater-system-technician-i",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1789257600000,
-    "deadline": "09/13/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Public Works",
-    "categories": [
-      "Public Works",
-      "Wastewater",
-      "Utilities"
-    ],
-    "salary": {
-      "min": 23.52,
-      "max": 28.89,
-      "unit": "HOUR"
-    },
-    "miles": 26.9
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Bureau of Watershed Protection & Restoration Senior Project Manager (Senior Engineer)",
-    "reqId": "08731",
-    "location": "Anne Arundel County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5438458/bureau-of-watershed-protection-restoration-senior-project-manager-senior-engin",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1789344000000,
-    "deadline": "09/14/26",
-    "employmentType": "Full-Time",
-    "department": "Public Works",
-    "categories": [
-      "Public Works"
-    ],
-    "salary": {
-      "min": 81975,
-      "max": 159236,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Classification Analyst (Human Resources Specialist II/III, Grade N22/N25)",
-    "reqId": "2026-00468",
-    "location": "101 Monroe St Rockville MD 20850 USA",
-    "city": "rockville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5446447/classification-analyst-human-resources-specialist-ii-iii-grade-n22-n25",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": false,
-    "deadlineMs": 1787702400000,
-    "deadline": "08/26/26",
-    "employmentType": "Permanent",
-    "department": "Office of Human Resources",
-    "categories": [
-      "Human Resources"
-    ],
-    "salary": {
-      "min": 85937,
-      "max": 137907,
-      "unit": "YEAR"
-    },
-    "miles": 30.5
-  },
-  {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
     "title": "Overhead Transportation System Technician I/II, Grade 14 / Grade 18",
@@ -3256,6 +3230,59 @@
     "miles": 31.8
   },
   {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Classification Analyst (Human Resources Specialist II/III, Grade N22/N25)",
+    "reqId": "2026-00468",
+    "location": "101 Monroe St Rockville MD 20850 USA",
+    "city": "rockville",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5446447/classification-analyst-human-resources-specialist-ii-iii-grade-n22-n25",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1787702400000,
+    "deadline": "08/26/26",
+    "employmentType": "Permanent",
+    "department": "Office of Human Resources",
+    "categories": [
+      "Human Resources"
+    ],
+    "salary": {
+      "min": 85937,
+      "max": 137907,
+      "unit": "YEAR"
+    },
+    "miles": 30.5
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Seasonal Customer Service Representative - Senior Services",
+    "reqId": "CSR.SS.26",
+    "location": "Prince George's County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5282697/seasonal-customer-service-representative-senior-services",
+    "postedAtMs": 1786492800000,
+    "days": 13,
+    "continuous": false,
+    "deadlineMs": 1791331200000,
+    "deadline": "10/07/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Customer Service"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 17.55,
+      "unit": "HOUR"
+    },
+    "miles": 44.1
+  },
+  {
     "company": "M-NCPPC",
     "agency": "mncppc",
     "title": "HR Data Management Specialist (14790, Grade 18)",
@@ -3284,31 +3311,31 @@
     "miles": 35.2
   },
   {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Seasonal Customer Service Representative - Senior Services",
-    "reqId": "CSR.SS.26",
-    "location": "Prince George's County, MD",
-    "city": null,
+    "company": "Frederick County Government",
+    "agency": "frederickmd",
+    "title": "Equipment Mechanic - Solid Waste and Recycling",
+    "reqId": "FY27-00067",
+    "location": "Landfill - Frederick, MD",
+    "city": "frederick",
     "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5282697/seasonal-customer-service-representative-senior-services",
+    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5443718/equipment-mechanic-solid-waste-and-recycling",
     "postedAtMs": 1786492800000,
     "days": 13,
-    "continuous": false,
-    "deadlineMs": 1791331200000,
-    "deadline": "10/07/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-time Regular",
+    "department": "Solid Waste & Recycling",
     "categories": [
-      "Parks and Recreation ",
-      "Customer Service"
+      "Waste Management",
+      "Maintenance"
     ],
     "salary": {
-      "min": 15.45,
-      "max": 17.55,
+      "min": 29.25,
+      "max": 49.73,
       "unit": "HOUR"
     },
-    "miles": 44.1
+    "miles": 30.6
   },
   {
     "company": "Frederick County Government",
@@ -3361,33 +3388,6 @@
       "unit": "YEAR"
     },
     "miles": 34.9
-  },
-  {
-    "company": "Frederick County Government",
-    "agency": "frederickmd",
-    "title": "Equipment Mechanic - Solid Waste and Recycling",
-    "reqId": "FY27-00067",
-    "location": "Landfill - Frederick, MD",
-    "city": "frederick",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5443718/equipment-mechanic-solid-waste-and-recycling",
-    "postedAtMs": 1786492800000,
-    "days": 13,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-time Regular",
-    "department": "Solid Waste & Recycling",
-    "categories": [
-      "Waste Management",
-      "Maintenance"
-    ],
-    "salary": {
-      "min": 29.25,
-      "max": 49.73,
-      "unit": "HOUR"
-    },
-    "miles": 30.6
   },
   {
     "company": "Baltimore County Government",
@@ -3492,36 +3492,6 @@
     "miles": 29.9
   },
   {
-    "company": "Frederick County Government",
-    "agency": "frederickmd",
-    "title": "Family Mental Health Clinician",
-    "reqId": "FY27-00022",
-    "location": "Health Department - Frederick, MD",
-    "city": "frederick",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5404194/family-mental-health-clinician",
-    "postedAtMs": 1786406400000,
-    "days": 14,
-    "continuous": false,
-    "deadlineMs": 1787616000000,
-    "deadline": "08/25/26",
-    "employmentType": "Full-time Regular",
-    "department": "Developmental Center",
-    "categories": [
-      "Health Services",
-      "Public Health",
-      "Human Services",
-      "Medical/Dental",
-      "Community and Social Services"
-    ],
-    "salary": {
-      "min": 85340.49,
-      "max": 145078.84,
-      "unit": "YEAR"
-    },
-    "miles": 35.1
-  },
-  {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
     "title": "FORENSIC SCIENTIST SUPERVISOR (Firearms and Tool Mark Supervisor)",
@@ -3551,6 +3521,33 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
+    "title": "Event Center Positions - Seasonal",
+    "reqId": "ECP.26",
+    "location": "Montgomery County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5442304/event-center-positions-seasonal",
+    "postedAtMs": 1786320000000,
+    "days": 15,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "MC Parks",
+    "categories": [
+      "Parks and Recreation ",
+      "Parks"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 15.45,
+      "unit": "HOUR"
+    },
+    "miles": 30.7
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
     "title": "Nursery and Grounds Assistant",
     "reqId": "NGA.26",
     "location": "Gaithersburg, MD",
@@ -3576,33 +3573,6 @@
       "unit": "HOUR"
     },
     "miles": 29.5
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Event Center Positions - Seasonal",
-    "reqId": "ECP.26",
-    "location": "Montgomery County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5442304/event-center-positions-seasonal",
-    "postedAtMs": 1786320000000,
-    "days": 15,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "MC Parks",
-    "categories": [
-      "Parks and Recreation ",
-      "Parks"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 15.45,
-      "unit": "HOUR"
-    },
-    "miles": 30.7
   },
   {
     "company": "Baltimore County Government",
@@ -3902,6 +3872,32 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
+    "title": "Community Facility Leader - Roger Carter Community Center",
+    "reqId": "9901-08052026",
+    "location": "Ellicott City, MD",
+    "city": "ellicott city",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5437699/community-facility-leader-roger-carter-community-center",
+    "postedAtMs": 1785888000000,
+    "days": 20,
+    "continuous": false,
+    "deadlineMs": 1788048000000,
+    "deadline": "08/30/26",
+    "employmentType": "Contingent",
+    "department": "Recreation & Parks",
+    "categories": [
+      "Recreation"
+    ],
+    "salary": {
+      "min": 16,
+      "max": 21,
+      "unit": "HOUR"
+    },
+    "miles": 10.2
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
     "title": "Before and After School Child Care-Bushy Park, Rockburn ES, Recreation & Parks",
     "reqId": "9995-08042026",
     "location": "Columbia, MD",
@@ -3925,32 +3921,6 @@
       "unit": "HOUR"
     },
     "miles": 17.1
-  },
-  {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
-    "title": "Community Facility Leader - Roger Carter Community Center",
-    "reqId": "9901-08052026",
-    "location": "Ellicott City, MD",
-    "city": "ellicott city",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5437699/community-facility-leader-roger-carter-community-center",
-    "postedAtMs": 1785888000000,
-    "days": 20,
-    "continuous": false,
-    "deadlineMs": 1788048000000,
-    "deadline": "08/30/26",
-    "employmentType": "Contingent",
-    "department": "Recreation & Parks",
-    "categories": [
-      "Recreation"
-    ],
-    "salary": {
-      "min": 16,
-      "max": 21,
-      "unit": "HOUR"
-    },
-    "miles": 10.2
   },
   {
     "company": "Montgomery County Government",
@@ -3982,60 +3952,6 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Southern Recreation & Leisure Services - Customer Service Representative - Seasonal/Year-Round",
-    "reqId": "SRLS.CSR.26",
-    "location": "Clinton, MD",
-    "city": "hillcrest heights",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5216202/southern-recreation-leisure-services-customer-service-representative-season",
-    "postedAtMs": 1785888000000,
-    "days": 20,
-    "continuous": false,
-    "deadlineMs": 1793836800000,
-    "deadline": "11/05/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Customer Service"
-    ],
-    "salary": {
-      "min": 15.45,
-      "max": 21.98,
-      "unit": "HOUR"
-    },
-    "miles": 41.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
-    "title": "Manager on Duty",
-    "reqId": "MOD.26",
-    "location": "Prince George's County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5141700/manager-on-duty",
-    "postedAtMs": 1785888000000,
-    "days": 20,
-    "continuous": false,
-    "deadlineMs": 1787616000000,
-    "deadline": "08/25/26",
-    "employmentType": "Seasonal",
-    "department": "PGC Parks and Recreation",
-    "categories": [
-      "Parks and Recreation ",
-      "Sports"
-    ],
-    "salary": {
-      "min": 17.43,
-      "max": 26.66,
-      "unit": "HOUR"
-    },
-    "miles": 44.1
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
     "title": "Chief Administrative Officer (Executive Director) - Appointed",
     "reqId": "ED124",
     "location": "Riverdale, MD",
@@ -4061,6 +3977,33 @@
     ],
     "salary": null,
     "miles": 32.5
+  },
+  {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Southern Recreation & Leisure Services - Customer Service Representative - Seasonal/Year-Round",
+    "reqId": "SRLS.CSR.26",
+    "location": "Clinton, MD",
+    "city": "hillcrest heights",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/5216202/southern-recreation-leisure-services-customer-service-representative-season",
+    "postedAtMs": 1785888000000,
+    "days": 20,
+    "continuous": false,
+    "deadlineMs": 1793836800000,
+    "deadline": "11/05/26",
+    "employmentType": "Seasonal",
+    "department": "PGC Parks and Recreation",
+    "categories": [
+      "Parks and Recreation ",
+      "Customer Service"
+    ],
+    "salary": {
+      "min": 15.45,
+      "max": 21.98,
+      "unit": "HOUR"
+    },
+    "miles": 41.7
   },
   {
     "company": "Frederick County Government",
@@ -4203,6 +4146,144 @@
   {
     "company": "Montgomery County Government",
     "agency": "montgomerycountymd",
+    "title": "Program Director or Assistant Site Director (Recreation Assistant VII, Grade S7)  ",
+    "reqId": "2026-00444",
+    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
+    "city": "silver spring",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431545/program-director-or-assistant-site-director-recreation-assistant-vii-grade-s7",
+    "postedAtMs": 1785715200000,
+    "days": 22,
+    "continuous": false,
+    "deadlineMs": 1801353600000,
+    "deadline": "01/31/27",
+    "employmentType": "Temporary Employee Less Than 1040 Hrs",
+    "department": " Department of Recreation",
+    "categories": [
+      "Administration",
+      "Recreation",
+      "Management",
+      "Parks and Recreation ",
+      "Training"
+    ],
+    "salary": {
+      "min": 22.31,
+      "max": 22.31,
+      "unit": "HOUR"
+    },
+    "miles": 30.1
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Recreation Leader II or Facility Leader II (Recreation Assistant V, Grade S5) ",
+    "reqId": "2026-00442",
+    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
+    "city": "silver spring",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431438/recreation-leader-ii-or-facility-leader-ii-recreation-assistant-v-grade-s5",
+    "postedAtMs": 1785715200000,
+    "days": 22,
+    "continuous": false,
+    "deadlineMs": 1801353600000,
+    "deadline": "01/31/27",
+    "employmentType": "Temporary Employee Less Than 1040 Hrs",
+    "department": " Department of Recreation",
+    "categories": [
+      "Administration",
+      "Facility Management",
+      "Recreation",
+      "Management",
+      "Education",
+      "Parks and Recreation ",
+      "Customer Service",
+      "Program Management"
+    ],
+    "salary": {
+      "min": 20,
+      "max": 20,
+      "unit": "HOUR"
+    },
+    "miles": 30.1
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Site Director (Recreation Assistant VIII, Grade S8) ",
+    "reqId": "2026-00445",
+    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
+    "city": "silver spring",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431246/site-director-recreation-assistant-viii-grade-s8",
+    "postedAtMs": 1785715200000,
+    "days": 22,
+    "continuous": false,
+    "deadlineMs": 1801353600000,
+    "deadline": "01/31/27",
+    "employmentType": "Temporary Employee Less Than 1040 Hrs",
+    "department": " Department of Recreation",
+    "categories": [
+      "Recreation",
+      "Management",
+      "Education",
+      "Parks and Recreation ",
+      "Organizational Development",
+      "Training",
+      "Program Management",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 25.07,
+      "max": 25.07,
+      "unit": "HOUR"
+    },
+    "miles": 30.1
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
+    "title": "Recreation Leader I or Facility Leader I (Recreation Assistant IV, Grade S4) ",
+    "reqId": "2026-00441",
+    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
+    "city": "silver spring",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431346/recreation-leader-i-or-facility-leader-i-recreation-assistant-iv-grade-s4",
+    "postedAtMs": 1785715200000,
+    "days": 22,
+    "continuous": false,
+    "deadlineMs": 1801353600000,
+    "deadline": "01/31/27",
+    "employmentType": "Temporary Employee Less Than 1040 Hrs",
+    "department": " Department of Recreation",
+    "categories": [
+      "Administration",
+      "Facility Management",
+      "Human Resources",
+      "Planning and Development",
+      "Recreation",
+      "Management",
+      "Education",
+      "Parks and Recreation ",
+      "Customer Service",
+      "Project Management",
+      "Organizational Development",
+      "Training",
+      "Records Management",
+      "Athletics & Fitness",
+      "Program Management",
+      "Instructor",
+      "Sports"
+    ],
+    "salary": {
+      "min": 19.5,
+      "max": 19.5,
+      "unit": "HOUR"
+    },
+    "miles": 30.1
+  },
+  {
+    "company": "Montgomery County Government",
+    "agency": "montgomerycountymd",
     "title": "TeenWorks (Recreation Assistant I, Grade S1)",
     "reqId": "2026-00446",
     "location": "3950 Ferrara Dr Silver Spring MD 20906 USA",
@@ -4287,144 +4368,6 @@
     "salary": {
       "min": 18,
       "max": 18,
-      "unit": "HOUR"
-    },
-    "miles": 30.1
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Recreation Leader I or Facility Leader I (Recreation Assistant IV, Grade S4) ",
-    "reqId": "2026-00441",
-    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
-    "city": "silver spring",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431346/recreation-leader-i-or-facility-leader-i-recreation-assistant-iv-grade-s4",
-    "postedAtMs": 1785715200000,
-    "days": 22,
-    "continuous": false,
-    "deadlineMs": 1801353600000,
-    "deadline": "01/31/27",
-    "employmentType": "Temporary Employee Less Than 1040 Hrs",
-    "department": " Department of Recreation",
-    "categories": [
-      "Administration",
-      "Facility Management",
-      "Human Resources",
-      "Planning and Development",
-      "Recreation",
-      "Management",
-      "Education",
-      "Parks and Recreation ",
-      "Customer Service",
-      "Project Management",
-      "Organizational Development",
-      "Training",
-      "Records Management",
-      "Athletics & Fitness",
-      "Program Management",
-      "Instructor",
-      "Sports"
-    ],
-    "salary": {
-      "min": 19.5,
-      "max": 19.5,
-      "unit": "HOUR"
-    },
-    "miles": 30.1
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Recreation Leader II or Facility Leader II (Recreation Assistant V, Grade S5) ",
-    "reqId": "2026-00442",
-    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
-    "city": "silver spring",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431438/recreation-leader-ii-or-facility-leader-ii-recreation-assistant-v-grade-s5",
-    "postedAtMs": 1785715200000,
-    "days": 22,
-    "continuous": false,
-    "deadlineMs": 1801353600000,
-    "deadline": "01/31/27",
-    "employmentType": "Temporary Employee Less Than 1040 Hrs",
-    "department": " Department of Recreation",
-    "categories": [
-      "Administration",
-      "Facility Management",
-      "Recreation",
-      "Management",
-      "Education",
-      "Parks and Recreation ",
-      "Customer Service",
-      "Program Management"
-    ],
-    "salary": {
-      "min": 20,
-      "max": 20,
-      "unit": "HOUR"
-    },
-    "miles": 30.1
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Program Director or Assistant Site Director (Recreation Assistant VII, Grade S7)  ",
-    "reqId": "2026-00444",
-    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
-    "city": "silver spring",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431545/program-director-or-assistant-site-director-recreation-assistant-vii-grade-s7",
-    "postedAtMs": 1785715200000,
-    "days": 22,
-    "continuous": false,
-    "deadlineMs": 1801353600000,
-    "deadline": "01/31/27",
-    "employmentType": "Temporary Employee Less Than 1040 Hrs",
-    "department": " Department of Recreation",
-    "categories": [
-      "Administration",
-      "Recreation",
-      "Management",
-      "Parks and Recreation ",
-      "Training"
-    ],
-    "salary": {
-      "min": 22.31,
-      "max": 22.31,
-      "unit": "HOUR"
-    },
-    "miles": 30.1
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Site Director (Recreation Assistant VIII, Grade S8) ",
-    "reqId": "2026-00445",
-    "location": "2425 Reedie Dr Wheaton MD 20902 USA",
-    "city": "silver spring",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5431246/site-director-recreation-assistant-viii-grade-s8",
-    "postedAtMs": 1785715200000,
-    "days": 22,
-    "continuous": false,
-    "deadlineMs": 1801353600000,
-    "deadline": "01/31/27",
-    "employmentType": "Temporary Employee Less Than 1040 Hrs",
-    "department": " Department of Recreation",
-    "categories": [
-      "Recreation",
-      "Management",
-      "Education",
-      "Parks and Recreation ",
-      "Organizational Development",
-      "Training",
-      "Program Management",
-      "Instructor"
-    ],
-    "salary": {
-      "min": 25.07,
-      "max": 25.07,
       "unit": "HOUR"
     },
     "miles": 30.1
@@ -4749,32 +4692,6 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
-    "title": "Wireless Communications Technician",
-    "reqId": "8.267 1-2025 OIT",
-    "location": "Towson, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4741083/wireless-communications-technician",
-    "postedAtMs": 1785283200000,
-    "days": 27,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "MERIT",
-    "department": "INFORMATION TECHNOLOGY",
-    "categories": [
-      "IT and Computers"
-    ],
-    "salary": {
-      "min": 26.67,
-      "max": 30.89,
-      "unit": "HOUR"
-    },
-    "miles": 9.4
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
     "title": "Nurse Monitor - Non-Merit ",
     "reqId": "NM .140 07-2026",
     "location": "Towson, MD",
@@ -4796,6 +4713,32 @@
     "salary": {
       "min": 39.24,
       "max": 50.96,
+      "unit": "HOUR"
+    },
+    "miles": 9.4
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
+    "title": "Wireless Communications Technician",
+    "reqId": "8.267 1-2025 OIT",
+    "location": "Towson, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4741083/wireless-communications-technician",
+    "postedAtMs": 1785283200000,
+    "days": 27,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "MERIT",
+    "department": "INFORMATION TECHNOLOGY",
+    "categories": [
+      "IT and Computers"
+    ],
+    "salary": {
+      "min": 26.67,
+      "max": 30.89,
       "unit": "HOUR"
     },
     "miles": 9.4
@@ -4963,39 +4906,6 @@
       "unit": "YEAR"
     },
     "miles": 17.7
-  },
-  {
-    "company": "Montgomery County Government",
-    "agency": "montgomerycountymd",
-    "title": "Planning Specialist III, Grade 23",
-    "reqId": "2026-00405",
-    "location": "101 Monroe St Rockville MD 20850 USA",
-    "city": "rockville",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/montgomerycountymd/jobs/5417301/planning-specialist-iii-grade-23",
-    "postedAtMs": 1785196800000,
-    "days": 28,
-    "continuous": false,
-    "deadlineMs": 1787616000000,
-    "deadline": "08/25/26",
-    "employmentType": "Permanent",
-    "department": " Department of Transportation",
-    "categories": [
-      "Administration",
-      "Clerical & Data Entry",
-      "Planning and Development",
-      "Management",
-      "Maintenance",
-      "Organizational Development",
-      "Office and Administrative Support",
-      "Program Management"
-    ],
-    "salary": {
-      "min": 78929,
-      "max": 126097,
-      "unit": "YEAR"
-    },
-    "miles": 30.5
   },
   {
     "company": "M-NCPPC",
@@ -5368,6 +5278,32 @@
   {
     "company": "Anne Arundel County Government",
     "agency": "annearundel",
+    "title": "Plumbing (Backflow) Inspector",
+    "reqId": "8556R",
+    "location": "Utility Operations, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5404902/plumbing-backflow-inspector",
+    "postedAtMs": 1784678400000,
+    "days": 34,
+    "continuous": false,
+    "deadlineMs": 1789344000000,
+    "deadline": "09/14/26",
+    "employmentType": "Full-Time Regular",
+    "department": "Public Works",
+    "categories": [
+      "Public Works"
+    ],
+    "salary": {
+      "min": 57637,
+      "max": 93725,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
     "title": "Utility Asset Manager (Program Manager)",
     "reqId": "08697",
     "location": "Utility Operations, MD",
@@ -5388,32 +5324,6 @@
     "salary": {
       "min": 81975,
       "max": 159236,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
-    "title": "Plumbing (Backflow) Inspector",
-    "reqId": "8556R",
-    "location": "Utility Operations, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5404902/plumbing-backflow-inspector",
-    "postedAtMs": 1784678400000,
-    "days": 34,
-    "continuous": false,
-    "deadlineMs": 1789344000000,
-    "deadline": "09/14/26",
-    "employmentType": "Full-Time Regular",
-    "department": "Public Works",
-    "categories": [
-      "Public Works"
-    ],
-    "salary": {
-      "min": 57637,
-      "max": 93725,
       "unit": "YEAR"
     },
     "miles": 34.5
@@ -5580,6 +5490,32 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
+    "title": "Dental Hygienist",
+    "reqId": "4.470  10-2023",
+    "location": "Various locations throughout Baltimore County, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4247562/dental-hygienist",
+    "postedAtMs": 1784505600000,
+    "days": 36,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "MERIT",
+    "department": "HEALTH",
+    "categories": [
+      "Health Services"
+    ],
+    "salary": {
+      "min": 53189,
+      "max": 60729,
+      "unit": "YEAR"
+    },
+    "miles": 9.4
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
     "title": "Technical Support Assistant I - Non-Merit ",
     "reqId": "01.563 07-26",
     "location": "Towson, MD",
@@ -5604,32 +5540,6 @@
       "unit": "YEAR"
     },
     "miles": 9.2
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
-    "title": "Dental Hygienist",
-    "reqId": "4.470  10-2023",
-    "location": "Various locations throughout Baltimore County, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4247562/dental-hygienist",
-    "postedAtMs": 1784505600000,
-    "days": 36,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "MERIT",
-    "department": "HEALTH",
-    "categories": [
-      "Health Services"
-    ],
-    "salary": {
-      "min": 53189,
-      "max": 60729,
-      "unit": "YEAR"
-    },
-    "miles": 9.4
   },
   {
     "company": "M-NCPPC",
@@ -6013,34 +5923,6 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
-    "title": "Correctional Security Officer (Facility Operator I)  - Non-Merit",
-    "reqId": "NM.116 07-2026",
-    "location": "Towson, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5411821/correctional-security-officer-facility-operator-i-non-merit",
-    "postedAtMs": 1784073600000,
-    "days": 41,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "NON-MERIT",
-    "department": "CORRECTIONS",
-    "categories": [
-      "Corrections",
-      "Public Safety",
-      "Security"
-    ],
-    "salary": {
-      "min": 20.05,
-      "max": 28.6,
-      "unit": "HOUR"
-    },
-    "miles": 9.2
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
     "title": "Project Manager FFE Specialist - Capital Construction - Non-Merit",
     "reqId": "NM.141 7-26 PROP",
     "location": "Various locations throughout Baltimore County, MD",
@@ -6068,6 +5950,34 @@
       "unit": "HOUR"
     },
     "miles": 9.4
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
+    "title": "Correctional Security Officer (Facility Operator I)  - Non-Merit",
+    "reqId": "NM.116 07-2026",
+    "location": "Towson, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5411821/correctional-security-officer-facility-operator-i-non-merit",
+    "postedAtMs": 1784073600000,
+    "days": 41,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "NON-MERIT",
+    "department": "CORRECTIONS",
+    "categories": [
+      "Corrections",
+      "Public Safety",
+      "Security"
+    ],
+    "salary": {
+      "min": 20.05,
+      "max": 28.6,
+      "unit": "HOUR"
+    },
+    "miles": 9.2
   },
   {
     "company": "Montgomery County Government",
@@ -6183,33 +6093,6 @@
   {
     "company": "Frederick County Government",
     "agency": "frederickmd",
-    "title": "Deputy Sheriff - Recruit",
-    "reqId": "FY27-00013",
-    "location": "Law Enforcement Center - Frederick, MD",
-    "city": "frederick",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5402648/deputy-sheriff-recruit",
-    "postedAtMs": 1783641600000,
-    "days": 46,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-time Regular",
-    "department": "Frederick County Sheriff's Office: Law Enforcement",
-    "categories": [
-      "Public Safety",
-      "Law Enforcement"
-    ],
-    "salary": {
-      "min": 32.88,
-      "max": 32.88,
-      "unit": "HOUR"
-    },
-    "miles": 31.8
-  },
-  {
-    "company": "Frederick County Government",
-    "agency": "frederickmd",
     "title": "Deputy Sheriff Lateral - Courthouse Security",
     "reqId": "FY27-00015",
     "location": "Courthouse Complex - Frederick, MD",
@@ -6257,6 +6140,33 @@
     "salary": {
       "min": 35.18,
       "max": 35.18,
+      "unit": "HOUR"
+    },
+    "miles": 31.8
+  },
+  {
+    "company": "Frederick County Government",
+    "agency": "frederickmd",
+    "title": "Deputy Sheriff - Recruit",
+    "reqId": "FY27-00013",
+    "location": "Law Enforcement Center - Frederick, MD",
+    "city": "frederick",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5402648/deputy-sheriff-recruit",
+    "postedAtMs": 1783641600000,
+    "days": 46,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-time Regular",
+    "department": "Frederick County Sheriff's Office: Law Enforcement",
+    "categories": [
+      "Public Safety",
+      "Law Enforcement"
+    ],
+    "salary": {
+      "min": 32.88,
+      "max": 32.88,
       "unit": "HOUR"
     },
     "miles": 31.8
@@ -6317,33 +6227,6 @@
   {
     "company": "Frederick County Government",
     "agency": "frederickmd",
-    "title": "Correctional Officer - Lateral",
-    "reqId": "FY27-00009",
-    "location": "Frederick County Adult Detention Center - Frederick, MD",
-    "city": "frederick",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5402134/correctional-officer-lateral",
-    "postedAtMs": 1783555200000,
-    "days": 47,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full-time Regular",
-    "department": "Frederick County Sheriff's Office: Corrections Bureau",
-    "categories": [
-      "Corrections",
-      "Public Safety"
-    ],
-    "salary": {
-      "min": 30.14,
-      "max": 30.14,
-      "unit": "HOUR"
-    },
-    "miles": 34
-  },
-  {
-    "company": "Frederick County Government",
-    "agency": "frederickmd",
     "title": "Correctional Officer Hiring Event (9/2/2026)",
     "reqId": "FY27-00008",
     "location": "Frederick County Adult Detention Center - Frederick, MD",
@@ -6365,6 +6248,33 @@
     "salary": {
       "min": 28.17,
       "max": 28.17,
+      "unit": "HOUR"
+    },
+    "miles": 34
+  },
+  {
+    "company": "Frederick County Government",
+    "agency": "frederickmd",
+    "title": "Correctional Officer - Lateral",
+    "reqId": "FY27-00009",
+    "location": "Frederick County Adult Detention Center - Frederick, MD",
+    "city": "frederick",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/frederickmd/jobs/5402134/correctional-officer-lateral",
+    "postedAtMs": 1783555200000,
+    "days": 47,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full-time Regular",
+    "department": "Frederick County Sheriff's Office: Corrections Bureau",
+    "categories": [
+      "Corrections",
+      "Public Safety"
+    ],
+    "salary": {
+      "min": 30.14,
+      "max": 30.14,
       "unit": "HOUR"
     },
     "miles": 34
@@ -7061,33 +6971,6 @@
   {
     "company": "Anne Arundel County Government",
     "agency": "annearundel",
-    "title": "Solid Waste Supervisor - Landfill Operations",
-    "reqId": "08445X",
-    "location": "Anne Arundel County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5373608/solid-waste-supervisor-landfill-operations",
-    "postedAtMs": 1782259200000,
-    "days": 62,
-    "continuous": false,
-    "deadlineMs": 1788134400000,
-    "deadline": "08/31/26",
-    "employmentType": "Full-Time Permanent",
-    "department": "Public Works",
-    "categories": [
-      "Public Works",
-      "Waste Management"
-    ],
-    "salary": {
-      "min": 60954,
-      "max": 112688,
-      "unit": "YEAR"
-    },
-    "miles": 34.5
-  },
-  {
-    "company": "Anne Arundel County Government",
-    "agency": "annearundel",
     "title": "Utilities Crew Leader I",
     "reqId": "08651",
     "location": "Anne Arundel County, MD",
@@ -7108,6 +6991,33 @@
     "salary": {
       "min": 49754,
       "max": 80787,
+      "unit": "YEAR"
+    },
+    "miles": 34.5
+  },
+  {
+    "company": "Anne Arundel County Government",
+    "agency": "annearundel",
+    "title": "Solid Waste Supervisor - Landfill Operations",
+    "reqId": "08445X",
+    "location": "Anne Arundel County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/annearundel/jobs/5373608/solid-waste-supervisor-landfill-operations",
+    "postedAtMs": 1782259200000,
+    "days": 62,
+    "continuous": false,
+    "deadlineMs": 1788134400000,
+    "deadline": "08/31/26",
+    "employmentType": "Full-Time Permanent",
+    "department": "Public Works",
+    "categories": [
+      "Public Works",
+      "Waste Management"
+    ],
+    "salary": {
+      "min": 60954,
+      "max": 112688,
       "unit": "YEAR"
     },
     "miles": 34.5
@@ -8096,32 +8006,6 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
-    "title": "Countyride Driver I ",
-    "reqId": "08.261-01-26",
-    "location": "Towson, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5217973/countyride-driver-i",
-    "postedAtMs": 1779148800000,
-    "days": 98,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "MERIT",
-    "department": "PUBLIC WORKS:  BUREAU OF TRANSPORTATION",
-    "categories": [
-      "Drivers"
-    ],
-    "salary": {
-      "min": 19.06,
-      "max": 21.69,
-      "unit": "HOUR"
-    },
-    "miles": 9.2
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
     "title": "Equipment Operator - Public Works Solid Waste Management",
     "reqId": "08.244 05-25",
     "location": "Various locations throughout Baltimore County, MD",
@@ -8147,6 +8031,32 @@
       "unit": "HOUR"
     },
     "miles": 9.4
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
+    "title": "Countyride Driver I ",
+    "reqId": "08.261-01-26",
+    "location": "Towson, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5217973/countyride-driver-i",
+    "postedAtMs": 1779148800000,
+    "days": 98,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "MERIT",
+    "department": "PUBLIC WORKS:  BUREAU OF TRANSPORTATION",
+    "categories": [
+      "Drivers"
+    ],
+    "salary": {
+      "min": 19.06,
+      "max": 21.69,
+      "unit": "HOUR"
+    },
+    "miles": 9.2
   },
   {
     "company": "District of Columbia Government",
@@ -8445,6 +8355,32 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
+    "title": "Alcohol and Drug Counselor II",
+    "reqId": "04.407 12-23",
+    "location": "Towson, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
+    "postedAtMs": 1778198400000,
+    "days": 109,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "MERIT",
+    "department": "HHS/BEHAVIORAL HEALTH",
+    "categories": [
+      "Health Care Support"
+    ],
+    "salary": {
+      "min": 50757,
+      "max": 58037,
+      "unit": "YEAR"
+    },
+    "miles": 9.4
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
     "title": "Public Health Nurse (Behavioral Health)",
     "reqId": "04.226 05-26",
     "location": "Towson, MD",
@@ -8466,32 +8402,6 @@
     "salary": {
       "min": 78359,
       "max": 89790,
-      "unit": "YEAR"
-    },
-    "miles": 9.4
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
-    "title": "Alcohol and Drug Counselor II",
-    "reqId": "04.407 12-23",
-    "location": "Towson, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
-    "postedAtMs": 1778198400000,
-    "days": 109,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "MERIT",
-    "department": "HHS/BEHAVIORAL HEALTH",
-    "categories": [
-      "Health Care Support"
-    ],
-    "salary": {
-      "min": 50757,
-      "max": 58037,
       "unit": "YEAR"
     },
     "miles": 9.4
@@ -8755,6 +8665,33 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
+    "title": "Correctional Maintenance Crew Chief",
+    "reqId": "10.113 4-2026 COR",
+    "location": "Towson, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5323128/correctional-maintenance-crew-chief",
+    "postedAtMs": 1777334400000,
+    "days": 119,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "MERIT",
+    "department": "CORRECTIONS",
+    "categories": [
+      "Building Maintenance",
+      "Maintenance"
+    ],
+    "salary": {
+      "min": 58037,
+      "max": 66390,
+      "unit": "YEAR"
+    },
+    "miles": 9.2
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
     "title": "Automotive Mechanic",
     "reqId": "08.234 02-2024 VOM",
     "location": "Randallstown, MD",
@@ -8779,33 +8716,6 @@
       "unit": "HOUR"
     },
     "miles": 3.7
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
-    "title": "Correctional Maintenance Crew Chief",
-    "reqId": "10.113 4-2026 COR",
-    "location": "Towson, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5323128/correctional-maintenance-crew-chief",
-    "postedAtMs": 1777334400000,
-    "days": 119,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "MERIT",
-    "department": "CORRECTIONS",
-    "categories": [
-      "Building Maintenance",
-      "Maintenance"
-    ],
-    "salary": {
-      "min": 58037,
-      "max": 66390,
-      "unit": "YEAR"
-    },
-    "miles": 9.2
   },
   {
     "company": "Montgomery County Government",
@@ -9094,32 +9004,6 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
-    "title": "Assistant County Attorney II (Litigation) - Non-Merit",
-    "reqId": "01.217 12-2025 LAW",
-    "location": "Towson, MD",
-    "city": "towson",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5255200/assistant-county-attorney-ii-litigation-non-merit",
-    "postedAtMs": 1776643200000,
-    "days": 127,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "NON-MERIT",
-    "department": "LAW",
-    "categories": [
-      "Legal"
-    ],
-    "salary": {
-      "min": 86700,
-      "max": 111665,
-      "unit": "YEAR"
-    },
-    "miles": 9.4
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
     "title": "Assistant County Attorney III, Chief of Claims Management - Non-Merit",
     "reqId": "01.218 4-2026 LAW",
     "location": "Towson, MD",
@@ -9142,6 +9026,32 @@
       "unit": "YEAR"
     },
     "miles": 7.8
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
+    "title": "Assistant County Attorney II (Litigation) - Non-Merit",
+    "reqId": "01.217 12-2025 LAW",
+    "location": "Towson, MD",
+    "city": "towson",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5255200/assistant-county-attorney-ii-litigation-non-merit",
+    "postedAtMs": 1776643200000,
+    "days": 127,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "NON-MERIT",
+    "department": "LAW",
+    "categories": [
+      "Legal"
+    ],
+    "salary": {
+      "min": 86700,
+      "max": 111665,
+      "unit": "YEAR"
+    },
+    "miles": 9.4
   },
   {
     "company": "Community College of Baltimore County",
@@ -10013,32 +9923,6 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
-    "title": "Roger Carter Pool Manager - Recreation and Parks",
-    "reqId": "Pool Manager 2026",
-    "location": "Columbia, MD",
-    "city": "columbia",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5235337/roger-carter-pool-manager-recreation-and-parks",
-    "postedAtMs": 1770854400000,
-    "days": 194,
-    "continuous": false,
-    "deadlineMs": 1791417600000,
-    "deadline": "10/08/26",
-    "employmentType": "Contingent",
-    "department": "Recreation & Parks",
-    "categories": [
-      "Recreation"
-    ],
-    "salary": {
-      "min": 20,
-      "max": 26,
-      "unit": "HOUR"
-    },
-    "miles": 17.1
-  },
-  {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
     "title": "Community Facility Leader - North Laurel Community Center",
     "reqId": "9901-08052022-01",
     "location": "Columbia, MD",
@@ -10061,6 +9945,32 @@
       "unit": "HOUR"
     },
     "miles": 10.1
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
+    "title": "Roger Carter Pool Manager - Recreation and Parks",
+    "reqId": "Pool Manager 2026",
+    "location": "Columbia, MD",
+    "city": "columbia",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5235337/roger-carter-pool-manager-recreation-and-parks",
+    "postedAtMs": 1770854400000,
+    "days": 194,
+    "continuous": false,
+    "deadlineMs": 1791417600000,
+    "deadline": "10/08/26",
+    "employmentType": "Contingent",
+    "department": "Recreation & Parks",
+    "categories": [
+      "Recreation"
+    ],
+    "salary": {
+      "min": 20,
+      "max": 26,
+      "unit": "HOUR"
+    },
+    "miles": 17.1
   },
   {
     "company": "Montgomery County Government",
@@ -10878,6 +10788,59 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
+    "title": "North Laurel Lifeguard -  Recreation & Parks",
+    "reqId": "N. LAUREL LIFEGUARD - 12102025",
+    "location": "Laurel, MD",
+    "city": "laurel",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166721/north-laurel-lifeguard-recreation-parks",
+    "postedAtMs": 1765497600000,
+    "days": 256,
+    "continuous": false,
+    "deadlineMs": 1791417600000,
+    "deadline": "10/08/26",
+    "employmentType": "Contingent",
+    "department": "Recreation & Parks",
+    "categories": [
+      "Parks and Recreation "
+    ],
+    "salary": {
+      "min": 16,
+      "max": 20,
+      "unit": "HOUR"
+    },
+    "miles": 21.2
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
+    "title": "North Laurel Water Aerobic Fitness Instructor",
+    "reqId": "WATERAEROBIC-12102025",
+    "location": "Laurel MD 20723, MD",
+    "city": "laurel",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166989/north-laurel-water-aerobic-fitness-instructor",
+    "postedAtMs": 1765497600000,
+    "days": 256,
+    "continuous": false,
+    "deadlineMs": 1791417600000,
+    "deadline": "10/08/26",
+    "employmentType": "Contingent",
+    "department": "Recreation & Parks",
+    "categories": [
+      "Athletics & Fitness",
+      "Instructor"
+    ],
+    "salary": {
+      "min": 20,
+      "max": 32,
+      "unit": "HOUR"
+    },
+    "miles": 21.2
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
     "title": "North Laurel Assistant Pool Manager- Recreation & Parks",
     "reqId": "ASST POOL MGR - 12102025",
     "location": "Columbia, MD",
@@ -10975,59 +10938,6 @@
     "salary": {
       "min": 23.25,
       "max": 28.25,
-      "unit": "HOUR"
-    },
-    "miles": 21.2
-  },
-  {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
-    "title": "North Laurel Lifeguard -  Recreation & Parks",
-    "reqId": "N. LAUREL LIFEGUARD - 12102025",
-    "location": "Laurel, MD",
-    "city": "laurel",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166721/north-laurel-lifeguard-recreation-parks",
-    "postedAtMs": 1765497600000,
-    "days": 256,
-    "continuous": false,
-    "deadlineMs": 1791417600000,
-    "deadline": "10/08/26",
-    "employmentType": "Contingent",
-    "department": "Recreation & Parks",
-    "categories": [
-      "Parks and Recreation "
-    ],
-    "salary": {
-      "min": 16,
-      "max": 20,
-      "unit": "HOUR"
-    },
-    "miles": 21.2
-  },
-  {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
-    "title": "North Laurel Water Aerobic Fitness Instructor",
-    "reqId": "WATERAEROBIC-12102025",
-    "location": "Laurel MD 20723, MD",
-    "city": "laurel",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166989/north-laurel-water-aerobic-fitness-instructor",
-    "postedAtMs": 1765497600000,
-    "days": 256,
-    "continuous": false,
-    "deadlineMs": 1791417600000,
-    "deadline": "10/08/26",
-    "employmentType": "Contingent",
-    "department": "Recreation & Parks",
-    "categories": [
-      "Athletics & Fitness",
-      "Instructor"
-    ],
-    "salary": {
-      "min": 20,
-      "max": 32,
       "unit": "HOUR"
     },
     "miles": 21.2
@@ -14174,6 +14084,33 @@
   {
     "company": "Baltimore County Government",
     "agency": "baltimorecounty",
+    "title": "Senior Project Manager - Capital Construction - Non-Merit",
+    "reqId": "NM.106 08-25 PROP",
+    "location": "Glen Arm, MD",
+    "city": "glen arm",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5040367/senior-project-manager-capital-construction-non-merit",
+    "postedAtMs": 1757462400000,
+    "days": 349,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "NON-MERIT",
+    "department": "PROPERTY MANAGEMENT",
+    "categories": [
+      "Building Maintenance",
+      "Facility Management"
+    ],
+    "salary": {
+      "min": 57.58,
+      "max": 69.76,
+      "unit": "HOUR"
+    },
+    "miles": 15.4
+  },
+  {
+    "company": "Baltimore County Government",
+    "agency": "baltimorecounty",
     "title": "Electrician II (Public Works/Utilities)",
     "reqId": "08.212 09-25",
     "location": "Various locations throughout Baltimore County, MD",
@@ -14199,33 +14136,6 @@
       "unit": "HOUR"
     },
     "miles": 9.2
-  },
-  {
-    "company": "Baltimore County Government",
-    "agency": "baltimorecounty",
-    "title": "Senior Project Manager - Capital Construction - Non-Merit",
-    "reqId": "NM.106 08-25 PROP",
-    "location": "Glen Arm, MD",
-    "city": "glen arm",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5040367/senior-project-manager-capital-construction-non-merit",
-    "postedAtMs": 1757462400000,
-    "days": 349,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "NON-MERIT",
-    "department": "PROPERTY MANAGEMENT",
-    "categories": [
-      "Building Maintenance",
-      "Facility Management"
-    ],
-    "salary": {
-      "min": 57.58,
-      "max": 69.76,
-      "unit": "HOUR"
-    },
-    "miles": 15.4
   },
   {
     "company": "Anne Arundel County Government",
@@ -14884,6 +14794,32 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
+    "title": "Roger Carter Swim Instructor -  Recreation & Parks",
+    "reqId": "9993 - 01032025-01",
+    "location": "Howard County, MD",
+    "city": "columbia",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/4778168/roger-carter-swim-instructor-recreation-parks",
+    "postedAtMs": 1736380800000,
+    "days": 593,
+    "continuous": false,
+    "deadlineMs": 1791417600000,
+    "deadline": "10/08/26",
+    "employmentType": "Contingent",
+    "department": "Recreation & Parks",
+    "categories": [
+      "Recreation"
+    ],
+    "salary": {
+      "min": 16,
+      "max": 25,
+      "unit": "HOUR"
+    },
+    "miles": 17.1
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
     "title": "Roger Carter Lifeguard -  Recreation & Parks",
     "reqId": "9993 - 01032025",
     "location": "Ellicott City, MD",
@@ -14929,32 +14865,6 @@
     "salary": {
       "min": 16,
       "max": 19.5,
-      "unit": "HOUR"
-    },
-    "miles": 17.1
-  },
-  {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
-    "title": "Roger Carter Swim Instructor -  Recreation & Parks",
-    "reqId": "9993 - 01032025-01",
-    "location": "Howard County, MD",
-    "city": "columbia",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/4778168/roger-carter-swim-instructor-recreation-parks",
-    "postedAtMs": 1736380800000,
-    "days": 593,
-    "continuous": false,
-    "deadlineMs": 1791417600000,
-    "deadline": "10/08/26",
-    "employmentType": "Contingent",
-    "department": "Recreation & Parks",
-    "categories": [
-      "Recreation"
-    ],
-    "salary": {
-      "min": 16,
-      "max": 25,
       "unit": "HOUR"
     },
     "miles": 17.1
@@ -15137,35 +15047,6 @@
   {
     "company": "M-NCPPC",
     "agency": "mncppc",
-    "title": "Playground Maintenance Technician - Seasonal",
-    "reqId": "SOPK-PMT",
-    "location": "Montgomery County, MD",
-    "city": null,
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/3959152/playground-maintenance-technician-seasonal",
-    "postedAtMs": 1707868800000,
-    "days": 923,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Seasonal",
-    "department": "MC Parks",
-    "categories": [
-      "Parks and Recreation ",
-      "Parks",
-      "Maintenance",
-      "Building & Grounds Cleaning and Maintenance"
-    ],
-    "salary": {
-      "min": 15.75,
-      "max": 15.75,
-      "unit": "HOUR"
-    },
-    "miles": 30.7
-  },
-  {
-    "company": "M-NCPPC",
-    "agency": "mncppc",
     "title": "Athletic Field Technician - Montgomery Parks - Seasonal",
     "reqId": "MC-Aft22",
     "location": "Montgomery County, MD",
@@ -15249,6 +15130,61 @@
     "miles": 30.7
   },
   {
+    "company": "M-NCPPC",
+    "agency": "mncppc",
+    "title": "Playground Maintenance Technician - Seasonal",
+    "reqId": "SOPK-PMT",
+    "location": "Montgomery County, MD",
+    "city": null,
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/mncppc/jobs/3959152/playground-maintenance-technician-seasonal",
+    "postedAtMs": 1707868800000,
+    "days": 923,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Seasonal",
+    "department": "MC Parks",
+    "categories": [
+      "Parks and Recreation ",
+      "Parks",
+      "Maintenance",
+      "Building & Grounds Cleaning and Maintenance"
+    ],
+    "salary": {
+      "min": 15.75,
+      "max": 15.75,
+      "unit": "HOUR"
+    },
+    "miles": 30.7
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
+    "title": "Therapeutic Recreation Aquatics Operator -  Recreation & Parks",
+    "reqId": "9993 - 11092023-01",
+    "location": "Howard County, MD",
+    "city": null,
+    "state": null,
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/4275389/therapeutic-recreation-aquatics-operator-recreation-parks",
+    "postedAtMs": 1699488000000,
+    "days": 1020,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Contingent",
+    "department": "Recreation & Parks",
+    "categories": [
+      "Recreation"
+    ],
+    "salary": {
+      "min": 20,
+      "max": 24,
+      "unit": "HOUR"
+    },
+    "miles": 10.7
+  },
+  {
     "company": "Howard County Government",
     "agency": "howardcounty",
     "title": "Therapeutic Recreation Adaptive Swim Instructor -  Recreation & Parks",
@@ -15296,32 +15232,6 @@
     "salary": {
       "min": 17,
       "max": 20,
-      "unit": "HOUR"
-    },
-    "miles": 10.7
-  },
-  {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
-    "title": "Therapeutic Recreation Aquatics Operator -  Recreation & Parks",
-    "reqId": "9993 - 11092023-01",
-    "location": "Howard County, MD",
-    "city": null,
-    "state": null,
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/4275389/therapeutic-recreation-aquatics-operator-recreation-parks",
-    "postedAtMs": 1699488000000,
-    "days": 1020,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Contingent",
-    "department": "Recreation & Parks",
-    "categories": [
-      "Recreation"
-    ],
-    "salary": {
-      "min": 20,
-      "max": 24,
       "unit": "HOUR"
     },
     "miles": 10.7
@@ -15595,32 +15505,6 @@
   {
     "company": "Howard County Government",
     "agency": "howardcounty",
-    "title": "Lateral Police Officer",
-    "reqId": "7764 - 08042022",
-    "location": "Marriottsville, MD",
-    "city": "ellicott city",
-    "state": "MD",
-    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/3220388/lateral-police-officer",
-    "postedAtMs": 1641427200000,
-    "days": 1692,
-    "continuous": true,
-    "deadlineMs": null,
-    "deadline": "Continuous",
-    "employmentType": "Full Time",
-    "department": "Police",
-    "categories": [
-      "Public Safety"
-    ],
-    "salary": {
-      "min": 70200,
-      "max": 128814,
-      "unit": "YEAR"
-    },
-    "miles": 10
-  },
-  {
-    "company": "Howard County Government",
-    "agency": "howardcounty",
     "title": "Seasonal Therapeutic Recreation Program Leader- Recreation & Parks",
     "reqId": "9997-082321",
     "location": "Columbia, MD",
@@ -15644,6 +15528,32 @@
       "unit": "HOUR"
     },
     "miles": 10.7
+  },
+  {
+    "company": "Howard County Government",
+    "agency": "howardcounty",
+    "title": "Lateral Police Officer",
+    "reqId": "7764 - 08042022",
+    "location": "Marriottsville, MD",
+    "city": "ellicott city",
+    "state": "MD",
+    "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/3220388/lateral-police-officer",
+    "postedAtMs": 1641427200000,
+    "days": 1692,
+    "continuous": true,
+    "deadlineMs": null,
+    "deadline": "Continuous",
+    "employmentType": "Full Time",
+    "department": "Police",
+    "categories": [
+      "Public Safety"
+    ],
+    "salary": {
+      "min": 70200,
+      "max": 128814,
+      "unit": "YEAR"
+    },
+    "miles": 10
   },
   {
     "company": "Howard County Government",
