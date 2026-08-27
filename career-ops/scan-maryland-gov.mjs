@@ -62,6 +62,44 @@ const unescapeHtml = (s) => String(s)
   .replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&');
 const plain = (s) => unescapeHtml(s).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
+const INTERNAL_ONLY_PATTERNS = [
+  /internal recruitment/i,
+  /internal-only/i,
+  /limited to current (?:state|maryland|department)/i,
+  /only current (?:state|maryland|department).*employees/i,
+  /current (?:state of maryland|maryland state|department).*employees only/i,
+];
+
+export function internalRestriction(html) {
+  const text = plain(html);
+  const pattern = INTERNAL_ONLY_PATTERNS.find((re) => re.test(text));
+  return pattern ? 'Internal recruitment — current employees only' : null;
+}
+
+async function mapLimit(items, limit, fn) {
+  const out = new Array(items.length);
+  let next = 0;
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (next < items.length) {
+      const i = next++;
+      out[i] = await fn(items[i]);
+    }
+  }));
+  return out;
+}
+
+async function checkEligibility(job) {
+  if (!job.url) return job;
+  try {
+    const res = await fetch(job.url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+    if (!res.ok) return { ...job, eligibilityCheck: `HTTP ${res.status}` };
+    const restriction = internalRestriction(await res.text());
+    return { ...job, restricted: Boolean(restriction), restriction, eligibilityCheck: 'checked' };
+  } catch (err) {
+    return { ...job, eligibilityCheck: `unavailable: ${err.message}` };
+  }
+}
+
 /** "$76,608.00 - $120,814.00/year." → { min, max, unit } */
 export function parseSalary(text) {
   // Bounded by the next label, NOT by a period: every figure contains one
@@ -135,12 +173,15 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const all = blocks.map((b) => parseItem(b, now)).filter(Boolean);
   const open = all.filter((j) => j.deadlineMs === null || j.deadlineMs >= now.getTime());
   const closed = all.length - open.length;
-  const rows = (process.argv.includes('--all') ? open : open.filter((j) => isLocalCounty(j.location)))
+  const candidates = process.argv.includes('--all') ? open : open.filter((j) => isLocalCounty(j.location));
+  const checked = await mapLimit(candidates, 6, checkEligibility);
+  const restricted = checked.filter((j) => j.restricted);
+  const rows = checked.filter((j) => !j.restricted)
     .sort((a, b) => (a.days ?? 9999) - (b.days ?? 9999));
 
   writeFileSync(DEST, JSON.stringify(rows, null, 2));
   console.log(`wrote ${DEST}`);
-  console.log(`  feed=${all.length} open=${open.length} (${closed} past their filing deadline) kept=${rows.length}`);
+  console.log(`  feed=${all.length} open=${open.length} (${closed} past their filing deadline) kept=${rows.length} internal-only excluded=${restricted.length}`);
   console.log(`  with salary=${rows.filter((r) => r.salary).length} | opened within 21d=${rows.filter((r) => r.days !== null && r.days <= 21).length}`);
 
   if (process.argv.includes('--pipeline')) {
