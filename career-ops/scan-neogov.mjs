@@ -309,6 +309,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   console.log(`  with salary=${rows.filter((r) => r.salary).length} | dated=${rows.filter((r) => r.days !== null).length} | posted within 21d=${rows.filter((r) => r.days !== null && r.days <= 21).length}`);
   if (failures.length) console.log(`  agencies failed: ${failures.join('; ')}`);
 
+  writeUnifiedLocalJobs();
+
   if (process.argv.includes('--pipeline')) {
     const { appendToPipeline, appendToScanHistory, loadSeenUrls, normalizeUrlForDedup } =
       await import('./scan.mjs');
