@@ -1,6 +1,6 @@
 // Owings Mills local search — a SEPARATE net from the main analyst/IT pipeline.
 //
-// Intent: any job within ~5 miles of Owings Mills, MD that Darren could
+// Intent: any job within ~10 miles of Owings Mills, MD that Darren could
 // plausibly get, excluding senior-level and medical/clinical roles.
 //
 // Why this is its own script rather than portals.yml config: career-ops has a
@@ -10,8 +10,8 @@
 // data/pipeline.md (the evaluated analyst/IT funnel) uncontaminated.
 //
 // Geography note: this matches town names in the posting slug/location. That is
-// a proxy for a 5-mile radius, not a geodesic calculation — the towns below were
-// chosen as those whose centres sit within roughly 5 miles of Owings Mills 21117.
+// a proxy for a 10-mile radius, not a geodesic calculation — the towns below were
+// chosen as those whose centres sit within roughly 10 miles of Owings Mills 21117.
 //
 // ---------------------------------------------------------------------------
 // COVERAGE (the reason this script has a state file)
@@ -61,10 +61,11 @@ const STORE_PATH = 'owings-mills-store.json';
 // discarding a fresh posting unseen.
 const LASTMOD_SLACK_DAYS = 7;
 
-// Towns within ~5 miles of Owings Mills, MD (21117), as slug fragments.
+// Towns within ~10 miles of Owings Mills, MD (21117), as slug fragments.
 const NEAR = [
   'owings-mills', 'garrison', 'glyndon', 'reisterstown', 'pikesville',
   'randallstown', 'milford-mill', 'windsor-mill', 'stevenson', 'lochearn',
+  'finksburg', 'woodstock',
 ];
 
 // Senior-level titles — excluded. Deliberately NOT excluding manager/supervisor/
@@ -246,7 +247,31 @@ for (const j of Object.values(jobs)) {
 }
 stats.duplicatesCollapsed = Object.keys(jobs).length - byOpening.size;
 
-const kept = [...byOpening.values()].sort((a, b) => (b.datePosted || '').localeCompare(a.datePosted || ''));
+// Put jobs that clearly start at $20+/hour first, followed by ranges that can
+// reach $20, unknown-pay jobs, then listings whose published ceiling is below
+// $20. Annual/monthly/weekly ranges are normalized to an hourly equivalent.
+const hourlyEquivalent = (value, unit) => {
+  if (value == null || !Number.isFinite(Number(value))) return null;
+  const u = String(unit || '').toLowerCase();
+  if (u === 'hour') return Number(value);
+  if (u === 'year') return Number(value) / 2080;
+  if (u === 'month') return Number(value) * 12 / 2080;
+  if (u === 'week') return Number(value) * 52 / 2080;
+  return null;
+};
+const payRank = (salary) => {
+  if (!salary) return 2;
+  const floor = hourlyEquivalent(salary.min, salary.unit);
+  const ceiling = hourlyEquivalent(salary.max, salary.unit);
+  if (floor != null && floor >= 20) return 0;
+  if (ceiling != null && ceiling >= 20) return 1;
+  if (floor == null && ceiling == null) return 2;
+  return 3;
+};
+const kept = [...byOpening.values()].sort((a, b) =>
+  payRank(a.salary) - payRank(b.salary)
+  || (b.datePosted || '').localeCompare(a.datePosted || '')
+);
 stats.kept = kept.length;
 
 saveSweepState(STORE_PATH, { cursor: nextCursor, run, chunkCount, cycleRuns, jobs });
@@ -255,7 +280,8 @@ mkdirSync('data', { recursive: true });
 writeFileSync('data/owings-mills.json', JSON.stringify({
   generatedAt: new Date().toISOString(),
   center: 'Owings Mills, MD 21117',
-  radiusNote: '~5 miles, matched by town name (proxy, not geodesic)',
+  radiusNote: '~10 miles, matched by town name (proxy, not geodesic)',
+  payPriority: 'Published ranges starting at $20+/hr first; then ranges reaching $20; unknown pay; below $20',
   towns: NEAR,
   excluded: ['senior/lead/management titles', 'medical & clinical titles'],
   maxAgeDays: MAX_AGE_DAYS,
@@ -286,9 +312,9 @@ const pay = s => {
 const md = [
   '# Jobs near Owings Mills, MD',
   '',
-  `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within ~5 miles · posted in the last ${MAX_AGE_DAYS} days_`,
+  `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within ~10 miles · posted in the last ${MAX_AGE_DAYS} days_`,
   '',
-  'Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept.',
+  'Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept. Within each town, jobs with published pay starting at $20+/hour are listed first, followed by ranges that can reach $20, unknown-pay roles, and lower-paying roles.',
   '',
   `Coverage: each run reads ${window.length} of ${chunkCount} sitemap chunks, rotating, so a full pass takes ${cycleRuns} runs (~${(cycleRuns / 2).toFixed(1)} days at twice daily). Listings accumulate across runs and drop out once they age past ${MAX_AGE_DAYS} days or go unseen for two full passes.`,
   '',
