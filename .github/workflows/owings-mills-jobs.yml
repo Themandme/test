@@ -7,6 +7,7 @@ on:
   schedule:
     - cron: '23 11 * * *'
     - cron: '23 21 * * *'
+    - cron: '55 0 * * *'   # temporary one-time full-cycle launch
   workflow_dispatch:        # lets you run it on demand from the Actions tab
 
 permissions:
@@ -44,7 +45,7 @@ jobs:
         run: npm install --ignore-scripts --no-audit --no-fund
 
       - name: Scan scheduled local-job window
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' && github.event.schedule != '55 0 * * *'
         working-directory: career-ops
         # No NODE_USE_ENV_PROXY here: that is only needed inside the Claude Code
         # sandbox, whose proxy Node's fetch ignores. GitHub runners reach the
@@ -52,7 +53,7 @@ jobs:
         run: node scan-owings-mills.mjs
 
       - name: One-time full HiringCafe catch-up
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '55 0 * * *'
         working-directory: career-ops
         # Eight 60-chunk windows cover the roughly 480-chunk sitemap. Each
         # invocation persists and advances the cursor before the next starts,
