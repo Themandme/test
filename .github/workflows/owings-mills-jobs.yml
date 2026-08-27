@@ -102,13 +102,13 @@ jobs:
         # cursor always moves), so it is checked separately from the digest,
         # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json; then
+          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json; then
             echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json
+          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
           # Concurrent-safe: another run (or a push from a session) may have
           # landed first, and this job's only local commit is the one above.
@@ -123,7 +123,7 @@ jobs:
             echo
             head -6 owings-mills-latest.md | tail -4
             echo
-            echo "See \`career-ops/owings-mills-latest.md\` for the full list."
+            echo "See \`career-ops/unified-local-jobs.md\` for the deduplicated scored list."
           } >> "$GITHUB_STEP_SUMMARY"
 
       # `continue-on-error` above keeps one broken source from stopping the
