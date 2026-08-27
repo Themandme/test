@@ -63,6 +63,8 @@ const TENANTS_FALLBACK = [
   ['Wegmans', 'wegmans', 'wd1', 'wegmans'],
   ['Wawa', 'wawa', 'wd1', 'careers'],
   ['Washington Gas (AltaGas)', 'wgl', 'wd5', 'altagas'],
+  // Official City of Baltimore external applicant board.
+  ['City of Baltimore', 'baltimorecity', 'wd1', 'External'],
 ];
 
 const TENANTS = Array.isArray(cfg.tenants) && cfg.tenants.length
@@ -135,6 +137,65 @@ for (const [name, tenant, inst, site] of TENANTS) {
   summary.push(`${name.padEnd(26)} ${String(total).padStart(5)} total  ${String(local).padStart(4)} local${truncated ? '  (TRUNCATED)' : ''}`);
   console.error(summary[summary.length - 1]);
 }
+
+// Official university boards that are not Workday tenants. These parsers use
+// stable job-detail URL patterns and degrade visibly if a board changes shape.
+const decode = s => String(s || '')
+  .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+  .replace(/&nbsp;/g, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+
+async function scrapeBoard({ name, url, base, hrefPattern, location }) {
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), 30000);
+  try {
+    const res = await fetch(url, { signal: ac.signal, headers: { 'User-Agent': 'Mozilla/5.0' } });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const html = await res.text();
+    const found = new Map();
+    for (const m of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+      const href = m[1];
+      if (!hrefPattern.test(href)) continue;
+      const title = decode(m[2]);
+      if (!title || /view details|bookmark|more jobs|apply/i.test(title)) continue;
+      const absolute = new URL(href, base).href;
+      found.set(absolute, {
+        company: name, title, location, days: null, postedOn: null,
+        url: absolute, source: 'official university board',
+      });
+    }
+    summary.push(`${name.padEnd(26)} ${String(found.size).padStart(5)} official-board jobs`);
+    results.push(...found.values());
+  } catch (err) {
+    summary.push(`${name.padEnd(26)} BOARD ERR ${err.name === 'AbortError' ? 'timeout' : err.message}`);
+  } finally { clearTimeout(timer); }
+}
+
+await scrapeBoard({
+  name: 'UMBC',
+  url: 'https://listings.umbc.edu/cw/en-us/listing/',
+  base: 'https://listings.umbc.edu',
+  hrefPattern: /\/cw\/en-us\/job\/\d+/i,
+  location: 'UMBC Campus, MD',
+});
+await scrapeBoard({
+  name: 'Stevenson University',
+  url: 'https://stevenson.peopleadmin.com/postings/search?480%5B%5D=1&508=&commit=Search&query=&query_v0_posted_at_date=',
+  base: 'https://stevenson.peopleadmin.com',
+  hrefPattern: /\/postings\/\d+/i,
+  location: 'Owings Mills / Stevenson, MD',
+});
+await scrapeBoard({
+  name: 'Johns Hopkins University',
+  url: 'https://jobs.jhu.edu/search/?createNewAlert=false&q=&locationsearch=Baltimore%2C+MD',
+  base: 'https://jobs.jhu.edu',
+  hrefPattern: /\/job\/[^"']+/i,
+  location: 'Baltimore, MD',
+});
+// Towson's official Taleo board requires a session-backed search request and
+// returns an empty shell to a stateless fetch. Keep the direct board monitored
+// in the summary; HiringCafe remains the discovery fallback until a stable
+// public endpoint is available.
+summary.push('Towson University          MONITORED: Taleo public search shell has no stateless result feed');
 
 results.sort((a, b) => (a.days ?? 999) - (b.days ?? 999));
 // Root, not data/: data/* is gitignored, and the scheduled workflow has to be
