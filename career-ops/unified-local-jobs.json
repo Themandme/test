@@ -5,77 +5,13 @@
   "payPriority": "$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking",
   "scoring": "Preliminary metadata score; verify requirements before applying",
   "sourceCounts": {
-    "State of Maryland JobAps": 169,
     "County/city NEOGOV": 119,
+    "State of Maryland JobAps": 166,
     "HiringCafe": 391,
     "Direct employer board": 260,
     "official university board": 48
   },
   "jobs": [
-    {
-      "company": "State of Maryland — LABOR - Family and Medical Leave Insurance",
-      "title": "Data Analyst (Administrator III)",
-      "reqId": "26-002588-0052",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002588&R3=0052",
-      "days": 1,
-      "postedAtMs": 1787818620000,
-      "deadlineMs": 1789084740000,
-      "deadline": "9/10/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 76608,
-        "max": 120814,
-        "unit": "YEAR"
-      },
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 85,
-        "qualification": 82,
-        "interview": 70,
-        "pay": 100,
-        "careerValue": 90,
-        "overqualificationRisk": 8,
-        "resume": "Professional",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — MSP - Support Services Bureau",
-      "title": "IT FUNCTIONAL ANALYST I",
-      "reqId": "26-004498-0001",
-      "location": "Baltimore County",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004498&R3=0001",
-      "days": 1,
-      "postedAtMs": 1787751420000,
-      "deadlineMs": 1789084740000,
-      "deadline": "9/10/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 71805,
-        "max": 113243,
-        "unit": "YEAR"
-      },
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 85,
-        "qualification": 82,
-        "interview": 70,
-        "pay": 100,
-        "careerValue": 90,
-        "overqualificationRisk": 8,
-        "resume": "Professional",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
@@ -2570,38 +2506,6 @@
       "salary": {
         "min": 67309,
         "max": 87079,
-        "unit": "YEAR"
-      },
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — DAT Real Property Valuation",
-      "title": "ASSESSOR I, COMMERCIAL AND INDUSTRIAL",
-      "reqId": "26-001702-0009",
-      "location": "Baltimore County",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001702&R3=0009",
-      "days": 0,
-      "postedAtMs": 1787821980000,
-      "deadlineMs": 1789084740000,
-      "deadline": "9/10/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 71805,
-        "max": 113243,
         "unit": "YEAR"
       },
       "source": "State of Maryland JobAps",
@@ -29269,5 +29173,6 @@
         ]
       }
     }
-  ]
+  ],
+  "eligibilityFilter": "Internal-only Maryland recruitments excluded"
 }
