@@ -7,6 +7,7 @@ on:
   schedule:
     - cron: '23 11 * * *'
     - cron: '23 21 * * *'
+    - cron: '41 1 * * *' # TEMP validation run; remove after first success
   workflow_dispatch:        # lets you run it on demand from the Actions tab
 
 permissions:
