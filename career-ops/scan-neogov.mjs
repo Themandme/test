@@ -215,116 +215,12 @@ function unifiedScore(j) {
 function displayPay(s) {
   if (!s || (s.min == null && s.max == null)) return '—';
   const unit = String(s.unit || '').toLowerCase();
-  const f = v => v == null ? '?' : unit === 'year' ? '  const now = Date.now();
-  const all = [];
-  const failures = [];
-
-  for (const agency of AGENCIES) {
-    try {
-      const list = await fetchAgency(agency);
-      for (const rec of list) all.push(normalize(rec, agency, now));
-      console.log(`  ${agency.slug.padEnd(22)} ${String(list.length).padStart(4)} openings`);
-    } catch (err) {
-      failures.push(`${agency.slug}: ${err.message}`);
-      console.log(`  ${agency.slug.padEnd(22)}    ✗ ${err.message}`);
-    }
-  }
-
-  // A closed posting is a lie on a dashboard, and here the closing date is
-  // stated rather than guessed — so drop rather than infer.
-  const open = all.filter((j) => j.deadlineMs === null || j.deadlineMs >= now);
-  const closed = all.length - open.length;
-
-  const inRange = (j) => j.miles === null || j.miles <= RADIUS;
-  const rows = (process.argv.includes('--all') ? open : open.filter(inRange))
-    .sort((a, b) => (a.days ?? 9999) - (b.days ?? 9999));
-
-  writeFileSync(DEST, JSON.stringify(rows, null, 2));
-  console.log(`\nwrote ${DEST}`);
-  console.log(`  fetched=${all.length} open=${open.length} (${closed} past their closing date) kept=${rows.length} within ${RADIUS}mi`);
-  console.log(`  with salary=${rows.filter((r) => r.salary).length} | dated=${rows.filter((r) => r.days !== null).length} | posted within 21d=${rows.filter((r) => r.days !== null && r.days <= 21).length}`);
-  if (failures.length) console.log(`  agencies failed: ${failures.join('; ')}`);
-
-  writeUnifiedLocalJobs();
-
-  if (process.argv.includes('--pipeline')) {
-    const { appendToPipeline, appendToScanHistory, loadSeenUrls, normalizeUrlForDedup } =
-      await import('./scan.mjs');
-    const { seen } = loadSeenUrls();
-    const offers = rows
-      .filter((r) => !seen.has(normalizeUrlForDedup(r.url)))
-      .map((r) => ({
-        url: r.url,
-        company: r.company,
-        title: r.title,
-        location: r.location,
-        salary: r.salary,
-        postedAt: r.postedAtMs ?? undefined,
-        note: r.continuous ? 'neogov; continuous posting' : `neogov; closes ${r.deadline}`,
-      }));
-    if (offers.length === 0) console.log('  pipeline: nothing new — every row already seen');
-    else {
-      await appendToPipeline(offers);
-      appendToScanHistory(offers, new Date(now).toISOString().slice(0, 10));
-      console.log(`  pipeline: +${offers.length} new (${rows.length - offers.length} already seen)`);
-    }
-  }
-}
- + Math.round(Number(v) / 1000) + 'k' : '  const now = Date.now();
-  const all = [];
-  const failures = [];
-
-  for (const agency of AGENCIES) {
-    try {
-      const list = await fetchAgency(agency);
-      for (const rec of list) all.push(normalize(rec, agency, now));
-      console.log(`  ${agency.slug.padEnd(22)} ${String(list.length).padStart(4)} openings`);
-    } catch (err) {
-      failures.push(`${agency.slug}: ${err.message}`);
-      console.log(`  ${agency.slug.padEnd(22)}    ✗ ${err.message}`);
-    }
-  }
-
-  // A closed posting is a lie on a dashboard, and here the closing date is
-  // stated rather than guessed — so drop rather than infer.
-  const open = all.filter((j) => j.deadlineMs === null || j.deadlineMs >= now);
-  const closed = all.length - open.length;
-
-  const inRange = (j) => j.miles === null || j.miles <= RADIUS;
-  const rows = (process.argv.includes('--all') ? open : open.filter(inRange))
-    .sort((a, b) => (a.days ?? 9999) - (b.days ?? 9999));
-
-  writeFileSync(DEST, JSON.stringify(rows, null, 2));
-  console.log(`\nwrote ${DEST}`);
-  console.log(`  fetched=${all.length} open=${open.length} (${closed} past their closing date) kept=${rows.length} within ${RADIUS}mi`);
-  console.log(`  with salary=${rows.filter((r) => r.salary).length} | dated=${rows.filter((r) => r.days !== null).length} | posted within 21d=${rows.filter((r) => r.days !== null && r.days <= 21).length}`);
-  if (failures.length) console.log(`  agencies failed: ${failures.join('; ')}`);
-
-  if (process.argv.includes('--pipeline')) {
-    const { appendToPipeline, appendToScanHistory, loadSeenUrls, normalizeUrlForDedup } =
-      await import('./scan.mjs');
-    const { seen } = loadSeenUrls();
-    const offers = rows
-      .filter((r) => !seen.has(normalizeUrlForDedup(r.url)))
-      .map((r) => ({
-        url: r.url,
-        company: r.company,
-        title: r.title,
-        location: r.location,
-        salary: r.salary,
-        postedAt: r.postedAtMs ?? undefined,
-        note: r.continuous ? 'neogov; continuous posting' : `neogov; closes ${r.deadline}`,
-      }));
-    if (offers.length === 0) console.log('  pipeline: nothing new — every row already seen');
-    else {
-      await appendToPipeline(offers);
-      appendToScanHistory(offers, new Date(now).toISOString().slice(0, 10));
-      console.log(`  pipeline: +${offers.length} new (${rows.length - offers.length} already seen)`);
-    }
-  }
-}
- + Number(v).toFixed(Number(v) % 1 ? 2 : 0);
-  return (s.min === s.max ? f(s.min) : f(s.min) + '–' + f(s.max)) + (unit === 'hour' ? '/hr' : unit === 'year' ? '/yr' : '');
+  const dollar = String.fromCharCode(36);
+  const f = v => v == null ? '?' : unit === 'year'
+    ? dollar + Math.round(Number(v) / 1000) + 'k'
+    : dollar + Number(v).toFixed(Number(v) % 1 ? 2 : 0);
+  return (s.min === s.max ? f(s.min) : f(s.min) + '–' + f(s.max))
+    + (unit === 'hour' ? '/hr' : unit === 'year' ? '/yr' : '');
 }
 function writeUnifiedLocalJobs() {
   const read = (name, fallback) => { try { return JSON.parse(readFileSync(path.join(ROOT, name), 'utf8')); } catch { return fallback; } };
