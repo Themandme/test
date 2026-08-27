@@ -191,20 +191,36 @@ function unifiedScore(j) {
   const tech = /\b(data|analyst|analytics|information technology|it functional|systems|application|software|technical support|help desk|database|sql|power bi|crm|salesforce|business intelligence|reporting|quality assurance|project coordinator|program coordinator)\b/.test(t);
   const service = /\b(customer|cashier|front desk|reception|guest|retail|sales associate|call center|dispatcher|administrative|office assistant|program assistant|teller|support specialist)\b/.test(t);
   const credential = /\b(nurse|physician|therapist|attorney|counsel|scientist|licensed|certified|professor|faculty)\b/.test(t);
-  const leadership = /\b(senior|sr|director|chief|executive|principal|manager iii|manager iv)\b/.test(t);
+  // Seniority is a separate qualification signal. A title-only score cannot
+  // prove the candidate meets the experience requirement, so progressively
+  // demote likely advanced roles until the full posting is reviewed.
+  const executive = /\b(chief|executive|vice president|vp|head of)\b/.test(t);
+  const advanced = /\b(director|principal|senior|sr|lead)\b/.test(t);
+  const manager = /\b(manager|supervisor)\b/.test(t);
+  const levelIIIPlus = /\b(iii|iv|v|3|4|5)\b/.test(t);
+  const levelII = /\b(ii|2)\b/.test(t);
+  const seniorityPenalty = executive ? 34 : advanced ? 24 : manager ? 20
+    : levelIIIPlus ? 14 : levelII ? 7 : 0;
   let qualification = tech ? 82 : service ? 88 : 58;
   let interview = tech ? 70 : service ? 84 : 55;
   let careerValue = tech ? 90 : service ? 48 : 58;
   let overqualificationRisk = service ? 18 : tech ? 8 : 12;
   let resume = tech ? 'Professional' : service ? 'Customer service' : 'Review';
   if (credential) { qualification -= 35; interview -= 30; careerValue -= 15; resume = 'Review'; }
-  if (leadership) { qualification -= 22; interview -= 20; }
+  if (seniorityPenalty) {
+    qualification -= seniorityPenalty;
+    interview -= Math.max(6, seniorityPenalty - 3);
+  }
   const tier = unifiedPayTier(j.salary), pay = [100, 78, 52, 28][tier];
   const overall = clampFit(clampFit(qualification) * .30 + clampFit(interview) * .25 + pay * .20 +
     clampFit(careerValue) * .20 + (100 - clampFit(overqualificationRisk)) * .05);
   const flags = [];
   if (credential) flags.push('credential/skill check');
-  if (leadership) flags.push('leadership experience check');
+  if (executive) flags.push('executive-level experience check');
+  else if (advanced) flags.push('senior/lead experience check');
+  else if (manager) flags.push('management experience check');
+  else if (levelIIIPlus) flags.push('level III+ experience check');
+  else if (levelII) flags.push('level II experience check');
   if (tier === 2) flags.push('pay undisclosed');
   if (tier === 3) flags.push('published pay below $20');
   if (j.scope === 'regional') flags.push('regional/public board—not exact-radius verified');
