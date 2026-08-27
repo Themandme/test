@@ -268,10 +268,65 @@ const payRank = (salary) => {
   if (floor == null && ceiling == null) return 2;
   return 3;
 };
-const kept = [...byOpening.values()].sort((a, b) =>
-  payRank(a.salary) - payRank(b.salary)
-  || (b.datePosted || '').localeCompare(a.datePosted || '')
-);
+
+// User-approved compact scoring profile: Information Systems degree;
+// Constellation analytics (SQL, Power BI, Excel, Python, Salesforce, APIs);
+// Walmart/Target/Chick-fil-A customer service; seven-day availability.
+const ROLE = {
+  technical: /\b(data|business|financial|operations|program|project|systems?|application|software|technical|technology|information|reporting|quality assurance|qa|crm|salesforce|power bi|database|support engineer|help desk|service desk|analyst|developer|administrator)\b/i,
+  office: /\b(administrative|office|reception|front desk|dispatcher|call center|coordinator|specialist|assistant|customer service|customer experience|guest services?|service advisor)\b/i,
+  frontline: /\b(cashier|retail|sales associate|team member|crew member|hospitality|food service|server|cook|stock|merchandis|warehouse|deli|produce|grocery|valet)\b/i,
+  credential: /\b(cdl|driver|electrician|hvac|plumber|machinist|mechanic|engineer|teacher|counselor|social worker|security officer|armed|inspector|technologist)\b/i,
+  leadership: /\b(manager|supervisor|director|lead|general manager|site manager)\b/i,
+};
+const clamp = n => Math.max(0, Math.min(100, Math.round(n)));
+const scoreJob = (job) => {
+  const t = job.title || '';
+  const technical = ROLE.technical.test(t);
+  const office = ROLE.office.test(t);
+  const frontline = ROLE.frontline.test(t);
+  const credential = ROLE.credential.test(t);
+  const leadership = ROLE.leadership.test(t);
+  let qualification = technical ? 80 : office ? 86 : frontline ? 90 : 62;
+  let interview = technical ? 70 : office ? 82 : frontline ? 88 : 58;
+  let careerValue = technical ? 92 : office ? 70 : frontline ? 42 : 50;
+  let overqualificationRisk = frontline ? 28 : office ? 15 : technical ? 5 : 18;
+  let resume = technical ? 'Professional' : (office || frontline ? 'Customer service' : 'Review');
+  if (credential) {
+    qualification -= 35; interview -= 30; careerValue -= 15; resume = 'Review';
+  }
+  if (leadership) {
+    qualification -= 22; interview -= 20;
+    if (!technical) careerValue += 5;
+  }
+  const tier = payRank(job.salary);
+  const payScore = [100, 78, 52, 28][tier];
+  qualification = clamp(qualification);
+  interview = clamp(interview);
+  careerValue = clamp(careerValue);
+  overqualificationRisk = clamp(overqualificationRisk);
+  const overall = clamp(
+    qualification * 0.30 + interview * 0.25 + payScore * 0.20 +
+    careerValue * 0.20 + (100 - overqualificationRisk) * 0.05
+  );
+  const flags = [];
+  if (credential) flags.push('credential/skill check');
+  if (leadership) flags.push('leadership experience check');
+  if (tier === 2) flags.push('pay undisclosed');
+  if (tier === 3) flags.push('published pay below $20');
+  return {
+    overall, qualification, interview, pay: payScore, careerValue,
+    overqualificationRisk, resume,
+    confidence: 'preliminary — title/pay metadata', flags,
+  };
+};
+const kept = [...byOpening.values()]
+  .map(j => ({ ...j, fit: scoreJob(j) }))
+  .sort((a, b) =>
+    b.fit.overall - a.fit.overall
+    || payRank(a.salary) - payRank(b.salary)
+    || (b.datePosted || '').localeCompare(a.datePosted || '')
+  );
 stats.kept = kept.length;
 
 saveSweepState(STORE_PATH, { cursor: nextCursor, run, chunkCount, cycleRuns, jobs });
@@ -282,6 +337,7 @@ writeFileSync('data/owings-mills.json', JSON.stringify({
   center: 'Owings Mills, MD 21117',
   radiusNote: '~10 miles, matched by town name (proxy, not geodesic)',
   payPriority: 'Published ranges starting at $20+/hr first; then ranges reaching $20; unknown pay; below $20',
+  fitScoring: '0-100 preliminary metadata score: qualification, interview likelihood, pay, career value, overqualification risk',
   towns: NEAR,
   excluded: ['senior/lead/management titles', 'medical & clinical titles'],
   maxAgeDays: MAX_AGE_DAYS,
@@ -319,11 +375,17 @@ const md = [
   `Coverage: each run reads ${window.length} of ${chunkCount} sitemap chunks, rotating, so a full pass takes ${cycleRuns} runs (~${(cycleRuns / 2).toFixed(1)} days at twice daily). Listings accumulate across runs and drop out once they age past ${MAX_AGE_DAYS} days or go unseen for two full passes.`,
   '',
 ];
+md.push('## Best matches overall', '', '| Score | Employer | Role | Pay | Resume | Flags |', '|---:|---|---|---|---|---|');
+for (const j of kept.slice(0, 40)) {
+  const title = j.title.replace(/\|/g, '\\|');
+  md.push(`| ${j.fit.overall} | ${j.company.replace(/\|/g, '\\|')} | [${title}](${j.url}) | ${pay(j.salary)} | ${j.fit.resume} | ${j.fit.flags.join('; ') || '—'} |`);
+}
+md.push('');
 for (const [town, jobs] of [...byTown].sort((a, b) => b[1].length - a[1].length)) {
-  md.push(`## ${town} (${jobs.length})`, '', '| Employer | Role | Pay | Posted |', '|---|---|---|---|');
+  md.push(`## ${town} (${jobs.length})`, '', '| Score | Employer | Role | Pay | Resume | Posted |', '|---:|---|---|---|---|---|');
   for (const j of jobs) {
     const title = j.title.replace(/\|/g, '\\|');
-    md.push(`| ${j.company.replace(/\|/g, '\\|')} | [${title}](${j.url}) | ${pay(j.salary)} | ${j.datePosted || '—'} |`);
+    md.push(`| ${j.fit.overall} | ${j.company.replace(/\|/g, '\\|')} | [${title}](${j.url}) | ${pay(j.salary)} | ${j.fit.resume} | ${j.datePosted || '—'} |`);
   }
   md.push('');
 }
