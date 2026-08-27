@@ -1,6 +1,6 @@
 # Unified local job search
 
-_Updated 2026-08-27 21:10 UTC · 987 deduplicated openings_
+_Updated 2026-08-27 21:10 UTC · 984 deduplicated openings_
 
 10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards. Official/direct listings replace aggregator duplicates. Scores prioritize plausible qualifications, interview likelihood, published pay of $20+/hour, career value, and low overqualification risk.
 
@@ -122,5 +122,5 @@ _Updated 2026-08-27 21:10 UTC · 987 deduplicated openings_
 ## Notes
 
 - “Regional” means the board is relevant to the Baltimore-area search but the posting is not verified within 10 road miles.
-- State and local government deadlines are preserved in the JSON output.
+- Internal-only Maryland recruitments are excluded; state and local government deadlines are preserved in the JSON output.
 - Scores are screening aids, not claims that every minimum qualification is met.
