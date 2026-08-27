@@ -4,9 +4,6 @@ name: Owings Mills jobs
 # Off-the-hour on purpose: :00 and :30 are the busiest slots on GitHub's
 # shared schedulers and get queued the longest.
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/owings-mills-jobs.yml'] # temporary one-shot trigger
   schedule:
     - cron: '23 11 * * *'
     - cron: '23 21 * * *'
@@ -47,7 +44,7 @@ jobs:
         run: npm install --ignore-scripts --no-audit --no-fund
 
       - name: Scan scheduled local-job window
-        if: github.event_name != 'workflow_dispatch'
+        if: github.event_name == 'schedule'
         working-directory: career-ops
         # No NODE_USE_ENV_PROXY here: that is only needed inside the Claude Code
         # sandbox, whose proxy Node's fetch ignores. GitHub runners reach the
