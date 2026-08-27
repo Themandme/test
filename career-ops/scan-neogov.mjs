@@ -175,6 +175,213 @@ export async function fetchAgency(agency) {
   return Array.isArray(body.jobList) ? body.jobList : [];
 }
 
+
+// Merge the fresh public-sector sweep with the other local stores. This output
+// contains public job listings only; no resume, application, or profile data.
+const nkey = s => String(s || '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
+const clampFit = n => Math.max(0, Math.min(100, Math.round(n)));
+function unifiedPayTier(s) {
+  if (!s || (s.min == null && s.max == null)) return 2;
+  let min = Number(s.min), max = Number(s.max), unit = String(s.unit || '').toLowerCase();
+  if (unit === 'year') { min /= 2080; max /= 2080; }
+  return min >= 20 ? 0 : max >= 20 ? 1 : 3;
+}
+function unifiedScore(j) {
+  const t = nkey(j.title);
+  const tech = /\b(data|analyst|analytics|information technology|it functional|systems|application|software|technical support|help desk|database|sql|power bi|crm|salesforce|business intelligence|reporting|quality assurance|project coordinator|program coordinator)\b/.test(t);
+  const service = /\b(customer|cashier|front desk|reception|guest|retail|sales associate|call center|dispatcher|administrative|office assistant|program assistant|teller|support specialist)\b/.test(t);
+  const credential = /\b(nurse|physician|therapist|attorney|counsel|scientist|licensed|certified|professor|faculty)\b/.test(t);
+  const leadership = /\b(senior|sr|director|chief|executive|principal|manager iii|manager iv)\b/.test(t);
+  let qualification = tech ? 82 : service ? 88 : 58;
+  let interview = tech ? 70 : service ? 84 : 55;
+  let careerValue = tech ? 90 : service ? 48 : 58;
+  let overqualificationRisk = service ? 18 : tech ? 8 : 12;
+  let resume = tech ? 'Professional' : service ? 'Customer service' : 'Review';
+  if (credential) { qualification -= 35; interview -= 30; careerValue -= 15; resume = 'Review'; }
+  if (leadership) { qualification -= 22; interview -= 20; }
+  const tier = unifiedPayTier(j.salary), pay = [100, 78, 52, 28][tier];
+  const overall = clampFit(clampFit(qualification) * .30 + clampFit(interview) * .25 + pay * .20 +
+    clampFit(careerValue) * .20 + (100 - clampFit(overqualificationRisk)) * .05);
+  const flags = [];
+  if (credential) flags.push('credential/skill check');
+  if (leadership) flags.push('leadership experience check');
+  if (tier === 2) flags.push('pay undisclosed');
+  if (tier === 3) flags.push('published pay below $20');
+  if (j.scope === 'regional') flags.push('regional/public board—not exact-radius verified');
+  return { overall, qualification: clampFit(qualification), interview: clampFit(interview), pay,
+    careerValue: clampFit(careerValue), overqualificationRisk: clampFit(overqualificationRisk),
+    resume, confidence: 'preliminary—title/pay/location metadata', flags };
+}
+function displayPay(s) {
+  if (!s || (s.min == null && s.max == null)) return '—';
+  const unit = String(s.unit || '').toLowerCase();
+  const f = v => v == null ? '?' : unit === 'year' ? '  const now = Date.now();
+  const all = [];
+  const failures = [];
+
+  for (const agency of AGENCIES) {
+    try {
+      const list = await fetchAgency(agency);
+      for (const rec of list) all.push(normalize(rec, agency, now));
+      console.log(`  ${agency.slug.padEnd(22)} ${String(list.length).padStart(4)} openings`);
+    } catch (err) {
+      failures.push(`${agency.slug}: ${err.message}`);
+      console.log(`  ${agency.slug.padEnd(22)}    ✗ ${err.message}`);
+    }
+  }
+
+  // A closed posting is a lie on a dashboard, and here the closing date is
+  // stated rather than guessed — so drop rather than infer.
+  const open = all.filter((j) => j.deadlineMs === null || j.deadlineMs >= now);
+  const closed = all.length - open.length;
+
+  const inRange = (j) => j.miles === null || j.miles <= RADIUS;
+  const rows = (process.argv.includes('--all') ? open : open.filter(inRange))
+    .sort((a, b) => (a.days ?? 9999) - (b.days ?? 9999));
+
+  writeFileSync(DEST, JSON.stringify(rows, null, 2));
+  console.log(`\nwrote ${DEST}`);
+  console.log(`  fetched=${all.length} open=${open.length} (${closed} past their closing date) kept=${rows.length} within ${RADIUS}mi`);
+  console.log(`  with salary=${rows.filter((r) => r.salary).length} | dated=${rows.filter((r) => r.days !== null).length} | posted within 21d=${rows.filter((r) => r.days !== null && r.days <= 21).length}`);
+  if (failures.length) console.log(`  agencies failed: ${failures.join('; ')}`);
+
+  writeUnifiedLocalJobs();
+
+  if (process.argv.includes('--pipeline')) {
+    const { appendToPipeline, appendToScanHistory, loadSeenUrls, normalizeUrlForDedup } =
+      await import('./scan.mjs');
+    const { seen } = loadSeenUrls();
+    const offers = rows
+      .filter((r) => !seen.has(normalizeUrlForDedup(r.url)))
+      .map((r) => ({
+        url: r.url,
+        company: r.company,
+        title: r.title,
+        location: r.location,
+        salary: r.salary,
+        postedAt: r.postedAtMs ?? undefined,
+        note: r.continuous ? 'neogov; continuous posting' : `neogov; closes ${r.deadline}`,
+      }));
+    if (offers.length === 0) console.log('  pipeline: nothing new — every row already seen');
+    else {
+      await appendToPipeline(offers);
+      appendToScanHistory(offers, new Date(now).toISOString().slice(0, 10));
+      console.log(`  pipeline: +${offers.length} new (${rows.length - offers.length} already seen)`);
+    }
+  }
+}
+ + Math.round(Number(v) / 1000) + 'k' : '  const now = Date.now();
+  const all = [];
+  const failures = [];
+
+  for (const agency of AGENCIES) {
+    try {
+      const list = await fetchAgency(agency);
+      for (const rec of list) all.push(normalize(rec, agency, now));
+      console.log(`  ${agency.slug.padEnd(22)} ${String(list.length).padStart(4)} openings`);
+    } catch (err) {
+      failures.push(`${agency.slug}: ${err.message}`);
+      console.log(`  ${agency.slug.padEnd(22)}    ✗ ${err.message}`);
+    }
+  }
+
+  // A closed posting is a lie on a dashboard, and here the closing date is
+  // stated rather than guessed — so drop rather than infer.
+  const open = all.filter((j) => j.deadlineMs === null || j.deadlineMs >= now);
+  const closed = all.length - open.length;
+
+  const inRange = (j) => j.miles === null || j.miles <= RADIUS;
+  const rows = (process.argv.includes('--all') ? open : open.filter(inRange))
+    .sort((a, b) => (a.days ?? 9999) - (b.days ?? 9999));
+
+  writeFileSync(DEST, JSON.stringify(rows, null, 2));
+  console.log(`\nwrote ${DEST}`);
+  console.log(`  fetched=${all.length} open=${open.length} (${closed} past their closing date) kept=${rows.length} within ${RADIUS}mi`);
+  console.log(`  with salary=${rows.filter((r) => r.salary).length} | dated=${rows.filter((r) => r.days !== null).length} | posted within 21d=${rows.filter((r) => r.days !== null && r.days <= 21).length}`);
+  if (failures.length) console.log(`  agencies failed: ${failures.join('; ')}`);
+
+  if (process.argv.includes('--pipeline')) {
+    const { appendToPipeline, appendToScanHistory, loadSeenUrls, normalizeUrlForDedup } =
+      await import('./scan.mjs');
+    const { seen } = loadSeenUrls();
+    const offers = rows
+      .filter((r) => !seen.has(normalizeUrlForDedup(r.url)))
+      .map((r) => ({
+        url: r.url,
+        company: r.company,
+        title: r.title,
+        location: r.location,
+        salary: r.salary,
+        postedAt: r.postedAtMs ?? undefined,
+        note: r.continuous ? 'neogov; continuous posting' : `neogov; closes ${r.deadline}`,
+      }));
+    if (offers.length === 0) console.log('  pipeline: nothing new — every row already seen');
+    else {
+      await appendToPipeline(offers);
+      appendToScanHistory(offers, new Date(now).toISOString().slice(0, 10));
+      console.log(`  pipeline: +${offers.length} new (${rows.length - offers.length} already seen)`);
+    }
+  }
+}
+ + Number(v).toFixed(Number(v) % 1 ? 2 : 0);
+  return (s.min === s.max ? f(s.min) : f(s.min) + '–' + f(s.max)) + (unit === 'hour' ? '/hr' : unit === 'year' ? '/yr' : '');
+}
+function writeUnifiedLocalJobs() {
+  const read = (name, fallback) => { try { return JSON.parse(readFileSync(path.join(ROOT, name), 'utf8')); } catch { return fallback; } };
+  const hc = read('owings-mills-store.json', { jobs: {} });
+  const workday = read('local-workday-store.json', []);
+  const mdgov = read('maryland-gov-store.json', []);
+  const ng = read('neogov-store.json', []);
+  const near = /\b(owings mills|garrison|glyndon|reisterstown|pikesville|randallstown|milford mill|windsor mill|stevenson|lochearn|finksburg|woodstock|towson)\b/i;
+  const regionalBoard = /\b(city of baltimore|umbc|stevenson university|johns hopkins university|towson university|university of maryland|loyola university|goucher college)\b/i;
+  const rows = [];
+  for (const x of Object.values(hc.jobs || {})) rows.push({ ...x, location: [x.city, x.region].filter(Boolean).join(', '), source: 'HiringCafe', scope: '10-mile proxy' });
+  for (const x of workday) {
+    const regional = regionalBoard.test(x.company), local = near.test(x.location || '');
+    if (!local && !regional) continue;
+    rows.push({ ...x, source: x.source || 'Direct employer board', scope: local ? '10-mile proxy' : 'regional' });
+  }
+  for (const x of mdgov) if (/\b(Baltimore County|Baltimore City)\b/i.test(x.location || ''))
+    rows.push({ ...x, source: 'State of Maryland JobAps', scope: 'regional' });
+  for (const x of ng) if (Number(x.miles) <= 10)
+    rows.push({ ...x, source: 'County/city NEOGOV', scope: '10-mile radius' });
+
+  const rank = s => /JobAps|NEOGOV|official|Direct/i.test(s) ? 0 : 1;
+  const unique = new Map();
+  for (const x of rows) {
+    const key = nkey(x.company) + '|' + nkey(x.title), old = unique.get(key);
+    if (!old || rank(x.source) < rank(old.source)) unique.set(key, x);
+  }
+  const jobs = [...unique.values()].map(x => ({ ...x, fit: unifiedScore(x) }))
+    .sort((a,b) => b.fit.overall - a.fit.overall || unifiedPayTier(a.salary) - unifiedPayTier(b.salary) || (a.days ?? 999) - (b.days ?? 999));
+  const sourceCounts = {};
+  for (const j of jobs) sourceCounts[j.source] = (sourceCounts[j.source] || 0) + 1;
+  const generatedAt = new Date().toISOString();
+  writeFileSync(path.join(ROOT, 'unified-local-jobs.json'), JSON.stringify({
+    generatedAt, center: 'Owings Mills, MD 21117',
+    scope: '10-mile core plus explicitly labeled Baltimore-area public and university boards',
+    payPriority: '$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking',
+    scoring: 'Preliminary metadata score; verify requirements before applying',
+    sourceCounts, jobs,
+  }, null, 2));
+
+  const esc = s => String(s || '').replace(/\|/g, '\\|');
+  const md = ['# Unified local job search', '',
+    '_Updated ' + generatedAt.slice(0,16).replace('T',' ') + ' UTC · ' + jobs.length + ' deduplicated openings_',
+    '', '10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards. Official/direct listings replace aggregator duplicates. Scores prioritize plausible qualifications, interview likelihood, published pay of $20+/hour, career value, and low overqualification risk.',
+    '', '## Sources', '', '| Source | Openings |', '|---|---:|',
+    ...Object.entries(sourceCounts).sort((a,b)=>b[1]-a[1]).map(([s,n]) => '| ' + esc(s) + ' | ' + n + ' |'),
+    '', '## Best matches', '', '| Score | Employer | Role | Location | Pay | Source | Resume | Flags |',
+    '|---:|---|---|---|---|---|---|---|'];
+  for (const j of jobs.slice(0,100)) md.push('| ' + j.fit.overall + ' | ' + esc(j.company) + ' | [' + esc(j.title) + '](' + j.url + ') | ' +
+    esc(j.location || j.city || '—') + ' | ' + displayPay(j.salary) + ' | ' + esc(j.source) + ' | ' + j.fit.resume + ' | ' + esc(j.fit.flags.join('; ') || '—') + ' |');
+  md.push('', '## Notes', '', '- “Regional” means the board is relevant to the Baltimore-area search but the posting is not verified within 10 road miles.',
+    '- State and local government deadlines are preserved in the JSON output.',
+    '- Scores are screening aids, not claims that every minimum qualification is met.');
+  writeFileSync(path.join(ROOT, 'unified-local-jobs.md'), md.join('\n'));
+  console.log('  unified: ' + jobs.length + ' deduplicated jobs across ' + Object.keys(sourceCounts).length + ' source groups');
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const now = Date.now();
   const all = [];
