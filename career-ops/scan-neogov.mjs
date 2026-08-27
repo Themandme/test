@@ -237,7 +237,9 @@ function writeUnifiedLocalJobs() {
     if (!local && !regional) continue;
     rows.push({ ...x, source: x.source || 'Direct employer board', scope: local ? '10-mile proxy' : 'regional' });
   }
-  for (const x of mdgov) if (/\b(Baltimore County|Baltimore City)\b/i.test(x.location || ''))
+  const knownInternalMarylandReqs = new Set(['26-002588-0052', '26-004498-0001', '26-001702-0009']);
+  for (const x of mdgov) if (!x.restricted && !knownInternalMarylandReqs.has(x.reqId)
+    && /\b(Baltimore County|Baltimore City)\b/i.test(x.location || ''))
     rows.push({ ...x, source: 'State of Maryland JobAps', scope: 'regional' });
   for (const x of ng) if (Number(x.miles) <= 10)
     rows.push({ ...x, source: 'County/city NEOGOV', scope: '10-mile radius' });
