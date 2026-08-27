@@ -8,6 +8,12 @@ on:
     - cron: '23 11 * * *'
     - cron: '23 21 * * *'
   workflow_dispatch:        # lets you run it on demand from the Actions tab
+  # Temporary one-time catch-up trigger. Path scoping prevents the bot's store
+  # commit from starting another run.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/owings-mills-jobs.yml'
 
 permissions:
   contents: write           # needed to commit the refreshed digest
@@ -19,7 +25,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 30     # each run reads a rotating 60 of ~465 sitemap chunks
+    timeout-minutes: 120    # catch-up push runs eight rotating windows
 
     steps:
       - uses: actions/checkout@v4
@@ -43,12 +49,25 @@ jobs:
         working-directory: career-ops
         run: npm install --ignore-scripts --no-audit --no-fund
 
-      - name: Scan for local jobs
+      - name: Scan scheduled local-job window
+        if: github.event_name != 'push'
         working-directory: career-ops
         # No NODE_USE_ENV_PROXY here: that is only needed inside the Claude Code
         # sandbox, whose proxy Node's fetch ignores. GitHub runners reach the
         # network directly.
         run: node scan-owings-mills.mjs
+
+      - name: One-time full HiringCafe catch-up
+        if: github.event_name == 'push'
+        working-directory: career-ops
+        # Eight 60-chunk windows cover the roughly 480-chunk sitemap. Each
+        # invocation persists and advances the cursor before the next starts,
+        # so memory and request concurrency stay identical to a normal run.
+        run: |
+          for pass in 1 2 3 4 5 6 7 8; do
+            echo "Full-cycle pass $pass of 8"
+            node scan-owings-mills.mjs
+          done
 
       - name: Sweep the local Workday tenants
         id: workday
