@@ -1,17 +1,17 @@
 # Unified local job search
 
-_Updated 2026-08-27 22:28 UTC · 984 deduplicated openings_
+_Updated 2026-08-28 05:35 UTC · 944 deduplicated openings_
 
-10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards. Official/direct listings replace aggregator duplicates. Scores prioritize plausible qualifications, interview likelihood, published pay of $20+/hour, career value, and low overqualification risk. Senior, lead, management, and numbered advanced classifications receive experience-level penalties.
+10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards. Official/direct listings replace aggregator duplicates. Scores prioritize plausible qualifications, interview likelihood, published pay of $20+/hour, career value, and low overqualification risk.
 
 ## Sources
 
 | Source | Openings |
 |---|---:|
-| HiringCafe | 391 |
-| Direct employer board | 260 |
-| State of Maryland JobAps | 166 |
-| County/city NEOGOV | 119 |
+| HiringCafe | 360 |
+| Direct employer board | 259 |
+| State of Maryland JobAps | 159 |
+| County/city NEOGOV | 118 |
 | official university board | 48 |
 
 ## Best matches
@@ -65,6 +65,7 @@ _Updated 2026-08-27 22:28 UTC · 984 deduplicated openings_
 | 75 | Stevenson University | [Maintenance Technician (HVAC/R-Building Automation Systems)](https://stevenson.peopleadmin.com/postings/11029) | Owings Mills / Stevenson, MD | — | official university board | Professional | pay undisclosed |
 | 74 | State of Maryland — Subsequent Injury Fund | [WORKERS COMP CLAIM & MEDICAL REVIEWER/HR COORDINATOR (ADMINISTRATIVE OFFICER III)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0058) | Baltimore County | $63k–$100k/yr | State of Maryland JobAps | Customer service | level III+ experience check; regional/public board—not exact-radius verified |
 | 74 | State of Maryland — MDH Health Professionals Boards and Commissions | [LICENSING SPECIALIST (ADMINISTRATIVE OFFICER III)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0057) | Baltimore City | $63k–$82k/yr | State of Maryland JobAps | Customer service | level III+ experience check; regional/public board—not exact-radius verified |
+| 72 | State of Maryland — Maryland Insurance Administration | [SENIOR SALESFORCE BUSINESS ANALYST , CONTRACTUAL (IT Systems Technical Specialist)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0015) | Baltimore City | $55.53–$67.69/hr | State of Maryland JobAps | Professional | senior/lead experience check; regional/public board—not exact-radius verified |
 | 72 | State of Maryland — Maryland Insurance Administration | [SENIOR SALESFORCE DEVELOPER, CONTRACTUAL (IT Systems Technical Specialist)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0017) | Baltimore City | $55.53–$67.69/hr | State of Maryland JobAps | Professional | senior/lead experience check; regional/public board—not exact-radius verified |
 | 72 | State of Maryland — Maryland Insurance Administration | [SENIOR FINANCIAL ANALYST I (MIA Administrator III)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009643&R3=0002) | Baltimore City | $82k–$129k/yr | State of Maryland JobAps | Professional | senior/lead experience check; regional/public board—not exact-radius verified |
 | 72 | State of Maryland — Maryland Insurance Administration | [SENIOR BOX DEVELOPER, CONTRACTUAL (IT Systems Technical Specialist)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0014) | Baltimore City | $55.53–$67.69/hr | State of Maryland JobAps | Professional | senior/lead experience check; regional/public board—not exact-radius verified |
@@ -80,7 +81,6 @@ _Updated 2026-08-27 22:28 UTC · 984 deduplicated openings_
 | 72 | Curaleaf | [Retail Sales Associate - Part Time](https://hiringcafe.com/job/retail-sales-associate-part-time-curaleaf-reisterstown-maryland-6imib8j88h06h68b) | Reisterstown, Maryland | — | HiringCafe | Customer service | pay undisclosed |
 | 72 | Crescent Hotels & Resorts | [Front Desk Agent](https://hiringcafe.com/job/front-desk-agent-crescent-hotels-and-resorts-owings-mills-maryland-k3kc53v7xd2ds44l) | Owings Mills, Maryland | — | HiringCafe | Customer service | pay undisclosed |
 | 72 | Costco Wholesale | [Cashier (Front End)](https://hiringcafe.com/job/cashier-front-end-costco-wholesale-owings-mills-maryland-a8qcgui9cclqhjzc) | Owings Mills, Maryland | — | HiringCafe | Customer service | pay undisclosed |
-| 72 | Acosta Group | [Retail Merchandiser/Resets](https://hiringcafe.com/job/retail-merchandiser-resets-acosta-group-owings-mills-maryland-8hnyw0a0cz5igr0d) | Owings Mills, Maryland | — | HiringCafe | Customer service | pay undisclosed |
 | 72 | Ahold Delhaize | [PT Produce Sales Associate (473019)](https://hiringcafe.com/job/pt-produce-sales-associate-473019-ahold-delhaize-randallstown-maryland-p055d3twpckttfvy) | Randallstown, Maryland | — | HiringCafe | Customer service | pay undisclosed |
 | 72 | Lowe's | [Full Time - Sales Associate - Building Materials - Day](https://hiringcafe.com/job/full-time-sales-associate-building-materials-day-lowes-owings-mills-sh0isb0newecslf9) | Owings Mills, Maryland | — | HiringCafe | Customer service | pay undisclosed |
 | 72 | AlphaGraphics | [Customer Service Representative](https://hiringcafe.com/job/customer-service-representative-alphagraphics-reisterstown-maryland-7ebts5gd4ashjnn3) | Reisterstown, Maryland | — | HiringCafe | Customer service | pay undisclosed |
@@ -94,18 +94,18 @@ _Updated 2026-08-27 22:28 UTC · 984 deduplicated openings_
 | 69 | State of Maryland — MDH Dev Disabilities Admin - Program Direction | [Senior Advisor for Strategic Communications & Public Engagement ((Administrative Program Manager I))](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005472&R3=0008) | Baltimore City | $82k–$129k/yr | State of Maryland JobAps | Customer service | senior/lead experience check; regional/public board—not exact-radius verified |
 | 69 | State of Maryland — Maryland State Retirement and Pension Systems | [ADMINISTRATIVE OFFICER III (Retirement Finals Processing Team Lead)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0056) | Baltimore City | $63k–$68k/yr | State of Maryland JobAps | Customer service | senior/lead experience check; regional/public board—not exact-radius verified |
 | 68 | University of Maryland | [Administrative Assistant II](https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Administrative-Assistant-II_JR104695) | University of Maryland College Park | — | Direct employer board | Customer service | level II experience check; pay undisclosed; regional/public board—not exact-radius verified |
-| 67 | State of Maryland — DHS - Office of the Secretary | [Fraud Program Investigator (ADMINISTRATOR I)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002586&R3=0046) | Baltimore City | $67k–$87k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
+| 67 | State of Maryland — MDH Med Care Prgms - Ofc Medicaid Prgms/Operations | [CONSULTANT PHARMACIST (CLINICAL PHARMACIST)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000468&R3=0001) | Baltimore City | $93k–$120k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — COMM - Ofc of Admin & Information Technology | [Procurement Specialist (Procurement Officer I)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003002&R3=0006) | Baltimore City | $67k–$106k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — PSC General Administration and Hearings | [FERC/PJM ADVISOR (PSC COMMISSION ADVISOR)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009030&R3=0001) | Baltimore City | $62k–$193k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
-| 67 | State of Maryland — Alcohol, Tobacco, and Cannabis Commission (ATCC) | [ENFORCEMENT AGENT](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000868&R3=0001) | Baltimore City | $78k–$127k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | Baltimore County Government | [Department of Aging Human Services Associate - MAP Specialist](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5402015/department-of-aging-human-services-associate-map-specialist) | Various locations throughout Baltimore County, MD | $48k–$56k/yr | County/city NEOGOV | Review | — |
+| 67 | State of Maryland — Alcohol, Tobacco, and Cannabis Commission (ATCC) | [ENFORCEMENT AGENT](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000868&R3=0001) | Baltimore City | $78k–$127k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — MDH Behavioral Health Admin - Community Services | [ADMINISTRATOR I](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002586&R3=0045) | Baltimore County | $67k–$87k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
-| 67 | State of Maryland — MDE - Air and Radiation Administration (ARA) | [HEALTH PHYSICIST TRAINEE](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002087&R3=0001) | Baltimore City | $59k–$94k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | Baltimore County Government | [Human Services Associate - Department of Corrections](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5459948/human-services-associate-department-of-corrections) | Towson, MD | $48k–$61k/yr | County/city NEOGOV | Review | — |
+| 67 | State of Maryland — MDE - Air and Radiation Administration (ARA) | [HEALTH PHYSICIST TRAINEE](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002087&R3=0001) | Baltimore City | $59k–$94k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | Baltimore County Government | [Department of Aging Caregiver Program Specialist - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438718/department-of-aging-caregiver-program-specialist-non-merit) | Towson, MD | $22.29–$32.40/hr | County/city NEOGOV | Review | — |
 | 67 | Baltimore County Government | [Chief of Human Resources Information Systems - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5455106/chief-of-human-resources-information-systems-non-merit) | Towson, MD | $102k–$125k/yr | County/city NEOGOV | Professional | executive-level experience check |
-| 67 | State of Maryland — Maryland State Retirement and Pension Systems | [INVESTMENT ASSOCIATE MSRP](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005030&R3=0003) | Baltimore City | $70k–$104k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | Baltimore County Government | [Department of Aging Human Services Associate Community Outreach Specialist](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5400732/department-of-aging-human-services-associate-community-outreach-specialist) | Various locations throughout Baltimore County, MD | $48k–$56k/yr | County/city NEOGOV | Review | — |
+| 67 | State of Maryland — Maryland State Retirement and Pension Systems | [INVESTMENT ASSOCIATE MSRP](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005030&R3=0003) | Baltimore City | $70k–$104k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | Baltimore County Government | [Aging Human Services Program Specialist - Guardianship Program Specialist ](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5403600/aging-human-services-program-specialist-guardianship-program-specialist) | Towson, MD | $58k–$66k/yr | County/city NEOGOV | Review | — |
 | 67 | State of Maryland — DHS Family Investment Administration - Operations | [Statewide Operations Coordinator (HUMAN SERVICE PRGM PLN ADMINISTRATOR)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001532&R3=0005) | Baltimore City | $34.43–$44.54/hr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — MDH RICA Baltimore | [Social Work Supv Health Svcs CI](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004180&R3=0004) | Baltimore City | $82k–$106k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
@@ -114,14 +114,13 @@ _Updated 2026-08-27 22:28 UTC · 984 deduplicated openings_
 | 67 | State of Maryland — MDH RICA Baltimore | [Social Worker I, Health Svcs CI](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004181&R3=0004) | Baltimore City | $72k–$93k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — DHS - Ops Ofc - Div of Budget Finance & Personnel | [AGENCY GRANTS SPECIALIST I](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000806&R3=0005) | Baltimore City | $59k–$77k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — DJS Baltimore City Juvenile Justice Center | [DJS RESIDENT ADVISOR TRAINEE (Baltimore City & Baltimore County Only)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002599&R3=0007) | Baltimore City | $78k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
-| 67 | State of Maryland — Worker's Compensation Commission | [CLAIMS REVIEWER I](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002218&R3=0003) | Baltimore City | $44k–$61k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — PSC Engineering Investigations | [PUBLIC SERVICE ENGINEER SERIES (Distribution Engineer - Electrical)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002188&R3=0001) | Baltimore City | $82k–$129k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — MDH Ofc of Chief Med Examiner | [ASSISTANT TOXICOLOGIST I POST-MORTEM](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002330&R3=0001) | Baltimore City | $72k–$93k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 67 | State of Maryland — Department of Public Safety and Correctional Svcs | [CORRECTIONAL MAINTENANCE OFFICER I Maintenance Mechanic (Statewide)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004052&R3=0002) | Baltimore City Carroll Howard | $61k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
+| 67 | Baltimore County Government | [Housing Choice Voucher Program (HCVP) Inspector - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438664/housing-choice-voucher-program-hcvp-inspector-non-merit) | Towson, MD | $26.39–$36.37/hr | County/city NEOGOV | Review | — |
 
 ## Notes
 
 - “Regional” means the board is relevant to the Baltimore-area search but the posting is not verified within 10 road miles.
-- Internal-only Maryland recruitments are excluded; state and local government deadlines are preserved in the JSON output.
-- Seniority penalties are title-based screening aids; full requirements still need verification.
+- State and local government deadlines are preserved in the JSON output.
 - Scores are screening aids, not claims that every minimum qualification is met.
