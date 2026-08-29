@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-28T21:33:34.359Z",
+  "generatedAt": "2026-08-29T03:19:05.685Z",
   "center": "Owings Mills, MD 21117",
   "scope": "10-mile core plus explicitly labeled Baltimore-area public and university boards",
   "payPriority": "$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking",
   "scoring": "Preliminary metadata score; verify requirements before applying",
   "sourceCounts": {
-    "State of Maryland JobAps": 163,
+    "State of Maryland JobAps": 147,
     "County/city NEOGOV": 120,
-    "HiringCafe": 332,
+    "HiringCafe": 300,
     "Direct employer board": 256,
     "official university board": 48
   },
@@ -395,41 +395,6 @@
       }
     },
     {
-      "company": "State of Maryland — Department of Disabilities",
-      "title": "Administrative Coordinator (Office for Disability Employment Advancement and Policy (ODEAP))",
-      "reqId": "26-002711-0036",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002711&R3=0036",
-      "days": 14,
-      "postedAtMs": 1786726800000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 55710,
-        "max": 59121,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 81,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 100,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Management Analyst II",
@@ -478,7 +443,7 @@
       "reqId": "24-003784-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=003784&R3=0001",
-      "days": 959,
+      "days": 960,
       "postedAtMs": 1705059600000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -604,42 +569,6 @@
         "confidence": "preliminary—title/pay/location metadata",
         "flags": [
           "level II experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — Maryland Department of Health",
-      "title": "FISCAL SERVICES ADMINISTRATOR III - Multiple Positions (Budget Analyst)",
-      "reqId": "26-004530-0003",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004530&R3=0003",
-      "days": 28,
-      "postedAtMs": 1785498240000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 93138,
-        "max": 120491,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 78,
-        "qualification": 68,
-        "interview": 59,
-        "pay": 100,
-        "careerValue": 90,
-        "overqualificationRisk": 8,
-        "resume": "Professional",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "level III+ experience check",
           "regional/public board—not exact-radius verified"
         ]
       }
@@ -1370,7 +1299,7 @@
       "reqId": "26-002247-0058",
       "location": "Baltimore County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0058",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787583600000,
       "deadlineMs": 1788911940000,
       "deadline": "9/8/2026 11:59:00 PM",
@@ -1478,7 +1407,7 @@
       "reqId": "26-004488-0017",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0017",
-      "days": 3,
+      "days": 4,
       "postedAtMs": 1787655000000,
       "deadlineMs": 1788911940000,
       "deadline": "9/8/2026 11:59:00 PM",
@@ -1514,7 +1443,7 @@
       "reqId": "26-009643-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009643&R3=0002",
-      "days": 15,
+      "days": 16,
       "postedAtMs": 1786623300000,
       "deadlineMs": 1788307140000,
       "deadline": "9/1/2026 11:59:00 PM",
@@ -1523,42 +1452,6 @@
         "min": 81750,
         "max": 128924,
         "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 72,
-        "qualification": 58,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 90,
-        "overqualificationRisk": 8,
-        "resume": "Professional",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "senior/lead experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — Maryland Insurance Administration",
-      "title": "SENIOR BOX DEVELOPER, CONTRACTUAL (IT Systems Technical Specialist)",
-      "reqId": "26-004488-0014",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0014",
-      "days": 16,
-      "postedAtMs": 1786611600000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 55.53,
-        "max": 67.69,
-        "unit": "HOUR"
       },
       "restricted": false,
       "restriction": null,
@@ -1799,37 +1692,6 @@
       }
     },
     {
-      "title": "Retail Sales Associate - Part Time",
-      "url": "https://hiringcafe.com/job/retail-sales-associate-part-time-curaleaf-reisterstown-maryland-6imib8j88h06h68b",
-      "company": "Curaleaf",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-07-16",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 72,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Front Desk Agent",
       "url": "https://hiringcafe.com/job/front-desk-agent-crescent-hotels-and-resorts-owings-mills-maryland-k3kc53v7xd2ds44l",
       "company": "Crescent Hotels & Resorts",
@@ -1925,33 +1787,6 @@
       "salary": null,
       "lastSeenRun": 47,
       "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 72,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Full Time - Sales Associate - Building Materials - Day",
-      "url": "https://hiringcafe.com/job/full-time-sales-associate-building-materials-day-lowes-owings-mills-sh0isb0newecslf9",
-      "company": "Lowe's",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-12",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -2148,7 +1983,7 @@
       "reqId": "26-002247-0060",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0060",
-      "days": 2,
+      "days": 3,
       "postedAtMs": 1787749140000,
       "deadlineMs": 1788962340000,
       "deadline": "9/9/2026 1:59:00 PM",
@@ -2220,7 +2055,7 @@
       "reqId": "26-005472-0008",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005472&R3=0008",
-      "days": 1,
+      "days": 2,
       "postedAtMs": 1787832000000,
       "deadlineMs": 1789084740000,
       "deadline": "9/10/2026 11:59:00 PM",
@@ -2228,42 +2063,6 @@
       "salary": {
         "min": 81750,
         "max": 128924,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 69,
-        "qualification": 64,
-        "interview": 63,
-        "pay": 100,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "senior/lead experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — Maryland State Retirement and Pension Systems",
-      "title": "ADMINISTRATIVE OFFICER III (Retirement Finals Processing Team Lead)",
-      "reqId": "26-002247-0056",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0056",
-      "days": 15,
-      "postedAtMs": 1786694700000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 63154,
-        "max": 68362,
         "unit": "YEAR"
       },
       "restricted": false,
@@ -2392,7 +2191,7 @@
       "reqId": "26-003002-0006",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003002&R3=0006",
-      "days": 2,
+      "days": 3,
       "postedAtMs": 1787754600000,
       "deadlineMs": 1789574400000,
       "deadline": "9/16/2026 4:00:00 PM",
@@ -2457,41 +2256,6 @@
       }
     },
     {
-      "company": "State of Maryland — Alcohol, Tobacco, and Cannabis Commission (ATCC)",
-      "title": "ENFORCEMENT AGENT",
-      "reqId": "26-000868-0001",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000868&R3=0001",
-      "days": 3,
-      "postedAtMs": 1787657400000,
-      "deadlineMs": 1788998340000,
-      "deadline": "9/9/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 77825,
-        "max": 127486,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Department of Aging Human Services Associate - MAP Specialist",
@@ -2529,6 +2293,41 @@
         "resume": "Review",
         "confidence": "preliminary—title/pay/location metadata",
         "flags": []
+      }
+    },
+    {
+      "company": "State of Maryland — Alcohol, Tobacco, and Cannabis Commission (ATCC)",
+      "title": "ENFORCEMENT AGENT",
+      "reqId": "26-000868-0001",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000868&R3=0001",
+      "days": 4,
+      "postedAtMs": 1787657400000,
+      "deadlineMs": 1788998340000,
+      "deadline": "9/9/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 77825,
+        "max": 127486,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 67,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": [
+          "regional/public board—not exact-radius verified"
+        ]
       }
     },
     {
@@ -2856,7 +2655,7 @@
       "reqId": "26-001532-0005",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001532&R3=0005",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787055300000,
       "deadlineMs": 1788307140000,
       "deadline": "9/1/2026 11:59:00 PM",
@@ -2926,7 +2725,7 @@
       "reqId": "26-002556-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002556&R3=0002",
-      "days": 11,
+      "days": 12,
       "postedAtMs": 1786975200000,
       "deadlineMs": 1788220740000,
       "deadline": "8/31/2026 11:59:00 PM",
@@ -2956,117 +2755,12 @@
       }
     },
     {
-      "company": "State of Maryland — MSDE - Deputy for Teaching and Learning",
-      "title": "School Based State Literacy Coaches (Education Program Specialist I)",
-      "reqId": "26-005055-0011",
-      "location": "Baltimore City Cecil Montgomery Prince George's St. Mary's",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005055&R3=0011",
-      "days": 14,
-      "postedAtMs": 1786716000000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 53,
-        "max": 53,
-        "unit": "HOUR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — MDH RICA Baltimore",
-      "title": "Social Worker I, Health Svcs CI",
-      "reqId": "26-004181-0004",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004181&R3=0004",
-      "days": 14,
-      "postedAtMs": 1786704300000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 71805,
-        "max": 92894,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — DHS - Ops Ofc - Div of Budget Finance & Personnel",
-      "title": "AGENCY GRANTS SPECIALIST I",
-      "reqId": "26-000806-0005",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000806&R3=0005",
-      "days": 14,
-      "postedAtMs": 1786703400000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 59305,
-        "max": 76725,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "State of Maryland — DJS Baltimore City Juvenile Justice Center",
       "title": "DJS RESIDENT ADVISOR TRAINEE (Baltimore City & Baltimore County Only)",
       "reqId": "26-002599-0007",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002599&R3=0007",
-      "days": 15,
+      "days": 16,
       "postedAtMs": 1786626000000,
       "deadlineMs": 1796083140000,
       "deadline": "11/30/2026 11:59:00 PM",
@@ -3623,7 +3317,7 @@
       "reqId": "26-004704-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004704&R3=0001",
-      "days": 50,
+      "days": 51,
       "postedAtMs": 1783600440000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",
@@ -3658,7 +3352,7 @@
       "reqId": "26-000624-0001",
       "location": "Baltimore City Howard Somerset",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000624&R3=0001",
-      "days": 52,
+      "days": 53,
       "postedAtMs": 1783428780000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",
@@ -3772,7 +3466,7 @@
       "reqId": "26-000674-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000674&R3=0001",
-      "days": 79,
+      "days": 80,
       "postedAtMs": 1781085600000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -4158,7 +3852,7 @@
       "reqId": "26-004714-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004714&R3=0001",
-      "days": 203,
+      "days": 204,
       "postedAtMs": 1770370680000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",
@@ -4306,41 +4000,6 @@
         "resume": "Review",
         "confidence": "preliminary—title/pay/location metadata",
         "flags": []
-      }
-    },
-    {
-      "company": "State of Maryland — MDH Behavioral Health Admin - Program Direction",
-      "title": "SOCIAL WORKER ADVANCED, HEALTH SERVICES ***REPOST*** (REGIONAL COORDINATOR, ASSISTED OUTPATIENT TREATMENT PROGRAM)",
-      "reqId": "26-001993-0001",
-      "location": "Baltimore County",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001993&R3=0001",
-      "days": 219,
-      "postedAtMs": 1769012400000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 76608,
-        "max": 99105,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
       }
     },
     {
@@ -4741,41 +4400,6 @@
       }
     },
     {
-      "company": "State of Maryland — Department of Public Safety and Correctional Svcs",
-      "title": "ASSISTANT WARDEN",
-      "reqId": "25-005278-0001",
-      "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=25&R2=005278&R3=0001",
-      "days": 567,
-      "postedAtMs": 1738936800000,
-      "deadlineMs": null,
-      "deadline": "Open/Continuous",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 97972,
-        "max": 152528,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Police Assistant - Non-Merit  (For retired sworn police and fire employees ONLY)",
@@ -4815,12 +4439,47 @@
       }
     },
     {
+      "company": "State of Maryland — Department of Public Safety and Correctional Svcs",
+      "title": "ASSISTANT WARDEN",
+      "reqId": "25-005278-0001",
+      "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=25&R2=005278&R3=0001",
+      "days": 568,
+      "postedAtMs": 1738936800000,
+      "deadlineMs": null,
+      "deadline": "Open/Continuous",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 97972,
+        "max": 152528,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 67,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": [
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — DJS Lower Eastern Shore Children's Ctr",
       "title": "SOCIAL WORKER ADVANCED, CRIMINAL JUSTICE ***",
       "reqId": "24-002005-0001",
       "location": "Allegany Baltimore City Baltimore County Frederick Garrett Prince George's Washington County Wicomico",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=002005&R3=0001",
-      "days": 674,
+      "days": 675,
       "postedAtMs": 1729696380000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -4855,7 +4514,7 @@
       "reqId": "24-007033-0002",
       "location": "Baltimore County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=007033&R3=0002",
-      "days": 697,
+      "days": 698,
       "postedAtMs": 1727700840000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -4986,64 +4645,6 @@
       },
       "lastSeenRun": 46,
       "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": []
-      }
-    },
-    {
-      "title": "Maintenance Technician",
-      "url": "https://hiringcafe.com/job/maintenance-technician-quest-management-group-pikesville-maryland-jmp5g5j5d90meolu",
-      "company": "Quest Management Group",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 24,
-        "max": 27,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": []
-      }
-    },
-    {
-      "title": "Science Teacher",
-      "url": "https://hiringcafe.com/job/science-teacher-garrison-forest-school-owings-mills-maryland-apio7s53ptsfyolx",
-      "company": "Garrison Forest School",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 45000,
-        "max": 75000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -5465,35 +5066,6 @@
       }
     },
     {
-      "title": "Verizon Sales Consultant",
-      "url": "https://hiringcafe.com/job/verizon-sales-consultant-cellular-sales-pikesville-maryland-1mhn19f4iiz20spd",
-      "company": "Cellular Sales",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-07-30",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 54000,
-        "max": 109000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 43,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": []
-      }
-    },
-    {
       "title": "RF Test Engineer",
       "url": "https://hiringcafe.com/job/rf-test-engineer-caci-international-windsor-mill-maryland-heuewpwi84ri3y9s",
       "company": "CACI International",
@@ -5827,35 +5399,6 @@
       },
       "lastSeenRun": 47,
       "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 67,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": []
-      }
-    },
-    {
-      "title": "Service Advisor",
-      "url": "https://hiringcafe.com/job/service-advisor-preston-automotive-group-randallstown-maryland-77vrmesst5j30wmd",
-      "company": "Preston Automotive Group",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 60000,
-        "max": 100000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 43,
-      "location": "Randallstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -6248,6 +5791,35 @@
       }
     },
     {
+      "title": "Collision Estimator",
+      "url": "https://hiringcafe.com/job/collision-estimator-crash-champions-pikesville-maryland-epsy0e8l434wasab",
+      "company": "Crash Champions",
+      "city": "Pikesville",
+      "region": "Maryland",
+      "datePosted": "2026-07-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 65000,
+        "max": 149885,
+        "unit": "YEAR"
+      },
+      "lastSeenRun": 62,
+      "location": "Pikesville, Maryland",
+      "source": "HiringCafe",
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 67,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": []
+      }
+    },
+    {
       "company": "State of Maryland — Maryland Department of Health",
       "title": "DIRECT CARE ASSISTANT I CI (COURT-INVOLVED) (MULTIPLE FULL AND PART TIME POSITIONS AVAILABLE)",
       "reqId": "21-004696-0002",
@@ -6467,7 +6039,7 @@
       "reqId": "18-002428-0004",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=18&R2=002428&R3=0004",
-      "days": 2577,
+      "days": 2578,
       "postedAtMs": 1565262300000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -6543,7 +6115,7 @@
       "reqId": "18-009280-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Carroll Cecil Charles Dorchester Frederick Harford Howard Montgomery Prince George's St. Mary's Washington County Wicomico",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=18&R2=009280&R3=0001",
-      "days": 3053,
+      "days": 3054,
       "postedAtMs": 1524149940000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -6578,7 +6150,7 @@
       "reqId": "18-009282-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Carroll Cecil Charles Dorchester Frederick Harford Howard Montgomery Prince George's St. Mary's Washington County Wicomico",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=18&R2=009282&R3=0001",
-      "days": 3053,
+      "days": 3054,
       "postedAtMs": 1524148920000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -6613,7 +6185,7 @@
       "reqId": "18-009281-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Carroll Cecil Charles Dorchester Frederick Harford Howard Montgomery Prince George's St. Mary's Washington County Wicomico",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=18&R2=009281&R3=0001",
-      "days": 3053,
+      "days": 3054,
       "postedAtMs": 1524143100000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -6648,7 +6220,7 @@
       "reqId": "12-004511-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=004511&R3=001",
-      "days": 3469,
+      "days": 3470,
       "postedAtMs": 1488201120000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -6683,7 +6255,7 @@
       "reqId": "12-001991-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=001991&R3=001",
-      "days": 5131,
+      "days": 5132,
       "postedAtMs": 1344598620000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -6744,99 +6316,6 @@
         "confidence": "preliminary—title/pay/location metadata",
         "flags": [
           "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "title": "Retail Sales Associate - Foundry Row",
-      "url": "https://hiringcafe.com/job/retail-sales-associate-foundry-row-gap-inc-owings-mills-maryland-ovbbkb4wfz2iqh29",
-      "company": "Gap Inc.",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-01",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15,
-        "max": 16,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 67,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 28,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Customer Service Associate",
-      "url": "https://hiringcafe.com/job/customer-service-associate-royal-farms-owings-mills-maryland-r1gdoyic0air6bjv",
-      "company": "Royal Farms",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 15,
-        "max": 19,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 67,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 28,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Retail Sales Associate – Part Time",
-      "url": "https://hiringcafe.com/job/retail-sales-associate-part-time-autozone-windsor-mill-maryland-69lbxigv0kx68q42",
-      "company": "AutoZone",
-      "city": "Windsor Mill",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15.2,
-        "max": 15.48,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Windsor Mill, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 67,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 28,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "published pay below $20"
         ]
       }
     },
@@ -6948,6 +6427,37 @@
       },
       "lastSeenRun": 48,
       "location": "Pikesville, Maryland",
+      "source": "HiringCafe",
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 67,
+        "qualification": 88,
+        "interview": 84,
+        "pay": 28,
+        "careerValue": 48,
+        "overqualificationRisk": 18,
+        "resume": "Customer service",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": [
+          "published pay below $20"
+        ]
+      }
+    },
+    {
+      "title": "Customer Service Associate",
+      "url": "https://hiringcafe.com/job/customer-service-associate-royal-farms-owings-mills-maryland-mvwhgh688z68r99g",
+      "company": "Royal Farms",
+      "city": "Owings Mills",
+      "region": "Maryland",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 15,
+        "max": 19,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 45,
+      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -7089,20 +6599,20 @@
       }
     },
     {
-      "title": "Seasonal Sales Associate",
-      "url": "https://hiringcafe.com/job/seasonal-sales-associate-tailored-brands-pikesville-maryland-zjq5rotizf9tzixg",
-      "company": "Tailored Brands",
-      "city": "Pikesville",
+      "title": "Retail Sales Associate – Part Time",
+      "url": "https://hiringcafe.com/job/retail-sales-associate-part-time-autozone-windsor-mill-maryland-ubgymsuumy5dpk24",
+      "company": "AutoZone",
+      "city": "Windsor Mill",
       "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "TEMPORARY",
+      "datePosted": "2026-08-19",
+      "employmentType": "PART_TIME",
       "salary": {
-        "min": 15,
-        "max": 18.75,
+        "min": 15.2,
+        "max": 15.48,
         "unit": "HOUR"
       },
-      "lastSeenRun": 43,
-      "location": "Pikesville, Maryland",
+      "lastSeenRun": 48,
+      "location": "Windsor Mill, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -7305,7 +6815,7 @@
       "reqId": "26-002004-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002004&R3=0002",
-      "days": 0,
+      "days": 1,
       "postedAtMs": 1787922300000,
       "deadlineMs": 1789171140000,
       "deadline": "9/11/2026 11:59:00 PM",
@@ -7563,42 +7073,6 @@
       }
     },
     {
-      "company": "State of Maryland — LABOR - Office of Administration",
-      "title": "Accounts Payable Technician (FISCAL ACCOUNTS TECHNICIAN II)",
-      "reqId": "26-004523-0015",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004523&R3=0015",
-      "days": 9,
-      "postedAtMs": 1787149800000,
-      "deadlineMs": 1788368400000,
-      "deadline": "9/2/2026 5:00:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 52354,
-        "max": 54470,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 64,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "level II experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "PUBLIC HEALTH EDUCATOR II",
@@ -7637,6 +7111,42 @@
         "confidence": "preliminary—title/pay/location metadata",
         "flags": [
           "level II experience check"
+        ]
+      }
+    },
+    {
+      "company": "State of Maryland — LABOR - Office of Administration",
+      "title": "Accounts Payable Technician (FISCAL ACCOUNTS TECHNICIAN II)",
+      "reqId": "26-004523-0015",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004523&R3=0015",
+      "days": 10,
+      "postedAtMs": 1787149800000,
+      "deadlineMs": 1788368400000,
+      "deadline": "9/2/2026 5:00:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 52354,
+        "max": 54470,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 64,
+        "qualification": 51,
+        "interview": 49,
+        "pay": 100,
+        "careerValue": 58,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": [
+          "level II experience check",
+          "regional/public board—not exact-radius verified"
         ]
       }
     },
@@ -7685,114 +7195,6 @@
         "confidence": "preliminary—title/pay/location metadata",
         "flags": [
           "level II experience check"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — MDH RICA Baltimore",
-      "title": "Social Worker II, Health Svcs CI (Managed Care Coordinator)",
-      "reqId": "26-004182-0005",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004182&R3=0005",
-      "days": 14,
-      "postedAtMs": 1786718700000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 76608,
-        "max": 99105,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 64,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "level II experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — DGS - Design, Construction, and Energy",
-      "title": "Capital Maintenance Project Engineer II",
-      "reqId": "26-004596-0003",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004596&R3=0003",
-      "days": 15,
-      "postedAtMs": 1786697100000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 81750,
-        "max": 128924,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 64,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "level II experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — DPSCS OSEC Administrative Services",
-      "title": "HR OFFICER II",
-      "reqId": "26-004916-0005",
-      "location": "Allegany Anne Arundel Baltimore City Somerset Washington County",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004916&R3=0005",
-      "days": 15,
-      "postedAtMs": 1786696200000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 67309,
-        "max": 106155,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 64,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "level II experience check",
-          "regional/public board—not exact-radius verified"
         ]
       }
     },
@@ -8896,7 +8298,7 @@
       "reqId": "12-001992-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=001992&R3=001",
-      "days": 5131,
+      "days": 5132,
       "postedAtMs": 1344611400000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -9039,7 +8441,7 @@
       "reqId": "26-005302-0010",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005302&R3=0010",
-      "days": 2,
+      "days": 3,
       "postedAtMs": 1787742000000,
       "deadlineMs": 1788969600000,
       "deadline": "9/9/2026 4:00:00 PM",
@@ -9661,64 +9063,6 @@
       }
     },
     {
-      "title": "Apprentice Technician - Audi Owings Mills",
-      "url": "https://hiringcafe.com/job/apprentice-technician-audi-owings-mills-sonic-automotive-owings-mills-a5qcs2dzcv4h7l1n",
-      "company": "Sonic Automotive",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-22",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 18,
-        "max": 22,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 63,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": []
-      }
-    },
-    {
-      "title": "Riding Instructor",
-      "url": "https://hiringcafe.com/job/riding-instructor-garrison-forest-school-owings-mills-maryland-h4xob2uc3a4ailzi",
-      "company": "Garrison Forest School",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 40000,
-        "max": 50000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 63,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": []
-      }
-    },
-    {
       "title": "Parts Advisor - Mercedes Benz Owings Mills",
       "url": "https://hiringcafe.com/job/parts-advisor-mercedes-benz-owings-mills-mileone-autogroup-owings-xe1lph8fl59pvy0f",
       "company": "MileOne Autogroup",
@@ -10137,7 +9481,7 @@
         "max": 20.4,
         "unit": "HOUR"
       },
-      "lastSeenRun": 47,
+      "lastSeenRun": 62,
       "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -10560,35 +9904,6 @@
       }
     },
     {
-      "title": "GNA-PRN",
-      "url": "https://hiringcafe.com/job/gna-prn-chapel-hill-nursing-center-randallstown-maryland-yonubtz5dishv79r",
-      "company": "Chapel Hill Nursing Center",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-07-14",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 17,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 63,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": []
-      }
-    },
-    {
       "title": "Health & Beauty TA",
       "url": "https://hiringcafe.com/job/health-and-beauty-ta-walmart-randallstown-maryland-lobry9tm0ppolujj",
       "company": "Walmart",
@@ -10768,7 +10083,7 @@
       "reqId": "22-005218-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=22&R2=005218&R3=0001",
-      "days": 1670,
+      "days": 1671,
       "postedAtMs": 1643639400000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -11126,7 +10441,7 @@
       "reqId": "26-001362-0015",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001362&R3=0015",
-      "days": 1,
+      "days": 2,
       "postedAtMs": 1787840400000,
       "deadlineMs": 1789084740000,
       "deadline": "9/10/2026 11:59:00 PM",
@@ -11162,7 +10477,7 @@
       "reqId": "26-005165-0008",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005165&R3=0008",
-      "days": 2,
+      "days": 3,
       "postedAtMs": 1787742900000,
       "deadlineMs": 1788998340000,
       "deadline": "9/9/2026 11:59:00 PM",
@@ -11198,7 +10513,7 @@
       "reqId": "26-005799-0018",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005799&R3=0018",
-      "days": 2,
+      "days": 3,
       "postedAtMs": 1787738400000,
       "deadlineMs": 1789171140000,
       "deadline": "9/11/2026 11:59:00 PM",
@@ -11277,7 +10592,7 @@
       "reqId": "26-001362-0013",
       "location": "Baltimore County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001362&R3=0013",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787580600000,
       "deadlineMs": 1788825540000,
       "deadline": "9/7/2026 11:59:00 PM",
@@ -11313,7 +10628,7 @@
       "reqId": "26-003004-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003004&R3=0004",
-      "days": 9,
+      "days": 10,
       "postedAtMs": 1787137200000,
       "deadlineMs": 1788393540000,
       "deadline": "9/2/2026 11:59:00 PM",
@@ -11349,7 +10664,7 @@
       "reqId": "26-001804-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001804&R3=0002",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787064600000,
       "deadlineMs": 1788393540000,
       "deadline": "9/2/2026 11:59:00 PM",
@@ -11357,42 +10672,6 @@
       "salary": {
         "min": 67309,
         "max": 87079,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 60,
-        "qualification": 44,
-        "interview": 44,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "level III+ experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — Office of the Public Defender",
-      "title": "APD: FORENSIC MENTAL HEALTH DIVISION (RE-POST) (ASSISTANT PUBLIC DEFENDER II & III)",
-      "reqId": "26-005799-0013",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005799&R3=0013",
-      "days": 44,
-      "postedAtMs": 1784159940000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 109794,
-        "max": 98840,
         "unit": "YEAR"
       },
       "restricted": false,
@@ -11627,34 +10906,6 @@
         "confidence": "preliminary—title/pay/location metadata",
         "flags": [
           "level II experience check"
-        ]
-      }
-    },
-    {
-      "title": "Retail Operations Lead",
-      "url": "https://hiringcafe.com/job/retail-operations-lead-petsmart-owings-mills-maryland-rlzdj3akejwqpki3",
-      "company": "PetSmart",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-20",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 59,
-        "qualification": 64,
-        "interview": 63,
-        "pay": 52,
-        "careerValue": 48,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "senior/lead experience check",
-          "pay undisclosed"
         ]
       }
     },
@@ -14512,91 +13763,6 @@
       }
     },
     {
-      "title": "Direct Support Professional - (Joann-Windsor Mill) Weds & Fri 6a-8p, Sat 8a-8p",
-      "url": "https://hiringcafe.com/job/direct-support-professional-joann-windsor-mill-weds-and-fri-6a-8p-sat-714s6fc266s3xw7y",
-      "company": "Chimes",
-      "city": "Windsor Mill",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Windsor Mill, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Cook",
-      "url": "https://hiringcafe.com/job/cook-charter-senior-living-pikesville-maryland-eghftn1tzw2d3pjx",
-      "company": "Charter Senior Living",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Controls Technician",
-      "url": "https://hiringcafe.com/job/controls-technician-smart-building-technologies-owings-mills-maryland-saek0hydgz2jvip4",
-      "company": "Smart Building Technologies",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-27",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Caregivers - Home Care Carroll Co.",
       "url": "https://hiringcafe.com/job/caregivers-home-care-carroll-co-griswold-home-care-reisterstown-n2hrubovg78dxo58",
       "company": "Griswold Home Care",
@@ -14691,33 +13857,6 @@
       "employmentType": "FULL_TIME",
       "salary": null,
       "lastSeenRun": 48,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Gas Station Attendant",
-      "url": "https://hiringcafe.com/job/gas-station-attendant-costco-wholesale-owings-mills-maryland-nvqxfwf6x1qf0i8b",
-      "company": "Costco Wholesale",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 43,
       "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -15192,7 +14331,7 @@
       "datePosted": "2026-07-16",
       "employmentType": "FULL_TIME",
       "salary": null,
-      "lastSeenRun": 45,
+      "lastSeenRun": 62,
       "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -15524,37 +14663,6 @@
       }
     },
     {
-      "title": "Distribution Coordinator",
-      "url": "https://hiringcafe.com/job/distribution-coordinator-campbells-owings-mills-maryland-053frt05vsv0m4v6",
-      "company": "Campbell's",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-05",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Construction Carpenter",
       "url": "https://hiringcafe.com/job/construction-carpenter-lewis-contractors-owings-mills-maryland-6dexhfnfcadokheo",
       "company": "Lewis Contractors",
@@ -15782,33 +14890,6 @@
       "postedOn": null,
       "url": "https://stevenson.peopleadmin.com/postings/11225",
       "source": "official university board",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Work at Camp",
-      "url": "https://hiringcafe.com/job/work-at-camp-beth-tfiloh-camps-reisterstown-maryland-ws107cu37nd4y6ba",
-      "company": "Beth Tfiloh Camps",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-12",
-      "employmentType": "TEMPORARY",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
         "overall": 58,
@@ -16061,60 +15142,6 @@
       }
     },
     {
-      "title": "Service Coordinator",
-      "url": "https://hiringcafe.com/job/service-coordinator-smart-building-technologies-owings-mills-maryland-g3ux7b0o41ylxnmt",
-      "company": "Smart Building Technologies",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-18",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Laundry Attendant",
-      "url": "https://hiringcafe.com/job/laundry-attendant-crescent-hotels-and-resorts-owings-mills-maryland-cw133qna1u7cpryo",
-      "company": "Crescent Hotels & Resorts",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-18",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Caregiver in Glyndon MD 21071",
       "url": "https://hiringcafe.com/job/caregiver-in-glyndon-md-21071-springboard-care-services-glyndon-lak8fnljyoa5ow1n",
       "company": "Springboard Care Services",
@@ -16307,33 +15334,6 @@
       },
       "lastSeenRun": 47,
       "location": "Windsor Mill, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Independent Insurance Claims Adjuster in Pikesville, Maryland",
-      "url": "https://hiringcafe.com/job/independent-insurance-claims-adjuster-in-pikesville-maryland-milehigh-nbu2jq2pvz8y79k3",
-      "company": "MileHigh Adjusters Houston Inc",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-06-30",
-      "employmentType": "CONTRACTOR",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -16751,56 +15751,6 @@
       "salary": null,
       "lastSeenRun": 57,
       "location": "Milford Mill, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "company": "Stevenson University",
-      "title": "Assistant Coach, Men’s & Women’s Swimming",
-      "location": "Owings Mills / Stevenson, MD",
-      "days": null,
-      "postedOn": null,
-      "url": "https://stevenson.peopleadmin.com/postings/11244",
-      "source": "official university board",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "On-Call Security Officer",
-      "url": "https://hiringcafe.com/job/on-call-security-officer-samaritans-purse-windsor-mill-maryland-jsmb5zuq4qgc61ir",
-      "company": "Samaritan's Purse",
-      "city": "Windsor Mill",
-      "region": "Maryland",
-      "datePosted": "2026-08-20",
-      "employmentType": "PART_TIME, TEMPORARY",
-      "salary": null,
-      "lastSeenRun": 43,
-      "location": "Windsor Mill, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -17852,6 +16802,29 @@
     },
     {
       "company": "Stevenson University",
+      "title": "Assistant Coach, Men’s & Women’s Swimming",
+      "location": "Owings Mills / Stevenson, MD",
+      "days": null,
+      "postedOn": null,
+      "url": "https://stevenson.peopleadmin.com/postings/11244",
+      "source": "official university board",
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 58,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": [
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "company": "Stevenson University",
       "title": "Assistant Coach, Men’s & Women’s Beach Volleyball",
       "location": "Owings Mills / Stevenson, MD",
       "days": null,
@@ -18235,7 +17208,7 @@
       "reqId": "26-004920-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004920&R3=0002",
-      "days": 3,
+      "days": 4,
       "postedAtMs": 1787659200000,
       "deadlineMs": 1788911940000,
       "deadline": "9/8/2026 11:59:00 PM",
@@ -18343,7 +17316,7 @@
       "reqId": "26-005479-0023",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005479&R3=0023",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787582700000,
       "deadlineMs": 1788800400000,
       "deadline": "9/7/2026 5:00:00 PM",
@@ -18379,7 +17352,7 @@
       "reqId": "26-002588-0051",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002588&R3=0051",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787576400000,
       "deadlineMs": 1788825540000,
       "deadline": "9/7/2026 11:59:00 PM",
@@ -18451,7 +17424,7 @@
       "reqId": "26-005479-0022",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005479&R3=0022",
-      "days": 8,
+      "days": 9,
       "postedAtMs": 1787231400000,
       "deadlineMs": 1788454800000,
       "deadline": "9/3/2026 5:00:00 PM",
@@ -18559,7 +17532,7 @@
       "reqId": "26-003003-0013",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003003&R3=0013",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787059800000,
       "deadlineMs": 1788307140000,
       "deadline": "9/1/2026 11:59:00 PM",
@@ -18595,7 +17568,7 @@
       "reqId": "26-004552-0007",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004552&R3=0007",
-      "days": 11,
+      "days": 12,
       "postedAtMs": 1786965600000,
       "deadlineMs": 1788195600000,
       "deadline": "8/31/2026 5:00:00 PM",
@@ -18676,7 +17649,7 @@
       "reqId": "26-001953-0002",
       "location": "Anne Arundel Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001953&R3=0002",
-      "days": 24,
+      "days": 25,
       "postedAtMs": 1785852000000,
       "deadlineMs": 1788307140000,
       "deadline": "9/1/2026 11:59:00 PM",
@@ -19045,68 +18018,6 @@
       }
     },
     {
-      "title": "Maintenance Supervisor",
-      "url": "https://hiringcafe.com/job/maintenance-supervisor-quest-management-group-pikesville-maryland-pk5rxuiqmm7bl4ap",
-      "company": "Quest Management Group",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 28,
-        "max": 30,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
-      "title": "HVAC Project Manager",
-      "url": "https://hiringcafe.com/job/hvac-project-manager-al-coronado-plumbing-owings-mills-maryland-hp0orppi3tcyqmwx",
-      "company": "Al Coronado Plumbing",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-13",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 80000,
-        "max": 110000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
       "title": "Property Manager",
       "url": "https://hiringcafe.com/job/property-manager-allegiant-carter-management-owings-mills-maryland-oeit6fkxf888xtga",
       "company": "Allegiant-Carter Management",
@@ -19183,68 +18094,6 @@
       },
       "lastSeenRun": 46,
       "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
-      "title": "Deputy Project Manager",
-      "url": "https://hiringcafe.com/job/deputy-project-manager-dewberry-owings-mills-maryland-d8n06px96qu3n8ni",
-      "company": "Dewberry",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-06-30",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 94850,
-        "max": 121950,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
-      "title": "General Manager",
-      "url": "https://hiringcafe.com/job/general-manager-wawa-reisterstown-maryland-693p6ow9yp1jfv3p",
-      "company": "Wawa",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 75000,
-        "max": 90000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 43,
-      "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -19367,39 +18216,8 @@
         "max": 72000,
         "unit": "YEAR"
       },
-      "lastSeenRun": 46,
+      "lastSeenRun": 62,
       "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
-      "title": "Emerging Store Manager",
-      "url": "https://hiringcafe.com/job/emerging-store-manager-walgreens-randallstown-maryland-jx4vdffgg0flt1bo",
-      "company": "Walgreens",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 45000,
-        "max": 71550,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 43,
-      "location": "Randallstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -19866,7 +18684,7 @@
       "reqId": "26-009627-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009627&R3=0002",
-      "days": 0,
+      "days": 1,
       "postedAtMs": 1787919900000,
       "deadlineMs": 1789146000000,
       "deadline": "9/11/2026 5:00:00 PM",
@@ -19874,42 +18692,6 @@
       "salary": {
         "min": 126442,
         "max": 190148,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 55,
-        "qualification": 34,
-        "interview": 34,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "senior/lead experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — MDH Dev Disabilities Admin - Program Direction",
-      "title": "DDA EXTERNAL AFFAIRS DIRECTOR ((Program Manager III))",
-      "reqId": "26-005478-0031",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005478&R3=0031",
-      "days": 1,
-      "postedAtMs": 1787832000000,
-      "deadlineMs": 1789084740000,
-      "deadline": "9/10/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 93138,
-        "max": 146883,
         "unit": "YEAR"
       },
       "restricted": false,
@@ -19978,12 +18760,48 @@
       }
     },
     {
+      "company": "State of Maryland — MDH Dev Disabilities Admin - Program Direction",
+      "title": "DDA EXTERNAL AFFAIRS DIRECTOR ((Program Manager III))",
+      "reqId": "26-005478-0031",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005478&R3=0031",
+      "days": 2,
+      "postedAtMs": 1787832000000,
+      "deadlineMs": 1789084740000,
+      "deadline": "9/10/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 93138,
+        "max": 146883,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 55,
+        "qualification": 34,
+        "interview": 34,
+        "pay": 100,
+        "careerValue": 58,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": [
+          "senior/lead experience check",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — DHS - Social Services Administration",
       "title": "Director of Finance, Contracts and Performance Monitoring (PROGRAM MANAGER III)",
       "reqId": "26-005478-0026",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005478&R3=0026",
-      "days": 2,
+      "days": 3,
       "postedAtMs": 1787754600000,
       "deadlineMs": 1788998340000,
       "deadline": "9/9/2026 11:59:00 PM",
@@ -20019,7 +18837,7 @@
       "reqId": "26-004550-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004550&R3=0001",
-      "days": 2,
+      "days": 3,
       "postedAtMs": 1787750700000,
       "deadlineMs": 1788998340000,
       "deadline": "9/9/2026 11:59:00 PM",
@@ -20225,7 +19043,7 @@
       "reqId": "26-005223-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005223&R3=0004",
-      "days": 7,
+      "days": 8,
       "postedAtMs": 1787319420000,
       "deadlineMs": 1788566340000,
       "deadline": "9/4/2026 11:59:00 PM",
@@ -20415,42 +19233,6 @@
       }
     },
     {
-      "company": "State of Maryland — Office of the Attorney General",
-      "title": "Senior Actuary (PROGRAM MANAGER SENIOR II)",
-      "reqId": "26-005483-0019",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005483&R3=0019",
-      "days": 31,
-      "postedAtMs": 1785240180000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 113157,
-        "max": 161628,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 55,
-        "qualification": 34,
-        "interview": 34,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "senior/lead experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Senior Review Appraiser",
@@ -20497,7 +19279,7 @@
       "reqId": "26-005485-0008",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005485&R3=0008",
-      "days": 135,
+      "days": 136,
       "postedAtMs": 1776258000000,
       "deadlineMs": 1789775940000,
       "deadline": "9/18/2026 11:59:00 PM",
@@ -20577,7 +19359,7 @@
       "reqId": "25-005484-0020",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=25&R2=005484&R3=0020",
-      "days": 294,
+      "days": 295,
       "postedAtMs": 1762516800000,
       "deadlineMs": 1790812740000,
       "deadline": "9/30/2026 11:59:00 PM",
@@ -21201,7 +19983,7 @@
       "reqId": "26-007581-0002",
       "location": "Baltimore County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=007581&R3=0002",
-      "days": 79,
+      "days": 80,
       "postedAtMs": 1781092740000,
       "deadlineMs": 1788134340000,
       "deadline": "8/30/2026 11:59:00 PM",
@@ -21338,37 +20120,6 @@
       }
     },
     {
-      "title": "Caregiver *Spanish*",
-      "url": "https://hiringcafe.com/job/caregiver-spanish-homecentris-healthcare-owings-mills-maryland-2fl5et7x98m27ygi",
-      "company": "HomeCentris Healthcare",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "PART_TIME, FULL_TIME",
-      "salary": {
-        "min": 15,
-        "max": 17,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 53,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "published pay below $20"
-        ]
-      }
-    },
-    {
       "title": "Commercial Specialist",
       "url": "https://hiringcafe.com/job/commercial-specialist-autozone-windsor-mill-maryland-zwpsi5nkdux6s94n",
       "company": "AutoZone",
@@ -21383,37 +20134,6 @@
       },
       "lastSeenRun": 44,
       "location": "Windsor Mill, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 53,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Hiring Event - Bowlero Pikesville",
-      "url": "https://hiringcafe.com/job/hiring-event-bowlero-pikesville-lucky-strike-entertainment-pikesville-vigrbmy9ndtj8d0e",
-      "company": "Lucky Strike Entertainment",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-06-30",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 7,
-        "max": 10,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 55,
-      "location": "Pikesville, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -22113,37 +20833,6 @@
       }
     },
     {
-      "title": "Interviews in Owning Mills, MD!",
-      "url": "https://hiringcafe.com/job/interviews-in-owning-mills-md-sbm-management-services-owings-mills-ytse4hqorjhy67xs",
-      "company": "SBM Management Services",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-06-30",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 16,
-        "max": 17,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 48,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 53,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "published pay below $20"
-        ]
-      }
-    },
-    {
       "title": "Greenskeeper",
       "url": "https://hiringcafe.com/job/greenskeeper-troon-pikesville-maryland-atpa2hqm4dnw4st4",
       "company": "Troon",
@@ -22157,37 +20846,6 @@
         "unit": "HOUR"
       },
       "lastSeenRun": 48,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 53,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Bartender/Server - Full Time",
-      "url": "https://hiringcafe.com/job/bartender-server-full-time-oth-hotels-resorts-pikesville-maryland-fp1h4f0g2dwbm7v4",
-      "company": "OTH Hotels Resorts",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-20",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 10.5,
-        "max": 12.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
       "location": "Pikesville, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -22264,43 +20922,6 @@
         "confidence": "preliminary—title/pay/location metadata",
         "flags": [
           "published pay below $20"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — Maryland State Retirement and Pension Systems",
-      "title": "Senior Analyst/Data Scientist (Sr. Investment Analyst II MSRP)",
-      "reqId": "26-005037-0001",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005037&R3=0001",
-      "days": 14,
-      "postedAtMs": 1786714200000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 108800,
-        "max": 163200,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 51,
-        "qualification": 23,
-        "interview": 19,
-        "pay": 100,
-        "careerValue": 75,
-        "overqualificationRisk": 8,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "credential/skill check",
-          "senior/lead experience check",
-          "regional/public board—not exact-radius verified"
         ]
       }
     },
@@ -22558,19 +21179,19 @@
     },
     {
       "title": "Shift Lead",
-      "url": "https://hiringcafe.com/job/shift-lead-walgreens-pikesville-maryland-z3o70953wly8bkii",
+      "url": "https://hiringcafe.com/job/shift-lead-walgreens-reisterstown-maryland-e5fhp32xi3jvcku4",
       "company": "Walgreens",
-      "city": "Pikesville",
+      "city": "Reisterstown",
       "region": "Maryland",
-      "datePosted": "2026-08-07",
+      "datePosted": "2026-08-06",
       "employmentType": "PART_TIME",
       "salary": {
         "min": 17,
         "max": 20,
         "unit": "HOUR"
       },
-      "lastSeenRun": 43,
-      "location": "Pikesville, Maryland",
+      "lastSeenRun": 47,
+      "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -22593,7 +21214,7 @@
       "reqId": "26-005485-0020",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005485&R3=0020",
-      "days": 1,
+      "days": 2,
       "postedAtMs": 1787832000000,
       "deadlineMs": 1789084740000,
       "deadline": "9/10/2026 11:59:00 PM",
@@ -22629,7 +21250,7 @@
       "reqId": "26-005485-0021",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005485&R3=0021",
-      "days": 1,
+      "days": 2,
       "postedAtMs": 1787832000000,
       "deadlineMs": 1789084740000,
       "deadline": "9/10/2026 11:59:00 PM",
@@ -22665,7 +21286,7 @@
       "reqId": "26-004533-0007",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004533&R3=0007",
-      "days": 3,
+      "days": 4,
       "postedAtMs": 1787652000000,
       "deadlineMs": 1788911940000,
       "deadline": "9/8/2026 11:59:00 PM",
@@ -22732,42 +21353,6 @@
       }
     },
     {
-      "company": "State of Maryland — MDH Med Care Prgms - Office of Medicaid Finance",
-      "title": "CHIEF, DIVISION OF PROGRAM ANALYSIS ((Accountant Manager II))",
-      "reqId": "26-004554-0003",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004554&R3=0003",
-      "days": 10,
-      "postedAtMs": 1787054400000,
-      "deadlineMs": 1788307140000,
-      "deadline": "9/1/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 93138,
-        "max": 120491,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 49,
-        "qualification": 24,
-        "interview": 24,
-        "pay": 100,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "executive-level experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Chief of Employee Labor and Relations - Non-Merit",
@@ -22809,12 +21394,48 @@
       }
     },
     {
+      "company": "State of Maryland — MDH Med Care Prgms - Office of Medicaid Finance",
+      "title": "CHIEF, DIVISION OF PROGRAM ANALYSIS ((Accountant Manager II))",
+      "reqId": "26-004554-0003",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004554&R3=0003",
+      "days": 11,
+      "postedAtMs": 1787054400000,
+      "deadlineMs": 1788307140000,
+      "deadline": "9/1/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 93138,
+        "max": 120491,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 49,
+        "qualification": 24,
+        "interview": 24,
+        "pay": 100,
+        "careerValue": 58,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location metadata",
+        "flags": [
+          "executive-level experience check",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — DHS - Baltimore City DSS",
       "title": "Chief of Procurement (PROCUREMENT OFFICER III SUPERVISOR)",
       "reqId": "26-003000-0003",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003000&R3=0003",
-      "days": 11,
+      "days": 12,
       "postedAtMs": 1786972500000,
       "deadlineMs": 1788220740000,
       "deadline": "8/31/2026 11:59:00 PM",
@@ -22850,7 +21471,7 @@
       "reqId": "26-006097-0007",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=006097&R3=0007",
-      "days": 14,
+      "days": 15,
       "postedAtMs": 1786707540000,
       "deadlineMs": 1788368400000,
       "deadline": "9/2/2026 5:00:00 PM",
@@ -22886,7 +21507,7 @@
       "reqId": "26-009662-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009662&R3=0001",
-      "days": 15,
+      "days": 16,
       "postedAtMs": 1786615200000,
       "deadlineMs": 1789430340000,
       "deadline": "9/14/2026 11:59:00 PM",
@@ -23048,7 +21669,7 @@
       "reqId": "26-005476-0013",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005476&R3=0013",
-      "days": 136,
+      "days": 137,
       "postedAtMs": 1776178800000,
       "deadlineMs": 1788825540000,
       "deadline": "9/7/2026 11:59:00 PM",
@@ -23084,7 +21705,7 @@
       "reqId": "26-005485-0006",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005485&R3=0006",
-      "days": 162,
+      "days": 163,
       "postedAtMs": 1773931380000,
       "deadlineMs": 1790812740000,
       "deadline": "9/30/2026 11:59:00 PM",
@@ -23707,20 +22328,20 @@
       }
     },
     {
-      "title": "Assistant Site Manager",
-      "url": "https://hiringcafe.com/job/assistant-site-manager-spotless-brands-randallstown-maryland-copwx4my62yic4pp",
-      "company": "Spotless Brands",
-      "city": "Randallstown",
+      "title": "Assistant Service Manager",
+      "url": "https://hiringcafe.com/job/assistant-service-manager-wpm-real-estate-management-owings-mills-auruvu72tgvbi5hu",
+      "company": "WPM Real Estate Management",
+      "city": "Owings Mills",
       "region": "Maryland",
-      "datePosted": "2026-07-23",
+      "datePosted": "2026-08-03",
       "employmentType": "FULL_TIME",
       "salary": {
         "min": null,
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 43,
-      "location": "Randallstown, Maryland",
+      "lastSeenRun": 46,
+      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -23739,20 +22360,20 @@
       }
     },
     {
-      "title": "Assistant Service Manager",
-      "url": "https://hiringcafe.com/job/assistant-service-manager-wpm-real-estate-management-owings-mills-auruvu72tgvbi5hu",
-      "company": "WPM Real Estate Management",
-      "city": "Owings Mills",
+      "title": "Assistant Site Manager",
+      "url": "https://hiringcafe.com/job/assistant-site-manager-spotless-brands-randallstown-maryland-jf7sbx1k16mk7zu6",
+      "company": "Spotless Brands",
+      "city": "Randallstown",
       "region": "Maryland",
-      "datePosted": "2026-08-03",
+      "datePosted": "2026-07-23",
       "employmentType": "FULL_TIME",
       "salary": {
         "min": null,
         "max": null,
         "unit": "HOUR"
       },
-      "lastSeenRun": 46,
-      "location": "Owings Mills, Maryland",
+      "lastSeenRun": 48,
+      "location": "Randallstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -24290,42 +22911,6 @@
       }
     },
     {
-      "company": "State of Maryland — MDH RICA Baltimore",
-      "title": "Registered Nurse Charge Med, CI *REPOST*",
-      "reqId": "26-004868-0001",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004868&R3=0001",
-      "days": 78,
-      "postedAtMs": 1781222340000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 93138,
-        "max": 120491,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 46,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 100,
-        "careerValue": 43,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "credential/skill check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Public Health Nurse (Men's Shelter)",
@@ -24488,7 +23073,7 @@
       "reqId": "24-005391-0003",
       "location": "Baltimore City Baltimore County Frederick Prince George's Washington County Wicomico",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=005391&R3=0003",
-      "days": 679,
+      "days": 680,
       "postedAtMs": 1729253220000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -24653,7 +23238,7 @@
       "reqId": "21-000348-0004",
       "location": "Allegany Baltimore City Baltimore County Carroll Dorchester Howard Montgomery Washington County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=21&R2=000348&R3=0004",
-      "days": 1836,
+      "days": 1837,
       "postedAtMs": 1629291900000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -24725,7 +23310,7 @@
       "reqId": "12-004246-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=004246&R3=001",
-      "days": 2577,
+      "days": 2578,
       "postedAtMs": 1565262900000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -25693,38 +24278,6 @@
       }
     },
     {
-      "title": "Lead Caregiver",
-      "url": "https://hiringcafe.com/job/lead-caregiver-homecentris-healthcare-owings-mills-maryland-8vocgmuyu9e24d3p",
-      "company": "HomeCentris Healthcare",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 45,
-        "qualification": 34,
-        "interview": 34,
-        "pay": 52,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "senior/lead experience check",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Lead Cook-- Private School",
       "url": "https://hiringcafe.com/job/lead-cook-private-school-brock-and-company-owings-mills-maryland-8yl2sobe18ekw0k6",
       "company": "Brock & Company",
@@ -26092,7 +24645,7 @@
       "reqId": "12-004247-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=004247&R3=001",
-      "days": 2577,
+      "days": 2578,
       "postedAtMs": 1565262900000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -26438,44 +24991,12 @@
       }
     },
     {
-      "title": "Infant Lead Teacher",
-      "url": "https://hiringcafe.com/job/infant-lead-teacher-the-learning-experience-owings-mills-maryland-ks65ex5wy5qahrp8",
-      "company": "The Learning Experience",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 17,
-        "max": 19,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 43,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 40,
-        "qualification": 34,
-        "interview": 34,
-        "pay": 28,
-        "careerValue": 58,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "senior/lead experience check",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
       "company": "State of Maryland — MSP - Criminal Investigation Bureau",
       "title": "MSP FORENSIC SCIENTIST III",
       "reqId": "26-000254-0001",
       "location": "Baltimore County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000254&R3=0001",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787578140000,
       "deadlineMs": 1789775940000,
       "deadline": "9/18/2026 11:59:00 PM",
@@ -26483,43 +25004,6 @@
       "salary": {
         "min": 93138,
         "max": 146883,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 39,
-        "qualification": 9,
-        "interview": 14,
-        "pay": 100,
-        "careerValue": 43,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location metadata",
-        "flags": [
-          "credential/skill check",
-          "level III+ experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — Office of the Public Defender",
-      "title": "EXPERIENCED ATTORNEY: BALTIMORE REGION (RE-POST) (Assistant Public Defender II & III )",
-      "reqId": "26-005799-0016",
-      "location": "Baltimore City Baltimore County",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005799&R3=0016",
-      "days": 31,
-      "postedAtMs": 1785283140000,
-      "deadlineMs": 1787961540000,
-      "deadline": "8/28/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 109794,
-        "max": 98840,
         "unit": "YEAR"
       },
       "restricted": false,
@@ -26633,7 +25117,7 @@
       "reqId": "24-005039-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=005039&R3=0001",
-      "days": 252,
+      "days": 253,
       "postedAtMs": 1766138400000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",
@@ -27701,7 +26185,7 @@
       "reqId": "26-004609-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004609&R3=0001",
-      "days": 135,
+      "days": 136,
       "postedAtMs": 1776258000000,
       "deadlineMs": 1789775940000,
       "deadline": "9/18/2026 11:59:00 PM",
@@ -27738,7 +26222,7 @@
       "reqId": "26-004609-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004609&R3=0004",
-      "days": 32,
+      "days": 33,
       "postedAtMs": 1785165000000,
       "deadlineMs": 1788220740000,
       "deadline": "8/31/2026 11:59:00 PM",

@@ -57,6 +57,30 @@
   },
   {
     "company": "CACI",
+    "title": "Regional Analysis Team Lead",
+    "location": "Washington, DC, US",
+    "days": 0,
+    "postedOn": "Posted Today",
+    "url": "https://caci.wd1.myworkdayjobs.com/external/job/Washington-DC-US/Regional-Analysis-Team-Lead_329183"
+  },
+  {
+    "company": "CACI",
+    "title": "Dataflow Engineer",
+    "location": "Linthicum, MD, US",
+    "days": 0,
+    "postedOn": "Posted Today",
+    "url": "https://caci.wd1.myworkdayjobs.com/external/job/Linthicum-MD-US/Dataflow-Engineer_331296"
+  },
+  {
+    "company": "CACI",
+    "title": "Full‑Stack Software Engineer (React/Python)",
+    "location": "Laurel, MD, US",
+    "days": 0,
+    "postedOn": "Posted Today",
+    "url": "https://caci.wd1.myworkdayjobs.com/external/job/Laurel-MD-US/Full-Stack-Software-Engineer--React-Python-_331293"
+  },
+  {
+    "company": "CACI",
     "title": "Container Platform Infrastructure Engineer",
     "location": "Dahlgren, VA, US",
     "days": 0,
@@ -366,6 +390,22 @@
     "days": 0,
     "postedOn": "Posted Today",
     "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Washington-DC/Spectrum-Engineer-Radio-Frequency--RF--Engineer_R-00190917"
+  },
+  {
+    "company": "Leidos",
+    "title": "Windows Systems Administrator",
+    "location": "Suitland, MD",
+    "days": 0,
+    "postedOn": "Posted Today",
+    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Suitland-MD/Windows-Systems-Administrator_R-00190947"
+  },
+  {
+    "company": "Leidos",
+    "title": "Operations Planning SME",
+    "location": "Odenton, MD",
+    "days": 0,
+    "postedOn": "Posted Today",
+    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Odenton-MD/Operations-Planning-SME_R-00190942"
   },
   {
     "company": "Leidos",
@@ -4433,14 +4473,6 @@
   },
   {
     "company": "CACI",
-    "title": "Regional Analysis Team Lead",
-    "location": "Washington, DC, US",
-    "days": 7,
-    "postedOn": "Posted 7 Days Ago",
-    "url": "https://caci.wd1.myworkdayjobs.com/external/job/Washington-DC-US/Regional-Analysis-Team-Lead_329183"
-  },
-  {
-    "company": "CACI",
     "title": "Integrated Master Scheduler",
     "location": "Sterling, VA, US",
     "days": 7,
@@ -4558,14 +4590,6 @@
     "days": 7,
     "postedOn": "Posted 7 Days Ago",
     "url": "https://icf.wd5.myworkdayjobs.com/icfexternal_career_site/job/Reston-VA/GitHub-System-Administrator_R2602792"
-  },
-  {
-    "company": "ICF",
-    "title": "Public Policy Researcher (DHS-Dedicated, DC Metro Area on-site role)",
-    "location": "Washington, DC",
-    "days": 7,
-    "postedOn": "Posted 7 Days Ago",
-    "url": "https://icf.wd5.myworkdayjobs.com/icfexternal_career_site/job/Washington-DC/Public-Policy-Researcher--DHS-Dedicated--DC-Metro-Area-on-site-role-_R2602836"
   },
   {
     "company": "ICF",
@@ -6086,14 +6110,6 @@
     "days": 11,
     "postedOn": "Posted 11 Days Ago",
     "url": "https://icf.wd5.myworkdayjobs.com/icfexternal_career_site/job/Reston-VA/Senior-Business-Analyst--ServiceNow-_R2601425"
-  },
-  {
-    "company": "ICF",
-    "title": "Learning & Development Growth Enablement Lead (REMOTE)",
-    "location": "Reston, VA",
-    "days": 11,
-    "postedOn": "Posted 11 Days Ago",
-    "url": "https://icf.wd5.myworkdayjobs.com/icfexternal_career_site/job/Reston-VA/Learning---Development-Growth-Enablement-Lead--REMOTE-_R2602503"
   },
   {
     "company": "ICF",
@@ -9598,22 +9614,6 @@
     "days": 22,
     "postedOn": "Posted 22 Days Ago",
     "url": "https://leidos.wd5.myworkdayjobs.com/external/job/McLean-VA/Sr-Compliance-Reporting-Analyst_R-00189010"
-  },
-  {
-    "company": "Leidos",
-    "title": "Assessment & Authorization Analyst",
-    "location": "Ashburn, VA",
-    "days": 22,
-    "postedOn": "Posted 22 Days Ago",
-    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Ashburn-VA/Assessment---Authorization-Analyst_R-00182423"
-  },
-  {
-    "company": "Leidos",
-    "title": "Automation Engineer (Uipath)",
-    "location": "Alexandria, VA",
-    "days": 22,
-    "postedOn": "Posted 22 Days Ago",
-    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Alexandria-VA/Automation-Engineer--Uipath-_R-00188937"
   },
   {
     "company": "T. Rowe Price",
@@ -13342,14 +13342,6 @@
     "days": 30,
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://caci.wd1.myworkdayjobs.com/external/job/Chantilly-VA-US/Cyber-Security-Analyst_329222"
-  },
-  {
-    "company": "CACI",
-    "title": "SIAM IT Operations Service Management (ITSM) Specialist",
-    "location": "Chantilly, VA, US",
-    "days": 30,
-    "postedOn": "Posted 30+ Days Ago",
-    "url": "https://caci.wd1.myworkdayjobs.com/external/job/Chantilly-VA-US/SIAM-IT-Operations-Service-Management--ITSM--Specialist_327739"
   },
   {
     "company": "Guidehouse",
