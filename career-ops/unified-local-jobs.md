@@ -1,6 +1,6 @@
 # Unified local job search
 
-_Updated 2026-08-30 15:28 UTC · 784 deduplicated openings_
+_Updated 2026-08-30 23:42 UTC · 701 deduplicated openings_
 
 10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, published pay of $20+/hour, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.
 
@@ -9,9 +9,9 @@ _Updated 2026-08-30 15:28 UTC · 784 deduplicated openings_
 | Source | Openings |
 |---|---:|
 | Direct employer board | 291 |
-| HiringCafe | 182 |
 | State of Maryland JobAps | 145 |
 | County/city NEOGOV | 118 |
+| HiringCafe | 99 |
 | official university board | 48 |
 
 ## Best matches
@@ -68,15 +68,14 @@ _Updated 2026-08-30 15:28 UTC · 784 deduplicated openings_
 | 71 | Baltimore County Government | [Management Analyst II](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5219288/management-analyst-ii) | Towson, MD | $60k–$68k/yr | County/city NEOGOV | Professional | level II experience check; older continuous/standing recruitment |
 | 71 | Attain Talent | [Systems Administrator](https://hiringcafe.com/job/systems-administrator-attain-talent-windsor-mill-maryland-8avr4pd7rhrmlwl6) | Windsor Mill, Maryland | $60k–$70k/yr | HiringCafe | Professional | classification may require prior professional experience; posting age unknown |
 | 70 | State of Maryland — LABOR Workforce Dev - Adult Corrections Program | [SOCIAL WORKER II, CRIMINAL JUSTICE *REPOST*](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002004&R3=0002) | Baltimore City | $29.44–$39.07/hr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
-| 70 | State of Maryland — DHS - Baltimore City DSS | [OFFICE SECRETARY II](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001328&R3=0015) | Baltimore City | $44k–$69k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 70 | Baltimore County Government | [Chief of Human Resources Information Systems - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5455106/chief-of-human-resources-information-systems-non-merit) | Towson, MD | $102k–$125k/yr | County/city NEOGOV | Professional | executive-level experience check |
 | 70 | Baltimore County Government | [Management Analyst I (HHS Finance and Administration)](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5377253/management-analyst-i-hhs-finance-and-administration) | Towson, MD | $52k–$60k/yr | County/city NEOGOV | Professional | classification may require prior professional experience; older continuous/standing recruitment |
-| 70 | T-Mobile | [Mobile Associate - Retail Sales](https://hiringcafe.com/job/mobile-associate-retail-sales-t-mobile-owings-mills-maryland-fbes5j7mfsjnv5zh) | Owings Mills, Maryland | $19.50–$20/hr | HiringCafe | Customer service | posting age unknown |
 | 70 | Fastenal | [Customer Site Warehouse Support](https://hiringcafe.com/job/customer-site-warehouse-support-fastenal-owings-mills-maryland-ldtv51i28g90pp2c) | Owings Mills, Maryland | $15–$20/hr | HiringCafe | Customer service | posting age unknown |
 | 70 | Weis Markets | [Grocery Sales Associate](https://hiringcafe.com/job/grocery-sales-associate-weis-markets-owings-mills-maryland-yrhnd9yz5hx4j7yv) | Owings Mills, Maryland | $15–$22/hr | HiringCafe | Customer service | posting age unknown |
 | 70 | Weis Markets | [Customer Experience Associate](https://hiringcafe.com/job/customer-experience-associate-weis-markets-owings-mills-maryland-4d6xqwe6cuo94p07) | Owings Mills, Maryland | $15–$22/hr | HiringCafe | Customer service | posting age unknown |
 | 70 | Weis Markets | [Produce Sales Associate](https://hiringcafe.com/job/produce-sales-associate-weis-markets-reisterstown-maryland-2ev9f4u0eoo82nju) | Reisterstown, Maryland | $15–$22/hr | HiringCafe | Customer service | posting age unknown |
 | 70 | Weis Markets | [Deli Sales Associate](https://hiringcafe.com/job/deli-sales-associate-weis-markets-reisterstown-maryland-ooa7zlq3z5qpbzz0) | Reisterstown, Maryland | $16–$24/hr | HiringCafe | Customer service | posting age unknown |
+| 69 | State of Maryland — DHS - Baltimore City DSS | [OFFICE SECRETARY II](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001328&R3=0015) | Baltimore City | $44k–$69k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 69 | State of Maryland — MSDE - DORS - Client Services | [Vocational Rehabilitation Specialist II (Baltimore - Region 3)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005165&R3=0008) | Baltimore City | $66k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 69 | Baltimore County Government | [Department of Aging Caregiver Program Specialist - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438718/department-of-aging-caregiver-program-specialist-non-merit) | Towson, MD | $22.29–$32.40/hr | County/city NEOGOV | Review | — |
 | 69 | Baltimore County Government | [Aging Human Services Program Specialist - Guardianship Program Specialist ](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5403600/aging-human-services-program-specialist-guardianship-program-specialist) | Towson, MD | $58k–$66k/yr | County/city NEOGOV | Review | — |
@@ -92,8 +91,8 @@ _Updated 2026-08-30 15:28 UTC · 784 deduplicated openings_
 | 68 | State of Maryland — MDH Behavioral Health Admin - Community Services | [PROGRAM ADMINISTRATOR II Addiction (Mobile Crisis Program Administrator)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000713&R3=0001) | Baltimore County | $72k–$93k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 68 | State of Maryland — DJS Departmental Support | [EMPLOYEE RELATIONS OFFICER (HR OFFICER II)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004916&R3=0006) | Baltimore City | $67k–$106k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 68 | State of Maryland — LABOR - Office of Administration | [Accounts Payable Technician (FISCAL ACCOUNTS TECHNICIAN II)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004523&R3=0015) | Baltimore City | $52k–$54k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
-| 68 | Baltimore County Government | [Housing Choice Voucher Program (HCVP) Inspector - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438664/housing-choice-voucher-program-hcvp-inspector-non-merit) | Towson, MD | $26.39–$36.37/hr | County/city NEOGOV | Review | — |
 | 68 | Baltimore County Government | [Review Appraiser](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5439119/review-appraiser) | Towson, MD | $61k–$69k/yr | County/city NEOGOV | Review | — |
+| 68 | Baltimore County Government | [Housing Choice Voucher Program (HCVP) Inspector - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438664/housing-choice-voucher-program-hcvp-inspector-non-merit) | Towson, MD | $26.39–$36.37/hr | County/city NEOGOV | Review | — |
 | 68 | State of Maryland — OPD District Operations | [PUBLIC DEFENDER INTAKE SPECIALIST I](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002692&R3=0006) | Baltimore County | $41k–$65k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 68 | State of Maryland — COMM - MD Office of Tourism Development 002 | [Department of Commerce Internship Program - Fall 2026 (Intern)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005302&R3=0010) | Baltimore City | $17.41–$20.31/hr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 68 | UMBC | [Fiscal Analyst, DDA Analytics and Policy](https://listings.umbc.edu/cw/en-us/job/495336/fiscal-analyst-dda-analytics-and-policy) | UMBC Campus, MD | — | official university board | Professional | posting age unknown; pay undisclosed; regional/public board—not exact-radius verified |
@@ -118,6 +117,7 @@ _Updated 2026-08-30 15:28 UTC · 784 deduplicated openings_
 | 66 | Baltimore County Government | [Planner II - Historic Preservation](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5391819/planner-ii-historic-preservation) | Towson, MD | $58k–$66k/yr | County/city NEOGOV | Review | level II experience check |
 | 66 | State of Maryland — OPD General Administration | [PARALEGAL SERIES (Labor & Employment Division) (PARALEGAL I & II)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000885&R3=0009) | Baltimore City | $52k–$83k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 66 | State of Maryland — DGS Maryland Capitol Police | [POLICE OFFICER II](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004126&R3=0006) | Anne Arundel Baltimore City | $72k–$97k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
+| 66 | Baltimore County Government | [Correctional Officer Assistant (For Retiree/Rehire Correctional Officer)](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5431144/correctional-officer-assistant-for-retiree-rehire-correctional-officer) | Towson, MD | $35/hr | County/city NEOGOV | Review | — |
 
 ## Notes
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T15:28:09.237Z",
+  "generatedAt": "2026-08-30T23:42:21.354Z",
   "center": "Owings Mills, MD 21117",
   "scope": "10-mile core plus explicitly labeled Baltimore-area public and university boards",
   "payPriority": "$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking",
@@ -8,7 +8,7 @@
     "State of Maryland JobAps": 145,
     "County/city NEOGOV": 118,
     "Direct employer board": 291,
-    "HiringCafe": 182,
+    "HiringCafe": 99,
     "official university board": 48
   },
   "jobs": [
@@ -580,7 +580,7 @@
       "reqId": "26-004488-0017",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0017",
-      "days": 5,
+      "days": 6,
       "postedAtMs": 1787655000000,
       "deadlineMs": 1788911940000,
       "deadline": "9/8/2026 11:59:00 PM",
@@ -1058,7 +1058,7 @@
       "reqId": "26-005473-0008",
       "location": "Baltimore County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005473&R3=0008",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787218200000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -1284,7 +1284,7 @@
       "reqId": "26-000868-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000868&R3=0001",
-      "days": 5,
+      "days": 6,
       "postedAtMs": 1787657400000,
       "deadlineMs": 1788998340000,
       "deadline": "9/9/2026 11:59:00 PM",
@@ -1358,7 +1358,7 @@
       "reqId": "24-003784-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=003784&R3=0001",
-      "days": 961,
+      "days": 962,
       "postedAtMs": 1705059600000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -1514,7 +1514,7 @@
       "reqId": "26-005030-0003",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005030&R3=0003",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787218320000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -1739,44 +1739,6 @@
       }
     },
     {
-      "company": "State of Maryland — DHS - Baltimore City DSS",
-      "title": "OFFICE SECRETARY II",
-      "reqId": "26-001328-0015",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001328&R3=0015",
-      "days": 3,
-      "postedAtMs": 1787817000000,
-      "deadlineMs": 1789084740000,
-      "deadline": "9/10/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 43537,
-        "max": 68667,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityStatus": "public",
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 70,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 100,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "level II experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Chief of Human Resources Information Systems - Non-Merit",
@@ -1868,38 +1830,6 @@
         "flags": [
           "classification may require prior professional experience",
           "older continuous/standing recruitment"
-        ]
-      }
-    },
-    {
-      "title": "Mobile Associate - Retail Sales",
-      "url": "https://hiringcafe.com/job/mobile-associate-retail-sales-t-mobile-owings-mills-maryland-fbes5j7mfsjnv5zh",
-      "company": "T-Mobile",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-30",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 19.5,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 70,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 78,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
         ]
       }
     },
@@ -2064,12 +1994,50 @@
       }
     },
     {
+      "company": "State of Maryland — DHS - Baltimore City DSS",
+      "title": "OFFICE SECRETARY II",
+      "reqId": "26-001328-0015",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001328&R3=0015",
+      "days": 4,
+      "postedAtMs": 1787817000000,
+      "deadlineMs": 1789084740000,
+      "deadline": "9/10/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 43537,
+        "max": 68667,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 69,
+        "qualification": 51,
+        "interview": 49,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 94,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "level II experience check",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — MSDE - DORS - Client Services",
       "title": "Vocational Rehabilitation Specialist II (Baltimore - Region 3)",
       "reqId": "26-005165-0008",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005165&R3=0008",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787742900000,
       "deadlineMs": 1788998340000,
       "deadline": "9/9/2026 11:59:00 PM",
@@ -2471,7 +2439,7 @@
       "reqId": "26-004445-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004445&R3=0001",
-      "days": 9,
+      "days": 10,
       "postedAtMs": 1787302800000,
       "deadlineMs": 1788541200000,
       "deadline": "9/4/2026 5:00:00 PM",
@@ -2620,49 +2588,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Housing Choice Voucher Program (HCVP) Inspector - Non-Merit",
-      "reqId": "NM.117 08-26",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438664/housing-choice-voucher-program-hcvp-inspector-non-merit",
-      "postedAtMs": 1785974400000,
-      "days": 25,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "Housing and Community Development",
-      "categories": [
-        "Housing"
-      ],
-      "salary": {
-        "min": 26.39,
-        "max": 36.37,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 68,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 66,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": []
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Review Appraiser",
       "reqId": "2.320 8-2026",
       "location": "Towson, MD",
@@ -2688,6 +2613,49 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 68,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 66,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": []
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Housing Choice Voucher Program (HCVP) Inspector - Non-Merit",
+      "reqId": "NM.117 08-26",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438664/housing-choice-voucher-program-hcvp-inspector-non-merit",
+      "postedAtMs": 1785974400000,
+      "days": 25,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "Housing and Community Development",
+      "categories": [
+        "Housing"
+      ],
+      "salary": {
+        "min": 26.39,
+        "max": 36.37,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -2746,7 +2714,7 @@
       "reqId": "26-005302-0010",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005302&R3=0010",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787742000000,
       "deadlineMs": 1788969600000,
       "deadline": "9/9/2026 4:00:00 PM",
@@ -2948,7 +2916,7 @@
       "reqId": "26-004539-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004539&R3=0001",
-      "days": 32,
+      "days": 33,
       "postedAtMs": 1785312000000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -2985,7 +2953,7 @@
       "reqId": "26-004538-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004538&R3=0001",
-      "days": 32,
+      "days": 33,
       "postedAtMs": 1785312000000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -3331,7 +3299,7 @@
       "reqId": "26-005799-0018",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005799&R3=0018",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787738400000,
       "deadlineMs": 1789171140000,
       "deadline": "9/11/2026 11:59:00 PM",
@@ -3581,7 +3549,7 @@
       "reqId": "26-004126-0006",
       "location": "Anne Arundel Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004126&R3=0006",
-      "days": 29,
+      "days": 30,
       "postedAtMs": 1785571200000,
       "deadlineMs": 1788220740000,
       "deadline": "8/31/2026 11:59:00 PM",
@@ -3893,200 +3861,6 @@
       }
     },
     {
-      "title": "Seasonal Sales Associate (Store 4678)",
-      "url": "https://hiringcafe.com/job/seasonal-sales-associate-store-4678-gamestop-owings-mills-maryland-jux4cqupfrw0c2xv",
-      "company": "GameStop",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 66,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "PT Produce Sales Associate (473019)",
-      "url": "https://hiringcafe.com/job/pt-produce-sales-associate-473019-ahold-delhaize-randallstown-maryland-p055d3twpckttfvy",
-      "company": "Ahold Delhaize",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "PART_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 66,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Retail Sales Associate",
-      "url": "https://hiringcafe.com/job/retail-sales-associate-verizon-owings-mills-maryland-djgerak6iwac0zsd",
-      "company": "Verizon",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-23",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 66,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Customer Service Representative",
-      "url": "https://hiringcafe.com/job/customer-service-representative-alphagraphics-reisterstown-maryland-7ebts5gd4ashjnn3",
-      "company": "AlphaGraphics",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-13",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 66,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Guest Room Attendant",
-      "url": "https://hiringcafe.com/job/guest-room-attendant-crescent-hotels-and-resorts-owings-mills-maryland-7fi618xzjw22q4ol",
-      "company": "Crescent Hotels & Resorts",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-18",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 66,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Sales Associate",
-      "url": "https://hiringcafe.com/job/sales-associate-normans-hallmark-owings-mills-maryland-05fw4q7ckxsyz7gl",
-      "company": "Norman's Hallmark",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 66,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Engineer III - Civil Engineer",
@@ -4139,7 +3913,7 @@
       "reqId": "26-003004-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003004&R3=0004",
-      "days": 11,
+      "days": 12,
       "postedAtMs": 1787137200000,
       "deadlineMs": 1788393540000,
       "deadline": "9/2/2026 11:59:00 PM",
@@ -4339,7 +4113,7 @@
       "reqId": "26-000674-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000674&R3=0001",
-      "days": 81,
+      "days": 82,
       "postedAtMs": 1781085600000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -4413,7 +4187,7 @@
       "reqId": "26-004124-0004",
       "location": "Anne Arundel Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004124&R3=0004",
-      "days": 29,
+      "days": 30,
       "postedAtMs": 1785571200000,
       "deadlineMs": 1788220740000,
       "deadline": "8/31/2026 11:59:00 PM",
@@ -4440,44 +4214,6 @@
         "resume": "Review",
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": [
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — LABOR - Governor's Workforce Development Board",
-      "title": "Manager, Strategic Initiatives - Career-Connected Learning (Administrator V)",
-      "reqId": "26-003184-0011",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003184&R3=0011",
-      "days": 3,
-      "postedAtMs": 1787815500000,
-      "deadlineMs": 1789084740000,
-      "deadline": "9/10/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 87253,
-        "max": 87253,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityStatus": "public",
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 64,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 100,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
           "regional/public board—not exact-radius verified"
         ]
       }
@@ -5071,12 +4807,50 @@
       }
     },
     {
+      "company": "State of Maryland — LABOR - Governor's Workforce Development Board",
+      "title": "Manager, Strategic Initiatives - Career-Connected Learning (Administrator V)",
+      "reqId": "26-003184-0011",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003184&R3=0011",
+      "days": 4,
+      "postedAtMs": 1787815500000,
+      "deadlineMs": 1789084740000,
+      "deadline": "9/10/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 87253,
+        "max": 87253,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 63,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 94,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — LABOR - Family and Medical Leave Insurance",
       "title": "ACCOUNTANT SUPERVISOR II (GENERAL ACCOUNTING SUPERVISOR)",
       "reqId": "26-004552-0008",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004552&R3=0008",
-      "days": 4,
+      "days": 5,
       "postedAtMs": 1787735100000,
       "deadlineMs": 1788973200000,
       "deadline": "9/9/2026 5:00:00 PM",
@@ -5152,7 +4926,7 @@
       "reqId": "26-001028-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001028&R3=0004",
-      "days": 5,
+      "days": 6,
       "postedAtMs": 1787649300000,
       "deadlineMs": 1788886800000,
       "deadline": "9/8/2026 5:00:00 PM",
@@ -5304,7 +5078,7 @@
       "reqId": "26-004520-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004520&R3=0004",
-      "days": 6,
+      "days": 7,
       "postedAtMs": 1787559000000,
       "deadlineMs": 1788825540000,
       "deadline": "9/7/2026 11:59:00 PM",
@@ -5342,7 +5116,7 @@
       "reqId": "26-002188-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002188&R3=0001",
-      "days": 19,
+      "days": 20,
       "postedAtMs": 1786435200000,
       "deadlineMs": 1788307140000,
       "deadline": "9/1/2026 11:59:00 PM",
@@ -5832,7 +5606,7 @@
       "reqId": "26-004552-0007",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004552&R3=0007",
-      "days": 13,
+      "days": 14,
       "postedAtMs": 1786965600000,
       "deadlineMs": 1788195600000,
       "deadline": "8/31/2026 5:00:00 PM",
@@ -6051,52 +5825,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Production Operator - Non-Merit - Bureau of Solid Waste Management",
-      "reqId": "NM.116 05-25",
-      "location": "Cockeysville, MD",
-      "city": "cockeysville",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4932901/production-operator-non-merit-bureau-of-solid-waste-management",
-      "postedAtMs": 1779148800000,
-      "days": 104,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "PUBLIC WORKS: SOLID WASTE MANAGEMENT",
-      "categories": [
-        "Public Works",
-        "Sanitation"
-      ],
-      "salary": {
-        "min": 20.05,
-        "max": 36.41,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 8.4,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 25,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "older continuous/standing recruitment"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Traffic Signal Maintenance Technician I ",
       "reqId": "10.346 01-2026",
       "location": "Towson, MD",
@@ -6123,6 +5851,52 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.2,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 62,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 25,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "older continuous/standing recruitment"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Production Operator - Non-Merit - Bureau of Solid Waste Management",
+      "reqId": "NM.116 05-25",
+      "location": "Cockeysville, MD",
+      "city": "cockeysville",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4932901/production-operator-non-merit-bureau-of-solid-waste-management",
+      "postedAtMs": 1779148800000,
+      "days": 104,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "PUBLIC WORKS: SOLID WASTE MANAGEMENT",
+      "categories": [
+        "Public Works",
+        "Sanitation"
+      ],
+      "salary": {
+        "min": 20.05,
+        "max": 36.41,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 8.4,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -6371,7 +6145,7 @@
       "reqId": "26-004714-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004714&R3=0001",
-      "days": 205,
+      "days": 206,
       "postedAtMs": 1770370680000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",
@@ -6506,134 +6280,6 @@
       }
     },
     {
-      "title": "In-Home Sales Representative",
-      "url": "https://hiringcafe.com/job/in-home-sales-representative-ramley-construction-randallstown-maryland-vwzhm4h8yrjvwl7i",
-      "company": "Ramley Construction",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-03",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 150000,
-        "max": 250000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Asset Protection Associate",
-      "url": "https://hiringcafe.com/job/asset-protection-associate-walmart-randallstown-maryland-phzo4txtulsu7awu",
-      "company": "Walmart",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-07-07",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 20,
-        "max": 33,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Enrollment Counselor, Partnerships",
-      "url": "https://hiringcafe.com/job/enrollment-counselor-partnerships-stevenson-university-owings-mills-6ba6cutz4klebc1a",
-      "company": "Stevenson University",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-04",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 48000,
-        "max": 50000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Assembly Technician 2nd Shift",
-      "url": "https://hiringcafe.com/job/assembly-technician-2nd-shift-primus-aerospace-reisterstown-maryland-xyaaxqggjyfhxnh9",
-      "company": "Primus Aerospace",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 21.6,
-        "max": 28.8,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
       "title": "Quality Inspector",
       "url": "https://hiringcafe.com/job/quality-inspector-primus-aerospace-reisterstown-maryland-3r94eu98jzgbp712",
       "company": "Primus Aerospace",
@@ -6698,70 +6344,6 @@
       }
     },
     {
-      "title": "Underwriting Support Partner",
-      "url": "https://hiringcafe.com/job/underwriting-support-partner-allianz-owings-mills-maryland-v5bdvav68ter8xo5",
-      "company": "Allianz",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-13",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 75000,
-        "max": 90000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Financial Solutions Advisor Registration Candidate-Garrison Forest Financial Center",
-      "url": "https://hiringcafe.com/job/financial-solutions-advisor-registration-candidate-garrison-forest-wqo8fi9vhyz82qhv",
-      "company": "Bank of America",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-13",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 28.85,
-        "max": 33.65,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
       "title": "CT Tech Trainee",
       "url": "https://hiringcafe.com/job/ct-tech-trainee-radnet-pikesville-maryland-10qsi0bxenq0oxsp",
       "company": "RadNet",
@@ -6775,102 +6357,6 @@
         "unit": "HOUR"
       },
       "lastSeenRun": 55,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Shop Foreman  - Audi Ownings Mills",
-      "url": "https://hiringcafe.com/job/shop-foreman-audi-ownings-mills-sonic-automotive-owings-mills-maryland-a1vb538tsex2egmk",
-      "company": "Sonic Automotive",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-13",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 125000,
-        "max": 165000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Office Secretary (1.0/10 month)- Pikesville Middle",
-      "url": "https://hiringcafe.com/job/office-secretary-1-0-10-month-pikesville-middle-baltimore-county-48f47vtdq32fwkj7",
-      "company": "Baltimore County Public Schools",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-18",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 23.24,
-        "max": 42.19,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "ATE Field Mechanical Technician",
-      "url": "https://hiringcafe.com/job/ate-field-mechanical-technician-crash-champions-pikesville-maryland-p02n5i03cf3rv42w",
-      "company": "Crash Champions",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-18",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 23.8,
-        "max": 42.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
       "location": "Pikesville, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -7495,39 +6981,6 @@
       }
     },
     {
-      "title": "Customer Service Associate - Temporary",
-      "url": "https://hiringcafe.com/job/customer-service-associate-temporary-walgreens-reisterstown-maryland-oot1usjeqrgn6boj",
-      "company": "Walgreens",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-04",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 15,
-        "max": 17.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 61,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 28,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
       "title": "Retail Sales Associate",
       "url": "https://hiringcafe.com/job/retail-sales-associate-best-buy-owings-mills-maryland-bgy0t4ydn1ixwgrh",
       "company": "Best Buy",
@@ -7575,105 +7028,6 @@
       },
       "lastSeenRun": 48,
       "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 61,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 28,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Front Desk and Sales Associate",
-      "url": "https://hiringcafe.com/job/front-desk-and-sales-associate-goldfish-swim-school-owings-mills-nwudymrywlytv59g",
-      "company": "Goldfish Swim School",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-12",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15,
-        "max": 19,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 61,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 28,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Full Time - Sales Associate - Paint - Day",
-      "url": "https://hiringcafe.com/job/full-time-sales-associate-paint-day-lowes-owings-mills-maryland-nnn15ei107gc05fp",
-      "company": "Lowe's",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-14",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 15,
-        "max": 15.6,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 61,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 28,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Retail Cashier Associate",
-      "url": "https://hiringcafe.com/job/retail-cashier-associate-the-tjx-companies-owings-mills-maryland-nnm3zdok6odj1cdd",
-      "company": "The TJX Companies",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15.25,
-        "max": 15.75,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -8134,7 +7488,7 @@
       "reqId": "26-005042-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005042&R3=0002",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787218200000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -8172,7 +7526,7 @@
       "reqId": "26-002730-0003",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002730&R3=0003",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787216400000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -8245,27 +7599,27 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Deputy Sheriff Assistant NON SWORN (For Retired Sworn Police and Sheriff Employees ONLY)",
-      "reqId": "100.6005 06-23",
+      "title": "Deputy Sheriff (For Current and Retired Law Enforcement Officers - Lateral)",
+      "reqId": "10.605 07-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4073920/deputy-sheriff-assistant-non-sworn-for-retired-sworn-police-and-sheriff-employee",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4061020/deputy-sheriff-for-current-and-retired-law-enforcement-officers-lateral",
       "postedAtMs": 1770076800000,
       "days": 209,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
+      "employmentType": "MERIT",
       "department": "SHERIFF",
       "categories": [
         "Public Safety",
         "Law Enforcement"
       ],
       "salary": {
-        "min": 35,
-        "max": 35,
-        "unit": "HOUR"
+        "min": 59683,
+        "max": 75758,
+        "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -8291,27 +7645,27 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Deputy Sheriff (For Current and Retired Law Enforcement Officers - Lateral)",
-      "reqId": "10.605 07-23",
+      "title": "Deputy Sheriff Assistant NON SWORN (For Retired Sworn Police and Sheriff Employees ONLY)",
+      "reqId": "100.6005 06-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4061020/deputy-sheriff-for-current-and-retired-law-enforcement-officers-lateral",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4073920/deputy-sheriff-assistant-non-sworn-for-retired-sworn-police-and-sheriff-employee",
       "postedAtMs": 1770076800000,
       "days": 209,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "MERIT",
+      "employmentType": "NON-MERIT",
       "department": "SHERIFF",
       "categories": [
         "Public Safety",
         "Law Enforcement"
       ],
       "salary": {
-        "min": 59683,
-        "max": 75758,
-        "unit": "YEAR"
+        "min": 35,
+        "max": 35,
+        "unit": "HOUR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -8744,7 +8098,7 @@
       "reqId": "18-002428-0004",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=18&R2=002428&R3=0004",
-      "days": 2579,
+      "days": 2580,
       "postedAtMs": 1565262300000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -8896,7 +8250,7 @@
       "reqId": "12-001991-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=001991&R3=001",
-      "days": 5133,
+      "days": 5134,
       "postedAtMs": 1344598620000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -12404,11 +11758,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 12-23",
+      "reqId": "04.407 11-24",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 115,
       "continuous": true,
@@ -12450,11 +11804,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 11-24",
+      "reqId": "04.407 12-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 115,
       "continuous": true,
@@ -12543,51 +11897,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Countyride Driver I ",
-      "reqId": "08.261-01-26",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5217973/countyride-driver-i",
-      "postedAtMs": 1779148800000,
-      "days": 104,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "PUBLIC WORKS:  BUREAU OF TRANSPORTATION",
-      "categories": [
-        "Drivers"
-      ],
-      "salary": {
-        "min": 19.06,
-        "max": 21.69,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 25,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "older continuous/standing recruitment"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Equipment Operator - Public Works Solid Waste Management",
       "reqId": "08.244 05-25",
       "location": "Various locations throughout Baltimore County, MD",
@@ -12616,6 +11925,51 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 58,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 78,
+        "careerValue": 58,
+        "recency": 25,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "older continuous/standing recruitment"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Countyride Driver I ",
+      "reqId": "08.261-01-26",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5217973/countyride-driver-i",
+      "postedAtMs": 1779148800000,
+      "days": 104,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "PUBLIC WORKS:  BUREAU OF TRANSPORTATION",
+      "categories": [
+        "Drivers"
+      ],
+      "salary": {
+        "min": 19.06,
+        "max": 21.69,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -12758,102 +12112,6 @@
       }
     },
     {
-      "title": "Prep Cook",
-      "url": "https://hiringcafe.com/job/prep-cook-sodexo-owings-mills-maryland-1fwzt81h9k8yw5ht",
-      "company": "Sodexo",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME, PART_TIME",
-      "salary": {
-        "min": 16,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Grill Cook",
-      "url": "https://hiringcafe.com/job/grill-cook-sodexo-owings-mills-maryland-yfuxkihh6irrzv8z",
-      "company": "Sodexo",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME, PART_TIME",
-      "salary": {
-        "min": 19,
-        "max": 21,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Deli/Bakery Team Associate",
-      "url": "https://hiringcafe.com/job/deli-bakery-team-associate-walmart-randallstown-maryland-0xy1hh1jev0yt16t",
-      "company": "Walmart",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-02",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 19,
-        "max": 32,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
       "title": "PORTER (FULL TIME) (1559276)",
       "url": "https://hiringcafe.com/job/porter-full-time-1559276-compass-group-owings-mills-maryland-ijyuim06nvsqigrq",
       "company": "Compass Group",
@@ -12886,134 +12144,6 @@
       }
     },
     {
-      "title": "Maintenance Assistant",
-      "url": "https://hiringcafe.com/job/maintenance-assistant-futurecare-pikesville-maryland-gg9eto2p7g6vq1pq",
-      "company": "FutureCare",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 17.47,
-        "max": 21.84,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Inventory Control Clerk Part Time",
-      "url": "https://hiringcafe.com/job/inventory-control-clerk-part-time-bjs-wholesale-club-owings-mills-t4fo3mcsue6ba8hc",
-      "company": "BJ's Wholesale Club",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 17,
-        "max": 20.4,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Audiology Extern",
-      "url": "https://hiringcafe.com/job/audiology-extern-demant-owings-mills-maryland-yfgn8bo2ci8112ul",
-      "company": "Demant",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-05",
-      "employmentType": "INTERN",
-      "salary": {
-        "min": 19,
-        "max": 23,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "GNA (7-3 Shift)",
-      "url": "https://hiringcafe.com/job/gna-7-3-shift-chapel-hill-nursing-center-randallstown-maryland-f2qw3u2t47xwf5pi",
-      "company": "Chapel Hill Nursing Center",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-09",
-      "employmentType": "FULL_TIME, PART_TIME",
-      "salary": {
-        "min": 17,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
       "title": "Utility Clerk Part Time",
       "url": "https://hiringcafe.com/job/utility-clerk-part-time-bjs-wholesale-club-owings-mills-maryland-mh79pt1uo4ekaok6",
       "company": "BJ's Wholesale Club",
@@ -13027,198 +12157,6 @@
         "unit": "HOUR"
       },
       "lastSeenRun": 62,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Client Relationship Specialist",
-      "url": "https://hiringcafe.com/job/client-relationship-specialist-homecentris-healthcare-owings-mills-advcof4i793kjr7n",
-      "company": "HomeCentris Healthcare",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 19,
-        "max": 22,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Account Specialist",
-      "url": "https://hiringcafe.com/job/account-specialist-fastenal-owings-mills-maryland-8ktnovymc8t1uxq1",
-      "company": "Fastenal",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-10",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 31200,
-        "max": 56400,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Caregiver - Part-time - Springhouse Pikesville",
-      "url": "https://hiringcafe.com/job/caregiver-part-time-springhouse-pikesville-arden-courts-pikesville-712r3gwbmns6a2fa",
-      "company": "Arden Courts",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-12",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 16.5,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "EVENT: Gandhi Healthcare",
-      "url": "https://hiringcafe.com/job/event-gandhi-healthcare-visiting-angels-pikesville-maryland-l9dk25t3gd0uda6k",
-      "company": "Visiting Angels",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-12",
-      "employmentType": "PART_TIME, FULL_TIME",
-      "salary": {
-        "min": 18,
-        "max": 25,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Cook",
-      "url": "https://hiringcafe.com/job/cook-sunrise-senior-living-pikesville-maryland-xw46mq53zqyz5kig",
-      "company": "Sunrise Senior Living",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-13",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 17.1,
-        "max": 21.4,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Machine Operator I",
-      "url": "https://hiringcafe.com/job/machine-operator-i-medifast-owings-mills-maryland-u5yrpadnyckugydw",
-      "company": "Medifast",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-14",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 18.15,
-        "max": 24.55,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
       "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -13270,134 +12208,6 @@
       }
     },
     {
-      "title": "Maintenance",
-      "url": "https://hiringcafe.com/job/maintenance-oth-hotels-resorts-pikesville-maryland-l2sd4h3bi3dk8aww",
-      "company": "OTH Hotels Resorts",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-14",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 19,
-        "max": 21,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Front End Service Team Associate",
-      "url": "https://hiringcafe.com/job/front-end-service-team-associate-walmart-randallstown-maryland-dboggrjbm7f2vvd4",
-      "company": "Walmart",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-07-07",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 17,
-        "max": 30,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Online Order Filling Team Associate",
-      "url": "https://hiringcafe.com/job/online-order-filling-team-associate-walmart-randallstown-maryland-ouum8vcefwdg4oxx",
-      "company": "Walmart",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-07-07",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 17,
-        "max": 30,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Specialty Artist - MAC",
-      "url": "https://hiringcafe.com/job/specialty-artist-mac-ulta-beauty-owings-mills-maryland-rtntw6jdxdg521dr",
-      "company": "Ulta Beauty",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-29",
-      "employmentType": "FULL_TIME, PART_TIME",
-      "salary": {
-        "min": 17,
-        "max": 25.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
       "title": "Health & Beauty TA",
       "url": "https://hiringcafe.com/job/health-and-beauty-ta-walmart-randallstown-maryland-lobry9tm0ppolujj",
       "company": "Walmart",
@@ -13412,38 +12222,6 @@
       },
       "lastSeenRun": 48,
       "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Membership Sales Ambassador Part Time",
-      "url": "https://hiringcafe.com/job/membership-sales-ambassador-part-time-bjs-wholesale-club-owings-mills-syvmf20iufjwz3bj",
-      "company": "BJ's Wholesale Club",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-18",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 17.5,
-        "max": 21.44,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -13531,7 +12309,7 @@
       "reqId": "26-003492-0003",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003492&R3=0003",
-      "days": 13,
+      "days": 14,
       "postedAtMs": 1786953600000,
       "deadlineMs": 1788220740000,
       "deadline": "8/31/2026 11:59:00 PM",
@@ -13687,6 +12465,54 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
+      "title": "Registered Peer Supervisor",
+      "reqId": "NM.143 07-2026",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
+      "postedAtMs": 1784073600000,
+      "days": 47,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "CORRECTIONS",
+      "categories": [
+        "Administration",
+        "Corrections",
+        "Human Services",
+        "Health Education"
+      ],
+      "salary": {
+        "min": 26.39,
+        "max": 32.8,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 57,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 52,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
       "title": "Project Manager FFE Specialist - Capital Construction - Non-Merit",
       "reqId": "NM.141 7-26 PROP",
       "location": "Various locations throughout Baltimore County, MD",
@@ -13717,54 +12543,6 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 52,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
-      "title": "Registered Peer Supervisor",
-      "reqId": "NM.143 07-2026",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
-      "postedAtMs": 1784073600000,
-      "days": 47,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "CORRECTIONS",
-      "categories": [
-        "Administration",
-        "Corrections",
-        "Human Services",
-        "Health Education"
-      ],
-      "salary": {
-        "min": 26.39,
-        "max": 32.8,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -14103,40 +12881,6 @@
           "level II experience check",
           "pay undisclosed",
           "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "title": "Customer Service – Self Storage Manager",
-      "url": "https://hiringcafe.com/job/customer-service-self-storage-manager-public-storage-randallstown-bxtvl1pj4o3fp754",
-      "company": "Public Storage",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 57,
-        "qualification": 68,
-        "interview": 67,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 30,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
-          "posting age unknown",
-          "pay undisclosed"
         ]
       }
     },
@@ -14826,7 +13570,7 @@
       "reqId": "26-005483-0027",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005483&R3=0027",
-      "days": 11,
+      "days": 12,
       "postedAtMs": 1787131200000,
       "deadlineMs": 1788393540000,
       "deadline": "9/2/2026 11:59:00 PM",
@@ -16309,35 +15053,6 @@
       }
     },
     {
-      "title": "Meat Wrapper / Sanitation",
-      "url": "https://hiringcafe.com/job/meat-wrapper-sanitation-costco-wholesale-owings-mills-maryland-lr8i8fh8loh9a1m2",
-      "company": "Costco Wholesale",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Tire Installer",
       "url": "https://hiringcafe.com/job/tire-installer-costco-wholesale-owings-mills-maryland-yab9f23r43xqkdk4",
       "company": "Costco Wholesale",
@@ -16400,151 +15115,6 @@
       }
     },
     {
-      "title": "Adult Outreach Worker",
-      "url": "https://hiringcafe.com/job/adult-outreach-worker-prologue-pikesville-maryland-k0oer3cd0t9mpmw0",
-      "company": "Prologue",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-03",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Tire Installer",
-      "url": "https://hiringcafe.com/job/tire-installer-costco-owings-mills-maryland-rm701sznh7yldw8s",
-      "company": "Costco",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Stocker",
-      "url": "https://hiringcafe.com/job/stocker-costco-owings-mills-maryland-6hr4vzjcjgjmtvmj",
-      "company": "Costco",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Food Service Assistant",
-      "url": "https://hiringcafe.com/job/food-service-assistant-costco-owings-mills-maryland-e4xs08eddp0s5vxv",
-      "company": "Costco",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Gas Station Attendant",
-      "url": "https://hiringcafe.com/job/gas-station-attendant-costco-owings-mills-maryland-737rc2ujkduxw570",
-      "company": "Costco",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Core Sales Representative",
       "url": "https://hiringcafe.com/job/core-sales-representative-pavion-owings-mills-maryland-r8sauwqpon573cts",
       "company": "Pavion",
@@ -16555,134 +15125,6 @@
       "salary": null,
       "lastSeenRun": 62,
       "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Direct Support Professional - (Stevenson) Thurs-Sat 8a-8p",
-      "url": "https://hiringcafe.com/job/direct-support-professional-stevenson-thurs-sat-8a-8p-chimes-wnqf6amgo2p5n0qg",
-      "company": "Chimes",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-03",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Cook I",
-      "url": "https://hiringcafe.com/job/cook-i-sodexo-owings-mills-maryland-85nmg5nadf9xa68b",
-      "company": "Sodexo",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME, PART_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Construction Carpenter",
-      "url": "https://hiringcafe.com/job/construction-carpenter-lewis-contractors-owings-mills-maryland-6dexhfnfcadokheo",
-      "company": "Lewis Contractors",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "DIRECT SUPPORT PROFESSIONAL-PART TIME",
-      "url": "https://hiringcafe.com/job/direct-support-professional-part-time-athelas-institute-windsor-mill-3rmfk357dwfvcr0t",
-      "company": "Athelas Institute",
-      "city": "Windsor Mill",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Windsor Mill, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -16731,64 +15173,6 @@
       }
     },
     {
-      "title": "Lifeguard",
-      "url": "https://hiringcafe.com/job/lifeguard-jewish-community-center-of-greater-baltimore-owings-mills-apf8hm331n3lvg8m",
-      "company": "Jewish Community Center of Greater Baltimore",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-11",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "91B Light-Wheel Vehicle Mechanic",
-      "url": "https://hiringcafe.com/job/91b-light-wheel-vehicle-mechanic-army-national-guard-reisterstown-qtd1b52ml638nfyv",
-      "company": "Army National Guard",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-05",
-      "employmentType": "PART_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "Assistant Golf Professional",
       "url": "https://hiringcafe.com/job/assistant-golf-professional-troon-pikesville-maryland-ff0988uv7le8ihts",
       "company": "Troon",
@@ -16803,105 +15187,6 @@
       },
       "lastSeenRun": 61,
       "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Cart Attendant",
-      "url": "https://hiringcafe.com/job/cart-attendant-baltimore-county-revenue-authority-windsor-mill-r7k2h0l9q72piss8",
-      "company": "Baltimore County Revenue Authority",
-      "city": "Windsor Mill",
-      "region": "Maryland",
-      "datePosted": "2026-08-11",
-      "employmentType": "TEMPORARY",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Windsor Mill, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Recovery Support Professional - Full Time",
-      "url": "https://hiringcafe.com/job/recovery-support-professional-full-time-gaudenzia-owings-mills-2xozqdu94jyiyq5a",
-      "company": "Gaudenzia",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-14",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Part Time Merchandiser",
-      "url": "https://hiringcafe.com/job/part-time-merchandiser-footprint-solutions-reisterstown-maryland-t79para4qs15575h",
-      "company": "Footprint Solutions",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-13",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -16983,97 +15268,6 @@
       }
     },
     {
-      "title": "Culinary Services Cook",
-      "url": "https://hiringcafe.com/job/culinary-services-cook-sonida-senior-living-pikesville-maryland-q98w5ql1y61to99l",
-      "company": "Sonida Senior Living",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Dishwasher",
-      "url": "https://hiringcafe.com/job/dishwasher-crescent-hotels-and-resorts-owings-mills-maryland-7qsmo2g997lnklyq",
-      "company": "Crescent Hotels & Resorts",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-18",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Assistant Center Administrator",
-      "url": "https://hiringcafe.com/job/assistant-center-administrator-behavioral-innovations-windsor-mill-qjrvadyjltaz2m9j",
-      "company": "Behavioral Innovations",
-      "city": "Windsor Mill",
-      "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Windsor Mill, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "92G Food Service Specialist",
       "url": "https://hiringcafe.com/job/92g-food-service-specialist-army-national-guard-reisterstown-maryland-mdhmw4p0v92n9wiv",
       "company": "Army National Guard",
@@ -17083,35 +15277,6 @@
       "employmentType": "PART_TIME",
       "salary": null,
       "lastSeenRun": 61,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "12K Plumber",
-      "url": "https://hiringcafe.com/job/12k-plumber-army-national-guard-reisterstown-maryland-hnprq9eycp6w1nfl",
-      "company": "Army National Guard",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-05",
-      "employmentType": "PART_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
       "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -17142,97 +15307,6 @@
       "salary": null,
       "lastSeenRun": 61,
       "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Ice Resurfacer",
-      "url": "https://hiringcafe.com/job/ice-resurfacer-baltimore-county-revenue-authority-reisterstown-k4fx3vhz68wuukso",
-      "company": "Baltimore County Revenue Authority",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-06",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Stocker",
-      "url": "https://hiringcafe.com/job/stocker-costco-wholesale-owings-mills-maryland-026omuoiqmxrgddb",
-      "company": "Costco Wholesale",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Food Service Assistant",
-      "url": "https://hiringcafe.com/job/food-service-assistant-costco-wholesale-owings-mills-maryland-qk6dtkqh6rhpvbrs",
-      "company": "Costco Wholesale",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-28",
-      "employmentType": "FULL_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -17469,6 +15543,39 @@
       "salary": null,
       "lastSeenRun": 57,
       "location": "Milford Mill, Maryland",
+      "source": "HiringCafe",
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 54,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 30,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "posting age unknown",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "title": "Grill Cook",
+      "url": "https://hiringcafe.com/job/grill-cook-sodexo-owings-mills-maryland-sfvxm4ho9g6xjzju",
+      "company": "Sodexo",
+      "city": "Owings Mills",
+      "region": "Maryland",
+      "datePosted": "2026-08-19",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": null,
+        "max": null,
+        "unit": "HOUR"
+      },
+      "lastSeenRun": 53,
+      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -18001,7 +16108,7 @@
       "reqId": "26-006097-0007",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=006097&R3=0007",
-      "days": 16,
+      "days": 17,
       "postedAtMs": 1786707540000,
       "deadlineMs": 1788368400000,
       "deadline": "9/2/2026 5:00:00 PM",
@@ -18039,7 +16146,7 @@
       "reqId": "26-009662-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009662&R3=0001",
-      "days": 17,
+      "days": 18,
       "postedAtMs": 1786615200000,
       "deadlineMs": 1789430340000,
       "deadline": "9/14/2026 11:59:00 PM",
@@ -18713,39 +16820,6 @@
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": [
           "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Lead Desktop Engineer – End User Compute (EUC)",
-      "url": "https://hiringcafe.com/job/lead-desktop-engineer-end-user-compute-euc-t-rowe-price-owings-mills-iaptbwvzet5b7oqq",
-      "company": "T. Rowe Price",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-06",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 122000,
-        "max": 209000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 52,
-        "qualification": 34,
-        "interview": 34,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "senior/lead experience check",
-          "posting age unknown"
         ]
       }
     },
@@ -19890,72 +17964,6 @@
       }
     },
     {
-      "title": "Care Manager",
-      "url": "https://hiringcafe.com/job/care-manager-sunrise-senior-living-pikesville-maryland-h2t4xqhkgqq2ctju",
-      "company": "Sunrise Senior Living",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 16.3,
-        "max": 20.4,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 50,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "Shift Supervisor",
-      "url": "https://hiringcafe.com/job/shift-supervisor-krispy-kreme-owings-mills-maryland-rycffmgyy6ghdrgp",
-      "company": "Krispy Kreme",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-10",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 18,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 50,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
-          "posting age unknown"
-        ]
-      }
-    },
-    {
       "company": "T. Rowe Price",
       "title": "Senior Security Engineer",
       "location": "Owings Mills, MD",
@@ -20972,105 +18980,6 @@
       }
     },
     {
-      "title": "AM Apparel Processor",
-      "url": "https://hiringcafe.com/job/am-apparel-processor-the-tjx-companies-owings-mills-maryland-vdntdbioetqytkqe",
-      "company": "The TJX Companies",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-04",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15.25,
-        "max": 15.75,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Dishwasher",
-      "url": "https://hiringcafe.com/job/dishwasher-sodexo-owings-mills-maryland-47cyg9uz81l9jln1",
-      "company": "Sodexo",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME, PART_TIME",
-      "salary": {
-        "min": 16,
-        "max": 19,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Housekeeper",
-      "url": "https://hiringcafe.com/job/housekeeper-futurecare-pikesville-maryland-i0i29im247xqfx24",
-      "company": "FutureCare",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-07-31",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 15.7,
-        "max": 17.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
       "title": "Laundry Aide",
       "url": "https://hiringcafe.com/job/laundry-aide-futurecare-pikesville-maryland-mtqx31ecbdj56bez",
       "company": "FutureCare",
@@ -21085,39 +18994,6 @@
       },
       "lastSeenRun": 48,
       "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Cook",
-      "url": "https://hiringcafe.com/job/cook-futurecare-reisterstown-maryland-i4965n3n0kl8nrcm",
-      "company": "FutureCare",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-03",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 18,
-        "max": 19.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -21170,72 +19046,6 @@
       }
     },
     {
-      "title": "Warehouse Assistant Owings Mills",
-      "url": "https://hiringcafe.com/job/warehouse-assistant-owings-mills-libs-grill-owings-mills-maryland-7hpya8xstik8tz3d",
-      "company": "Lib's Grill",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-05",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 16,
-        "max": 18,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Service Desk",
-      "url": "https://hiringcafe.com/job/service-desk-ohana-growth-partners-randallstown-maryland-73xnpzg5jb14ukul",
-      "company": "Ohana Growth Partners",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-07",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15.5,
-        "max": 16.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
       "title": "Food & Beverage Attendant",
       "url": "https://hiringcafe.com/job/food-and-beverage-attendant-lucky-strike-entertainment-pikesville-0fbqdh6r6t20e775",
       "company": "Lucky Strike Entertainment",
@@ -21250,105 +19060,6 @@
       },
       "lastSeenRun": 50,
       "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Tax Associate",
-      "url": "https://hiringcafe.com/job/tax-associate-h-and-r-block-reisterstown-maryland-1dt94qmtejgh2avb",
-      "company": "H&R Block",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-10",
-      "employmentType": "FULL_TIME, TEMPORARY",
-      "salary": {
-        "min": 14.45,
-        "max": 18,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Tax Associate",
-      "url": "https://hiringcafe.com/job/tax-associate-h-and-r-block-randallstown-maryland-894n585sxqqki66x",
-      "company": "H&R Block",
-      "city": "Randallstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-10",
-      "employmentType": "FULL_TIME, TEMPORARY",
-      "salary": {
-        "min": 14.45,
-        "max": 18,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Tax Associate",
-      "url": "https://hiringcafe.com/job/tax-associate-h-and-r-block-owings-mills-maryland-617ughx4wy1tmvmn",
-      "company": "H&R Block",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-10",
-      "employmentType": "FULL_TIME, TEMPORARY",
-      "salary": {
-        "min": 14.45,
-        "max": 18,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -21415,105 +19126,6 @@
       },
       "lastSeenRun": 59,
       "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Custodian",
-      "url": "https://hiringcafe.com/job/custodian-sbm-management-services-owings-mills-maryland-u5apirmmq9x46i2k",
-      "company": "SBM Management Services",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-14",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15,
-        "max": 16,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Backroom Processing",
-      "url": "https://hiringcafe.com/job/backroom-processing-the-tjx-companies-owings-mills-maryland-rodgkgge9pozx3hb",
-      "company": "The TJX Companies",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-17",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15.25,
-        "max": 15.75,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 49,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
-      "title": "Lab Accessioner    10am-6pm",
-      "url": "https://hiringcafe.com/job/lab-accessioner-10am-6pm-diamond-medical-laboratories-owings-mills-ku0qdt50lc9t3nyx",
-      "company": "Diamond Medical Laboratories",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-19",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 16.5,
-        "max": 18.5,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -21805,53 +19417,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Nurse Monitor - Non-Merit ",
-      "reqId": "NM .140 07-2026",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5429659/nurse-monitor-non-merit",
-      "postedAtMs": 1785283200000,
-      "days": 33,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "HEALTH",
-      "categories": [
-        "Health Services",
-        "Public Health",
-        "Nursing"
-      ],
-      "salary": {
-        "min": 39.24,
-        "max": 50.96,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.4,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 48,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 100,
-        "careerValue": 43,
-        "recency": 52,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Public Health Nurse",
       "reqId": "04.226 07-26",
       "location": "Towson, MD",
@@ -21879,6 +19444,53 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 3.7,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 48,
+        "qualification": 23,
+        "interview": 25,
+        "pay": 100,
+        "careerValue": 43,
+        "recency": 52,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "credential/skill check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Nurse Monitor - Non-Merit ",
+      "reqId": "NM .140 07-2026",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5429659/nurse-monitor-non-merit",
+      "postedAtMs": 1785283200000,
+      "days": 33,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "HEALTH",
+      "categories": [
+        "Health Services",
+        "Public Health",
+        "Nursing"
+      ],
+      "salary": {
+        "min": 39.24,
+        "max": 50.96,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.4,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -21938,39 +19550,6 @@
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": [
           "credential/skill check"
-        ]
-      }
-    },
-    {
-      "title": "Shift Lead",
-      "url": "https://hiringcafe.com/job/shift-lead-walgreens-reisterstown-maryland-e5fhp32xi3jvcku4",
-      "company": "Walgreens",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-06",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 17,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Reisterstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 48,
-        "qualification": 34,
-        "interview": 34,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "senior/lead experience check",
-          "posting age unknown"
         ]
       }
     },
@@ -22290,72 +19869,6 @@
       }
     },
     {
-      "title": "Managing Legal Counsel - Privacy",
-      "url": "https://hiringcafe.com/job/managing-legal-counsel-privacy-t-rowe-price-owings-mills-maryland-b4aogepe2wy3sxtf",
-      "company": "T. Rowe Price",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-14",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 174000,
-        "max": 350000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 45,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 100,
-        "careerValue": 43,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check",
-          "posting age unknown"
-        ]
-      }
-    },
-    {
-      "title": "General Counsel | Pikesville, MD",
-      "url": "https://hiringcafe.com/job/general-counsel-pikesville-md-coastal-recovery-pikesville-maryland-fnbn07jd3mxvtbeb",
-      "company": "Coastal Recovery",
-      "city": "Pikesville",
-      "region": "Maryland",
-      "datePosted": "2026-08-06",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 220000,
-        "max": 260000,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Pikesville, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 45,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 100,
-        "careerValue": 43,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check",
-          "posting age unknown"
-        ]
-      }
-    },
-    {
       "company": "T. Rowe Price",
       "title": "Senior Retirement Plan Sales Executive - Philadelphia/Southern New Jersey",
       "location": "Owings Mills, MD",
@@ -22656,40 +20169,6 @@
       },
       "lastSeenRun": 48,
       "location": "Randallstown, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 45,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Tax Manager - Private Client Services",
-      "url": "https://hiringcafe.com/job/tax-manager-private-client-services-eisneramper-owings-mills-maryland-0lww4s51zjpxs7ck",
-      "company": "EisnerAmper",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-10",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": null,
-        "max": null,
-        "unit": "YEAR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
@@ -24422,7 +21901,7 @@
       "reqId": "12-004246-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=004246&R3=001",
-      "days": 2579,
+      "days": 2580,
       "postedAtMs": 1565262900000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -24640,40 +22119,6 @@
       }
     },
     {
-      "title": "Deck Supervisor",
-      "url": "https://hiringcafe.com/job/deck-supervisor-goldfish-swim-school-owings-mills-maryland-6m0b36r7tauyogsn",
-      "company": "Goldfish Swim School",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-12",
-      "employmentType": "PART_TIME",
-      "salary": {
-        "min": 15,
-        "max": 19,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 41,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 28,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
-          "posting age unknown",
-          "published pay below $20"
-        ]
-      }
-    },
-    {
       "title": "Part Sales Manager – Part Time",
       "url": "https://hiringcafe.com/job/part-sales-manager-part-time-autozone-reisterstown-maryland-og3xiu41jyf5ruol",
       "company": "AutoZone",
@@ -24862,7 +22307,7 @@
       "reqId": "12-004247-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=004247&R3=001",
-      "days": 2579,
+      "days": 2580,
       "postedAtMs": 1565262900000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -25028,7 +22473,7 @@
       "reqId": "24-005039-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=005039&R3=0001",
-      "days": 254,
+      "days": 255,
       "postedAtMs": 1766138400000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",
@@ -25113,96 +22558,6 @@
           "posting age unknown",
           "pay undisclosed",
           "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "title": "Adjunct Faculty, Criminal Justice",
-      "url": "https://hiringcafe.com/job/adjunct-faculty-criminal-justice-stevenson-university-owings-mills-oi5kh3dolcfwpduq",
-      "company": "Stevenson University",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-20",
-      "employmentType": "PART_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 36,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 52,
-        "careerValue": 43,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check",
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Adjunct Faculty, Philosophy",
-      "url": "https://hiringcafe.com/job/adjunct-faculty-philosophy-stevenson-university-owings-mills-maryland-rdpjz6auknrj8bpz",
-      "company": "Stevenson University",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-20",
-      "employmentType": "PART_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 36,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 52,
-        "careerValue": 43,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check",
-          "posting age unknown",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "title": "Adjunct Faculty, History",
-      "url": "https://hiringcafe.com/job/adjunct-faculty-history-stevenson-university-owings-mills-maryland-56xny28e7w6j6yqp",
-      "company": "Stevenson University",
-      "city": "Owings Mills",
-      "region": "Maryland",
-      "datePosted": "2026-08-20",
-      "employmentType": "PART_TIME",
-      "salary": null,
-      "lastSeenRun": 47,
-      "location": "Owings Mills, Maryland",
-      "source": "HiringCafe",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 36,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 52,
-        "careerValue": 43,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check",
-          "posting age unknown",
-          "pay undisclosed"
         ]
       }
     },
