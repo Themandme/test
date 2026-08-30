@@ -62,9 +62,12 @@ export function locs(xml) {
  */
 export function rotatingWindow(chunks, cursor, size) {
   const n = chunks.length;
-  if (!n) return { window: [], cursor: cursor || 0, nextCursor: cursor || 0, cycleRuns: 1 };
-  const start = ((cursor % n) + n) % n;   // tolerate a negative or stale cursor
-  const take = Math.min(Math.max(1, size), n);
+  const fallbackCursor = Number.isFinite(cursor) ? Math.trunc(cursor) : 0;
+  if (!n) return { window: [], cursor: fallbackCursor, nextCursor: fallbackCursor, cycleRuns: 1 };
+
+  const start = ((fallbackCursor % n) + n) % n; // tolerate a negative or stale cursor
+  const requested = Number.isFinite(size) ? Math.max(1, Math.trunc(size)) : 1;
+  const take = Math.min(requested, n);
   const window = [];
   for (let k = 0; k < take; k++) {
     const c = chunks[(start + k) % n];
@@ -76,6 +79,26 @@ export function rotatingWindow(chunks, cursor, size) {
     nextCursor: (start + take) % n,
     cycleRuns: Math.max(1, Math.ceil(n / take)),
   };
+}
+
+/**
+ * Cheap runtime checks for the pure sweep helpers. These catch the two failures
+ * that are most destructive to accumulated stores: a broken wraparound window,
+ * and an invalid window size producing an empty/NaN cursor advance.
+ */
+export function assertSweepHelpers() {
+  const wrapped = rotatingWindow(['a', 'b', 'c', 'd'], 3, 3);
+  if (wrapped.window.join(',') !== 'd,a,b' || wrapped.nextCursor !== 2 || wrapped.cycleRuns !== 2) {
+    throw new Error('rotatingWindow wraparound invariant failed');
+  }
+  const defensive = rotatingWindow(['a', 'b'], Number.NaN, Number.NaN);
+  if (defensive.window.join(',') !== 'a' || defensive.cursor !== 0 || defensive.nextCursor !== 1) {
+    throw new Error('rotatingWindow invalid-input invariant failed');
+  }
+  const parsed = entries('<url><loc>https://example.test/a</loc></url><url><loc>https://example.test/b</loc><lastmod>2026-08-29</lastmod></url>');
+  if (parsed.length !== 2 || parsed[0].lastmod !== null || parsed[1].lastmod !== '2026-08-29') {
+    throw new Error('sitemap entry pairing invariant failed');
+  }
 }
 
 /**
