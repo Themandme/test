@@ -32,6 +32,7 @@
  *   node scan-neogov.mjs              # → neogov-store.json
  *   node scan-neogov.mjs --pipeline   # also append new rows to the pipeline
  *   node scan-neogov.mjs --all        # keep every row, skip the distance filter
+ *   node scan-neogov.mjs --unified-only # rebuild unified outputs; no network/store mutation
  */
 
 import { writeFileSync, readFileSync, existsSync } from 'fs';
@@ -94,14 +95,41 @@ export function milesBetween(a, b) {
   return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
 }
 
-/** "07/24/26" → epoch ms, interpreted in local time. Returns null on anything else. */
-export function parseMdY(s) {
+/** Return the UTC offset, in milliseconds, for America/New_York at a point in time. */
+function easternOffsetMs(atMs) {
+  try {
+    const name = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York',
+      timeZoneName: 'longOffset',
+    }).formatToParts(new Date(atMs)).find((p) => p.type === 'timeZoneName')?.value || '';
+    const m = name.match(/GMT([+-])(\d{2}):?(\d{2})/);
+    if (m) {
+      const minutes = Number(m[2]) * 60 + Number(m[3]);
+      return (m[1] === '-' ? -1 : 1) * minutes * 60000;
+    }
+  } catch {}
+  // Conservative Eastern fallback: retaining a posting an hour too long is
+  // preferable to removing it before the employer's stated closing day ends.
+  return -5 * 60 * 60000;
+}
+
+/**
+ * "07/24/26" → epoch ms. By default this is the start of the local calendar
+ * day, suitable for posting-age calculations. With endOfDay=true it is
+ * 23:59:59.999 in America/New_York, suitable for application deadlines.
+ */
+export function parseMdY(s, endOfDay = false) {
   const m = String(s || '').match(/^(\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})$/);
   if (!m) return null;
   const [, mm, dd, yy] = m;
+  const month = Number(mm);
+  const day = Number(dd);
   const year = yy.length === 2 ? 2000 + Number(yy) : Number(yy);
-  const t = new Date(year, Number(mm) - 1, Number(dd)).getTime();
-  return Number.isFinite(t) ? t : null;
+  const check = new Date(Date.UTC(year, month - 1, day));
+  if (check.getUTCFullYear() !== year || check.getUTCMonth() !== month - 1 || check.getUTCDate() !== day) return null;
+  if (!endOfDay) return new Date(year, month - 1, day).getTime();
+  const wallClockUtc = Date.UTC(year, month - 1, day, 23, 59, 59, 999);
+  return wallClockUtc - easternOffsetMs(Date.UTC(year, month - 1, day, 12));
 }
 
 /**
@@ -130,7 +158,7 @@ export function parseSalary(text) {
 export function normalize(rec, agency, now = Date.now()) {
   const postedAtMs = parseMdY(rec.PostingDate);
   const continuous = String(rec.ClosingDate || '').trim().toLowerCase() === 'continuous';
-  const deadlineMs = continuous ? null : parseMdY(rec.ClosingDate);
+  const deadlineMs = continuous ? null : parseMdY(rec.ClosingDate, true);
   const lat = Number(rec.Lattitude);
   const lon = Number(rec.Longitude);
   const hasCoords = Number.isFinite(lat) && Number.isFinite(lon) && (lat !== 0 || lon !== 0);
@@ -158,6 +186,7 @@ export function normalize(rec, agency, now = Date.now()) {
     department: rec.DepartmentName || null,
     categories: Array.isArray(rec.Categories) ? rec.Categories : [],
     salary: rec.IsSalaryVisible === false ? null : parseSalary(rec.SalaryInfo),
+    coordinatesVerified: hasCoords,
     miles: hasCoords ? Math.round(milesBetween(HOME, { lat, lon }) * 10) / 10 : null,
   };
 }
@@ -172,7 +201,8 @@ export async function fetchAgency(agency) {
     throw new Error(`HTTP ${res.status} ${ct.split(';')[0] || 'unknown'} (slug likely wrong)`);
   }
   const body = await res.json();
-  return Array.isArray(body.jobList) ? body.jobList : [];
+  if (!Array.isArray(body.jobList)) throw new Error('JSON response missing jobList array');
+  return body.jobList;
 }
 
 
@@ -186,21 +216,39 @@ function unifiedPayTier(s) {
   if (unit === 'year') { min /= 2080; max /= 2080; }
   return min >= 20 ? 0 : max >= 20 ? 1 : 3;
 }
-function unifiedScore(j) {
+function unifiedRecencyScore(j) {
+  if (j.days === null || j.days === undefined || !Number.isFinite(Number(j.days))) return 30;
+  const days = Math.max(0, Number(j.days));
+  let score = days <= 3 ? 100 : days <= 7 ? 94 : days <= 14 ? 86
+    : days <= 30 ? 74 : days <= 60 ? 60 : days <= 120 ? 45
+      : days <= 365 ? 28 : 12;
+  // Continuous postings are often standing applicant pools. Keep them
+  // discoverable, but do not let a year-old pool outrank a recent opening.
+  if (j.continuous) {
+    if (days > 365) score = Math.min(score, 8);
+    else if (days > 180) score = Math.min(score, 14);
+    else if (days > 60) score = Math.min(score, 25);
+    else score = Math.max(0, score - 8);
+  }
+  return score;
+}
+
+export function unifiedScore(j) {
   const t = nkey(j.title);
   const tech = /\b(data|analyst|analytics|information technology|it functional|systems|application|software|technical support|help desk|database|sql|power bi|crm|salesforce|business intelligence|reporting|quality assurance|project coordinator|program coordinator)\b/.test(t);
   const service = /\b(customer|cashier|front desk|reception|guest|retail|sales associate|call center|dispatcher|administrative|office assistant|program assistant|teller|support specialist)\b/.test(t);
   const credential = /\b(nurse|physician|therapist|attorney|counsel|scientist|licensed|certified|professor|faculty)\b/.test(t);
-  // Seniority is a separate qualification signal. A title-only score cannot
-  // prove the candidate meets the experience requirement, so progressively
-  // demote likely advanced roles until the full posting is reviewed.
   const executive = /\b(chief|executive|vice president|vp|head of)\b/.test(t);
   const advanced = /\b(director|principal|senior|sr|lead)\b/.test(t);
   const manager = /\b(manager|supervisor)\b/.test(t);
-  const levelIIIPlus = /\b(iii|iv|v|3|4|5)\b/.test(t);
-  const levelII = /\b(ii|2)\b/.test(t);
+  const levelIIIPlus = /\b(iii|iv|v)\b|\b(?:level|grade)\s*[3-9]\b/.test(t);
+  const levelII = /\bii\b|\b(?:level|grade)\s*2\b/.test(t);
+  const entrySignal = /\b(entry|junior|jr|trainee|assistant|associate|apprentice|intern|level i|grade 1)\b/.test(t);
+  // Some classification titles imply independent professional experience even
+  // without saying "senior". This is a caution, not an automatic rejection.
+  const implicitAdvanced = !entrySignal && /\b(technical specialist|systems specialist|systems analyst|functional analyst|administrator|architect|consultant|engineer|planner|program analyst|management analyst|human resources analyst|program investigator)\b/.test(t);
   const seniorityPenalty = executive ? 34 : advanced ? 24 : manager ? 20
-    : levelIIIPlus ? 14 : levelII ? 7 : 0;
+    : levelIIIPlus ? 14 : levelII ? 7 : implicitAdvanced ? 14 : 0;
   let qualification = tech ? 82 : service ? 88 : 58;
   let interview = tech ? 70 : service ? 84 : 55;
   let careerValue = tech ? 90 : service ? 48 : 58;
@@ -211,9 +259,11 @@ function unifiedScore(j) {
     qualification -= seniorityPenalty;
     interview -= Math.max(6, seniorityPenalty - 3);
   }
-  const tier = unifiedPayTier(j.salary), pay = [100, 78, 52, 28][tier];
-  const overall = clampFit(clampFit(qualification) * .30 + clampFit(interview) * .25 + pay * .20 +
-    clampFit(careerValue) * .20 + (100 - clampFit(overqualificationRisk)) * .05);
+  const tier = unifiedPayTier(j.salary);
+  const pay = [100, 78, 52, 28][tier];
+  const recency = unifiedRecencyScore(j);
+  const overall = clampFit(clampFit(qualification) * .27 + clampFit(interview) * .20 + pay * .18
+    + clampFit(careerValue) * .15 + recency * .15 + (100 - clampFit(overqualificationRisk)) * .05);
   const flags = [];
   if (credential) flags.push('credential/skill check');
   if (executive) flags.push('executive-level experience check');
@@ -221,12 +271,16 @@ function unifiedScore(j) {
   else if (manager) flags.push('management experience check');
   else if (levelIIIPlus) flags.push('level III+ experience check');
   else if (levelII) flags.push('level II experience check');
+  else if (implicitAdvanced) flags.push('classification may require prior professional experience');
+  if (j.days === null || j.days === undefined || !Number.isFinite(Number(j.days))) flags.push('posting age unknown');
+  else if (j.continuous && Number(j.days) > 60) flags.push('older continuous/standing recruitment');
+  else if (Number(j.days) > 120) flags.push('older posting—verify still active');
   if (tier === 2) flags.push('pay undisclosed');
   if (tier === 3) flags.push('published pay below $20');
   if (j.scope === 'regional') flags.push('regional/public board—not exact-radius verified');
   return { overall, qualification: clampFit(qualification), interview: clampFit(interview), pay,
-    careerValue: clampFit(careerValue), overqualificationRisk: clampFit(overqualificationRisk),
-    resume, confidence: 'preliminary—title/pay/location metadata', flags };
+    careerValue: clampFit(careerValue), recency, overqualificationRisk: clampFit(overqualificationRisk),
+    resume, confidence: 'preliminary—title/pay/location/recency metadata', flags };
 }
 function displayPay(s) {
   if (!s || (s.min == null && s.max == null)) return '—';
@@ -238,8 +292,71 @@ function displayPay(s) {
   return (s.min === s.max ? f(s.min) : f(s.min) + '–' + f(s.max))
     + (unit === 'hour' ? '/hr' : unit === 'year' ? '/yr' : '');
 }
-function writeUnifiedLocalJobs() {
-  const read = (name, fallback) => { try { return JSON.parse(readFileSync(path.join(ROOT, name), 'utf8')); } catch { return fallback; } };
+function unifiedSourceRank(source) {
+  return /JobAps|NEOGOV|official|Direct/i.test(String(source || '')) ? 0 : 1;
+}
+
+function normalizedLocation(j) {
+  return nkey(j.location || [j.city, j.state].filter(Boolean).join(' '));
+}
+
+function stableListingId(j) {
+  if (j.reqId) return 'req:' + nkey(j.reqId);
+  if (/HiringCafe/i.test(String(j.source || '')) || !j.url) return null;
+  try {
+    const u = new URL(j.url);
+    if (/jobapscloud\.com$/i.test(u.hostname)) {
+      const parts = ['R1', 'R2', 'R3'].map((k) => nkey(u.searchParams.get(k))).filter(Boolean);
+      if (parts.length) return 'jobaps:' + parts.join('-');
+    }
+    return 'url:' + nkey(u.hostname + u.pathname.replace(/\/+$/, ''));
+  } catch {
+    return 'url:' + nkey(j.url);
+  }
+}
+
+/**
+ * Stable key used by the unified deduper. Location is always present in the
+ * key, while an authoritative reqId/direct URL keeps separate requisitions
+ * distinct even when an employer reuses the same title and location.
+ */
+export function unifiedDedupKey(j) {
+  const signature = [nkey(j.company), nkey(j.title), normalizedLocation(j)].join('|');
+  const stable = stableListingId(j);
+  return stable ? signature + '|' + stable : signature;
+}
+
+function dedupeUnifiedRows(rows) {
+  const identified = new Map();
+  const fallback = new Map();
+  const authoritativeSignatures = new Set();
+  const ordered = [...rows].sort((a, b) => unifiedSourceRank(a.source) - unifiedSourceRank(b.source));
+
+  for (const x of ordered) {
+    const signature = [nkey(x.company), nkey(x.title), normalizedLocation(x)].join('|');
+    const stable = stableListingId(x);
+    if (stable) {
+      const key = [nkey(x.company), normalizedLocation(x), stable].join('|');
+      const old = identified.get(key);
+      if (!old || unifiedSourceRank(x.source) < unifiedSourceRank(old.source)) identified.set(key, x);
+      authoritativeSignatures.add(signature);
+      fallback.delete(signature);
+    } else if (!authoritativeSignatures.has(signature)) {
+      const old = fallback.get(signature);
+      if (!old || unifiedSourceRank(x.source) < unifiedSourceRank(old.source)) fallback.set(signature, x);
+    }
+  }
+  return [...identified.values(), ...fallback.values()];
+}
+
+function writeUnifiedLocalJobs({ strict = false } = {}) {
+  const read = (name, fallback) => {
+    try { return JSON.parse(readFileSync(path.join(ROOT, name), 'utf8')); }
+    catch (err) {
+      if (strict) throw new Error('cannot rebuild unified output from ' + name + ': ' + err.message);
+      return fallback;
+    }
+  };
   const hc = read('owings-mills-store.json', { jobs: {} });
   const workday = read('local-workday-store.json', []);
   const mdgov = read('maryland-gov-store.json', []);
@@ -257,16 +374,14 @@ function writeUnifiedLocalJobs() {
   for (const x of mdgov) if (!x.restricted && !knownInternalMarylandReqs.has(x.reqId)
     && /\b(Baltimore County|Baltimore City)\b/i.test(x.location || ''))
     rows.push({ ...x, source: 'State of Maryland JobAps', scope: 'regional' });
-  for (const x of ng) if (Number(x.miles) <= 10)
-    rows.push({ ...x, source: 'County/city NEOGOV', scope: '10-mile radius' });
-
-  const rank = s => /JobAps|NEOGOV|official|Direct/i.test(s) ? 0 : 1;
-  const unique = new Map();
-  for (const x of rows) {
-    const key = nkey(x.company) + '|' + nkey(x.title), old = unique.get(key);
-    if (!old || rank(x.source) < rank(old.source)) unique.set(key, x);
+  for (const x of ng) {
+    const miles = typeof x.miles === 'number' ? x.miles : Number.NaN;
+    if (!x.coordinatesVerified && !Number.isFinite(miles)) continue;
+    if (Number.isFinite(miles) && miles <= 10)
+      rows.push({ ...x, source: 'County/city NEOGOV', scope: '10-mile radius' });
   }
-  const jobs = [...unique.values()].map(x => ({ ...x, fit: unifiedScore(x) }))
+
+  const jobs = dedupeUnifiedRows(rows).map(x => ({ ...x, fit: unifiedScore(x) }))
     .sort((a,b) => b.fit.overall - a.fit.overall || unifiedPayTier(a.salary) - unifiedPayTier(b.salary) || (a.days ?? 999) - (b.days ?? 999));
   const sourceCounts = {};
   for (const j of jobs) sourceCounts[j.source] = (sourceCounts[j.source] || 0) + 1;
@@ -275,14 +390,14 @@ function writeUnifiedLocalJobs() {
     generatedAt, center: 'Owings Mills, MD 21117',
     scope: '10-mile core plus explicitly labeled Baltimore-area public and university boards',
     payPriority: '$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking',
-    scoring: 'Preliminary metadata score; verify requirements before applying',
+    scoring: 'Preliminary metadata score prioritizing $20+/hour and recent postings; older/continuous/unknown-age and likely advanced classifications are penalized; verify requirements before applying',
     sourceCounts, jobs,
   }, null, 2));
 
   const esc = s => String(s || '').replace(/\|/g, '\\|');
   const md = ['# Unified local job search', '',
     '_Updated ' + generatedAt.slice(0,16).replace('T',' ') + ' UTC · ' + jobs.length + ' deduplicated openings_',
-    '', '10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards. Official/direct listings replace aggregator duplicates. Scores prioritize plausible qualifications, interview likelihood, published pay of $20+/hour, career value, and low overqualification risk.',
+    '', '10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, published pay of $20+/hour, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.',
     '', '## Sources', '', '| Source | Openings |', '|---|---:|',
     ...Object.entries(sourceCounts).sort((a,b)=>b[1]-a[1]).map(([s,n]) => '| ' + esc(s) + ' | ' + n + ' |'),
     '', '## Best matches', '', '| Score | Employer | Role | Location | Pay | Source | Resume | Flags |',
@@ -291,19 +406,35 @@ function writeUnifiedLocalJobs() {
     esc(j.location || j.city || '—') + ' | ' + displayPay(j.salary) + ' | ' + esc(j.source) + ' | ' + j.fit.resume + ' | ' + esc(j.fit.flags.join('; ') || '—') + ' |');
   md.push('', '## Notes', '', '- “Regional” means the board is relevant to the Baltimore-area search but the posting is not verified within 10 road miles.',
     '- State and local government deadlines are preserved in the JSON output.',
+    '- NEOGOV rows without verified coordinates are omitted from radius-limited results.',
+    '- Older continuous postings and unknown-age roles receive recency penalties so fresh openings surface first.',
+    '- Advanced classifications receive a caution penalty even when the title does not explicitly say senior.',
     '- Scores are screening aids, not claims that every minimum qualification is met.');
   writeFileSync(path.join(ROOT, 'unified-local-jobs.md'), md.join('\n'));
   console.log('  unified: ' + jobs.length + ' deduplicated jobs across ' + Object.keys(sourceCounts).length + ' source groups');
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  if (process.argv.includes('--unified-only')) {
+    // Deliberately no network access and no source-store mutation. A thrown
+    // read/write error remains uncaught so CI exits nonzero.
+    writeUnifiedLocalJobs({ strict: true });
+  } else {
   const now = Date.now();
   const all = [];
   const failures = [];
+  const previousRows = (() => {
+    try {
+      const parsed = JSON.parse(readFileSync(DEST, 'utf8'));
+      return Array.isArray(parsed) ? parsed : [];
+    } catch { return []; }
+  })();
+  const successfulAgencies = new Set();
 
   for (const agency of AGENCIES) {
     try {
       const list = await fetchAgency(agency);
+      successfulAgencies.add(agency.slug);
       for (const rec of list) all.push(normalize(rec, agency, now));
       console.log(`  ${agency.slug.padEnd(22)} ${String(list.length).padStart(4)} openings`);
     } catch (err) {
@@ -312,12 +443,38 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     }
   }
 
+  // A source outage must not masquerade as every job at that agency closing.
+  // Retain only the failed agencies' last known records; successful agencies
+  // are always replaced by their fresh result, including a legitimate empty list.
+  for (const agency of AGENCIES.filter((a) => !successfulAgencies.has(a.slug))) {
+    const retained = previousRows
+      .filter((j) => j.agency === agency.slug)
+      .map((j) => {
+        const continuous = j.continuous || String(j.deadline || '').trim().toLowerCase() === 'continuous';
+        const parsedDeadline = continuous ? null : parseMdY(j.deadline, true);
+        const miles = typeof j.miles === 'number' && Number.isFinite(j.miles) ? j.miles : null;
+        return {
+          ...j,
+          continuous,
+          deadlineMs: parsedDeadline ?? (continuous ? null : j.deadlineMs),
+          coordinatesVerified: j.coordinatesVerified ?? (miles !== null),
+          miles,
+          retainedAfterAgencyFailure: true,
+        };
+      });
+    all.push(...retained);
+    if (retained.length) console.log(`  ${agency.slug.padEnd(22)} retained ${retained.length} prior records after failure`);
+  }
+  if (failures.length === AGENCIES.length && previousRows.length === 0) {
+    throw new Error('all NEOGOV agencies failed and no prior store is available; refusing to overwrite with an empty result');
+  }
+
   // A closed posting is a lie on a dashboard, and here the closing date is
   // stated rather than guessed — so drop rather than infer.
   const open = all.filter((j) => j.deadlineMs === null || j.deadlineMs >= now);
   const closed = all.length - open.length;
 
-  const inRange = (j) => j.miles === null || j.miles <= RADIUS;
+  const inRange = (j) => typeof j.miles === 'number' && Number.isFinite(j.miles) && j.miles <= RADIUS;
   const rows = (process.argv.includes('--all') ? open : open.filter(inRange))
     .sort((a, b) => (a.days ?? 9999) - (b.days ?? 9999));
 
@@ -350,5 +507,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       appendToScanHistory(offers, new Date(now).toISOString().slice(0, 10));
       console.log(`  pipeline: +${offers.length} new (${rows.length - offers.length} already seen)`);
     }
+  }
   }
 }
