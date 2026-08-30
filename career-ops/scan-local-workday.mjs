@@ -107,35 +107,122 @@ async function page(tenant, inst, site, offset) {
 }
 
 const MAX_PAGES = Number(cfg.max_pages_per_tenant) > 0 ? Number(cfg.max_pages_per_tenant) : 60;
+const STORE_PATH = path.join(ROOT, 'local-workday-store.json');
+// Preserve unseen records through a short outage, but never indefinitely. At the
+// normal twice-daily cadence, six consecutive degraded runs is about three days.
+const configuredRetention = Number(cfg.max_failed_refresh_retention_runs);
+const MAX_FAILED_REFRESH_RETENTION_RUNS = Number.isFinite(configuredRetention) && configuredRetention > 0
+  ? Math.floor(configuredRetention) : 6;
+
+function readPreviousStore() {
+  try {
+    const parsed = JSON.parse(readFileSync(STORE_PATH, 'utf8'));
+    return Array.isArray(parsed) ? parsed : [];
+  } catch { return []; }
+}
+
+const previous = readPreviousStore();
+const previousBySource = new Map();
+for (const job of previous) {
+  if (!job?.company) continue;
+  const group = previousBySource.get(job.company) || [];
+  group.push(job);
+  previousBySource.set(job.company, group);
+}
+
 const results = [];
 const summary = [];
+const sourceHealth = [];
+
+function withoutRefreshMetadata(job) {
+  const { sourceRefreshStatus, sourceFailureRuns, sourceFailure, ...clean } = job;
+  return clean;
+}
+
+function mergeSource(name, currentJobs, status, reason = '') {
+  if (status === 'success') {
+    results.push(...currentJobs.map(withoutRefreshMetadata));
+    sourceHealth.push({ name, status, current: currentJobs.length, retained: 0, dropped: 0 });
+    return { current: currentJobs.length, retained: 0, dropped: 0 };
+  }
+
+  const seen = new Set(currentJobs.map((job) => job.url).filter(Boolean));
+  results.push(...currentJobs.map((job) => ({
+    ...withoutRefreshMetadata(job),
+    sourceRefreshStatus: 'partial-current',
+    sourceFailureRuns: 0,
+    sourceFailure: reason,
+  })));
+
+  let retained = 0, dropped = 0;
+  for (const old of previousBySource.get(name) || []) {
+    if (old.url && seen.has(old.url)) continue;
+    const failedRuns = (Number(old.sourceFailureRuns) || 0) + 1;
+    if (failedRuns > MAX_FAILED_REFRESH_RETENTION_RUNS) {
+      dropped++;
+      continue;
+    }
+    results.push({
+      ...withoutRefreshMetadata(old),
+      sourceRefreshStatus: 'retained-source-error',
+      sourceFailureRuns: failedRuns,
+      sourceFailure: reason,
+    });
+    retained++;
+  }
+
+  sourceHealth.push({ name, status, current: currentJobs.length, retained, dropped, reason });
+  return { current: currentJobs.length, retained, dropped };
+}
 
 for (const [name, tenant, inst, site] of TENANTS) {
   const first = await page(tenant, inst, site, 0);
-  if (first.err) { summary.push(`${name.padEnd(26)} ERR ${first.err}`); continue; }
+  if (first.err) {
+    const reason = `initial request: ${first.err}`;
+    const merged = mergeSource(name, [], 'failed', reason);
+    const line = `${name.padEnd(26)} FAILED ${reason}; retained ${merged.retained}, expired ${merged.dropped}`;
+    summary.push(line);
+    console.error(line);
+    continue;
+  }
+
   const total = first.total ?? 0;
-  let local = 0, scanned = 0, truncated = false;
-  const pages = Math.min(Math.ceil(total / 20), MAX_PAGES);
-  if (Math.ceil(total / 20) > MAX_PAGES) truncated = true;
+  let local = 0, scanned = 0, pageError = null;
+  const requestedPages = Math.ceil(total / 20);
+  const pages = Math.min(requestedPages, MAX_PAGES);
+  const truncated = requestedPages > MAX_PAGES;
+  const tenantJobs = [];
 
   for (let p = 0; p < pages; p++) {
     const j = p === 0 ? first : await page(tenant, inst, site, p * 20);
-    if (j.err) break;
+    if (j.err) {
+      pageError = `page ${p + 1}/${requestedPages}: ${j.err}`;
+      break;
+    }
     for (const it of j.jobPostings || []) {
       scanned++;
       const loc = it.locationsText || '';
       if (!LOCAL.test(loc)) continue;
       if (FAR_VA.test(loc) && !/,\s*MD\b|Maryland|Baltimore|D\.?C\.?/i.test(loc)) continue;
       local++;
-      results.push({
+      tenantJobs.push({
         company: name, title: it.title, location: loc,
         days: daysAgo(it.postedOn), postedOn: it.postedOn,
         url: `https://${tenant}.${inst}.myworkdayjobs.com/${site}${it.externalPath}`,
       });
     }
   }
-  summary.push(`${name.padEnd(26)} ${String(total).padStart(5)} total  ${String(local).padStart(4)} local${truncated ? '  (TRUNCATED)' : ''}`);
-  console.error(summary[summary.length - 1]);
+
+  const status = pageError ? 'partial' : truncated ? 'truncated' : 'success';
+  const reason = pageError || (truncated ? `page cap ${MAX_PAGES}/${requestedPages}` : '');
+  const merged = mergeSource(name, tenantJobs, status, reason);
+  const health = status === 'success' ? 'OK' : status.toUpperCase();
+  const retention = status === 'success'
+    ? ''
+    : `; retained ${merged.retained}, expired ${merged.dropped}`;
+  const line = `${name.padEnd(26)} ${String(total).padStart(5)} total  ${String(local).padStart(4)} local  ${health}${reason ? ` (${reason})` : ''}${retention}`;
+  summary.push(line);
+  console.error(line);
 }
 
 // Official university boards that are not Workday tenants. These parsers use
@@ -163,10 +250,13 @@ async function scrapeBoard({ name, url, base, hrefPattern, location }) {
         url: absolute, source: 'official university board',
       });
     }
-    summary.push(`${name.padEnd(26)} ${String(found.size).padStart(5)} official-board jobs`);
-    results.push(...found.values());
+    if (found.size === 0) throw new Error('parser returned 0 jobs');
+    const merged = mergeSource(name, [...found.values()], 'success');
+    summary.push(`${name.padEnd(26)} ${String(merged.current).padStart(5)} official-board jobs  OK`);
   } catch (err) {
-    summary.push(`${name.padEnd(26)} BOARD ERR ${err.name === 'AbortError' ? 'timeout' : err.message}`);
+    const reason = err.name === 'AbortError' ? 'timeout' : err.message;
+    const merged = mergeSource(name, [], 'failed', reason);
+    summary.push(`${name.padEnd(26)} BOARD FAILED ${reason}; retained ${merged.retained}, expired ${merged.dropped}`);
   } finally { clearTimeout(timer); }
 }
 
@@ -202,9 +292,15 @@ results.sort((a, b) => (a.days ?? 999) - (b.days ?? 999));
 // able to commit this so results survive between runs the way the Owings Mills
 // store does. Same class of content as owings-mills-store.json — public job
 // postings, no personal data.
-writeFileSync(path.join(ROOT, 'local-workday-store.json'), JSON.stringify(results, null, 2));
+writeFileSync(STORE_PATH, JSON.stringify(results, null, 2));
 
 console.log('\n' + summary.join('\n'));
+const degraded = sourceHealth.filter((source) => source.status !== 'success');
+if (degraded.length) {
+  console.error(`\nDEGRADED REFRESH: ${degraded.length} source(s) incomplete. Previous unseen records are retained for at most ${MAX_FAILED_REFRESH_RETENTION_RUNS} consecutive failed runs.`);
+  for (const source of degraded)
+    console.error(`  - ${source.name}: ${source.status}${source.reason ? ` (${source.reason})` : ''}; current ${source.current}, retained ${source.retained}, expired ${source.dropped}`);
+}
 console.log(`\n${results.length} local postings across ${TENANTS.length} tenants\n`);
 const fresh = results.filter(r => r.days !== null && r.days <= 21);
 console.log(`--- posted within 21 days (${fresh.length}) ---`);
