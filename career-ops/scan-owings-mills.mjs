@@ -44,7 +44,9 @@
 //     the digest rather than under data/ (gitignored), and CI commits it.
 // ---------------------------------------------------------------------------
 import { writeFileSync, mkdirSync } from 'fs';
-import { entries, rotatingWindow, loadSweepState, saveSweepState, staleByLastmod } from './sitemap-sweep.mjs';
+import { entries, rotatingWindow, loadSweepState, saveSweepState, staleByLastmod, assertSweepHelpers } from './sitemap-sweep.mjs';
+
+assertSweepHelpers();
 
 const UA = 'career-ops personal job search (+https://github.com/santifer/career-ops)';
 const SITEMAP_INDEX = 'https://hiringcafe.com/job-posting-sitemap.xml';
@@ -68,11 +70,37 @@ const NEAR = [
   'finksburg', 'woodstock',
 ];
 
-// Senior-level titles — excluded. Deliberately NOT excluding manager/supervisor/
-// lead outright: this is a "anything to get by" net, and shift supervisor or
-// assistant manager roles in retail and food service are realistically gettable.
-// Only genuine seniority markers and high roman numerals are cut.
-const SENIOR_RE = /\b(senior|sr\.?|staff|principal|director|head\s+of|vp|vice\s+president|chief|architect|executive|iii|iv)\b/i;
+// Senior-level titles — excluded. Managers, supervisors and leads are scored
+// cautiously instead of cut: frontline shift/team leadership can be attainable
+// with Darren's retail and food-service background.
+//
+// Context exceptions prevent rank words from misclassifying the population served
+// ("senior living/care") or an attainable support role ("executive assistant").
+// "Staff" is only a senior marker when paired with an advanced technical title;
+// Staff Accountant and ordinary staff roles are not automatically rejected.
+const HARD_SENIOR_RE = /\b(?:senior|sr\.?|principal|director|head\s+of|(?:a|s|e)?vp|vice\s+president|chief|c-?suite|architect|executive|president|iii|iv|v|vi|vii)\b/i;
+const STAFF_TECH_RE = /\bstaff\s+(?:(?:software|data|systems?|technical|information|security|cloud|network|machine\s+learning|ml|ai|product)\s+)*(?:engineer|developer|scientist|architect)\b/i;
+const SENIOR_SERVICE_CONTEXT_RE = /\bsenior\s+(?:living|care|community|services?|companion|citizen)\b/gi;
+const EXECUTIVE_ASSISTANT_RE = /\bexecutive\s+(?:administrative\s+)?assistant\b/gi;
+const isSeniorTitle = (title) => {
+  const contextStripped = String(title || '')
+    .replace(SENIOR_SERVICE_CONTEXT_RE, '')
+    .replace(EXECUTIVE_ASSISTANT_RE, 'assistant');
+  return HARD_SENIOR_RE.test(contextStripped) || STAFF_TECH_RE.test(contextStripped);
+};
+
+for (const [title, expected] of [
+  ['Senior Software Engineer', true],
+  ['Staff Data Engineer', true],
+  ['Assistant Director', true],
+  ['Retail Shift Lead', false],
+  ['Assistant Store Manager', false],
+  ['Executive Assistant', false],
+  ['Senior Living Companion', false],
+  ['Staff Accountant', false],
+]) {
+  if (isSeniorTitle(title) !== expected) throw new Error(`seniority policy invariant failed: ${title}`);
+}
 
 // Clinical roles — excluded. Scoped to the WORK being medical, not the employer:
 // a hospital cafeteria or housekeeping job is exactly the kind of "get by" work
@@ -133,31 +161,61 @@ const store = loadSweepState(STORE_PATH);
 // as well as on capture (see below), so tightening one takes effect on entries
 // already in the store instead of waiting for them to be re-swept.
 const RENDER_ONLY = process.argv.includes('--render-only');
-const run = RENDER_ONLY ? store.run : store.run + 1;
+let run = store.run;
 
 /* ------------------------------------------------------- rotating sweep */
 
 const chunkEntries = RENDER_ONLY ? [] : entries(await get(SITEMAP_INDEX));
+if (!RENDER_ONLY && chunkEntries.length === 0) {
+  throw new Error('HiringCafe sitemap index returned no chunks; refusing to advance sweep state');
+}
 const chunkCount = chunkEntries.length || store.chunkCount || 0;
-const { window, cursor, nextCursor } = rotatingWindow(chunkEntries, store.cursor, WINDOW_CHUNKS);
+const { window, cursor, nextCursor: proposedNextCursor } = rotatingWindow(chunkEntries, store.cursor, WINDOW_CHUNKS);
+let nextCursor = cursor;
 const cycleRuns = Math.max(1, Math.ceil((chunkCount || WINDOW_CHUNKS) / WINDOW_CHUNKS));
 
 const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
 
 const stats = {
   chunkCount, windowStart: cursor, windowSize: window.length, cycleRuns, run,
+  chunksSucceeded: 0, chunksFailed: 0, cursorAdvanced: 0, sweepCompleted: RENDER_ONLY,
   urlsScanned: 0, areaMatches: 0, skippedByLastmod: 0,
-  fetched: 0, senior: 0, medical: 0, stale: 0, offArea: 0,
+  fetched: 0, detailFetchFailed: 0, senior: 0, medical: 0, stale: 0, offArea: 0,
   newThisRun: 0, refreshed: 0, expiredAge: 0, expiredUnseen: 0, refiltered: 0,
   duplicatesCollapsed: 0, kept: 0,
 };
 
-const chunkLists = await pooled(window, 4, async (c) => {
-  try { return entries(await get(c)); } catch { return []; }
+const chunkResults = await pooled(window, 4, async (url) => {
+  try {
+    return { url, ok: true, list: entries(await get(url)), error: null };
+  } catch (error) {
+    return { url, ok: false, list: [], error: error instanceof Error ? error.message : String(error) };
+  }
 });
+const firstFailed = chunkResults.findIndex(r => !r.ok);
+const successfulPrefix = firstFailed < 0 ? window.length : firstFailed;
+stats.chunksSucceeded = chunkResults.filter(r => r.ok).length;
+stats.chunksFailed = chunkResults.length - stats.chunksSucceeded;
+stats.cursorAdvanced = successfulPrefix;
+stats.sweepCompleted = !RENDER_ONLY && stats.chunksFailed === 0;
+if (RENDER_ONLY) {
+  nextCursor = store.cursor;
+} else if (stats.sweepCompleted) {
+  nextCursor = proposedNextCursor;
+  run = store.run + 1;
+} else {
+  // Advance only across the contiguous successful prefix. The first failed
+  // chunk becomes the next cursor, so an outage cannot silently create a hole.
+  nextCursor = chunkCount ? (cursor + successfulPrefix) % chunkCount : cursor;
+  console.warn(`HiringCafe chunk sweep incomplete: ${stats.chunksFailed} of ${window.length} chunks failed; cursor advances ${successfulPrefix} chunks and unseen-expiry is paused.`);
+  for (const failed of chunkResults.filter(r => !r.ok).slice(0, 5)) {
+    console.warn(`  ${failed.url}: ${failed.error}`);
+  }
+}
+stats.run = run;
 
 const candidates = [];
-for (const list of chunkLists) {
+for (const { list } of chunkResults) {
   stats.urlsScanned += list.length;
   for (const { loc, lastmod } of list) {
     const slug = loc.slice(loc.lastIndexOf('/') + 1);
@@ -176,12 +234,18 @@ const seen = new Set();
 const fresh = candidates.filter(u => !seen.has(u) && seen.add(u)).slice(0, MAX_DETAILS);
 
 const rows = await pooled(fresh, CONCURRENCY, async (url) => {
-  let p; try { p = jobPosting(await get(url)); } catch { return null; }
+  let p;
+  try {
+    p = jobPosting(await get(url));
+  } catch {
+    stats.detailFetchFailed++;
+    return null;
+  }
   if (!p || typeof p.title !== 'string') return null;
   stats.fetched++;
 
   const title = p.title.trim();
-  if (SENIOR_RE.test(title)) { stats.senior++; return null; }
+  if (isSeniorTitle(title)) { stats.senior++; return null; }
   if (MEDICAL_RE.test(title)) { stats.medical++; return null; }
 
   const posted = Date.parse(p.datePosted || '');
@@ -227,11 +291,11 @@ for (const [url, j] of Object.entries(jobs)) {
   if (Number.isFinite(posted) && posted < cutoff) { delete jobs[url]; stats.expiredAge++; continue; }
   // Only a real sweep can refresh lastSeenRun, so --render-only must never
   // expire on absence — it saw nothing by construction.
-  if (!RENDER_ONLY && run - (j.lastSeenRun ?? run) > unseenLimit) { delete jobs[url]; stats.expiredUnseen++; continue; }
+  if (!RENDER_ONLY && stats.sweepCompleted && run - (j.lastSeenRun ?? run) > unseenLimit) { delete jobs[url]; stats.expiredUnseen++; continue; }
   // Re-apply the title filters on read. Capture-time filtering alone would let
   // anything admitted under an older, looser pattern sit in the store forever —
   // which is how nine BCBA roles survived a medical exclusion.
-  if (SENIOR_RE.test(j.title) || MEDICAL_RE.test(j.title)) { delete jobs[url]; stats.refiltered++; }
+  if (isSeniorTitle(j.title) || MEDICAL_RE.test(j.title)) { delete jobs[url]; stats.refiltered++; }
 }
 
 // hiring.cafe carries the same opening at several URLs (measured: 88 redundant
@@ -277,14 +341,16 @@ const ROLE = {
   office: /\b(administrative|office|reception|front desk|dispatcher|call center|coordinator|specialist|assistant|customer service|customer experience|guest services?|service advisor)\b/i,
   frontline: /\b(cashier|retail|sales associate|team member|crew member|hospitality|food service|server|cook|stock|merchandis|warehouse|deli|produce|grocery|valet)\b/i,
   credential: /\b(cdl|driver|electrician|hvac|plumber|machinist|mechanic|engineer|teacher|counselor|social worker|security officer|armed|inspector|technologist)\b/i,
-  leadership: /\b(manager|supervisor|director|lead|general manager|site manager)\b/i,
+  leadership: /\b(manager|supervisor|lead|leader|general manager|site manager)\b/i,
 };
+const FRONTLINE_LEADERSHIP_RE = /\b(?:assistant|associate)\s+(?:(?:store|department|restaurant)\s+)?manager\b|\b(?:shift|team|crew|front[- ]?end|department|retail|food(?:\s+service)?|stock(?:ing)?(?:\s+team)?|warehouse)\s+(?:lead(?:er)?|supervisor|manager)\b|\b(?:lead|head)\s+(?:cashier|associate|team\s+member|crew\s+member|server|cook|barista|stock(?:ing)?|warehouse)\b/i;
 const clamp = n => Math.max(0, Math.min(100, Math.round(n)));
 const scoreJob = (job) => {
   const t = job.title || '';
   const technical = ROLE.technical.test(t);
   const office = ROLE.office.test(t);
-  const frontline = ROLE.frontline.test(t);
+  const frontlineLeadership = FRONTLINE_LEADERSHIP_RE.test(t);
+  const frontline = ROLE.frontline.test(t) || frontlineLeadership;
   const credential = ROLE.credential.test(t);
   const leadership = ROLE.leadership.test(t);
   let qualification = technical ? 80 : office ? 86 : frontline ? 90 : 62;
@@ -296,7 +362,11 @@ const scoreJob = (job) => {
     qualification -= 35; interview -= 30; careerValue -= 15; resume = 'Review';
   }
   if (leadership) {
-    qualification -= 22; interview -= 20;
+    // Frontline shift/team leads and assistant store managers are plausible
+    // reaches; broader management titles still get a substantial caution.
+    const penalty = frontlineLeadership ? 8 : 22;
+    qualification -= penalty;
+    interview -= frontlineLeadership ? 7 : 20;
     if (!technical) careerValue += 5;
   }
   const tier = payRank(job.salary);
@@ -311,7 +381,7 @@ const scoreJob = (job) => {
   );
   const flags = [];
   if (credential) flags.push('credential/skill check');
-  if (leadership) flags.push('leadership experience check');
+  if (leadership) flags.push(frontlineLeadership ? 'frontline leadership check' : 'leadership experience check');
   if (tier === 2) flags.push('pay undisclosed');
   if (tier === 3) flags.push('published pay below $20');
   return {
@@ -320,6 +390,15 @@ const scoreJob = (job) => {
     confidence: 'preliminary — title/pay metadata', flags,
   };
 };
+
+const cashierCheck = scoreJob({ title: 'Retail Cashier', salary: null });
+const shiftLeadCheck = scoreJob({ title: 'Retail Shift Lead', salary: null });
+const storeManagerCheck = scoreJob({ title: 'Retail Store Manager', salary: null });
+if (shiftLeadCheck.qualification < cashierCheck.qualification - 10
+    || storeManagerCheck.qualification >= shiftLeadCheck.qualification) {
+  throw new Error('frontline leadership scoring invariant failed');
+}
+
 const kept = [...byOpening.values()]
   .map(j => ({ ...j, fit: scoreJob(j) }))
   .sort((a, b) =>
@@ -339,14 +418,17 @@ writeFileSync('data/owings-mills.json', JSON.stringify({
   payPriority: 'Published ranges starting at $20+/hr first; then ranges reaching $20; unknown pay; below $20',
   fitScoring: '0-100 preliminary metadata score: qualification, interview likelihood, pay, career value, overqualification risk',
   towns: NEAR,
-  excluded: ['senior/lead/management titles', 'medical & clinical titles'],
+  excluded: ['genuinely senior/executive titles (frontline leads and assistant managers are retained but scored cautiously)', 'medical & clinical titles'],
   maxAgeDays: MAX_AGE_DAYS,
   coverage: {
     mode: 'rotating window with accumulation',
     chunksPerRun: window.length,
+    chunksSucceeded: stats.chunksSucceeded,
+    chunksFailed: stats.chunksFailed,
     chunksTotal: chunkCount,
     runsPerFullCycle: cycleRuns,
     windowStart: cursor,
+    nextWindowStart: nextCursor,
   },
   stats,
   jobs: kept,
@@ -372,7 +454,7 @@ const md = [
   '',
   'Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept. Within each town, jobs with published pay starting at $20+/hour are listed first, followed by ranges that can reach $20, unknown-pay roles, and lower-paying roles.',
   '',
-  `Coverage: each run reads ${window.length} of ${chunkCount} sitemap chunks, rotating, so a full pass takes ${cycleRuns} runs (~${(cycleRuns / 2).toFixed(1)} days at twice daily). Listings accumulate across runs and drop out once they age past ${MAX_AGE_DAYS} days or go unseen for two full passes.`,
+  `Coverage: this attempt read ${stats.chunksSucceeded} of ${window.length} sitemap chunks successfully, rotating across ${chunkCount} total chunks; a clean full pass takes ${cycleRuns} completed windows (~${(cycleRuns / 2).toFixed(1)} days at twice daily). Failed chunks are retried from the first gap, and unseen-expiry pauses on incomplete windows. Listings drop once they age past ${MAX_AGE_DAYS} days or go unseen for two full clean passes.`,
   '',
 ];
 md.push('## Best matches overall', '', '| Score | Employer | Role | Pay | Resume | Flags |', '|---:|---|---|---|---|---|');
@@ -396,3 +478,7 @@ console.log(window.length
   ? `\nwindow ${cursor}..${(cursor + window.length - 1) % chunkCount} of ${chunkCount} chunks · run ${run} · full pass every ${cycleRuns} runs`
   : `\nrender-only from stored state · run ${run} · ${chunkCount} chunks · full pass every ${cycleRuns} runs`);
 console.log(`store now holds ${kept.length} local jobs (+${stats.newThisRun} new, -${stats.expiredAge + stats.expiredUnseen} expired)`);
+
+// Preserve the successfully processed prefix, but surface an incomplete window
+// to CI so the run cannot be reported as a clean refresh.
+if (!RENDER_ONLY && stats.chunksFailed > 0) process.exitCode = 1;
