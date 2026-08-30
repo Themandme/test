@@ -71,6 +71,9 @@ const DEFAULT_AGENCIES = [
 // Owings Mills, MD 21117.
 const DEFAULT_HOME = { lat: 39.4196, lon: -76.7802 };
 const DEFAULT_RADIUS_MILES = 45;
+// At the scheduled twice-daily cadence this tolerates about three days of an
+// agency outage without allowing stale continuous postings to persist forever.
+const MAX_RETAINED_FAILURE_RUNS = 6;
 
 const PORTALS = process.env.CAREER_OPS_PORTALS || path.join(ROOT, 'portals.yml');
 const cfg = (() => {
@@ -186,6 +189,8 @@ export function normalize(rec, agency, now = Date.now()) {
     department: rec.DepartmentName || null,
     categories: Array.isArray(rec.Categories) ? rec.Categories : [],
     salary: rec.IsSalaryVisible === false ? null : parseSalary(rec.SalaryInfo),
+    sourceFailureRuns: 0,
+    retainedAfterAgencyFailure: false,
     coordinatesVerified: hasCoords,
     miles: hasCoords ? Math.round(milesBetween(HOME, { lat, lon }) * 10) / 10 : null,
   };
@@ -447,8 +452,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   // Retain only the failed agencies' last known records; successful agencies
   // are always replaced by their fresh result, including a legitimate empty list.
   for (const agency of AGENCIES.filter((a) => !successfulAgencies.has(a.slug))) {
-    const retained = previousRows
-      .filter((j) => j.agency === agency.slug)
+    const candidates = previousRows.filter((j) => j.agency === agency.slug);
+    const retained = candidates
       .map((j) => {
         const continuous = j.continuous || String(j.deadline || '').trim().toLowerCase() === 'continuous';
         const parsedDeadline = continuous ? null : parseMdY(j.deadline, true);
@@ -460,13 +465,18 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
           days: Number.isFinite(Number(j.postedAtMs))
             ? Math.max(0, Math.round((now - Number(j.postedAtMs)) / 86400000))
             : null,
+          sourceFailureRuns: Math.max(0, Number(j.sourceFailureRuns) || 0) + 1,
           coordinatesVerified: miles !== null,
           miles,
           retainedAfterAgencyFailure: true,
         };
-      });
+      })
+      .filter((j) => j.sourceFailureRuns <= MAX_RETAINED_FAILURE_RUNS);
+    const expired = candidates.length - retained.length;
     all.push(...retained);
-    if (retained.length) console.log(`  ${agency.slug.padEnd(22)} retained ${retained.length} prior records after failure`);
+    if (retained.length || expired) {
+      console.log(`  ${agency.slug.padEnd(22)} retained ${retained.length} prior records after failure; expired ${expired} after ${MAX_RETAINED_FAILURE_RUNS} degraded runs`);
+    }
   }
   if (failures.length === AGENCIES.length && previousRows.length === 0) {
     throw new Error('all NEOGOV agencies failed and no prior store is available; refusing to overwrite with an empty result');
