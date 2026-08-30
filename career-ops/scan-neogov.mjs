@@ -457,7 +457,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
           ...j,
           continuous,
           deadlineMs: parsedDeadline ?? (continuous ? null : j.deadlineMs),
-          coordinatesVerified: j.coordinatesVerified ?? (miles !== null),
+          days: Number.isFinite(Number(j.postedAtMs))
+            ? Math.max(0, Math.round((now - Number(j.postedAtMs)) / 86400000))
+            : null,
+          coordinatesVerified: miles !== null,
           miles,
           retainedAfterAgencyFailure: true,
         };
