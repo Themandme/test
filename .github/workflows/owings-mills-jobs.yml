@@ -1,8 +1,9 @@
 name: Owings Mills jobs
 
-# Twice daily, 7:23am and 5:23pm US Eastern (EDT = UTC-4).
-# Off-the-hour on purpose: :00 and :30 are the busiest slots on GitHub's
-# shared schedulers and get queued the longest.
+# Twice daily at 11:23 and 21:23 UTC. That is 7:23am/5:23pm while US Eastern
+# observes daylight time, and 6:23am/4:23pm during standard time. GitHub Actions
+# cron is UTC-only; keeping one stable UTC schedule avoids duplicate seasonal runs.
+# Off-the-hour on purpose: :00 and :30 are the busiest shared scheduler slots.
 on:
   schedule:
     - cron: '23 11 * * *'
@@ -19,7 +20,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 120    # manual catch-up runs eight windows; schedule runs one
+    timeout-minutes: 120    # manual catch-up runs one dynamically sized full cycle
 
     steps:
       - uses: actions/checkout@v4
@@ -44,22 +45,38 @@ jobs:
         run: npm install --ignore-scripts --no-audit --no-fund
 
       - name: Scan scheduled local-job window
+        id: hiringcafe_scheduled
         if: github.event_name == 'schedule'
         working-directory: career-ops
+        continue-on-error: true
         # No NODE_USE_ENV_PROXY here: that is only needed inside the Claude Code
         # sandbox, whose proxy Node's fetch ignores. GitHub runners reach the
         # network directly.
         run: node scan-owings-mills.mjs
 
       - name: One-time full HiringCafe catch-up
+        id: hiringcafe_catchup
         if: github.event_name == 'workflow_dispatch'
         working-directory: career-ops
-        # Eight 60-chunk windows cover the roughly 480-chunk sitemap. Each
-        # invocation persists and advances the cursor before the next starts,
-        # so memory and request concurrency stay identical to a normal run.
+        continue-on-error: true
+        # The first 60-chunk pass reads the current sitemap and persists its
+        # calculated cycle length. The remaining loop uses that value, so a
+        # 483-chunk sitemap runs nine passes rather than stopping after eight.
+        # Each invocation persists and advances the cursor before the next.
         run: |
-          for pass in 1 2 3 4 5 6 7 8; do
-            echo "Full-cycle pass $pass of 8"
+          echo "Full-cycle pass 1 (discovering current cycle length)"
+          node scan-owings-mills.mjs
+          total_passes=$(node --input-type=module -e "
+            import { readFileSync } from 'node:fs';
+            const state = JSON.parse(readFileSync('owings-mills-store.json', 'utf8'));
+            if (!Number.isInteger(state.cycleRuns) || state.cycleRuns < 1) {
+              throw new Error('owings-mills-store.json has no valid cycleRuns');
+            }
+            process.stdout.write(String(state.cycleRuns));
+          ")
+          echo "Current sitemap requires $total_passes total 60-chunk passes"
+          for ((pass = 2; pass <= total_passes; pass++)); do
+            echo "Full-cycle pass $pass of $total_passes"
             node scan-owings-mills.mjs
           done
 
@@ -94,7 +111,16 @@ jobs:
         continue-on-error: true
         run: node scan-neogov.mjs
 
+      - name: Rebuild unified scored list
+        id: unified
+        working-directory: career-ops
+        # Always render after every source has had its turn. This keeps the
+        # unified files current even when NEOGOV itself fails but another source
+        # succeeds. --unified-only performs no network requests or store writes.
+        run: node scan-neogov.mjs --unified-only
+
       - name: Commit the digest and sweep state
+        id: commit
         working-directory: career-ops
         # The store carries the rotating window's cursor and the accumulated
         # listings, so it MUST be committed — without it every run restarts at
@@ -116,6 +142,7 @@ jobs:
           git push
 
       - name: Summary
+        if: steps.unified.outcome == 'success' && steps.commit.outcome == 'success'
         working-directory: career-ops
         run: |
           {
@@ -126,32 +153,48 @@ jobs:
             echo "See \`career-ops/unified-local-jobs.md\` for the deduplicated scored list."
           } >> "$GITHUB_STEP_SUMMARY"
 
-      # `continue-on-error` above keeps one broken source from stopping the
-      # others or blocking the commit — but on its own it also turned a run in
-      # which every sweep died into a green tick. This reports each outcome and
-      # then fails the run, so the commit still lands and the breakage is still
-      # visible.
-      - name: Report sweep outcomes
+      # `continue-on-error` lets healthy sources finish and commit even when one
+      # source fails. The final check reports the selected HiringCafe mode plus
+      # every downstream stage, and treats skipped/cancelled steps as incomplete
+      # rather than silently calling the workflow successful.
+      - name: Report workflow outcomes
         if: always()
         env:
+          EVENT_NAME: ${{ github.event_name }}
+          HIRINGCAFE_SCHEDULED: ${{ steps.hiringcafe_scheduled.outcome }}
+          HIRINGCAFE_CATCHUP: ${{ steps.hiringcafe_catchup.outcome }}
           WORKDAY: ${{ steps.workday.outcome }}
           MDGOV: ${{ steps.mdgov.outcome }}
           NEOGOV: ${{ steps.neogov.outcome }}
+          UNIFIED: ${{ steps.unified.outcome }}
+          COMMIT: ${{ steps.commit.outcome }}
         run: |
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            hiringcafe_label="HiringCafe scheduled window"
+            hiringcafe_outcome="$HIRINGCAFE_SCHEDULED"
+          else
+            hiringcafe_label="HiringCafe full catch-up"
+            hiringcafe_outcome="$HIRINGCAFE_CATCHUP"
+          fi
           {
             echo
-            echo "| Sweep | Outcome |"
+            echo "| Stage | Outcome |"
             echo "|---|---|"
+            echo "| $hiringcafe_label | $hiringcafe_outcome |"
             echo "| Local Workday tenants | $WORKDAY |"
             echo "| Maryland state (JobAps) | $MDGOV |"
             echo "| County/city gov (NEOGOV) | $NEOGOV |"
+            echo "| Unified scored list | $UNIFIED |"
+            echo "| Commit refreshed data | $COMMIT |"
           } >> "$GITHUB_STEP_SUMMARY"
-          failed=""
-          for pair in "Workday:$WORKDAY" "JobAps:$MDGOV" "NEOGOV:$NEOGOV"; do
-            [ "${pair#*:}" = "failure" ] && failed="$failed ${pair%%:*}"
+          incomplete=""
+          for pair in             "HiringCafe:$hiringcafe_outcome"             "Workday:$WORKDAY"             "JobAps:$MDGOV"             "NEOGOV:$NEOGOV"             "Unified:$UNIFIED"             "Commit:$COMMIT"
+          do
+            outcome="${pair#*:}"
+            [ "$outcome" = "success" ] || incomplete="$incomplete ${pair%%:*}($outcome)"
           done
-          if [ -n "$failed" ]; then
-            echo "::error::sweeps failed:$failed — their stores were not refreshed this run"
+          if [ -n "$incomplete" ]; then
+            echo "::error::incomplete workflow stages:$incomplete"
             exit 1
           fi
-          echo "All sweeps completed."
+          echo "All workflow stages completed successfully."
