@@ -60,7 +60,8 @@
     "build:dashboard": "node build-dashboard.mjs",
     "serve:dashboard": "cd dashboard && go run . --path ..",
     "postinstall": "npx playwright install chromium --with-deps || npx playwright install chromium --with-deps",
-    "manifesto": "node manifesto.mjs"
+    "manifesto": "node manifesto.mjs",
+    "test:local-scanners": "node --test tests/sitemap-sweep.test.mjs tests/local-scanners.test.mjs"
   },
   "keywords": [
     "ai",
