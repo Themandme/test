@@ -63,17 +63,73 @@ const unescapeHtml = (s) => String(s)
 const plain = (s) => unescapeHtml(s).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
 const INTERNAL_ONLY_PATTERNS = [
-  /internal recruitment/i,
-  /internal-only/i,
-  /limited to current (?:state|maryland|department)/i,
-  /only current (?:state|maryland|department).*employees/i,
-  /current (?:state of maryland|maryland state|department).*employees only/i,
+  // JobAps announcements are written by many agencies, so wording and even
+  // spelling vary. Keep these patterns narrow enough not to match boilerplate
+  // such as "current State employees do not need to submit...".
+  /\binternal[\s-]+(?:only[\s-]+)?recruitment\b/i,
+  /\bthis\s+re\w*ment\s+(?:is\s+)?(?:open\s+)?(?:only\s+)?(?:to|for)\s+(?:only\s+)?current\s+[^.]{0,140}\bemployees?\b/i,
+  /\b(?:you\s+)?must\s+be\s+(?:an?\s+)?current\s+[^.]{0,100}\bemployees?\b/i,
+  /\b(?:limited|restricted)\s+(?:only\s+)?(?:to|for)\s+(?:only\s+)?current\s+[^.]{0,120}\bemployees?\b/i,
+  /\bonly\s+(?:open|available)\s+to\s+current\s+[^.]{0,120}\bemployees?\b/i,
+  /\bcurrent\s+(?:state|maryland|department|agency|[a-z]{2,10})\b[^.]{0,100}\bemployees?\s+only\b/i,
 ];
 
 export function internalRestriction(html) {
   const text = plain(html);
   const pattern = INTERNAL_ONLY_PATTERNS.find((re) => re.test(text));
   return pattern ? 'Internal recruitment — current employees only' : null;
+}
+
+const normalizeReqId = (value) => String(value || '').trim().toUpperCase();
+
+export function eligibilityFromHtml(html, { reqId = null } = {}) {
+  const text = plain(html);
+  const pageReq = text.match(/\bRecruitment\s*#\s*([\w-]+)/i)?.[1] || null;
+
+  // A 200 response can still be a JobAps error/login page. Never treat the
+  // absence of an internal-only phrase as proof that such a response is public.
+  if (!pageReq) {
+    return { status: 'unverified', restriction: null, detail: 'missing recruitment marker' };
+  }
+  if (reqId && normalizeReqId(pageReq) !== normalizeReqId(reqId)) {
+    return {
+      status: 'unverified',
+      restriction: null,
+      detail: `recruitment mismatch (expected ${reqId}, got ${pageReq})`,
+    };
+  }
+
+  const missingMarkers = ['Filing Deadline', 'Work Location']
+    .filter((marker) => !text.toLowerCase().includes(marker.toLowerCase()));
+  if (missingMarkers.length || !/\b(?:MINIMUM QUALIFICATIONS|Main Purpose of Job|POSITION DUTIES)\b/i.test(text)) {
+    return {
+      status: 'unverified',
+      restriction: null,
+      detail: `incomplete announcement markers${missingMarkers.length ? `: ${missingMarkers.join(', ')}` : ''}`,
+    };
+  }
+
+  const restriction = internalRestriction(text);
+  if (restriction) return { status: 'internal', restriction, detail: null };
+  return { status: 'public', restriction: null, detail: null };
+}
+
+export function runEligibilitySelfChecks() {
+  const page = (reqId, body = '') =>
+    `<h1>Job Announcement</h1> Recruitment #${reqId} Filing Deadline Work Location MINIMUM QUALIFICATIONS ${body}`;
+  const cases = [
+    [Boolean(internalRestriction('THIS RECURITMENT IS FOR CURRENT MARYLAND DEPARTMENT OF LABOR EMPLOYEES.')), true, 'misspelled recruitment notice'],
+    [Boolean(internalRestriction('You must be a current SDAT employee.')), true, 'agency employee limitation'],
+    [Boolean(internalRestriction('Permanent State employees do not need to submit proof of Veterans status.')), false, 'employee boilerplate'],
+    [eligibilityFromHtml(page('26-1', 'Open to all qualified applicants.'), { reqId: '26-1' }).status, 'public', 'public announcement'],
+    [eligibilityFromHtml(page('26-1', 'You must be a current SDAT employee.'), { reqId: '26-1' }).status, 'internal', 'internal announcement'],
+    [eligibilityFromHtml('<html>Internal Server Error</html>', { reqId: '26-1' }).status, 'unverified', 'error page'],
+    [eligibilityFromHtml(page('26-2'), { reqId: '26-1' }).status, 'unverified', 'mismatched announcement'],
+  ];
+  for (const [actual, expected, label] of cases) {
+    if (actual !== expected) throw new Error(`eligibility self-check failed: ${label}; expected ${expected}, got ${actual}`);
+  }
+  return cases.length;
 }
 
 async function mapLimit(items, limit, fn) {
@@ -88,15 +144,31 @@ async function mapLimit(items, limit, fn) {
   return out;
 }
 
+const unverifiedEligibility = (job, detail) => ({
+  ...job,
+  restricted: null,
+  restriction: null,
+  eligibilityStatus: 'unverified',
+  eligibilityCheck: detail,
+});
+
 async function checkEligibility(job) {
-  if (!job.url) return job;
+  if (!job.url) return unverifiedEligibility(job, 'missing detail URL');
   try {
     const res = await fetch(job.url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-    if (!res.ok) return { ...job, eligibilityCheck: `HTTP ${res.status}` };
-    const restriction = internalRestriction(await res.text());
-    return { ...job, restricted: Boolean(restriction), restriction, eligibilityCheck: 'checked' };
+    if (!res.ok) return unverifiedEligibility(job, `HTTP ${res.status}`);
+    const assessment = eligibilityFromHtml(await res.text(), { reqId: job.reqId });
+    return {
+      ...job,
+      restricted: assessment.status === 'internal',
+      restriction: assessment.restriction,
+      eligibilityStatus: assessment.status,
+      eligibilityCheck: assessment.status === 'unverified'
+        ? `unverified: ${assessment.detail}`
+        : 'checked',
+    };
   } catch (err) {
-    return { ...job, eligibilityCheck: `unavailable: ${err.message}` };
+    return unverifiedEligibility(job, `unavailable: ${err.message}`);
   }
 }
 
@@ -163,6 +235,11 @@ export function parseItem(block, now = new Date()) {
 export const isLocalCounty = (loc, counties = COUNTIES) =>
   counties.some((c) => String(loc || '').toLowerCase().includes(c.toLowerCase()));
 
+if (process.argv.includes('--self-test')) {
+  console.log(`eligibility self-checks passed: ${runEligibilitySelfChecks()}`);
+  process.exit(0);
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const res = await fetch(FEED, { headers: { 'User-Agent': 'Mozilla/5.0' } });
   if (!res.ok) { console.error(`JobAps feed returned HTTP ${res.status}`); process.exit(1); }
@@ -175,13 +252,25 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const closed = all.length - open.length;
   const candidates = process.argv.includes('--all') ? open : open.filter((j) => isLocalCounty(j.location));
   const checked = await mapLimit(candidates, 6, checkEligibility);
-  const restricted = checked.filter((j) => j.restricted);
-  const rows = checked.filter((j) => !j.restricted)
+  const restricted = checked.filter((j) => j.eligibilityStatus === 'internal');
+  const unverified = checked.filter((j) => j.eligibilityStatus === 'unverified');
+  const verified = checked.length - unverified.length;
+
+  // A broad JobAps outage or markup change must not replace a healthy store
+  // with a nearly empty one. Individual unverifiable rows fail closed; a batch
+  // failure aborts before writing so the last successful store remains intact.
+  if (checked.length && (verified === 0 || unverified.length / checked.length > 0.25)) {
+    throw new Error(
+      `eligibility verification failed for ${unverified.length}/${checked.length} candidates; preserving previous store`,
+    );
+  }
+
+  const rows = checked.filter((j) => j.eligibilityStatus === 'public')
     .sort((a, b) => (a.days ?? 9999) - (b.days ?? 9999));
 
   writeFileSync(DEST, JSON.stringify(rows, null, 2));
   console.log(`wrote ${DEST}`);
-  console.log(`  feed=${all.length} open=${open.length} (${closed} past their filing deadline) kept=${rows.length} internal-only excluded=${restricted.length}`);
+  console.log(`  feed=${all.length} open=${open.length} (${closed} past their filing deadline) kept=${rows.length} internal-only excluded=${restricted.length} unverified excluded=${unverified.length}`);
   console.log(`  with salary=${rows.filter((r) => r.salary).length} | opened within 21d=${rows.filter((r) => r.days !== null && r.days <= 21).length}`);
 
   if (process.argv.includes('--pipeline')) {
