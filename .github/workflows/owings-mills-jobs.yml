@@ -20,7 +20,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 120    # manual catch-up runs one dynamically sized full cycle
+    timeout-minutes: 120    # complete structured HiringCafe search plus downstream sources
 
     steps:
       - uses: actions/checkout@v4
@@ -44,41 +44,23 @@ jobs:
         working-directory: career-ops
         run: npm install --ignore-scripts --no-audit --no-fund
 
-      - name: Scan scheduled local-job window
+      - name: Scan complete HiringCafe 10-mile radius
         id: hiringcafe_scheduled
         if: github.event_name == 'schedule'
         working-directory: career-ops
         continue-on-error: true
-        # No NODE_USE_ENV_PROXY here: that is only needed inside the Claude Code
-        # sandbox, whose proxy Node's fetch ignores. GitHub runners reach the
-        # network directly.
-        run: node scan-owings-mills.mjs
+        run: |
+          node --test tests/hiringcafe-full.test.mjs
+          node scan-hiringcafe-full.mjs
 
-      - name: One-time full HiringCafe catch-up
+      - name: On-demand complete HiringCafe 10-mile radius
         id: hiringcafe_catchup
         if: github.event_name == 'workflow_dispatch'
         working-directory: career-ops
         continue-on-error: true
-        # The first 60-chunk pass reads the current sitemap and persists its
-        # calculated cycle length. The remaining loop uses that value, so a
-        # 483-chunk sitemap runs nine passes rather than stopping after eight.
-        # Each invocation persists and advances the cursor before the next.
         run: |
-          echo "Full-cycle pass 1 (discovering current cycle length)"
-          node scan-owings-mills.mjs
-          total_passes=$(node --input-type=module -e "
-            import { readFileSync } from 'node:fs';
-            const state = JSON.parse(readFileSync('owings-mills-store.json', 'utf8'));
-            if (!Number.isInteger(state.cycleRuns) || state.cycleRuns < 1) {
-              throw new Error('owings-mills-store.json has no valid cycleRuns');
-            }
-            process.stdout.write(String(state.cycleRuns));
-          ")
-          echo "Current sitemap requires $total_passes total 60-chunk passes"
-          for ((pass = 2; pass <= total_passes; pass++)); do
-            echo "Full-cycle pass $pass of $total_passes"
-            node scan-owings-mills.mjs
-          done
+          node --test tests/hiringcafe-full.test.mjs
+          node scan-hiringcafe-full.mjs
 
       - name: Sweep the local Workday tenants
         id: workday
@@ -138,8 +120,9 @@ jobs:
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
           # Concurrent-safe: another run (or a push from a session) may have
           # landed first, and this job's only local commit is the one above.
-          git pull --rebase --autostash origin main
-          git push
+          branch="${GITHUB_REF_NAME}"
+          git pull --rebase --autostash origin "$branch"
+          git push origin "HEAD:$branch"
 
       - name: Summary
         if: steps.unified.outcome == 'success' && steps.commit.outcome == 'success'
@@ -170,7 +153,7 @@ jobs:
           COMMIT: ${{ steps.commit.outcome }}
         run: |
           if [ "$EVENT_NAME" = "schedule" ]; then
-            hiringcafe_label="HiringCafe scheduled window"
+            hiringcafe_label="HiringCafe complete radius scan"
             hiringcafe_outcome="$HIRINGCAFE_SCHEDULED"
           else
             hiringcafe_label="HiringCafe full catch-up"
