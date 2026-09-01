@@ -1,8 +1,8 @@
 {
   "note": "Rotating sitemap sweep state. Safe to delete; costs one cycle to rebuild.",
-  "updatedAt": "2026-08-31T18:01:47.978Z",
-  "cursor": 210,
-  "run": 67,
+  "updatedAt": "2026-09-01T00:41:06.280Z",
+  "cursor": 270,
+  "run": 68,
   "chunkCount": 483,
   "cycleRuns": 9,
   "jobs": {
@@ -132,21 +132,6 @@
         "unit": "HOUR"
       },
       "lastSeenRun": 62
-    },
-    "https://hiringcafe.com/job/quality-inspector-primus-aerospace-reisterstown-maryland-3r94eu98jzgbp712": {
-      "title": "Quality Inspector",
-      "url": "https://hiringcafe.com/job/quality-inspector-primus-aerospace-reisterstown-maryland-3r94eu98jzgbp712",
-      "company": "Primus Aerospace",
-      "city": "Reisterstown",
-      "region": "Maryland",
-      "datePosted": "2026-08-11",
-      "employmentType": "FULL_TIME",
-      "salary": {
-        "min": 25,
-        "max": 35,
-        "unit": "HOUR"
-      },
-      "lastSeenRun": 49
     },
     "https://hiringcafe.com/job/assistant-station-manager-opus-owings-mills-maryland-9qoqodai5gqwspia": {
       "title": "Assistant Station Manager",
@@ -599,6 +584,66 @@
       "employmentType": "FULL_TIME",
       "salary": null,
       "lastSeenRun": 64
+    },
+    "https://hiringcafe.com/job/database-administrator-reli-group-windsor-mill-maryland-q3pm38fhg4i613xl": {
+      "title": "Database Administrator",
+      "url": "https://hiringcafe.com/job/database-administrator-reli-group-windsor-mill-maryland-q3pm38fhg4i613xl",
+      "company": "RELI Group",
+      "city": "Windsor Mill",
+      "region": "Maryland",
+      "datePosted": "2026-08-17",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 62625,
+        "max": 91850,
+        "unit": "YEAR"
+      },
+      "lastSeenRun": 68
+    },
+    "https://hiringcafe.com/job/social-worker-or-counselor-sheppard-pratt-school-glyndon-sheppard-zzgrwvhfd1qkzlvi": {
+      "title": "Social Worker or Counselor, Sheppard Pratt School- Glyndon",
+      "url": "https://hiringcafe.com/job/social-worker-or-counselor-sheppard-pratt-school-glyndon-sheppard-zzgrwvhfd1qkzlvi",
+      "company": "Sheppard Pratt",
+      "city": "Reisterstown",
+      "region": "Maryland",
+      "datePosted": "2026-07-24",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 60569,
+        "max": 105414,
+        "unit": "YEAR"
+      },
+      "lastSeenRun": 68
+    },
+    "https://hiringcafe.com/job/special-education-teacher-sheppard-pratt-reisterstown-maryland-mx0f8orhe7u425hu": {
+      "title": "Special Education Teacher",
+      "url": "https://hiringcafe.com/job/special-education-teacher-sheppard-pratt-reisterstown-maryland-mx0f8orhe7u425hu",
+      "company": "Sheppard Pratt",
+      "city": "Reisterstown",
+      "region": "Maryland",
+      "datePosted": "2026-07-24",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 56645.06,
+        "max": 109176.7,
+        "unit": "YEAR"
+      },
+      "lastSeenRun": 68
+    },
+    "https://hiringcafe.com/job/special-education-teacher-sheppard-pratt-reisterstown-maryland-9t91dpq0ai24wcr6": {
+      "title": "Special Education Teacher",
+      "url": "https://hiringcafe.com/job/special-education-teacher-sheppard-pratt-reisterstown-maryland-9t91dpq0ai24wcr6",
+      "company": "Sheppard Pratt",
+      "city": "Reisterstown",
+      "region": "Maryland",
+      "datePosted": "2026-07-24",
+      "employmentType": "FULL_TIME",
+      "salary": {
+        "min": 56645.06,
+        "max": 109176.7,
+        "unit": "YEAR"
+      },
+      "lastSeenRun": 68
     }
   }
 }

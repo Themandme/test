@@ -1,6 +1,6 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-08-31 18:01 UTC · 42 openings within ~10 miles · posted in the last 60 days_
+_Updated 2026-09-01 00:41 UTC · 44 openings within ~10 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept. Within each town, jobs with published pay starting at $20+/hour are listed first, followed by ranges that can reach $20, unknown-pay roles, and lower-paying roles.
 
@@ -10,6 +10,7 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 
 | Score | Employer | Role | Pay | Resume | Flags |
 |---:|---|---|---|---|---|
+| 85 | RELI Group | [Database Administrator](https://hiringcafe.com/job/database-administrator-reli-group-windsor-mill-maryland-q3pm38fhg4i613xl) | $63k–$92k | Professional | — |
 | 80 | Weis Markets | [Cash Office Associate](https://hiringcafe.com/job/cash-office-associate-weis-markets-woodstock-maryland-m5w981ylsbtj2pev) | $16–$22/hr | Customer service | — |
 | 77 | Weis Markets | [Produce Sales Associate](https://hiringcafe.com/job/produce-sales-associate-weis-markets-reisterstown-maryland-2ev9f4u0eoo82nju) | $15–$22/hr | Customer service | — |
 | 77 | Weis Markets | [Deli Sales Associate](https://hiringcafe.com/job/deli-sales-associate-weis-markets-reisterstown-maryland-ooa7zlq3z5qpbzz0) | $16–$24/hr | Customer service | — |
@@ -48,8 +49,7 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 | 53 | Lucky Strike Entertainment | [Porter](https://hiringcafe.com/job/porter-lucky-strike-entertainment-pikesville-maryland-hw7x2x9pdazxdeu7) | $15–$18/hr | Review | published pay below $20 |
 | 53 | Lowe's | [Merchandising Part Time Days](https://hiringcafe.com/job/merchandising-part-time-days-lowes-owings-mills-maryland-ksg21a526d1k8cpd) | $15–$15.6/hr | Review | published pay below $20 |
 | 47 | Apartment Services | [Maintenance Supervisor](https://hiringcafe.com/job/maintenance-supervisor-apartment-services-randallstown-maryland-vc16txt9n14olv6u) | — | Review | leadership experience check; pay undisclosed |
-| 46 | Primus Aerospace | [Quality Inspector](https://hiringcafe.com/job/quality-inspector-primus-aerospace-reisterstown-maryland-3r94eu98jzgbp712) | $25–$35/hr | Review | credential/skill check |
-| 46 | CACI International | [RF Test Engineer](https://hiringcafe.com/job/rf-test-engineer-caci-international-windsor-mill-maryland-heuewpwi84ri3y9s) | $70k–$143k | Review | credential/skill check |
+| 46 | Sheppard Pratt | [Social Worker or Counselor, Sheppard Pratt School- Glyndon](https://hiringcafe.com/job/social-worker-or-counselor-sheppard-pratt-school-glyndon-sheppard-zzgrwvhfd1qkzlvi) | $61k–$105k | Review | credential/skill check |
 
 ## Owings Mills (18)
 
@@ -74,7 +74,7 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 | 57 | RadNet | [Coding Supervisor](https://hiringcafe.com/job/coding-supervisor-radnet-owings-mills-maryland-gzx7wo1pgex9seac) | $65k–$72k | Review | 2026-08-12 |
 | 53 | Lowe's | [Merchandising Part Time Days](https://hiringcafe.com/job/merchandising-part-time-days-lowes-owings-mills-maryland-ksg21a526d1k8cpd) | $15–$15.6/hr | Review | 2026-08-04 |
 
-## Reisterstown (8)
+## Reisterstown (9)
 
 | Score | Employer | Role | Pay | Resume | Posted |
 |---:|---|---|---|---|---|
@@ -84,7 +84,8 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 | 74 | Army National Guard | [92G Food Service Specialist](https://hiringcafe.com/job/92g-food-service-specialist-army-national-guard-reisterstown-maryland-mdhmw4p0v92n9wiv) | — | Customer service | 2026-08-05 |
 | 70 | AutoZone | [Commercial Specialist](https://hiringcafe.com/job/commercial-specialist-autozone-reisterstown-maryland-rwsp3tcillz07yfw) | $17.5–$18.32/hr | Customer service | 2026-08-24 |
 | 58 | Army National Guard | [91L Construction Vehicle Repairer](https://hiringcafe.com/job/91l-construction-vehicle-repairer-army-national-guard-reisterstown-zba9399o6ll4o27r) | — | Review | 2026-08-05 |
-| 46 | Primus Aerospace | [Quality Inspector](https://hiringcafe.com/job/quality-inspector-primus-aerospace-reisterstown-maryland-3r94eu98jzgbp712) | $25–$35/hr | Review | 2026-08-11 |
+| 46 | Sheppard Pratt | [Social Worker or Counselor, Sheppard Pratt School- Glyndon](https://hiringcafe.com/job/social-worker-or-counselor-sheppard-pratt-school-glyndon-sheppard-zzgrwvhfd1qkzlvi) | $61k–$105k | Review | 2026-07-24 |
+| 46 | Sheppard Pratt | [Special Education Teacher](https://hiringcafe.com/job/special-education-teacher-sheppard-pratt-reisterstown-maryland-mx0f8orhe7u425hu) | $57k–$109k | Review | 2026-07-24 |
 | 42 | AutoZone | [Part Sales Manager – Full Time](https://hiringcafe.com/job/part-sales-manager-full-time-autozone-reisterstown-maryland-p6wg5buoton0x9h7) | $16.9–$17.72/hr | Review | 2026-08-24 |
 
 ## Pikesville (7)
@@ -109,10 +110,11 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 | 58 | Apartment Services | [Groundskeeper](https://hiringcafe.com/job/groundskeeper-apartment-services-randallstown-maryland-ly3on042xps01l2f) | — | Review | 2026-08-24 |
 | 47 | Apartment Services | [Maintenance Supervisor](https://hiringcafe.com/job/maintenance-supervisor-apartment-services-randallstown-maryland-vc16txt9n14olv6u) | — | Review | 2026-08-24 |
 
-## Windsor Mill (2)
+## Windsor Mill (3)
 
 | Score | Employer | Role | Pay | Resume | Posted |
 |---:|---|---|---|---|---|
+| 85 | RELI Group | [Database Administrator](https://hiringcafe.com/job/database-administrator-reli-group-windsor-mill-maryland-q3pm38fhg4i613xl) | $63k–$92k | Professional | 2026-08-17 |
 | 58 | Drucker + Falk | [Service Technician (1806 - Windsor Mill, Maryland)](https://hiringcafe.com/job/service-technician-1806-windsor-mill-maryland-drucker-falk-windsor-pd31dv5emrug3npg) | — | Review | 2026-08-10 |
 | 46 | CACI International | [RF Test Engineer](https://hiringcafe.com/job/rf-test-engineer-caci-international-windsor-mill-maryland-heuewpwi84ri3y9s) | $70k–$143k | Review | 2026-07-10 |
 
