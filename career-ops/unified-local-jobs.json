@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-01T15:36:31.489Z",
+  "generatedAt": "2026-09-01T23:30:24.274Z",
   "center": "Owings Mills, MD 21117",
   "scope": "10-mile core plus explicitly labeled Baltimore-area public and university boards",
   "payPriority": "$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking",
   "scoring": "Preliminary metadata score prioritizing $20+/hour and recent postings; older/continuous/unknown-age and likely advanced classifications are penalized; verify requirements before applying",
   "sourceCounts": {
-    "State of Maryland JobAps": 140,
-    "County/city NEOGOV": 124,
-    "Direct employer board": 292,
-    "HiringCafe": 32,
+    "State of Maryland JobAps": 144,
+    "County/city NEOGOV": 125,
+    "Direct employer board": 295,
+    "HiringCafe": 34,
     "official university board": 44
   },
   "jobs": [
@@ -302,6 +302,31 @@
       }
     },
     {
+      "company": "University of Maryland",
+      "title": "Agent Associate, Agriculture and Food Systems",
+      "location": "University of Maryland College Park",
+      "days": 0,
+      "postedOn": "Posted Today",
+      "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Agent-Associate--Agriculture-and-Food-Systems_JR104840",
+      "source": "Direct employer board",
+      "scope": "regional",
+      "fit": {
+        "overall": 79,
+        "qualification": 82,
+        "interview": 70,
+        "pay": 52,
+        "careerValue": 90,
+        "recency": 100,
+        "overqualificationRisk": 8,
+        "resume": "Professional",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "pay undisclosed",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "City of Baltimore",
       "title": "Program Coordinator Courts (NCS) - Circuit Court for Baltimore City",
       "location": "Circuit Court for Baltimore City",
@@ -469,7 +494,7 @@
       "reqId": "26-001442-0011",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001442&R3=0011",
-      "days": 0,
+      "days": 1,
       "postedAtMs": 1788256800000,
       "deadlineMs": 1789516740000,
       "deadline": "9/15/2026 11:59:00 PM",
@@ -549,44 +574,6 @@
       "postedAtMs": 1787851800000,
       "deadlineMs": 1789171140000,
       "deadline": "9/11/2026 11:59:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 55.53,
-        "max": 67.69,
-        "unit": "HOUR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityStatus": "public",
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 76,
-        "qualification": 58,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 90,
-        "recency": 94,
-        "overqualificationRisk": 8,
-        "resume": "Professional",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "senior/lead experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "State of Maryland — Maryland Insurance Administration",
-      "title": "SENIOR SALESFORCE DEVELOPER, CONTRACTUAL (IT Systems Technical Specialist)",
-      "reqId": "26-004488-0017",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0017",
-      "days": 7,
-      "postedAtMs": 1787655000000,
-      "deadlineMs": 1788911940000,
-      "deadline": "9/8/2026 11:59:00 PM",
       "employmentType": "Full-Time",
       "salary": {
         "min": 55.53,
@@ -703,6 +690,31 @@
         "resume": "Customer service",
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": []
+      }
+    },
+    {
+      "company": "University of Maryland",
+      "title": "Program Administrative Specialist",
+      "location": "University of Maryland College Park",
+      "days": 0,
+      "postedOn": "Posted Today",
+      "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Program-Administrative-Specialist_JR104687",
+      "source": "Direct employer board",
+      "scope": "regional",
+      "fit": {
+        "overall": 76,
+        "qualification": 88,
+        "interview": 84,
+        "pay": 52,
+        "careerValue": 48,
+        "recency": 100,
+        "overqualificationRisk": 18,
+        "resume": "Customer service",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "pay undisclosed",
+          "regional/public board—not exact-radius verified"
+        ]
       }
     },
     {
@@ -993,12 +1005,50 @@
       }
     },
     {
+      "company": "State of Maryland — Maryland Insurance Administration",
+      "title": "SENIOR SALESFORCE DEVELOPER, CONTRACTUAL (IT Systems Technical Specialist)",
+      "reqId": "26-004488-0017",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0017",
+      "days": 8,
+      "postedAtMs": 1787655000000,
+      "deadlineMs": 1788911940000,
+      "deadline": "9/8/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 55.53,
+        "max": 67.69,
+        "unit": "HOUR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 74,
+        "qualification": 58,
+        "interview": 49,
+        "pay": 100,
+        "careerValue": 90,
+        "recency": 86,
+        "overqualificationRisk": 8,
+        "resume": "Professional",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "senior/lead experience check",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — DJS Departmental Support",
       "title": "ADMINISTRATIVE PROGRAM MANAGER II (Facility Project Manager)",
       "reqId": "26-005473-0008",
       "location": "Baltimore County",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005473&R3=0008",
-      "days": 12,
+      "days": 13,
       "postedAtMs": 1787218200000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -1036,7 +1086,7 @@
       "reqId": "26-004545-0005",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004545&R3=0005",
-      "days": 0,
+      "days": 1,
       "postedAtMs": 1788252300000,
       "deadlineMs": 1789516740000,
       "deadline": "9/15/2026 11:59:00 PM",
@@ -1493,7 +1543,7 @@
       "reqId": "26-005030-0003",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005030&R3=0003",
-      "days": 12,
+      "days": 13,
       "postedAtMs": 1787218320000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -1606,20 +1656,20 @@
       }
     },
     {
-      "company": "State of Maryland — OPD District Operations",
-      "title": "PARALEGAL SERIES (PARALEGAL I & II -Contractual)",
-      "reqId": "26-000885-0015",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000885&R3=0015",
-      "days": 1,
-      "postedAtMs": 1788171600000,
-      "deadlineMs": 1789430340000,
-      "deadline": "9/14/2026 11:59:00 PM",
+      "company": "State of Maryland — DGS Maryland Capitol Police",
+      "title": "POLICE OFFICER II",
+      "reqId": "26-004126-0007",
+      "location": "Anne Arundel Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004126&R3=0007",
+      "days": 0,
+      "postedAtMs": 1788271200000,
+      "deadlineMs": 1790812740000,
+      "deadline": "9/30/2026 11:59:00 PM",
       "employmentType": "Full-Time",
       "salary": {
-        "min": 22.63,
-        "max": 24.02,
-        "unit": "HOUR"
+        "min": 71932,
+        "max": 97265,
+        "unit": "YEAR"
       },
       "restricted": false,
       "restriction": null,
@@ -1687,6 +1737,44 @@
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": [
           "level II experience check"
+        ]
+      }
+    },
+    {
+      "company": "State of Maryland — OPD District Operations",
+      "title": "PARALEGAL SERIES (PARALEGAL I & II -Contractual)",
+      "reqId": "26-000885-0015",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000885&R3=0015",
+      "days": 2,
+      "postedAtMs": 1788171600000,
+      "deadlineMs": 1789430340000,
+      "deadline": "9/14/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 22.63,
+        "max": 24.02,
+        "unit": "HOUR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 70,
+        "qualification": 51,
+        "interview": 49,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 100,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "level II experience check",
+          "regional/public board—not exact-radius verified"
         ]
       }
     },
@@ -1976,7 +2064,7 @@
       "reqId": "26-001328-0015",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001328&R3=0015",
-      "days": 5,
+      "days": 6,
       "postedAtMs": 1787817000000,
       "deadlineMs": 1789084740000,
       "deadline": "9/10/2026 11:59:00 PM",
@@ -2014,7 +2102,7 @@
       "reqId": "26-005165-0008",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005165&R3=0008",
-      "days": 6,
+      "days": 7,
       "postedAtMs": 1787742900000,
       "deadlineMs": 1788998340000,
       "deadline": "9/9/2026 11:59:00 PM",
@@ -2337,6 +2425,43 @@
       }
     },
     {
+      "company": "State of Maryland — DGS Maryland Capitol Police",
+      "title": "POLICE OFFICER ENTRY LEVEL (Police Officer Trainee)",
+      "reqId": "26-004124-0005",
+      "location": "Anne Arundel Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004124&R3=0005",
+      "days": 0,
+      "postedAtMs": 1788271200000,
+      "deadlineMs": 1790812740000,
+      "deadline": "9/30/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 37237,
+        "max": 71342,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 69,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 78,
+        "careerValue": 58,
+        "recency": 100,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "University of Maryland",
       "title": "Machine Learning Application Engineer",
       "location": "University of Maryland College Park",
@@ -2417,6 +2542,58 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
+      "title": "Planner II - Historic Preservation",
+      "reqId": "02.106 07-26",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5391819/planner-ii-historic-preservation",
+      "postedAtMs": 1788220800000,
+      "days": 1,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "PLANNING",
+      "categories": [
+        "Planning and Development",
+        "Redevelopment",
+        "Land Use",
+        "Community Development",
+        "Public Records",
+        "Historic Preservation",
+        "Architecture",
+        "Geographic Information Systems"
+      ],
+      "salary": {
+        "min": 58037,
+        "max": 66390,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 68,
+        "qualification": 51,
+        "interview": 49,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 92,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "level II experience check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
       "title": "Planner II - Community Planning",
       "reqId": "02.106 08-26",
       "location": "Towson, MD",
@@ -2465,7 +2642,7 @@
       "reqId": "26-004445-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004445&R3=0001",
-      "days": 11,
+      "days": 12,
       "postedAtMs": 1787302800000,
       "deadlineMs": 1788541200000,
       "deadline": "9/4/2026 5:00:00 PM",
@@ -2698,6 +2875,56 @@
       }
     },
     {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Department of Aging Activity Coordinator",
+      "reqId": "05.102 07-26",
+      "location": "Various locations throughout Baltimore County, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5401422/department-of-aging-activity-coordinator",
+      "postedAtMs": 1788220800000,
+      "days": 1,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "AGING",
+      "categories": [
+        "Administrative Assistant",
+        "Clerical & Data Entry",
+        "Human Services",
+        "Records Management",
+        "Health Education",
+        "Athletics & Fitness",
+        "Community and Social Services",
+        "Health Care Support"
+      ],
+      "salary": {
+        "min": 38101,
+        "max": 43852,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 68,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 78,
+        "careerValue": 58,
+        "recency": 92,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": []
+      }
+    },
+    {
       "company": "State of Maryland — OPD District Operations",
       "title": "PUBLIC DEFENDER INTAKE SPECIALIST I",
       "reqId": "26-002692-0006",
@@ -2740,7 +2967,7 @@
       "reqId": "26-005302-0010",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005302&R3=0010",
-      "days": 6,
+      "days": 7,
       "postedAtMs": 1787742000000,
       "deadlineMs": 1788969600000,
       "deadline": "9/9/2026 4:00:00 PM",
@@ -2866,7 +3093,7 @@
       "reqId": "26-004539-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004539&R3=0001",
-      "days": 34,
+      "days": 35,
       "postedAtMs": 1785312000000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -2903,7 +3130,7 @@
       "reqId": "26-004538-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004538&R3=0001",
-      "days": 34,
+      "days": 35,
       "postedAtMs": 1785312000000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -3151,6 +3378,51 @@
       }
     },
     {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Account Clerk III (HHS/Finance & Administration)",
+      "reqId": "03.207 08-26",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5466972/account-clerk-iii-hhs-finance-administration",
+      "postedAtMs": 1788134400000,
+      "days": 2,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "HHS/FINANCE & ADMINISTRATION",
+      "categories": [
+        "Accounting and Finance"
+      ],
+      "salary": {
+        "min": 41873,
+        "max": 48344,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 66,
+        "qualification": 44,
+        "interview": 44,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 92,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "level III+ experience check"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — MDH Med Care Prgms - Ofc Medicaid Prgms/Operations",
       "title": "CONSULTANT PHARMACIST (CLINICAL PHARMACIST)",
       "reqId": "26-000468-0001",
@@ -3232,7 +3504,7 @@
       "reqId": "26-005799-0018",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005799&R3=0018",
-      "days": 6,
+      "days": 7,
       "postedAtMs": 1787738400000,
       "deadlineMs": 1789171140000,
       "deadline": "9/11/2026 11:59:00 PM",
@@ -3532,56 +3804,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Department of Aging Activity Coordinator",
-      "reqId": "05.102 07-26",
-      "location": "Various locations throughout Baltimore County, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5401422/department-of-aging-activity-coordinator",
-      "postedAtMs": 1787529600000,
-      "days": 9,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "AGING",
-      "categories": [
-        "Administrative Assistant",
-        "Clerical & Data Entry",
-        "Human Services",
-        "Records Management",
-        "Health Education",
-        "Athletics & Fitness",
-        "Community and Social Services",
-        "Health Care Support"
-      ],
-      "salary": {
-        "min": 38101,
-        "max": 43852,
-        "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 66,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 78,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": []
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Department of Aging Assistant Community Nutritionist ",
       "reqId": "04.244  07-26",
       "location": "Towson, MD",
@@ -3811,7 +4033,7 @@
       "reqId": "26-003004-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003004&R3=0004",
-      "days": 13,
+      "days": 14,
       "postedAtMs": 1787137200000,
       "deadlineMs": 1788393540000,
       "deadline": "9/2/2026 11:59:00 PM",
@@ -3922,58 +4144,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Planner II - Historic Preservation",
-      "reqId": "02.106 07-26",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5391819/planner-ii-historic-preservation",
-      "postedAtMs": 1787011200000,
-      "days": 15,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "PLANNING",
-      "categories": [
-        "Planning and Development",
-        "Redevelopment",
-        "Land Use",
-        "Community Development",
-        "Public Records",
-        "Historic Preservation",
-        "Architecture",
-        "Geographic Information Systems"
-      ],
-      "salary": {
-        "min": 58037,
-        "max": 66390,
-        "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 65,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 66,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "level II experience check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Natural Resource Specialist II -  Watershed Management",
       "reqId": "04.318 08-26",
       "location": "Towson, MD",
@@ -4063,7 +4233,7 @@
       "reqId": "26-000674-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000674&R3=0001",
-      "days": 83,
+      "days": 84,
       "postedAtMs": 1781085600000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -4132,12 +4302,50 @@
       }
     },
     {
+      "company": "State of Maryland — DHS Family Investment Admin Director's Office",
+      "title": "Budget & Fiscal Services Manager (AGENCY BUDGET SPECIALIST SUPERVISOR)",
+      "reqId": "26-000989-0002",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000989&R3=0002",
+      "days": 0,
+      "postedAtMs": 1788267600000,
+      "deadlineMs": 1789516740000,
+      "deadline": "9/15/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 76608,
+        "max": 99105,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 64,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 100,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — Maryland State Retirement and Pension Systems",
       "title": "ACCOUNTANT SUPERVISOR I",
       "reqId": "26-004551-0003",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004551&R3=0003",
-      "days": 0,
+      "days": 1,
       "postedAtMs": 1788253320000,
       "deadlineMs": 1789516740000,
       "deadline": "9/15/2026 11:59:00 PM",
@@ -4213,7 +4421,7 @@
       "reqId": "26-004529-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004529&R3=0004",
-      "days": 1,
+      "days": 2,
       "postedAtMs": 1788172200000,
       "deadlineMs": 1789430340000,
       "deadline": "9/14/2026 11:59:00 PM",
@@ -4378,6 +4586,30 @@
         "resume": "Review",
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": []
+      }
+    },
+    {
+      "company": "Wegmans",
+      "title": "Culinary Entry Level Management Trainee",
+      "location": "Owings Mills",
+      "days": 0,
+      "postedOn": "Posted Today",
+      "url": "https://wegmans.wd1.myworkdayjobs.com/wegmans/job/Owings-Mills/Culinary-Entry-Level-Management-Trainee_R0292997",
+      "source": "Direct employer board",
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 64,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 100,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "pay undisclosed"
+        ]
       }
     },
     {
@@ -4782,7 +5014,7 @@
       "reqId": "26-003184-0011",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003184&R3=0011",
-      "days": 5,
+      "days": 6,
       "postedAtMs": 1787815500000,
       "deadlineMs": 1789084740000,
       "deadline": "9/10/2026 11:59:00 PM",
@@ -4820,7 +5052,7 @@
       "reqId": "26-004552-0008",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004552&R3=0008",
-      "days": 6,
+      "days": 7,
       "postedAtMs": 1787735100000,
       "deadlineMs": 1788973200000,
       "deadline": "9/9/2026 5:00:00 PM",
@@ -4891,50 +5123,12 @@
       }
     },
     {
-      "company": "State of Maryland — MDE - Land and Materials Administration (LMA)",
-      "title": "GEOLOGIST I (Case Manager)",
-      "reqId": "26-001028-0004",
-      "location": "Baltimore City",
-      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001028&R3=0004",
-      "days": 7,
-      "postedAtMs": 1787649300000,
-      "deadlineMs": 1788886800000,
-      "deadline": "9/8/2026 5:00:00 PM",
-      "employmentType": "Full-Time",
-      "salary": {
-        "min": 63154,
-        "max": 99603,
-        "unit": "YEAR"
-      },
-      "restricted": false,
-      "restriction": null,
-      "eligibilityStatus": "public",
-      "eligibilityCheck": "checked",
-      "source": "State of Maryland JobAps",
-      "scope": "regional",
-      "fit": {
-        "overall": 63,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 94,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "State of Maryland — PSC Engineering Investigations",
       "title": "PUBLIC SERVICE ENGINEER SERIES (Distribution Engineer - Electrical)",
       "reqId": "26-002188-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002188&R3=0001",
-      "days": 21,
+      "days": 22,
       "postedAtMs": 1786435200000,
       "deadlineMs": 1788307140000,
       "deadline": "9/1/2026 11:59:00 PM",
@@ -5242,6 +5436,44 @@
       }
     },
     {
+      "company": "State of Maryland — MSDE - Division of Early Childhood",
+      "title": "Deputy Director Finance Subsidies & Payments - Early Childhood (Program Manager IV)",
+      "reqId": "26-005479-0025",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005479&R3=0025",
+      "days": 0,
+      "postedAtMs": 1788278400000,
+      "deadlineMs": 1789775940000,
+      "deadline": "9/18/2026 11:59:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 99442,
+        "max": 156822,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 62,
+        "qualification": 34,
+        "interview": 34,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 100,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "senior/lead experience check",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — MSDE - Organizational Effectiveness",
       "title": "Sr. AWS Platform Engineer (Program Manager IV)",
       "reqId": "26-005479-0024",
@@ -5321,6 +5553,44 @@
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": [
           "management experience check"
+        ]
+      }
+    },
+    {
+      "company": "State of Maryland — MDE - Land and Materials Administration (LMA)",
+      "title": "GEOLOGIST I (Case Manager)",
+      "reqId": "26-001028-0004",
+      "location": "Baltimore City",
+      "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001028&R3=0004",
+      "days": 8,
+      "postedAtMs": 1787649300000,
+      "deadlineMs": 1788886800000,
+      "deadline": "9/8/2026 5:00:00 PM",
+      "employmentType": "Full-Time",
+      "salary": {
+        "min": 63154,
+        "max": 99603,
+        "unit": "YEAR"
+      },
+      "restricted": false,
+      "restriction": null,
+      "eligibilityStatus": "public",
+      "eligibilityCheck": "checked",
+      "source": "State of Maryland JobAps",
+      "scope": "regional",
+      "fit": {
+        "overall": 62,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 86,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "regional/public board—not exact-radius verified"
         ]
       }
     },
@@ -5444,7 +5714,7 @@
       "reqId": "26-004520-0004",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004520&R3=0004",
-      "days": 8,
+      "days": 9,
       "postedAtMs": 1787559000000,
       "deadlineMs": 1788825540000,
       "deadline": "9/7/2026 11:59:00 PM",
@@ -6050,7 +6320,7 @@
       "reqId": "26-004714-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004714&R3=0001",
-      "days": 207,
+      "days": 208,
       "postedAtMs": 1770370680000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",
@@ -6952,7 +7222,7 @@
       "reqId": "26-005042-0002",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005042&R3=0002",
-      "days": 12,
+      "days": 13,
       "postedAtMs": 1787218200000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -6990,7 +7260,7 @@
       "reqId": "26-002730-0003",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002730&R3=0003",
-      "days": 12,
+      "days": 13,
       "postedAtMs": 1787216400000,
       "deadlineMs": 1788479940000,
       "deadline": "9/3/2026 11:59:00 PM",
@@ -7609,7 +7879,7 @@
       "reqId": "18-002428-0004",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=18&R2=002428&R3=0004",
-      "days": 2581,
+      "days": 2582,
       "postedAtMs": 1565262300000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -9875,31 +10145,6 @@
     },
     {
       "company": "University of Maryland",
-      "title": "Experimental Psychologist",
-      "location": "University of Maryland College Park",
-      "days": 30,
-      "postedOn": "Posted 30+ Days Ago",
-      "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Experimental-Psychologist_JR103950",
-      "source": "Direct employer board",
-      "scope": "regional",
-      "fit": {
-        "overall": 60,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 74,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "pay undisclosed",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "University of Maryland",
       "title": "ARLIS Artificial Intelligence Research Professional",
       "location": "University of Maryland College Park",
       "days": 30,
@@ -11403,11 +11648,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 11-24",
+      "reqId": "04.407 12-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 117,
       "continuous": true,
@@ -11449,11 +11694,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 12-23",
+      "reqId": "04.407 11-24",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 117,
       "continuous": true,
@@ -11928,54 +12173,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Registered Peer Supervisor",
-      "reqId": "NM.143 07-2026",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
-      "postedAtMs": 1784073600000,
-      "days": 49,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "CORRECTIONS",
-      "categories": [
-        "Administration",
-        "Corrections",
-        "Human Services",
-        "Health Education"
-      ],
-      "salary": {
-        "min": 26.39,
-        "max": 32.8,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 52,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Project Manager FFE Specialist - Capital Construction - Non-Merit",
       "reqId": "NM.141 7-26 PROP",
       "location": "Various locations throughout Baltimore County, MD",
@@ -12006,6 +12203,54 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 57,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 52,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Registered Peer Supervisor",
+      "reqId": "NM.143 07-2026",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
+      "postedAtMs": 1784073600000,
+      "days": 49,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "CORRECTIONS",
+      "categories": [
+        "Administration",
+        "Corrections",
+        "Human Services",
+        "Health Education"
+      ],
+      "salary": {
+        "min": 26.39,
+        "max": 32.8,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -13076,7 +13321,7 @@
       "reqId": "26-005483-0027",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005483&R3=0027",
-      "days": 13,
+      "days": 14,
       "postedAtMs": 1787131200000,
       "deadlineMs": 1788393540000,
       "deadline": "9/2/2026 11:59:00 PM",
@@ -13198,6 +13443,32 @@
         "confidence": "preliminary—title/pay/location/recency metadata",
         "flags": [
           "older continuous/standing recruitment"
+        ]
+      }
+    },
+    {
+      "company": "Loyola University MD",
+      "title": "Case Manager",
+      "location": "Loyola University Maryland Main Campus",
+      "days": 0,
+      "postedOn": "Posted Today",
+      "url": "https://loyola.wd5.myworkdayjobs.com/external/job/Loyola-University-Maryland-Main-Campus/Case-Manager_R-0000000878",
+      "source": "Direct employer board",
+      "scope": "regional",
+      "fit": {
+        "overall": 55,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 100,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "pay undisclosed",
+          "regional/public board—not exact-radius verified"
         ]
       }
     },
@@ -13829,6 +14100,32 @@
     },
     {
       "company": "UMBC",
+      "title": "Operations and Communications Coordinator",
+      "location": "UMBC Campus, MD",
+      "days": null,
+      "postedOn": null,
+      "url": "https://listings.umbc.edu/cw/en-us/job/495358/operations-and-communications-coordinator",
+      "source": "official university board",
+      "scope": "regional",
+      "fit": {
+        "overall": 54,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 30,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "posting age unknown",
+          "pay undisclosed",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
+      "company": "UMBC",
       "title": "Assistant Athletic Trainer",
       "location": "UMBC Campus, MD",
       "days": null,
@@ -13990,32 +14287,6 @@
       "days": null,
       "postedOn": null,
       "url": "https://listings.umbc.edu/cw/en-us/job/495012/electrician-high-voltage",
-      "source": "official university board",
-      "scope": "regional",
-      "fit": {
-        "overall": 54,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "posting age unknown",
-          "pay undisclosed",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
-      "company": "UMBC",
-      "title": "Admissions Counselor",
-      "location": "UMBC Campus, MD",
-      "days": null,
-      "postedOn": null,
-      "url": "https://listings.umbc.edu/cw/en-us/job/495314/admissions-counselor",
       "source": "official university board",
       "scope": "regional",
       "fit": {
@@ -14539,7 +14810,7 @@
       "datePosted": "2026-08-05",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 61,
+      "lastSeenRun": 70,
       "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -14568,7 +14839,7 @@
       "datePosted": "2026-08-05",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 61,
+      "lastSeenRun": 70,
       "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -14597,7 +14868,7 @@
       "datePosted": "2026-08-05",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 61,
+      "lastSeenRun": 70,
       "location": "Reisterstown, Maryland",
       "source": "HiringCafe",
       "scope": "10-mile proxy",
@@ -14742,6 +15013,35 @@
       }
     },
     {
+      "title": "12K Plumber",
+      "url": "https://hiringcafe.com/job/12k-plumber-army-national-guard-reisterstown-maryland-hnprq9eycp6w1nfl",
+      "company": "Army National Guard",
+      "city": "Reisterstown",
+      "region": "Maryland",
+      "datePosted": "2026-08-05",
+      "employmentType": "PART_TIME",
+      "salary": null,
+      "lastSeenRun": 70,
+      "location": "Reisterstown, Maryland",
+      "source": "HiringCafe",
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 54,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 30,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "posting age unknown",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
       "company": "State of Maryland — LABOR - Occupational and Professional Licensing 1",
       "title": "Executive Director (ADMINISTRATOR IV)",
       "reqId": "26-006097-0007",
@@ -14785,7 +15085,7 @@
       "reqId": "26-009662-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009662&R3=0001",
-      "days": 19,
+      "days": 20,
       "postedAtMs": 1786615200000,
       "deadlineMs": 1789430340000,
       "deadline": "9/14/2026 11:59:00 PM",
@@ -17504,53 +17804,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Public Health Nurse",
-      "reqId": "04.226 07-26",
-      "location": "Towson, MD",
-      "city": "randallstown",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5236380/public-health-nurse",
-      "postedAtMs": 1785283200000,
-      "days": 35,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "HHS/COMMUNITY HEALTH SERVICES",
-      "categories": [
-        "Health Services",
-        "Public Health",
-        "Nursing"
-      ],
-      "salary": {
-        "min": 78359,
-        "max": 89796,
-        "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 3.7,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 48,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 100,
-        "careerValue": 43,
-        "recency": 52,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Nurse Monitor - Non-Merit ",
       "reqId": "NM .140 07-2026",
       "location": "Towson, MD",
@@ -17578,6 +17831,53 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 48,
+        "qualification": 23,
+        "interview": 25,
+        "pay": 100,
+        "careerValue": 43,
+        "recency": 52,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "credential/skill check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Public Health Nurse",
+      "reqId": "04.226 07-26",
+      "location": "Towson, MD",
+      "city": "randallstown",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5236380/public-health-nurse",
+      "postedAtMs": 1785283200000,
+      "days": 35,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "HHS/COMMUNITY HEALTH SERVICES",
+      "categories": [
+        "Health Services",
+        "Public Health",
+        "Nursing"
+      ],
+      "salary": {
+        "min": 78359,
+        "max": 89796,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 3.7,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -18086,6 +18386,33 @@
     },
     {
       "company": "UMBC",
+      "title": "Manager, Post Award Operations",
+      "location": "UMBC Campus, MD",
+      "days": null,
+      "postedOn": null,
+      "url": "https://listings.umbc.edu/cw/en-us/job/495360/manager-post-award-operations",
+      "source": "official university board",
+      "scope": "regional",
+      "fit": {
+        "overall": 45,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 30,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "posting age unknown",
+          "pay undisclosed",
+          "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
+      "company": "UMBC",
       "title": "Institutional Review Board Manager",
       "location": "UMBC Campus, MD",
       "days": null,
@@ -18302,6 +18629,36 @@
       "postedOn": null,
       "url": "https://stevenson.peopleadmin.com/postings/9811",
       "source": "official university board",
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 45,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 30,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "posting age unknown",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "title": "Tax Manager - Private Client Services",
+      "url": "https://hiringcafe.com/job/tax-manager-private-client-services-eisneramper-owings-mills-maryland-fdq3ngs8okterebv",
+      "company": "EisnerAmper",
+      "city": "Owings Mills",
+      "region": "Maryland",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "lastSeenRun": 70,
+      "location": "Owings Mills, Maryland",
+      "source": "HiringCafe",
       "scope": "10-mile proxy",
       "fit": {
         "overall": 45,
@@ -19601,33 +19958,6 @@
       }
     },
     {
-      "company": "UMBC",
-      "title": "Director of Student Conduct and Community Standards",
-      "location": "UMBC Campus, MD",
-      "days": null,
-      "postedOn": null,
-      "url": "https://listings.umbc.edu/cw/en-us/job/495320/director-of-student-conduct-and-community-standards",
-      "source": "official university board",
-      "scope": "regional",
-      "fit": {
-        "overall": 43,
-        "qualification": 34,
-        "interview": 34,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 30,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "senior/lead experience check",
-          "posting age unknown",
-          "pay undisclosed",
-          "regional/public board—not exact-radius verified"
-        ]
-      }
-    },
-    {
       "company": "Stevenson University",
       "title": "Director, Network & Infrastructure",
       "location": "Owings Mills / Stevenson, MD",
@@ -19861,7 +20191,7 @@
       "reqId": "12-004246-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=004246&R3=001",
-      "days": 2581,
+      "days": 2582,
       "postedAtMs": 1565262900000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -20199,7 +20529,7 @@
       "reqId": "12-004247-001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=12&R2=004247&R3=001",
-      "days": 2581,
+      "days": 2582,
       "postedAtMs": 1565262900000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -20326,7 +20656,7 @@
       "reqId": "24-005039-0001",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=005039&R3=0001",
-      "days": 256,
+      "days": 257,
       "postedAtMs": 1766138400000,
       "deadlineMs": 1798761540000,
       "deadline": "12/31/2026 11:59:00 PM",

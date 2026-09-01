@@ -1,6 +1,6 @@
 # Jobs near Owings Mills, MD
 
-_Updated 2026-09-01 15:29 UTC · 32 openings within ~10 miles · posted in the last 60 days_
+_Updated 2026-09-01 23:23 UTC · 34 openings within ~10 miles · posted in the last 60 days_
 
 Any job that is realistically gettable as stopgap work. Senior-level and clinical/medical titles are excluded; non-clinical care roles are kept. Within each town, jobs with published pay starting at $20+/hour are listed first, followed by ranges that can reach $20, unknown-pay roles, and lower-paying roles.
 
@@ -38,12 +38,14 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 | 58 | Pavion | [Core Sales Representative](https://hiringcafe.com/job/core-sales-representative-pavion-owings-mills-maryland-r8sauwqpon573cts) | — | Review | pay undisclosed |
 | 57 | RadNet | [Coding Supervisor](https://hiringcafe.com/job/coding-supervisor-radnet-owings-mills-maryland-gzx7wo1pgex9seac) | $65k–$72k | Review | leadership experience check |
 | 53 | Lowe's | [Merchandising Part Time Days](https://hiringcafe.com/job/merchandising-part-time-days-lowes-owings-mills-maryland-ksg21a526d1k8cpd) | $15–$15.6/hr | Review | published pay below $20 |
+| 47 | EisnerAmper | [Tax Manager - Private Client Services](https://hiringcafe.com/job/tax-manager-private-client-services-eisneramper-owings-mills-maryland-fdq3ngs8okterebv) | — | Review | leadership experience check; pay undisclosed |
 | 46 | Sheppard Pratt | [Social Worker or Counselor, Sheppard Pratt School- Glyndon](https://hiringcafe.com/job/social-worker-or-counselor-sheppard-pratt-school-glyndon-sheppard-zzgrwvhfd1qkzlvi) | $61k–$105k | Review | credential/skill check |
 | 46 | Sheppard Pratt | [Special Education Teacher](https://hiringcafe.com/job/special-education-teacher-sheppard-pratt-reisterstown-maryland-mx0f8orhe7u425hu) | $57k–$109k | Review | credential/skill check |
 | 46 | CACI International | [RF Test Engineer](https://hiringcafe.com/job/rf-test-engineer-caci-international-windsor-mill-maryland-heuewpwi84ri3y9s) | $70k–$143k | Review | credential/skill check |
+| 37 | Army National Guard | [12K Plumber](https://hiringcafe.com/job/12k-plumber-army-national-guard-reisterstown-maryland-hnprq9eycp6w1nfl) | — | Review | credential/skill check; pay undisclosed |
 | 37 | People Encouraging People | [Substance Abuse Counselor](https://hiringcafe.com/job/substance-abuse-counselor-people-encouraging-people-milford-mill-8rcyzgd577ksgvu8) | — | Review | credential/skill check; pay undisclosed |
 
-## Owings Mills (13)
+## Owings Mills (14)
 
 | Score | Employer | Role | Pay | Resume | Posted |
 |---:|---|---|---|---|---|
@@ -60,8 +62,9 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 | 58 | Pavion | [Core Sales Representative](https://hiringcafe.com/job/core-sales-representative-pavion-owings-mills-maryland-r8sauwqpon573cts) | — | Review | 2026-07-16 |
 | 57 | RadNet | [Coding Supervisor](https://hiringcafe.com/job/coding-supervisor-radnet-owings-mills-maryland-gzx7wo1pgex9seac) | $65k–$72k | Review | 2026-08-12 |
 | 53 | Lowe's | [Merchandising Part Time Days](https://hiringcafe.com/job/merchandising-part-time-days-lowes-owings-mills-maryland-ksg21a526d1k8cpd) | $15–$15.6/hr | Review | 2026-08-04 |
+| 47 | EisnerAmper | [Tax Manager - Private Client Services](https://hiringcafe.com/job/tax-manager-private-client-services-eisneramper-owings-mills-maryland-fdq3ngs8okterebv) | — | Review | 2026-08-10 |
 
-## Reisterstown (8)
+## Reisterstown (9)
 
 | Score | Employer | Role | Pay | Resume | Posted |
 |---:|---|---|---|---|---|
@@ -73,6 +76,7 @@ Coverage: this attempt read 60 of 60 sitemap chunks successfully, rotating acros
 | 58 | Army National Guard | [91L Construction Vehicle Repairer](https://hiringcafe.com/job/91l-construction-vehicle-repairer-army-national-guard-reisterstown-zba9399o6ll4o27r) | — | Review | 2026-08-05 |
 | 46 | Sheppard Pratt | [Social Worker or Counselor, Sheppard Pratt School- Glyndon](https://hiringcafe.com/job/social-worker-or-counselor-sheppard-pratt-school-glyndon-sheppard-zzgrwvhfd1qkzlvi) | $61k–$105k | Review | 2026-07-24 |
 | 46 | Sheppard Pratt | [Special Education Teacher](https://hiringcafe.com/job/special-education-teacher-sheppard-pratt-reisterstown-maryland-mx0f8orhe7u425hu) | $57k–$109k | Review | 2026-07-24 |
+| 37 | Army National Guard | [12K Plumber](https://hiringcafe.com/job/12k-plumber-army-national-guard-reisterstown-maryland-hnprq9eycp6w1nfl) | — | Review | 2026-08-05 |
 
 ## Pikesville (4)
 

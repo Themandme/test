@@ -1,8 +1,8 @@
 {
   "note": "Rotating sitemap sweep state. Safe to delete; costs one cycle to rebuild.",
-  "updatedAt": "2026-09-01T15:29:27.047Z",
-  "cursor": 330,
-  "run": 69,
+  "updatedAt": "2026-09-01T23:23:47.469Z",
+  "cursor": 390,
+  "run": 70,
   "chunkCount": 483,
   "cycleRuns": 9,
   "jobs": {
@@ -183,7 +183,7 @@
       "datePosted": "2026-08-05",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 61
+      "lastSeenRun": 70
     },
     "https://hiringcafe.com/job/91l-construction-vehicle-repairer-army-national-guard-reisterstown-zba9399o6ll4o27r": {
       "title": "91L Construction Vehicle Repairer",
@@ -194,7 +194,7 @@
       "datePosted": "2026-08-05",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 61
+      "lastSeenRun": 70
     },
     "https://hiringcafe.com/job/photo-specialist-walgreens-randallstown-maryland-r7vickvqltjbynl7": {
       "title": "Photo Specialist",
@@ -220,7 +220,7 @@
       "datePosted": "2026-08-05",
       "employmentType": "PART_TIME",
       "salary": null,
-      "lastSeenRun": 61
+      "lastSeenRun": 70
     },
     "https://hiringcafe.com/job/substance-abuse-counselor-people-encouraging-people-milford-mill-8rcyzgd577ksgvu8": {
       "title": "Substance Abuse Counselor",
@@ -468,6 +468,28 @@
         "unit": "YEAR"
       },
       "lastSeenRun": 68
+    },
+    "https://hiringcafe.com/job/12k-plumber-army-national-guard-reisterstown-maryland-hnprq9eycp6w1nfl": {
+      "title": "12K Plumber",
+      "url": "https://hiringcafe.com/job/12k-plumber-army-national-guard-reisterstown-maryland-hnprq9eycp6w1nfl",
+      "company": "Army National Guard",
+      "city": "Reisterstown",
+      "region": "Maryland",
+      "datePosted": "2026-08-05",
+      "employmentType": "PART_TIME",
+      "salary": null,
+      "lastSeenRun": 70
+    },
+    "https://hiringcafe.com/job/tax-manager-private-client-services-eisneramper-owings-mills-maryland-fdq3ngs8okterebv": {
+      "title": "Tax Manager - Private Client Services",
+      "url": "https://hiringcafe.com/job/tax-manager-private-client-services-eisneramper-owings-mills-maryland-fdq3ngs8okterebv",
+      "company": "EisnerAmper",
+      "city": "Owings Mills",
+      "region": "Maryland",
+      "datePosted": "2026-08-10",
+      "employmentType": "FULL_TIME",
+      "salary": null,
+      "lastSeenRun": 70
     }
   }
 }
