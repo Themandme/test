@@ -130,10 +130,30 @@ async function fetchJson(url, attempts = 4) {
   throw new Error(`HiringCafe remote request failed after ${attempts} attempts: ${url} (${error})`);
 }
 
+export function isHiringCafeAccessBlock(status, body = '') {
+  return status === 403 && /(?:just a moment|security verification|cloudflare|malicious bots)/i.test(String(body));
+}
+
+function recordBlockedAttempt(error) {
+  let prior = { run: 0, jobs: {} };
+  try { prior = JSON.parse(readFileSync(STORE_PATH, 'utf8')); } catch {}
+  writeFileSync(STORE_PATH, JSON.stringify({
+    ...prior,
+    lastAttemptAt: new Date().toISOString(),
+    lastAttemptStatus: 'blocked-by-source-security',
+    lastAttemptError: error.message,
+  }, null, 2) + '\n');
+}
+
 async function getBuildId() {
   const response = await fetch(HOME, { headers: { 'user-agent': UA, accept: 'text/html' } });
-  if (!response.ok) throw new Error(`HiringCafe homepage HTTP ${response.status}`);
-  const match = (await response.text()).match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
+  const html = await response.text();
+  if (!response.ok) {
+    const error = new Error(`HiringCafe homepage HTTP ${response.status}`);
+    if (isHiringCafeAccessBlock(response.status, html)) error.code = 'HIRINGCAFE_ACCESS_BLOCK';
+    throw error;
+  }
+  const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
   if (!match) throw new Error('HiringCafe homepage did not contain __NEXT_DATA__');
   const buildId = JSON.parse(match[1]).buildId;
   if (!buildId) throw new Error('HiringCafe __NEXT_DATA__ had no buildId');
@@ -230,5 +250,13 @@ export async function main({ force = process.argv.includes('--force') } = {}) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  main().catch(error => { console.error(error); process.exitCode = 1; });
+  main().catch(error => {
+    if (error.code === 'HIRINGCAFE_ACCESS_BLOCK') {
+      recordBlockedAttempt(error);
+      console.warn(`${error.message}; preserved the last verified remote dataset and recorded this blocked attempt.`);
+      return;
+    }
+    console.error(error);
+    process.exitCode = 1;
+  });
 }
