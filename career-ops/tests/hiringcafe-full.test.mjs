@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { milesBetween, normalizeHit } from '../scan-hiringcafe-full.mjs';
+import { isHiringCafeAccessBlock, milesBetween, normalizeHit } from '../scan-hiringcafe-full.mjs';
 
 const hit = (overrides = {}) => ({
   objectID: 'source___board___123',
@@ -41,4 +41,10 @@ test('HiringCafe normalization excludes senior metadata and off-radius results',
 test('frontline shift leadership stays eligible', () => {
   const lead = hit({ job_information: { title: 'Retail Shift Lead' }, v5_processed_job_data: { ...hit().v5_processed_job_data, seniority_level: 'Mid Level', min_industry_and_role_yoe: 2 } });
   assert.equal(normalizeHit(lead).reason, null);
+});
+
+test('Cloudflare verification is classified as a source access block', () => {
+  assert.equal(isHiringCafeAccessBlock(403, '<title>Just a moment...</title> Cloudflare'), true);
+  assert.equal(isHiringCafeAccessBlock(403, 'ordinary forbidden response'), false);
+  assert.equal(isHiringCafeAccessBlock(500, 'Cloudflare'), false);
 });
