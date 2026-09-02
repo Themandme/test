@@ -286,7 +286,12 @@ export async function main() {
   let prior = { run: 0 };
   try { prior = JSON.parse(readFileSync(STORE_PATH, 'utf8')); } catch {}
   const run = Number(prior.run || 0) + 1;
-  const storedJobs = Object.fromEntries(kept.map(job => [job.sourceId, { ...job, lastSeenRun: run }]));
+  // Keep the committed state compact. Fit and the requirements summary are
+  // presentation data regenerated on every complete run, not sweep state.
+  const storedJobs = Object.fromEntries(kept.map(({ fit, requirementsSummary, sourceId, ...job }) => [
+    sourceId,
+    { ...job, lastSeenRun: run },
+  ]));
   writeFileSync(STORE_PATH, JSON.stringify({ note: 'Complete HiringCafe structured search within an exact 10-mile radius.', updatedAt: new Date().toISOString(), cursor: 0, run, chunkCount: 0, cycleRuns: 1, jobs: storedJobs, lastCompleteSearch: { buildId: id, pages: pageCount, resultGroups: total } }, null, 2));
 
   mkdirSync('data', { recursive: true });
