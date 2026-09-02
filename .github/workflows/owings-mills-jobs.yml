@@ -66,7 +66,7 @@ jobs:
         id: hiringcafe_remote
         working-directory: career-ops
         continue-on-error: true
-        # The scanner itself waits until September 3 Eastern, then keeps only
+        # The scanner itself waits until September 2 Eastern, then keeps only
         # nationwide remote postings under 24 hours old with salary floors
         # above $55,000. State-restricted remote jobs are rejected.
         run: |
