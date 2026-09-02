@@ -1,6 +1,6 @@
 # Unified local and remote job search
 
-_Updated 2026-09-02 15:15 UTC · 1913 deduplicated openings_
+_Updated 2026-09-02 23:29 UTC · 1911 deduplicated openings_
 
 10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards, and nationwide U.S. remote jobs posted within the last 24 hours with published salary floors above $55,000. State-restricted remote listings are excluded. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, pay, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.
 
@@ -9,9 +9,9 @@ _Updated 2026-09-02 15:15 UTC · 1913 deduplicated openings_
 | Source | Openings |
 |---|---:|
 | HiringCafe | 1307 |
-| Direct employer board | 295 |
+| Direct employer board | 292 |
 | State of Maryland JobAps | 142 |
-| County/city NEOGOV | 125 |
+| County/city NEOGOV | 126 |
 | official university board | 44 |
 
 ## Best matches
@@ -52,7 +52,6 @@ _Updated 2026-09-02 15:15 UTC · 1913 deduplicated openings_
 | 77 | Humanim | [Program Coordinator, Youth Transition Services Baltimore City/County](https://secure4.saashr.com/ta/6012624.careers?ShowJob=1023734531) | Baltimore, Maryland | $44k/yr | HiringCafe | Professional | posting age unknown |
 | 77 | Hazen and Sawyer | [Data Entry Specialist](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=92597001-ac6f-4a45-92ec-13f78d7b2194&ccId=19000101_000001&jobId=568879&lang=en_US) | Millersville, Maryland | $20–$35/hr | HiringCafe | Professional | posting age unknown |
 | 77 | Curio Wellness Center and Spa, LLC | [Cultivation Data Management Specialist](https://careers.curiowellness.com/job/Timonium-Cultivation-Data-Management-Specialist-MD/1423045300/) | Timonium, Maryland | $22–$23/hr | HiringCafe | Professional | posting age unknown |
-| 77 | T. Rowe Price | [Associate Analyst, Global Financial Crimes](https://troweprice.wd5.myworkdayjobs.com/troweprice/job/Owings-Mills-MD/Associate-Analyst--Global-Financial-Crimes_83014) | Owings Mills, MD | — | Direct employer board | Professional | pay undisclosed |
 | 76 | State of Maryland — DAT Property Tax Credit Programs | [OFFICE SUPERVISOR (Customer Support Associate Supervisor)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001442&R3=0011) | Baltimore City | $49k–$78k/yr | State of Maryland JobAps | Customer service | management experience check; regional/public board—not exact-radius verified |
 | 76 | State of Maryland — LABOR - Family and Medical Leave Insurance | [Senior Plan Analyst (Administrative Officer III)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002247&R3=0061) | Baltimore City | $63k–$100k/yr | State of Maryland JobAps | Professional | senior/lead experience check; regional/public board—not exact-radius verified |
 | 76 | State of Maryland — Maryland Insurance Administration | [SENIOR SALESFORCE BUSINESS ANALYST , CONTRACTUAL (IT Systems Technical Specialist)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004488&R3=0015) | Baltimore City | $55.53–$67.69/hr | State of Maryland JobAps | Professional | senior/lead experience check; regional/public board—not exact-radius verified |
@@ -84,9 +83,11 @@ _Updated 2026-09-02 15:15 UTC · 1913 deduplicated openings_
 | 74 | Shore United Bank | [Mobile Bank Teller](https://www.shoreunitedbank.com/jobs?gh_jid=5399856008) | Owings Mills, Maryland | $20–$23/hr | HiringCafe | Customer service | posting age unknown |
 | 74 | Travelers | [Software Engineer – II (Quadient Inspire)](https://careers.travelers.com/job/23772259/software-engineer-ii-quadient-inspire-hartford-ct/) | Cockeysville, Maryland | $120k–$199k/yr | HiringCafe | Professional | level II experience check; posting age unknown |
 | 74 | Baltimore County Government | [Office Assistant - Clinical Health Services](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5437585/office-assistant-clinical-health-services) | Towson, MD | $18.91–$28.84/hr | County/city NEOGOV | Customer service | — |
+| 73 | Baltimore County Government | [NOC Support Tier I - (IT Tech I) - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5470348/noc-support-tier-i-it-tech-i-non-merit) | Towson, MD | $31.15–$40.44/hr | County/city NEOGOV | Review | — |
 | 73 | State of Maryland — DPSCS OSEC Administrative Services | [ACCOUNTANT TRAINEE](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004545&R3=0005) | Baltimore City | $59k–$77k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 73 | Baltimore County Government | [Correctional Heating and Air Conditioning Mechanic (For Retiree/Rehire Corrections)](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5464970/correctional-heating-and-air-conditioning-mechanic-for-retiree-rehire-correction) | Towson, MD | $35–$45/hr | County/city NEOGOV | Review | — |
 | 73 | State of Maryland — MDH Dev Disabilities Admin - Program Direction | [Senior Advisor for Strategic Communications & Public Engagement ((Administrative Program Manager I))](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005472&R3=0008) | Baltimore City | $82k–$129k/yr | State of Maryland JobAps | Customer service | senior/lead experience check; regional/public board—not exact-radius verified |
+| 73 | University of Maryland | [Research Software and Data Engineer](https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Research-Software-and-Data-Engineer_JR104853) | University of Maryland College Park | — | Direct employer board | Professional | classification may require prior professional experience; pay undisclosed; regional/public board—not exact-radius verified |
 | 72 | State of Maryland — COMM - Ofc of Admin & Information Technology | [Procurement Specialist (Procurement Officer I)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003002&R3=0006) | Baltimore City | $67k–$106k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 72 | State of Maryland — MSP - Field Operations Bureau | [MSP Emergency Dispatcher Trn](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=003784&R3=0001) | Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester | $45k–$71k/yr | State of Maryland JobAps | Customer service | older posting—verify still active; regional/public board—not exact-radius verified |
 | 72 | University of Maryland | [Coordinator, Business and Administrative Services](https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Coordinator--Business-and-Administrative-Services_JR104698) | University of Maryland College Park | — | Direct employer board | Customer service | pay undisclosed; regional/public board—not exact-radius verified |
@@ -108,8 +109,8 @@ _Updated 2026-09-02 15:15 UTC · 1913 deduplicated openings_
 | 71 | CGI | [e-Discovery Data Migration Engineer](https://clients.njoyn.com/CORP/xweb/xweb.asp?CLID=21001&page=jobdetails&JobID=J0826-1420&BRID=1327128) | Woodlawn, Maryland | $90k–$198k/yr | HiringCafe | Professional | classification may require prior professional experience; posting age unknown |
 | 71 | Trane Technologies | [Application Engineer](https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers/job/Towson-Maryland/Application-Engineer_JR-12713-1) | Towson, Maryland | $70k–$101k/yr | HiringCafe | Professional | classification may require prior professional experience; posting age unknown |
 | 70 | State of Maryland — DGS Maryland Capitol Police | [POLICE OFFICER II](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004126&R3=0007) | Anne Arundel Baltimore City | $72k–$97k/yr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
-| 70 | State of Maryland — OPD District Operations | [PARALEGAL SERIES (PARALEGAL I & II -Contractual)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000885&R3=0015) | Baltimore City | $22.63–$24.02/hr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 70 | Howard County Government | [Planning Specialist II - Planning and Zoning, Division of Land Development](https://www.governmentjobs.com/careers/howardcounty/jobs/5455532/planning-specialist-ii-planning-and-zoning-division-of-land-development) | Ellicott City, MD | $70k–$135k/yr | County/city NEOGOV | Review | level II experience check |
+| 70 | State of Maryland — OPD District Operations | [PARALEGAL SERIES (PARALEGAL I & II -Contractual)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=000885&R3=0015) | Baltimore City | $22.63–$24.02/hr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 70 | State of Maryland — MD State Department of Education | [Temporary Invoice Processor (Fiscal Accounts Clerk II)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004518&R3=0013) | Baltimore City | $24.02/hr | State of Maryland JobAps | Review | level II experience check; regional/public board—not exact-radius verified |
 | 70 | Howard County Government | [Plan Review Technician - (Regulation Support Technician II) - Inspections, Licenses, and Permits](https://www.governmentjobs.com/careers/howardcounty/jobs/5264742/plan-review-technician-regulation-support-technician-ii-inspections-licens) | Ellicott City, MD | $51k–$99k/yr | County/city NEOGOV | Review | level II experience check |
 | 70 | Baltimore County Government | [Chief of Human Resources Information Systems - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5455106/chief-of-human-resources-information-systems-non-merit) | Towson, MD | $102k–$125k/yr | County/city NEOGOV | Professional | executive-level experience check |
@@ -117,7 +118,6 @@ _Updated 2026-09-02 15:15 UTC · 1913 deduplicated openings_
 | 70 | Baltimore County Government | [Therapeutic Recreation Administrative Aide](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5465522) | Towson, Maryland | $18.91–$28.44/hr | HiringCafe | Customer service | posting age unknown |
 | 70 | Trane Technologies | [Customer Support Specialist](https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers/job/Pittsburgh-Pennsylvania/Customer-Support-Specialist_JR-13430-1) | Timonium, Maryland | $41k–$83k/yr | HiringCafe | Customer service | posting age unknown |
 | 70 | Nations Photo Lab | [Customer Service Associate](https://recruiting.ultipro.com/nat1067napll/JobBoard/e6dc5bed-dd1e-4156-bf04-56c15de61650/OpportunityDetail?opportunityId=ad06a8d8-4ddb-4269-a482-e4ee4028ce39) | Hunt Valley, Maryland | $18–$21.75/hr | HiringCafe | Customer service | posting age unknown |
-| 70 | Best Buy | [Retail Sales Specialist - TCL Home Theater](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25632&siteid=5649&PageType=JobDetails&jobid=3756728) | Timonium, Maryland | $15.50–$20.15/hr | HiringCafe | Customer service | posting age unknown |
 
 ## Notes
 

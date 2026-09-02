@@ -22683,5 +22683,8 @@
     "buildId": "Y3IcwKEhn7avNOVY7Nggp",
     "pages": 236,
     "resultGroups": 9437
-  }
+  },
+  "lastAttemptAt": "2026-09-02T23:22:42.752Z",
+  "lastAttemptStatus": "blocked-by-source-security",
+  "lastAttemptError": "HiringCafe homepage HTTP 403"
 }
