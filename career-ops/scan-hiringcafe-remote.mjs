@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url';
 const HOME = 'https://hiringcafe.com/';
 const STORE_PATH = 'remote-jobs-store.json';
 const DIGEST_PATH = 'remote-jobs-latest.md';
-const ACTIVATION_DATE_ET = '2026-09-03';
+const ACTIVATION_DATE_ET = '2026-09-02';
 const MAX_AGE_MS = 24 * 60 * 60 * 1000;
 const MIN_ANNUAL_FLOOR = 55_000;
 const MAX_PAGES = 400;
