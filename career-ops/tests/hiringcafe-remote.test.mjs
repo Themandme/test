@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { isNationwideUsRemote, normalizeRemoteHit } from '../scan-hiringcafe-remote.mjs';
+import { isHiringCafeAccessBlock, isNationwideUsRemote, normalizeRemoteHit } from '../scan-hiringcafe-remote.mjs';
 
 const now = Date.parse('2026-09-03T14:00:00Z');
 const baseV5 = {
@@ -29,4 +29,9 @@ test('remote normalization requires a salary floor above $55k and age under 24 h
 test('remote normalization rejects senior and clinical roles', () => {
   assert.equal(normalizeRemoteHit({ ...hit(), job_information: { title: 'Senior Support Analyst' } }, now).reason, 'senior');
   assert.equal(normalizeRemoteHit({ ...hit(), job_information: { title: 'Clinical Support Analyst' } }, now).reason, 'medical');
+});
+
+test('Cloudflare verification is classified as a source access block', () => {
+  assert.equal(isHiringCafeAccessBlock(403, 'Performing security verification by Cloudflare'), true);
+  assert.equal(isHiringCafeAccessBlock(403, 'ordinary forbidden response'), false);
 });
