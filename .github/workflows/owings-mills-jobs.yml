@@ -62,6 +62,17 @@ jobs:
           node --test tests/hiringcafe-full.test.mjs
           node scan-hiringcafe-full.mjs
 
+      - name: Scan nationwide U.S. remote jobs
+        id: hiringcafe_remote
+        working-directory: career-ops
+        continue-on-error: true
+        # The scanner itself waits until September 3 Eastern, then keeps only
+        # nationwide remote postings under 24 hours old with salary floors
+        # above $55,000. State-restricted remote jobs are rejected.
+        run: |
+          node --test tests/hiringcafe-remote.test.mjs
+          node scan-hiringcafe-remote.mjs
+
       - name: Sweep the local Workday tenants
         id: workday
         working-directory: career-ops
@@ -110,13 +121,13 @@ jobs:
         # cursor always moves), so it is checked separately from the digest,
         # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json; then
+          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json; then
             echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add owings-mills-latest.md owings-mills-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json
+          git add owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
           # Concurrent-safe: another run (or a push from a session) may have
           # landed first, and this job's only local commit is the one above.
@@ -146,6 +157,7 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
           HIRINGCAFE_SCHEDULED: ${{ steps.hiringcafe_scheduled.outcome }}
           HIRINGCAFE_CATCHUP: ${{ steps.hiringcafe_catchup.outcome }}
+          HIRINGCAFE_REMOTE: ${{ steps.hiringcafe_remote.outcome }}
           WORKDAY: ${{ steps.workday.outcome }}
           MDGOV: ${{ steps.mdgov.outcome }}
           NEOGOV: ${{ steps.neogov.outcome }}
@@ -164,6 +176,7 @@ jobs:
             echo "| Stage | Outcome |"
             echo "|---|---|"
             echo "| $hiringcafe_label | $hiringcafe_outcome |"
+            echo "| HiringCafe nationwide remote | $HIRINGCAFE_REMOTE |"
             echo "| Local Workday tenants | $WORKDAY |"
             echo "| Maryland state (JobAps) | $MDGOV |"
             echo "| County/city gov (NEOGOV) | $NEOGOV |"
@@ -171,7 +184,7 @@ jobs:
             echo "| Commit refreshed data | $COMMIT |"
           } >> "$GITHUB_STEP_SUMMARY"
           incomplete=""
-          for pair in             "HiringCafe:$hiringcafe_outcome"             "Workday:$WORKDAY"             "JobAps:$MDGOV"             "NEOGOV:$NEOGOV"             "Unified:$UNIFIED"             "Commit:$COMMIT"
+          for pair in             "HiringCafe:$hiringcafe_outcome"             "HiringCafeRemote:$HIRINGCAFE_REMOTE"             "Workday:$WORKDAY"             "JobAps:$MDGOV"             "NEOGOV:$NEOGOV"             "Unified:$UNIFIED"             "Commit:$COMMIT"
           do
             outcome="${pair#*:}"
             [ "$outcome" = "success" ] || incomplete="$incomplete ${pair%%:*}($outcome)"

@@ -61,7 +61,7 @@
     "serve:dashboard": "cd dashboard && go run . --path ..",
     "postinstall": "npx playwright install chromium --with-deps || npx playwright install chromium --with-deps",
     "manifesto": "node manifesto.mjs",
-    "test:local-scanners": "node --test tests/sitemap-sweep.test.mjs tests/local-scanners.test.mjs"
+    "test:local-scanners": "node --test tests/sitemap-sweep.test.mjs tests/local-scanners.test.mjs tests/hiringcafe-full.test.mjs tests/hiringcafe-remote.test.mjs"
   },
   "keywords": [
     "ai",
