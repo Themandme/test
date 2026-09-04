@@ -8,6 +8,7 @@ import {
   normalize,
   parseMdY,
   parseSalary,
+  hiringCafeSourceState,
   unifiedDedupKey,
   unifiedScore,
 } from '../scan-neogov.mjs';
@@ -192,4 +193,17 @@ test('unified scoring demotes senior and stale continuous postings', () => {
   assert.ok(junior.overall > senior.overall);
   assert.ok(junior.overall > stale.overall);
   assert.ok(stale.flags.includes('older continuous/standing recruitment'));
+});
+
+test('HiringCafe source health distinguishes blocked cache from expired data', () => {
+  const now = Date.parse('2026-09-04T12:00:00Z');
+  const blocked = {
+    updatedAt: '2026-09-03T12:00:00Z',
+    lastAttemptAt: '2026-09-04T11:00:00Z',
+    lastAttemptStatus: 'blocked-by-source-security',
+  };
+  assert.equal(hiringCafeSourceState(blocked, now).status, 'cached-source-blocked');
+  assert.equal(hiringCafeSourceState(blocked, now).include, true);
+  assert.equal(hiringCafeSourceState({ ...blocked, updatedAt: '2026-08-20T12:00:00Z' }, now).status, 'expired-cache');
+  assert.equal(hiringCafeSourceState({ jobs: {} }, now).include, false);
 });

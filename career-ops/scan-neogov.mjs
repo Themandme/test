@@ -284,6 +284,8 @@ export function unifiedScore(j) {
   if (tier === 3) flags.push('published pay below $20');
   if (j.scope === 'regional') flags.push('regional/public board—not exact-radius verified');
   if (j.scope === 'US remote nationwide') flags.push('nationwide U.S. remote');
+  if (j.sourceStatus === 'cached-source-blocked') flags.push('cached—source currently blocked');
+  if (j.retainedAfterSourceFailure) flags.push('cached—direct board refresh failed');
   return { overall, qualification: clampFit(qualification), interview: clampFit(interview), pay,
     careerValue: clampFit(careerValue), recency, overqualificationRisk: clampFit(overqualificationRisk),
     resume, confidence: 'preliminary—title/pay/location/recency metadata', flags };
@@ -355,6 +357,23 @@ function dedupeUnifiedRows(rows) {
   return [...identified.values(), ...fallback.values()];
 }
 
+export function hiringCafeSourceState(store, now = Date.now(), maxAgeMs = 7 * 86400000) {
+  const updatedMs = Date.parse(store?.updatedAt || '');
+  const attemptedMs = Date.parse(store?.lastAttemptAt || '');
+  const blocked = store?.lastAttemptStatus === 'blocked-by-source-security'
+    && Number.isFinite(attemptedMs)
+    && (!Number.isFinite(updatedMs) || attemptedMs > updatedMs);
+  if (!Number.isFinite(updatedMs)) return { status: 'unavailable', updatedAt: null, include: false };
+  const ageMs = Math.max(0, now - updatedMs);
+  if (ageMs > maxAgeMs) return { status: 'expired-cache', updatedAt: store.updatedAt, include: false, ageHours: Math.round(ageMs / 3600000) };
+  return {
+    status: blocked ? 'cached-source-blocked' : 'current',
+    updatedAt: store.updatedAt,
+    include: true,
+    ageHours: Math.round(ageMs / 3600000),
+  };
+}
+
 function writeUnifiedLocalJobs({ strict = false } = {}) {
   const read = (name, fallback) => {
     try { return JSON.parse(readFileSync(path.join(ROOT, name), 'utf8')); }
@@ -363,26 +382,52 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
       return fallback;
     }
   };
+  const readOptional = (name, fallback) => {
+    try { return JSON.parse(readFileSync(path.join(ROOT, name), 'utf8')); }
+    catch { return fallback; }
+  };
   const hc = read('owings-mills-store.json', { jobs: {} });
   const remote = read('remote-jobs-store.json', { jobs: {} });
   const workday = read('local-workday-store.json', []);
+  // Optional during rollout: if the new scanner itself fails before creating
+  // its first store, healthy government/Workday outputs must still rebuild.
+  const directAts = readOptional('direct-ats-store.json', { jobs: [], sourceHealth: [] });
   const mdgov = read('maryland-gov-store.json', []);
   const ng = read('neogov-store.json', []);
-  const near = /\b(owings mills|garrison|glyndon|reisterstown|pikesville|randallstown|milford mill|windsor mill|stevenson|lochearn|finksburg|woodstock|towson)\b/i;
+  const near = /\b(owings mills|garrison|glyndon|reisterstown|pikesville|randallstown|milford mill|windsor mill|stevenson|lochearn|finksburg|woodstock)\b/i;
   const regionalBoard = /\b(city of baltimore|umbc|stevenson university|johns hopkins university|towson university|university of maryland|loyola university|goucher college)\b/i;
   const rows = [];
-  for (const x of Object.values(hc.jobs || {})) rows.push({ ...x, location: [x.city, x.region].filter(Boolean).join(', '), source: 'HiringCafe', scope: '10-mile proxy' });
-  for (const x of Object.values(remote.jobs || {})) rows.push({
-    ...x,
-    location: 'Remote — United States',
-    source: 'HiringCafe remote',
-    scope: 'US remote nationwide',
-  });
+  const now = Date.now();
+  const hiringCafeLocalHealth = hiringCafeSourceState(hc, now, 7 * 86400000);
+  const hiringCafeRemoteHealth = hiringCafeSourceState(remote, now, 24 * 3600000);
+  if (hiringCafeLocalHealth.include) {
+    for (const x of Object.values(hc.jobs || {})) rows.push({
+      ...x,
+      location: [x.city, x.region].filter(Boolean).join(', '),
+      source: hiringCafeLocalHealth.status === 'current' ? 'HiringCafe' : 'HiringCafe (cached)',
+      sourceStatus: hiringCafeLocalHealth.status,
+      scope: '10-mile radius',
+    });
+  }
+  // Remote is intentionally stricter than local: a blocked source cannot
+  // verify the under-24-hour promise, and individual rows expire at 24 hours.
+  if (hiringCafeRemoteHealth.status === 'current') {
+    for (const x of Object.values(remote.jobs || {})) {
+      const postedMs = Date.parse(x.datePosted || '');
+      if (!Number.isFinite(postedMs) || now - postedMs >= 24 * 3600000) continue;
+      rows.push({ ...x, location: 'Remote — United States', source: 'HiringCafe remote', scope: 'US remote nationwide' });
+    }
+  }
   for (const x of workday) {
     const regional = regionalBoard.test(x.company), local = near.test(x.location || '');
     if (!local && !regional) continue;
     rows.push({ ...x, source: x.source || 'Direct employer board', scope: local ? '10-mile proxy' : 'regional' });
   }
+  for (const x of directAts.jobs || []) rows.push({
+    ...x,
+    source: x.source || 'Direct ATS',
+    scope: '10-mile proxy',
+  });
   const knownInternalMarylandReqs = new Set(['26-002588-0052', '26-004498-0001', '26-001702-0009']);
   for (const x of mdgov) if (!x.restricted && !knownInternalMarylandReqs.has(x.reqId)
     && /\b(Baltimore County|Baltimore City)\b/i.test(x.location || ''))
@@ -399,18 +444,32 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
   const sourceCounts = {};
   for (const j of jobs) sourceCounts[j.source] = (sourceCounts[j.source] || 0) + 1;
   const generatedAt = new Date().toISOString();
+  const sourceHealth = {
+    hiringCafeLocal: hiringCafeLocalHealth,
+    hiringCafeRemote: hiringCafeRemoteHealth,
+    directAts: {
+      updatedAt: directAts.generatedAt || null,
+      healthy: (directAts.sourceHealth || []).filter(source => source.status === 'success').length,
+      failed: (directAts.sourceHealth || []).filter(source => source.status !== 'success').length,
+      boards: directAts.sourceHealth || [],
+    },
+  };
   writeFileSync(path.join(ROOT, 'unified-local-jobs.json'), JSON.stringify({
     generatedAt, center: 'Owings Mills, MD 21117',
     scope: '10-mile core, explicitly labeled Baltimore-area public/university boards, and nationwide U.S. remote jobs under 24 hours old with salary floors above $55k',
     payPriority: '$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking',
     scoring: 'Preliminary metadata score prioritizing $20+/hour and recent postings; older/continuous/unknown-age and likely advanced classifications are penalized; verify requirements before applying',
-    sourceCounts, jobs,
+    sourceHealth, sourceCounts, jobs,
   }, null, 2));
 
   const esc = s => String(s || '').replace(/\|/g, '\\|');
   const md = ['# Unified local and remote job search', '',
     '_Updated ' + generatedAt.slice(0,16).replace('T',' ') + ' UTC · ' + jobs.length + ' deduplicated openings_',
     '', '10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards, and nationwide U.S. remote jobs posted within the last 24 hours with published salary floors above $55,000. State-restricted remote listings are excluded. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, pay, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.',
+    '', '## Source health', '', '| Source | Status | Last verified |', '|---|---|---|',
+    '| HiringCafe local | ' + hiringCafeLocalHealth.status + ' | ' + (hiringCafeLocalHealth.updatedAt || 'never') + ' |',
+    '| HiringCafe remote | ' + hiringCafeRemoteHealth.status + ' | ' + (hiringCafeRemoteHealth.updatedAt || 'never') + ' |',
+    '| Other direct ATS boards | ' + sourceHealth.directAts.healthy + ' healthy / ' + sourceHealth.directAts.failed + ' failed | ' + (sourceHealth.directAts.updatedAt || 'never') + ' |',
     '', '## Sources', '', '| Source | Openings |', '|---|---:|',
     ...Object.entries(sourceCounts).sort((a,b)=>b[1]-a[1]).map(([s,n]) => '| ' + esc(s) + ' | ' + n + ' |'),
     '', '## Best matches', '', '| Score | Employer | Role | Location | Pay | Source | Resume | Flags |',
@@ -420,6 +479,8 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
   md.push('', '## Notes', '', '- “Regional” means the board is relevant to the Baltimore-area search but the posting is not verified within 10 road miles.',
     '- Remote results must be available nationwide in the United States; jobs tied to individual states or limited state lists are omitted.',
     '- Remote results expire as soon as their publication timestamp reaches 24 hours and must have a disclosed salary floor above $55,000.',
+    '- HiringCafe local results may remain visible as clearly flagged cache for at most seven days while its source is blocked; cached rows are never presented as a fresh scan.',
+    '- HiringCafe remote results are omitted whenever that source is blocked or more than 24 hours old.',
     '- State and local government deadlines are preserved in the JSON output.',
     '- NEOGOV rows without verified coordinates are omitted from radius-limited results.',
     '- Older continuous postings and unknown-age roles receive recency penalties so fresh openings surface first.',
