@@ -131,7 +131,8 @@ jobs:
         # cursor always moves), so it is checked separately from the digest,
         # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json direct-ats-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json; then
+          changes="$(git status --porcelain -- owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json direct-ats-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json)"
+          if [ -z "$changes" ]; then
             echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
