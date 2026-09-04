@@ -8,13 +8,16 @@ console.log('\nProvider — icims');
 
 const mod = await import(pathToFileURL(join(ROOT, 'providers/icims.mjs')).href);
 const icims = mod.default;
-const { parseIcimsSearchPage } = mod;
+const { ICIMS_HEADERS, parseIcimsSearchPage } = mod;
 
 const ORIGIN = 'https://careers-acmefreight.icims.com';
 const fixture = readFileSync(join(ROOT, 'tests/fixtures/icims-search-page.html'), 'utf-8');
 
 if (icims.id === 'icims') pass('icims.id is "icims"');
 else fail(`icims.id is ${JSON.stringify(icims.id)}`);
+
+if (ICIMS_HEADERS['user-agent'] === 'Mozilla/5.0') pass('uses minimal UA accepted by current iCIMS bot layer');
+else fail(`unexpected iCIMS UA: ${JSON.stringify(ICIMS_HEADERS['user-agent'])}`);
 
 // detect(): any *.icims.com https careers_url resolves to the search URL.
 {
@@ -87,9 +90,10 @@ const mkCtx = (pages) => ({
   transport: 'http',
   sleep: async () => {},
   fetchJson: async () => { throw new Error('fetchJson should not be called'); },
-  fetchText: async (url) => {
+  fetchText: async (url, opts) => {
     const pr = Number(new URL(url).searchParams.get('pr'));
     mkCtx.calls.push(pr);
+    mkCtx.opts.push(opts);
     return pages[pr] ?? page(); // out-of-range → empty page
   },
 });
@@ -97,15 +101,19 @@ const mkCtx = (pages) => ({
 // Multi-page tenant: stops on the first empty page.
 {
   mkCtx.calls = [];
+  mkCtx.opts = [];
   const ctx = mkCtx([page(mkCard(1, 'Role A'), mkCard(2, 'Role B')), page(mkCard(3, 'Role C'))]);
   const jobs = await icims.fetch({ name: 'acmefreight', careers_url: `${ORIGIN}/jobs/search?ss=1` }, ctx);
   if (jobs.length === 3 && mkCtx.calls.join(',') === '0,1,2') pass('fetch paginates and stops on empty page');
   else fail(`jobs=${jobs.length} calls=${mkCtx.calls.join(',')}`);
+  if (mkCtx.opts.every(opts => opts?.headers?.['user-agent'] === 'Mozilla/5.0')) pass('fetch sends the iCIMS-safe UA');
+  else fail(`fetch headers: ${JSON.stringify(mkCtx.opts)}`);
 }
 
 // Tenant that repeats the last page for out-of-range pr: repeat-content stop.
 {
   mkCtx.calls = [];
+  mkCtx.opts = [];
   const repeating = page(mkCard(9, 'Sticky Role'));
   const ctx = mkCtx({ 0: page(mkCard(1, 'First')), 1: repeating, 2: repeating, 3: repeating });
   const jobs = await icims.fetch({ name: 'acmefreight', careers_url: `${ORIGIN}/jobs/search?ss=1` }, ctx);
@@ -117,6 +125,7 @@ const mkCtx = (pages) => ({
 // not "finished", or the run summary cries wolf on every healthy tenant.
 {
   mkCtx.calls = [];
+  mkCtx.opts = [];
   const ctx = mkCtx([page(mkCard(1, 'Role A')), page(mkCard(2, 'Role B'))]);
   const jobs = await icims.fetch({ name: 'acmefreight', careers_url: `${ORIGIN}/jobs/search?ss=1` }, ctx);
   if (jobs.icimsTruncated === undefined) pass('complete board carries no truncation flag');
@@ -127,6 +136,7 @@ const mkCtx = (pages) => ({
 // every page holds distinct jobs, so neither natural stop condition fires.
 {
   mkCtx.calls = [];
+  mkCtx.opts = [];
   const deep = {};
   for (let i = 0; i < 60; i++) deep[i] = page(mkCard(100 + i, `Role ${i}`));
   const ctx = mkCtx(deep);
