@@ -42,7 +42,10 @@ export const DEFAULT_DIRECT_SOURCES = [
   { name: 'Marvin', provider: 'icims', careers_url: 'https://infinity-jobs-marvin.icims.com/jobs/search?ss=1' },
   { name: 'OSL Retail Services', provider: 'icims', careers_url: 'https://uscareers-oslrs.icims.com/jobs/search?ss=1' },
   { name: 'Bartlett Tree Experts', provider: 'icims', careers_url: 'https://englishcareers-bartlett.icims.com/jobs/search?ss=1' },
-  { name: 'Footprint Solutions', provider: 'jobvite', careers_url: 'https://jobs.jobvite.com/fprs' },
+  // This board has roughly 2,000 postings; its legacy JSON endpoint now stalls
+  // and returns HTML. Jobvite's live search page returns the complete Maryland
+  // slice in one small request, after which the normal local-location filter runs.
+  { name: 'Footprint Solutions', provider: 'jobvite', careers_url: 'https://jobs.jobvite.com/fprs', search_queries: ['Maryland'] },
   { name: 'Mainspring Recovery', provider: 'rippling', careers_url: 'https://ats.rippling.com/mainspringrecovery/jobs' },
   { name: 'Nexplore', provider: 'rippling', careers_url: 'https://ats.rippling.com/nexploreusa/jobs' },
   { name: 'WPM Real Estate Management', provider: 'rippling', careers_url: 'https://ats.rippling.com/wpm-real-estate/jobs' },
