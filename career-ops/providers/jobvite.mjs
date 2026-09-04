@@ -25,6 +25,8 @@
 //   provider: jobvite
 //   api: https://jobs.jobvite.com/api/company/{companyId}/jobs
 
+import { decodeEntities } from './_html-entities.mjs';
+
 const ALLOWED_HOST = 'jobs.jobvite.com';
 
 /** @param {string} url */
@@ -99,6 +101,12 @@ function buildApiUrl(companyId) {
   return `https://${ALLOWED_HOST}/api/company/${encodeURIComponent(companyId)}/jobs`;
 }
 
+function buildSearchUrl(companyId, query) {
+  return `https://${ALLOWED_HOST}/${encodeURIComponent(companyId)}/search/?q=${encodeURIComponent(query)}`;
+}
+
+const SEARCH_HEADERS = { 'user-agent': 'Mozilla/5.0', 'accept-language': 'en-US,en;q=0.9' };
+
 /** @type {Provider} */
 export default {
   id: 'jobvite',
@@ -111,6 +119,32 @@ export default {
   async fetch(entry, ctx) {
     const companyId = resolveCompanyId(entry);
     if (!companyId) throw new Error(`jobvite: cannot derive company ID for ${entry.name}`);
+
+    // Very large Jobvite tenants can no longer return usable JSON from the
+    // legacy company API: Footprint Solutions currently stalls, then serves
+    // an HTML page instead. A configured search query uses Jobvite's live,
+    // server-rendered search inventory and avoids downloading ~2,000 jobs
+    // when the caller only needs a geographic slice.
+    const queries = Array.isArray(entry.search_queries)
+      ? [...new Set(entry.search_queries.map(value => String(value || '').trim()).filter(Boolean))]
+      : [];
+    if (queries.length) {
+      const pages = await Promise.allSettled(queries.map(async query => {
+        const url = buildSearchUrl(companyId, query);
+        assertJobviteUrl(url);
+        const html = await ctx.fetchText(url, { headers: SEARCH_HEADERS, redirect: 'error' });
+        return parseJobviteSearchPage(html, entry.name, companyId);
+      }));
+      const successful = pages.filter(result => result.status === 'fulfilled');
+      if (!successful.length) {
+        const first = pages.find(result => result.status === 'rejected');
+        throw first?.reason || new Error('jobvite: all configured search queries failed');
+      }
+      const byUrl = new Map();
+      for (const result of successful) for (const job of result.value) byUrl.set(job.url, job);
+      return [...byUrl.values()];
+    }
+
     const apiUrl = buildApiUrl(companyId);
     assertJobviteUrl(apiUrl);
     // redirect:'error' prevents SSRF via server-side redirects; combined with
@@ -120,6 +154,31 @@ export default {
     return parseJobviteResponse(json, entry.name);
   },
 };
+
+/**
+ * Parse Jobvite's server-rendered search table. This is intentionally scoped
+ * to same-tenant `/slug/job/id` links so arbitrary page links never enter the
+ * pipeline. Search result pages do not publish dates; callers retain their
+ * normal undated-job policy.
+ */
+export function parseJobviteSearchPage(html, companyName, companyId) {
+  const out = [];
+  for (const match of String(html || '').matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)) {
+    const row = match[1];
+    const link = row.match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+    const locationCell = row.match(/<td\b[^>]*class=["'][^"']*\bjv-job-list-location\b[^"']*["'][^>]*>([\s\S]*?)<\/td>/i);
+    if (!link || !locationCell) continue;
+    let parsed;
+    try { parsed = new URL(decodeEntities(link[1]), `https://${ALLOWED_HOST}`); } catch { continue; }
+    const prefix = `/${companyId}/job/`;
+    if (parsed.protocol !== 'https:' || parsed.hostname !== ALLOWED_HOST || !parsed.pathname.startsWith(prefix)) continue;
+    const title = decodeEntities(link[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
+    const location = decodeEntities(locationCell[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
+    if (!title || !location) continue;
+    out.push({ title, url: `${parsed.origin}${parsed.pathname}`, company: companyName, location });
+  }
+  return out;
+}
 
 /**
  * Parse a Jobvite /api/company/{id}/jobs response. Exported for unit tests.

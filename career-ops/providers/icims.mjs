@@ -12,7 +12,6 @@
 // cheap title/location filters, so a 10k-tenant sweep pays detail-page
 // requests for real candidates only, never for noise.
 
-import { BROWSER_LIKE_USER_AGENT } from './_http.mjs';
 import { decodeEntities } from './_html-entities.mjs';
 
 // ~20 postings/page → 30 pages covers 600 postings; tenants bigger than that
@@ -21,10 +20,12 @@ const ICIMS_MAX_PAGES = 30;
 // Same per-tenant courtesy delay as workday.mjs — only multi-page tenants pay it.
 const INTER_PAGE_DELAY_MS = 150;
 
-// iCIMS serves 200 directly to a browser-like UA (verified live); the default
-// career-ops UA risks WAF interstitials, same as workday/glints.
-const HEADERS = {
-  'user-agent': BROWSER_LIKE_USER_AGENT,
+// iCIMS' current bot layer rejects a fully-versioned Chrome UA from hosted CI
+// with a misleading HTTP 405 "Human Verification" page. Its public portal and
+// sitemap both serve the deliberately minimal browser token below. Keep this
+// provider-specific: other ATS integrations still need BROWSER_LIKE_USER_AGENT.
+export const ICIMS_HEADERS = {
+  'user-agent': 'Mozilla/5.0',
   'accept-language': 'en-US,en;q=0.9',
 };
 
@@ -130,7 +131,7 @@ export default {
     let reachedEnd = false;
     for (let pageNum = 0; pageNum < ICIMS_MAX_PAGES; pageNum++) {
       if (pageNum > 0) await sleep(INTER_PAGE_DELAY_MS, ctx);
-      const html = await ctx.fetchText(searchUrl(origin, pageNum), { headers: HEADERS, redirect: 'error' });
+      const html = await ctx.fetchText(searchUrl(origin, pageNum), { headers: ICIMS_HEADERS, redirect: 'error' });
       const pageJobs = parseIcimsSearchPage(html, origin, entry.name);
       if (pageJobs.length === 0) { reachedEnd = true; break; } // past the last page
       // Some tenants serve the last real page again for an out-of-range pr
@@ -150,7 +151,7 @@ export default {
    */
   async enrichDate(job, ctx) {
     const sep = job.url.includes('?') ? '&' : '?';
-    const html = await ctx.fetchText(`${job.url}${sep}in_iframe=1`, { headers: HEADERS, redirect: 'error' });
+    const html = await ctx.fetchText(`${job.url}${sep}in_iframe=1`, { headers: ICIMS_HEADERS, redirect: 'error' });
     const nodes = [];
     // `type` is not reliably the first attribute: a tenant running CSP emits a
     // nonce on every inline script. Requiring it first found no date at all,
