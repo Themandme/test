@@ -1,13 +1,12 @@
 name: Owings Mills jobs
 
-# Twice daily at 11:23 and 21:23 UTC. That is 7:23am/5:23pm while US Eastern
-# observes daylight time, and 6:23am/4:23pm during standard time. GitHub Actions
-# cron is UTC-only; keeping one stable UTC schedule avoids duplicate seasonal runs.
+# Daily at 11:23 UTC. That is 7:23am while US Eastern observes daylight time
+# and 6:23am during standard time. Official ATS feeds are current inventories,
+# so one incremental morning pass is enough and avoids duplicate daily traffic.
 # Off-the-hour on purpose: :00 and :30 are the busiest shared scheduler slots.
 on:
   schedule:
     - cron: '23 11 * * *'
-    - cron: '23 21 * * *'
   workflow_dispatch:        # lets you run it on demand from the Actions tab
 
 permissions:
@@ -86,6 +85,17 @@ jobs:
         continue-on-error: true
         run: node scan-local-workday.mjs
 
+      - name: Sweep other official ATS boards
+        id: direct_ats
+        working-directory: career-ops
+        # Greenhouse, SmartRecruiters, iCIMS, BambooHR, Rippling and Jobvite
+        # boards seeded from employers previously seen near Owings Mills.
+        # Each provider is queried directly; HiringCafe is not in this path.
+        continue-on-error: true
+        run: |
+          node --test tests/direct-ats.test.mjs
+          node scan-direct-ats.mjs
+
       - name: Sweep Maryland state government (JobAps)
         id: mdgov
         working-directory: career-ops
@@ -121,13 +131,13 @@ jobs:
         # cursor always moves), so it is checked separately from the digest,
         # which only changes when listings do.
         run: |
-          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json; then
+          if git diff --quiet -- owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json direct-ats-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json; then
             echo "No change in local job listings or sweep state — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json
+          git add owings-mills-latest.md owings-mills-store.json remote-jobs-latest.md remote-jobs-store.json local-workday-store.json direct-ats-store.json maryland-gov-store.json neogov-store.json unified-local-jobs.md unified-local-jobs.json
           git commit -m "Owings Mills jobs: refresh listings ($(date -u +%Y-%m-%d\ %H:%M) UTC)"
           # Concurrent-safe: another run (or a push from a session) may have
           # landed first, and this job's only local commit is the one above.
@@ -159,6 +169,7 @@ jobs:
           HIRINGCAFE_CATCHUP: ${{ steps.hiringcafe_catchup.outcome }}
           HIRINGCAFE_REMOTE: ${{ steps.hiringcafe_remote.outcome }}
           WORKDAY: ${{ steps.workday.outcome }}
+          DIRECT_ATS: ${{ steps.direct_ats.outcome }}
           MDGOV: ${{ steps.mdgov.outcome }}
           NEOGOV: ${{ steps.neogov.outcome }}
           UNIFIED: ${{ steps.unified.outcome }}
@@ -178,13 +189,14 @@ jobs:
             echo "| $hiringcafe_label | $hiringcafe_outcome |"
             echo "| HiringCafe nationwide remote | $HIRINGCAFE_REMOTE |"
             echo "| Local Workday tenants | $WORKDAY |"
+            echo "| Other official ATS boards | $DIRECT_ATS |"
             echo "| Maryland state (JobAps) | $MDGOV |"
             echo "| County/city gov (NEOGOV) | $NEOGOV |"
             echo "| Unified scored list | $UNIFIED |"
             echo "| Commit refreshed data | $COMMIT |"
           } >> "$GITHUB_STEP_SUMMARY"
           incomplete=""
-          for pair in             "HiringCafe:$hiringcafe_outcome"             "HiringCafeRemote:$HIRINGCAFE_REMOTE"             "Workday:$WORKDAY"             "JobAps:$MDGOV"             "NEOGOV:$NEOGOV"             "Unified:$UNIFIED"             "Commit:$COMMIT"
+          for pair in             "HiringCafe:$hiringcafe_outcome"             "HiringCafeRemote:$HIRINGCAFE_REMOTE"             "Workday:$WORKDAY"             "DirectATS:$DIRECT_ATS"             "JobAps:$MDGOV"             "NEOGOV:$NEOGOV"             "Unified:$UNIFIED"             "Commit:$COMMIT"
           do
             outcome="${pair#*:}"
             [ "$outcome" = "success" ] || incomplete="$incomplete ${pair%%:*}($outcome)"
