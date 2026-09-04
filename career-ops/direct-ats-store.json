@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T02:21:17.203Z",
+  "generatedAt": "2026-09-04T02:49:51.238Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -41,65 +41,65 @@
     {
       "name": "Cellular Sales",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 958,
+      "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 42,
+      "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 500,
+      "kept": 0
     },
     {
       "name": "Enterprise Mobility",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 900,
+      "kept": 0
     },
     {
       "name": "FutureCare",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 180,
+      "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 88,
+      "kept": 6
     },
     {
       "name": "OSL Retail Services",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 600,
+      "kept": 2
     },
     {
       "name": "Bartlett Tree Experts",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 405 Not Allowed",
-      "retained": 0
+      "status": "success",
+      "fetched": 448,
+      "kept": 2
     },
     {
       "name": "Footprint Solutions",
       "provider": "jobvite",
-      "status": "failed",
-      "reason": "fetch failed",
-      "retained": 0
+      "status": "success",
+      "fetched": 19,
+      "kept": 1
     },
     {
       "name": "Mainspring Recovery",
@@ -152,6 +152,146 @@
     }
   ],
   "jobs": [
+    {
+      "company": "Marvin",
+      "title": "In-Home Sales Consultant (Pre-Set Appointments, $150K+)",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10513/in-home-sales-consultant-%28pre-set-appointments%2c-%24150k%2b%29/job",
+      "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
+      "postedAtMs": 1787198400000,
+      "datePosted": "2026-08-20T04:00:00.000Z",
+      "days": 14,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Bartlett Tree Experts",
+      "title": "Arborist Crew Leader",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/35423/arborist-crew-leader/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1787025600000,
+      "datePosted": "2026-08-18T04:00:00.000Z",
+      "days": 16,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "OSL Retail Services",
+      "title": "Wireless Sales Manager - W2577/W3804/W1867",
+      "url": "https://uscareers-oslrs.icims.com/jobs/99650/wireless-sales-manager---w2577-w3804-w1867/job",
+      "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
+      "postedAtMs": 1786939200000,
+      "datePosted": "2026-08-17T04:00:00.000Z",
+      "days": 17,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "OSL Retail Services",
+      "title": "Wireless Retail Sales Associate - W3434",
+      "url": "https://uscareers-oslrs.icims.com/jobs/99325/wireless-retail-sales-associate---w3434/job",
+      "location": "US-IL-WOODSTOCK",
+      "postedAtMs": 1786075200000,
+      "datePosted": "2026-08-07T04:00:00.000Z",
+      "days": 27,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Marvin",
+      "title": "In-Home Sales Consultant (Pre-Set Appointments, $150K+)",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10411/in-home-sales-consultant-%28pre-set-appointments%2c-%24150k%2b%29/job",
+      "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Marvin",
+      "title": "In-Home Sales Consultant (Pre-Set Appointments, $150K+)",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10404/in-home-sales-consultant-%28pre-set-appointments%2c-%24150k%2b%29/job",
+      "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Marvin",
+      "title": "Brand Ambassador - Lead Generator",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10361/brand-ambassador---lead-generator/job",
+      "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Marvin",
+      "title": "Brand Ambassador - Lead Generator",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10360/brand-ambassador---lead-generator/job",
+      "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Marvin",
+      "title": "Brand Ambassador - Lead Generator",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10359/brand-ambassador---lead-generator/job",
+      "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Bartlett Tree Experts",
+      "title": "Arborist Climber",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/35148/arborist-climber/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1785297600000,
+      "datePosted": "2026-07-29T04:00:00.000Z",
+      "days": 36,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
     {
       "company": "Curaleaf",
       "title": "Retail Sales Associate - Part Time",
@@ -289,6 +429,20 @@
       "salary": null,
       "source": "Direct ATS (bamboohr)",
       "sourceBoard": "bamboohr:https://the1916company.bamboohr.com/careers",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Footprint Solutions",
+      "title": "Part Time Merchandiser",
+      "url": "https://jobs.jobvite.com/fprs/job/otVEAfwm",
+      "location": "Reisterstown, Maryland",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (jobvite)",
+      "sourceBoard": "jobvite:https://jobs.jobvite.com/fprs",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },

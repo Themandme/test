@@ -1,6 +1,6 @@
 # Unified local and remote job search
 
-_Updated 2026-09-04 02:22 UTC · 1932 deduplicated openings_
+_Updated 2026-09-04 02:50 UTC · 1943 deduplicated openings_
 
 10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards, and nationwide U.S. remote jobs posted within the last 24 hours with published salary floors above $55,000. State-restricted remote listings are excluded. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, pay, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.
 
@@ -10,7 +10,7 @@ _Updated 2026-09-04 02:22 UTC · 1932 deduplicated openings_
 |---|---|---|
 | HiringCafe local | cached-source-blocked | 2026-09-01T16:29:34.792Z |
 | HiringCafe remote | unavailable | never |
-| Other direct ATS boards | 12 healthy / 9 failed | 2026-09-04T02:21:17.203Z |
+| Other direct ATS boards | 21 healthy / 0 failed | 2026-09-04T02:49:51.238Z |
 
 ## Sources
 
@@ -21,10 +21,12 @@ _Updated 2026-09-04 02:22 UTC · 1932 deduplicated openings_
 | State of Maryland JobAps | 132 |
 | County/city NEOGOV | 128 |
 | official university board | 43 |
+| Direct ATS (icims) | 10 |
 | Direct ATS (bamboohr) | 9 |
 | Direct ATS (smartrecruiters) | 8 |
 | Direct ATS (rippling) | 7 |
 | Direct ATS (greenhouse) | 1 |
+| Direct ATS (jobvite) | 1 |
 
 ## Best matches
 
@@ -100,13 +102,14 @@ _Updated 2026-09-04 02:22 UTC · 1932 deduplicated openings_
 | 73 | Baltimore County Government | [NOC Support Tier I - (IT Tech I) - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5470348/noc-support-tier-i-it-tech-i-non-merit) | Towson, MD | $31.15–$40.44/hr | County/city NEOGOV | Review | — |
 | 73 | State of Maryland — DPSCS OSEC Administrative Services | [ACCOUNTANT TRAINEE](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004545&R3=0005) | Baltimore City | $59k–$77k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 73 | University of Maryland | [Research Software and Data Engineer](https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Research-Software-and-Data-Engineer_JR104853) | University of Maryland College Park | — | Direct employer board | Professional | classification may require prior professional experience; pay undisclosed; regional/public board—not exact-radius verified |
-| 72 | Baltimore County Government | [Legal Technician - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5470418/legal-technician-non-merit) | Towson, MD | $53k–$74k/yr | County/city NEOGOV | Review | — |
 | 72 | Baltimore County Government | [Aging Human Services Program Specialist - Guardianship Program Specialist ](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5403600/aging-human-services-program-specialist-guardianship-program-specialist) | Towson, MD | $58k–$66k/yr | County/city NEOGOV | Review | — |
+| 72 | Baltimore County Government | [Legal Technician - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5470418/legal-technician-non-merit) | Towson, MD | $53k–$74k/yr | County/city NEOGOV | Review | — |
 | 72 | Baltimore County Government | [Correctional Heating and Air Conditioning Mechanic (For Retiree/Rehire Corrections)](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5464970/correctional-heating-and-air-conditioning-mechanic-for-retiree-rehire-correction) | Towson, MD | $35–$45/hr | County/city NEOGOV | Review | — |
 | 72 | State of Maryland — MDH Dev Disabilities Admin - Program Direction | [Senior Advisor for Strategic Communications & Public Engagement ((Administrative Program Manager I))](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005472&R3=0008) | Baltimore City | $82k–$129k/yr | State of Maryland JobAps | Customer service | senior/lead experience check; regional/public board—not exact-radius verified |
 | 72 | State of Maryland — MSP - Field Operations Bureau | [MSP Emergency Dispatcher Trn](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=24&R2=003784&R3=0001) | Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester | $45k–$71k/yr | State of Maryland JobAps | Customer service | older posting—verify still active; regional/public board—not exact-radius verified |
 | 72 | SBM Management | [Customer Service Representative](https://sbmmanagement.wd108.myworkdayjobs.com/sbm/job/Owings-Mills-MD/Customer-Service-Representative_JR106997) | Owings Mills, MD | — | Direct employer board | Customer service | pay undisclosed |
 | 72 | University of Maryland | [Coordinator, Business and Administrative Services](https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Coordinator--Business-and-Administrative-Services_JR104698) | University of Maryland College Park | — | Direct employer board | Customer service | pay undisclosed; regional/public board—not exact-radius verified |
+| 72 | OSL Retail Services | [Wireless Retail Sales Associate - W3434](https://uscareers-oslrs.icims.com/jobs/99325/wireless-retail-sales-associate---w3434/job) | US-IL-WOODSTOCK | — | Direct ATS (icims) | Customer service | pay undisclosed |
 | 71 | Baltimore County Government | [Deputy Inspector General - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5464684/deputy-inspector-general-non-merit) | Towson, MD | $137k–$174k/yr | County/city NEOGOV | Review | — |
 | 71 | State of Maryland — COMM - Ofc of Admin & Information Technology | [Procurement Specialist (Procurement Officer I)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003002&R3=0006) | Baltimore City | $67k–$106k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
 | 71 | State of Maryland — PSC General Administration and Hearings | [FERC/PJM ADVISOR (PSC COMMISSION ADVISOR)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009030&R3=0001) | Baltimore City | $62k–$193k/yr | State of Maryland JobAps | Review | regional/public board—not exact-radius verified |
@@ -129,7 +132,6 @@ _Updated 2026-09-04 02:22 UTC · 1932 deduplicated openings_
 | 70 | Baltimore County Government | [Chief of Human Resources Information Systems - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5455106/chief-of-human-resources-information-systems-non-merit) | Towson, MD | $102k–$125k/yr | County/city NEOGOV | Professional | executive-level experience check |
 | 70 | Baltimore County Government | [Management Analyst I (HHS Finance and Administration)](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5377253/management-analyst-i-hhs-finance-and-administration) | Towson, MD | $52k–$60k/yr | County/city NEOGOV | Professional | classification may require prior professional experience; older continuous/standing recruitment |
 | 70 | Baltimore County Government | [Therapeutic Recreation Administrative Aide](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5465522) | Towson, Maryland | $18.91–$28.44/hr | HiringCafe (cached) | Customer service | posting age unknown; cached—source currently blocked |
-| 70 | Trane Technologies | [Customer Support Specialist](https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers/job/Pittsburgh-Pennsylvania/Customer-Support-Specialist_JR-13430-1) | Timonium, Maryland | $41k–$83k/yr | HiringCafe (cached) | Customer service | posting age unknown; cached—source currently blocked |
 
 ## Notes
 

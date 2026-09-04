@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T02:22:00.190Z",
+  "generatedAt": "2026-09-04T02:50:48.595Z",
   "center": "Owings Mills, MD 21117",
   "scope": "10-mile core, explicitly labeled Baltimore-area public/university boards, and nationwide U.S. remote jobs under 24 hours old with salary floors above $55k",
   "payPriority": "$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking",
@@ -17,9 +17,9 @@
       "include": false
     },
     "directAts": {
-      "updatedAt": "2026-09-04T02:21:17.203Z",
-      "healthy": 12,
-      "failed": 9,
+      "updatedAt": "2026-09-04T02:49:51.238Z",
+      "healthy": 21,
+      "failed": 0,
       "boards": [
         {
           "name": "JMS Celebree School",
@@ -59,65 +59,65 @@
         {
           "name": "Cellular Sales",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 958,
+          "kept": 0
         },
         {
           "name": "Crash Champions",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 42,
+          "kept": 0
         },
         {
           "name": "Dewberry",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 500,
+          "kept": 0
         },
         {
           "name": "Enterprise Mobility",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 900,
+          "kept": 0
         },
         {
           "name": "FutureCare",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 180,
+          "kept": 0
         },
         {
           "name": "Marvin",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 88,
+          "kept": 6
         },
         {
           "name": "OSL Retail Services",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 600,
+          "kept": 2
         },
         {
           "name": "Bartlett Tree Experts",
           "provider": "icims",
-          "status": "failed",
-          "reason": "HTTP 405 Not Allowed",
-          "retained": 0
+          "status": "success",
+          "fetched": 448,
+          "kept": 2
         },
         {
           "name": "Footprint Solutions",
           "provider": "jobvite",
-          "status": "failed",
-          "reason": "fetch failed",
-          "retained": 0
+          "status": "success",
+          "fetched": 19,
+          "kept": 1
         },
         {
           "name": "Mainspring Recovery",
@@ -176,10 +176,12 @@
     "State of Maryland JobAps": 132,
     "Direct employer board": 301,
     "HiringCafe (cached)": 1303,
+    "Direct ATS (icims)": 10,
     "Direct ATS (greenhouse)": 1,
     "official university board": 43,
     "Direct ATS (bamboohr)": 9,
     "Direct ATS (smartrecruiters)": 8,
+    "Direct ATS (jobvite)": 1,
     "Direct ATS (rippling)": 7
   },
   "jobs": [
@@ -2618,27 +2620,28 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Legal Technician - Non-Merit",
-      "reqId": "01.550 09-26",
+      "title": "Aging Human Services Program Specialist - Guardianship Program Specialist ",
+      "reqId": "04.490 07-26",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5470418/legal-technician-non-merit",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5403600/aging-human-services-program-specialist-guardianship-program-specialist",
       "postedAtMs": 1788393600000,
       "days": 1,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "CIRCUIT COURT",
+      "employmentType": "MERIT",
+      "department": "AGING",
       "categories": [
-        "Court Administration",
-        "Legal",
-        "Public Safety"
+        "Public Health",
+        "Human Services",
+        "Community and Social Services",
+        "Health Care Support"
       ],
       "salary": {
-        "min": 53000,
-        "max": 74302,
+        "min": 58037,
+        "max": 66390,
         "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
@@ -2663,28 +2666,27 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Aging Human Services Program Specialist - Guardianship Program Specialist ",
-      "reqId": "04.490 07-26",
+      "title": "Legal Technician - Non-Merit",
+      "reqId": "01.550 09-26",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5403600/aging-human-services-program-specialist-guardianship-program-specialist",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5470418/legal-technician-non-merit",
       "postedAtMs": 1788393600000,
       "days": 1,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "AGING",
+      "employmentType": "NON-MERIT",
+      "department": "CIRCUIT COURT",
       "categories": [
-        "Public Health",
-        "Human Services",
-        "Community and Social Services",
-        "Health Care Support"
+        "Court Administration",
+        "Legal",
+        "Public Safety"
       ],
       "salary": {
-        "min": 58037,
-        "max": 66390,
+        "min": 53000,
+        "max": 74302,
         "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
@@ -2880,6 +2882,35 @@
       }
     },
     {
+      "company": "OSL Retail Services",
+      "title": "Wireless Retail Sales Associate - W3434",
+      "url": "https://uscareers-oslrs.icims.com/jobs/99325/wireless-retail-sales-associate---w3434/job",
+      "location": "US-IL-WOODSTOCK",
+      "postedAtMs": 1786075200000,
+      "datePosted": "2026-08-07T04:00:00.000Z",
+      "days": 27,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 72,
+        "qualification": 88,
+        "interview": 84,
+        "pay": 52,
+        "careerValue": 48,
+        "recency": 74,
+        "overqualificationRisk": 18,
+        "resume": "Customer service",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Deputy Inspector General - Non-Merit",
@@ -2929,7 +2960,7 @@
       "reqId": "26-003002-0006",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003002&R3=0006",
-      "days": 8,
+      "days": 9,
       "postedAtMs": 1787754600000,
       "deadlineMs": 1789574400000,
       "deadline": "9/16/2026 4:00:00 PM",
@@ -5744,49 +5775,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Housing Choice Voucher Program (HCVP) Inspector - Non-Merit",
-      "reqId": "NM.117 08-26",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438664/housing-choice-voucher-program-hcvp-inspector-non-merit",
-      "postedAtMs": 1785974400000,
-      "days": 29,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "Housing and Community Development",
-      "categories": [
-        "Housing"
-      ],
-      "salary": {
-        "min": 26.39,
-        "max": 36.37,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 68,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 66,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": []
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Review Appraiser",
       "reqId": "2.320 8-2026",
       "location": "Towson, MD",
@@ -5812,6 +5800,49 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 68,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 66,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": []
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Housing Choice Voucher Program (HCVP) Inspector - Non-Merit",
+      "reqId": "NM.117 08-26",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438664/housing-choice-voucher-program-hcvp-inspector-non-merit",
+      "postedAtMs": 1785974400000,
+      "days": 29,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "Housing and Community Development",
+      "categories": [
+        "Housing"
+      ],
+      "salary": {
+        "min": 26.39,
+        "max": 36.37,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -9508,7 +9539,7 @@
       "reqId": "26-005479-0023",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005479&R3=0023",
-      "days": 10,
+      "days": 11,
       "postedAtMs": 1787582700000,
       "deadlineMs": 1788800400000,
       "deadline": "9/7/2026 5:00:00 PM",
@@ -26701,7 +26732,7 @@
       "reqId": "26-005478-0026",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005478&R3=0026",
-      "days": 8,
+      "days": 9,
       "postedAtMs": 1787754600000,
       "deadlineMs": 1788998340000,
       "deadline": "9/9/2026 11:59:00 PM",
@@ -26897,27 +26928,27 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Deputy Sheriff Assistant NON SWORN (For Retired Sworn Police and Sheriff Employees ONLY)",
-      "reqId": "100.6005 06-23",
+      "title": "Deputy Sheriff (For Current and Retired Law Enforcement Officers - Lateral)",
+      "reqId": "10.605 07-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4073920/deputy-sheriff-assistant-non-sworn-for-retired-sworn-police-and-sheriff-employee",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4061020/deputy-sheriff-for-current-and-retired-law-enforcement-officers-lateral",
       "postedAtMs": 1770076800000,
       "days": 213,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
+      "employmentType": "MERIT",
       "department": "SHERIFF",
       "categories": [
         "Public Safety",
         "Law Enforcement"
       ],
       "salary": {
-        "min": 35,
-        "max": 35,
-        "unit": "HOUR"
+        "min": 59683,
+        "max": 75758,
+        "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -26943,27 +26974,27 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Deputy Sheriff (For Current and Retired Law Enforcement Officers - Lateral)",
-      "reqId": "10.605 07-23",
+      "title": "Deputy Sheriff Assistant NON SWORN (For Retired Sworn Police and Sheriff Employees ONLY)",
+      "reqId": "100.6005 06-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4061020/deputy-sheriff-for-current-and-retired-law-enforcement-officers-lateral",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4073920/deputy-sheriff-assistant-non-sworn-for-retired-sworn-police-and-sheriff-employee",
       "postedAtMs": 1770076800000,
       "days": 213,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "MERIT",
+      "employmentType": "NON-MERIT",
       "department": "SHERIFF",
       "categories": [
         "Public Safety",
         "Law Enforcement"
       ],
       "salary": {
-        "min": 59683,
-        "max": 75758,
-        "unit": "YEAR"
+        "min": 35,
+        "max": 35,
+        "unit": "HOUR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -27742,6 +27773,35 @@
         "flags": [
           "pay undisclosed",
           "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
+      "company": "Bartlett Tree Experts",
+      "title": "Arborist Crew Leader",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/35423/arborist-crew-leader/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1787025600000,
+      "datePosted": "2026-08-18T04:00:00.000Z",
+      "days": 16,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 60,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "pay undisclosed"
         ]
       }
     },
@@ -31621,11 +31681,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 12-23",
+      "reqId": "04.407 11-24",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 119,
       "continuous": true,
@@ -31667,11 +31727,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 11-24",
+      "reqId": "04.407 12-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 119,
       "continuous": true,
@@ -37439,6 +37499,35 @@
       }
     },
     {
+      "company": "Bartlett Tree Experts",
+      "title": "Arborist Climber",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/35148/arborist-climber/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1785297600000,
+      "datePosted": "2026-07-29T04:00:00.000Z",
+      "days": 36,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 58,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 60,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
       "title": "Associate II - Front Desk",
       "url": "https://jobs.dayforcehcm.com/en-US/movementgyms/candidateportal/jobs/932",
       "company": "Movement",
@@ -37693,6 +37782,54 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
+      "title": "Registered Peer Supervisor",
+      "reqId": "NM.143 07-2026",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
+      "postedAtMs": 1784073600000,
+      "days": 51,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "CORRECTIONS",
+      "categories": [
+        "Administration",
+        "Corrections",
+        "Human Services",
+        "Health Education"
+      ],
+      "salary": {
+        "min": 26.39,
+        "max": 32.8,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 57,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 52,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
       "title": "Project Manager FFE Specialist - Capital Construction - Non-Merit",
       "reqId": "NM.141 7-26 PROP",
       "location": "Various locations throughout Baltimore County, MD",
@@ -37723,54 +37860,6 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 57,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 52,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
-      "title": "Registered Peer Supervisor",
-      "reqId": "NM.143 07-2026",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
-      "postedAtMs": 1784073600000,
-      "days": 51,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "CORRECTIONS",
-      "categories": [
-        "Administration",
-        "Corrections",
-        "Human Services",
-        "Health Education"
-      ],
-      "salary": {
-        "min": 26.39,
-        "max": 32.8,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -39844,7 +39933,7 @@
       "reqId": "22-005218-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Caroline Carroll Cecil Charles Dorchester Frederick Garrett Harford Howard Kent Montgomery Prince George's Queen Anne's Somerset St. Mary's Talbot Washington County Wicomico Worcester",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=22&R2=005218&R3=0001",
-      "days": 1676,
+      "days": 1677,
       "postedAtMs": 1643639400000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -39873,6 +39962,36 @@
         "flags": [
           "older posting—verify still active",
           "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
+      "company": "Marvin",
+      "title": "In-Home Sales Consultant (Pre-Set Appointments, $150K+)",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10513/in-home-sales-consultant-%28pre-set-appointments%2c-%24150k%2b%29/job",
+      "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
+      "postedAtMs": 1787198400000,
+      "datePosted": "2026-08-20T04:00:00.000Z",
+      "days": 14,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 56,
+        "qualification": 44,
+        "interview": 44,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 86,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "classification may require prior professional experience",
+          "pay undisclosed"
         ]
       }
     },
@@ -40493,7 +40612,7 @@
       "reqId": "18-009282-0001",
       "location": "Allegany Anne Arundel Baltimore City Baltimore County Calvert Carroll Cecil Charles Dorchester Frederick Harford Howard Montgomery Prince George's St. Mary's Washington County Wicomico",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=18&R2=009282&R3=0001",
-      "days": 3059,
+      "days": 3060,
       "postedAtMs": 1524148920000,
       "deadlineMs": null,
       "deadline": "Open/Continuous",
@@ -40907,6 +41026,66 @@
           "classification may require prior professional experience",
           "pay undisclosed",
           "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
+      "company": "Marvin",
+      "title": "In-Home Sales Consultant (Pre-Set Appointments, $150K+)",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10411/in-home-sales-consultant-%28pre-set-appointments%2c-%24150k%2b%29/job",
+      "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 54,
+        "qualification": 44,
+        "interview": 44,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "classification may require prior professional experience",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "company": "Marvin",
+      "title": "In-Home Sales Consultant (Pre-Set Appointments, $150K+)",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10404/in-home-sales-consultant-%28pre-set-appointments%2c-%24150k%2b%29/job",
+      "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 54,
+        "qualification": 44,
+        "interview": 44,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "classification may require prior professional experience",
+          "pay undisclosed"
         ]
       }
     },
@@ -41625,6 +41804,36 @@
       "salary": null,
       "source": "Direct ATS (bamboohr)",
       "sourceBoard": "bamboohr:https://the1916company.bamboohr.com/careers",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 54,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 30,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "posting age unknown",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "company": "Footprint Solutions",
+      "title": "Part Time Merchandiser",
+      "url": "https://jobs.jobvite.com/fprs/job/otVEAfwm",
+      "location": "Reisterstown, Maryland",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (jobvite)",
+      "sourceBoard": "jobvite:https://jobs.jobvite.com/fprs",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false,
       "scope": "10-mile proxy",
@@ -51964,6 +52173,36 @@
       }
     },
     {
+      "company": "OSL Retail Services",
+      "title": "Wireless Sales Manager - W2577/W3804/W1867",
+      "url": "https://uscareers-oslrs.icims.com/jobs/99650/wireless-sales-manager---w2577-w3804-w1867/job",
+      "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
+      "postedAtMs": 1786939200000,
+      "datePosted": "2026-08-17T04:00:00.000Z",
+      "days": 17,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 51,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
       "company": "University of Maryland",
       "title": "UHR Manager Labor Relations",
       "location": "University of Maryland College Park",
@@ -54301,6 +54540,96 @@
           "senior/lead experience check",
           "pay undisclosed",
           "regional/public board—not exact-radius verified"
+        ]
+      }
+    },
+    {
+      "company": "Marvin",
+      "title": "Brand Ambassador - Lead Generator",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10361/brand-ambassador---lead-generator/job",
+      "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 50,
+        "qualification": 34,
+        "interview": 34,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "senior/lead experience check",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "company": "Marvin",
+      "title": "Brand Ambassador - Lead Generator",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10360/brand-ambassador---lead-generator/job",
+      "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 50,
+        "qualification": 34,
+        "interview": 34,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "senior/lead experience check",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "company": "Marvin",
+      "title": "Brand Ambassador - Lead Generator",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/10359/brand-ambassador---lead-generator/job",
+      "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
+      "postedAtMs": 1785816000000,
+      "datePosted": "2026-08-04T04:00:00.000Z",
+      "days": 30,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false,
+      "scope": "10-mile proxy",
+      "fit": {
+        "overall": 50,
+        "qualification": 34,
+        "interview": 34,
+        "pay": 52,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "senior/lead experience check",
+          "pay undisclosed"
         ]
       }
     },
@@ -62549,53 +62878,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Nurse Monitor - Non-Merit ",
-      "reqId": "NM .140 07-2026",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5429659/nurse-monitor-non-merit",
-      "postedAtMs": 1785283200000,
-      "days": 37,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "HEALTH",
-      "categories": [
-        "Health Services",
-        "Public Health",
-        "Nursing"
-      ],
-      "salary": {
-        "min": 39.24,
-        "max": 50.96,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.4,
-      "source": "County/city NEOGOV",
-      "scope": "10-mile radius",
-      "fit": {
-        "overall": 48,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 100,
-        "careerValue": 43,
-        "recency": 52,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Public Health Nurse",
       "reqId": "04.226 07-26",
       "location": "Towson, MD",
@@ -62623,6 +62905,53 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 3.7,
+      "source": "County/city NEOGOV",
+      "scope": "10-mile radius",
+      "fit": {
+        "overall": 48,
+        "qualification": 23,
+        "interview": 25,
+        "pay": 100,
+        "careerValue": 43,
+        "recency": 52,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "credential/skill check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Nurse Monitor - Non-Merit ",
+      "reqId": "NM .140 07-2026",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5429659/nurse-monitor-non-merit",
+      "postedAtMs": 1785283200000,
+      "days": 37,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "HEALTH",
+      "categories": [
+        "Health Services",
+        "Public Health",
+        "Nursing"
+      ],
+      "salary": {
+        "min": 39.24,
+        "max": 50.96,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.4,
       "source": "County/city NEOGOV",
       "scope": "10-mile radius",
       "fit": {
@@ -63245,7 +63574,7 @@
       "reqId": "26-005485-0006",
       "location": "Baltimore City",
       "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005485&R3=0006",
-      "days": 168,
+      "days": 169,
       "postedAtMs": 1773931380000,
       "deadlineMs": 1790812740000,
       "deadline": "9/30/2026 11:59:00 PM",
