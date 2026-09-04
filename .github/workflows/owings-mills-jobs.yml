@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: '23 11 * * *'
   workflow_dispatch:        # lets you run it on demand from the Actions tab
+  push:
+    paths:
+      # Connector-safe manual trigger: updating this one file starts the same
+      # complete catch-up scan without making ordinary repository pushes run it.
+      - 'career-ops/.run-now'
 
 permissions:
   contents: write           # needed to commit the refreshed digest
@@ -54,7 +59,7 @@ jobs:
 
       - name: On-demand complete HiringCafe 10-mile radius
         id: hiringcafe_catchup
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push'
         working-directory: career-ops
         continue-on-error: true
         run: |
