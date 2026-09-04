@@ -10,6 +10,7 @@ try {
     default: jobvite,
     resolveCompanyId,
     parseJobviteResponse,
+    parseJobviteSearchPage,
   } = await import(pathToFileURL(join(ROOT, 'providers/jobvite.mjs')).href);
 
   // id
@@ -206,6 +207,22 @@ try {
     fail('parseJobviteResponse returns [] when jobs is not an array');
   }
 
+  // ── parseJobviteSearchPage ─────────────────────────────────────
+  const SEARCH_HTML = `<table><tbody>
+    <tr><td class="jv-job-list-name"><a href="/fprs/job/abc123">Part Time &amp; Flexible Merchandiser</a></td>
+      <td class="jv-job-list-location">Reisterstown,\n Maryland</td></tr>
+    <tr><td><a href="https://evil.example/job/x">Off-host role</a></td>
+      <td class="jv-job-list-location">Owings Mills, Maryland</td></tr>
+  </tbody></table>`;
+  const htmlJobs = parseJobviteSearchPage(SEARCH_HTML, 'Footprint Solutions', 'fprs');
+  if (htmlJobs.length === 1 && htmlJobs[0].title === 'Part Time & Flexible Merchandiser'
+      && htmlJobs[0].location === 'Reisterstown, Maryland'
+      && htmlJobs[0].url === 'https://jobs.jobvite.com/fprs/job/abc123') {
+    pass('parseJobviteSearchPage parses same-tenant rows and rejects off-host links');
+  } else {
+    fail(`parseJobviteSearchPage: ${JSON.stringify(htmlJobs)}`);
+  }
+
   // ── fetch() integration ────────────────────────────────────────
 
   let capturedUrl = null;
@@ -239,6 +256,24 @@ try {
     pass('jobvite.fetch() returns normalized jobs array');
   } else {
     fail(`jobvite.fetch() returned ${fetched.length} jobs (expected 3)`);
+  }
+
+  let searchUrl = null;
+  const searched = await jobvite.fetch(
+    { name: 'Footprint Solutions', careers_url: 'https://jobs.jobvite.com/fprs', search_queries: ['Maryland'] },
+    {
+      async fetchJson() { throw new Error('search-query mode must bypass the stalled JSON API'); },
+      async fetchText(url, opts) {
+        searchUrl = url;
+        if (opts?.headers?.['user-agent'] !== 'Mozilla/5.0') throw new Error('wrong UA');
+        return SEARCH_HTML;
+      },
+    },
+  );
+  if (searchUrl === 'https://jobs.jobvite.com/fprs/search/?q=Maryland' && searched.length === 1) {
+    pass('jobvite.fetch() uses configured HTML search queries and bypasses JSON');
+  } else {
+    fail(`jobvite search mode: url=${JSON.stringify(searchUrl)} jobs=${searched.length}`);
   }
 
   // fetch() throws when company ID cannot be resolved
