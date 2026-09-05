@@ -3,9 +3,9 @@ import { pathToFileURL } from 'node:url';
 
 const HOME = 'https://hiringcafe.com/';
 const CENTER = { lat: 39.41955, lon: -76.78025 };
-const RADIUS_MILES = 10;
+const RADIUS_MILES = 30;
 const MAX_AGE_DAYS = 60;
-const MAX_PAGES = 400;
+const MAX_PAGES = 1200;
 const PAGE_CONCURRENCY = 4;
 const STORE_PATH = 'owings-mills-store.json';
 const UA = 'Mozilla/5.0 (compatible; career-ops personal job search; +https://github.com/Themandme/test)';
@@ -311,12 +311,12 @@ export async function main() {
     sourceId,
     { ...job, lastSeenRun: run },
   ]));
-  writeFileSync(STORE_PATH, JSON.stringify({ note: 'Complete HiringCafe structured search within an exact 10-mile radius.', updatedAt: new Date().toISOString(), cursor: 0, run, chunkCount: 0, cycleRuns: 1, jobs: storedJobs, lastCompleteSearch: { buildId: id, pages: pageCount, resultGroups: total } }, null, 2));
+  writeFileSync(STORE_PATH, JSON.stringify({ note: 'Complete HiringCafe structured search within an exact 30-mile radius.', updatedAt: new Date().toISOString(), cursor: 0, run, chunkCount: 0, cycleRuns: 1, jobs: storedJobs, lastCompleteSearch: { buildId: id, pages: pageCount, resultGroups: total } }, null, 2));
 
   mkdirSync('data', { recursive: true });
-  writeFileSync('data/owings-mills.json', JSON.stringify({ generatedAt: new Date().toISOString(), center: 'Owings Mills, MD 21117', radiusNote: 'Exact 10-mile HiringCafe radius, independently verified with posting coordinates', payPriority: '$20+/hour-equivalent listings first', excluded: ['senior/executive or 5+ year roles', 'medical and clinical titles'], maxAgeDays: MAX_AGE_DAYS, coverage: { mode: stats.mode, pagesFetched: pages.length, pagesExpected: pageCount, complete: pages.length === pageCount }, stats, jobs: kept }, null, 2));
+  writeFileSync('data/owings-mills.json', JSON.stringify({ generatedAt: new Date().toISOString(), center: 'Owings Mills, MD 21117', radiusNote: 'Exact 30-mile HiringCafe radius, independently verified with posting coordinates', payPriority: '$20+/hour-equivalent listings first', excluded: ['senior/executive or 5+ year roles', 'medical and clinical titles'], maxAgeDays: MAX_AGE_DAYS, coverage: { mode: stats.mode, pagesFetched: pages.length, pagesExpected: pageCount, complete: pages.length === pageCount }, stats, jobs: kept }, null, 2));
 
-  const md = ['# Jobs near Owings Mills, MD', '', `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within an exact 10-mile radius · last ${MAX_AGE_DAYS} days_`, '', `Complete HiringCafe structured search: ${pages.length}/${pageCount} pages fetched. Jobs starting at $20+/hour equivalent are shown first. Senior/executive, 5+ year, and clinical titles are excluded.`, '', '## Best matches overall', '', '| Score | Distance | Employer | Role | Pay | Resume | Flags |', '|---:|---:|---|---|---|---|---|'];
+  const md = ['# Jobs near Owings Mills, MD', '', `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within an exact 30-mile radius · last ${MAX_AGE_DAYS} days_`, '', `Complete HiringCafe structured search: ${pages.length}/${pageCount} pages fetched. Jobs starting at $20+/hour equivalent are shown first. Senior/executive, 5+ year, and clinical titles are excluded.`, '', '## Best matches overall', '', '| Score | Distance | Employer | Role | Pay | Resume | Flags |', '|---:|---:|---|---|---|---|---|'];
   for (const job of kept) md.push(`| ${job.fit.overall} | ${job.miles} mi | ${job.company.replace(/\|/g, '\\|')} | [${job.title.replace(/\|/g, '\\|')}](${job.url}) | ${payText(job.salary)} | ${job.fit.resume} | ${job.fit.flags.join('; ') || '—'} |`);
   writeFileSync('owings-mills-latest.md', md.join('\n'));
   console.log(JSON.stringify(stats, null, 2));

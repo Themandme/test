@@ -35,7 +35,8 @@ test('HiringCafe hit normalization preserves local pay and direct application UR
 test('HiringCafe normalization excludes senior metadata and off-radius results', () => {
   const senior = hit({ v5_processed_job_data: { ...hit().v5_processed_job_data, seniority_level: 'Senior Level' } });
   assert.equal(normalizeHit(senior).reason, 'senior');
-  assert.equal(normalizeHit(hit({ _geoloc: [{ lat: 39.7, lon: -76.78 }] })).reason, 'offArea');
+  assert.equal(normalizeHit(hit({ _geoloc: [{ lat: 39.7, lon: -76.78 }] })).reason, null);
+  assert.equal(normalizeHit(hit({ _geoloc: [{ lat: 39.95, lon: -76.78 }] })).reason, 'offArea');
 });
 
 test('frontline shift leadership stays eligible', () => {

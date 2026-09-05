@@ -406,7 +406,7 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
       location: [x.city, x.region].filter(Boolean).join(', '),
       source: hiringCafeLocalHealth.status === 'current' ? 'HiringCafe' : 'HiringCafe (cached)',
       sourceStatus: hiringCafeLocalHealth.status,
-      scope: '10-mile radius',
+      scope: '30-mile radius',
     });
   }
   // Remote is intentionally stricter than local: a blocked source cannot
@@ -435,8 +435,8 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
   for (const x of ng) {
     const miles = typeof x.miles === 'number' ? x.miles : Number.NaN;
     if (!x.coordinatesVerified && !Number.isFinite(miles)) continue;
-    if (Number.isFinite(miles) && miles <= 10)
-      rows.push({ ...x, source: 'County/city NEOGOV', scope: '10-mile radius' });
+    if (Number.isFinite(miles) && miles <= 30)
+      rows.push({ ...x, source: 'County/city NEOGOV', scope: '30-mile radius' });
   }
 
   const jobs = dedupeUnifiedRows(rows).map(x => ({ ...x, fit: unifiedScore(x) }))
@@ -456,7 +456,7 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
   };
   writeFileSync(path.join(ROOT, 'unified-local-jobs.json'), JSON.stringify({
     generatedAt, center: 'Owings Mills, MD 21117',
-    scope: '10-mile core, explicitly labeled Baltimore-area public/university boards, and nationwide U.S. remote jobs under 24 hours old with salary floors above $55k',
+    scope: '30-mile core, explicitly labeled Baltimore-area public/university boards, and nationwide U.S. remote jobs under 24 hours old with salary floors above $55k',
     payPriority: '$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking',
     scoring: 'Preliminary metadata score prioritizing $20+/hour and recent postings; older/continuous/unknown-age and likely advanced classifications are penalized; verify requirements before applying',
     sourceHealth, sourceCounts, jobs,
@@ -465,7 +465,7 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
   const esc = s => String(s || '').replace(/\|/g, '\\|');
   const md = ['# Unified local and remote job search', '',
     '_Updated ' + generatedAt.slice(0,16).replace('T',' ') + ' UTC · ' + jobs.length + ' deduplicated openings_',
-    '', '10-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards, and nationwide U.S. remote jobs posted within the last 24 hours with published salary floors above $55,000. State-restricted remote listings are excluded. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, pay, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.',
+    '', '30-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards, and nationwide U.S. remote jobs posted within the last 24 hours with published salary floors above $55,000. State-restricted remote listings are excluded. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, pay, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.',
     '', '## Source health', '', '| Source | Status | Last verified |', '|---|---|---|',
     '| HiringCafe local | ' + hiringCafeLocalHealth.status + ' | ' + (hiringCafeLocalHealth.updatedAt || 'never') + ' |',
     '| HiringCafe remote | ' + hiringCafeRemoteHealth.status + ' | ' + (hiringCafeRemoteHealth.updatedAt || 'never') + ' |',
@@ -476,7 +476,7 @@ function writeUnifiedLocalJobs({ strict = false } = {}) {
     '|---:|---|---|---|---|---|---|---|'];
   for (const j of jobs.slice(0,100)) md.push('| ' + j.fit.overall + ' | ' + esc(j.company) + ' | [' + esc(j.title) + '](' + j.url + ') | ' +
     esc(j.location || j.city || '—') + ' | ' + displayPay(j.salary) + ' | ' + esc(j.source) + ' | ' + j.fit.resume + ' | ' + esc(j.fit.flags.join('; ') || '—') + ' |');
-  md.push('', '## Notes', '', '- “Regional” means the board is relevant to the Baltimore-area search but the posting is not verified within 10 road miles.',
+  md.push('', '## Notes', '', '- “Regional” means the board is relevant to the Baltimore-area search but the posting is not verified within 30 road miles.',
     '- Remote results must be available nationwide in the United States; jobs tied to individual states or limited state lists are omitted.',
     '- Remote results expire as soon as their publication timestamp reaches 24 hours and must have a disclosed salary floor above $55,000.',
     '- HiringCafe local results may remain visible as clearly flagged cache for at most seven days while its source is blocked; cached rows are never presented as a fresh scan.',
