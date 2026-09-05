@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T14:07:18.194Z",
+  "generatedAt": "2026-09-05T23:34:42.298Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 859,
+      "fetched": 857,
       "kept": 1
     },
     {
