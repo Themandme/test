@@ -2,10 +2,10 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
 const HOME = 'https://hiringcafe.com/';
-const CENTER = { lat: 39.41955, lon: -76.78025 };
-const RADIUS_MILES = 30;
-const MAX_AGE_DAYS = 60;
-const MAX_PAGES = 1200;
+export const CENTER = { lat: 39.41955, lon: -76.78025 };
+export const RADIUS_MILES = 30;
+export const MAX_AGE_DAYS = 60;
+export const MAX_PAGES = 2000;
 const PAGE_CONCURRENCY = 4;
 const STORE_PATH = 'owings-mills-store.json';
 const UA = 'Mozilla/5.0 (compatible; career-ops personal job search; +https://github.com/Themandme/test)';
@@ -128,7 +128,7 @@ export function normalizeHit(hit, now = Date.now()) {
   };
 }
 
-function searchState() {
+export function searchState() {
   return {
     defaultToUserLocation: false,
     locations: [{
@@ -214,7 +214,7 @@ async function pooled(items, limit, worker) {
   return output;
 }
 
-function payRank(salary) {
+export function payRank(salary) {
   if (!salary) return 2;
   const factors = { HOUR: 1, YEAR: 1 / 2080, MONTH: 12 / 2080, WEEK: 52 / 2080, DAY: 260 / 2080 };
   const factor = factors[salary.unit] ?? null;
@@ -226,7 +226,7 @@ function payRank(salary) {
   return 3;
 }
 
-function scoreJob(job) {
+export function scoreJob(job) {
   const t = job.title || '';
   const technical = ROLE.technical.test(t);
   const office = ROLE.office.test(t);
@@ -254,7 +254,7 @@ function scoreJob(job) {
   return { overall, qualification: clamp(qualification), interview: clamp(interview), pay: payScore, careerValue: clamp(careerValue), overqualificationRisk, resume, confidence: 'structured title/pay/experience metadata', flags };
 }
 
-function payText(salary) {
+export function payText(salary) {
   if (!salary) return '—';
   const suffix = { HOUR: '/hr', YEAR: '/yr', MONTH: '/mo', WEEK: '/wk', DAY: '/day' }[salary.unit] || '';
   const format = value => value == null ? '?' : `$${Math.round(value * 100) / 100}`;
