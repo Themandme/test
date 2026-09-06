@@ -18,7 +18,7 @@ import {
 } from './scan-hiringcafe-full.mjs';
 
 const execFileAsync = promisify(execFile);
-const DONSETCH = 'C:/Users/ajbig/AppData/Roaming/npm/donsetch.exe';
+const DONSETCH = process.env.DONSETCH_PATH || 'donsetch';
 const HOME = 'https://hiringcafe.com/';
 const STORE_PATH = 'owings-mills-store.json';
 const PAGE_CONCURRENCY = 2;
@@ -42,7 +42,7 @@ const stripNotices = (s) => String(s || '')
 // Some pages embed raw C0 control characters inside string values.
 const CTL = new RegExp(String.fromCharCode(91) + String.fromCharCode(92) + 'u0001-' + String.fromCharCode(92) + 'u001f' + String.fromCharCode(93), 'g');
 const sanitizeControls = (s) => String(s || '').replace(CTL, ' ');
-const parsePage = (text) => {
+export const parsePage = (text) => {
   try { return JSON.parse(text).pageProps; }
   catch {
     try { return JSON.parse(stripWrapper(text)).pageProps; }
@@ -74,6 +74,7 @@ async function fetchContent(url) {
     const next = env.meta?.next_offset ?? env.structuredContent?.next_offset;
     content += stripNotices(env.content);
     if (!next) return content;
+    if (!Number.isInteger(next) || next <= offset) throw new Error('Non-advancing donsetch offset');
     offset = next;
   }
 }
@@ -128,12 +129,33 @@ async function pooled(items, limit, worker) {
   return output;
 }
 
-export async function main() {
+export function validatePages(pages, total, pageSize) {
+  const count = Math.max(1, Math.ceil(total / pageSize));
+  if (pages.length !== count) throw new Error('Incomplete page coverage');
+  const ids = new Set();
+  pages.forEach((page, index) => {
+    if (Number(page.ssrTotalCount) !== total || Number(page.ssrPageSize) !== pageSize) throw new Error('Pagination changed during scan');
+    const expected = Math.min(pageSize, Math.max(0, total - index * pageSize));
+    if (page.ssrHits.length !== expected) throw new Error('Unexpected page length');
+    for (const hit of page.ssrHits) {
+      const id = hit.objectID || hit.id;
+      if (!id || ids.has(String(id))) throw new Error('Missing or repeated hit identity');
+      ids.add(String(id));
+    }
+  });
+}
+
+export function openingKey(job) {
+  return JSON.stringify([job.company, job.sourceId || job.url, job.city]);
+}
+
+export async function main(restarted = false) {
   const argv = process.argv.slice(2);
   const pagesCapArg = argv.includes('--pages') ? Number(argv[argv.indexOf('--pages') + 1]) : null;
+  if (pagesCapArg !== null && (!Number.isInteger(pagesCapArg) || pagesCapArg < 1)) throw new Error('--pages must be a positive integer');
   const buildIdArg = argv.includes('--build-id') ? argv[argv.indexOf('--build-id') + 1] : null;
   const startedAt = Date.now();
-  let buildId = buildIdArg || KNOWN_BUILD_ID;
+  let buildId = restarted ? await resolveBuildId() : (buildIdArg || KNOWN_BUILD_ID);
   let first;
   try {
     first = await fetchProps(buildId, 0);
@@ -147,7 +169,7 @@ export async function main() {
   }
   const total = Number(first.ssrTotalCount);
   const pageSize = Number(first.ssrPageSize);
-  if (!Number.isFinite(total) || !Number.isFinite(pageSize) || pageSize < 1) throw new Error('HiringCafe returned invalid pagination metadata');
+  if (!Number.isInteger(total) || total < 0 || !Number.isInteger(pageSize) || pageSize < 1) throw new Error('HiringCafe returned invalid pagination metadata');
   let pageCount = Math.max(1, Math.ceil(total / pageSize));
   if (Number.isFinite(pagesCapArg) && pagesCapArg > 0) pageCount = Math.min(pageCount, pagesCapArg);
   if (pageCount > MAX_PAGES) throw new Error(`HiringCafe requested ${pageCount} pages, above safety cap ${MAX_PAGES}`);
@@ -158,13 +180,18 @@ export async function main() {
   try {
     pages = [first, ...(await pooled(remaining, PAGE_CONCURRENCY, (page) => fetchProps(buildId, page)))];
   } catch (caught) {
-    if (caught.code === 'STALE_BUILD_ID') {
-      console.log('buildId expired mid-run; re-resolving once and retrying remaining pages...');
-      buildId = await resolveBuildId();
-      pages = [first, ...(await pooled(remaining, PAGE_CONCURRENCY, (page) => fetchProps(buildId, page)))];
+    if (caught.code === 'STALE_BUILD_ID' && !restarted && !buildIdArg) {
+      console.log('buildId expired mid-run; restarting the entire scan once...');
+      return main(true);
     } else throw caught;
   }
   if (pages.length !== pageCount) throw new Error(`HiringCafe completeness check failed: ${pages.length}/${pageCount} pages`);
+  // Explicit smoke tests never publish, even if their cap happens to cover all pages.
+  if (pagesCapArg !== null) {
+    console.log(JSON.stringify({ smokeTest: true, complete: false, pagesFetched: pages.length, published: false }));
+    return;
+  }
+  validatePages(pages, total, pageSize);
 
   const hits = new Map();
   for (const page of pages) for (const hit of page.ssrHits) hits.set(hit.objectID || hit.id || JSON.stringify(hit), hit);
@@ -177,7 +204,7 @@ export async function main() {
   }
   const byOpening = new Map();
   for (const job of jobsBySource.values()) {
-    const key = [job.company, job.title, job.city].join('\0').toLowerCase();
+    const key = openingKey(job);
     const previous = byOpening.get(key);
     if (!previous || (job.datePosted || '') > (previous.datePosted || '')) byOpening.set(key, job);
   }
