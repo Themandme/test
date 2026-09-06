@@ -32,12 +32,22 @@ const stripBom = (s) => String(s || '').replace(/^﻿/, '');
 // wraps non-HTML bodies as "<url>\n\n```\n<body>\n```", and ends split
 // windows with a "*[truncated ...]*" trailer.
 const stripWrapper = (s) => String(s || '')
-  .replace(/^\*\[.*?\]\*\s*/, '')
-  .replace(/^https?:\/\/\S+\s*```\s*/, '')
+  .replace(/^\s*\*\[.*?\]\*\s*/, '')
+  .replace(/\s*https:\/\/hiringcafe\.com\/\S+\s*```\s*/g, '')
   .replace(/\s*```\s*$/, '');
-const stripTrailer = (s) => String(s || '').replace(/\s*\*\[truncated[^\]]*\]\*\s*$/, '');
+// donsetch also injects per-window notices mid-stream on offset fetches.
+const stripNotices = (s) => String(s || '')
+  .replace(/\*\[changed since last fetch.*?\]\*/g, '')
+  .replace(/\*\[truncated.*?\]\*/g, '');
+// Some pages embed raw C0 control characters inside string values.
+const CTL = new RegExp(String.fromCharCode(91) + String.fromCharCode(92) + 'u0001-' + String.fromCharCode(92) + 'u001f' + String.fromCharCode(93), 'g');
+const sanitizeControls = (s) => String(s || '').replace(CTL, ' ');
 const parsePage = (text) => {
-  try { return JSON.parse(text).pageProps; } catch { return JSON.parse(stripWrapper(text)).pageProps; }
+  try { return JSON.parse(text).pageProps; }
+  catch {
+    try { return JSON.parse(stripWrapper(text)).pageProps; }
+    catch { return JSON.parse(sanitizeControls(stripWrapper(text))).pageProps; }
+  }
 };
 
 async function donsetchJson(args) {
@@ -62,7 +72,7 @@ async function fetchContent(url) {
       throw err;
     }
     const next = env.meta?.next_offset ?? env.structuredContent?.next_offset;
-    content += (next ? stripTrailer(env.content) : (env.content || ''));
+    content += stripNotices(env.content);
     if (!next) return content;
     offset = next;
   }
