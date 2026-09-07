@@ -11,7 +11,7 @@
 // --pages N caps the pull at N pages (smoke test). Requires donsetch with
 // pdfium.dll beside it; see the `donsetch` skill.
 import { execFile } from 'node:child_process';
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { promisify } from 'node:util';
 import {
   MAX_AGE_DAYS, MAX_PAGES, normalizeHit, payRank, payText, scoreJob, searchState,
@@ -21,8 +21,20 @@ const execFileAsync = promisify(execFile);
 const DONSETCH = 'C:/Users/ajbig/AppData/Roaming/npm/donsetch.exe';
 const HOME = 'https://hiringcafe.com/';
 const STORE_PATH = 'owings-mills-store.json';
-const PAGE_CONCURRENCY = 2;
+const PAGE_CONCURRENCY = 4;
 const MAX_CHARS = 1500000;
+const CKPT_DIR = 'checkpoint-hc-pages';
+const ckptGet = (page) => {
+  try {
+    const parsed = JSON.parse(readFileSync(`${CKPT_DIR}/page-${page}.json`, 'utf8'));
+    if (Array.isArray(parsed)) return parsed;
+  } catch {}
+  return null;
+};
+const ckptPut = (page, pairs) => {
+  mkdirSync(CKPT_DIR, { recursive: true });
+  writeFileSync(`${CKPT_DIR}/page-${page}.json`, JSON.stringify(pairs));
+};
 const KNOWN_BUILD_ID = 'gvzuiDv2Jx0bRlrSouAQX'; // verified live 2026-09-06; auto re-resolves on 404
 const FETCH_TIMEOUT_MS = 180000;
 
@@ -122,7 +134,6 @@ async function pooled(items, limit, worker) {
     while (cursor < items.length) {
       const index = cursor++;
       output[index] = await worker(items[index], index);
-      if (index % 10 === 0 || index === items.length - 1) console.log(`Fetched page ${index + 1}/${items.length}`);
     }
   }));
   return output;
@@ -153,27 +164,68 @@ export async function main() {
   if (pageCount > MAX_PAGES) throw new Error(`HiringCafe requested ${pageCount} pages, above safety cap ${MAX_PAGES}`);
   console.log(`HiringCafe structured search via donsetch: ${total} result groups across ${pageCount} pages (buildId ${buildId})`);
 
+  const keyOf = (hit) => hit.objectID || hit.id || JSON.stringify(hit);
+  const fetchNormalized = async (page, props) => {
+    const cached = ckptGet(page);
+    if (cached) return { cached: true, pairs: cached };
+    const pp = props || await fetchProps(buildId, page);
+    const pairs = pp.ssrHits.map((hit) => [keyOf(hit), normalizeHit(hit)]);
+    ckptPut(page, pairs);
+    return { cached: false, pairs };
+  };
   const remaining = Array.from({ length: pageCount - 1 }, (_, index) => index + 1);
-  let pages;
-  try {
-    pages = [first, ...(await pooled(remaining, PAGE_CONCURRENCY, (page) => fetchProps(buildId, page)))];
-  } catch (caught) {
-    if (caught.code === 'STALE_BUILD_ID') {
-      console.log('buildId expired mid-run; re-resolving once and retrying remaining pages...');
+  let cachedPages = 0;
+  let donePages = 0;
+  const onOneDone = (cached) => {
+    if (cached) cachedPages += 1;
+    donePages += 1;
+    if (donePages % 10 === 0 || donePages === pageCount) console.log(`Fetched page ${donePages}/${pageCount} (${cachedPages} from checkpoint)`);
+  };
+  const firstNorm = await fetchNormalized(0, first);
+  onOneDone(firstNorm.cached);
+  const byPage = new Map([[0, firstNorm]]);
+  const fillPool = (pending) => pooled(pending, PAGE_CONCURRENCY, async (page) => {
+    try {
+      const result = await fetchNormalized(page, null);
+      byPage.set(page, result);
+      onOneDone(result.cached);
+    } catch (caught) {
+      if (caught.code === 'STALE_BUILD_ID') throw caught;
+      byPage.set(page, { failed: true, page, error: String((caught && caught.message) || caught) });
+      onOneDone(false);
+    }
+  });
+  let pending = remaining;
+  for (let round = 1; pending.length > 0; round += 1) {
+    if (round > 4) {
+      const failed = pending.map((p) => `${p} (${(byPage.get(p) || {}).error || 'unknown'})`);
+      throw new Error(`HiringCafe pages still failing after 4 rounds: ${failed.join('; ')}`);
+    }
+    if (round > 1) {
+      console.log(`Retry round ${round}: ${pending.length} pages after 60s cooldown...`);
+      await sleep(60000);
+    }
+    try {
+      await fillPool(pending);
+    } catch (caught) {
+      if (caught.code !== 'STALE_BUILD_ID') throw caught;
+      console.log('buildId expired mid-run; re-resolving and retrying pages missing from checkpoint...');
       buildId = await resolveBuildId();
-      pages = [first, ...(await pooled(remaining, PAGE_CONCURRENCY, (page) => fetchProps(buildId, page)))];
-    } else throw caught;
+      console.log(`Fresh buildId: ${buildId}`);
+    }
+    pending = pending.filter((p) => byPage.get(p) && byPage.get(p).failed);
   }
-  if (pages.length !== pageCount) throw new Error(`HiringCafe completeness check failed: ${pages.length}/${pageCount} pages`);
+  const results = Array.from({ length: pageCount }, (_, p) => byPage.get(p));
+  if (results.length !== pageCount) throw new Error(`HiringCafe completeness check failed: ${results.length}/${pageCount} pages`);
 
-  const hits = new Map();
-  for (const page of pages) for (const hit of page.ssrHits) hits.set(hit.objectID || hit.id || JSON.stringify(hit), hit);
-  const stats = { mode: 'structured full-radius search', transport: 'donsetch', radiusMiles: 30, buildId, resultGroups: total, pagesExpected: pageCount, pagesFetched: pages.length, rawHits: hits.size, expired: 0, senior: 0, medical: 0, noCoordinates: 0, offArea: 0, stale: 0, invalid: 0, duplicatesCollapsed: 0, kept: 0, payStartsAt20: 0, payReaches20: 0, payUnknown: 0, payBelow20: 0, durationSeconds: 0 };
+  const stats = { mode: 'structured full-radius search', transport: 'donsetch', radiusMiles: 30, buildId, resultGroups: total, pagesExpected: pageCount, pagesFetched: results.length, rawHits: 0, expired: 0, senior: 0, medical: 0, noCoordinates: 0, offArea: 0, stale: 0, invalid: 0, duplicatesCollapsed: 0, kept: 0, payStartsAt20: 0, payReaches20: 0, payUnknown: 0, payBelow20: 0, durationSeconds: 0 };
   const jobsBySource = new Map();
-  for (const hit of hits.values()) {
-    const normalized = normalizeHit(hit);
-    if (normalized.reason) { stats[normalized.reason] = (stats[normalized.reason] || 0) + 1; continue; }
-    jobsBySource.set(normalized.job.sourceId, normalized.job);
+  for (const { pairs } of results) {
+    stats.rawHits += pairs.length;
+    for (const [, normalized] of pairs) {
+      if (normalized.reason) { stats[normalized.reason] = (stats[normalized.reason] || 0) + 1; continue; }
+      jobsBySource.set(normalized.job.sourceId, normalized.job);
+    }
   }
   const byOpening = new Map();
   for (const job of jobsBySource.values()) {
@@ -186,7 +238,7 @@ export async function main() {
   for (const job of kept) [['payStartsAt20', 0], ['payReaches20', 1], ['payUnknown', 2], ['payBelow20', 3]].forEach(([key, rank]) => { if (payRank(job.salary) === rank) stats[key] += 1; });
   stats.kept = kept.length;
   stats.durationSeconds = Math.round((Date.now() - startedAt) / 1000);
-  if (total > 0 && hits.size === 0) throw new Error('HiringCafe returned nonzero total but zero hits');
+  if (total > 0 && stats.rawHits === 0) throw new Error('HiringCafe returned nonzero total but zero hits');
 
   let prior = { run: 0 };
   try { prior = JSON.parse(readFileSync(STORE_PATH, 'utf8')); } catch {}
@@ -198,11 +250,12 @@ export async function main() {
   writeFileSync(STORE_PATH, JSON.stringify({ note: 'Complete HiringCafe structured search within an exact 30-mile radius.', updatedAt: new Date().toISOString(), cursor: 0, run, chunkCount: 0, cycleRuns: 1, jobs: storedJobs, lastCompleteSearch: { buildId, transport: 'donsetch', pages: pageCount, resultGroups: total } }, null, 2));
 
   mkdirSync('data', { recursive: true });
-  writeFileSync('data/owings-mills.json', JSON.stringify({ generatedAt: new Date().toISOString(), center: 'Owings Mills, MD 21117', radiusNote: 'Exact 30-mile HiringCafe radius, independently verified with posting coordinates', payPriority: '$20+/hour-equivalent listings first', excluded: ['senior/executive or 5+ year roles', 'medical and clinical titles'], maxAgeDays: MAX_AGE_DAYS, coverage: { mode: stats.mode, transport: stats.transport, pagesFetched: pages.length, pagesExpected: pageCount, complete: pages.length === pageCount }, stats, jobs: kept }, null, 2));
+  writeFileSync('data/owings-mills.json', JSON.stringify({ generatedAt: new Date().toISOString(), center: 'Owings Mills, MD 21117', radiusNote: 'Exact 30-mile HiringCafe radius, independently verified with posting coordinates', payPriority: '$20+/hour-equivalent listings first', excluded: ['senior/executive or 5+ year roles', 'medical and clinical titles'], maxAgeDays: MAX_AGE_DAYS, coverage: { mode: stats.mode, transport: stats.transport, pagesFetched: results.length, pagesExpected: pageCount, complete: results.length === pageCount }, stats, jobs: kept }, null, 2));
 
-  const md = ['# Jobs near Owings Mills, MD', '', `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within an exact 30-mile radius · last ${MAX_AGE_DAYS} days_`, '', `Complete HiringCafe structured search: ${pages.length}/${pageCount} pages fetched. Jobs starting at $20+/hour equivalent are shown first. Senior/executive, 5+ year, and clinical titles are excluded.`, '', '## Best matches overall', '', '| Score | Distance | Employer | Role | Pay | Resume | Flags |', '|---:|---:|---|---|---|---|---|'];
+  const md = ['# Jobs near Owings Mills, MD', '', `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within an exact 30-mile radius · last ${MAX_AGE_DAYS} days_`, '', `Complete HiringCafe structured search: ${results.length}/${pageCount} pages fetched. Jobs starting at $20+/hour equivalent are shown first. Senior/executive, 5+ year, and clinical titles are excluded.`, '', '## Best matches overall', '', '| Score | Distance | Employer | Role | Pay | Resume | Flags |', '|---:|---:|---|---|---|---|---|'];
   for (const job of kept) md.push(`| ${job.fit.overall} | ${job.miles} mi | ${job.company.replace(/\|/g, '\\|')} | [${job.title.replace(/\|/g, '\\|')}](${job.url}) | ${payText(job.salary)} | ${job.fit.resume} | ${job.fit.flags.join('; ') || '—'} |`);
   writeFileSync('owings-mills-latest.md', md.join('\n'));
+  rmSync(CKPT_DIR, { recursive: true, force: true });
   console.log(JSON.stringify(stats, null, 2));
 }
 
