@@ -6,6 +6,8 @@ export const CENTER = { lat: 39.41955, lon: -76.78025 };
 export const RADIUS_MILES = 30;
 export const MAX_AGE_DAYS = 60;
 export const MAX_PAGES = 2000;
+export const MIN_LOCAL_HOURLY = 25;
+export const MIN_LOCAL_ANNUAL = 50000;
 const PAGE_CONCURRENCY = 4;
 const STORE_PATH = 'owings-mills-store.json';
 const UA = 'Mozilla/5.0 (compatible; career-ops personal job search; +https://github.com/Themandme/test)';
@@ -32,7 +34,7 @@ const MEDICAL_PATTERNS = [
 ];
 
 const ROLE = {
-  technical: /\b(data|business|financial|operations|program|project|systems?|application|software|technical|technology|information|reporting|quality assurance|qa|crm|salesforce|power bi|database|support engineer|help desk|service desk|analyst|developer|administrator)\b/i,
+  technical: /\b(data|business|financial|operations|program|project|systems?|application|software|technical|technology|information|reporting|quality assurance|qa|crm|salesforce|power bi|database|support engineer|help desk|service desk|implementation|onboarding|proposal|rfp|sales operations|data quality|business intelligence|client services|account services|branch operations|payment operations|procurement|contract administration|user acceptance|analyst|developer|administrator)\b/i,
   office: /\b(administrative|office|reception|front desk|dispatcher|call center|coordinator|specialist|assistant|customer service|customer experience|guest services?|service advisor)\b/i,
   frontline: /\b(cashier|retail|sales associate|team member|crew member|hospitality|food service|server|cook|stock|merchandis|warehouse|deli|produce|grocery|valet)\b/i,
   credential: /\b(cdl|driver|electrician|hvac|plumber|machinist|mechanic|engineer|teacher|counselor|social worker|security officer|armed|inspector|technologist)\b/i,
@@ -86,6 +88,20 @@ function salaryFrom(v) {
   return { min: Number.isFinite(min) ? min : null, max: Number.isFinite(max) ? max : null, unit: spec[2] };
 }
 
+export function annualizedMinimum(salary) {
+  if (!salary || !Number.isFinite(salary.min)) return null;
+  const factors = { HOUR: 2080, YEAR: 1, MONTH: 12, WEEK: 52, DAY: 260 };
+  const factor = factors[salary.unit];
+  return factor ? salary.min * factor : null;
+}
+
+export function hasEligibleLocalPay(salary) {
+  if (!salary || !Number.isFinite(salary.min)) return false;
+  if (salary.unit === 'HOUR') return salary.min >= MIN_LOCAL_HOURLY;
+  const annual = annualizedMinimum(salary);
+  return annual != null && annual >= MIN_LOCAL_ANNUAL;
+}
+
 export function normalizeHit(hit, now = Date.now()) {
   if (!hit || hit.is_expired) return { reason: 'expired' };
   const v = hit.v5_processed_job_data || {};
@@ -93,6 +109,8 @@ export function normalizeHit(hit, now = Date.now()) {
   if (!title) return { reason: 'invalid' };
   if (isSenior(hit, title)) return { reason: 'senior' };
   if (MEDICAL_PATTERNS.some(re => re.test(title))) return { reason: 'medical' };
+  const salary = salaryFrom(v);
+  if (!hasEligibleLocalPay(salary)) return { reason: 'payIneligible' };
 
   const points = (Array.isArray(hit._geoloc) ? hit._geoloc : [hit._geoloc])
     .filter(p => p && Number.isFinite(Number(p.lat)) && Number.isFinite(Number(p.lon)))
@@ -119,7 +137,7 @@ export function normalizeHit(hit, now = Date.now()) {
       title, url, company, city, region: 'Maryland', miles: Math.round(miles * 10) / 10,
       datePosted: Number.isFinite(postedMs) ? new Date(postedMs).toISOString().slice(0, 10) : null,
       employmentType: Array.isArray(v.commitment) ? v.commitment.join(', ') : null,
-      salary: salaryFrom(v),
+      salary,
       sourceId: id || url,
       seniority: v.seniority_level || null,
       minYearsExperience: Number.isFinite(Number(v.min_industry_and_role_yoe)) ? Number(v.min_industry_and_role_yoe) : null,
@@ -215,15 +233,7 @@ async function pooled(items, limit, worker) {
 }
 
 export function payRank(salary) {
-  if (!salary) return 2;
-  const factors = { HOUR: 1, YEAR: 1 / 2080, MONTH: 12 / 2080, WEEK: 52 / 2080, DAY: 260 / 2080 };
-  const factor = factors[salary.unit] ?? null;
-  if (!factor) return 2;
-  const floor = salary.min == null ? null : salary.min * factor;
-  const ceiling = salary.max == null ? null : salary.max * factor;
-  if (floor != null && floor >= 20) return 0;
-  if (ceiling != null && ceiling >= 20) return 1;
-  return 3;
+  return hasEligibleLocalPay(salary) ? 0 : 3;
 }
 
 export function scoreJob(job) {
@@ -243,14 +253,13 @@ export function scoreJob(job) {
   if (leadership) { qualification -= frontlineLeadership ? 8 : 22; interview -= frontlineLeadership ? 7 : 20; }
   if ((job.minYearsExperience ?? 0) >= 4) { qualification -= 18; interview -= 15; }
   const tier = payRank(job.salary);
-  const payScore = [100, 78, 52, 28][tier];
+  const payScore = tier === 0 ? 100 : 28;
   const overall = clamp(clamp(qualification) * .30 + clamp(interview) * .25 + payScore * .20 + clamp(careerValue) * .20 + (100 - overqualificationRisk) * .05);
   const flags = [];
   if (credential) flags.push('credential/skill check');
   if (leadership) flags.push(frontlineLeadership ? 'frontline leadership check' : 'leadership experience check');
   if ((job.minYearsExperience ?? 0) >= 4) flags.push(`${job.minYearsExperience}+ years requested`);
-  if (tier === 2) flags.push('pay undisclosed');
-  if (tier === 3) flags.push('published pay below $20');
+  if (tier === 3) flags.push('does not meet hardcoded compensation floor');
   return { overall, qualification: clamp(qualification), interview: clamp(interview), pay: payScore, careerValue: clamp(careerValue), overqualificationRisk, resume, confidence: 'structured title/pay/experience metadata', flags };
 }
 
@@ -282,7 +291,7 @@ export async function main() {
 
   const hits = new Map();
   for (const page of pages) for (const hit of page.ssrHits) hits.set(hit.objectID || hit.id || JSON.stringify(hit), hit);
-  const stats = { mode: 'structured full-radius search', radiusMiles: RADIUS_MILES, buildId: id, resultGroups: total, pagesExpected: pageCount, pagesFetched: pages.length, rawHits: hits.size, expired: 0, senior: 0, medical: 0, noCoordinates: 0, offArea: 0, stale: 0, invalid: 0, duplicatesCollapsed: 0, kept: 0, payStartsAt20: 0, payReaches20: 0, payUnknown: 0, payBelow20: 0, durationSeconds: 0 };
+  const stats = { mode: 'structured full-radius search', radiusMiles: RADIUS_MILES, buildId: id, resultGroups: total, pagesExpected: pageCount, pagesFetched: pages.length, rawHits: hits.size, expired: 0, senior: 0, medical: 0, payIneligible: 0, noCoordinates: 0, offArea: 0, stale: 0, invalid: 0, duplicatesCollapsed: 0, kept: 0, durationSeconds: 0 };
   const jobsBySource = new Map();
   for (const hit of hits.values()) {
     const normalized = normalizeHit(hit);
@@ -297,7 +306,6 @@ export async function main() {
   }
   stats.duplicatesCollapsed = jobsBySource.size - byOpening.size;
   const kept = [...byOpening.values()].map(job => ({ ...job, fit: scoreJob(job) })).sort((a, b) => payRank(a.salary) - payRank(b.salary) || b.fit.overall - a.fit.overall || (b.datePosted || '').localeCompare(a.datePosted || ''));
-  for (const job of kept) [['payStartsAt20', 0], ['payReaches20', 1], ['payUnknown', 2], ['payBelow20', 3]].forEach(([key, rank]) => { if (payRank(job.salary) === rank) stats[key] += 1; });
   stats.kept = kept.length;
   stats.durationSeconds = Math.round((Date.now() - startedAt) / 1000);
   if (total > 0 && hits.size === 0) throw new Error('HiringCafe returned nonzero total but zero hits');
@@ -314,9 +322,9 @@ export async function main() {
   writeFileSync(STORE_PATH, JSON.stringify({ note: 'Complete HiringCafe structured search within an exact 30-mile radius.', updatedAt: new Date().toISOString(), cursor: 0, run, chunkCount: 0, cycleRuns: 1, jobs: storedJobs, lastCompleteSearch: { buildId: id, pages: pageCount, resultGroups: total } }, null, 2));
 
   mkdirSync('data', { recursive: true });
-  writeFileSync('data/owings-mills.json', JSON.stringify({ generatedAt: new Date().toISOString(), center: 'Owings Mills, MD 21117', radiusNote: 'Exact 30-mile HiringCafe radius, independently verified with posting coordinates', payPriority: '$20+/hour-equivalent listings first', excluded: ['senior/executive or 5+ year roles', 'medical and clinical titles'], maxAgeDays: MAX_AGE_DAYS, coverage: { mode: stats.mode, pagesFetched: pages.length, pagesExpected: pageCount, complete: pages.length === pageCount }, stats, jobs: kept }, null, 2));
+  writeFileSync('data/owings-mills.json', JSON.stringify({ generatedAt: new Date().toISOString(), center: 'Owings Mills, MD 21117', radiusNote: 'Exact 30-mile HiringCafe radius, independently verified with posting coordinates', compensationFloor: '$25/hour minimum for hourly roles, or $50,000 annualized minimum for other disclosed pay frequencies', excluded: ['undisclosed or below-floor compensation', 'senior/executive or 5+ year roles', 'medical and clinical titles'], maxAgeDays: MAX_AGE_DAYS, coverage: { mode: stats.mode, pagesFetched: pages.length, pagesExpected: pageCount, complete: pages.length === pageCount }, stats, jobs: kept }, null, 2));
 
-  const md = ['# Jobs near Owings Mills, MD', '', `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within an exact 30-mile radius · last ${MAX_AGE_DAYS} days_`, '', `Complete HiringCafe structured search: ${pages.length}/${pageCount} pages fetched. Jobs starting at $20+/hour equivalent are shown first. Senior/executive, 5+ year, and clinical titles are excluded.`, '', '## Best matches overall', '', '| Score | Distance | Employer | Role | Pay | Resume | Flags |', '|---:|---:|---|---|---|---|---|'];
+  const md = ['# Jobs near Owings Mills, MD', '', `_Updated ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC · ${kept.length} openings within an exact 30-mile radius · last ${MAX_AGE_DAYS} days_`, '', `Complete HiringCafe structured search: ${pages.length}/${pageCount} pages fetched. Only employer-disclosed pay starting at $25/hour or annualizing to at least $50,000 is included. Senior/executive, 5+ year, and clinical titles are excluded.`, '', '## Best matches overall', '', '| Score | Distance | Employer | Role | Pay | Resume | Flags |', '|---:|---:|---|---|---|---|---|'];
   for (const job of kept) md.push(`| ${job.fit.overall} | ${job.miles} mi | ${job.company.replace(/\|/g, '\\|')} | [${job.title.replace(/\|/g, '\\|')}](${job.url}) | ${payText(job.salary)} | ${job.fit.resume} | ${job.fit.flags.join('; ') || '—'} |`);
   writeFileSync('owings-mills-latest.md', md.join('\n'));
   console.log(JSON.stringify(stats, null, 2));
