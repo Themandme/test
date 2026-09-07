@@ -109988,5 +109988,8 @@
     "transport": "donsetch",
     "pages": 1755,
     "resultGroups": 70192
-  }
+  },
+  "lastAttemptAt": "2026-09-07T16:29:51.711Z",
+  "lastAttemptStatus": "blocked-by-source-security",
+  "lastAttemptError": "HiringCafe homepage HTTP 403"
 }
