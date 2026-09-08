@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T16:44:46.063Z",
+  "generatedAt": "2026-09-08T15:26:53.327Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -7,8 +7,8 @@
       "name": "JMS Celebree School",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 9,
-      "kept": 3
+      "fetched": 8,
+      "kept": 2
     },
     {
       "name": "STEPS Behavioral Health",
@@ -28,8 +28,8 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 252,
-      "kept": 1
+      "fetched": 248,
+      "kept": 0
     },
     {
       "name": "Mercer Advisors",
@@ -42,14 +42,14 @@
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 959,
+      "fetched": 958,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 41,
+      "fetched": 40,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 177,
+      "fetched": 179,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 88,
+      "fetched": 87,
       "kept": 6
     },
     {
@@ -91,7 +91,7 @@
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 448,
+      "fetched": 452,
       "kept": 2
     },
     {
@@ -119,14 +119,14 @@
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 22,
+      "fetched": 23,
       "kept": 3
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 851,
+      "fetched": 848,
       "kept": 1
     },
     {
@@ -134,20 +134,20 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 4
+      "kept": 5
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 693,
+      "fetched": 687,
       "kept": 2
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 350,
+      "fetched": 358,
       "kept": 5
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
       "postedAtMs": 1787198400000,
       "datePosted": "2026-08-20T04:00:00.000Z",
-      "days": 18,
+      "days": 19,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1787025600000,
       "datePosted": "2026-08-18T04:00:00.000Z",
-      "days": 20,
+      "days": 21,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1786939200000,
       "datePosted": "2026-08-17T04:00:00.000Z",
-      "days": 21,
+      "days": 22,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -215,7 +215,7 @@
       "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -229,7 +229,7 @@
       "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -243,7 +243,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -257,7 +257,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -271,38 +271,10 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1785297600000,
       "datePosted": "2026-07-29T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Curaleaf",
-      "title": "Retail Sales Associate - Part Time",
-      "url": "https://job-boards.greenhouse.io/curaleaf/jobs/8596239002",
-      "location": "11722 Reisterstown Rd Reisterstown, MD",
-      "postedAtMs": 1784208114000,
-      "datePosted": "2026-07-16T13:21:54.000Z",
-      "days": 53,
-      "salary": null,
-      "source": "Direct ATS (greenhouse)",
-      "sourceBoard": "greenhouse:https://job-boards.greenhouse.io/curaleaf",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "JMS Celebree School",
-      "title": "Celebree School of Owings Mills is looking for top-quality Teacher Aides!",
-      "url": "https://celebreeny.bamboohr.com/careers/101",
-      "location": "Owings mills, Maryland",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (bamboohr)",
-      "sourceBoard": "bamboohr:https://celebreeny.bamboohr.com/careers",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
@@ -546,9 +518,9 @@
     },
     {
       "company": "Domino's",
-      "title": "Customer Service Rep(04125) - 12195 Hwy 92",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000147824349-customer-service-rep-04125-12195-hwy-92",
-      "location": "Woodstock, GA, United States",
+      "title": "Assistant Manager(04696) - 3502 Brenbrook Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148099327-assistant-manager-04696-3502-brenbrook-dr",
+      "location": "Randallstown, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -560,9 +532,9 @@
     },
     {
       "company": "Domino's",
-      "title": "Customer Service Rep(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000147775034-customer-service-rep-04132-2265-towne-lake-pkwy",
-      "location": "Woodstock, GA, United States",
+      "title": "Customer Service Rep(04696) - 3502 Brenbrook Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148088885-customer-service-rep-04696-3502-brenbrook-dr",
+      "location": "Randallstown, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -574,23 +546,37 @@
     },
     {
       "company": "Domino's",
-      "title": "Delivery Driver(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000147749829-delivery-driver-04132-2265-towne-lake-pkwy",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Assistant Manager(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000147748788-assistant-manager-04366-493-w-reservoir-rd",
+      "title": "Delivery Driver(04366) - 493 W Reservoir Rd.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148075485-delivery-driver-04366-493-w-reservoir-rd",
       "location": "Woodstock, VA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Customer Service Rep(04366) - 493 W Reservoir Rd.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148072945-customer-service-rep-04366-493-w-reservoir-rd",
+      "location": "Woodstock, VA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Assistant Manager(04132) - 2265 Towne Lake Pkwy",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148046933-assistant-manager-04132-2265-towne-lake-pkwy",
+      "location": "Woodstock, GA, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
