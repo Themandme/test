@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T15:26:53.327Z",
+  "generatedAt": "2026-09-09T15:26:58.440Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -21,42 +21,42 @@
       "name": "The 1916 Company",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 14,
+      "fetched": 15,
       "kept": 4
     },
     {
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 248,
+      "fetched": 250,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 103,
+      "fetched": 106,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 958,
+      "fetched": 957,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 40,
+      "fetched": 42,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 502,
+      "fetched": 521,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 179,
+      "fetched": 177,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 87,
+      "fetched": 86,
       "kept": 6
     },
     {
@@ -98,7 +98,7 @@
       "name": "Footprint Solutions",
       "provider": "jobvite",
       "status": "success",
-      "fetched": 19,
+      "fetched": 21,
       "kept": 1
     },
     {
@@ -112,21 +112,21 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 259,
-      "kept": 4
+      "fetched": 241,
+      "kept": 0
     },
     {
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 23,
+      "fetched": 21,
       "kept": 3
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 848,
+      "fetched": 853,
       "kept": 1
     },
     {
@@ -140,18 +140,32 @@
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 687,
+      "fetched": 691,
       "kept": 2
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 358,
+      "fetched": 346,
       "kept": 5
     }
   ],
   "jobs": [
+    {
+      "company": "Bartlett Tree Experts",
+      "title": "Arborist Climber",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/35678/arborist-climber/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1788926400000,
+      "datePosted": "2026-09-09T04:00:00.000Z",
+      "days": 0,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
     {
       "company": "Marvin",
       "title": "In-Home Sales Consultant (Pre-Set Appointments, $150K+)",
@@ -159,7 +173,7 @@
       "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
       "postedAtMs": 1787198400000,
       "datePosted": "2026-08-20T04:00:00.000Z",
-      "days": 19,
+      "days": 20,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -173,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1787025600000,
       "datePosted": "2026-08-18T04:00:00.000Z",
-      "days": 21,
+      "days": 22,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -187,7 +201,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1786939200000,
       "datePosted": "2026-08-17T04:00:00.000Z",
-      "days": 22,
+      "days": 23,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -201,7 +215,7 @@
       "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -215,7 +229,7 @@
       "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -229,7 +243,7 @@
       "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -243,7 +257,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -257,24 +271,10 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Bartlett Tree Experts",
-      "title": "Arborist Climber",
-      "url": "https://englishcareers-bartlett.icims.com/jobs/35148/arborist-climber/job",
-      "location": "US-MD-Finksburg",
-      "postedAtMs": 1785297600000,
-      "datePosted": "2026-07-29T04:00:00.000Z",
-      "days": 41,
-      "salary": null,
-      "source": "Direct ATS (icims)",
-      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
@@ -405,62 +405,6 @@
       "retainedAfterSourceFailure": false
     },
     {
-      "company": "Nexplore",
-      "title": "Coding After School Instructor",
-      "url": "https://ats.rippling.com/nexploreusa/jobs/d9b53bd0-2660-4467-9390-fa7939c4c11b",
-      "location": "Pikesville, MD",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (rippling)",
-      "sourceBoard": "rippling:https://ats.rippling.com/nexploreusa/jobs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Nexplore",
-      "title": "Coding After School Instructor",
-      "url": "https://ats.rippling.com/nexploreusa/jobs/3207bd67-4388-413f-bd9f-7c43b17fa232",
-      "location": "Pikesville, MD",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (rippling)",
-      "sourceBoard": "rippling:https://ats.rippling.com/nexploreusa/jobs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Nexplore",
-      "title": "Flag Football Instructor",
-      "url": "https://ats.rippling.com/nexploreusa/jobs/2bd125e1-39e3-4ad6-b88b-38f8e092b98e",
-      "location": "Pikesville, MD",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (rippling)",
-      "sourceBoard": "rippling:https://ats.rippling.com/nexploreusa/jobs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Nexplore",
-      "title": "Zumba After School Instructor",
-      "url": "https://ats.rippling.com/nexploreusa/jobs/02cc68a2-0458-4ad1-830f-00c8601112ff",
-      "location": "Owings Mills, MD",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (rippling)",
-      "sourceBoard": "rippling:https://ats.rippling.com/nexploreusa/jobs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
       "company": "WPM Real Estate Management",
       "title": "Assistant Service Manager- Allyson Gardens",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/de8e3347-2258-4799-a0c7-3d14b505bf51",
@@ -476,8 +420,8 @@
     },
     {
       "company": "WPM Real Estate Management",
-      "title": "Community Coordinator",
-      "url": "https://ats.rippling.com/wpm-real-estate/jobs/a48a6d84-30be-4e1f-b9fd-348d2b0c1ccf",
+      "title": "Regional Business Development Manager",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/29bdc793-efc8-4e73-be6a-864fb43ab6db",
       "location": "Owings Mills, MD",
       "postedAtMs": null,
       "datePosted": null,
@@ -588,8 +532,8 @@
     },
     {
       "company": "Public Storage",
-      "title": "Custodian - Self Storage Facilities",
-      "url": "https://jobs.smartrecruiters.com/PublicStorage/744000146184284-custodian-self-storage-facilities",
+      "title": "Customer Service - Self Storage Manager",
+      "url": "https://jobs.smartrecruiters.com/PublicStorage/744000148475680-customer-service-self-storage-manager",
       "location": "Woodstock, GA, United States",
       "postedAtMs": null,
       "datePosted": null,
@@ -602,8 +546,8 @@
     },
     {
       "company": "Public Storage",
-      "title": "Customer Service - Self Storage Manager",
-      "url": "https://jobs.smartrecruiters.com/PublicStorage/744000144764604-customer-service-self-storage-manager",
+      "title": "Custodian - Self Storage Facilities",
+      "url": "https://jobs.smartrecruiters.com/PublicStorage/744000146184284-custodian-self-storage-facilities",
       "location": "Woodstock, GA, United States",
       "postedAtMs": null,
       "datePosted": null,
