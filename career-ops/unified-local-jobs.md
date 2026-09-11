@@ -1,6 +1,6 @@
 # Unified local and remote job search
 
-_Updated 2026-09-10 15:19 UTC · 7332 deduplicated openings_
+_Updated 2026-09-11 15:22 UTC · 7332 deduplicated openings_
 
 30-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards, and nationwide U.S. remote jobs posted within the last 24 hours with published salary floors above $55,000. State-restricted remote listings are excluded. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, pay, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.
 
@@ -10,21 +10,21 @@ _Updated 2026-09-10 15:19 UTC · 7332 deduplicated openings_
 |---|---|---|
 | HiringCafe local | cached-source-blocked | 2026-09-07T05:46:39.355Z |
 | HiringCafe remote | unavailable | never |
-| Other direct ATS boards | 21 healthy / 0 failed | 2026-09-10T15:18:37.832Z |
+| Other direct ATS boards | 21 healthy / 0 failed | 2026-09-11T15:21:29.331Z |
 
 ## Sources
 
 | Source | Openings |
 |---|---:|
 | HiringCafe (cached) | 6414 |
-| County/city NEOGOV | 375 |
-| Direct employer board | 339 |
+| County/city NEOGOV | 371 |
+| Direct employer board | 338 |
 | State of Maryland JobAps | 129 |
-| official university board | 42 |
-| Direct ATS (smartrecruiters) | 12 |
+| official university board | 43 |
+| Direct ATS (smartrecruiters) | 15 |
 | Direct ATS (icims) | 9 |
 | Direct ATS (bamboohr) | 8 |
-| Direct ATS (rippling) | 3 |
+| Direct ATS (rippling) | 4 |
 | Direct ATS (jobvite) | 1 |
 
 ## Best matches
@@ -34,21 +34,22 @@ _Updated 2026-09-10 15:19 UTC · 7332 deduplicated openings_
 | 87 | State of Maryland — MD State Department of Education | [Education Data & Analysis Specialist (Education Program Specialist I)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005055&R3=0013) | Baltimore City | $44.66–$54.44/hr | State of Maryland JobAps | Professional | regional/public board—not exact-radius verified |
 | 86 | Baltimore County Government | [Department of Aging Office Automation Analyst - Non-Merit](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5470095/department-of-aging-office-automation-analyst-non-merit) | Towson, MD | $26.39–$36.37/hr | County/city NEOGOV | Professional | — |
 | 86 | State of Maryland — MSL - Division of Library Development & Services | [EDUCATION PROGRAM SPECIALIST I (Research and Data Coordinator)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=005055&R3=0012) | Baltimore City | $93k–$147k/yr | State of Maryland JobAps | Professional | regional/public board—not exact-radius verified |
+| 85 | Howard County Government | [Accounts Payable Administrative Aide - Recreation & Parks, Bureau of Administrative Services ](https://www.governmentjobs.com/careers/howardcounty/jobs/5468390/accounts-payable-administrative-aide-recreation-parks-bureau-of-administrati) | Columbia, MD | $51k–$99k/yr | County/city NEOGOV | Customer service | — |
 | 85 | State of Maryland — DHS - Baltimore City DSS | [ADMINISTRATIVE AIDE (Office Services Clerk)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002572&R3=0014) | Baltimore City | $49k–$64k/yr | State of Maryland JobAps | Customer service | regional/public board—not exact-radius verified |
-| 85 | M-NCPPC | [Parks Tree Care Volunteer Program Coordinator](https://www.governmentjobs.com/careers/mncppc/jobs/5473735/parks-tree-care-volunteer-program-coordinator) | Wheaton, MD | $29–$32/hr | County/city NEOGOV | Professional | — |
-| 83 | Baltimore County Government | [Human Resources Analyst II (Recreation and Parks)](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5462946/human-resources-analyst-ii-recreation-and-parks) | Cockeysville, MD | $63k–$71k/yr | County/city NEOGOV | Professional | level II experience check |
+| 84 | M-NCPPC | [Parks Tree Care Volunteer Program Coordinator](https://www.governmentjobs.com/careers/mncppc/jobs/5473735/parks-tree-care-volunteer-program-coordinator) | Wheaton, MD | $29–$32/hr | County/city NEOGOV | Professional | — |
 | 82 | Howard County Government | [Financial Analyst - Howard County Economic Development Authority](https://www.governmentjobs.com/careers/howardcounty/jobs/5455316/financial-analyst-howard-county-economic-development-authority) | Columbia, MD | $40/hr | County/city NEOGOV | Professional | — |
 | 81 | State of Maryland — DHS - Baltimore City DSS | [Contract Analyst (HUMAN SERVICE SPECIALIST IV)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=001905&R3=0002) | Baltimore City | $63k–$82k/yr | State of Maryland JobAps | Professional | level III+ experience check; regional/public board—not exact-radius verified |
 | 81 | State of Maryland — DJS Departmental Support | [ADMINISTRATOR IV (Data & Grants)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002589&R3=0012) | Baltimore City | $82k–$129k/yr | State of Maryland JobAps | Professional | level III+ experience check; regional/public board—not exact-radius verified |
 | 81 | Community College of Baltimore County | [Program Assistant, Johnson Controls, Grant Funded - Part Time](https://www.governmentjobs.com/careers/ccbcmd/jobs/5453646/program-assistant-johnson-controls-grant-funded-part-time) | Catonsville, MD | $21.54/hr | County/city NEOGOV | Customer service | — |
 | 80 | State of Maryland — Worker's Compensation Commission | [Employer Compliance Administrator (ADMINISTRATIVE OFFICER II)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003235&R3=0029) | Baltimore City | $59k–$85k/yr | State of Maryland JobAps | Customer service | level II experience check; regional/public board—not exact-radius verified |
+| 79 | State of Maryland — LABOR - Occupational and Professional Licensing 1 | [Board Administrator (ADMINISTRATIVE SPECIALIST III)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002043&R3=0034) | Baltimore City | $52k–$83k/yr | State of Maryland JobAps | Customer service | level III+ experience check; regional/public board—not exact-radius verified |
 | 79 | Baltimore County Government | [Management Analyst II - Department of Corrections](https://www.governmentjobs.com/careers/baltimorecounty/jobs/5450148/management-analyst-ii-department-of-corrections) | Towson, MD | $60k–$68k/yr | County/city NEOGOV | Professional | level II experience check |
-| 79 | M-NCPPC | [Parks Tree Care Volunteer Program Assistant](https://www.governmentjobs.com/careers/mncppc/jobs/5473725/parks-tree-care-volunteer-program-assistant) | Wheaton, MD | $19–$22/hr | County/city NEOGOV | Customer service | — |
 | 79 | Howard County Government | [Contingent Administrative Support-Finance, Banking Services](https://www.governmentjobs.com/careers/howardcounty/jobs/5450417/contingent-administrative-support-finance-banking-services) | MD 21043, MD | $33k–$48k/yr | County/city NEOGOV | Customer service | — |
 | 79 | University of Maryland | [Program Coordinator, Events & Communications](https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Program-Coordinator--Events---Communications_JR104864) | University of Maryland College Park | — | Direct employer board | Professional | pay undisclosed; regional/public board—not exact-radius verified |
-| 78 | State of Maryland — LABOR - Family and Medical Leave Insurance | [ADMINISTRATIVE SPECIALIST III (APPEALS SPECIALIST II)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002043&R3=0033) | Baltimore City | $52k–$68k/yr | State of Maryland JobAps | Customer service | level III+ experience check; regional/public board—not exact-radius verified |
-| 78 | Howard County Government | [Administrative Support Technician III - (Records Day Shift) - Police, Information & Technology Mgmt.](https://www.governmentjobs.com/careers/howardcounty/jobs/5398052/administrative-support-technician-iii-records-day-shift-police-information) | Columbia, MD | $46k–$89k/yr | County/city NEOGOV | Customer service | level III+ experience check |
+| 78 | M-NCPPC | [Parks Tree Care Volunteer Program Assistant](https://www.governmentjobs.com/careers/mncppc/jobs/5473725/parks-tree-care-volunteer-program-assistant) | Wheaton, MD | $19–$22/hr | County/city NEOGOV | Customer service | — |
 | 77 | State of Maryland — Maryland Insurance Administration | [SENIOR FINANCIAL ANALYST I **REPOST** (MIA Administrator III)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=009643&R3=0002) | Baltimore City | $82k–$129k/yr | State of Maryland JobAps | Professional | senior/lead experience check; regional/public board—not exact-radius verified |
+| 77 | State of Maryland — LABOR - Family and Medical Leave Insurance | [ADMINISTRATIVE SPECIALIST III (APPEALS SPECIALIST II)](https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002043&R3=0033) | Baltimore City | $52k–$68k/yr | State of Maryland JobAps | Customer service | level III+ experience check; regional/public board—not exact-radius verified |
+| 77 | Howard County Government | [Administrative Support Technician III - (Records Day Shift) - Police, Information & Technology Mgmt.](https://www.governmentjobs.com/careers/howardcounty/jobs/5398052/administrative-support-technician-iii-records-day-shift-police-information) | Columbia, MD | $46k–$89k/yr | County/city NEOGOV | Customer service | level III+ experience check |
 | 77 | Community College of Baltimore County | [Programmer Analyst I and II  (Software Development)](https://www.governmentjobs.com/careers/ccbcmd/jobs/5418239/programmer-analyst-i-and-ii-software-development) | Catonsville, MD | $79k–$145k/yr | County/city NEOGOV | Professional | level II experience check |
 | 77 | Ruppert Landscape | [Financial Planning & Analysis Analyst](https://jobs.jobvite.com/ruppertlandscape/job/oF7LAfwR?nl=1&fr=true) | Laytonsville, Maryland | $70k–$85k/yr | HiringCafe (cached) | Professional | posting age unknown; cached—source currently blocked |
 | 77 | Booz Allen Hamilton | [Program Controls Organization Financial Analyst, Mid](https://bah.wd1.myworkdayjobs.com/bah_jobs/job/McLean-VA/Program-Controls-Organization-Financial-Analyst--Mid_R0248621) | Belcamp, Maryland | $53k–$108k/yr | HiringCafe (cached) | Professional | posting age unknown; cached—source currently blocked |
@@ -130,7 +131,6 @@ _Updated 2026-09-10 15:19 UTC · 7332 deduplicated openings_
 | 77 | Microbac Laboratories, Inc. | [Quality Assurance Coordinator](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=edbc1146-911e-417e-b53e-c0e2f7d2a0e9&ccId=19000101_000001&jobId=591304&lang=en_US) | Baltimore, Maryland | $54k–$81k/yr | HiringCafe (cached) | Professional | posting age unknown; cached—source currently blocked |
 | 77 | Leap | [CRM Specialist](https://job-boards.greenhouse.io/leap46/jobs/4306183009) | Columbia, Maryland | $60k–$68k/yr | HiringCafe (cached) | Professional | posting age unknown; cached—source currently blocked |
 | 77 | L3Harris Technologies | [Software Engineering - Various Levels 1 (43778)](https://career-hcm20.ns2cloud.com/career?career_ns=job_listing&company=L3HHCM20&career_job_req_id=43778) | Millersville, Maryland | $112k–$208k/yr | HiringCafe (cached) | Professional | posting age unknown; cached—source currently blocked |
-| 77 | Ice Miller LLP | [Litigation and Practice Support Analyst](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=96c00bd9-c5f7-4314-aaa4-ccb45ec129fe&ccId=19000101_000001&jobId=590318&lang=en_US) | Baltimore, Maryland | $80k–$100k/yr | HiringCafe (cached) | Professional | posting age unknown; cached—source currently blocked |
 
 ## Notes
 

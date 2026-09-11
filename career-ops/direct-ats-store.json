@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T15:18:37.832Z",
+  "generatedAt": "2026-09-11T15:21:29.331Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -7,7 +7,7 @@
       "name": "JMS Celebree School",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 9,
+      "fetched": 10,
       "kept": 2
     },
     {
@@ -28,21 +28,21 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 241,
+      "fetched": 247,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 108,
+      "fetched": 107,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 956,
+      "fetched": 953,
       "kept": 0
     },
     {
@@ -56,7 +56,7 @@
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 528,
+      "fetched": 526,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 180,
+      "fetched": 183,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 85,
+      "fetched": 84,
       "kept": 6
     },
     {
@@ -98,7 +98,7 @@
       "name": "Footprint Solutions",
       "provider": "jobvite",
       "status": "success",
-      "fetched": 20,
+      "fetched": 19,
       "kept": 1
     },
     {
@@ -119,22 +119,22 @@
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 21,
-      "kept": 3
+      "fetched": 22,
+      "kept": 4
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 859,
-      "kept": 1
+      "fetched": 847,
+      "kept": 0
     },
     {
       "name": "Domino's",
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 4
+      "kept": 7
     },
     {
       "name": "Public Storage",
@@ -147,8 +147,8 @@
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 355,
-      "kept": 5
+      "fetched": 382,
+      "kept": 6
     }
   ],
   "jobs": [
@@ -159,7 +159,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 1,
+      "days": 2,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
       "postedAtMs": 1787198400000,
       "datePosted": "2026-08-20T04:00:00.000Z",
-      "days": 21,
+      "days": 22,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1787025600000,
       "datePosted": "2026-08-18T04:00:00.000Z",
-      "days": 23,
+      "days": 24,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1786939200000,
       "datePosted": "2026-08-17T04:00:00.000Z",
-      "days": 24,
+      "days": 25,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,7 +215,7 @@
       "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 37,
+      "days": 38,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -229,7 +229,7 @@
       "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 37,
+      "days": 38,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -243,7 +243,7 @@
       "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 37,
+      "days": 38,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -257,7 +257,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 37,
+      "days": 38,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -271,7 +271,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 37,
+      "days": 38,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -406,6 +406,20 @@
     },
     {
       "company": "WPM Real Estate Management",
+      "title": "Apartment Maintenance Supervisor-Bright Meadows",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/1ae6cd55-238e-462a-939c-b63e88859db3",
+      "location": "Owings Mills, MD",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (rippling)",
+      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "WPM Real Estate Management",
       "title": "Assistant Service Manager- Allyson Gardens",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/de8e3347-2258-4799-a0c7-3d14b505bf51",
       "location": "Owings Mills, MD",
@@ -447,16 +461,72 @@
       "retainedAfterSourceFailure": false
     },
     {
-      "company": "America's Best",
-      "title": "Sales Associate – Optical - Part Time",
-      "url": "https://jobs.smartrecruiters.com/NationalVision1/744000146214129-sales-associate-optical-part-time",
-      "location": "Owings Mills, MD, United States",
+      "company": "Domino's",
+      "title": "Assistant Manager(09185) - 701 S. Eastwood Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148900647-assistant-manager-09185-701-s-eastwood-dr",
+      "location": "Woodstock, IL, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
       "salary": null,
       "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/NationalVision1",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Assistant Manager(04125)",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148903389-assistant-manager-04125",
+      "location": "Woodstock, GA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Delivery Driver(09185) - 701 S. Eastwood Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148894299-delivery-driver-09185-701-s-eastwood-dr",
+      "location": "Woodstock, IL, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Delivery Driver(04125)",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148888959-delivery-driver-04125",
+      "location": "Woodstock, GA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Customer Service Rep(09185) - 701 S. Eastwood Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000148886247-customer-service-rep-09185-701-s-eastwood-dr",
+      "location": "Woodstock, IL, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
@@ -479,34 +549,6 @@
       "title": "Customer Service Rep(04696) - 3502 Brenbrook Dr.",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000148088885-customer-service-rep-04696-3502-brenbrook-dr",
       "location": "Randallstown, MD, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Delivery Driver(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000148075485-delivery-driver-04366-493-w-reservoir-rd",
-      "location": "Woodstock, VA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Customer Service Rep(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000148072945-customer-service-rep-04366-493-w-reservoir-rd",
-      "location": "Woodstock, VA, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -546,8 +588,8 @@
     },
     {
       "company": "Sonic Automotive",
-      "title": "Automotive Market Buyer",
-      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000148624419-automotive-market-buyer",
+      "title": "Shop Foreman - Audi Owings Mills",
+      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000149024989-shop-foreman-audi-owings-mills",
       "location": "Owings Mills, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
@@ -560,8 +602,22 @@
     },
     {
       "company": "Sonic Automotive",
-      "title": "Shop Foreman  - Audi Ownings Mills",
-      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000146761625-shop-foreman-audi-ownings-mills",
+      "title": "Automotive Technician - Audi Owings Mills",
+      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000148873940-automotive-technician-audi-owings-mills",
+      "location": "Owings Mills, MD, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Sonic Automotive",
+      "title": "Automotive Market Buyer",
+      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000148624419-automotive-market-buyer",
       "location": "Owings Mills, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
