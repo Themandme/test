@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T15:21:29.331Z",
+  "generatedAt": "2026-09-12T14:25:12.388Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,14 +28,14 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 247,
+      "fetched": 250,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 107,
+      "fetched": 105,
       "kept": 0
     },
     {
@@ -49,14 +49,14 @@
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 45,
+      "fetched": 42,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 526,
+      "fetched": 524,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 183,
+      "fetched": 184,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 84,
+      "fetched": 83,
       "kept": 6
     },
     {
@@ -98,7 +98,7 @@
       "name": "Footprint Solutions",
       "provider": "jobvite",
       "status": "success",
-      "fetched": 19,
+      "fetched": 18,
       "kept": 1
     },
     {
@@ -112,7 +112,7 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 239,
+      "fetched": 242,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 847,
+      "fetched": 850,
       "kept": 0
     },
     {
@@ -134,20 +134,20 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 7
+      "kept": 5
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 675,
+      "fetched": 659,
       "kept": 2
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 382,
+      "fetched": 379,
       "kept": 6
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
       "postedAtMs": 1787198400000,
       "datePosted": "2026-08-20T04:00:00.000Z",
-      "days": 22,
+      "days": 23,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1787025600000,
       "datePosted": "2026-08-18T04:00:00.000Z",
-      "days": 24,
+      "days": 25,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1786939200000,
       "datePosted": "2026-08-17T04:00:00.000Z",
-      "days": 25,
+      "days": 26,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,7 +215,7 @@
       "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 38,
+      "days": 39,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -229,7 +229,7 @@
       "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 38,
+      "days": 39,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -243,7 +243,7 @@
       "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 38,
+      "days": 39,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -257,7 +257,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 38,
+      "days": 39,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -271,7 +271,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 38,
+      "days": 39,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -521,34 +521,6 @@
       "title": "Customer Service Rep(09185) - 701 S. Eastwood Dr.",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000148886247-customer-service-rep-09185-701-s-eastwood-dr",
       "location": "Woodstock, IL, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Assistant Manager(04696) - 3502 Brenbrook Dr.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000148099327-assistant-manager-04696-3502-brenbrook-dr",
-      "location": "Randallstown, MD, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Customer Service Rep(04696) - 3502 Brenbrook Dr.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000148088885-customer-service-rep-04696-3502-brenbrook-dr",
-      "location": "Randallstown, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
