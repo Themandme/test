@@ -24,7 +24,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 120    # complete structured HiringCafe search plus downstream sources
+    timeout-minutes: 360    # donsetch HiringCafe pull can run for hours behind captcha walls
 
     steps:
       - uses: actions/checkout@v4
@@ -48,6 +48,21 @@ jobs:
         working-directory: career-ops
         run: npm install --ignore-scripts --no-audit --no-fund
 
+      - name: Install donsetch (HiringCafe transport)
+        # Direct node fetch gets Cloudflare-walled; donsetch's Chrome-parity
+        # TLS passes. The via-donsetch driver calls `donsetch` from PATH.
+        run: npm install -g donsetch && donsetch --version
+
+      - name: Restore HiringCafe page checkpoints
+        # Checkpoints self-validate on buildId/total/pageSize inside the
+        # driver, so stale cache entries simply miss. Without this a
+        # timeout-kill loses all progress (runner workspaces are ephemeral).
+        uses: actions/cache@v4
+        with:
+          path: career-ops/checkpoint-hc-pages
+          key: hc-checkpoints-v2-${{ hashFiles('career-ops/scan-hiringcafe-via-donsetch.mjs') }}
+          restore-keys: hc-checkpoints-v2-
+
       - name: Scan complete HiringCafe 10-mile radius
         id: hiringcafe_scheduled
         if: github.event_name == 'schedule'
@@ -55,7 +70,7 @@ jobs:
         continue-on-error: true
         run: |
           node --test tests/hiringcafe-full.test.mjs
-          node scan-hiringcafe-full.mjs
+          node scan-hiringcafe-via-donsetch.mjs
 
       - name: On-demand complete HiringCafe 10-mile radius
         id: hiringcafe_catchup
@@ -64,7 +79,7 @@ jobs:
         continue-on-error: true
         run: |
           node --test tests/hiringcafe-full.test.mjs
-          node scan-hiringcafe-full.mjs
+          node scan-hiringcafe-via-donsetch.mjs
 
       - name: Scan nationwide U.S. remote jobs
         id: hiringcafe_remote
