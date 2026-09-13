@@ -1,6 +1,6 @@
 # Unified local and remote job search
 
-_Updated 2026-09-13 13:24 UTC · 7337 deduplicated openings_
+_Updated 2026-09-13 15:11 UTC · 7335 deduplicated openings_
 
 30-mile Owings Mills core plus clearly flagged Baltimore-area government and university boards, and nationwide U.S. remote jobs posted within the last 24 hours with published salary floors above $55,000. State-restricted remote listings are excluded. Official/direct listings replace aggregator duplicates without collapsing separate locations or requisitions. Scores prioritize plausible qualifications, interview likelihood, pay, career value, recency, and low overqualification risk; older standing recruitments and likely advanced classifications are demoted.
 
@@ -10,7 +10,7 @@ _Updated 2026-09-13 13:24 UTC · 7337 deduplicated openings_
 |---|---|---|
 | HiringCafe local | cached-source-blocked | 2026-09-07T05:46:39.355Z |
 | HiringCafe remote | unavailable | never |
-| Other direct ATS boards | 21 healthy / 0 failed | 2026-09-13T13:23:15.117Z |
+| Other direct ATS boards | 21 healthy / 0 failed | 2026-09-13T15:10:13.370Z |
 
 ## Sources
 
@@ -18,7 +18,7 @@ _Updated 2026-09-13 13:24 UTC · 7337 deduplicated openings_
 |---|---:|
 | HiringCafe (cached) | 6414 |
 | County/city NEOGOV | 382 |
-| Direct employer board | 336 |
+| Direct employer board | 334 |
 | State of Maryland JobAps | 127 |
 | official university board | 43 |
 | Direct ATS (smartrecruiters) | 13 |

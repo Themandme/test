@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T13:24:35.779Z",
+  "generatedAt": "2026-09-13T15:11:01.617Z",
   "center": "Owings Mills, MD 21117",
   "scope": "30-mile core, explicitly labeled Baltimore-area public/university boards, and nationwide U.S. remote jobs under 24 hours old with salary floors above $55k",
   "payPriority": "$20+/hour first; annual salaries normalized at 2,080 hours/year for ranking",
@@ -9,7 +9,7 @@
       "status": "cached-source-blocked",
       "updatedAt": "2026-09-07T05:46:39.355Z",
       "include": true,
-      "ageHours": 152
+      "ageHours": 153
     },
     "hiringCafeRemote": {
       "status": "unavailable",
@@ -17,7 +17,7 @@
       "include": false
     },
     "directAts": {
-      "updatedAt": "2026-09-13T13:23:15.117Z",
+      "updatedAt": "2026-09-13T15:10:13.370Z",
       "healthy": 21,
       "failed": 0,
       "boards": [
@@ -174,7 +174,7 @@
   "sourceCounts": {
     "State of Maryland JobAps": 127,
     "County/city NEOGOV": 382,
-    "Direct employer board": 336,
+    "Direct employer board": 334,
     "HiringCafe (cached)": 6414,
     "official university board": 43,
     "Direct ATS (bamboohr)": 8,
@@ -4358,7 +4358,7 @@
       "url": "https://lowes.wd5.myworkdayjobs.com/lws_external_cs/job/Owings-Mills-MD-3388/Part-Time---Head-Cashier---Flexible_JR-02642658-1",
       "sourceRefreshStatus": "partial-current",
       "sourceFailureRuns": 0,
-      "sourceFailure": "page cap 60/621",
+      "sourceFailure": "page cap 60/620",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
       "fit": {
@@ -4449,7 +4449,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Cashier-Part-Time_R251025",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -4476,7 +4476,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Cashier-Part-Time_R251017",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -4503,35 +4503,8 @@
       "postedOn": "Posted 5 Days Ago",
       "url": "https://lowes.wd5.myworkdayjobs.com/lws_external_cs/job/Owings-Mills-MD-3388/Full-Time---Sales-Associate---Building-Materials---Day_JR-02642475",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 4,
-      "sourceFailure": "page cap 60/621",
-      "source": "Direct employer board",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 75,
-        "qualification": 88,
-        "interview": 84,
-        "pay": 52,
-        "careerValue": 48,
-        "recency": 94,
-        "overqualificationRisk": 18,
-        "resume": "Customer service",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "company": "BJ's Wholesale Club",
-      "title": "Cashier Part Time",
-      "location": "Owings Mills, MD #0061",
-      "days": 7,
-      "postedOn": "Posted 7 Days Ago",
-      "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Cashier-Part-Time_R250217",
-      "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 6,
-      "sourceFailure": "page cap 60/100",
+      "sourceFailureRuns": 5,
+      "sourceFailure": "page cap 60/620",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
       "fit": {
@@ -10100,6 +10073,49 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
+      "title": "Law Fellow (Temporary) - Non-Merit ",
+      "reqId": "NM.148 06-2026 LAW",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5362919/law-fellow-temporary-non-merit",
+      "postedAtMs": 1789084800000,
+      "days": 3,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "TEMPORARY",
+      "department": "LAW",
+      "categories": [
+        "Legal"
+      ],
+      "salary": {
+        "min": 25,
+        "max": 25,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 72,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 92,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": []
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
       "title": "Paralegal - Non-Merit",
       "reqId": "NM.143 03-2026 LAW",
       "location": "Towson, MD",
@@ -10163,49 +10179,6 @@
         "min": 60729,
         "max": 69269,
         "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.4,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 72,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 92,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": []
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
-      "title": "Law Fellow (Temporary) - Non-Merit ",
-      "reqId": "NM.148 06-2026 LAW",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5362919/law-fellow-temporary-non-merit",
-      "postedAtMs": 1789084800000,
-      "days": 3,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "TEMPORARY",
-      "department": "LAW",
-      "categories": [
-        "Legal"
-      ],
-      "salary": {
-        "min": 25,
-        "max": 25,
-        "unit": "HOUR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -10601,30 +10574,28 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Department of Aging Caregiver Program Specialist - Non-Merit",
-      "reqId": "NM.158 08-26",
+      "title": "Civil Case Coordinator - Non-Merit",
+      "reqId": "01.556 09-26",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438718/department-of-aging-caregiver-program-specialist-non-merit",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5476533/civil-case-coordinator-non-merit",
       "postedAtMs": 1788912000000,
       "days": 5,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
       "employmentType": "NON-MERIT",
-      "department": "AGING",
+      "department": "CIRCUIT COURT",
       "categories": [
-        "Administration",
-        "Health Services",
-        "Social Services",
-        "Human Services",
-        "Community and Social Services"
+        "Court Administration",
+        "Legal",
+        "Public Safety"
       ],
       "salary": {
-        "min": 22.29,
-        "max": 32.4,
-        "unit": "HOUR"
+        "min": 45000,
+        "max": 64524,
+        "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -10693,28 +10664,30 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Civil Case Coordinator - Non-Merit",
-      "reqId": "01.556 09-26",
+      "title": "Department of Aging Caregiver Program Specialist - Non-Merit",
+      "reqId": "NM.158 08-26",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5476533/civil-case-coordinator-non-merit",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5438718/department-of-aging-caregiver-program-specialist-non-merit",
       "postedAtMs": 1788912000000,
       "days": 5,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
       "employmentType": "NON-MERIT",
-      "department": "CIRCUIT COURT",
+      "department": "AGING",
       "categories": [
-        "Court Administration",
-        "Legal",
-        "Public Safety"
+        "Administration",
+        "Health Services",
+        "Social Services",
+        "Human Services",
+        "Community and Social Services"
       ],
       "salary": {
-        "min": 45000,
-        "max": 64524,
-        "unit": "YEAR"
+        "min": 22.29,
+        "max": 32.4,
+        "unit": "HOUR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -17524,12 +17497,12 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Planner II - Historic Preservation",
-      "reqId": "02.106 07-26",
+      "title": "Planner II - Community Planning",
+      "reqId": "02.106 08-26",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5391819/planner-ii-historic-preservation",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5463310/planner-ii-community-planning",
       "postedAtMs": 1788998400000,
       "days": 4,
       "continuous": true,
@@ -17538,14 +17511,7 @@
       "employmentType": "MERIT",
       "department": "PLANNING",
       "categories": [
-        "Planning and Development",
-        "Redevelopment",
-        "Land Use",
-        "Community Development",
-        "Public Records",
-        "Historic Preservation",
-        "Architecture",
-        "Geographic Information Systems"
+        "Planning and Development"
       ],
       "salary": {
         "min": 58037,
@@ -17556,52 +17522,6 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 68,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 86,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "level II experience check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
-      "title": "Engineer II - Water and Sewer Asset Management Project Engineer",
-      "reqId": "02.406 5-26 ENG",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5342972/engineer-ii-water-and-sewer-asset-management-project-engineer",
-      "postedAtMs": 1788998400000,
-      "days": 4,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "PUBLIC WORKS: ENGINEERING & CONSTRUCTION",
-      "categories": [
-        "Engineering",
-        "Miscellaneous"
-      ],
-      "salary": {
-        "min": 63517,
-        "max": 72142,
-        "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.4,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -17668,12 +17588,58 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Planner II - Community Planning",
-      "reqId": "02.106 08-26",
+      "title": "Engineer II - Water and Sewer Asset Management Project Engineer",
+      "reqId": "02.406 5-26 ENG",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5463310/planner-ii-community-planning",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5342972/engineer-ii-water-and-sewer-asset-management-project-engineer",
+      "postedAtMs": 1788998400000,
+      "days": 4,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "PUBLIC WORKS: ENGINEERING & CONSTRUCTION",
+      "categories": [
+        "Engineering",
+        "Miscellaneous"
+      ],
+      "salary": {
+        "min": 63517,
+        "max": 72142,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 68,
+        "qualification": 51,
+        "interview": 49,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 86,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "level II experience check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Planner II - Historic Preservation",
+      "reqId": "02.106 07-26",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5391819/planner-ii-historic-preservation",
       "postedAtMs": 1788998400000,
       "days": 4,
       "continuous": true,
@@ -17682,7 +17648,14 @@
       "employmentType": "MERIT",
       "department": "PLANNING",
       "categories": [
-        "Planning and Development"
+        "Planning and Development",
+        "Redevelopment",
+        "Land Use",
+        "Community Development",
+        "Public Records",
+        "Historic Preservation",
+        "Architecture",
+        "Geographic Information Systems"
       ],
       "salary": {
         "min": 58037,
@@ -20850,51 +20823,6 @@
     {
       "company": "Howard County Government",
       "agency": "howardcounty",
-      "title": "Utility Worker II - Public Works - Bureau of Highways/Mayfield",
-      "reqId": "26-00375",
-      "location": "Elkridge, MD",
-      "city": "elkridge",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5315744/utility-worker-ii-public-works-bureau-of-highways-mayfield",
-      "postedAtMs": 1787875200000,
-      "days": 17,
-      "continuous": false,
-      "deadlineMs": 1789358399999,
-      "deadline": "09/13/26",
-      "employmentType": "Full Time",
-      "department": "Public Works",
-      "categories": [
-        "Public Works"
-      ],
-      "salary": {
-        "min": 43748,
-        "max": 70999,
-        "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 15.7,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 66,
-        "qualification": 51,
-        "interview": 49,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 74,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "level II experience check"
-        ]
-      }
-    },
-    {
-      "company": "Howard County Government",
-      "agency": "howardcounty",
       "title": "Utility Worker II - Public Works, Bureau of Highways, Cooksville Shop",
       "reqId": "26-00470",
       "location": "Cooksville, MD",
@@ -20920,6 +20848,51 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 14.6,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 66,
+        "qualification": 51,
+        "interview": 49,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 74,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "level II experience check"
+        ]
+      }
+    },
+    {
+      "company": "Howard County Government",
+      "agency": "howardcounty",
+      "title": "Utility Worker II - Public Works - Bureau of Highways/Mayfield",
+      "reqId": "26-00375",
+      "location": "Elkridge, MD",
+      "city": "elkridge",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5315744/utility-worker-ii-public-works-bureau-of-highways-mayfield",
+      "postedAtMs": 1787875200000,
+      "days": 17,
+      "continuous": false,
+      "deadlineMs": 1789358399999,
+      "deadline": "09/13/26",
+      "employmentType": "Full Time",
+      "department": "Public Works",
+      "categories": [
+        "Public Works"
+      ],
+      "salary": {
+        "min": 43748,
+        "max": 70999,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 15.7,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -25867,6 +25840,53 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
+      "title": "Engineer III - Sewer Design",
+      "reqId": "02.407 05-2026 ENG",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5331410/engineer-iii-sewer-design",
+      "postedAtMs": 1788998400000,
+      "days": 4,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "PUBLIC WORKS: ENGINEERING & CONSTRUCTION",
+      "categories": [
+        "Engineering",
+        "Public Works",
+        "Miscellaneous"
+      ],
+      "salary": {
+        "min": 85941,
+        "max": 133890,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 65,
+        "qualification": 44,
+        "interview": 44,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 86,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "level III+ experience check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
       "title": "Engineer I - Highway Design",
       "reqId": "02.405 06-26 ENG",
       "location": "Towson, MD",
@@ -25918,53 +25938,6 @@
       "city": "towson",
       "state": "MD",
       "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5447006/engineer-iii-civil-engineer",
-      "postedAtMs": 1788998400000,
-      "days": 4,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "PUBLIC WORKS: ENGINEERING & CONSTRUCTION",
-      "categories": [
-        "Engineering",
-        "Public Works",
-        "Miscellaneous"
-      ],
-      "salary": {
-        "min": 85941,
-        "max": 133890,
-        "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.4,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 65,
-        "qualification": 44,
-        "interview": 44,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 86,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "level III+ experience check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
-      "title": "Engineer III - Sewer Design",
-      "reqId": "02.407 05-2026 ENG",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5331410/engineer-iii-sewer-design",
       "postedAtMs": 1788998400000,
       "days": 4,
       "continuous": true,
@@ -27104,7 +27077,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Order-Fulfillment-Specialist-Part-Time_R252364",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27131,7 +27104,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Order-Fulfillment-Specialist-Part-Time_R252373",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27158,7 +27131,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Deli-Clerk-Part-Time_R252590",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27185,7 +27158,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Deli-Clerk-Part-Time_R252583",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27212,7 +27185,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Freezer-and-Dairy-Clerk-Part-Time_R251432",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27239,7 +27212,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Omni-Experience-Ambassador-2-Part-Time_R251045",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27266,7 +27239,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Bakery-Clerk-Part-Time_R251442",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27294,7 +27267,7 @@
       "url": "https://lowes.wd5.myworkdayjobs.com/lws_external_cs/job/Owings-Mills-MD-3388/Part-Time---Loader-Cart-Associate---Flexible_JR-02626470-1",
       "sourceRefreshStatus": "partial-current",
       "sourceFailureRuns": 0,
-      "sourceFailure": "page cap 60/621",
+      "sourceFailure": "page cap 60/620",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
       "fit": {
@@ -27371,7 +27344,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://tjx.wd1.myworkdayjobs.com/tjx_external/job/Owings-Mills-MD-21117/PT-Merchandise-Associate_REQ141175",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/540",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27398,7 +27371,7 @@
       "postedOn": "Posted 3 Days Ago",
       "url": "https://tjx.wd1.myworkdayjobs.com/tjx_external/job/Owings-Mills-MD-21117/PT-Merch-Associate-Evening---Weekends_REQ142150",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 2,
+      "sourceFailureRuns": 3,
       "sourceFailure": "page cap 60/540",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -27987,7 +27960,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Order-Fulfillment-Specialist-Part-Time_R252359-1",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 1,
+      "sourceFailureRuns": 2,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -28014,7 +27987,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Membership-Sales-Ambassador-Part-Time_R250997",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -28041,7 +28014,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Membership-Sales-Ambassador-Part-Time_R250988",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -28068,7 +28041,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Freezer-and-Dairy-Clerk-Part-Time_R250960",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -28095,7 +28068,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Meat-Clerk-Part-Time_R250962",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -28122,7 +28095,7 @@
       "postedOn": "Posted 4 Days Ago",
       "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Inventory-Control-Forklift-Driver-Part-Time_R250570",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -28537,33 +28510,6 @@
       }
     },
     {
-      "company": "BJ's Wholesale Club",
-      "title": "Deli Clerk Part Time",
-      "location": "Owings Mills, MD #0061",
-      "days": 7,
-      "postedOn": "Posted 7 Days Ago",
-      "url": "https://bjswholesaleclub.wd1.myworkdayjobs.com/bjscareers/job/Owings-Mills-MD-0061/Deli-Clerk-Part-Time_R250240",
-      "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 6,
-      "sourceFailure": "page cap 60/100",
-      "source": "Direct employer board",
-      "scope": "10-mile proxy",
-      "fit": {
-        "overall": 63,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 52,
-        "careerValue": 58,
-        "recency": 94,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
       "title": "TELLER II",
       "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4361395",
       "company": "Prince Georges Community Federal Credit Union",
@@ -28829,34 +28775,32 @@
     {
       "company": "Howard County Government",
       "agency": "howardcounty",
-      "title": "CSP Program Manager - (Human Services Specialist III) - Community Resources and Services",
-      "reqId": "26-00613",
-      "location": "MD 21046, MD",
-      "city": "columbia",
+      "title": "Ellicott City Historic Sites Manager-(Natural Resource Program Manager II) - Recreation and Parks",
+      "reqId": "26-00575",
+      "location": "Ellicott City, MD",
+      "city": "ellicott city",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5413983/csp-program-manager-human-services-specialist-iii-community-resources-and-s",
+      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5447577/ellicott-city-historic-sites-manager-natural-resource-program-manager-ii-recr",
       "postedAtMs": 1788393600000,
       "days": 11,
       "continuous": false,
       "deadlineMs": 1789703999999,
       "deadline": "09/17/26",
       "employmentType": "Full Time",
-      "department": "Community Resources and Services",
+      "department": "Recreation & Parks",
       "categories": [
-        "Administration",
-        "Community Services",
-        "Community Development",
-        "Community and Social Services"
+        "Facility Management",
+        "Natural Resources"
       ],
       "salary": {
-        "min": 77422,
-        "max": 149082,
+        "min": 69913,
+        "max": 134588,
         "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
-      "miles": 17.3,
+      "miles": 13.2,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -29016,32 +28960,34 @@
     {
       "company": "Howard County Government",
       "agency": "howardcounty",
-      "title": "Ellicott City Historic Sites Manager-(Natural Resource Program Manager II) - Recreation and Parks",
-      "reqId": "26-00575",
-      "location": "Ellicott City, MD",
-      "city": "ellicott city",
+      "title": "CSP Program Manager - (Human Services Specialist III) - Community Resources and Services",
+      "reqId": "26-00613",
+      "location": "MD 21046, MD",
+      "city": "columbia",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5447577/ellicott-city-historic-sites-manager-natural-resource-program-manager-ii-recr",
+      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5413983/csp-program-manager-human-services-specialist-iii-community-resources-and-s",
       "postedAtMs": 1788393600000,
       "days": 11,
       "continuous": false,
       "deadlineMs": 1789703999999,
       "deadline": "09/17/26",
       "employmentType": "Full Time",
-      "department": "Recreation & Parks",
+      "department": "Community Resources and Services",
       "categories": [
-        "Facility Management",
-        "Natural Resources"
+        "Administration",
+        "Community Services",
+        "Community Development",
+        "Community and Social Services"
       ],
       "salary": {
-        "min": 69913,
-        "max": 134588,
+        "min": 77422,
+        "max": 149082,
         "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
-      "miles": 13.2,
+      "miles": 17.3,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -29438,53 +29384,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Assistant Community Nutritionist - Non-Merit",
-      "reqId": "NM.103 07-26",
-      "location": "Various locations throughout Baltimore County, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5407228/assistant-community-nutritionist-non-merit",
-      "postedAtMs": 1784073600000,
-      "days": 61,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "HHS/CLINICAL SERVICES",
-      "categories": [
-        "Health Services",
-        "Nutrition",
-        "Health Education"
-      ],
-      "salary": {
-        "min": 21.98,
-        "max": 27.89,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.4,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 62,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 25,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "older continuous/standing recruitment"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Correctional Security Officer (Facility Operator I)  - Non-Merit",
       "reqId": "NM.116 07-2026",
       "location": "Towson, MD",
@@ -29512,6 +29411,53 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.2,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 62,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 25,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "older continuous/standing recruitment"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Assistant Community Nutritionist - Non-Merit",
+      "reqId": "NM.103 07-26",
+      "location": "Various locations throughout Baltimore County, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5407228/assistant-community-nutritionist-non-merit",
+      "postedAtMs": 1784073600000,
+      "days": 61,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "HHS/CLINICAL SERVICES",
+      "categories": [
+        "Health Services",
+        "Nutrition",
+        "Health Education"
+      ],
+      "salary": {
+        "min": 21.98,
+        "max": 27.89,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.4,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -30245,12 +30191,12 @@
     {
       "company": "Howard County Government",
       "agency": "howardcounty",
-      "title": "North Laurel Water Safety Instructor Trainer - Recreation & Parks",
-      "reqId": "Water Safety Inst. Trnr-121125",
+      "title": "North Laurel Water Aerobic Fitness Instructor",
+      "reqId": "WATERAEROBIC-12102025",
       "location": "Laurel MD 20723, MD",
       "city": "laurel",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5168064/north-laurel-water-safety-instructor-trainer-recreation-parks",
+      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166989/north-laurel-water-aerobic-fitness-instructor",
       "postedAtMs": 1765497600000,
       "days": 276,
       "continuous": false,
@@ -30259,11 +30205,12 @@
       "employmentType": "Contingent",
       "department": "Recreation & Parks",
       "categories": [
-        "Recreation"
+        "Athletics & Fitness",
+        "Instructor"
       ],
       "salary": {
-        "min": 23.25,
-        "max": 28.25,
+        "min": 20,
+        "max": 32,
         "unit": "HOUR"
       },
       "sourceFailureRuns": 0,
@@ -30290,12 +30237,12 @@
     {
       "company": "Howard County Government",
       "agency": "howardcounty",
-      "title": "North Laurel Water Aerobic Fitness Instructor",
-      "reqId": "WATERAEROBIC-12102025",
+      "title": "North Laurel Water Safety Instructor Trainer - Recreation & Parks",
+      "reqId": "Water Safety Inst. Trnr-121125",
       "location": "Laurel MD 20723, MD",
       "city": "laurel",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166989/north-laurel-water-aerobic-fitness-instructor",
+      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5168064/north-laurel-water-safety-instructor-trainer-recreation-parks",
       "postedAtMs": 1765497600000,
       "days": 276,
       "continuous": false,
@@ -30304,12 +30251,11 @@
       "employmentType": "Contingent",
       "department": "Recreation & Parks",
       "categories": [
-        "Athletics & Fitness",
-        "Instructor"
+        "Recreation"
       ],
       "salary": {
-        "min": 20,
-        "max": 32,
+        "min": 23.25,
+        "max": 28.25,
         "unit": "HOUR"
       },
       "sourceFailureRuns": 0,
@@ -105510,7 +105456,7 @@
       "postedOn": "Posted 14 Days Ago",
       "url": "https://calibercollision.wd1.myworkdayjobs.com/caliber/job/Reisterstown-MD/Collision-Estimator_R0223176",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 5,
+      "sourceFailureRuns": 6,
       "sourceFailure": "page cap 60/68",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -106442,12 +106388,12 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Senior Affairs Associate II - Senior Center Director",
-      "reqId": "04.510 07-26",
+      "title": "Senior Affairs Associate II - Dementia Friendly Program Manager",
+      "reqId": "04.510  07-26",
       "location": "Various locations throughout Baltimore County, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5400484/senior-affairs-associate-ii-senior-center-director",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5405038/senior-affairs-associate-ii-dementia-friendly-program-manager",
       "postedAtMs": 1789084800000,
       "days": 3,
       "continuous": true,
@@ -106456,12 +106402,10 @@
       "employmentType": "MERIT",
       "department": "AGING",
       "categories": [
-        "Administration",
+        "Public Health",
+        "Management",
         "Human Services",
-        "Veteran Services",
-        "Health Education",
-        "Community and Social Services",
-        "Program Management"
+        "Health Care Support"
       ],
       "salary": {
         "min": 60729,
@@ -106492,25 +106436,28 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Senior Review Appraiser",
-      "reqId": "2.322 03-2026 LAW",
-      "location": "Towson, MD",
+      "title": "Senior Affairs Associate I – Senior Center Assistant Director",
+      "reqId": "04.505 07-26",
+      "location": "Various locations throughout Baltimore County, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5250261/senior-review-appraiser",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5404144/senior-affairs-associate-i-senior-center-assistant-director",
       "postedAtMs": 1789084800000,
       "days": 3,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
       "employmentType": "MERIT",
-      "department": "LAW",
+      "department": "AGING",
       "categories": [
-        "Professional"
+        "Administration",
+        "Human Services",
+        "Community and Social Services",
+        "Program Management"
       ],
       "salary": {
-        "min": 66390,
-        "max": 75826,
+        "min": 50757,
+        "max": 58037,
         "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
@@ -106587,28 +106534,25 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Senior Affairs Associate I – Senior Center Assistant Director",
-      "reqId": "04.505 07-26",
-      "location": "Various locations throughout Baltimore County, MD",
+      "title": "Senior Review Appraiser",
+      "reqId": "2.322 03-2026 LAW",
+      "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5404144/senior-affairs-associate-i-senior-center-assistant-director",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5250261/senior-review-appraiser",
       "postedAtMs": 1789084800000,
       "days": 3,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
       "employmentType": "MERIT",
-      "department": "AGING",
+      "department": "LAW",
       "categories": [
-        "Administration",
-        "Human Services",
-        "Community and Social Services",
-        "Program Management"
+        "Professional"
       ],
       "salary": {
-        "min": 50757,
-        "max": 58037,
+        "min": 66390,
+        "max": 75826,
         "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
@@ -115855,27 +115799,27 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Deputy Sheriff (For Current and Retired Law Enforcement Officers - Lateral)",
-      "reqId": "10.605 07-23",
+      "title": "Deputy Sheriff Assistant NON SWORN (For Retired Sworn Police and Sheriff Employees ONLY)",
+      "reqId": "100.6005 06-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4061020/deputy-sheriff-for-current-and-retired-law-enforcement-officers-lateral",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4073920/deputy-sheriff-assistant-non-sworn-for-retired-sworn-police-and-sheriff-employee",
       "postedAtMs": 1770076800000,
       "days": 223,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "MERIT",
+      "employmentType": "NON-MERIT",
       "department": "SHERIFF",
       "categories": [
         "Public Safety",
         "Law Enforcement"
       ],
       "salary": {
-        "min": 59683,
-        "max": 75758,
-        "unit": "YEAR"
+        "min": 35,
+        "max": 35,
+        "unit": "HOUR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -115901,27 +115845,27 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Deputy Sheriff Assistant NON SWORN (For Retired Sworn Police and Sheriff Employees ONLY)",
-      "reqId": "100.6005 06-23",
+      "title": "Deputy Sheriff (For Current and Retired Law Enforcement Officers - Lateral)",
+      "reqId": "10.605 07-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4073920/deputy-sheriff-assistant-non-sworn-for-retired-sworn-police-and-sheriff-employee",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4061020/deputy-sheriff-for-current-and-retired-law-enforcement-officers-lateral",
       "postedAtMs": 1770076800000,
       "days": 223,
       "continuous": true,
       "deadlineMs": null,
       "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
+      "employmentType": "MERIT",
       "department": "SHERIFF",
       "categories": [
         "Public Safety",
         "Law Enforcement"
       ],
       "salary": {
-        "min": 35,
-        "max": 35,
-        "unit": "HOUR"
+        "min": 59683,
+        "max": 75758,
+        "unit": "YEAR"
       },
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
@@ -123703,11 +123647,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 11-24",
+      "reqId": "04.407 12-23",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 129,
       "continuous": true,
@@ -123749,11 +123693,11 @@
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
       "title": "Alcohol and Drug Counselor II",
-      "reqId": "04.407 12-23",
+      "reqId": "04.407 11-24",
       "location": "Towson, MD",
       "city": "towson",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4323993/alcohol-and-drug-counselor-ii",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/4731653/alcohol-and-drug-counselor-ii",
       "postedAtMs": 1778198400000,
       "days": 129,
       "continuous": true,
@@ -123983,6 +123927,51 @@
     {
       "company": "Howard County Government",
       "agency": "howardcounty",
+      "title": "North Laurel Lifeguard -  Recreation & Parks",
+      "reqId": "N. LAUREL LIFEGUARD - 12102025",
+      "location": "Laurel, MD",
+      "city": "laurel",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166721/north-laurel-lifeguard-recreation-parks",
+      "postedAtMs": 1765497600000,
+      "days": 276,
+      "continuous": false,
+      "deadlineMs": 1791518399999,
+      "deadline": "10/08/26",
+      "employmentType": "Contingent",
+      "department": "Recreation & Parks",
+      "categories": [
+        "Parks and Recreation "
+      ],
+      "salary": {
+        "min": 16,
+        "max": 20,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 21.2,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 58,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 78,
+        "careerValue": 58,
+        "recency": 28,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "older posting—verify still active"
+        ]
+      }
+    },
+    {
+      "company": "Howard County Government",
+      "agency": "howardcounty",
       "title": "North Laurel Lifeguard Instructor- Recreation & Parks",
       "reqId": "LIFEGUARD - 12102025",
       "location": "Laurel, MD",
@@ -124053,51 +124042,6 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 17.1,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 58,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 28,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "older posting—verify still active"
-        ]
-      }
-    },
-    {
-      "company": "Howard County Government",
-      "agency": "howardcounty",
-      "title": "North Laurel Lifeguard -  Recreation & Parks",
-      "reqId": "N. LAUREL LIFEGUARD - 12102025",
-      "location": "Laurel, MD",
-      "city": "laurel",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/5166721/north-laurel-lifeguard-recreation-parks",
-      "postedAtMs": 1765497600000,
-      "days": 276,
-      "continuous": false,
-      "deadlineMs": 1791518399999,
-      "deadline": "10/08/26",
-      "employmentType": "Contingent",
-      "department": "Recreation & Parks",
-      "categories": [
-        "Parks and Recreation "
-      ],
-      "salary": {
-        "min": 16,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 21.2,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -151376,51 +151320,6 @@
     {
       "company": "Howard County Government",
       "agency": "howardcounty",
-      "title": "Roger Carter Lifeguard -  Recreation & Parks",
-      "reqId": "9993 - 01032025",
-      "location": "Ellicott City, MD",
-      "city": "ellicott city",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/4778111/roger-carter-lifeguard-recreation-parks",
-      "postedAtMs": 1736380800000,
-      "days": 613,
-      "continuous": false,
-      "deadlineMs": 1791518399999,
-      "deadline": "10/08/26",
-      "employmentType": "Contingent",
-      "department": "Recreation & Parks",
-      "categories": [
-        "Parks and Recreation "
-      ],
-      "salary": {
-        "min": 16,
-        "max": 20,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 10.2,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 56,
-        "qualification": 58,
-        "interview": 55,
-        "pay": 78,
-        "careerValue": 58,
-        "recency": 12,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "older posting—verify still active"
-        ]
-      }
-    },
-    {
-      "company": "Howard County Government",
-      "agency": "howardcounty",
       "title": "Roger Carter Swim Instructor -  Recreation & Parks",
       "reqId": "9993 - 01032025-01",
       "location": "Howard County, MD",
@@ -151446,6 +151345,51 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 17.1,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 56,
+        "qualification": 58,
+        "interview": 55,
+        "pay": 78,
+        "careerValue": 58,
+        "recency": 12,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "older posting—verify still active"
+        ]
+      }
+    },
+    {
+      "company": "Howard County Government",
+      "agency": "howardcounty",
+      "title": "Roger Carter Lifeguard -  Recreation & Parks",
+      "reqId": "9993 - 01032025",
+      "location": "Ellicott City, MD",
+      "city": "ellicott city",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/howardcounty/jobs/4778111/roger-carter-lifeguard-recreation-parks",
+      "postedAtMs": 1736380800000,
+      "days": 613,
+      "continuous": false,
+      "deadlineMs": 1791518399999,
+      "deadline": "10/08/26",
+      "employmentType": "Contingent",
+      "department": "Recreation & Parks",
+      "categories": [
+        "Parks and Recreation "
+      ],
+      "salary": {
+        "min": 16,
+        "max": 20,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 10.2,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -186641,55 +186585,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Registered Peer Supervisor",
-      "reqId": "NM.143 07-2026",
-      "location": "Towson, MD",
-      "city": "towson",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
-      "postedAtMs": 1784073600000,
-      "days": 61,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "NON-MERIT",
-      "department": "CORRECTIONS",
-      "categories": [
-        "Administration",
-        "Corrections",
-        "Human Services",
-        "Health Education"
-      ],
-      "salary": {
-        "min": 26.39,
-        "max": 32.8,
-        "unit": "HOUR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 9.2,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 53,
-        "qualification": 38,
-        "interview": 38,
-        "pay": 100,
-        "careerValue": 58,
-        "recency": 25,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "management experience check",
-          "older continuous/standing recruitment"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Project Manager FFE Specialist - Capital Construction - Non-Merit",
       "reqId": "NM.141 7-26 PROP",
       "location": "Various locations throughout Baltimore County, MD",
@@ -186720,6 +186615,55 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 53,
+        "qualification": 38,
+        "interview": 38,
+        "pay": 100,
+        "careerValue": 58,
+        "recency": 25,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "management experience check",
+          "older continuous/standing recruitment"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Registered Peer Supervisor",
+      "reqId": "NM.143 07-2026",
+      "location": "Towson, MD",
+      "city": "towson",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5410804/registered-peer-supervisor",
+      "postedAtMs": 1784073600000,
+      "days": 61,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "NON-MERIT",
+      "department": "CORRECTIONS",
+      "categories": [
+        "Administration",
+        "Corrections",
+        "Human Services",
+        "Health Education"
+      ],
+      "salary": {
+        "min": 26.39,
+        "max": 32.8,
+        "unit": "HOUR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 9.2,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -207995,7 +207939,7 @@
       "postedOn": "Posted 30 Days Ago",
       "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Pikesville-MD---Sunrise-of-Pikesville/Care-Manager_JR122539",
       "sourceRefreshStatus": "retained-source-error",
-      "sourceFailureRuns": 4,
+      "sourceFailureRuns": 5,
       "sourceFailure": "page cap 60/100",
       "source": "Direct employer board",
       "scope": "10-mile proxy",
@@ -244607,53 +244551,6 @@
     {
       "company": "Baltimore County Government",
       "agency": "baltimorecounty",
-      "title": "Public Health Nurse",
-      "reqId": "04.226 07-26",
-      "location": "Towson, MD",
-      "city": "randallstown",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5236380/public-health-nurse",
-      "postedAtMs": 1785283200000,
-      "days": 47,
-      "continuous": true,
-      "deadlineMs": null,
-      "deadline": "Continuous",
-      "employmentType": "MERIT",
-      "department": "HHS/COMMUNITY HEALTH SERVICES",
-      "categories": [
-        "Health Services",
-        "Public Health",
-        "Nursing"
-      ],
-      "salary": {
-        "min": 78359,
-        "max": 89796,
-        "unit": "YEAR"
-      },
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 3.7,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 48,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 100,
-        "careerValue": 43,
-        "recency": 52,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check"
-        ]
-      }
-    },
-    {
-      "company": "Baltimore County Government",
-      "agency": "baltimorecounty",
       "title": "Nurse Monitor - Non-Merit ",
       "reqId": "NM .140 07-2026",
       "location": "Towson, MD",
@@ -244681,6 +244578,53 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 9.4,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 48,
+        "qualification": 23,
+        "interview": 25,
+        "pay": 100,
+        "careerValue": 43,
+        "recency": 52,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "credential/skill check"
+        ]
+      }
+    },
+    {
+      "company": "Baltimore County Government",
+      "agency": "baltimorecounty",
+      "title": "Public Health Nurse",
+      "reqId": "04.226 07-26",
+      "location": "Towson, MD",
+      "city": "randallstown",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/baltimorecounty/jobs/5236380/public-health-nurse",
+      "postedAtMs": 1785283200000,
+      "days": 47,
+      "continuous": true,
+      "deadlineMs": null,
+      "deadline": "Continuous",
+      "employmentType": "MERIT",
+      "department": "HHS/COMMUNITY HEALTH SERVICES",
+      "categories": [
+        "Health Services",
+        "Public Health",
+        "Nursing"
+      ],
+      "salary": {
+        "min": 78359,
+        "max": 89796,
+        "unit": "YEAR"
+      },
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 3.7,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -261413,12 +261357,12 @@
     {
       "company": "Community College of Baltimore County",
       "agency": "ccbcmd",
-      "title": "Chemistry Faculty, 10-month ",
-      "reqId": "2026-067",
+      "title": "Math Faculty - 10 Month January 2027 start",
+      "reqId": "2026-066",
       "location": "Catonsville, MD",
       "city": "catonsville",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5460174/chemistry-faculty-10-month",
+      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5460154/math-faculty-10-month-january-2027-start",
       "postedAtMs": 1787616000000,
       "days": 20,
       "continuous": true,
@@ -261456,12 +261400,12 @@
     {
       "company": "Community College of Baltimore County",
       "agency": "ccbcmd",
-      "title": "Math Faculty - 10 Month January 2027 start",
-      "reqId": "2026-066",
+      "title": "Chemistry Faculty, 10-month ",
+      "reqId": "2026-067",
       "location": "Catonsville, MD",
       "city": "catonsville",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5460154/math-faculty-10-month-january-2027-start",
+      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5460174/chemistry-faculty-10-month",
       "postedAtMs": 1787616000000,
       "days": 20,
       "continuous": true,
@@ -264735,96 +264679,6 @@
     {
       "company": "Community College of Baltimore County",
       "agency": "ccbcmd",
-      "title": "Art, Design & Digital Fabrication, Adjunct Faculty",
-      "reqId": "2026a-09",
-      "location": "Not Assigned",
-      "city": "catonsville",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125784/art-design-digital-fabrication-adjunct-faculty",
-      "postedAtMs": 1761955200000,
-      "days": 317,
-      "continuous": false,
-      "deadlineMs": 1793505599999,
-      "deadline": "10/31/26",
-      "employmentType": "Adjunct Faculty",
-      "department": "Instruction",
-      "categories": [
-        "Education",
-        "Higher Education",
-        "Faculty"
-      ],
-      "salary": null,
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 11.9,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 36,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 52,
-        "careerValue": 43,
-        "recency": 28,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check",
-          "older posting—verify still active",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "company": "Community College of Baltimore County",
-      "agency": "ccbcmd",
-      "title": "Biology (Microbiology) - Adjunct Faculty",
-      "reqId": "2026a-21",
-      "location": "Location indicated in Job Description",
-      "city": "catonsville",
-      "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126839/biology-microbiology-adjunct-faculty",
-      "postedAtMs": 1761955200000,
-      "days": 317,
-      "continuous": false,
-      "deadlineMs": 1793505599999,
-      "deadline": "10/31/26",
-      "employmentType": "Adjunct Faculty",
-      "department": "Instruction",
-      "categories": [
-        "Education",
-        "Faculty",
-        "Faculty - Math & Technology"
-      ],
-      "salary": null,
-      "sourceFailureRuns": 0,
-      "retainedAfterAgencyFailure": false,
-      "coordinatesVerified": true,
-      "miles": 11.9,
-      "source": "County/city NEOGOV",
-      "scope": "30-mile radius",
-      "fit": {
-        "overall": 36,
-        "qualification": 23,
-        "interview": 25,
-        "pay": 52,
-        "careerValue": 43,
-        "recency": 28,
-        "overqualificationRisk": 12,
-        "resume": "Review",
-        "confidence": "preliminary—title/pay/location/recency metadata",
-        "flags": [
-          "credential/skill check",
-          "older posting—verify still active",
-          "pay undisclosed"
-        ]
-      }
-    },
-    {
-      "company": "Community College of Baltimore County",
-      "agency": "ccbcmd",
       "title": "Computer-Automated Machining & Manufacturing, Adjunct Faculty",
       "reqId": "2026a-24",
       "location": "Not Assigned",
@@ -266169,12 +266023,12 @@
     {
       "company": "Community College of Baltimore County",
       "agency": "ccbcmd",
-      "title": "Communication Studies-ECAP Adjunct Faculty",
-      "reqId": "2026a-14",
-      "location": "Location indicated in Job Description",
+      "title": "Art, Design & Digital Fabrication, Adjunct Faculty",
+      "reqId": "2026a-09",
+      "location": "Not Assigned",
       "city": "catonsville",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128676/communication-studies-ecap-adjunct-faculty",
+      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5125784/art-design-digital-fabrication-adjunct-faculty",
       "postedAtMs": 1761955200000,
       "days": 317,
       "continuous": false,
@@ -266183,7 +266037,8 @@
       "employmentType": "Adjunct Faculty",
       "department": "Instruction",
       "categories": [
-        "Communications",
+        "Education",
+        "Higher Education",
         "Faculty"
       ],
       "salary": null,
@@ -266213,12 +266068,12 @@
     {
       "company": "Community College of Baltimore County",
       "agency": "ccbcmd",
-      "title": "Off-Site English, Adjunct Faculty",
-      "reqId": "2026a-38",
-      "location": "Multiple (Indicate locations in Job Description)",
-      "city": "essex",
+      "title": "Biology (Microbiology) - Adjunct Faculty",
+      "reqId": "2026a-21",
+      "location": "Location indicated in Job Description",
+      "city": "catonsville",
       "state": "MD",
-      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128702/off-site-english-adjunct-faculty",
+      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5126839/biology-microbiology-adjunct-faculty",
       "postedAtMs": 1761955200000,
       "days": 317,
       "continuous": false,
@@ -266228,15 +266083,14 @@
       "department": "Instruction",
       "categories": [
         "Education",
-        "Higher Education",
-        "Instructor",
-        "Faculty - English"
+        "Faculty",
+        "Faculty - Math & Technology"
       ],
       "salary": null,
       "sourceFailureRuns": 0,
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
-      "miles": 18,
+      "miles": 11.9,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
@@ -267222,6 +267076,96 @@
       "retainedAfterAgencyFailure": false,
       "coordinatesVerified": true,
       "miles": 11.9,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 36,
+        "qualification": 23,
+        "interview": 25,
+        "pay": 52,
+        "careerValue": 43,
+        "recency": 28,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "credential/skill check",
+          "older posting—verify still active",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "company": "Community College of Baltimore County",
+      "agency": "ccbcmd",
+      "title": "Communication Studies-ECAP Adjunct Faculty",
+      "reqId": "2026a-14",
+      "location": "Location indicated in Job Description",
+      "city": "catonsville",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128676/communication-studies-ecap-adjunct-faculty",
+      "postedAtMs": 1761955200000,
+      "days": 317,
+      "continuous": false,
+      "deadlineMs": 1793505599999,
+      "deadline": "10/31/26",
+      "employmentType": "Adjunct Faculty",
+      "department": "Instruction",
+      "categories": [
+        "Communications",
+        "Faculty"
+      ],
+      "salary": null,
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 11.9,
+      "source": "County/city NEOGOV",
+      "scope": "30-mile radius",
+      "fit": {
+        "overall": 36,
+        "qualification": 23,
+        "interview": 25,
+        "pay": 52,
+        "careerValue": 43,
+        "recency": 28,
+        "overqualificationRisk": 12,
+        "resume": "Review",
+        "confidence": "preliminary—title/pay/location/recency metadata",
+        "flags": [
+          "credential/skill check",
+          "older posting—verify still active",
+          "pay undisclosed"
+        ]
+      }
+    },
+    {
+      "company": "Community College of Baltimore County",
+      "agency": "ccbcmd",
+      "title": "Off-Site English, Adjunct Faculty",
+      "reqId": "2026a-38",
+      "location": "Multiple (Indicate locations in Job Description)",
+      "city": "essex",
+      "state": "MD",
+      "url": "https://www.governmentjobs.com/careers/ccbcmd/jobs/5128702/off-site-english-adjunct-faculty",
+      "postedAtMs": 1761955200000,
+      "days": 317,
+      "continuous": false,
+      "deadlineMs": 1793505599999,
+      "deadline": "10/31/26",
+      "employmentType": "Adjunct Faculty",
+      "department": "Instruction",
+      "categories": [
+        "Education",
+        "Higher Education",
+        "Instructor",
+        "Faculty - English"
+      ],
+      "salary": null,
+      "sourceFailureRuns": 0,
+      "retainedAfterAgencyFailure": false,
+      "coordinatesVerified": true,
+      "miles": 18,
       "source": "County/city NEOGOV",
       "scope": "30-mile radius",
       "fit": {
