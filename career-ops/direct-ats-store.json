@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T15:10:13.370Z",
+  "generatedAt": "2026-09-14T17:16:41.927Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -7,7 +7,7 @@
       "name": "JMS Celebree School",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 10,
+      "fetched": 11,
       "kept": 2
     },
     {
@@ -21,42 +21,42 @@
       "name": "The 1916 Company",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 16,
+      "fetched": 15,
       "kept": 4
     },
     {
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 250,
+      "fetched": 249,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 105,
+      "fetched": 106,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 953,
+      "fetched": 952,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 42,
+      "fetched": 43,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 524,
+      "fetched": 527,
       "kept": 0
     },
     {
@@ -85,13 +85,13 @@
       "provider": "icims",
       "status": "success",
       "fetched": 600,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 451,
+      "fetched": 450,
       "kept": 2
     },
     {
@@ -105,28 +105,28 @@
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 15,
+      "fetched": 14,
       "kept": 0
     },
     {
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 211,
+      "fetched": 215,
       "kept": 0
     },
     {
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 22,
+      "fetched": 24,
       "kept": 4
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 847,
+      "fetched": 846,
       "kept": 0
     },
     {
@@ -140,14 +140,14 @@
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 659,
+      "fetched": 650,
       "kept": 2
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 376,
+      "fetched": 375,
       "kept": 6
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 4,
+      "days": 5,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
       "postedAtMs": 1787198400000,
       "datePosted": "2026-08-20T04:00:00.000Z",
-      "days": 24,
+      "days": 25,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -187,24 +187,10 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1787025600000,
       "datePosted": "2026-08-18T04:00:00.000Z",
-      "days": 26,
-      "salary": null,
-      "source": "Direct ATS (icims)",
-      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "OSL Retail Services",
-      "title": "Wireless Sales Manager - W2577/W3804/W1867",
-      "url": "https://uscareers-oslrs.icims.com/jobs/99650/wireless-sales-manager---w2577-w3804-w1867/job",
-      "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
-      "postedAtMs": 1786939200000,
-      "datePosted": "2026-08-17T04:00:00.000Z",
       "days": 27,
       "salary": null,
       "source": "Direct ATS (icims)",
-      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
@@ -215,7 +201,7 @@
       "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -229,7 +215,7 @@
       "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -243,7 +229,7 @@
       "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -257,7 +243,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -271,7 +257,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -463,7 +449,7 @@
     {
       "company": "Domino's",
       "title": "Assistant Manager(09185) - 701 S. Eastwood Dr.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000148900647-assistant-manager-09185-701-s-eastwood-dr",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000149202259-assistant-manager-09185-701-s-eastwood-dr",
       "location": "Woodstock, IL, United States",
       "postedAtMs": null,
       "datePosted": null,
