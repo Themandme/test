@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T15:47:19.599Z",
+  "generatedAt": "2026-09-24T16:08:35.427Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -7,8 +7,8 @@
       "name": "JMS Celebree School",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 9,
-      "kept": 2
+      "fetched": 10,
+      "kept": 3
     },
     {
       "name": "STEPS Behavioral Health",
@@ -21,42 +21,42 @@
       "name": "The 1916 Company",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 17,
+      "fetched": 20,
       "kept": 4
     },
     {
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 277,
+      "fetched": 264,
       "kept": 1
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 99,
+      "fetched": 101,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 965,
+      "fetched": 963,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 43,
+      "fetched": 44,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 530,
+      "fetched": 527,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 180,
+      "fetched": 183,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 87,
+      "fetched": 89,
       "kept": 6
     },
     {
@@ -98,21 +98,21 @@
       "name": "Footprint Solutions",
       "provider": "jobvite",
       "status": "success",
-      "fetched": 21,
+      "fetched": 20,
       "kept": 1
     },
     {
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 16,
+      "fetched": 15,
       "kept": 0
     },
     {
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 203,
+      "fetched": 172,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 867,
+      "fetched": 854,
       "kept": 0
     },
     {
@@ -140,18 +140,32 @@
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 669,
+      "fetched": 661,
       "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 395,
+      "fetched": 388,
       "kept": 3
     }
   ],
   "jobs": [
+    {
+      "company": "Bartlett Tree Experts",
+      "title": "Arborist Crew Leader",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/35950/arborist-crew-leader/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1790136000000,
+      "datePosted": "2026-09-23T04:00:00.000Z",
+      "days": 1,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
     {
       "company": "OSL Retail Services",
       "title": "Territory Sales Lead - W2577/W3804/W1867",
@@ -159,7 +173,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1789963200000,
       "datePosted": "2026-09-21T04:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -173,7 +187,7 @@
       "location": "11722 Reisterstown Rd Reisterstown, MD",
       "postedAtMs": 1789751978000,
       "datePosted": "2026-09-18T17:19:38.000Z",
-      "days": 4,
+      "days": 5,
       "salary": null,
       "source": "Direct ATS (greenhouse)",
       "sourceBoard": "greenhouse:https://job-boards.greenhouse.io/curaleaf",
@@ -187,7 +201,7 @@
       "location": "US-VA-WOODSTOCK",
       "postedAtMs": 1789704000000,
       "datePosted": "2026-09-18T04:00:00.000Z",
-      "days": 5,
+      "days": 6,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -201,7 +215,7 @@
       "location": "US-IL-WOODSTOCK",
       "postedAtMs": 1789617600000,
       "datePosted": "2026-09-17T04:00:00.000Z",
-      "days": 6,
+      "days": 7,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,7 +229,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 14,
+      "days": 15,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -229,24 +243,10 @@
       "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
       "postedAtMs": 1787198400000,
       "datePosted": "2026-08-20T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Bartlett Tree Experts",
-      "title": "Arborist Crew Leader",
-      "url": "https://englishcareers-bartlett.icims.com/jobs/35423/arborist-crew-leader/job",
-      "location": "US-MD-Finksburg",
-      "postedAtMs": 1787025600000,
-      "datePosted": "2026-08-18T04:00:00.000Z",
-      "days": 36,
-      "salary": null,
-      "source": "Direct ATS (icims)",
-      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
@@ -257,7 +257,7 @@
       "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 50,
+      "days": 51,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -271,7 +271,7 @@
       "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 50,
+      "days": 51,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -285,7 +285,7 @@
       "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 50,
+      "days": 51,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -299,7 +299,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 50,
+      "days": 51,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -313,7 +313,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 50,
+      "days": 51,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -324,6 +324,20 @@
       "company": "JMS Celebree School",
       "title": "Celebree School of Owings Mills is looking for top-quality Teacher Aides!",
       "url": "https://celebreeny.bamboohr.com/careers/101",
+      "location": "Owings mills, Maryland",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (bamboohr)",
+      "sourceBoard": "bamboohr:https://celebreeny.bamboohr.com/careers",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "JMS Celebree School",
+      "title": "Celebree School of Owings Mills - Now Hiring FT - Teacher for Toddler A class",
+      "url": "https://celebreeny.bamboohr.com/careers/106",
       "location": "Owings mills, Maryland",
       "postedAtMs": null,
       "datePosted": null,
