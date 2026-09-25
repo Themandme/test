@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T16:08:35.427Z",
+  "generatedAt": "2026-09-25T16:08:15.361Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,35 +28,35 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 264,
+      "fetched": 255,
       "kept": 1
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 101,
+      "fetched": 97,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 963,
+      "fetched": 962,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 44,
+      "fetched": 47,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 527,
+      "fetched": 524,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 183,
+      "fetched": 179,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 89,
+      "fetched": 88,
       "kept": 6
     },
     {
@@ -91,7 +91,7 @@
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 451,
+      "fetched": 452,
       "kept": 2
     },
     {
@@ -105,14 +105,14 @@
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 15,
+      "fetched": 16,
       "kept": 0
     },
     {
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 172,
+      "fetched": 170,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 854,
+      "fetched": 836,
       "kept": 0
     },
     {
@@ -134,21 +134,21 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 5
+      "kept": 4
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 661,
+      "fetched": 660,
       "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 388,
-      "kept": 3
+      "fetched": 379,
+      "kept": 4
     }
   ],
   "jobs": [
@@ -159,7 +159,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1790136000000,
       "datePosted": "2026-09-23T04:00:00.000Z",
-      "days": 1,
+      "days": 2,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1789963200000,
       "datePosted": "2026-09-21T04:00:00.000Z",
-      "days": 3,
+      "days": 4,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "11722 Reisterstown Rd Reisterstown, MD",
       "postedAtMs": 1789751978000,
       "datePosted": "2026-09-18T17:19:38.000Z",
-      "days": 5,
+      "days": 6,
       "salary": null,
       "source": "Direct ATS (greenhouse)",
       "sourceBoard": "greenhouse:https://job-boards.greenhouse.io/curaleaf",
@@ -201,7 +201,7 @@
       "location": "US-VA-WOODSTOCK",
       "postedAtMs": 1789704000000,
       "datePosted": "2026-09-18T04:00:00.000Z",
-      "days": 6,
+      "days": 7,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,7 +215,7 @@
       "location": "US-IL-WOODSTOCK",
       "postedAtMs": 1789617600000,
       "datePosted": "2026-09-17T04:00:00.000Z",
-      "days": 7,
+      "days": 8,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -229,7 +229,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 15,
+      "days": 16,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -243,7 +243,7 @@
       "location": "US-MD-Baltimore | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge",
       "postedAtMs": 1787198400000,
       "datePosted": "2026-08-20T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -257,7 +257,7 @@
       "location": "US-MD-Frederick | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 51,
+      "days": 52,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -271,7 +271,7 @@
       "location": "US-MD-Owings Mills | US-MD-Glen Burnie, MD | US-MD-Frederick | US-MD-Hanover | US-MD-Elkridge | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 51,
+      "days": 52,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -285,7 +285,7 @@
       "location": "US-MD-Owings Mills | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Baltimore | US-MD-Glen Burnie, MD",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 51,
+      "days": 52,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -299,7 +299,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 51,
+      "days": 52,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -313,7 +313,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1785816000000,
       "datePosted": "2026-08-04T04:00:00.000Z",
-      "days": 51,
+      "days": 52,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -559,20 +559,6 @@
       "retainedAfterSourceFailure": false
     },
     {
-      "company": "Domino's",
-      "title": "Assistant Manager(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000151200107-assistant-manager-04132-2265-towne-lake-pkwy",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
       "company": "Public Storage",
       "title": "Customer Service - Self Storage Manager",
       "url": "https://jobs.smartrecruiters.com/PublicStorage/744000148475680-customer-service-self-storage-manager",
@@ -583,6 +569,20 @@
       "salary": null,
       "source": "Direct ATS (smartrecruiters)",
       "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/PublicStorage",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Sonic Automotive",
+      "title": "Receptionist - Audi Owings Mills",
+      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000151884732-receptionist-audi-owings-mills",
+      "location": "Owings Mills, MD, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
