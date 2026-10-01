@@ -6,7 +6,7 @@
   "complete": false,
   "stats": {},
   "jobs": {},
-  "lastAttemptAt": "2026-09-30T16:50:47.009Z",
+  "lastAttemptAt": "2026-10-01T17:25:08.091Z",
   "lastAttemptStatus": "blocked-by-source-security",
   "lastAttemptError": "HiringCafe homepage HTTP 403"
 }
