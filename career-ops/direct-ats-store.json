@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T18:09:28.809Z",
+  "generatedAt": "2026-10-08T18:13:13.330Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,7 +28,7 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 273,
+      "fetched": 274,
       "kept": 0
     },
     {
@@ -56,7 +56,7 @@
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 535,
+      "fetched": 538,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 193,
+      "fetched": 192,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 75,
+      "fetched": 73,
       "kept": 0
     },
     {
@@ -91,14 +91,14 @@
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 452,
+      "fetched": 457,
       "kept": 2
     },
     {
       "name": "Footprint Solutions",
       "provider": "jobvite",
       "status": "success",
-      "fetched": 22,
+      "fetched": 21,
       "kept": 1
     },
     {
@@ -112,21 +112,21 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 157,
+      "fetched": 159,
       "kept": 0
     },
     {
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 19,
-      "kept": 5
+      "fetched": 23,
+      "kept": 8
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 880,
+      "fetched": 887,
       "kept": 0
     },
     {
@@ -134,21 +134,21 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 4
+      "kept": 5
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 599,
+      "fetched": 592,
       "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 414,
-      "kept": 5
+      "fetched": 409,
+      "kept": 4
     }
   ],
   "jobs": [
@@ -159,7 +159,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1790136000000,
       "datePosted": "2026-09-23T04:00:00.000Z",
-      "days": 14,
+      "days": 15,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1789963200000,
       "datePosted": "2026-09-21T04:00:00.000Z",
-      "days": 16,
+      "days": 17,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-IL-WOODSTOCK",
       "postedAtMs": 1789617600000,
       "datePosted": "2026-09-17T04:00:00.000Z",
-      "days": 20,
+      "days": 21,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 28,
+      "days": 29,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -336,6 +336,20 @@
     },
     {
       "company": "WPM Real Estate Management",
+      "title": "Assistant Controller",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/7569af01-7c18-449f-9890-ad4aa27f3a79",
+      "location": "Owings Mills, MD",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (rippling)",
+      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "WPM Real Estate Management",
       "title": "Assistant Service Manager- Allyson Gardens",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/de8e3347-2258-4799-a0c7-3d14b505bf51",
       "location": "Owings Mills, MD",
@@ -350,8 +364,36 @@
     },
     {
       "company": "WPM Real Estate Management",
+      "title": "Community Association Manager",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/325875a2-b455-4393-8c95-b06a4837b4ee",
+      "location": "Owings Mills, MD",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (rippling)",
+      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "WPM Real Estate Management",
       "title": "IT Operations Manager",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/06d37a26-e397-46ac-ba5e-eb317bc31f44",
+      "location": "Owings Mills, MD",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (rippling)",
+      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "WPM Real Estate Management",
+      "title": "Property Accountant",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/b0df705c-de07-4004-a7b1-4e9b460c2a1d",
       "location": "Owings Mills, MD",
       "postedAtMs": null,
       "datePosted": null,
@@ -406,9 +448,9 @@
     },
     {
       "company": "Domino's",
-      "title": "Customer Service Rep(04125) - 12195 Hwy 92",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000153991620-customer-service-rep-04125-12195-hwy-92",
-      "location": "Woodstock, GA, United States",
+      "title": "Assistant Manager(04696) - 3502 Brenbrook Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000154312466-assistant-manager-04696-3502-brenbrook-dr",
+      "location": "Randallstown, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -420,9 +462,9 @@
     },
     {
       "company": "Domino's",
-      "title": "Customer Service Rep(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000153944255-customer-service-rep-04132-2265-towne-lake-pkwy",
-      "location": "Woodstock, GA, United States",
+      "title": "Customer Service Rep(04696) - 3502 Brenbrook Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000154295677-customer-service-rep-04696-3502-brenbrook-dr",
+      "location": "Randallstown, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -434,23 +476,37 @@
     },
     {
       "company": "Domino's",
-      "title": "Delivery Driver(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000153918425-delivery-driver-04132-2265-towne-lake-pkwy",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Assistant Manager(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000153915585-assistant-manager-04366-493-w-reservoir-rd",
+      "title": "Delivery Driver(04366) - 493 W Reservoir Rd.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000154289039-delivery-driver-04366-493-w-reservoir-rd",
       "location": "Woodstock, VA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Customer Service Rep(04366) - 493 W Reservoir Rd.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000154285047-customer-service-rep-04366-493-w-reservoir-rd",
+      "location": "Woodstock, VA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Assistant Manager(04132) - 2265 Towne Lake Pkwy",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000154257537-assistant-manager-04132-2265-towne-lake-pkwy",
+      "location": "Woodstock, GA, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -471,20 +527,6 @@
       "salary": null,
       "source": "Direct ATS (smartrecruiters)",
       "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/PublicStorage",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Sonic Automotive",
-      "title": "Salesperson - Audi Owings Mills",
-      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000154113369-salesperson-audi-owings-mills",
-      "location": "Owings Mills, MD, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
