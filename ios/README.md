@@ -1,0 +1,117 @@
+# Senior Directory — iOS App (SwiftUI)
+
+A dead-simple, senior-friendly directory of **verified, safe phone numbers** that runs
+**100% offline** after a one-time activation. No browsing the web, no pricing, no menus
+— tap a company, read a safety warning, then dial.
+
+> **Build note:** this is Xcode-ready Swift source. It is written for **iOS 17+** and
+> must be built in **Xcode on macOS** (it uses SwiftUI, CryptoKit, and UIKit). It does
+> not compile in a Linux CI sandbox. The pure-logic pieces (`SignatureVerifier`) are
+> covered by an XCTest you can run on a Mac.
+
+## What it does (maps to the product spec)
+
+| Spec requirement | Where |
+|---|---|
+| Minimalist activation screen (6-digit code, no pricing) | `Views/ActivationView.swift` |
+| High-contrast, large tap targets, no nested menus | `Theme/Theme.swift`, all views |
+| Brand buttons as bold TEXT on signature colors (no logos → trademark-safe) | `Views/Components.swift` `BrandButton` |
+| Prominent local-only search (no web requests) | `Views/Components.swift` `SearchBar`, `DirectoryView` filtering |
+| Just-In-Time 3-second safety prompt before dialing | `Views/SafetyPromptView.swift` |
+| Hardcoded native dialing | `Services/Dialer.swift` |
+| Fetch once, cache locally (SQLite), run offline | `Services/LocalCache.swift`, `AppState` |
+| "Call My Person" panic button (#2) | `Views/Components.swift` `PanicButton` |
+| Pre-loaded caregiver contacts (#15) | `ActivationPayload.customContacts`, `DirectoryView` |
+| Brands with NO phone support → warn, never dial | `Brand.isDialable`, `SafetyPromptView` |
+
+## Architecture
+
+```
+Views/            SwiftUI screens (Activation, Directory, SafetyPrompt, components)
+Theme/            Color(hex:) + senior-first type/size tokens
+Models/           Brand, ActivationPayload (mirror data/schema/*.json)
+Services/
+  APIClient       activation + signing-key + brands (used only off the hot path)
+  SignatureVerifier  Ed25519 verify; reproduces the backend's canonical signing string
+  LocalCache      GRDB/SQLite: cached brands + the signed activation payload
+  SeedData        bundled brands.json so the directory works on first launch, offline
+  Dialer          tel: hand-off to the system Phone app
+  AppState        @MainActor store; offline-first bootstrap + activation
+Resources/
+  brands.json     bundled copy of the shared directory (identical to /data/brands.json)
+```
+
+### Offline-first flow
+1. **Launch:** `AppState.bootstrap()` loads brands + payload from the SQLite cache. On a
+   fresh install it seeds the directory from the bundled `brands.json` so the 50 brands
+   work immediately with no network.
+2. **Activation:** caregiver enters the 6-digit code → `APIClient.activate` fetches the
+   payload, **verifies its Ed25519 signature**, and caches it. From then on the app is
+   fully offline.
+3. **Use:** search filters the local cache only. Tapping a brand shows the JIT safety
+   prompt (enforced 3-second read) then dials. `online_only` brands show a "no phone
+   support — anyone giving you a number is a scammer" screen and never dial.
+
+## Dependencies
+
+- **[GRDB.swift](https://github.com/groue/GRDB.swift)** (SQLite) — add via Swift Package
+  Manager: `https://github.com/groue/GRDB.swift`, "Up to Next Major" from `6.0.0`.
+- **CryptoKit** — system framework (Ed25519 verification), no dependency to add.
+
+## Creating the Xcode project (one command)
+
+The project is defined declaratively in [`project.yml`](project.yml) for
+**[XcodeGen](https://github.com/yonsm/XcodeGen)**, so the `.xcodeproj` is generated, not
+committed (loose sources stay reviewable in git).
+
+```bash
+cd ios
+./bootstrap.sh               # downloads pinned XcodeGen, generates, builds + tests
+```
+
+`bootstrap.sh` downloads **XcodeGen 2.42.0** itself — do **not** `brew install xcodegen`.
+Homebrew's latest XcodeGen (2.45.x) writes the Xcode-16.3 project format
+(`objectVersion 77`), which fails to open in older Xcode with *"future Xcode project file
+format (77)."* 2.42.0 writes `objectVersion 56`, which opens in Xcode 14/15/16.
+
+To do it by hand, use that same pinned version:
+
+```bash
+cd ios
+curl -fsSL -o /tmp/xg.zip https://github.com/yonaskolb/XcodeGen/releases/download/2.42.0/xcodegen.zip
+unzip -q /tmp/xg.zip -d /tmp/xg
+rm -rf SeniorDirectory.xcodeproj          # drop any stale newer-format project
+"$(find /tmp/xg -type f -name xcodegen -perm +111 | head -1)" generate
+open SeniorDirectory.xcodeproj
+```
+
+`project.yml` wires up everything automatically:
+- **App target** `SeniorDirectory` (iOS 17+, iPhone + iPad) from `SeniorDirectory/`.
+- **GRDB** via SPM (`from: 6.0.0`) — no manual package step.
+- **`Resources/brands.json`** added to the bundle (offline seed).
+- **Generated `Info.plist`** with `API_BASE_URL` (override per-scheme/CI) and
+  `LSApplicationQueriesSchemes: [tel]` so the dialer's `canOpenURL` works.
+- **Test target** `SeniorDirectoryTests` wired to the app for the signature
+  conformance test, with a shared scheme so `xcodebuild test` just works.
+
+## The signature conformance test (important)
+
+`SignatureVerifier` reproduces the backend's canonical signing string
+(`account_id|tier|issued_at|sha256(contacts_json)`) where `contacts_json` is Python's
+`json.dumps(sort_keys=True, separators=(",",":"))` with `ensure_ascii=True`. This
+cross-language byte-equality is the riskiest seam in the app, so
+`SignatureVerifierTests` pins the SHA-256 of the canonical contacts JSON to a value
+generated by the backend. Regenerate the expected value with:
+
+```bash
+cd backend && python3 -c "
+import json, hashlib
+ex = json.load(open('../data/schema/activation_payload.example.json'))
+blob = json.dumps({'emergency': ex['emergency_contact'], 'custom': ex['custom_contacts']},
+                  sort_keys=True, separators=(',',':'))
+print(hashlib.sha256(blob.encode()).hexdigest())
+"
+```
+
+If you change `ActivationPayload`'s shape, update both the backend `signing.py` canonical
+form and this test in lockstep.

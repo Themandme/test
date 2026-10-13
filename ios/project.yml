@@ -1,0 +1,100 @@
+name: SeniorDirectory
+
+# Generate the Xcode project with:  xcodegen generate   (run from ios/)
+# See README.md for the one-command bootstrap.
+
+options:
+  bundleIdPrefix: app.seniordirectory
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  # NOTE on project format: the .pbxproj objectVersion is controlled by the XcodeGen
+  # VERSION, not by an option here. Use XcodeGen 2.42.0 (see bootstrap.sh / ci.yml),
+  # which writes objectVersion 56 and opens in Xcode 14/15/16. XcodeGen >= 2.43 writes
+  # objectVersion 77 (Xcode 16.3 format), which fails with "future project file
+  # format (77)" in older Xcode.
+
+packages:
+  GRDB:
+    url: https://github.com/groue/GRDB.swift
+    from: "6.0.0"
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.9"
+    # Set your team id (or pass via xcconfig / CI) to enable signing:
+    # DEVELOPMENT_TEAM: ABCDE12345
+
+targets:
+  SeniorDirectory:
+    type: application
+    platform: iOS
+    sources:
+      - path: SeniorDirectory
+    dependencies:
+      - package: GRDB
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.seniordirectory.app
+        TARGETED_DEVICE_FAMILY: "1,2"   # iPhone + iPad
+        CODE_SIGN_STYLE: Automatic
+      configs:
+        # Debug talks to a backend on your Mac; Release talks to production.
+        Debug:
+          API_BASE_URL: http://localhost:8000
+        Release:
+          API_BASE_URL: https://api.senior-directory.app
+    info:
+      path: SeniorDirectory/Info.plist
+      properties:
+        CFBundleDisplayName: Safe Numbers
+        # Resolved from the per-config API_BASE_URL build setting above.
+        API_BASE_URL: $(API_BASE_URL)
+        # Required so Dialer's canOpenURL(tel:) returns true.
+        LSApplicationQueriesSchemes:
+          - tel
+        # Allow the Debug build to reach the http://localhost backend under ATS.
+        # (Release uses https, so this exception is harmless in production.)
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+
+  SeniorDirectoryTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SeniorDirectoryTests
+    dependencies:
+      - target: SeniorDirectory
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.seniordirectory.tests
+        GENERATE_INFOPLIST_FILE: "YES"
+
+schemes:
+  SeniorDirectory:
+    build:
+      targets:
+        SeniorDirectory: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - SeniorDirectoryTests
+    profile:
+      config: Release
+    archive:
+      config: Release

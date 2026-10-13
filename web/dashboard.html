@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caregiver Dashboard — Safe Numbers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">📞 Safe Numbers</div>
+    <button id="logout" class="nav-cta" hidden>Sign out</button>
+  </header>
+
+  <main class="dash">
+    <!-- Sign in -->
+    <section id="login" class="dash-card">
+      <h1>Caregiver sign in</h1>
+      <p class="muted">Enter the caregiver key from your sign-up confirmation.</p>
+      <input id="apiKey" class="field" type="password" placeholder="cgk_…" autocomplete="off" />
+      <p id="loginError" class="error" hidden></p>
+      <button id="signIn" class="btn btn-primary">Sign in</button>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" hidden>
+      <div class="dash-card">
+        <div class="row-between">
+          <div>
+            <label class="muted" for="seniorName">Who this is for</label>
+            <div class="inline">
+              <input id="seniorName" class="field field-inline" />
+              <button id="saveName" class="btn btn-small">Save</button>
+            </div>
+          </div>
+          <span id="tierBadge" class="badge"></span>
+        </div>
+        <div class="code-row">
+          <div>
+            <div class="muted">Activation code (enter once in the app)</div>
+            <div id="activationCode" class="code-pill">------</div>
+          </div>
+          <button id="copyCode" class="btn btn-small">Copy</button>
+        </div>
+      </div>
+
+      <div class="dash-card">
+        <h2>“Call My Person” button</h2>
+        <p class="muted">One big button in the app that calls you directly.</p>
+        <div id="emergencyCurrent" class="current"></div>
+        <div class="form-grid">
+          <input id="ecName" class="field" placeholder="Your name (e.g. David)" />
+          <input id="ecRelationship" class="field" placeholder="Relationship (e.g. son)" />
+          <input id="ecPhone" class="field" placeholder="Your phone number" />
+        </div>
+        <p id="ecError" class="error" hidden></p>
+        <button id="saveEmergency" class="btn btn-primary">Save contact</button>
+      </div>
+
+      <div class="dash-card">
+        <div class="row-between">
+          <h2>Saved contacts</h2>
+          <span id="contactCount" class="muted"></span>
+        </div>
+        <p class="muted">Their doctor, pharmacy, bank branch — shown in the app, ready to tap.</p>
+        <ul id="contactsList" class="contacts"></ul>
+        <p id="limitNote" class="muted" hidden></p>
+        <div class="form-grid">
+          <input id="cName" class="field" placeholder="Name (e.g. Dr. Patel)" />
+          <input id="cCategory" class="field" placeholder="Type (e.g. Doctor)" />
+          <input id="cPhone" class="field" placeholder="Phone number" />
+          <input id="cNote" class="field" placeholder="Note (optional)" />
+        </div>
+        <p id="cError" class="error" hidden></p>
+        <button id="addContact" class="btn btn-primary">Add contact</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

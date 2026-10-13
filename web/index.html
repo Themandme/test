@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safe Numbers — protect the people you love from phone scams</title>
+  <meta name="description" content="A dead-simple, safe phone directory for seniors. Real customer-service numbers, no scam search results." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">📞 Safe Numbers</div>
+    <a class="nav-cta" href="#pricing">Get started</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Stop the scam before it starts.</h1>
+      <p class="lede">
+        Seniors lose billions every year to fake "customer support" numbers planted in
+        search ads. <strong>Safe Numbers</strong> gives your loved one a simple app with
+        the <em>real</em> numbers for 50 of the most-impersonated companies — plus their
+        own doctor, pharmacy, and bank — so they never have to search again.
+      </p>
+      <a class="btn btn-primary" href="#pricing">Protect my parent</a>
+      <p class="reassure">Set it up in minutes. They just tap and call.</p>
+    </section>
+
+    <section class="how">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><span>1</span> You subscribe and create the account here on the web.</li>
+        <li><span>2</span> You get a <strong>6-digit code</strong> and add their contacts.</li>
+        <li><span>3</span> They enter the code once in the app — then it works offline, forever.</li>
+      </ol>
+    </section>
+
+    <section class="value">
+      <div class="card">
+        <h3>Un-searchable by scammers</h3>
+        <p>The directory is built in. No web search means no fake "support" ads.</p>
+      </div>
+      <div class="card">
+        <h3>Senior-simple</h3>
+        <p>Big buttons, big text, one tap to call. No menus to get lost in.</p>
+      </div>
+      <div class="card">
+        <h3>You stay in control</h3>
+        <p>Add their pharmacy, doctor, and a one-tap "Call me" button from your phone.</p>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h2>Choose a plan</h2>
+      <p class="pricing-sub">Every plan includes all 50 national brands. Cancel anytime.</p>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-name">Monthly</div>
+          <div class="plan-price" id="price-monthly">$4.99 / month</div>
+          <div class="plan-detail" id="detail-monthly">billed monthly</div>
+          <button class="btn btn-primary" data-plan="monthly">Get started</button>
+        </div>
+        <div class="plan plan-featured">
+          <div class="plan-badge">Best value</div>
+          <div class="plan-name">Yearly</div>
+          <div class="plan-price" id="price-yearly">$29.99 / year</div>
+          <div class="plan-detail" id="detail-yearly">save 50%</div>
+          <button class="btn btn-primary" data-plan="yearly">Get started</button>
+        </div>
+      </div>
+      <p id="checkout-error" class="error" hidden></p>
+      <p class="fine">Unlimited custom contacts on premium. Free tier allows 3.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Safe Numbers helps families avoid phone-support impersonation scams. We are not
+       affiliated with the listed companies; brand names are used only to identify their
+       official contact numbers.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://senior-directory.app/schema/activation_payload.schema.json",
+  "title": "ActivationPayload",
+  "description": "The response returned by GET /activate/{code}. Fetched ONCE when the caregiver enters the 6-digit code, then cached locally (SQLite via GRDB) so the app works 100% offline. Contains the senior-specific configuration the caregiver set up during web signup.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "account_id",
+    "tier",
+    "senior_profile",
+    "emergency_contact",
+    "custom_contacts",
+    "limits",
+    "issued_at",
+    "signature"
+  ],
+  "properties": {
+    "account_id": {
+      "type": "string",
+      "description": "Opaque Master Account identifier. No PII (email, billing) is ever sent to the device."
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["free", "premium"],
+      "description": "Entitlement tier. Drives custom-contact limits ONLY. The app must never render pricing or upgrade copy (App Store guideline 3.1.3 compliance)."
+    },
+    "senior_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["display_name"],
+      "description": "Minimal profile for personalizing the senior-facing UI.",
+      "properties": {
+        "display_name": {
+          "type": "string",
+          "description": "Friendly name shown in the app, e.g. 'Mom' or 'Grandpa'. Set by the caregiver."
+        }
+      }
+    },
+    "emergency_contact": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "description": "FEATURE #2 — the 'Call My Person' panic button target. Caregiver-configured. When present, the app shows a large always-visible button that dials this contact directly (never 911). Null if the caregiver did not configure one.",
+      "required": ["name", "phone", "phone_display", "relationship", "photo_url"],
+      "properties": {
+        "name": { "type": "string", "description": "e.g. 'David'." },
+        "phone": { "type": "string", "pattern": "^\\+[1-9][0-9]{7,14}$", "description": "E.164, passed to the native dialer." },
+        "phone_display": { "type": "string" },
+        "relationship": { "type": "string", "description": "e.g. 'son', 'daughter', 'neighbor'. Shown under the name for clarity." },
+        "photo_url": { "type": ["string", "null"], "format": "uri", "description": "Optional face photo — seniors recognize faces faster than text. Cached on first activation." }
+      }
+    },
+    "custom_contacts": {
+      "type": "array",
+      "description": "FEATURE #15 — local contacts the caregiver PRE-LOADED during web signup so the app is useful on first open (no empty state). Free tier is capped at limits.max_custom_contacts; premium is uncapped.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "phone", "phone_display", "category", "photo_url", "note"],
+        "properties": {
+          "id": { "type": "string", "description": "Server-assigned stable id for sync/edits." },
+          "name": { "type": "string", "description": "e.g. 'Dr. Patel' or 'Rite Aid Pharmacy'." },
+          "phone": { "type": "string", "pattern": "^\\+[1-9][0-9]{7,14}$" },
+          "phone_display": { "type": "string" },
+          "category": { "type": "string", "description": "Free-text caregiver label, e.g. 'Doctor', 'Pharmacy', 'Bank Branch'." },
+          "photo_url": { "type": ["string", "null"], "format": "uri", "description": "Optional photo for recognition." },
+          "note": { "type": ["string", "null"], "description": "Optional caregiver note, e.g. 'Front desk, ask for Maria'." }
+        }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_custom_contacts"],
+      "description": "Tier-derived limits. Enforced server-side at signup; mirrored here so the cached app can show a neutral 'list full' state offline WITHOUT mentioning price or upgrades.",
+      "properties": {
+        "max_custom_contacts": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "3 for free tier; null = unlimited for premium."
+        }
+      }
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this payload was generated. Used by the app to decide when to attempt a background refresh."
+    },
+    "signature": {
+      "type": "string",
+      "description": "Detached signature over the canonical payload (account_id|tier|issued_at|contacts hash). Lets the app verify the data was not tampered with in transit/cache — the data-integrity backbone of the 'spoof-resistant' claim."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Local DB / secrets
+*.db
+.env
+
+# macOS / Xcode
+.DS_Store
+xcuserdata/
+*.xcuserstate
+build/
+DerivedData/
+
+# XcodeGen-generated (regenerated from ios/project.yml — do not commit)
+ios/SeniorDirectory.xcodeproj/
+ios/SeniorDirectory/Info.plist
+
+# Generated verification worksheet
+verification_worksheet.csv
+
+# Android / Gradle
+.gradle/
+android/local.properties
+android/.idea/
+*.apk
+*.aab
+*.keystore
