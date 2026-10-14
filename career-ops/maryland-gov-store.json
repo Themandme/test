@@ -1,5 +1,47 @@
 [
   {
+    "company": "State of Maryland — DHS - Technology for Human Svcs General Admin",
+    "title": "Senior Business Analyst- ePace Program (IT FUNCTIONAL ANALYST LEAD)",
+    "reqId": "26-004500-0003",
+    "location": "Baltimore City",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=004500&R3=0003",
+    "days": 0,
+    "postedAtMs": 1791982800000,
+    "deadlineMs": 1793231940000,
+    "deadline": "10/28/2026 11:59:00 PM",
+    "employmentType": null,
+    "salary": {
+      "min": 39.2,
+      "max": 48.74,
+      "unit": "HOUR"
+    },
+    "restricted": false,
+    "restriction": null,
+    "eligibilityStatus": "public",
+    "eligibilityCheck": "checked"
+  },
+  {
+    "company": "State of Maryland — MDA Mktg Animal Ind & Cons Svcs - Mktg & Agr Dev",
+    "title": "ADMINISTRATOR II (Seafood Marketing Manager)",
+    "reqId": "26-002587-0051",
+    "location": "Anne Arundel",
+    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=002587&R3=0051",
+    "days": 0,
+    "postedAtMs": 1791981900000,
+    "deadlineMs": 1793191500000,
+    "deadline": "10/28/2026 12:45:00 PM",
+    "employmentType": "Full-Time",
+    "salary": {
+      "min": 71805,
+      "max": 113243,
+      "unit": "YEAR"
+    },
+    "restricted": false,
+    "restriction": null,
+    "eligibilityStatus": "public",
+    "eligibilityCheck": "checked"
+  },
+  {
     "company": "State of Maryland — MDH Behavioral Health Admin - Program Direction",
     "title": "SENIOR DIRECTOR, OFFICE OF GOVERNMENTAL AFFAIRS (PROGRAM MANAGER SENIOR II)",
     "reqId": "26-005483-0035",
@@ -1988,27 +2030,6 @@
       "min": 22.6,
       "max": 22.6,
       "unit": "HOUR"
-    },
-    "restricted": false,
-    "restriction": null,
-    "eligibilityStatus": "public",
-    "eligibilityCheck": "checked"
-  },
-  {
-    "company": "State of Maryland — LABOR - Office of Administration",
-    "title": "Procurement Officer I",
-    "reqId": "26-003002-0012",
-    "location": "Baltimore City",
-    "url": "https://www.jobapscloud.com/MD/sup/BulPreview.asp?R1=26&R2=003002&R3=0012",
-    "days": 14,
-    "postedAtMs": 1790772600000,
-    "deadlineMs": 1791997200000,
-    "deadline": "10/14/2026 5:00:00 PM",
-    "employmentType": "Full-Time",
-    "salary": {
-      "min": 67309,
-      "max": 68656,
-      "unit": "YEAR"
     },
     "restricted": false,
     "restriction": null,

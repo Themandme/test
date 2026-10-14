@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T16:11:15.973Z",
+  "generatedAt": "2026-10-14T17:52:12.265Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,21 +28,21 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 275,
+      "fetched": 274,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 93,
+      "fetched": 95,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 970,
+      "fetched": 971,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 183,
+      "fetched": 184,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 77,
+      "fetched": 69,
       "kept": 0
     },
     {
@@ -112,7 +112,7 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 168,
+      "fetched": 169,
       "kept": 0
     },
     {
@@ -147,7 +147,7 @@
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 408,
+      "fetched": 413,
       "kept": 4
     }
   ],
