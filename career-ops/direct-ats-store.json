@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T16:11:15.973Z",
+  "generatedAt": "2026-10-15T15:55:15.987Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -21,21 +21,21 @@
       "name": "The 1916 Company",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 16,
+      "fetched": 17,
       "kept": 2
     },
     {
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 275,
+      "fetched": 271,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 93,
+      "fetched": 97,
       "kept": 0
     },
     {
@@ -49,14 +49,14 @@
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 42,
+      "fetched": 43,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 532,
+      "fetched": 531,
       "kept": 0
     },
     {
@@ -77,15 +77,15 @@
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 77,
-      "kept": 0
+      "fetched": 75,
+      "kept": 2
     },
     {
       "name": "OSL Retail Services",
       "provider": "icims",
       "status": "success",
       "fetched": 600,
-      "kept": 2
+      "kept": 1
     },
     {
       "name": "Bartlett Tree Experts",
@@ -112,21 +112,21 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 168,
+      "fetched": 172,
       "kept": 0
     },
     {
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 26,
+      "fetched": 25,
       "kept": 9
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 875,
+      "fetched": 878,
       "kept": 0
     },
     {
@@ -140,18 +140,46 @@
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 590,
+      "fetched": 582,
       "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 408,
+      "fetched": 407,
       "kept": 4
     }
   ],
   "jobs": [
+    {
+      "company": "Marvin",
+      "title": "Retail Brand Ambassador",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/11047/retail-brand-ambassador/job",
+      "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
+      "postedAtMs": 1791950400000,
+      "datePosted": "2026-10-14T04:00:00.000Z",
+      "days": 1,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Marvin",
+      "title": "Brand Ambassador - High Earning Potential",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/11046/brand-ambassador---high-earning-potential/job",
+      "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
+      "postedAtMs": 1791950400000,
+      "datePosted": "2026-10-14T04:00:00.000Z",
+      "days": 1,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
     {
       "company": "Bartlett Tree Experts",
       "title": "Arborist Crew Leader",
@@ -159,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1790136000000,
       "datePosted": "2026-09-23T04:00:00.000Z",
-      "days": 21,
+      "days": 22,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,21 +201,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1789963200000,
       "datePosted": "2026-09-21T04:00:00.000Z",
-      "days": 23,
-      "salary": null,
-      "source": "Direct ATS (icims)",
-      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "OSL Retail Services",
-      "title": "Wireless Retail Sales Associate - W3434",
-      "url": "https://uscareers-oslrs.icims.com/jobs/100751/wireless-retail-sales-associate---w3434/job",
-      "location": "US-IL-WOODSTOCK",
-      "postedAtMs": 1789617600000,
-      "datePosted": "2026-09-17T04:00:00.000Z",
-      "days": 27,
+      "days": 24,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -201,7 +215,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
