@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:55:15.987Z",
+  "generatedAt": "2026-10-16T15:40:58.584Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -7,8 +7,8 @@
       "name": "JMS Celebree School",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 9,
-      "kept": 2
+      "fetched": 8,
+      "kept": 1
     },
     {
       "name": "STEPS Behavioral Health",
@@ -28,35 +28,35 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 271,
+      "fetched": 272,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 97,
+      "fetched": 96,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 970,
+      "fetched": 967,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 43,
+      "fetched": 46,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 531,
+      "fetched": 528,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 183,
+      "fetched": 180,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 75,
+      "fetched": 76,
       "kept": 2
     },
     {
@@ -99,7 +99,7 @@
       "provider": "jobvite",
       "status": "success",
       "fetched": 19,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "Mainspring Recovery",
@@ -112,21 +112,21 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 172,
+      "fetched": 164,
       "kept": 0
     },
     {
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 25,
-      "kept": 9
+      "fetched": 26,
+      "kept": 11
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 878,
+      "fetched": 868,
       "kept": 0
     },
     {
@@ -134,20 +134,20 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 5
+      "kept": 2
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 582,
+      "fetched": 578,
       "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 407,
+      "fetched": 406,
       "kept": 4
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 1,
+      "days": 2,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 1,
+      "days": 2,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1790136000000,
       "datePosted": "2026-09-23T04:00:00.000Z",
-      "days": 22,
+      "days": 23,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1789963200000,
       "datePosted": "2026-09-21T04:00:00.000Z",
-      "days": 24,
+      "days": 25,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,24 +215,10 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1788926400000,
       "datePosted": "2026-09-09T04:00:00.000Z",
-      "days": 36,
+      "days": 37,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "JMS Celebree School",
-      "title": "Celebree School of Owings Mills is looking for top-quality Teacher Aides!",
-      "url": "https://celebreeny.bamboohr.com/careers/101",
-      "location": "Owings mills, Maryland",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (bamboohr)",
-      "sourceBoard": "bamboohr:https://celebreeny.bamboohr.com/careers",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
@@ -307,20 +293,6 @@
       "retainedAfterSourceFailure": false
     },
     {
-      "company": "Footprint Solutions",
-      "title": "Part Time Merchandiser",
-      "url": "https://jobs.jobvite.com/fprs/job/otVEAfwm",
-      "location": "Reisterstown, Maryland",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (jobvite)",
-      "sourceBoard": "jobvite:https://jobs.jobvite.com/fprs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
       "company": "WPM Real Estate Management",
       "title": "Assistant Controller",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/7569af01-7c18-449f-9890-ad4aa27f3a79",
@@ -352,6 +324,20 @@
       "company": "WPM Real Estate Management",
       "title": "Community Association Manager",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/325875a2-b455-4393-8c95-b06a4837b4ee",
+      "location": "Owings Mills, MD",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (rippling)",
+      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "WPM Real Estate Management",
+      "title": "Field Service Dispatcher",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/1ae84609-2d82-4398-b893-ec3e315c3eec",
       "location": "Owings Mills, MD",
       "postedAtMs": null,
       "datePosted": null,
@@ -434,6 +420,20 @@
     },
     {
       "company": "WPM Real Estate Management",
+      "title": "Regional Property Manager- MRE",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/c51c30a8-3fbd-40d6-b3ac-15f1f771e1c4",
+      "location": "Owings Mills, MD",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (rippling)",
+      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "WPM Real Estate Management",
       "title": "Service Department Technician",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/bc6b302a-d1ed-49a5-b6eb-e714ecfc0376",
       "location": "Owings Mills, MD",
@@ -465,48 +465,6 @@
       "title": "Assistant Manager(04125)",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000154857728-assistant-manager-04125",
       "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Delivery Driver(09185) - 701 S. Eastwood Dr.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000154848958-delivery-driver-09185-701-s-eastwood-dr",
-      "location": "Woodstock, IL, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Delivery Driver(04125)",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000154842333-delivery-driver-04125",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Customer Service Rep(09185) - 701 S. Eastwood Dr.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000154840860-customer-service-rep-09185-701-s-eastwood-dr",
-      "location": "Woodstock, IL, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
