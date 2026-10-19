@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:53:33.144Z",
+  "generatedAt": "2026-10-19T17:50:33.227Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -8,7 +8,7 @@
       "provider": "bamboohr",
       "status": "success",
       "fetched": 8,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "STEPS Behavioral Health",
@@ -28,14 +28,14 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 271,
+      "fetched": 266,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 94,
+      "fetched": 90,
       "kept": 0
     },
     {
@@ -56,7 +56,7 @@
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 528,
+      "fetched": 529,
       "kept": 0
     },
     {
@@ -70,14 +70,14 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 185,
+      "fetched": 180,
       "kept": 0
     },
     {
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 74,
+      "fetched": 76,
       "kept": 2
     },
     {
@@ -91,7 +91,7 @@
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 461,
+      "fetched": 460,
       "kept": 2
     },
     {
@@ -105,7 +105,7 @@
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 18,
+      "fetched": 20,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 863,
+      "fetched": 861,
       "kept": 0
     },
     {
@@ -140,14 +140,14 @@
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 573,
+      "fetched": 564,
       "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 406,
+      "fetched": 398,
       "kept": 4
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792123200000,
       "datePosted": "2026-10-16T04:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 4,
+      "days": 5,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 4,
+      "days": 5,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1790136000000,
       "datePosted": "2026-09-23T04:00:00.000Z",
-      "days": 25,
+      "days": 26,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -215,10 +215,24 @@
       "location": "US-MD-COCKEYSVILLE | US-MD-RANDALLSTOWN | US-MD-WESTMINSTER",
       "postedAtMs": 1789963200000,
       "datePosted": "2026-09-21T04:00:00.000Z",
-      "days": 27,
+      "days": 28,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "JMS Celebree School",
+      "title": "Celebree School of Owings Mills is looking for top-quality Teacher Aides!",
+      "url": "https://celebreeny.bamboohr.com/careers/101",
+      "location": "Owings mills, Maryland",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (bamboohr)",
+      "sourceBoard": "bamboohr:https://celebreeny.bamboohr.com/careers",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
@@ -462,6 +476,20 @@
     },
     {
       "company": "Sonic Automotive",
+      "title": "Automotive Market Buyer",
+      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000156325749-automotive-market-buyer",
+      "location": "Owings Mills, MD, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Sonic Automotive",
       "title": "Salesperson - Audi Owings Mills",
       "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000152728679-salesperson-audi-owings-mills",
       "location": "Owings Mills, MD, United States",
@@ -492,20 +520,6 @@
       "company": "Sonic Automotive",
       "title": "Automotive Technician - Audi Owings Mills",
       "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000148873940-automotive-technician-audi-owings-mills",
-      "location": "Owings Mills, MD, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Sonic Automotive",
-      "title": "Automotive Market Buyer",
-      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000148624419-automotive-market-buyer",
       "location": "Owings Mills, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
