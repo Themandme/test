@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T16:13:31.794Z",
+  "generatedAt": "2026-10-23T16:05:42.301Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,21 +28,21 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 263,
+      "fetched": 260,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 87,
+      "fetched": 86,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 970,
+      "fetched": 971,
       "kept": 0
     },
     {
@@ -56,7 +56,7 @@
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 520,
+      "fetched": 514,
       "kept": 0
     },
     {
@@ -105,14 +105,14 @@
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 20,
+      "fetched": 21,
       "kept": 0
     },
     {
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 150,
+      "fetched": 145,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 880,
+      "fetched": 852,
       "kept": 0
     },
     {
@@ -134,20 +134,20 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 4
+      "kept": 5
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 581,
-      "kept": 0
+      "fetched": 564,
+      "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 407,
+      "fetched": 403,
       "kept": 4
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-RANDALLSTOWN",
       "postedAtMs": 1792641600000,
       "datePosted": "2026-10-22T04:00:00.000Z",
-      "days": 0,
+      "days": 1,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792123200000,
       "datePosted": "2026-10-16T04:00:00.000Z",
-      "days": 6,
+      "days": 7,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 8,
+      "days": 9,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 8,
+      "days": 9,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -215,7 +215,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1790136000000,
       "datePosted": "2026-09-23T04:00:00.000Z",
-      "days": 29,
+      "days": 30,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -476,9 +476,9 @@
     },
     {
       "company": "Domino's",
-      "title": "Customer Service Rep(04125) - 12195 Hwy 92",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000157024088-customer-service-rep-04125-12195-hwy-92",
-      "location": "Woodstock, GA, United States",
+      "title": "Assistant Manager(04696) - 3502 Brenbrook Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157348092-assistant-manager-04696-3502-brenbrook-dr",
+      "location": "Randallstown, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -490,9 +490,9 @@
     },
     {
       "company": "Domino's",
-      "title": "Customer Service Rep(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000156980988-customer-service-rep-04132-2265-towne-lake-pkwy",
-      "location": "Woodstock, GA, United States",
+      "title": "Customer Service Rep(04696) - 3502 Brenbrook Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157338777-customer-service-rep-04696-3502-brenbrook-dr",
+      "location": "Randallstown, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
@@ -504,22 +504,8 @@
     },
     {
       "company": "Domino's",
-      "title": "Delivery Driver(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000156954401-delivery-driver-04132-2265-towne-lake-pkwy",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Assistant Manager(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000156950260-assistant-manager-04366-493-w-reservoir-rd",
+      "title": "Delivery Driver(04366) - 493 W Reservoir Rd.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157325402-delivery-driver-04366-493-w-reservoir-rd",
       "location": "Woodstock, VA, United States",
       "postedAtMs": null,
       "datePosted": null,
@@ -527,6 +513,48 @@
       "salary": null,
       "source": "Direct ATS (smartrecruiters)",
       "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Customer Service Rep(04366) - 493 W Reservoir Rd.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157321136-customer-service-rep-04366-493-w-reservoir-rd",
+      "location": "Woodstock, VA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Assistant Manager(04132) - 2265 Towne Lake Pkwy",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157295958-assistant-manager-04132-2265-towne-lake-pkwy",
+      "location": "Woodstock, GA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Public Storage",
+      "title": "Customer Service - Self Storage Manager",
+      "url": "https://jobs.smartrecruiters.com/PublicStorage/744000157245202-customer-service-self-storage-manager",
+      "location": "Randallstown, MD, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/PublicStorage",
       "sourceFailureRuns": 0,
       "retainedAfterSourceFailure": false
     },
