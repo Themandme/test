@@ -4,9 +4,14 @@
     "dataset": "national_brands",
     "generated_on": "2026-06-13",
     "count": 50,
-    "WARNING_NUMBERS_ARE_UNVERIFIED_SEED": true,
     "verification_required_before_production": true,
-    "notes": "Every entry below is SEED data populated for development. Phone numbers and brand colors MUST be human-verified against the official_support_url before any production release. Each entry carries a verification block; status must transition from 'unverified_seed' to 'verified' (with source + verified_on + verified_by) before shipping. Do NOT market the directory as 'verified' until this is done. Brands with support_type 'online_only' intentionally have a null phone — the app must NOT dial them and must show the no-phone-support warning instead."
+    "verification_summary": {
+      "web_corroborated": 37,
+      "unverified_seed": 13,
+      "verified": 0,
+      "as_of": "2026-06-18"
+    },
+    "notes": "Numbers were cross-checked via web research on 2026-06-18 (official-domain-weighted). 37 entries are 'web_corroborated'; 13 lower-confidence entries remain 'unverified_seed' and need an official-page/human check (see data/VERIFICATION.md). 0 entries are fully 'verified' yet — a human must still confirm against official_support_url before public launch, and the directory must NOT be marketed as 'verified' until then. Apple's number was corrected to 1-800-275-2273 (1-800-APL-CARE). Brands with support_type 'online_only' intentionally have a null phone — the app must NOT dial them and must show the no-phone-support warning instead."
   },
   "categories": [
     "Streaming",
@@ -34,7 +39,12 @@
       "safety_warning": "Netflix will never call or text you about a billing problem, and will never ask for gift cards, your password, or remote access to your device to 'fix your account.'",
       "official_url": "https://www.netflix.com",
       "official_support_url": "https://help.netflix.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://help.netflix.com/en",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "roku",
@@ -48,7 +58,12 @@
       "safety_warning": "Roku does NOT offer customer support by phone. Roku will never charge a fee to activate your device. Any phone number claiming to be Roku support is a SCAM — use only the official Roku app or website.",
       "official_url": "https://www.roku.com",
       "official_support_url": "https://support.roku.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://support.roku.com/contactus",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "hulu",
@@ -62,7 +77,12 @@
       "safety_warning": "Hulu handles support through its app and website, not a public phone line. Hulu will never ask for gift cards or remote access to your device. A 'Hulu support number' from a search ad is likely a scam.",
       "official_url": "https://www.hulu.com",
       "official_support_url": "https://help.hulu.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "disney_plus",
@@ -76,7 +96,12 @@
       "safety_warning": "Disney+ will never call you about your subscription or ask for gift cards, your password, or remote access to your device.",
       "official_url": "https://www.disneyplus.com",
       "official_support_url": "https://help.disneyplus.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "max",
@@ -90,7 +115,12 @@
       "safety_warning": "Max handles support through its app and website. Max will never ask for gift cards or remote access to your device. Be suspicious of any phone number claiming to be Max support.",
       "official_url": "https://www.max.com",
       "official_support_url": "https://help.max.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "paramount_plus",
@@ -104,7 +134,12 @@
       "safety_warning": "Paramount+ handles support online, not by a public phone line. It will never ask for gift cards or remote access. A 'Paramount+ support number' from a search ad is likely a scam.",
       "official_url": "https://www.paramountplus.com",
       "official_support_url": "https://help.paramountplus.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "peacock",
@@ -118,7 +153,12 @@
       "safety_warning": "Peacock handles support through its app and website. Peacock will never ask for gift cards or remote access to your device. Treat any 'Peacock support number' from a search result with caution.",
       "official_url": "https://www.peacocktv.com",
       "official_support_url": "https://www.peacocktv.com/help",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.peacocktv.com/help/article/contact-us-in-customer-service",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "spotify",
@@ -132,21 +172,31 @@
       "safety_warning": "Spotify does NOT offer phone support. Any phone number claiming to be Spotify support is a SCAM. Spotify will never ask for your password or payment to 'restore' your account.",
       "official_url": "https://www.spotify.com",
       "official_support_url": "https://support.spotify.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://support.spotify.com/us/article/contact-us/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "apple",
       "name": "Apple",
       "category": "Technology",
       "support_type": "phone",
-      "phone": "+18002752753",
-      "phone_display": "1-800-275-2753",
+      "phone": "+18002752273",
+      "phone_display": "1-800-275-2273",
       "brand_color_hex": "#000000",
       "text_color_hex": "#FFFFFF",
       "safety_warning": "Apple will never call you about a security problem, a locked account, or a virus. Apple will never ask for your password, a verification code, or remote access. If someone says they are 'Apple Support' and called you, hang up.",
       "official_url": "https://www.apple.com",
       "official_support_url": "https://support.apple.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://support.apple.com/en-us/106932",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "microsoft",
@@ -160,7 +210,12 @@
       "safety_warning": "Microsoft will never call you about a virus, a 'Windows license problem,' or errors on your computer. Never give remote access or buy gift cards. A pop-up with a 'Microsoft' number to call is always a scam.",
       "official_url": "https://www.microsoft.com",
       "official_support_url": "https://support.microsoft.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://support.microsoft.com/en-us/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "google",
@@ -174,7 +229,12 @@
       "safety_warning": "Google does NOT offer customer support by phone for most products. Any phone number claiming to be 'Google Support' is almost always a SCAM. Google will never call to fix your account or ask for a verification code.",
       "official_url": "https://www.google.com",
       "official_support_url": "https://support.google.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://support.google.com/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "meta_facebook",
@@ -188,7 +248,12 @@
       "safety_warning": "Facebook does NOT offer customer support by phone. Any 'Facebook support number' is a SCAM. Facebook will never call you about a locked account or ask for a code that was texted to you.",
       "official_url": "https://www.facebook.com",
       "official_support_url": "https://www.facebook.com/help",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.facebook.com/help/1088016719924954",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "instagram",
@@ -202,7 +267,12 @@
       "safety_warning": "Instagram does NOT offer support by phone. Any 'Instagram support number' is a SCAM. Instagram will never call you or ask for your password or a login code to 'recover' your account.",
       "official_url": "https://www.instagram.com",
       "official_support_url": "https://help.instagram.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://help.instagram.com/1267233311582177/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "norton",
@@ -216,7 +286,12 @@
       "safety_warning": "Norton will never call you about an auto-renewal charge or a refund. The 'Norton renewal' email or pop-up asking you to call a number is a common SCAM. Never give remote access to your computer.",
       "official_url": "https://www.norton.com",
       "official_support_url": "https://support.norton.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "mcafee",
@@ -230,7 +305,12 @@
       "safety_warning": "McAfee will never call you about a virus or a renewal refund. A pop-up or email with a 'McAfee' number to call is a SCAM. Never pay with gift cards and never allow remote access.",
       "official_url": "https://www.mcafee.com",
       "official_support_url": "https://www.mcafee.com/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "hp",
@@ -244,7 +324,12 @@
       "safety_warning": "HP will never call you about a virus or a printer 'security problem.' A pop-up with an 'HP support' number is a scam. Never allow remote access or pay with gift cards.",
       "official_url": "https://www.hp.com",
       "official_support_url": "https://support.hp.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.hp.com/us-en/contact-hp/phone-assist.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "dell",
@@ -258,7 +343,12 @@
       "safety_warning": "Dell will never call you about a virus or a warranty 'security alert.' Pop-ups with a 'Dell support' number are scams. Never allow remote access or pay with gift cards.",
       "official_url": "https://www.dell.com",
       "official_support_url": "https://www.dell.com/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "geek_squad",
@@ -272,7 +362,12 @@
       "safety_warning": "Geek Squad will never email you an invoice for a renewal and ask you to call to cancel — this is one of the most common scams. They will never ask for gift cards, your bank login, or remote access to issue a refund.",
       "official_url": "https://www.bestbuy.com/geeksquad",
       "official_support_url": "https://www.bestbuy.com/services/triage/home",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.bestbuy.com/contact-us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "verizon",
@@ -286,7 +381,12 @@
       "safety_warning": "Verizon will never call to offer a 'discount' or 'refund' that requires gift cards, crypto, or remote access. Never share a verification code that Verizon texts you with anyone on a call.",
       "official_url": "https://www.verizon.com",
       "official_support_url": "https://www.verizon.com/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.verizon.com/support/verizon-contact-numbers/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "att",
@@ -296,11 +396,16 @@
       "phone": "+18003310500",
       "phone_display": "1-800-331-0500",
       "brand_color_hex": "#00A8E0",
-      "text_color_hex": "#FFFFFF",
+      "text_color_hex": "#000000",
       "safety_warning": "AT&T will never call to offer a 'loyalty discount' that requires gift cards or to ask for a code they texted you. Hang up and call the number on your bill if you are unsure.",
       "official_url": "https://www.att.com",
       "official_support_url": "https://www.att.com/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.att.com/support/contact-us/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "tmobile",
@@ -314,7 +419,12 @@
       "safety_warning": "T-Mobile will never call to offer a refund or discount that requires gift cards, crypto, or remote access. Never share a verification code from a text with a caller.",
       "official_url": "https://www.t-mobile.com",
       "official_support_url": "https://www.t-mobile.com/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.t-mobile.com/contact-us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "xfinity",
@@ -328,7 +438,12 @@
       "safety_warning": "Xfinity (Comcast) will never call to offer a 50% discount that you must pay for with gift cards or crypto. This is a widespread scam. Hang up and call the number on your bill.",
       "official_url": "https://www.xfinity.com",
       "official_support_url": "https://www.xfinity.com/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.xfinity.com/support/contact-us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "spectrum",
@@ -342,7 +457,12 @@
       "safety_warning": "Spectrum will never call to offer a discount that requires a gift-card or crypto payment, and will never ask for your account password by phone. Hang up and call the number on your bill.",
       "official_url": "https://www.spectrum.com",
       "official_support_url": "https://www.spectrum.net/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.spectrum.net/contact-us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "cox",
@@ -356,7 +476,12 @@
       "safety_warning": "Cox will never call to offer a discount that you must pay for with gift cards or crypto. Never share a verification code with a caller. Hang up and use the number on your bill.",
       "official_url": "https://www.cox.com",
       "official_support_url": "https://www.cox.com/residential/support.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "centurylink",
@@ -370,7 +495,12 @@
       "safety_warning": "CenturyLink will never call to demand immediate payment by gift card to 'avoid disconnection,' or ask for remote access to your device. Hang up and call the number on your bill.",
       "official_url": "https://www.centurylink.com",
       "official_support_url": "https://www.centurylink.com/home/help",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.centurylink.com/home/help/contact.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "frontier",
@@ -384,7 +514,12 @@
       "safety_warning": "Frontier will never call to demand gift-card payment to keep your service on, or ask for remote access to your device. Hang up and call the number on your bill.",
       "official_url": "https://frontier.com",
       "official_support_url": "https://frontier.com/helpcenter",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://frontier.com/contact-us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "bank_of_america",
@@ -398,7 +533,12 @@
       "safety_warning": "Your bank will NEVER ask you to move money to a 'safe account,' buy gift cards, or read back a code they texted you. If anyone claiming to be the bank asks for this, hang up and call the number on the back of your card.",
       "official_url": "https://www.bankofamerica.com",
       "official_support_url": "https://www.bankofamerica.com/customer-service",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.bankofamerica.com/customer-service/contact-us/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "chase",
@@ -412,7 +552,12 @@
       "safety_warning": "Chase will NEVER ask you to send money to yourself, move funds to a 'safe account,' or share a verification code. These are scams. Hang up and call the number on the back of your card.",
       "official_url": "https://www.chase.com",
       "official_support_url": "https://www.chase.com/digital/customer-service",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.chase.com/personal/personal-banking-contact",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "wells_fargo",
@@ -426,7 +571,12 @@
       "safety_warning": "Wells Fargo will NEVER ask you to move money to a 'safe account' or read back a code they texted you. If a caller asks for this, hang up and call the number on the back of your card.",
       "official_url": "https://www.wellsfargo.com",
       "official_support_url": "https://www.wellsfargo.com/help",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.wellsfargo.com/help/contact-us/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "citibank",
@@ -440,7 +590,12 @@
       "safety_warning": "Citibank will NEVER ask you to transfer money to a 'safe account' or share a one-time code. Hang up on anyone who does and call the number on the back of your card.",
       "official_url": "https://www.citi.com",
       "official_support_url": "https://www.citi.com/customer-service",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "capital_one",
@@ -454,7 +609,12 @@
       "safety_warning": "Capital One will NEVER ask you to move money to 'protect' it or to read back a verification code. If a caller asks for this, hang up and call the number on the back of your card.",
       "official_url": "https://www.capitalone.com",
       "official_support_url": "https://www.capitalone.com/help-center",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "us_bank",
@@ -468,7 +628,12 @@
       "safety_warning": "U.S. Bank will NEVER ask you to move money to a 'safe account,' buy gift cards, or share a texted code. Hang up and call the number on the back of your card.",
       "official_url": "https://www.usbank.com",
       "official_support_url": "https://www.usbank.com/customer-service.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.usbank.com/customer-service/knowledge-base/KB0069914.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "pnc",
@@ -482,7 +647,12 @@
       "safety_warning": "PNC will NEVER ask you to move money to a 'safe account' or share a one-time code. If a caller does, hang up and call the number on the back of your card.",
       "official_url": "https://www.pnc.com",
       "official_support_url": "https://www.pnc.com/en/customer-service.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.pnc.com/en/customer-service.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "american_express",
@@ -496,7 +666,12 @@
       "safety_warning": "American Express will NEVER ask you to read back a code they texted you, or to buy gift cards to 'verify' your account. Hang up and call the number on the back of your card.",
       "official_url": "https://www.americanexpress.com",
       "official_support_url": "https://www.americanexpress.com/en-us/customer-service",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "discover",
@@ -510,7 +685,12 @@
       "safety_warning": "Discover will NEVER ask for your full card number, PIN, or a texted code by phone. If a caller asks, hang up and call the number on the back of your card.",
       "official_url": "https://www.discover.com",
       "official_support_url": "https://www.discover.com/credit-cards/help-center",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.discover.com/credit-cards/contact-us/",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "synchrony",
@@ -524,7 +704,12 @@
       "safety_warning": "Synchrony will NEVER ask you to share a one-time code or buy gift cards to 'secure' your account. Hang up and call the number on your statement.",
       "official_url": "https://www.synchrony.com",
       "official_support_url": "https://www.synchrony.com/contact-us.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "paypal",
@@ -538,7 +723,12 @@
       "safety_warning": "PayPal will never ask you to send a payment to 'verify' your account or to get a refund. A refund never requires you to send money first. Be suspicious of invoices and emails telling you to call a number.",
       "official_url": "https://www.paypal.com",
       "official_support_url": "https://www.paypal.com/us/cshelp",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "unverified_seed",
+        "source": null,
+        "verified_on": null,
+        "verified_by": null
+      }
     },
     {
       "id": "venmo",
@@ -552,7 +742,12 @@
       "safety_warning": "Venmo will never call you and ask for your password, a texted code, or a payment to 'reverse' a charge. If money was sent to you 'by mistake,' a request to send it back is a common scam.",
       "official_url": "https://venmo.com",
       "official_support_url": "https://help.venmo.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://help.venmo.com/cs/articles/contact-us-vhel282",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "cash_app",
@@ -566,7 +761,12 @@
       "safety_warning": "Cash App support will never ask for your PIN, sign-in code, or to make a payment to receive a payment. There is no 'Cash App refund' that requires you to send money first.",
       "official_url": "https://cash.app",
       "official_support_url": "https://cash.app/help",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://cash.app/contact",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "zelle",
@@ -580,7 +780,12 @@
       "safety_warning": "Zelle does NOT have a customer-support phone line — you use your bank. Any 'Zelle support number' is a SCAM. No one from Zelle or your bank will ask you to send a Zelle payment to 'reverse fraud' or 'verify' your account.",
       "official_url": "https://www.zellepay.com",
       "official_support_url": "https://www.zellepay.com/support",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.zellepay.com/support/contact",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "coinbase",
@@ -594,7 +799,12 @@
       "safety_warning": "Coinbase will never call you about a 'hacked account' and ask you to move your crypto to a 'safe wallet' — this is a scam that empties your account. Coinbase will never ask for your password or 2-step codes.",
       "official_url": "https://www.coinbase.com",
       "official_support_url": "https://help.coinbase.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://help.coinbase.com/en/coinbase/managing-my-account/other/coinbase-support",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "western_union",
@@ -608,7 +818,12 @@
       "safety_warning": "Never send a Western Union transfer to someone you have not met, for a prize, a 'grandchild in trouble,' or to 'release' a package or loan. Once sent, the money is gone. Western Union will never ask you to do this.",
       "official_url": "https://www.westernunion.com",
       "official_support_url": "https://www.westernunion.com/us/en/contact-us.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.westernunion.com/us/en/contact-us.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "fedex",
@@ -622,7 +837,12 @@
       "safety_warning": "FedEx will not text or call asking for a payment or your card details to 'release' a package. A text with a link about a 'delivery fee' is a scam — do not tap it.",
       "official_url": "https://www.fedex.com",
       "official_support_url": "https://www.fedex.com/en-us/customer-support.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.fedex.com/en-us/customer-support.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "ups",
@@ -636,7 +856,12 @@
       "safety_warning": "UPS will not ask for payment or personal details by phone or text to 'release' a package. A 'redelivery fee' text with a link is a scam — do not tap it or enter your card.",
       "official_url": "https://www.ups.com",
       "official_support_url": "https://www.ups.com/us/en/support/contact-us.page",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.ups.com/us/en/support/contact-us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "usps",
@@ -650,7 +875,12 @@
       "safety_warning": "The Postal Service will not text you about a 'delivery fee' or 'address problem' with a link to pay. These USPS texts are scams — do not tap the link or enter your card.",
       "official_url": "https://www.usps.com",
       "official_support_url": "https://www.usps.com/help",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.usps.com/help/contact-us.htm",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "dhl",
@@ -664,7 +894,12 @@
       "safety_warning": "DHL will not text or call asking for a payment or card details to 'release' a package. A 'customs fee' or 'delivery fee' text with a link is a scam — do not tap it.",
       "official_url": "https://www.dhl.com",
       "official_support_url": "https://www.dhl.com/us-en/home/customer-service.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.dhl.com/us-en/home/customer-service.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "amazon",
@@ -678,7 +913,12 @@
       "safety_warning": "Amazon will never call you about a suspicious order to get your card number or a verification code, and will never ask you to buy gift cards or allow remote access. Check orders only in the official Amazon app.",
       "official_url": "https://www.amazon.com",
       "official_support_url": "https://www.amazon.com/gp/help/customer/display.html",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.amazon.com/gp/help/customer/display.html",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "walmart",
@@ -692,7 +932,12 @@
       "safety_warning": "Walmart will never call about an order you did not place to get your card number or a code, and will never ask you to pay with gift cards. A 'you won a Walmart prize' message is a scam.",
       "official_url": "https://www.walmart.com",
       "official_support_url": "https://www.walmart.com/help",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.walmart.com/help",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "target",
@@ -706,7 +951,12 @@
       "safety_warning": "Target will never call about an order to get your card number or a verification code, and will never ask you to pay with gift cards. A 'Target gift card' prize message is a scam.",
       "official_url": "https://www.target.com",
       "official_support_url": "https://help.target.com",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.target.com/help/contact-us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     },
     {
       "id": "ebay",
@@ -720,7 +970,12 @@
       "safety_warning": "eBay will never ask you to pay outside the app, send gift cards, or share a verification code. If a 'buyer' or 'seller' asks you to move off eBay to complete a deal, it is a scam.",
       "official_url": "https://www.ebay.com",
       "official_support_url": "https://www.ebay.com/help/home",
-      "verification": { "status": "unverified_seed", "source": null, "verified_on": null, "verified_by": null }
+      "verification": {
+        "status": "web_corroborated",
+        "source": "https://www.ebay.com/help/call_us",
+        "verified_on": "2026-06-18",
+        "verified_by": "web-research"
+      }
     }
   ]
 }
