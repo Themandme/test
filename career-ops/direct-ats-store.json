@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T15:13:35.494Z",
+  "generatedAt": "2026-10-26T17:44:58.057Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,35 +28,35 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 257,
+      "fetched": 253,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 90,
+      "fetched": 87,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 972,
+      "fetched": 973,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 56,
+      "fetched": 55,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 510,
+      "fetched": 513,
       "kept": 0
     },
     {
@@ -70,7 +70,7 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 176,
+      "fetched": 179,
       "kept": 0
     },
     {
@@ -91,7 +91,7 @@
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 462,
+      "fetched": 465,
       "kept": 3
     },
     {
@@ -105,7 +105,7 @@
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 21,
+      "fetched": 20,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 852,
+      "fetched": 845,
       "kept": 0
     },
     {
@@ -134,20 +134,20 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 4
+      "kept": 6
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 559,
+      "fetched": 520,
       "kept": 1
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 390,
+      "fetched": 385,
       "kept": 4
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-MD-RANDALLSTOWN",
       "postedAtMs": 1792641600000,
       "datePosted": "2026-10-22T04:00:00.000Z",
-      "days": 3,
+      "days": 4,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,7 +215,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 11,
+      "days": 12,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -229,7 +229,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 11,
+      "days": 12,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -490,6 +490,62 @@
     },
     {
       "company": "Domino's",
+      "title": "Assistant Manager(04125)",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157702348-assistant-manager-04125",
+      "location": "Woodstock, GA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Delivery Driver(09185) - 701 S. Eastwood Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157693588-delivery-driver-09185-701-s-eastwood-dr",
+      "location": "Woodstock, IL, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Delivery Driver(04125)",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157687180-delivery-driver-04125",
+      "location": "Woodstock, GA, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
+      "title": "Customer Service Rep(09185) - 701 S. Eastwood Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000157686453-customer-service-rep-09185-701-s-eastwood-dr",
+      "location": "Woodstock, IL, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
       "title": "Assistant Manager(04696) - 3502 Brenbrook Dr.",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000157348092-assistant-manager-04696-3502-brenbrook-dr",
       "location": "Randallstown, MD, United States",
@@ -507,34 +563,6 @@
       "title": "Customer Service Rep(04696) - 3502 Brenbrook Dr.",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000157338777-customer-service-rep-04696-3502-brenbrook-dr",
       "location": "Randallstown, MD, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Delivery Driver(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000157325402-delivery-driver-04366-493-w-reservoir-rd",
-      "location": "Woodstock, VA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Customer Service Rep(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000157321136-customer-service-rep-04366-493-w-reservoir-rd",
-      "location": "Woodstock, VA, United States",
       "postedAtMs": null,
       "datePosted": null,
       "days": null,
