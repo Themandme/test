@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T17:20:24.171Z",
+  "generatedAt": "2026-10-31T16:23:38.568Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,14 +28,14 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 245,
+      "fetched": 252,
       "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 89,
+      "fetched": 90,
       "kept": 0
     },
     {
@@ -70,7 +70,7 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 173,
+      "fetched": 171,
       "kept": 0
     },
     {
@@ -85,7 +85,7 @@
       "provider": "icims",
       "status": "success",
       "fetched": 600,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "Bartlett Tree Experts",
@@ -112,7 +112,7 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 130,
+      "fetched": 125,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 879,
+      "fetched": 886,
       "kept": 0
     },
     {
@@ -134,24 +134,38 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 5
+      "kept": 1
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 583,
+      "fetched": 575,
       "kept": 0
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 353,
+      "fetched": 360,
       "kept": 4
     }
   ],
   "jobs": [
+    {
+      "company": "OSL Retail Services",
+      "title": "Wireless Retail Sales Associate - W3434",
+      "url": "https://uscareers-oslrs.icims.com/jobs/102198/wireless-retail-sales-associate---w3434/job",
+      "location": "US-IL-WOODSTOCK",
+      "postedAtMs": 1793332800000,
+      "datePosted": "2026-10-30T04:00:00.000Z",
+      "days": 1,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
     {
       "company": "Bartlett Tree Experts",
       "title": "Arborist Climber Trainee",
@@ -159,7 +173,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 7,
+      "days": 8,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -173,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 7,
+      "days": 8,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -187,7 +201,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 7,
+      "days": 8,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +215,7 @@
       "location": "US-MD-RANDALLSTOWN",
       "postedAtMs": 1792641600000,
       "datePosted": "2026-10-22T04:00:00.000Z",
-      "days": 8,
+      "days": 9,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,7 +229,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 16,
+      "days": 17,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -224,12 +238,12 @@
     },
     {
       "company": "Marvin",
-      "title": "Brand Ambassador - High Earning Potential",
-      "url": "https://infinity-jobs-marvin.icims.com/jobs/11046/brand-ambassador---high-earning-potential/job",
+      "title": "Retail Brand Ambassador",
+      "url": "https://infinity-jobs-marvin.icims.com/jobs/11046/retail-brand-ambassador/job",
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 16,
+      "days": 17,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -464,62 +478,6 @@
       "company": "Domino's",
       "title": "Assistant Manager(09185) - 701 S. Eastwood Dr.",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000158188616-assistant-manager-09185-701-s-eastwood-dr",
-      "location": "Woodstock, IL, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Assistant Manager(04125)",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000157702348-assistant-manager-04125",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Delivery Driver(09185) - 701 S. Eastwood Dr.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000157693588-delivery-driver-09185-701-s-eastwood-dr",
-      "location": "Woodstock, IL, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Delivery Driver(04125)",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000157687180-delivery-driver-04125",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Customer Service Rep(09185) - 701 S. Eastwood Dr.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000157686453-customer-service-rep-09185-701-s-eastwood-dr",
       "location": "Woodstock, IL, United States",
       "postedAtMs": null,
       "datePosted": null,
