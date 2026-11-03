@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T21:06:49.631Z",
+  "generatedAt": "2026-11-03T18:48:28.483Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -7,7 +7,7 @@
       "name": "JMS Celebree School",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 8,
+      "fetched": 9,
       "kept": 3
     },
     {
@@ -28,36 +28,36 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 246,
-      "kept": 0
+      "fetched": 243,
+      "kept": 1
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 92,
+      "fetched": 95,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 957,
+      "fetched": 973,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 57,
+      "fetched": 54,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
-      "status": "failed",
-      "reason": "HTTP 502 Bad Gateway",
-      "retained": 0
+      "status": "success",
+      "fetched": 506,
+      "kept": 0
     },
     {
       "name": "Enterprise Mobility",
@@ -70,7 +70,7 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 171,
+      "fetched": 173,
       "kept": 0
     },
     {
@@ -83,16 +83,16 @@
     {
       "name": "OSL Retail Services",
       "provider": "icims",
-      "status": "failed",
-      "reason": "This operation was aborted",
-      "retained": 2
+      "status": "success",
+      "fetched": 600,
+      "kept": 2
     },
     {
       "name": "Bartlett Tree Experts",
       "provider": "icims",
-      "status": "failed",
-      "reason": "This operation was aborted",
-      "retained": 3
+      "status": "success",
+      "fetched": 477,
+      "kept": 3
     },
     {
       "name": "Footprint Solutions",
@@ -105,28 +105,28 @@
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 16,
+      "fetched": 15,
       "kept": 0
     },
     {
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 119,
+      "fetched": 115,
       "kept": 0
     },
     {
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 24,
-      "kept": 8
+      "fetched": 23,
+      "kept": 7
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 894,
+      "fetched": 907,
       "kept": 0
     },
     {
@@ -140,18 +140,32 @@
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 578,
+      "fetched": 555,
       "kept": 0
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 350,
-      "kept": 3
+      "fetched": 352,
+      "kept": 2
     }
   ],
   "jobs": [
+    {
+      "company": "Curaleaf",
+      "title": "Retail Sales Associate - Part Time",
+      "url": "https://job-boards.greenhouse.io/curaleaf/jobs/8928860002",
+      "location": "11722 Reisterstown Rd Reisterstown, MD",
+      "postedAtMs": 1793728909000,
+      "datePosted": "2026-11-03T18:01:49.000Z",
+      "days": 0,
+      "salary": null,
+      "source": "Direct ATS (greenhouse)",
+      "sourceBoard": "greenhouse:https://job-boards.greenhouse.io/curaleaf",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
     {
       "company": "OSL Retail Services",
       "title": "Wireless Retail Sales Associate - W3434",
@@ -159,13 +173,12 @@
       "location": "US-IL-WOODSTOCK",
       "postedAtMs": 1793332800000,
       "datePosted": "2026-10-30T04:00:00.000Z",
-      "days": 2,
+      "days": 4,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 1,
-      "retainedAfterSourceFailure": true,
-      "sourceFailure": "This operation was aborted"
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
     },
     {
       "company": "Bartlett Tree Experts",
@@ -174,13 +187,12 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 9,
+      "days": 11,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 1,
-      "retainedAfterSourceFailure": true,
-      "sourceFailure": "This operation was aborted"
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
     },
     {
       "company": "Bartlett Tree Experts",
@@ -189,13 +201,12 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 9,
+      "days": 11,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 1,
-      "retainedAfterSourceFailure": true,
-      "sourceFailure": "This operation was aborted"
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
     },
     {
       "company": "Bartlett Tree Experts",
@@ -204,13 +215,12 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 9,
+      "days": 11,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 1,
-      "retainedAfterSourceFailure": true,
-      "sourceFailure": "This operation was aborted"
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
     },
     {
       "company": "OSL Retail Services",
@@ -219,13 +229,12 @@
       "location": "US-MD-RANDALLSTOWN",
       "postedAtMs": 1792641600000,
       "datePosted": "2026-10-22T04:00:00.000Z",
-      "days": 10,
+      "days": 12,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
-      "sourceFailureRuns": 1,
-      "retainedAfterSourceFailure": true,
-      "sourceFailure": "This operation was aborted"
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
     },
     {
       "company": "Marvin",
@@ -234,7 +243,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 19,
+      "days": 20,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -248,7 +257,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 19,
+      "days": 20,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -397,20 +406,6 @@
     },
     {
       "company": "WPM Real Estate Management",
-      "title": "HR Generalist",
-      "url": "https://ats.rippling.com/wpm-real-estate/jobs/52ad1c01-3645-432b-95c6-e86a44a41b79",
-      "location": "Owings Mills, MD",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (rippling)",
-      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "WPM Real Estate Management",
       "title": "IT Operations Manager",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/06d37a26-e397-46ac-ba5e-eb317bc31f44",
       "location": "Owings Mills, MD",
@@ -483,20 +478,6 @@
       "company": "Sonic Automotive",
       "title": "Automotive Technician - Audi Owings Mills",
       "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000156671860-automotive-technician-audi-owings-mills",
-      "location": "Owings Mills, MD, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Sonic Automotive",
-      "title": "Automotive Market Buyer",
-      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000156325749-automotive-market-buyer",
       "location": "Owings Mills, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
