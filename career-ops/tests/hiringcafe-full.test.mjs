@@ -33,15 +33,17 @@ test('HiringCafe hit normalization preserves local pay and direct application UR
 });
 
 test('HiringCafe normalization excludes senior metadata and off-radius results', () => {
+  const now = Date.parse('2026-09-01T16:00:00Z');
   const senior = hit({ v5_processed_job_data: { ...hit().v5_processed_job_data, seniority_level: 'Senior Level' } });
-  assert.equal(normalizeHit(senior).reason, 'senior');
-  assert.equal(normalizeHit(hit({ _geoloc: [{ lat: 39.7, lon: -76.78 }] })).reason, null);
-  assert.equal(normalizeHit(hit({ _geoloc: [{ lat: 39.95, lon: -76.78 }] })).reason, 'offArea');
+  assert.equal(normalizeHit(senior, now).reason, 'senior');
+  assert.equal(normalizeHit(hit({ _geoloc: [{ lat: 39.7, lon: -76.78 }] }), now).reason, null);
+  assert.equal(normalizeHit(hit({ _geoloc: [{ lat: 39.95, lon: -76.78 }] }), now).reason, 'offArea');
 });
 
 test('frontline shift leadership stays eligible', () => {
+  const now = Date.parse('2026-09-01T16:00:00Z');
   const lead = hit({ job_information: { title: 'Retail Shift Lead' }, v5_processed_job_data: { ...hit().v5_processed_job_data, seniority_level: 'Mid Level', min_industry_and_role_yoe: 2 } });
-  assert.equal(normalizeHit(lead).reason, null);
+  assert.equal(normalizeHit(lead, now).reason, null);
 });
 
 test('hardcoded local compensation policy uses guaranteed minimum', () => {
