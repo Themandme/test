@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T21:04:17.077Z",
+  "generatedAt": "2026-11-16T22:29:03.759Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -42,14 +42,14 @@
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 972,
+      "fetched": 973,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 53,
+      "fetched": 55,
       "kept": 0
     },
     {
@@ -91,7 +91,7 @@
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 475,
+      "fetched": 474,
       "kept": 3
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 917,
+      "fetched": 916,
       "kept": 0
     },
     {
@@ -147,7 +147,7 @@
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 340,
+      "fetched": 341,
       "kept": 1
     }
   ],
