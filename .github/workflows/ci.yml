@@ -23,6 +23,8 @@ jobs:
         run: pip install jsonschema
       - name: Validate brands.json + schemas
         run: python data/validate.py
+      - name: App-bundled brand data matches data/brands.json
+        run: python scripts/sync_brands.py --check
 
   backend:
     name: Backend (FastAPI)
@@ -81,9 +83,9 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-      - name: Sync brands.json asset from canonical data/
-        run: cp data/brands.json android/app/src/main/assets/brands.json
-      - uses: android-actions/setup-android@v3
+      - name: App-bundled brand data matches data/brands.json
+        run: python scripts/sync_brands.py --check
+      - uses: android-actions/setup-android@v4
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.10.2"
