@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T19:25:39.829Z",
+  "generatedAt": "2026-11-19T19:30:39.122Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -7,7 +7,7 @@
       "name": "JMS Celebree School",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 12,
+      "fetched": 11,
       "kept": 4
     },
     {
@@ -28,28 +28,28 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 246,
-      "kept": 1
+      "fetched": 236,
+      "kept": 0
     },
     {
       "name": "Mercer Advisors",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 91,
+      "fetched": 89,
       "kept": 0
     },
     {
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 973,
+      "fetched": 976,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 52,
+      "fetched": 47,
       "kept": 0
     },
     {
@@ -77,7 +77,7 @@
       "name": "Marvin",
       "provider": "icims",
       "status": "success",
-      "fetched": 75,
+      "fetched": 74,
       "kept": 2
     },
     {
@@ -98,35 +98,35 @@
       "name": "Footprint Solutions",
       "provider": "jobvite",
       "status": "success",
-      "fetched": 20,
+      "fetched": 23,
       "kept": 1
     },
     {
       "name": "Mainspring Recovery",
       "provider": "rippling",
       "status": "success",
-      "fetched": 18,
+      "fetched": 17,
       "kept": 0
     },
     {
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 97,
+      "fetched": 99,
       "kept": 0
     },
     {
       "name": "WPM Real Estate Management",
       "provider": "rippling",
       "status": "success",
-      "fetched": 16,
-      "kept": 6
+      "fetched": 17,
+      "kept": 5
     },
     {
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 916,
+      "fetched": 915,
       "kept": 0
     },
     {
@@ -140,7 +140,7 @@
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 579,
+      "fetched": 585,
       "kept": 2
     },
     {
@@ -148,24 +148,10 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 322,
-      "kept": 3
+      "kept": 4
     }
   ],
   "jobs": [
-    {
-      "company": "Curaleaf",
-      "title": "Retail Sales Associate - Part Time",
-      "url": "https://job-boards.greenhouse.io/curaleaf/jobs/8928860002",
-      "location": "11722 Reisterstown Rd Reisterstown, MD",
-      "postedAtMs": 1793728909000,
-      "datePosted": "2026-11-03T18:01:49.000Z",
-      "days": 15,
-      "salary": null,
-      "source": "Direct ATS (greenhouse)",
-      "sourceBoard": "greenhouse:https://job-boards.greenhouse.io/curaleaf",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
     {
       "company": "OSL Retail Services",
       "title": "Wireless Retail Sales Associate - W3434",
@@ -173,7 +159,7 @@
       "location": "US-IL-WOODSTOCK",
       "postedAtMs": 1793332800000,
       "datePosted": "2026-10-30T04:00:00.000Z",
-      "days": 19,
+      "days": 20,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -187,7 +173,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 26,
+      "days": 27,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 26,
+      "days": 27,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -215,7 +201,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 26,
+      "days": 27,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -229,7 +215,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -243,7 +229,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 35,
+      "days": 36,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -350,20 +336,6 @@
     },
     {
       "company": "WPM Real Estate Management",
-      "title": "Community Association Manager",
-      "url": "https://ats.rippling.com/wpm-real-estate/jobs/325875a2-b455-4393-8c95-b06a4837b4ee",
-      "location": "Owings Mills, MD",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (rippling)",
-      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "WPM Real Estate Management",
       "title": "IT Operations Manager",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/06d37a26-e397-46ac-ba5e-eb317bc31f44",
       "location": "Owings Mills, MD",
@@ -462,6 +434,34 @@
     },
     {
       "company": "Sonic Automotive",
+      "title": "Technician - Audi Owings Mills",
+      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000162565659-technician-audi-owings-mills",
+      "location": "Owings Mills, MD, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Sonic Automotive",
+      "title": "Shop Foreman - Audi Owings Mills",
+      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000162544172-shop-foreman-audi-owings-mills",
+      "location": "Owings Mills, MD, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Sonic Automotive",
       "title": "Automotive Staff Accountant - Audi Owings Mills",
       "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000162375079-automotive-staff-accountant-audi-owings-mills",
       "location": "Owings Mills, MD, United States",
@@ -478,20 +478,6 @@
       "company": "Sonic Automotive",
       "title": "Accounts Payable - Audi Owings Mills",
       "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000162374099-accounts-payable-audi-owings-mills",
-      "location": "Owings Mills, MD, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/SonicAutomotive",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Sonic Automotive",
-      "title": "Shop Foreman - Audi Owings Mills",
-      "url": "https://jobs.smartrecruiters.com/SonicAutomotive/744000150700930-shop-foreman-audi-owings-mills",
       "location": "Owings Mills, MD, United States",
       "postedAtMs": null,
       "datePosted": null,
