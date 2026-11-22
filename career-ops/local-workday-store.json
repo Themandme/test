@@ -6,9 +6,9 @@
     "days": 0,
     "postedOn": "Posted Today",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Arlington-VA---The-Jefferson/Resident-Services-Director_JR131918",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/89: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Leidos",
@@ -18,7 +18,7 @@
     "postedOn": "Posted Today",
     "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Bethesda-MD/User-Support-Specialist--Intelligence-Data-Discovery-and-Tradecraft-_R-00197045",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 4,
+    "sourceFailureRuns": 5,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -29,8 +29,8 @@
     "postedOn": "Posted Yesterday",
     "url": "https://comcast.wd115.myworkdayjobs.com/comcast_careers/job/MD---Baltimore-8031-Corporate-Dr/SMB-Senior-Account-Executive--Comcast-Business_R449702",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
-    "sourceFailure": "page 3/35: 429"
+    "sourceFailureRuns": 2,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "SBM Management",
@@ -40,7 +40,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sbmmanagement.wd108.myworkdayjobs.com/sbm/job/Bethesda-MD/Custodian_JR109323",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -50,9 +50,9 @@
     "days": 1,
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/McLean-VA---Sunrise-of-McLean-Village/Associate-Director-of-Sales_JR131933",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/89: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Sunrise Senior Living",
@@ -61,9 +61,9 @@
     "days": 1,
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Reston-VA---Sunrise-of-Reston-Town-Center/Resident---Community-Driver-Activities-Assistant_JR131921-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/89: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Sunrise Senior Living",
@@ -72,9 +72,9 @@
     "days": 1,
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Potomac-Falls-VA---Sunrise-at-Countryside/Line-Cook_JR131920",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/89: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Sunrise Senior Living",
@@ -83,9 +83,9 @@
     "days": 1,
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Springfield-VA---Sunrise-of-Springfield/Weekend-Caregiver_JR131919",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/89: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Leidos",
@@ -95,7 +95,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Washington-DC/Junior-Radio-Frequency--RF--Engineer-Spectrum-Engineer_R-00195327",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 4,
+    "sourceFailureRuns": 5,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -106,7 +106,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Chantilly-VA/Air-Launch-Weapon-Engineer_R-00197061",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 4,
+    "sourceFailureRuns": 5,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -117,7 +117,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Chantilly-VA/Satellite-Communications-Engineer_R-00197056",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 4,
+    "sourceFailureRuns": 5,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -128,8 +128,8 @@
     "postedOn": "Posted 2 Days Ago",
     "url": "https://comcast.wd115.myworkdayjobs.com/comcast_careers/job/MD---Silver-Spring-13529-Connecticut-Ave---Retail-XFR2108/Xfinity-Retail-Sales-Consultant-Part-Time_R449485",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
-    "sourceFailure": "page 3/35: 429"
+    "sourceFailureRuns": 4,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "SBM Management",
@@ -139,7 +139,7 @@
     "postedOn": "Posted 3 Days Ago",
     "url": "https://sbmmanagement.wd108.myworkdayjobs.com/sbm/job/Boydton-VA/Administrative-Assistant_JR109148",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -150,7 +150,7 @@
     "postedOn": "Posted 4 Days Ago",
     "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Bethesda-MD/Senior-Network-Services-Architect_R-00196687",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 4,
+    "sourceFailureRuns": 5,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -161,7 +161,7 @@
     "postedOn": "Posted 11 Days Ago",
     "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Falls-Church-VA/XMLNAME-2027-Management-Development-Program---Wealth-Management--US-Markets--Falls-Church--VA-_R89071",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -172,7 +172,7 @@
     "postedOn": "Posted 17 Days Ago",
     "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Owings-Mills/Electro-Mechanical-Tech-I_JR100127",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -183,7 +183,7 @@
     "postedOn": "Posted 22 Days Ago",
     "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Fulfillment-Team-Lead_JR100156",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -194,7 +194,7 @@
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Summer-Executive-Associate-Program---Office-of-the-Vice-Chairman_R91410",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -205,7 +205,7 @@
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Management-Development-Program---M-T-Realty-Capital-Corporation--Baltimore--MD-_R90438",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -216,7 +216,7 @@
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Director--Fulfillment-Operations_JR100146",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 2,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -244,15 +244,6 @@
     "days": null,
     "postedOn": null,
     "url": "https://listings.umbc.edu/cw/en-us/job/495446/associate-director-education-abroad-and-global-learning",
-    "source": "official university board"
-  },
-  {
-    "company": "UMBC",
-    "title": "Program Coordinator, Extended Studies",
-    "location": "UMBC Campus, MD",
-    "days": null,
-    "postedOn": null,
-    "url": "https://listings.umbc.edu/cw/en-us/job/495439/program-coordinator-extended-studies",
     "source": "official university board"
   },
   {
@@ -397,6 +388,15 @@
     "days": null,
     "postedOn": null,
     "url": "https://listings.umbc.edu/cw/en-us/job/495401/business-services-specialist-accounts-payable",
+    "source": "official university board"
+  },
+  {
+    "company": "UMBC",
+    "title": "Graduate Student Success Librarian",
+    "location": "UMBC Campus, MD",
+    "days": null,
+    "postedOn": null,
+    "url": "https://listings.umbc.edu/cw/en-us/job/495355/graduate-student-success-librarian",
     "source": "official university board"
   },
   {
