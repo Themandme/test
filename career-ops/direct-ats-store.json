@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T22:42:13.355Z",
+  "generatedAt": "2026-11-24T21:18:29.038Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -21,14 +21,14 @@
       "name": "The 1916 Company",
       "provider": "bamboohr",
       "status": "success",
-      "fetched": 13,
+      "fetched": 12,
       "kept": 1
     },
     {
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 240,
+      "fetched": 237,
       "kept": 0
     },
     {
@@ -42,21 +42,21 @@
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 976,
+      "fetched": 978,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 43,
+      "fetched": 41,
       "kept": 0
     },
     {
       "name": "Dewberry",
       "provider": "icims",
       "status": "success",
-      "fetched": 518,
+      "fetched": 517,
       "kept": 0
     },
     {
@@ -70,7 +70,7 @@
       "name": "FutureCare",
       "provider": "icims",
       "status": "success",
-      "fetched": 173,
+      "fetched": 171,
       "kept": 0
     },
     {
@@ -85,14 +85,14 @@
       "provider": "icims",
       "status": "success",
       "fetched": 600,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "Bartlett Tree Experts",
       "provider": "icims",
       "status": "success",
-      "fetched": 485,
-      "kept": 3
+      "fetched": 487,
+      "kept": 5
     },
     {
       "name": "Footprint Solutions",
@@ -112,7 +112,7 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 96,
+      "fetched": 97,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 910,
+      "fetched": 916,
       "kept": 0
     },
     {
@@ -134,24 +134,66 @@
       "provider": "smartrecruiters",
       "status": "success",
       "fetched": 5000,
-      "kept": 4
+      "kept": 3
     },
     {
       "name": "Public Storage",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 572,
+      "fetched": 568,
       "kept": 2
     },
     {
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 298,
+      "fetched": 293,
       "kept": 4
     }
   ],
   "jobs": [
+    {
+      "company": "Bartlett Tree Experts",
+      "title": "Arboriculture Internship",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/36978/arboriculture-internship/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1795496400000,
+      "datePosted": "2026-11-24T05:00:00.000Z",
+      "days": 0,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Bartlett Tree Experts",
+      "title": "Administrative Coordinator",
+      "url": "https://englishcareers-bartlett.icims.com/jobs/37077/administrative-coordinator/job",
+      "location": "US-MD-Finksburg",
+      "postedAtMs": 1795496400000,
+      "datePosted": "2026-11-24T05:00:00.000Z",
+      "days": 0,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "OSL Retail Services",
+      "title": "Wireless Retail Sales Associate - W2647",
+      "url": "https://uscareers-oslrs.icims.com/jobs/105104/wireless-retail-sales-associate---w2647/job",
+      "location": "US-VA-WOODSTOCK",
+      "postedAtMs": 1795410000000,
+      "datePosted": "2026-11-23T05:00:00.000Z",
+      "days": 1,
+      "salary": null,
+      "source": "Direct ATS (icims)",
+      "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
     {
       "company": "OSL Retail Services",
       "title": "Wireless Retail Sales Associate - W3434",
@@ -159,7 +201,7 @@
       "location": "US-IL-WOODSTOCK",
       "postedAtMs": 1793332800000,
       "datePosted": "2026-10-30T04:00:00.000Z",
-      "days": 24,
+      "days": 25,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -173,7 +215,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 31,
+      "days": 32,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -187,7 +229,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 31,
+      "days": 32,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +243,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 31,
+      "days": 32,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -215,7 +257,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -229,7 +271,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 40,
+      "days": 41,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -322,6 +364,20 @@
     },
     {
       "company": "WPM Real Estate Management",
+      "title": "Community Association Manager",
+      "url": "https://ats.rippling.com/wpm-real-estate/jobs/8a098eb1-0377-4147-a963-228421285f57",
+      "location": "Owings Mills, MD",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (rippling)",
+      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "WPM Real Estate Management",
       "title": "IT Operations Manager",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/06d37a26-e397-46ac-ba5e-eb317bc31f44",
       "location": "Owings Mills, MD",
@@ -352,20 +408,6 @@
       "company": "WPM Real Estate Management",
       "title": "Regional Business Development Manager",
       "url": "https://ats.rippling.com/wpm-real-estate/jobs/29bdc793-efc8-4e73-be6a-864fb43ab6db",
-      "location": "Owings Mills, MD",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (rippling)",
-      "sourceBoard": "rippling:https://ats.rippling.com/wpm-real-estate/jobs",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "WPM Real Estate Management",
-      "title": "Regional Property Manager- MRE",
-      "url": "https://ats.rippling.com/wpm-real-estate/jobs/c51c30a8-3fbd-40d6-b3ac-15f1f771e1c4",
       "location": "Owings Mills, MD",
       "postedAtMs": null,
       "datePosted": null,
@@ -422,20 +464,6 @@
       "company": "Domino's",
       "title": "Customer Service Rep(04366) - 493 W Reservoir Rd.",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000163033739-customer-service-rep-04366-493-w-reservoir-rd",
-      "location": "Woodstock, VA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Delivery Driver(04366) - 493 W Reservoir Rd.",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000163003803-delivery-driver-04366-493-w-reservoir-rd",
       "location": "Woodstock, VA, United States",
       "postedAtMs": null,
       "datePosted": null,

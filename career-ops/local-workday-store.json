@@ -1,5 +1,27 @@
 [
   {
+    "company": "M&T Bank",
+    "title": "Bilingual Spanish Branch Manager- Germantown MD",
+    "location": "Germantown, MD",
+    "days": 0,
+    "postedOn": "Posted Today",
+    "url": "https://mtb.wd5.myworkdayjobs.com/mtb/job/Germantown-MD/Bilingual-Spanish-Branch-Manager--Germantown-MD_R91227-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 3/37: 429"
+  },
+  {
+    "company": "Caliber Collision",
+    "title": "Auto Parts Coordinator",
+    "location": "Gainesville, VA   |   Gainesville",
+    "days": 0,
+    "postedOn": "Posted Today",
+    "url": "https://calibercollision.wd1.myworkdayjobs.com/caliber/job/Gainesville-VA/Auto-Parts-Coordinator_R0228633",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 2/85: 429"
+  },
+  {
     "company": "Sunrise Senior Living",
     "title": "Resident Services Director",
     "location": "Arlington, VA - The Jefferson",
@@ -7,140 +29,30 @@
     "postedOn": "Posted Today",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Arlington-VA---The-Jefferson/Resident-Services-Director_JR131918",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
     "company": "T-Mobile",
-    "title": "Mobile Associate - Retail Sales",
-    "location": "Emporia, Virginia",
+    "title": "Account Executive, SMB Team Sales",
+    "location": "Beltsville, Maryland",
     "days": 0,
     "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Emporia-Virginia/Mobile-Associate---Retail-Sales_REQ384085",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Beltsville-Maryland/Account-Executive--SMB-Team-Sales_REQ383813",
     "sourceRefreshStatus": "partial-current",
     "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
+    "sourceFailure": "page 11/100: 429"
   },
   {
     "company": "T-Mobile",
-    "title": "Retail Associate Manager",
-    "location": "Waynesboro, Virginia",
+    "title": "Mobile Associate | Bilingual, Spanish Preferred - Retail Sales",
+    "location": "Fairfax, Virginia",
     "days": 0,
     "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Waynesboro-Virginia/Retail-Associate-Manager_REQ379537-2",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Fairfax-Virginia/Mobile-Associate---Bilingual--Spanish-Preferred---Retail-Sales_REQ376449-2",
     "sourceRefreshStatus": "partial-current",
     "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Sr Mobile Expert",
-    "location": "Glen Burnie, Maryland",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Glen-Burnie-Maryland/Sr-Mobile-Expert_REQ384055-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Sr Mobile Expert",
-    "location": "Glen Burnie, Maryland",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Glen-Burnie-Maryland/Sr-Mobile-Expert_REQ384057-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Sr Mobile Expert",
-    "location": "Baltimore, Maryland",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Sr-Mobile-Expert_REQ383946-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Sr Mobile Expert",
-    "location": "Baltimore, Maryland",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Sr-Mobile-Expert_REQ383939-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Account Executive, Business Team Sales - Northern Virginia,",
-    "location": "Herndon, Virginia",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Herndon-Virginia/Account-Executive--Business-Team-Sales---Northern-Virginia-_REQ379935-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Mobile Associate, Store in Store - Retail Sales",
-    "location": "Colonial Heights, Virginia",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Colonial-Heights-Virginia/Mobile-Associate--Store-in-Store---Retail-Sales_REQ383314",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Retail Associate Manager",
-    "location": "Bowie, Maryland",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Bowie-Maryland/Retail-Associate-Manager_REQ383742-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Mobile Associate, Store-in-Store​ - Retail Sales",
-    "location": "North Chesterfield, Virginia",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/North-Chesterfield-Virginia/Mobile-Associate--Store-in-Store----Retail-Sales_REQ381922",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Complex Sales Strategy Consultant, Federal",
-    "location": "Remote, District of Columbia",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Remote-District-of-Columbia/Complex-Sales-Strategy-Consultant--Federal---DOJ---FBI_REQ383716",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Sr Mobile Expert, Bilingual | Spanish",
-    "location": "Hanover, Maryland",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Hanover-Maryland/Sr-Mobile-Expert--Bilingual---Spanish_REQ381200-2",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
+    "sourceFailure": "page 11/100: 429"
   },
   {
     "company": "U-Haul",
@@ -149,19 +61,8 @@
     "days": 0,
     "postedOn": "Posted Today",
     "url": "https://uhaul.wd1.myworkdayjobs.com/uhauljobs/job/Baltimore-Maryland/Automotive-Mechanical-Vanbody-Specialist_R259299-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 8/100: 429"
-  },
-  {
-    "company": "Leidos",
-    "title": "User Support Specialist (Intelligence Data Discovery and Tradecraft)",
-    "location": "Bethesda, MD",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Bethesda-MD/User-Support-Specialist--Intelligence-Data-Discovery-and-Tradecraft-_R-00197045",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
+    "sourceFailureRuns": 1,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -172,7 +73,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sbmmanagement.wd108.myworkdayjobs.com/sbm/job/Bethesda-MD/Custodian_JR109323",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
+    "sourceFailureRuns": 4,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -183,7 +84,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/McLean-VA---Sunrise-of-McLean-Village/Associate-Director-of-Sales_JR131933",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -194,7 +95,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Reston-VA---Sunrise-of-Reston-Town-Center/Resident---Community-Driver-Activities-Assistant_JR131921-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -205,7 +106,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Potomac-Falls-VA---Sunrise-at-Countryside/Line-Cook_JR131920",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -216,41 +117,140 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Springfield-VA---Sunrise-of-Springfield/Weekend-Caregiver_JR131919",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
-    "company": "Leidos",
-    "title": "Junior Radio Frequency (RF) Engineer/Spectrum Engineer",
-    "location": "Washington, DC",
+    "company": "T-Mobile",
+    "title": "Mobile Associate - Retail Sales",
+    "location": "Emporia, Virginia",
     "days": 1,
     "postedOn": "Posted Yesterday",
-    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Washington-DC/Junior-Radio-Frequency--RF--Engineer-Spectrum-Engineer_R-00195327",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
-    "sourceFailure": "initial request: 429"
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Emporia-Virginia/Mobile-Associate---Retail-Sales_REQ384085",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
   },
   {
-    "company": "Leidos",
-    "title": "Air-Launch Weapon Engineer",
-    "location": "Chantilly, VA",
+    "company": "T-Mobile",
+    "title": "Retail Associate Manager",
+    "location": "Waynesboro, Virginia",
     "days": 1,
     "postedOn": "Posted Yesterday",
-    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Chantilly-VA/Air-Launch-Weapon-Engineer_R-00197061",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
-    "sourceFailure": "initial request: 429"
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Waynesboro-Virginia/Retail-Associate-Manager_REQ379537-2",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
   },
   {
-    "company": "Leidos",
-    "title": "Satellite Communications Engineer",
-    "location": "Chantilly, VA",
+    "company": "T-Mobile",
+    "title": "Sr Mobile Expert",
+    "location": "Glen Burnie, Maryland",
     "days": 1,
     "postedOn": "Posted Yesterday",
-    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Chantilly-VA/Satellite-Communications-Engineer_R-00197056",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
-    "sourceFailure": "initial request: 429"
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Glen-Burnie-Maryland/Sr-Mobile-Expert_REQ384055-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Sr Mobile Expert",
+    "location": "Glen Burnie, Maryland",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Glen-Burnie-Maryland/Sr-Mobile-Expert_REQ384057-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Sr Mobile Expert",
+    "location": "Baltimore, Maryland",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Sr-Mobile-Expert_REQ383946-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Sr Mobile Expert",
+    "location": "Baltimore, Maryland",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Sr-Mobile-Expert_REQ383939-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Account Executive, Business Team Sales - Northern Virginia,",
+    "location": "Herndon, Virginia",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Herndon-Virginia/Account-Executive--Business-Team-Sales---Northern-Virginia-_REQ379935-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Mobile Associate, Store in Store - Retail Sales",
+    "location": "Colonial Heights, Virginia",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Colonial-Heights-Virginia/Mobile-Associate--Store-in-Store---Retail-Sales_REQ383314",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Retail Associate Manager",
+    "location": "Bowie, Maryland",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Bowie-Maryland/Retail-Associate-Manager_REQ383742-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Mobile Associate, Store-in-Store​ - Retail Sales",
+    "location": "North Chesterfield, Virginia",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/North-Chesterfield-Virginia/Mobile-Associate--Store-in-Store----Retail-Sales_REQ381922",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Complex Sales Strategy Consultant, Federal",
+    "location": "Remote, District of Columbia",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Remote-District-of-Columbia/Complex-Sales-Strategy-Consultant--Federal---DOJ---FBI_REQ383716",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Sr Mobile Expert, Bilingual | Spanish",
+    "location": "Hanover, Maryland",
+    "days": 1,
+    "postedOn": "Posted Yesterday",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Hanover-Maryland/Sr-Mobile-Expert--Bilingual---Spanish_REQ381200-2",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
   },
   {
     "company": "Comcast",
@@ -260,8 +260,8 @@
     "postedOn": "Posted 2 Days Ago",
     "url": "https://comcast.wd115.myworkdayjobs.com/comcast_careers/job/MD---Silver-Spring-13529-Connecticut-Ave---Retail-XFR2108/Xfinity-Retail-Sales-Consultant-Part-Time_R449485",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 5,
-    "sourceFailure": "page 6/34: 429"
+    "sourceFailureRuns": 6,
+    "sourceFailure": "page 7/29: 429"
   },
   {
     "company": "SBM Management",
@@ -271,30 +271,8 @@
     "postedOn": "Posted 3 Days Ago",
     "url": "https://sbmmanagement.wd108.myworkdayjobs.com/sbm/job/Boydton-VA/Administrative-Assistant_JR109148",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
+    "sourceFailureRuns": 4,
     "sourceFailure": "initial request: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Mobile Associate - Retail Sales",
-    "location": "Waldorf, Maryland",
-    "days": 3,
-    "postedOn": "Posted 3 Days Ago",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Waldorf-Maryland/Mobile-Associate---Retail-Sales_REQ383394-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Mobile Associate - Retail Sales",
-    "location": "Reston, Virginia",
-    "days": 3,
-    "postedOn": "Posted 3 Days Ago",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Reston-Virginia/Mobile-Associate---Retail-Sales_REQ382865-2",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
   },
   {
     "company": "T-Mobile",
@@ -303,31 +281,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Mobile-Associate---Retail-Sales_REQ383435-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Mobile Associate - Retail Sales",
-    "location": "Martinsville, Virginia",
-    "days": 3,
-    "postedOn": "Posted 3 Days Ago",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Martinsville-Virginia/Mobile-Associate---Retail-Sales_REQ383692",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
-  },
-  {
-    "company": "T-Mobile",
-    "title": "Mobile Associate | Bilingual, Spanish Preferred  - Retail Sales",
-    "location": "Oxon Hill, Maryland",
-    "days": 3,
-    "postedOn": "Posted 3 Days Ago",
-    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Oxon-Hill-Maryland/Mobile-Associate---Bilingual--Spanish-Preferred----Retail-Sales_REQ382253-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 12/100: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "page 11/100: 429"
   },
   {
     "company": "U-Haul",
@@ -336,9 +292,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://uhaul.wd1.myworkdayjobs.com/uhauljobs/job/Sparks-Nevada/Detail-Specialist_R259996",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 8/100: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Comcast",
@@ -347,20 +303,53 @@
     "days": 4,
     "postedOn": "Posted 4 Days Ago",
     "url": "https://comcast.wd115.myworkdayjobs.com/comcast_careers/job/MD---Baltimore-8031-Corporate-Dr/SMB-Senior-Account-Executive--Comcast-Business_R449702",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 6/34: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "page 7/29: 429"
   },
   {
-    "company": "Leidos",
-    "title": "Senior Network Services Architect",
-    "location": "Bethesda, MD",
+    "company": "T-Mobile",
+    "title": "Mobile Associate - Retail Sales",
+    "location": "Waldorf, Maryland",
     "days": 4,
     "postedOn": "Posted 4 Days Ago",
-    "url": "https://leidos.wd5.myworkdayjobs.com/external/job/Bethesda-MD/Senior-Network-Services-Architect_R-00196687",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
-    "sourceFailure": "initial request: 429"
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Waldorf-Maryland/Mobile-Associate---Retail-Sales_REQ383394-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Mobile Associate - Retail Sales",
+    "location": "Reston, Virginia",
+    "days": 4,
+    "postedOn": "Posted 4 Days Ago",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Reston-Virginia/Mobile-Associate---Retail-Sales_REQ382865-2",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Mobile Associate - Retail Sales",
+    "location": "Martinsville, Virginia",
+    "days": 4,
+    "postedOn": "Posted 4 Days Ago",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Martinsville-Virginia/Mobile-Associate---Retail-Sales_REQ383692",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
+  },
+  {
+    "company": "T-Mobile",
+    "title": "Mobile Associate | Bilingual, Spanish Preferred  - Retail Sales",
+    "location": "Oxon Hill, Maryland",
+    "days": 4,
+    "postedOn": "Posted 4 Days Ago",
+    "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Oxon-Hill-Maryland/Mobile-Associate---Bilingual--Spanish-Preferred----Retail-Sales_REQ382253-1",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 11/100: 429"
   },
   {
     "company": "M&T Bank (campus)",
@@ -370,23 +359,23 @@
     "postedOn": "Posted 11 Days Ago",
     "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Falls-Church-VA/XMLNAME-2027-Management-Development-Program---Wealth-Management--US-Markets--Falls-Church--VA-_R89071",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
-    "sourceFailure": "page 2/5: 429"
+    "sourceFailureRuns": 4,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Medifast",
     "title": "Industrial Maintenance Technician",
     "location": "Owings Mills",
-    "days": 20,
-    "postedOn": "Posted 20 Days Ago",
+    "days": 21,
+    "postedOn": "Posted 21 Days Ago",
     "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Owings-Mills/Electro-Mechanical-Tech-I_JR100127"
   },
   {
     "company": "Medifast",
     "title": "Fulfillment Team Lead",
     "location": "Havre de Grace, MD",
-    "days": 25,
-    "postedOn": "Posted 25 Days Ago",
+    "days": 26,
+    "postedOn": "Posted 26 Days Ago",
     "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Fulfillment-Team-Lead_JR100156"
   },
   {
@@ -397,8 +386,8 @@
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Summer-Executive-Associate-Program---Office-of-the-Vice-Chairman_R91410",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
-    "sourceFailure": "page 2/5: 429"
+    "sourceFailureRuns": 4,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "M&T Bank (campus)",
@@ -408,8 +397,16 @@
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Management-Development-Program---M-T-Realty-Capital-Corporation--Baltimore--MD-_R90438",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
-    "sourceFailure": "page 2/5: 429"
+    "sourceFailureRuns": 4,
+    "sourceFailure": "initial request: 429"
+  },
+  {
+    "company": "American Pest",
+    "title": "Pest Control Technician",
+    "location": "Owings Mills",
+    "days": 30,
+    "postedOn": "Posted 30+ Days Ago",
+    "url": "https://anticimexinc.wd1.myworkdayjobs.com/american_pest_management_external_careers/job/Owings-Mills/Pest-Control-Technician_R-8759"
   },
   {
     "company": "Medifast",
@@ -418,6 +415,15 @@
     "days": 30,
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Director--Fulfillment-Operations_JR100146"
+  },
+  {
+    "company": "UMBC",
+    "title": "Director of Staff and Faculty Philanthropy",
+    "location": "UMBC Campus, MD",
+    "days": null,
+    "postedOn": null,
+    "url": "https://listings.umbc.edu/cw/en-us/job/495453/director-of-staff-and-faculty-philanthropy",
+    "source": "official university board"
   },
   {
     "company": "UMBC",
@@ -498,15 +504,6 @@
     "days": null,
     "postedOn": null,
     "url": "https://listings.umbc.edu/cw/en-us/job/495434/hris-analystspecialist",
-    "source": "official university board"
-  },
-  {
-    "company": "UMBC",
-    "title": "Administrative Assistant l",
-    "location": "UMBC Campus, MD",
-    "days": null,
-    "postedOn": null,
-    "url": "https://listings.umbc.edu/cw/en-us/job/495423/administrative-assistant-l",
     "source": "official university board"
   },
   {
