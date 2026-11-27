@@ -7,18 +7,7 @@
     "postedOn": "Posted Today",
     "url": "https://mtb.wd5.myworkdayjobs.com/mtb/job/Germantown-MD/Bilingual-Spanish-Branch-Manager--Germantown-MD_R91227-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
-    "sourceFailure": "initial request: 429"
-  },
-  {
-    "company": "M&T Bank (campus)",
-    "title": "2027 Summer Executive Associate Program - Community Banking",
-    "location": "Baltimore, MD",
-    "days": 0,
-    "postedOn": "Posted Today",
-    "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Summer-Executive-Associate-Program---Community-Banking_R92465",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 1,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -29,7 +18,7 @@
     "postedOn": "Posted Today",
     "url": "https://calibercollision.wd1.myworkdayjobs.com/caliber/job/Gainesville-VA/Auto-Parts-Coordinator_R0228633",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -40,7 +29,7 @@
     "postedOn": "Posted Today",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Arlington-VA---The-Jefferson/Resident-Services-Director_JR131918",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 5,
+    "sourceFailureRuns": 6,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -51,7 +40,7 @@
     "postedOn": "Posted Today",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Beltsville-Maryland/Account-Executive--SMB-Team-Sales_REQ383813",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -62,7 +51,7 @@
     "postedOn": "Posted Today",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Fairfax-Virginia/Mobile-Associate---Bilingual--Spanish-Preferred---Retail-Sales_REQ376449-2",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -73,18 +62,7 @@
     "postedOn": "Posted Today",
     "url": "https://uhaul.wd1.myworkdayjobs.com/uhauljobs/job/Baltimore-Maryland/Automotive-Mechanical-Vanbody-Specialist_R259299-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
-    "sourceFailure": "initial request: 429"
-  },
-  {
-    "company": "SBM Management",
-    "title": "Custodian",
-    "location": "Bethesda, MD",
-    "days": 1,
-    "postedOn": "Posted Yesterday",
-    "url": "https://sbmmanagement.wd108.myworkdayjobs.com/sbm/job/Bethesda-MD/Custodian_JR109323",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
+    "sourceFailureRuns": 4,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -95,7 +73,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/McLean-VA---Sunrise-of-McLean-Village/Associate-Director-of-Sales_JR131933",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 5,
+    "sourceFailureRuns": 6,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -106,7 +84,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Reston-VA---Sunrise-of-Reston-Town-Center/Resident---Community-Driver-Activities-Assistant_JR131921-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 5,
+    "sourceFailureRuns": 6,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -117,7 +95,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Potomac-Falls-VA---Sunrise-at-Countryside/Line-Cook_JR131920",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 5,
+    "sourceFailureRuns": 6,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -128,7 +106,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://sunriseseniorliving.wd12.myworkdayjobs.com/sunrise_ext_careers/job/Springfield-VA---Sunrise-of-Springfield/Weekend-Caregiver_JR131919",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 5,
+    "sourceFailureRuns": 6,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -139,7 +117,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Emporia-Virginia/Mobile-Associate---Retail-Sales_REQ384085",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -150,7 +128,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Waynesboro-Virginia/Retail-Associate-Manager_REQ379537-2",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -161,7 +139,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Glen-Burnie-Maryland/Sr-Mobile-Expert_REQ384055-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -172,7 +150,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Glen-Burnie-Maryland/Sr-Mobile-Expert_REQ384057-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -183,7 +161,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Sr-Mobile-Expert_REQ383946-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -194,7 +172,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Sr-Mobile-Expert_REQ383939-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -205,7 +183,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Herndon-Virginia/Account-Executive--Business-Team-Sales---Northern-Virginia-_REQ379935-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -216,7 +194,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Colonial-Heights-Virginia/Mobile-Associate--Store-in-Store---Retail-Sales_REQ383314",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -227,7 +205,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Bowie-Maryland/Retail-Associate-Manager_REQ383742-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -238,7 +216,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/North-Chesterfield-Virginia/Mobile-Associate--Store-in-Store----Retail-Sales_REQ381922",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -249,7 +227,7 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Remote-District-of-Columbia/Complex-Sales-Strategy-Consultant--Federal---DOJ---FBI_REQ383716",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -260,8 +238,19 @@
     "postedOn": "Posted Yesterday",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Hanover-Maryland/Sr-Mobile-Expert--Bilingual---Spanish_REQ381200-2",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
+  },
+  {
+    "company": "M&T Bank (campus)",
+    "title": "2027 Summer Executive Associate Program - Community Banking",
+    "location": "Baltimore, MD",
+    "days": 2,
+    "postedOn": "Posted 2 Days Ago",
+    "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Summer-Executive-Associate-Program---Community-Banking_R92465",
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 3/5: 429"
   },
   {
     "company": "University of Maryland",
@@ -270,9 +259,9 @@
     "days": 2,
     "postedOn": "Posted 2 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Housekeeper_JR105524",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -281,9 +270,9 @@
     "days": 2,
     "postedOn": "Posted 2 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Adjunct-Instructor_JR105519",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -292,9 +281,9 @@
     "days": 2,
     "postedOn": "Posted 2 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/University-Police-Officer-I---Private--Entry-Level_JR105515",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -303,19 +292,8 @@
     "days": 2,
     "postedOn": "Posted 2 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/MT-Multi-Trades-Chief-III_JR105520",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
-  },
-  {
-    "company": "SBM Management",
-    "title": "Administrative Assistant",
-    "location": "Boydton, VA",
-    "days": 3,
-    "postedOn": "Posted 3 Days Ago",
-    "url": "https://sbmmanagement.wd108.myworkdayjobs.com/sbm/job/Boydton-VA/Administrative-Assistant_JR109148",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
+    "sourceFailureRuns": 1,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -326,7 +304,7 @@
     "postedOn": "Posted 3 Days Ago",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Baltimore-Maryland/Mobile-Associate---Retail-Sales_REQ383435-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
+    "sourceFailureRuns": 4,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -337,7 +315,7 @@
     "postedOn": "Posted 3 Days Ago",
     "url": "https://uhaul.wd1.myworkdayjobs.com/uhauljobs/job/Sparks-Nevada/Detail-Specialist_R259996",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
+    "sourceFailureRuns": 4,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -347,9 +325,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Program-Coordinator_JR105349",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -358,9 +336,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/HPC-IT-Engineer_JR105495",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -369,9 +347,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Food-Service-Specialist_JR105504",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -380,9 +358,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/IT-Desktop-Support-Coordinator_JR105502",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -391,9 +369,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Groundskeeper-Lead_JR105496",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -402,9 +380,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Professor---Associate-Dean_JR104541",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -413,9 +391,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Senior-Executive-Chef_JR104324",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -424,9 +402,9 @@
     "days": 3,
     "postedOn": "Posted 3 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Res-Life-Embedded-Clinician_JR105486",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "Comcast",
@@ -436,7 +414,7 @@
     "postedOn": "Posted 4 Days Ago",
     "url": "https://comcast.wd115.myworkdayjobs.com/comcast_careers/job/MD---Baltimore-8031-Corporate-Dr/SMB-Senior-Account-Executive--Comcast-Business_R449702",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 3,
+    "sourceFailureRuns": 4,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -447,7 +425,7 @@
     "postedOn": "Posted 4 Days Ago",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Waldorf-Maryland/Mobile-Associate---Retail-Sales_REQ383394-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -458,7 +436,7 @@
     "postedOn": "Posted 4 Days Ago",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Reston-Virginia/Mobile-Associate---Retail-Sales_REQ382865-2",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -469,7 +447,7 @@
     "postedOn": "Posted 4 Days Ago",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Martinsville-Virginia/Mobile-Associate---Retail-Sales_REQ383692",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -480,7 +458,7 @@
     "postedOn": "Posted 4 Days Ago",
     "url": "https://tmobile.wd1.myworkdayjobs.com/external/job/Oxon-Hill-Maryland/Mobile-Associate---Bilingual--Spanish-Preferred----Retail-Sales_REQ382253-1",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -490,9 +468,9 @@
     "days": 6,
     "postedOn": "Posted 6 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/CEE-Grants-Specialist_JR105415",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -501,9 +479,9 @@
     "days": 6,
     "postedOn": "Posted 6 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Post-Doctoral-Associate_JR105428",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -512,9 +490,9 @@
     "days": 6,
     "postedOn": "Posted 6 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Industrial-Security-Administrator_JR105480-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -523,9 +501,9 @@
     "days": 6,
     "postedOn": "Posted 6 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Housekeeper_JR105452",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "University of Maryland",
@@ -534,64 +512,36 @@
     "days": 6,
     "postedOn": "Posted 6 Days Ago",
     "url": "https://umd.wd1.myworkdayjobs.com/umcp/job/University-of-Maryland-College-Park/Plumber_JR105497-1",
-    "sourceRefreshStatus": "partial-current",
-    "sourceFailureRuns": 0,
-    "sourceFailure": "page 2/13: 429"
+    "sourceRefreshStatus": "retained-source-error",
+    "sourceFailureRuns": 1,
+    "sourceFailure": "initial request: 429"
   },
   {
     "company": "M&T Bank (campus)",
     "title": "2027 Management Development Program - Wealth Management, US Markets (Falls Church, VA)",
     "location": "Falls Church, VA",
-    "days": 11,
-    "postedOn": "Posted 11 Days Ago",
+    "days": 18,
+    "postedOn": "Posted 18 Days Ago",
     "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Falls-Church-VA/XMLNAME-2027-Management-Development-Program---Wealth-Management--US-Markets--Falls-Church--VA-_R89071",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
-    "sourceFailure": "initial request: 429"
+    "sourceRefreshStatus": "partial-current",
+    "sourceFailureRuns": 0,
+    "sourceFailure": "page 3/5: 429"
   },
   {
     "company": "Medifast",
     "title": "Industrial Maintenance Technician",
     "location": "Owings Mills",
-    "days": 21,
-    "postedOn": "Posted 21 Days Ago",
-    "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Owings-Mills/Electro-Mechanical-Tech-I_JR100127",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
-    "sourceFailure": "initial request: 429"
+    "days": 24,
+    "postedOn": "Posted 24 Days Ago",
+    "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Owings-Mills/Electro-Mechanical-Tech-I_JR100127"
   },
   {
     "company": "Medifast",
     "title": "Fulfillment Team Lead",
     "location": "Havre de Grace, MD",
-    "days": 26,
-    "postedOn": "Posted 26 Days Ago",
-    "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Fulfillment-Team-Lead_JR100156",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
-    "sourceFailure": "initial request: 429"
-  },
-  {
-    "company": "M&T Bank (campus)",
-    "title": "2027 Summer Executive Associate Program - Office of the Vice Chairman",
-    "location": "Baltimore, MD",
-    "days": 30,
-    "postedOn": "Posted 30+ Days Ago",
-    "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Summer-Executive-Associate-Program---Office-of-the-Vice-Chairman_R91410",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
-    "sourceFailure": "initial request: 429"
-  },
-  {
-    "company": "M&T Bank (campus)",
-    "title": "2027 Management Development Program - M&T Realty Capital Corporation (Baltimore, MD)",
-    "location": "Baltimore, MD",
-    "days": 30,
-    "postedOn": "Posted 30+ Days Ago",
-    "url": "https://mtb.wd5.myworkdayjobs.com/campus/job/Baltimore-MD/XMLNAME-2027-Management-Development-Program---M-T-Realty-Capital-Corporation--Baltimore--MD-_R90438",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 6,
-    "sourceFailure": "initial request: 429"
+    "days": 29,
+    "postedOn": "Posted 29 Days Ago",
+    "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Fulfillment-Team-Lead_JR100156"
   },
   {
     "company": "American Pest",
@@ -601,7 +551,7 @@
     "postedOn": "Posted 30+ Days Ago",
     "url": "https://anticimexinc.wd1.myworkdayjobs.com/american_pest_management_external_careers/job/Owings-Mills/Pest-Control-Technician_R-8759",
     "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
+    "sourceFailureRuns": 3,
     "sourceFailure": "initial request: 429"
   },
   {
@@ -610,10 +560,7 @@
     "location": "Havre de Grace, MD",
     "days": 30,
     "postedOn": "Posted 30+ Days Ago",
-    "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Director--Fulfillment-Operations_JR100146",
-    "sourceRefreshStatus": "retained-source-error",
-    "sourceFailureRuns": 2,
-    "sourceFailure": "initial request: 429"
+    "url": "https://medifastinc.wd108.myworkdayjobs.com/medifast/job/Havre-de-Grace-MD/Director--Fulfillment-Operations_JR100146"
   },
   {
     "company": "UMBC",

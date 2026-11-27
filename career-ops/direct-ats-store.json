@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T20:13:28.027Z",
+  "generatedAt": "2026-11-27T20:00:04.723Z",
   "scope": "Official non-Workday ATS boards; 10-mile town-centre proxy around Owings Mills",
   "maxFailedRefreshRuns": 3,
   "sourceHealth": [
@@ -28,7 +28,7 @@
       "name": "Curaleaf",
       "provider": "greenhouse",
       "status": "success",
-      "fetched": 236,
+      "fetched": 235,
       "kept": 0
     },
     {
@@ -42,14 +42,14 @@
       "name": "Cellular Sales",
       "provider": "icims",
       "status": "success",
-      "fetched": 978,
+      "fetched": 979,
       "kept": 0
     },
     {
       "name": "Crash Champions",
       "provider": "icims",
       "status": "success",
-      "fetched": 39,
+      "fetched": 38,
       "kept": 0
     },
     {
@@ -112,7 +112,7 @@
       "name": "Nexplore",
       "provider": "rippling",
       "status": "success",
-      "fetched": 98,
+      "fetched": 96,
       "kept": 0
     },
     {
@@ -126,7 +126,7 @@
       "name": "America's Best",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 935,
+      "fetched": 932,
       "kept": 0
     },
     {
@@ -147,7 +147,7 @@
       "name": "Sonic Automotive",
       "provider": "smartrecruiters",
       "status": "success",
-      "fetched": 300,
+      "fetched": 301,
       "kept": 4
     }
   ],
@@ -159,7 +159,7 @@
       "location": "US-MD-RANDALLSTOWN",
       "postedAtMs": 1795582800000,
       "datePosted": "2026-11-25T05:00:00.000Z",
-      "days": 1,
+      "days": 2,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -173,7 +173,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1795496400000,
       "datePosted": "2026-11-24T05:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -187,7 +187,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1795496400000,
       "datePosted": "2026-11-24T05:00:00.000Z",
-      "days": 2,
+      "days": 3,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -201,7 +201,7 @@
       "location": "US-VA-WOODSTOCK",
       "postedAtMs": 1795410000000,
       "datePosted": "2026-11-23T05:00:00.000Z",
-      "days": 3,
+      "days": 4,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://uscareers-oslrs.icims.com/jobs/search?ss=1",
@@ -215,7 +215,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -229,7 +229,7 @@
       "location": "US-MD-Finksburg",
       "postedAtMs": 1792728000000,
       "datePosted": "2026-10-23T04:00:00.000Z",
-      "days": 34,
+      "days": 35,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://englishcareers-bartlett.icims.com/jobs/search?ss=1",
@@ -243,7 +243,7 @@
       "location": "US-MD-Glen Burnie, MD | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills | US-MD-Baltimore",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 43,
+      "days": 44,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -257,7 +257,7 @@
       "location": "US-MD-Baltimore | US-MD-Hanover | US-MD-Elkridge | US-MD-Glen Burnie, MD | US-MD-Owings Mills",
       "postedAtMs": 1791950400000,
       "datePosted": "2026-10-14T04:00:00.000Z",
-      "days": 43,
+      "days": 44,
       "salary": null,
       "source": "Direct ATS (icims)",
       "sourceBoard": "icims:https://infinity-jobs-marvin.icims.com/jobs/search?ss=1",
@@ -420,6 +420,20 @@
     },
     {
       "company": "Domino's",
+      "title": "Assistant Manager(09185) - 701 S. Eastwood Dr.",
+      "url": "https://jobs.smartrecruiters.com/Dominos/744000163947394-assistant-manager-09185-701-s-eastwood-dr",
+      "location": "Woodstock, IL, United States",
+      "postedAtMs": null,
+      "datePosted": null,
+      "days": null,
+      "salary": null,
+      "source": "Direct ATS (smartrecruiters)",
+      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
+      "sourceFailureRuns": 0,
+      "retainedAfterSourceFailure": false
+    },
+    {
+      "company": "Domino's",
       "title": "Delivery Driver(09185) - 701 S. Eastwood Dr.",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000163585777-delivery-driver-09185-701-s-eastwood-dr",
       "location": "Woodstock, IL, United States",
@@ -464,20 +478,6 @@
       "company": "Domino's",
       "title": "Assistant Manager(04125)",
       "url": "https://jobs.smartrecruiters.com/Dominos/744000163580473-assistant-manager-04125",
-      "location": "Woodstock, GA, United States",
-      "postedAtMs": null,
-      "datePosted": null,
-      "days": null,
-      "salary": null,
-      "source": "Direct ATS (smartrecruiters)",
-      "sourceBoard": "smartrecruiters:https://jobs.smartrecruiters.com/Dominos",
-      "sourceFailureRuns": 0,
-      "retainedAfterSourceFailure": false
-    },
-    {
-      "company": "Domino's",
-      "title": "Assistant Manager(04132) - 2265 Towne Lake Pkwy",
-      "url": "https://jobs.smartrecruiters.com/Dominos/744000163084649-assistant-manager-04132-2265-towne-lake-pkwy",
       "location": "Woodstock, GA, United States",
       "postedAtMs": null,
       "datePosted": null,
